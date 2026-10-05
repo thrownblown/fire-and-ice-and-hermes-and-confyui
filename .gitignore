@@ -32,5 +32,12 @@ scratch/
 *.err
 tmp_*.json
 
+# Saved web pages and their asset dumps
+*.html
+*_files/
+
+# Image formats that slipped the first pass
+*.avif
+
 # The source master, by name, in case the extension rule is ever loosened
 Fire.And.Ice*.mp4
