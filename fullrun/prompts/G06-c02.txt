@@ -1,0 +1,13 @@
+# chunk: G06-c02 | scene: G06 | action stretch
+# shots: 00616 00617
+# src: 00:39:36.457-00:39:48.553  lines: none
+# h3: 294 frames / 12.250s  seed: 964934635
+# words: 322
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 12.25-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A large, muscular figure with a brownish skin tone is shown from behind, their head tilted upward as they gaze at the starry night sky. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, brown, short, tan, black arm bands. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 2] At 00:00.918, the camera cuts to a new angle. The camera stays low and tilts up slightly as the figure moves. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. On screen: muscular, bald with long black ponytail, tan, green loincloth; a young woman with pale skin and very long dark hair in a light purple sleeveless top and skirt; stocky, short dark hair, tan, none. He shifts his weight in a tight group, turns his shoulders, and brings one arm up across his chest before letting it fall. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

@@ -1,0 +1,13 @@
+# chunk: s03-c05 | test: T0003 | scene: S03 | mode: FL2VA
+# first_frame: shot_00073_f00000.jpg | last_frame: shot_00074_f00081.jpg
+# graph_length_seconds: 8.000
+# graph_length_frames: 192
+# lines: L032 L033
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 8.00-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted cavern backgrounds, Ice Peak throne hall, cold blue-grey cavern light. The opening frame matches <Picture 1>: A woman with long black hair and pale skin stands on the left, wearing a purple gown with a slit; she holds a small object to her lips as if blowing into it. The camera holds a static medium straight-on shot. On screen: a young woman with extremely pale white skin, an angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, and a deep purple long-sleeved gown, a hooded subhuman envoy in a dark robe with yellow eyes and dark skin. a pale man with long white hair in a dark purple robe (S1) speaks while off-screen: <d>[English] You will present our demands to King Jarol at Fire Keep and...</d> [Shot 2] At 00:04.505, the camera cuts to a new angle. The camera holds a static close-up, three-quarter angle. On screen: a young woman with extremely pale white skin, an angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, and a deep purple long-sleeved gown, a pale man with long white hair in a dark purple robe. the white-haired man in the dark purple robe (S1) says: <d>[English] give our royal regards to his lovely daughter.</d> The action resolves into the exact pose, framing, and composition established by <Picture 2>: This is a close-up shot of a female character with pale skin, dark hair adorned with a beaded headband, and bright blue eyes.
+
+overall_soundscape: Cavernous hall reverb under the dialogue, distant wind moving through stone corridors, soft fabric rustle as the robed figures move.
+
+non_diegetic_music: A cold, sinister orchestral theme: low sustained strings, sparse brass swells, slow tempo, quiet dynamics under the voices.

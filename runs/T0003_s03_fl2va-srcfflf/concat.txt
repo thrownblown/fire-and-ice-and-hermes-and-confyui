@@ -1,0 +1,5 @@
+file 'output/s03-c01_T0003_t01.mp4'
+file 'output/s03-c02_T0003_t01.mp4'
+file 'output/s03-c03_T0003_t01.mp4'
+file 'output/s03-c04_T0003_t01.mp4'
+file 'output/s03-c05_T0003_t01.mp4'

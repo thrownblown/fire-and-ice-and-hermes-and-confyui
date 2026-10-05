@@ -1,0 +1,13 @@
+# chunk: G09-c08 | scene: G09 | action stretch
+# shots: 01241 01242 01243
+# src: 01:14:36.639-01:14:46.732  lines: none
+# h3: 243 frames / 10.125s  seed: 1527170340
+# words: 345
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 10.12-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A muscular figure with dark skin stands centrally, wearing a black mask with glowing green eyes, long braided hair, and a necklace of yellow fangs and a skull pendant. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, black, long, tied back, brown, black mask with cat-like ears, gold necklace with skull and fangs. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 2] At 00:04.296, the camera cuts to a new angle. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: slender, black, light gray, dark blue tunic. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 3] At 00:05.172, the camera cuts to a new angle. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. On screen: muscular, black, brown, black arm bands, bone necklace. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

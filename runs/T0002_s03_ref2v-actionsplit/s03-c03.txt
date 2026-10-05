@@ -1,0 +1,27 @@
+# chunk: s03-c03 | test: T0002 | scene: S03
+# source: 00:07:10.472-00:07:19.481 | lines: L027 L028 L029
+# graph_length_seconds: 9.417
+# graph_length_frames: 226
+# source_duration_seconds: 9.01
+
+subject_definitions:
+<Subject 1>: JULIANA, extremely pale white skin, angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, a deep purple long-sleeved gown with a plunging neckline and hip-high slits. Seen in <Picture 1>, <Picture 2>.
+<Subject 2>: NEKRON, pale skin, long white hair, a dark purple robe. Seen in <Picture 3>, <Picture 4>.
+<Picture 1>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 2>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 3>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 4>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1>: attribute_transfer — retains the traits listed above.
+<Subject 2>: attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, Ice Peak throne hall. Cool cavern light, painted backgrounds, inked figures.
+[Shot 1] (0.0s) medium, three-quarter angle, static. <Subject 1> (off-screen) says, <d>[English] That is a long distance.</d>
+[Shot 2] (3.2s) medium, three-quarter angle, static. <Subject 2> (off-screen) says, <d>[English] A distance we may not have to travel.</d> <Subject 2> (off-screen) says, <d>[English] I am sending our envoys to Jarol with our new demands.</d>
+
+overall_soundscape: cavernous hall reverb, distant wind. No music under the dialogue.
+
+non_diegetic_music: cold, sinister theme.

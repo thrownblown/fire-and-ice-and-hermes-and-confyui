@@ -1,0 +1,13 @@
+# chunk: G07-c13 | scene: G07 | action stretch
+# shots: 01000 01001 01002
+# src: 01:06:22.228-01:06:36.701  lines: none
+# h3: 362 frames / 15.083s  seed: 1795134348
+# words: 385
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 15.08-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: This still depicts a close-up of a figure viewed from behind, partially obscured by heavy rain or snow falling vertically across the frame. The camera stays low and tilts up slightly as the figure moves. The camera pulls out with small amplitude at slow speed, opening the space around the figures. On screen: muscular, blond, light brown, brown loincloth with belt, black boots; stocky, dark, tan, brown tunic and pants. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 2] At 00:08.884, the camera cuts to a new angle. The camera looks straight down from above as the figures move below it. The camera pulls out with small amplitude at slow speed, opening the space around the figures. On screen: slim, short, light, brown tunic and pants, and 2 others with the same build and dress. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 3] At 00:11.303, the camera cuts to a new angle. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. On screen: a young athletic man with shoulder-length blond hair, bare-chested in a brown loincloth with a gold buckle, arm bands and black boots, carrying a sword. The figure runs, arms pumping and body leaning forward into the stride, the whole frame carrying the motion. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

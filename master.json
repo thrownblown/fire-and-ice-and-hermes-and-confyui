@@ -1,0 +1,42 @@
+{
+  "id": "master:fire_and_ice_1983_yts",
+  "revision": 1,
+  "artifact": {
+    "path": "Fire.And.Ice.1983.1080p.BluRay.x264-[YTS.AM].mp4",
+    "sha256": "sha256:2d6195fbb16c9ab34d3f8eff8709a349bcdccdd39f07391fda721f1827d5cc93",
+    "size_bytes": 1400907365,
+    "codec": "h264",
+    "width": 1920,
+    "height": 1072,
+    "pix_fmt": "yuv420p"
+  },
+  "video_time_base": {
+    "num": 1,
+    "den": 24000
+  },
+  "fps": {
+    "num": 24000,
+    "den": 1001
+  },
+  "nb_frames": 117436,
+  "duration_seconds": 4898.059833,
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "channel_layout": "stereo",
+    "time_base": {
+      "num": 1,
+      "den": 48000
+    },
+    "duration_seconds": 4898.069
+  },
+  "cut_detection": {
+    "detector": "ContentDetector",
+    "threshold": 27.0,
+    "min_scene_len_frames": 12,
+    "start_in_scene": true,
+    "scenedetect_version": "0.7.1",
+    "scene_count": 1308
+  }
+}

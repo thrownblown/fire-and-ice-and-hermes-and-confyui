@@ -1,0 +1,7 @@
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 4.46-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over wide painted exteriors, wind and dust in the air, hard natural light. The opening frame matches <Picture 1>: A sailboat with two large, light-colored sails is positioned in the foreground, partially obscured by mist or fog. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. The figure turns and steps, the body leading the movement and the clothing trailing behind. The movement carries through and then settles back, and in the closing seconds everything slows and stops. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Solo flute and bowed vibraphone at a slow tempo with wide spacing between notes, held at very low volume.

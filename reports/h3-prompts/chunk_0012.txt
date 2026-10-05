@@ -1,0 +1,21 @@
+# graph_length_seconds: 4.458
+# graph_length_frames: 107
+# source_duration_seconds: 4.17
+
+subject_definitions:
+<Subject 1>: the blond man, muscular, brown belt with a gold buckle, bone necklace. Seen in <Picture 1>.
+<Picture 1>: a still of the blond man, muscular, brown belt with a gold buckle, bone necklace. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, grassland with huts. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. Larn in grassland with huts.
+[Shot 2] At 00:00:02.5, the camera pushes in slowly. Larn in blue sky background.
+[Shot 3] At 00:00:05.0, the camera pushes in slowly. Larn in blue sky background.
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A

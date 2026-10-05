@@ -1,0 +1,7 @@
+file 'E:/FNI/fullrun/output/S13-c01_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S13-c02_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S13-c03_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S13-c04_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S13-c05_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S13-c06_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S13-c07_full_t01.mp4'

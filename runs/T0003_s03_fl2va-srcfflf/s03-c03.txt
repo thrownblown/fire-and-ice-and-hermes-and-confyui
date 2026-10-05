@@ -1,0 +1,13 @@
+# chunk: s03-c03 | test: T0003 | scene: S03 | mode: FL2VA
+# first_frame: shot_00070_f00000.jpg | last_frame: shot_00071_f00138.jpg
+# graph_length_seconds: 9.417
+# graph_length_frames: 226
+# lines: L027 L028 L029
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 9.42-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted cavern backgrounds, Ice Peak throne hall, cold blue-grey cavern light. The opening frame matches <Picture 1>: This is a close-up shot of an animated male figure with long, straight white hair that falls over his shoulders. The camera holds a static medium three-quarter shot. On screen: a pale man with long white hair in a dark purple robe. a young woman with extremely pale white skin, an angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, and a deep purple long-sleeved gown (S1) speaks while off-screen: <d>[English] That is a long distance.</d> [Shot 2] At 00:03.212, the camera cuts to a new angle. The camera holds a static medium three-quarter shot. On screen: a young woman with extremely pale white skin, an angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, and a deep purple long-sleeved gown. a pale man with long white hair in a dark purple robe (S2) speaks while off-screen: <d>[English] A distance we may not have to travel.</d> a pale man with long white hair in a dark purple robe (S2) speaks while off-screen: <d>[English] I am sending our envoys to Jarol with our new demands.</d> The action resolves into the exact pose, framing, and composition established by <Picture 2>: This is a close-up side profile of a female character with long, straight black hair adorned with small beads near the crown.
+
+overall_soundscape: Cavernous hall reverb under the dialogue, distant wind moving through stone corridors, soft fabric rustle as the robed figures move.
+
+non_diegetic_music: A cold, sinister orchestral theme: low sustained strings, sparse brass swells, slow tempo, quiet dynamics under the voices.

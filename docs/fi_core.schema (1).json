@@ -1,0 +1,1072 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fire-and-ice:core:0.3",
+  "title": "Fire & Ice minimal synthetic vertical-slice contract",
+  "description": "Strict fixture schema for design integration. Live implementations extend artifact/profile qualification and provenance records; fixture-only outputs must never be executed.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "fi.core/0.3"
+    },
+    "fixture_only": {
+      "const": true
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "$ref": "#/$defs/SourceMaster"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Artifact"
+      },
+      "minItems": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "minItems": 1
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Assertion"
+      },
+      "minItems": 0
+    },
+    "contract": {
+      "$ref": "#/$defs/ShotContract"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ReferenceSelection"
+      },
+      "minItems": 1
+    },
+    "time_map": {
+      "$ref": "#/$defs/TimeMap"
+    },
+    "profile": {
+      "$ref": "#/$defs/Profile"
+    },
+    "plans": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/RenderPlan"
+      },
+      "minItems": 1
+    },
+    "requests": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CompiledRequest"
+      },
+      "minItems": 1
+    },
+    "attempts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Attempt"
+      },
+      "minItems": 1
+    },
+    "evaluations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Evaluation"
+      },
+      "minItems": 1
+    },
+    "selection": {
+      "$ref": "#/$defs/Selection"
+    },
+    "recipes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Recipe"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "fixture_only",
+    "note",
+    "source",
+    "artifacts",
+    "evidence",
+    "assertions",
+    "contract",
+    "references",
+    "time_map",
+    "profile",
+    "plans",
+    "requests",
+    "attempts",
+    "evaluations",
+    "selection",
+    "recipes"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "RevisionRef": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision"
+      ],
+      "additionalProperties": false
+    },
+    "Rational": {
+      "type": "object",
+      "properties": {
+        "num": {
+          "type": "integer"
+        },
+        "den": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "num",
+        "den"
+      ],
+      "additionalProperties": false
+    },
+    "Hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "Artifact": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/Hash"
+        },
+        "kind": {
+          "enum": [
+            "image",
+            "video",
+            "audio",
+            "source_video"
+          ]
+        },
+        "synthetic_placeholder": {
+          "const": true
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "sha256",
+        "kind",
+        "synthetic_placeholder"
+      ],
+      "additionalProperties": false
+    },
+    "SourceMaster": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "artifact": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "video_time_base": {
+          "$ref": "#/$defs/Rational"
+        },
+        "fps": {
+          "$ref": "#/$defs/Rational"
+        },
+        "shot_start_pts": {
+          "type": "integer"
+        },
+        "shot_end_pts": {
+          "type": "integer"
+        },
+        "audio_sample_rate": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "artifact",
+        "video_time_base",
+        "fps",
+        "shot_start_pts",
+        "shot_end_pts",
+        "audio_sample_rate"
+      ],
+      "additionalProperties": false
+    },
+    "Evidence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "artifact": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "clock": {
+          "enum": [
+            "source_pts",
+            "generated_frame"
+          ]
+        },
+        "coordinate": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "artifact",
+        "clock",
+        "coordinate",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "Assertion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "supporting": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 1
+        },
+        "contradicting": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 0
+        },
+        "confidence_raw": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "confidence_calibrated": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "calibration_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resolution": {
+          "enum": [
+            "unresolved",
+            "supported",
+            "contradicted",
+            "human_confirmed"
+          ]
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "subject",
+        "field",
+        "value",
+        "supporting",
+        "contradicting",
+        "confidence_raw",
+        "confidence_calibrated",
+        "calibration_ref",
+        "resolution",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "Constraint": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "strength": {
+          "enum": [
+            "hard",
+            "soft",
+            "free"
+          ]
+        },
+        "expected": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evaluator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0
+        },
+        "decision_reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "field",
+        "strength",
+        "expected",
+        "evaluator",
+        "weight",
+        "decision_reason"
+      ],
+      "additionalProperties": false
+    },
+    "ShotContract": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "shot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_master": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "sequence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "creative_mode": {
+          "enum": [
+            "narrative_reinterpretation",
+            "source_reconstruction"
+          ]
+        },
+        "edit_start": {
+          "$ref": "#/$defs/Rational"
+        },
+        "edit_end": {
+          "$ref": "#/$defs/Rational"
+        },
+        "audio_policy": {
+          "const": "preserve_original_mix"
+        },
+        "assertion_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 0
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Constraint"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "shot_id",
+        "source_master",
+        "sequence_id",
+        "creative_mode",
+        "edit_start",
+        "edit_end",
+        "audio_policy",
+        "assertion_refs",
+        "constraints"
+      ],
+      "additionalProperties": false
+    },
+    "ReferenceSelection": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "contract": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "slot": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "identity",
+            "face",
+            "body",
+            "costume",
+            "pose",
+            "action",
+            "composition",
+            "environment",
+            "style",
+            "palette",
+            "lighting",
+            "object",
+            "motion",
+            "audio"
+          ]
+        },
+        "entity_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "preserve": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "contract",
+        "slot",
+        "role",
+        "entity_id",
+        "artifact",
+        "preserve",
+        "avoid",
+        "rationale"
+      ],
+      "additionalProperties": false
+    },
+    "TimeMap": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_master": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "source_start_pts": {
+          "type": "integer"
+        },
+        "source_end_pts": {
+          "type": "integer"
+        },
+        "editorial_start": {
+          "$ref": "#/$defs/Rational"
+        },
+        "editorial_end": {
+          "$ref": "#/$defs/Rational"
+        },
+        "generated_fps": {
+          "$ref": "#/$defs/Rational"
+        },
+        "generated_frame_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "keep_start_frame": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "keep_end_frame": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "export_fps": {
+          "$ref": "#/$defs/Rational"
+        },
+        "export_start_frame": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "export_end_frame": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "audio_start_sample": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "audio_end_sample": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mapping_policy": {
+          "enum": [
+            "timestamp_resample",
+            "explicit_retime"
+          ]
+        },
+        "rounding": {
+          "const": "round_half_up_absolute"
+        },
+        "generated_reference_preprocessing": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "source_master",
+        "source_start_pts",
+        "source_end_pts",
+        "editorial_start",
+        "editorial_end",
+        "generated_fps",
+        "generated_frame_count",
+        "keep_start_frame",
+        "keep_end_frame",
+        "export_fps",
+        "export_start_frame",
+        "export_end_frame",
+        "audio_start_sample",
+        "audio_end_sample",
+        "mapping_policy",
+        "rounding",
+        "generated_reference_preprocessing"
+      ],
+      "additionalProperties": false
+    },
+    "Profile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "qualification_status": {
+          "const": "fixture_only"
+        },
+        "execution_allowed": {
+          "const": false
+        },
+        "workflow_hash": {
+          "$ref": "#/$defs/Hash"
+        },
+        "artifact_hashes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Hash"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "qualification_status",
+        "execution_allowed",
+        "workflow_hash",
+        "artifact_hashes"
+      ],
+      "additionalProperties": false
+    },
+    "RenderPlan": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "contract": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "selections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 1
+        },
+        "strategy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "time_map": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hypothesis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "changed_variables": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "essential_action_end": {
+          "$ref": "#/$defs/Rational"
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "contract",
+        "selections",
+        "strategy",
+        "profile",
+        "time_map",
+        "seed",
+        "hypothesis",
+        "changed_variables",
+        "essential_action_end"
+      ],
+      "additionalProperties": false
+    },
+    "CompiledRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "plan": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "prompt_hash": {
+          "$ref": "#/$defs/Hash"
+        },
+        "workflow_hash": {
+          "$ref": "#/$defs/Hash"
+        },
+        "binding_order": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 1
+        },
+        "validator_status": {
+          "const": "fixture_passed_not_executable"
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "plan",
+        "prompt_hash",
+        "workflow_hash",
+        "binding_order",
+        "validator_status"
+      ],
+      "additionalProperties": false
+    },
+    "Attempt": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "plan": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "request": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "role": {
+          "enum": [
+            "baseline",
+            "diagnostic_control",
+            "repair"
+          ]
+        },
+        "parent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "queued",
+            "running",
+            "succeeded",
+            "failed",
+            "canceled",
+            "unknown"
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 0
+        },
+        "measured_gpu_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "measurement_basis": {
+          "const": "synthetic_fixture"
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "plan",
+        "request",
+        "role",
+        "parent",
+        "status",
+        "outputs",
+        "measured_gpu_seconds",
+        "measurement_basis"
+      ],
+      "additionalProperties": false
+    },
+    "CriterionResult": {
+      "type": "object",
+      "properties": {
+        "constraint_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 0
+        },
+        "evaluator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "constraint_id",
+        "result",
+        "evidence",
+        "evaluator",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "Evaluation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "attempt": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "contract": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "status": {
+          "enum": [
+            "pending",
+            "passed",
+            "failed",
+            "needs_review"
+          ]
+        },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CriterionResult"
+          },
+          "minItems": 1
+        },
+        "visual_acceptance": {
+          "enum": [
+            "accepted",
+            "rejected",
+            "unreviewed"
+          ]
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "attempt",
+        "contract",
+        "status",
+        "criteria",
+        "visual_acceptance",
+        "reviewer"
+      ],
+      "additionalProperties": false
+    },
+    "Selection": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "shot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contract": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "attempt": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "evaluation": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "time_map": {
+          "$ref": "#/$defs/RevisionRef"
+        },
+        "stale": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "shot_id",
+        "contract",
+        "attempt",
+        "evaluation",
+        "time_map",
+        "stale",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "Recipe": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "enum": [
+            "candidate",
+            "promoted",
+            "retired"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome_attempts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RevisionRef"
+          },
+          "minItems": 1
+        },
+        "evidence_kind": {
+          "enum": [
+            "association",
+            "controlled_comparison"
+          ]
+        },
+        "lesson": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "status",
+        "scope",
+        "outcome_attempts",
+        "evidence_kind",
+        "lesson",
+        "limitation"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

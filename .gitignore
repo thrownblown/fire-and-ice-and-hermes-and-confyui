@@ -1,0 +1,36 @@
+# Media is derived from a local rip and never committed. Metadata that
+# sits beside it (json, jsonl, txt, md, srt) stays tracked.
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.avi
+*.wav
+*.flac
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.bmp
+*.tiff
+
+# Environments and caches
+.venv/
+.venv-demucs/
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Third-party clones; each is its own repo
+explore/
+
+# Scratch and run logs
+scratch/
+*.log
+*.err
+tmp_*.json
+
+# The source master, by name, in case the extension rule is ever loosened
+Fire.And.Ice*.mp4

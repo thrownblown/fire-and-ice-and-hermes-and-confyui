@@ -1,0 +1,13 @@
+# chunk: G09-c27 | scene: G09 | action stretch
+# shots: 01295 01296 01297
+# src: 01:17:04.912-01:17:14.296  lines: none
+# h3: 226 frames / 9.417s  seed: 4186946103
+# words: 393
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 9.42-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A large, muscular figure with dark skin and long black hair is shown from the chest up, wearing a black, horned mask that covers their head and eyes, leaving only glowing green slits visible. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, black, long, with two braids, brown, none visible. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 2] At 00:03.086, the camera cuts to a new angle. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, blond, tan, naked. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 3] At 00:04.505, the camera cuts to a new angle. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. On screen: tall and muscular, long, blonde hair tied back, light brown, brown loincloth with red belt, black boots, sword at hip; large and muscular, black, dark brown, none; a young woman with pale skin and very long dark hair in a light purple sleeveless top and skirt. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

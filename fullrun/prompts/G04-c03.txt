@@ -1,0 +1,13 @@
+# chunk: G04-c03 | scene: G04 | action stretch
+# shots: 00431 00432
+# src: 00:27:01.078-00:27:14.258  lines: none
+# h3: 328 frames / 13.667s  seed: 876927005
+# words: 293
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 13.67-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A small, solitary human figure with light-colored hair stands on a flat horizon line, facing left while holding a long staff horizontally across their shoulders. The camera stays low and tilts up slightly as the figure moves. The camera pulls out with small amplitude at slow speed, opening the space around the figures. On screen: slim, blond, light, loincloth and boots. The figure walks, the body rising and settling with each step and the arms swinging at the sides. [Shot 2] At 00:06.423, the camera cuts to a new angle. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. On screen: muscular, blond, light brown, brown belt with gold plates, red wristbands, necklace with white teeth and a gold medallion. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

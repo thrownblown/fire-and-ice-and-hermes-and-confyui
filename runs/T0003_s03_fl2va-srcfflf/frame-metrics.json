@@ -1,0 +1,64 @@
+{
+  "note": "Automated frame metrics for T0003 vs T0002, computed locally with ffmpeg+ffprobe+numpy on 2026-09-29. MSE on 0-255 scale, frames resized to 192x108. These are structural signals, not quality judgements.",
+  "keyframe_anchor_check_t0003": {
+    "what": "distance from each render's first/last frame to the source still it was given",
+    "unit": "MSE (lower = closer to keyframe)",
+    "rows": {
+      "s03-c01": {
+        "first_frame_to_src_first": 15.5,
+        "last_frame_to_src_last": 19.3,
+        "keyframe_gap": 2148.4
+      },
+      "s03-c02": {
+        "first_frame_to_src_first": 25.0,
+        "last_frame_to_src_last": 21.2,
+        "keyframe_gap": 6924.8
+      },
+      "s03-c03": {
+        "first_frame_to_src_first": 21.0,
+        "last_frame_to_src_last": 23.0,
+        "keyframe_gap": 8320.1
+      },
+      "s03-c04": {
+        "first_frame_to_src_first": 22.7,
+        "last_frame_to_src_last": 27.2,
+        "keyframe_gap": 7274.1
+      },
+      "s03-c05": {
+        "first_frame_to_src_first": 27.5,
+        "last_frame_to_src_last": 28.8,
+        "keyframe_gap": 8817.3
+      }
+    },
+    "reading": "Both endpoints land on their keyframes in every chunk. fl2va endpoint anchoring works as designed."
+  },
+  "mid_frame_position_t0003": {
+    "what": "which keyframe each sampled frame (5/25/50/75/95%) is closer to, F=first L=last",
+    "rows": {
+      "s03-c01": "L L L L L",
+      "s03-c02": "F F L L L",
+      "s03-c03": "F F L L L",
+      "s03-c04": "F L L L L",
+      "s03-c05": "F F F L L"
+    },
+    "reading": "The transition completes in the first quarter to half, then holds the last keyframe. The middle of the clip is mostly the end state, not an interpolation."
+  },
+  "frozen_frame_fraction": {
+    "what": "share of sampled consecutive frame pairs with MSE < 30 (i.e. no visible change)",
+    "t0002_ref2v": {
+      "s03-c01": "34.3%",
+      "s03-c02": "73.2%",
+      "s03-c03": "42.9%",
+      "s03-c04": "0.0%",
+      "s03-c05": "53.2%"
+    },
+    "t0003_fl2va": {
+      "s03-c01": "82.9%",
+      "s03-c02": "58.9%",
+      "s03-c03": "82.1%",
+      "s03-c04": "16.7%",
+      "s03-c05": "80.9%"
+    },
+    "reading": "fl2va is more static than ref2v in 4 of 5 chunks. c01 is the extreme case: the middle of the clip is the last keyframe."
+  }
+}

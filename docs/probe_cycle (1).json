@@ -1,0 +1,700 @@
+{
+  "schema_version": "fi.core/0.3",
+  "fixture_only": true,
+  "note": "All coordinates, identities, hashes, media, reviews and outcomes are synthetic. No workload may be executed from this fixture. Hashes are placeholders, not available media.",
+  "source": {
+    "id": "master:synthetic",
+    "revision": 1,
+    "artifact": {
+      "id": "artifact:master",
+      "revision": 1
+    },
+    "video_time_base": {
+      "num": 1,
+      "den": 24000
+    },
+    "fps": {
+      "num": 24000,
+      "den": 1001
+    },
+    "shot_start_pts": 0,
+    "shot_end_pts": 100100,
+    "audio_sample_rate": 48000
+  },
+  "artifacts": [
+    {
+      "id": "artifact:master",
+      "revision": 1,
+      "sha256": "sha256:268e7b7132a18ae15921897427f8e0f8d937b2735b81f1402aa5e7dae91830a2",
+      "kind": "source_video",
+      "synthetic_placeholder": true
+    },
+    {
+      "id": "artifact:teegra_full",
+      "revision": 1,
+      "sha256": "sha256:4795284bb9a2a2a81652bc6c8eb59cfa4039bf8b3de5e2266fc789fba2cda1c1",
+      "kind": "image",
+      "synthetic_placeholder": true
+    },
+    {
+      "id": "artifact:teegra_crop",
+      "revision": 1,
+      "sha256": "sha256:20885e28683f3f3ed4f99a52aaeee0640a1d91c4ab034e432c1fe8ef35383c7f",
+      "kind": "image",
+      "synthetic_placeholder": true
+    },
+    {
+      "id": "artifact:location",
+      "revision": 1,
+      "sha256": "sha256:1bd62133bfd086d87d7fc0df55c3f1f009db2eaf20986b053eedabeb128a3673",
+      "kind": "image",
+      "synthetic_placeholder": true
+    },
+    {
+      "id": "artifact:take_1",
+      "revision": 1,
+      "sha256": "sha256:96200804b05bfa54e042ec5494e98eb637cb7fe8e954e254ea88c6159f719620",
+      "kind": "video",
+      "synthetic_placeholder": true
+    },
+    {
+      "id": "artifact:take_2",
+      "revision": 1,
+      "sha256": "sha256:060c133fa0c6db6ffcae4152bd44f06d81aa4034347117e63a046e7a2d9cee52",
+      "kind": "video",
+      "synthetic_placeholder": true
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:source_open",
+      "revision": 1,
+      "artifact": {
+        "id": "artifact:master",
+        "revision": 1
+      },
+      "clock": "source_pts",
+      "coordinate": 0,
+      "description": "Synthetic opening frame locator."
+    },
+    {
+      "id": "evidence:source_close",
+      "revision": 1,
+      "artifact": {
+        "id": "artifact:master",
+        "revision": 1
+      },
+      "clock": "source_pts",
+      "coordinate": 99099,
+      "description": "Synthetic final source frame locator."
+    },
+    {
+      "id": "evidence:take_1_identity",
+      "revision": 1,
+      "artifact": {
+        "id": "artifact:take_1",
+        "revision": 1
+      },
+      "clock": "generated_frame",
+      "coordinate": 24,
+      "description": "Simulated identity mismatch."
+    },
+    {
+      "id": "evidence:take_2_identity",
+      "revision": 1,
+      "artifact": {
+        "id": "artifact:take_2",
+        "revision": 1
+      },
+      "clock": "generated_frame",
+      "coordinate": 24,
+      "description": "Simulated identity match."
+    },
+    {
+      "id": "evidence:take_1_action",
+      "revision": 1,
+      "artifact": {
+        "id": "artifact:take_1",
+        "revision": 1
+      },
+      "clock": "generated_frame",
+      "coordinate": 60,
+      "description": "Simulated action completion."
+    },
+    {
+      "id": "evidence:take_2_action",
+      "revision": 1,
+      "artifact": {
+        "id": "artifact:take_2",
+        "revision": 1
+      },
+      "clock": "generated_frame",
+      "coordinate": 60,
+      "description": "Simulated action completion."
+    }
+  ],
+  "assertions": [
+    {
+      "id": "assertion:visible_identity",
+      "revision": 1,
+      "subject": "track:synthetic_1",
+      "field": "identity",
+      "value": "character:teegra",
+      "supporting": [
+        {
+          "id": "evidence:source_open",
+          "revision": 1
+        }
+      ],
+      "contradicting": [],
+      "confidence_raw": 0.76,
+      "confidence_calibrated": null,
+      "calibration_ref": null,
+      "resolution": "supported",
+      "method": "synthetic_observation_not_ground_truth"
+    }
+  ],
+  "contract": {
+    "id": "contract:synthetic_shot",
+    "revision": 1,
+    "shot_id": "shot:synthetic_001",
+    "source_master": {
+      "id": "master:synthetic",
+      "revision": 1
+    },
+    "sequence_id": "sequence:synthetic",
+    "creative_mode": "narrative_reinterpretation",
+    "edit_start": {
+      "num": 0,
+      "den": 1
+    },
+    "edit_end": {
+      "num": 1001,
+      "den": 240
+    },
+    "audio_policy": "preserve_original_mix",
+    "assertion_refs": [
+      {
+        "id": "assertion:visible_identity",
+        "revision": 1
+      }
+    ],
+    "constraints": [
+      {
+        "id": "constraint:identity",
+        "field": "identity",
+        "strength": "hard",
+        "expected": "Use the approved target Teegra design.",
+        "evaluator": "identity_review",
+        "weight": 0,
+        "decision_reason": "Synthetic editorial decision for illustrating the contract."
+      },
+      {
+        "id": "constraint:action",
+        "field": "story.action",
+        "strength": "hard",
+        "expected": "Turn toward the doorway before the cut.",
+        "evaluator": "action_review",
+        "weight": 0,
+        "decision_reason": "Synthetic editorial decision for illustrating the contract."
+      },
+      {
+        "id": "constraint:timing",
+        "field": "editorial.duration",
+        "strength": "hard",
+        "expected": "Preserve the original audio and editorial interval.",
+        "evaluator": "time_map_check",
+        "weight": 0,
+        "decision_reason": "Synthetic editorial decision for illustrating the contract."
+      },
+      {
+        "id": "constraint:camera",
+        "field": "camera.composition",
+        "strength": "free",
+        "expected": "Staging and camera may change.",
+        "evaluator": "none",
+        "weight": 0,
+        "decision_reason": "Synthetic editorial decision for illustrating the contract."
+      },
+      {
+        "id": "constraint:style",
+        "field": "style",
+        "strength": "soft",
+        "expected": "Maintain the approved painterly treatment.",
+        "evaluator": "human_visual",
+        "weight": 1,
+        "decision_reason": "Synthetic editorial decision for illustrating the contract."
+      }
+    ]
+  },
+  "references": [
+    {
+      "id": "selection:identity",
+      "revision": 1,
+      "contract": {
+        "id": "contract:synthetic_shot",
+        "revision": 1
+      },
+      "slot": "identity:teegra",
+      "role": "identity",
+      "entity_id": "character:teegra",
+      "artifact": {
+        "id": "artifact:teegra_full",
+        "revision": 1
+      },
+      "preserve": [
+        "approved identity"
+      ],
+      "avoid": [
+        "incidental image background"
+      ],
+      "rationale": "Synthetic initial full-body identity reference."
+    },
+    {
+      "id": "selection:environment",
+      "revision": 1,
+      "contract": {
+        "id": "contract:synthetic_shot",
+        "revision": 1
+      },
+      "slot": "environment:synthetic",
+      "role": "environment",
+      "entity_id": "location:synthetic",
+      "artifact": {
+        "id": "artifact:location",
+        "revision": 1
+      },
+      "preserve": [
+        "location landmarks"
+      ],
+      "avoid": [
+        "fixed camera composition"
+      ],
+      "rationale": "Synthetic reusable location reference."
+    },
+    {
+      "id": "selection:identity",
+      "revision": 2,
+      "contract": {
+        "id": "contract:synthetic_shot",
+        "revision": 1
+      },
+      "slot": "identity:teegra",
+      "role": "identity",
+      "entity_id": "character:teegra",
+      "artifact": {
+        "id": "artifact:teegra_crop",
+        "revision": 1
+      },
+      "preserve": [
+        "approved identity"
+      ],
+      "avoid": [
+        "incidental image background"
+      ],
+      "rationale": "Synthetic targeted identity crop to reduce background distraction."
+    }
+  ],
+  "time_map": {
+    "id": "timemap:synthetic",
+    "revision": 1,
+    "source_master": {
+      "id": "master:synthetic",
+      "revision": 1
+    },
+    "source_start_pts": 0,
+    "source_end_pts": 100100,
+    "editorial_start": {
+      "num": 0,
+      "den": 1
+    },
+    "editorial_end": {
+      "num": 1001,
+      "den": 240
+    },
+    "generated_fps": {
+      "num": 24,
+      "den": 1
+    },
+    "generated_frame_count": 124,
+    "keep_start_frame": 0,
+    "keep_end_frame": 101,
+    "export_fps": {
+      "num": 24000,
+      "den": 1001
+    },
+    "export_start_frame": 0,
+    "export_end_frame": 100,
+    "audio_start_sample": 0,
+    "audio_end_sample": 200200,
+    "mapping_policy": "timestamp_resample",
+    "rounding": "round_half_up_absolute",
+    "generated_reference_preprocessing": []
+  },
+  "profile": {
+    "id": "profile:synthetic_ref2va",
+    "revision": 1,
+    "qualification_status": "fixture_only",
+    "execution_allowed": false,
+    "workflow_hash": "sha256:515128c9853bf350cbecf9a8fccf6700d1b9f6a2663031462a4722f148b29f23",
+    "artifact_hashes": [
+      "sha256:b36d69a5f4c173209ff44d1cc04e63c7a9f2b1757b4426a77021a64a52e96af6",
+      "sha256:acd12be655405e4295d320b3baf3e9bf0f5801927732882419d852c4c08efdd7",
+      "sha256:9da83236bac965792d600d21b7f7c22e3028a7ed05d685d0fcf8b2585357dbaa"
+    ]
+  },
+  "plans": [
+    {
+      "id": "plan:synthetic_1",
+      "revision": 1,
+      "contract": {
+        "id": "contract:synthetic_shot",
+        "revision": 1
+      },
+      "selections": [
+        {
+          "id": "selection:identity",
+          "revision": 1
+        },
+        {
+          "id": "selection:environment",
+          "revision": 1
+        }
+      ],
+      "strategy": "ref2va_identity_environment/v1",
+      "profile": {
+        "id": "profile:synthetic_ref2va",
+        "revision": 1
+      },
+      "time_map": {
+        "id": "timemap:synthetic",
+        "revision": 1
+      },
+      "seed": 41,
+      "hypothesis": "Baseline reference set.",
+      "changed_variables": [],
+      "essential_action_end": {
+        "num": 5,
+        "den": 2
+      }
+    },
+    {
+      "id": "plan:synthetic_2",
+      "revision": 1,
+      "contract": {
+        "id": "contract:synthetic_shot",
+        "revision": 1
+      },
+      "selections": [
+        {
+          "id": "selection:identity",
+          "revision": 2
+        },
+        {
+          "id": "selection:environment",
+          "revision": 1
+        }
+      ],
+      "strategy": "ref2va_identity_environment/v1",
+      "profile": {
+        "id": "profile:synthetic_ref2va",
+        "revision": 1
+      },
+      "time_map": {
+        "id": "timemap:synthetic",
+        "revision": 1
+      },
+      "seed": 41,
+      "hypothesis": "A clean identity crop may reduce identity drift.",
+      "changed_variables": [
+        "selection:identity revision 1 -> 2"
+      ],
+      "essential_action_end": {
+        "num": 5,
+        "den": 2
+      }
+    }
+  ],
+  "requests": [
+    {
+      "id": "request:synthetic_1",
+      "revision": 1,
+      "plan": {
+        "id": "plan:synthetic_1",
+        "revision": 1
+      },
+      "prompt_hash": "sha256:70326a767a8b46aede9d4b1cc8cd1b773672a864ce8cb9c512da5754ac3559e1",
+      "workflow_hash": "sha256:515128c9853bf350cbecf9a8fccf6700d1b9f6a2663031462a4722f148b29f23",
+      "binding_order": [
+        {
+          "id": "selection:identity",
+          "revision": 1
+        },
+        {
+          "id": "selection:environment",
+          "revision": 1
+        }
+      ],
+      "validator_status": "fixture_passed_not_executable"
+    },
+    {
+      "id": "request:synthetic_2",
+      "revision": 1,
+      "plan": {
+        "id": "plan:synthetic_2",
+        "revision": 1
+      },
+      "prompt_hash": "sha256:0c619ffb73ff67b0186069b7194a0d5737a54f555f5ae83884240b2af43efc20",
+      "workflow_hash": "sha256:515128c9853bf350cbecf9a8fccf6700d1b9f6a2663031462a4722f148b29f23",
+      "binding_order": [
+        {
+          "id": "selection:identity",
+          "revision": 2
+        },
+        {
+          "id": "selection:environment",
+          "revision": 1
+        }
+      ],
+      "validator_status": "fixture_passed_not_executable"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "attempt:synthetic_1",
+      "revision": 1,
+      "plan": {
+        "id": "plan:synthetic_1",
+        "revision": 1
+      },
+      "request": {
+        "id": "request:synthetic_1",
+        "revision": 1
+      },
+      "role": "baseline",
+      "parent": null,
+      "status": "succeeded",
+      "outputs": [
+        {
+          "id": "artifact:take_1",
+          "revision": 1
+        }
+      ],
+      "measured_gpu_seconds": null,
+      "measurement_basis": "synthetic_fixture"
+    },
+    {
+      "id": "attempt:synthetic_2",
+      "revision": 1,
+      "plan": {
+        "id": "plan:synthetic_2",
+        "revision": 1
+      },
+      "request": {
+        "id": "request:synthetic_2",
+        "revision": 1
+      },
+      "role": "repair",
+      "parent": "attempt:synthetic_1",
+      "status": "succeeded",
+      "outputs": [
+        {
+          "id": "artifact:take_2",
+          "revision": 1
+        }
+      ],
+      "measured_gpu_seconds": null,
+      "measurement_basis": "synthetic_fixture"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "evaluation:synthetic_1",
+      "revision": 1,
+      "attempt": {
+        "id": "attempt:synthetic_1",
+        "revision": 1
+      },
+      "contract": {
+        "id": "contract:synthetic_shot",
+        "revision": 1
+      },
+      "status": "failed",
+      "criteria": [
+        {
+          "constraint_id": "constraint:identity",
+          "result": "fail",
+          "evidence": [
+            {
+              "id": "evidence:take_1_identity",
+              "revision": 1
+            }
+          ],
+          "evaluator": "identity_review",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:action",
+          "result": "pass",
+          "evidence": [
+            {
+              "id": "evidence:take_1_action",
+              "revision": 1
+            }
+          ],
+          "evaluator": "action_review",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:timing",
+          "result": "pass",
+          "evidence": [
+            {
+              "id": "evidence:take_1_action",
+              "revision": 1
+            }
+          ],
+          "evaluator": "time_map_check",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:camera",
+          "result": "not_applicable",
+          "evidence": [],
+          "evaluator": "none",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:style",
+          "result": "pass",
+          "evidence": [
+            {
+              "id": "evidence:take_1_identity",
+              "revision": 1
+            }
+          ],
+          "evaluator": "human_visual",
+          "reason": "Simulated result only; no actual video was generated."
+        }
+      ],
+      "visual_acceptance": "rejected",
+      "reviewer": "synthetic_reviewer_not_the_user"
+    },
+    {
+      "id": "evaluation:synthetic_2",
+      "revision": 1,
+      "attempt": {
+        "id": "attempt:synthetic_2",
+        "revision": 1
+      },
+      "contract": {
+        "id": "contract:synthetic_shot",
+        "revision": 1
+      },
+      "status": "passed",
+      "criteria": [
+        {
+          "constraint_id": "constraint:identity",
+          "result": "pass",
+          "evidence": [
+            {
+              "id": "evidence:take_2_identity",
+              "revision": 1
+            }
+          ],
+          "evaluator": "identity_review",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:action",
+          "result": "pass",
+          "evidence": [
+            {
+              "id": "evidence:take_2_action",
+              "revision": 1
+            }
+          ],
+          "evaluator": "action_review",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:timing",
+          "result": "pass",
+          "evidence": [
+            {
+              "id": "evidence:take_2_action",
+              "revision": 1
+            }
+          ],
+          "evaluator": "time_map_check",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:camera",
+          "result": "not_applicable",
+          "evidence": [],
+          "evaluator": "none",
+          "reason": "Simulated result only; no actual video was generated."
+        },
+        {
+          "constraint_id": "constraint:style",
+          "result": "pass",
+          "evidence": [
+            {
+              "id": "evidence:take_2_identity",
+              "revision": 1
+            }
+          ],
+          "evaluator": "human_visual",
+          "reason": "Simulated result only; no actual video was generated."
+        }
+      ],
+      "visual_acceptance": "accepted",
+      "reviewer": "synthetic_reviewer_not_the_user"
+    }
+  ],
+  "selection": {
+    "id": "edit_selection:synthetic",
+    "revision": 1,
+    "shot_id": "shot:synthetic_001",
+    "contract": {
+      "id": "contract:synthetic_shot",
+      "revision": 1
+    },
+    "attempt": {
+      "id": "attempt:synthetic_2",
+      "revision": 1
+    },
+    "evaluation": {
+      "id": "evaluation:synthetic_2",
+      "revision": 1
+    },
+    "time_map": {
+      "id": "timemap:synthetic",
+      "revision": 1
+    },
+    "stale": false,
+    "reason": "Synthetic selected repaired candidate after all hard constraints pass."
+  },
+  "recipes": [
+    {
+      "id": "recipe:clean_identity_crop",
+      "revision": 1,
+      "status": "candidate",
+      "scope": "This synthetic character/shot/profile only.",
+      "outcome_attempts": [
+        {
+          "id": "attempt:synthetic_1",
+          "revision": 1
+        },
+        {
+          "id": "attempt:synthetic_2",
+          "revision": 1
+        }
+      ],
+      "evidence_kind": "association",
+      "lesson": "Consider a cleaner identity crop when background distraction is suspected.",
+      "limitation": "One synthetic pair proves no real causal effect; compare on another shot before promotion."
+    }
+  ]
+}

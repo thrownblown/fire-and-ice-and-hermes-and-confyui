@@ -1,0 +1,3470 @@
+{
+  "window": {
+    "offset_minutes": 36.0,
+    "minutes": 10.0,
+    "tag": "m036_046",
+    "first_tc": "00:36:08.333",
+    "last_tc": "00:46:00.800"
+  },
+  "sampling": {
+    "policy": "first_median_last",
+    "blank_still_threshold_bytes": 20000
+  },
+  "audio": {
+    "full_track": {
+      "file": "audio\\master_audio_48k_stereo.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_s16le",
+      "size_bytes": 940429390,
+      "source": "Fire.And.Ice.1983.1080p.BluRay.x264-[YTS.AM].mp4"
+    }
+  },
+  "shot_count": 111,
+  "total_stills": 333,
+  "blank_stills": 0,
+  "shots": [
+    {
+      "shot_id": "shot:00575",
+      "start_tc": "00:36:08.333",
+      "end_tc": "00:36:10.210",
+      "duration_seconds": 1.876875,
+      "frame_count": 45,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00575_f00000.jpg",
+          "size_bytes": 183445,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 22,
+          "file": "stills\\m036_046\\shot_00575_f00022.jpg",
+          "size_bytes": 195512,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 44,
+          "file": "stills\\m036_046\\shot_00575_f00044.jpg",
+          "size_bytes": 212007,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00575.wav"
+    },
+    {
+      "shot_id": "shot:00576",
+      "start_tc": "00:36:10.210",
+      "end_tc": "00:36:14.172",
+      "duration_seconds": 3.962292,
+      "frame_count": 95,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00576_f00000.jpg",
+          "size_bytes": 326911,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 47,
+          "file": "stills\\m036_046\\shot_00576_f00047.jpg",
+          "size_bytes": 259347,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 94,
+          "file": "stills\\m036_046\\shot_00576_f00094.jpg",
+          "size_bytes": 251504,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00576.wav"
+    },
+    {
+      "shot_id": "shot:00577",
+      "start_tc": "00:36:14.172",
+      "end_tc": "00:36:26.976",
+      "duration_seconds": 12.804458,
+      "frame_count": 307,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00577_f00000.jpg",
+          "size_bytes": 238430,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 153,
+          "file": "stills\\m036_046\\shot_00577_f00153.jpg",
+          "size_bytes": 188772,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 306,
+          "file": "stills\\m036_046\\shot_00577_f00306.jpg",
+          "size_bytes": 182173,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00577.wav"
+    },
+    {
+      "shot_id": "shot:00578",
+      "start_tc": "00:36:26.976",
+      "end_tc": "00:36:43.118",
+      "duration_seconds": 16.141125,
+      "frame_count": 387,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00578_f00000.jpg",
+          "size_bytes": 353759,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 193,
+          "file": "stills\\m036_046\\shot_00578_f00193.jpg",
+          "size_bytes": 166107,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 386,
+          "file": "stills\\m036_046\\shot_00578_f00386.jpg",
+          "size_bytes": 133929,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00578.wav"
+    },
+    {
+      "shot_id": "shot:00579",
+      "start_tc": "00:36:43.118",
+      "end_tc": "00:36:46.788",
+      "duration_seconds": 3.670333,
+      "frame_count": 88,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00579_f00000.jpg",
+          "size_bytes": 149198,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 44,
+          "file": "stills\\m036_046\\shot_00579_f00044.jpg",
+          "size_bytes": 136083,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 87,
+          "file": "stills\\m036_046\\shot_00579_f00087.jpg",
+          "size_bytes": 130367,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00579.wav"
+    },
+    {
+      "shot_id": "shot:00580",
+      "start_tc": "00:36:46.788",
+      "end_tc": "00:36:49.332",
+      "duration_seconds": 2.544208,
+      "frame_count": 61,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00580_f00000.jpg",
+          "size_bytes": 308356,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 30,
+          "file": "stills\\m036_046\\shot_00580_f00030.jpg",
+          "size_bytes": 256665,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 60,
+          "file": "stills\\m036_046\\shot_00580_f00060.jpg",
+          "size_bytes": 247458,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00580.wav"
+    },
+    {
+      "shot_id": "shot:00581",
+      "start_tc": "00:36:49.332",
+      "end_tc": "00:37:05.098",
+      "duration_seconds": 15.76575,
+      "frame_count": 378,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00581_f00000.jpg",
+          "size_bytes": 194337,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 189,
+          "file": "stills\\m036_046\\shot_00581_f00189.jpg",
+          "size_bytes": 136555,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 377,
+          "file": "stills\\m036_046\\shot_00581_f00377.jpg",
+          "size_bytes": 132558,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00581.wav"
+    },
+    {
+      "shot_id": "shot:00582",
+      "start_tc": "00:37:05.098",
+      "end_tc": "00:37:11.396",
+      "duration_seconds": 6.297958,
+      "frame_count": 151,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00582_f00000.jpg",
+          "size_bytes": 277423,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 75,
+          "file": "stills\\m036_046\\shot_00582_f00075.jpg",
+          "size_bytes": 196020,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 150,
+          "file": "stills\\m036_046\\shot_00582_f00150.jpg",
+          "size_bytes": 189430,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00582.wav"
+    },
+    {
+      "shot_id": "shot:00583",
+      "start_tc": "00:37:11.396",
+      "end_tc": "00:37:19.028",
+      "duration_seconds": 7.632625,
+      "frame_count": 183,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00583_f00000.jpg",
+          "size_bytes": 215577,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 91,
+          "file": "stills\\m036_046\\shot_00583_f00091.jpg",
+          "size_bytes": 134246,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 182,
+          "file": "stills\\m036_046\\shot_00583_f00182.jpg",
+          "size_bytes": 137036,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00583.wav"
+    },
+    {
+      "shot_id": "shot:00584",
+      "start_tc": "00:37:19.028",
+      "end_tc": "00:37:22.198",
+      "duration_seconds": 3.169833,
+      "frame_count": 76,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00584_f00000.jpg",
+          "size_bytes": 290113,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 38,
+          "file": "stills\\m036_046\\shot_00584_f00038.jpg",
+          "size_bytes": 151800,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 75,
+          "file": "stills\\m036_046\\shot_00584_f00075.jpg",
+          "size_bytes": 117127,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00584.wav"
+    },
+    {
+      "shot_id": "shot:00585",
+      "start_tc": "00:37:22.198",
+      "end_tc": "00:37:24.909",
+      "duration_seconds": 2.711042,
+      "frame_count": 65,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00585_f00000.jpg",
+          "size_bytes": 203322,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 32,
+          "file": "stills\\m036_046\\shot_00585_f00032.jpg",
+          "size_bytes": 161650,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 64,
+          "file": "stills\\m036_046\\shot_00585_f00064.jpg",
+          "size_bytes": 168748,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00585.wav"
+    },
+    {
+      "shot_id": "shot:00586",
+      "start_tc": "00:37:24.909",
+      "end_tc": "00:37:25.910",
+      "duration_seconds": 1.001,
+      "frame_count": 24,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00586_f00000.jpg",
+          "size_bytes": 126300,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 12,
+          "file": "stills\\m036_046\\shot_00586_f00012.jpg",
+          "size_bytes": 130006,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 23,
+          "file": "stills\\m036_046\\shot_00586_f00023.jpg",
+          "size_bytes": 130438,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00586.wav"
+    },
+    {
+      "shot_id": "shot:00587",
+      "start_tc": "00:37:25.910",
+      "end_tc": "00:37:34.210",
+      "duration_seconds": 8.299958,
+      "frame_count": 199,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00587_f00000.jpg",
+          "size_bytes": 289513,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 99,
+          "file": "stills\\m036_046\\shot_00587_f00099.jpg",
+          "size_bytes": 222474,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 198,
+          "file": "stills\\m036_046\\shot_00587_f00198.jpg",
+          "size_bytes": 209533,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00587.wav"
+    },
+    {
+      "shot_id": "shot:00588",
+      "start_tc": "00:37:34.210",
+      "end_tc": "00:37:37.046",
+      "duration_seconds": 2.836167,
+      "frame_count": 68,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00588_f00000.jpg",
+          "size_bytes": 127041,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 34,
+          "file": "stills\\m036_046\\shot_00588_f00034.jpg",
+          "size_bytes": 150653,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 67,
+          "file": "stills\\m036_046\\shot_00588_f00067.jpg",
+          "size_bytes": 168982,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00588.wav"
+    },
+    {
+      "shot_id": "shot:00589",
+      "start_tc": "00:37:37.046",
+      "end_tc": "00:37:49.934",
+      "duration_seconds": 12.887875,
+      "frame_count": 309,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00589_f00000.jpg",
+          "size_bytes": 294327,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 154,
+          "file": "stills\\m036_046\\shot_00589_f00154.jpg",
+          "size_bytes": 206277,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 308,
+          "file": "stills\\m036_046\\shot_00589_f00308.jpg",
+          "size_bytes": 213198,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00589.wav"
+    },
+    {
+      "shot_id": "shot:00590",
+      "start_tc": "00:37:49.934",
+      "end_tc": "00:37:53.062",
+      "duration_seconds": 3.128125,
+      "frame_count": 75,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00590_f00000.jpg",
+          "size_bytes": 306899,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 37,
+          "file": "stills\\m036_046\\shot_00590_f00037.jpg",
+          "size_bytes": 209871,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 74,
+          "file": "stills\\m036_046\\shot_00590_f00074.jpg",
+          "size_bytes": 191308,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00590.wav"
+    },
+    {
+      "shot_id": "shot:00591",
+      "start_tc": "00:37:53.062",
+      "end_tc": "00:37:57.400",
+      "duration_seconds": 4.337667,
+      "frame_count": 104,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00591_f00000.jpg",
+          "size_bytes": 310914,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 52,
+          "file": "stills\\m036_046\\shot_00591_f00052.jpg",
+          "size_bytes": 225336,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 103,
+          "file": "stills\\m036_046\\shot_00591_f00103.jpg",
+          "size_bytes": 216293,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00591.wav"
+    },
+    {
+      "shot_id": "shot:00592",
+      "start_tc": "00:37:57.400",
+      "end_tc": "00:37:59.402",
+      "duration_seconds": 2.002,
+      "frame_count": 48,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00592_f00000.jpg",
+          "size_bytes": 264124,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 24,
+          "file": "stills\\m036_046\\shot_00592_f00024.jpg",
+          "size_bytes": 180847,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 47,
+          "file": "stills\\m036_046\\shot_00592_f00047.jpg",
+          "size_bytes": 173145,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00592.wav"
+    },
+    {
+      "shot_id": "shot:00593",
+      "start_tc": "00:37:59.402",
+      "end_tc": "00:38:06.075",
+      "duration_seconds": 6.673333,
+      "frame_count": 160,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00593_f00000.jpg",
+          "size_bytes": 288312,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 80,
+          "file": "stills\\m036_046\\shot_00593_f00080.jpg",
+          "size_bytes": 175599,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 159,
+          "file": "stills\\m036_046\\shot_00593_f00159.jpg",
+          "size_bytes": 174016,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00593.wav"
+    },
+    {
+      "shot_id": "shot:00594",
+      "start_tc": "00:38:06.075",
+      "end_tc": "00:38:08.620",
+      "duration_seconds": 2.544208,
+      "frame_count": 61,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00594_f00000.jpg",
+          "size_bytes": 230383,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 30,
+          "file": "stills\\m036_046\\shot_00594_f00030.jpg",
+          "size_bytes": 193368,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 60,
+          "file": "stills\\m036_046\\shot_00594_f00060.jpg",
+          "size_bytes": 181894,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00594.wav"
+    },
+    {
+      "shot_id": "shot:00595",
+      "start_tc": "00:38:08.620",
+      "end_tc": "00:38:17.712",
+      "duration_seconds": 9.092417,
+      "frame_count": 218,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00595_f00000.jpg",
+          "size_bytes": 293119,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 109,
+          "file": "stills\\m036_046\\shot_00595_f00109.jpg",
+          "size_bytes": 197860,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 217,
+          "file": "stills\\m036_046\\shot_00595_f00217.jpg",
+          "size_bytes": 190026,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00595.wav"
+    },
+    {
+      "shot_id": "shot:00596",
+      "start_tc": "00:38:17.712",
+      "end_tc": "00:38:28.723",
+      "duration_seconds": 11.011,
+      "frame_count": 264,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00596_f00000.jpg",
+          "size_bytes": 359784,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 132,
+          "file": "stills\\m036_046\\shot_00596_f00132.jpg",
+          "size_bytes": 254619,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 263,
+          "file": "stills\\m036_046\\shot_00596_f00263.jpg",
+          "size_bytes": 293956,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00596.wav"
+    },
+    {
+      "shot_id": "shot:00597",
+      "start_tc": "00:38:28.723",
+      "end_tc": "00:38:31.017",
+      "duration_seconds": 2.293958,
+      "frame_count": 55,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00597_f00000.jpg",
+          "size_bytes": 327380,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 27,
+          "file": "stills\\m036_046\\shot_00597_f00027.jpg",
+          "size_bytes": 263977,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 54,
+          "file": "stills\\m036_046\\shot_00597_f00054.jpg",
+          "size_bytes": 249638,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00597.wav"
+    },
+    {
+      "shot_id": "shot:00598",
+      "start_tc": "00:38:31.017",
+      "end_tc": "00:38:39.567",
+      "duration_seconds": 8.550208,
+      "frame_count": 205,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00598_f00000.jpg",
+          "size_bytes": 349455,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 102,
+          "file": "stills\\m036_046\\shot_00598_f00102.jpg",
+          "size_bytes": 260398,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 204,
+          "file": "stills\\m036_046\\shot_00598_f00204.jpg",
+          "size_bytes": 246459,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00598.wav"
+    },
+    {
+      "shot_id": "shot:00599",
+      "start_tc": "00:38:39.567",
+      "end_tc": "00:38:44.280",
+      "duration_seconds": 4.713042,
+      "frame_count": 113,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00599_f00000.jpg",
+          "size_bytes": 291154,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 56,
+          "file": "stills\\m036_046\\shot_00599_f00056.jpg",
+          "size_bytes": 226992,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 112,
+          "file": "stills\\m036_046\\shot_00599_f00112.jpg",
+          "size_bytes": 211810,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00599.wav"
+    },
+    {
+      "shot_id": "shot:00600",
+      "start_tc": "00:38:44.280",
+      "end_tc": "00:38:46.783",
+      "duration_seconds": 2.5025,
+      "frame_count": 60,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00600_f00000.jpg",
+          "size_bytes": 316873,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 30,
+          "file": "stills\\m036_046\\shot_00600_f00030.jpg",
+          "size_bytes": 264244,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 59,
+          "file": "stills\\m036_046\\shot_00600_f00059.jpg",
+          "size_bytes": 255392,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00600.wav"
+    },
+    {
+      "shot_id": "shot:00601",
+      "start_tc": "00:38:46.783",
+      "end_tc": "00:38:49.118",
+      "duration_seconds": 2.335667,
+      "frame_count": 56,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00601_f00000.jpg",
+          "size_bytes": 295707,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 28,
+          "file": "stills\\m036_046\\shot_00601_f00028.jpg",
+          "size_bytes": 215474,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 55,
+          "file": "stills\\m036_046\\shot_00601_f00055.jpg",
+          "size_bytes": 202405,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00601.wav"
+    },
+    {
+      "shot_id": "shot:00602",
+      "start_tc": "00:38:49.118",
+      "end_tc": "00:38:51.204",
+      "duration_seconds": 2.085417,
+      "frame_count": 50,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00602_f00000.jpg",
+          "size_bytes": 320876,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 25,
+          "file": "stills\\m036_046\\shot_00602_f00025.jpg",
+          "size_bytes": 274143,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 49,
+          "file": "stills\\m036_046\\shot_00602_f00049.jpg",
+          "size_bytes": 260833,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00602.wav"
+    },
+    {
+      "shot_id": "shot:00603",
+      "start_tc": "00:38:51.204",
+      "end_tc": "00:38:52.872",
+      "duration_seconds": 1.668333,
+      "frame_count": 40,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00603_f00000.jpg",
+          "size_bytes": 269855,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 20,
+          "file": "stills\\m036_046\\shot_00603_f00020.jpg",
+          "size_bytes": 195709,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 39,
+          "file": "stills\\m036_046\\shot_00603_f00039.jpg",
+          "size_bytes": 186298,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00603.wav"
+    },
+    {
+      "shot_id": "shot:00604",
+      "start_tc": "00:38:52.872",
+      "end_tc": "00:38:55.792",
+      "duration_seconds": 2.919583,
+      "frame_count": 70,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00604_f00000.jpg",
+          "size_bytes": 192861,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 35,
+          "file": "stills\\m036_046\\shot_00604_f00035.jpg",
+          "size_bytes": 179551,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 69,
+          "file": "stills\\m036_046\\shot_00604_f00069.jpg",
+          "size_bytes": 195118,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00604.wav"
+    },
+    {
+      "shot_id": "shot:00605",
+      "start_tc": "00:38:55.792",
+      "end_tc": "00:39:00.713",
+      "duration_seconds": 4.921583,
+      "frame_count": 118,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00605_f00000.jpg",
+          "size_bytes": 251615,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 59,
+          "file": "stills\\m036_046\\shot_00605_f00059.jpg",
+          "size_bytes": 188546,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 117,
+          "file": "stills\\m036_046\\shot_00605_f00117.jpg",
+          "size_bytes": 192161,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00605.wav"
+    },
+    {
+      "shot_id": "shot:00606",
+      "start_tc": "00:39:00.713",
+      "end_tc": "00:39:01.548",
+      "duration_seconds": 0.834167,
+      "frame_count": 20,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00606_f00000.jpg",
+          "size_bytes": 193942,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 10,
+          "file": "stills\\m036_046\\shot_00606_f00010.jpg",
+          "size_bytes": 197896,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 19,
+          "file": "stills\\m036_046\\shot_00606_f00019.jpg",
+          "size_bytes": 195755,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00606.wav"
+    },
+    {
+      "shot_id": "shot:00607",
+      "start_tc": "00:39:01.548",
+      "end_tc": "00:39:05.009",
+      "duration_seconds": 3.461792,
+      "frame_count": 83,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00607_f00000.jpg",
+          "size_bytes": 308381,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 41,
+          "file": "stills\\m036_046\\shot_00607_f00041.jpg",
+          "size_bytes": 252400,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 82,
+          "file": "stills\\m036_046\\shot_00607_f00082.jpg",
+          "size_bytes": 244663,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00607.wav"
+    },
+    {
+      "shot_id": "shot:00608",
+      "start_tc": "00:39:05.009",
+      "end_tc": "00:39:06.594",
+      "duration_seconds": 1.584917,
+      "frame_count": 38,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00608_f00000.jpg",
+          "size_bytes": 245793,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 19,
+          "file": "stills\\m036_046\\shot_00608_f00019.jpg",
+          "size_bytes": 213734,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 37,
+          "file": "stills\\m036_046\\shot_00608_f00037.jpg",
+          "size_bytes": 208132,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00608.wav"
+    },
+    {
+      "shot_id": "shot:00609",
+      "start_tc": "00:39:06.594",
+      "end_tc": "00:39:13.643",
+      "duration_seconds": 7.048708,
+      "frame_count": 169,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00609_f00000.jpg",
+          "size_bytes": 226491,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 84,
+          "file": "stills\\m036_046\\shot_00609_f00084.jpg",
+          "size_bytes": 172814,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 168,
+          "file": "stills\\m036_046\\shot_00609_f00168.jpg",
+          "size_bytes": 156536,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00609.wav"
+    },
+    {
+      "shot_id": "shot:00610",
+      "start_tc": "00:39:13.643",
+      "end_tc": "00:39:19.524",
+      "duration_seconds": 5.880875,
+      "frame_count": 141,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00610_f00000.jpg",
+          "size_bytes": 362775,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 70,
+          "file": "stills\\m036_046\\shot_00610_f00070.jpg",
+          "size_bytes": 264708,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 140,
+          "file": "stills\\m036_046\\shot_00610_f00140.jpg",
+          "size_bytes": 258537,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00610.wav"
+    },
+    {
+      "shot_id": "shot:00611",
+      "start_tc": "00:39:19.524",
+      "end_tc": "00:39:23.903",
+      "duration_seconds": 4.379375,
+      "frame_count": 105,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00611_f00000.jpg",
+          "size_bytes": 337078,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 52,
+          "file": "stills\\m036_046\\shot_00611_f00052.jpg",
+          "size_bytes": 259858,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 104,
+          "file": "stills\\m036_046\\shot_00611_f00104.jpg",
+          "size_bytes": 242164,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00611.wav"
+    },
+    {
+      "shot_id": "shot:00612",
+      "start_tc": "00:39:23.903",
+      "end_tc": "00:39:25.738",
+      "duration_seconds": 1.835167,
+      "frame_count": 44,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00612_f00000.jpg",
+          "size_bytes": 316250,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 22,
+          "file": "stills\\m036_046\\shot_00612_f00022.jpg",
+          "size_bytes": 222325,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 43,
+          "file": "stills\\m036_046\\shot_00612_f00043.jpg",
+          "size_bytes": 228904,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00612.wav"
+    },
+    {
+      "shot_id": "shot:00613",
+      "start_tc": "00:39:25.738",
+      "end_tc": "00:39:27.991",
+      "duration_seconds": 2.25225,
+      "frame_count": 54,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00613_f00000.jpg",
+          "size_bytes": 309665,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 27,
+          "file": "stills\\m036_046\\shot_00613_f00027.jpg",
+          "size_bytes": 229674,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 53,
+          "file": "stills\\m036_046\\shot_00613_f00053.jpg",
+          "size_bytes": 282950,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00613.wav"
+    },
+    {
+      "shot_id": "shot:00614",
+      "start_tc": "00:39:27.991",
+      "end_tc": "00:39:33.621",
+      "duration_seconds": 5.630625,
+      "frame_count": 135,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00614_f00000.jpg",
+          "size_bytes": 162231,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 67,
+          "file": "stills\\m036_046\\shot_00614_f00067.jpg",
+          "size_bytes": 134541,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 134,
+          "file": "stills\\m036_046\\shot_00614_f00134.jpg",
+          "size_bytes": 149403,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00614.wav"
+    },
+    {
+      "shot_id": "shot:00615",
+      "start_tc": "00:39:33.621",
+      "end_tc": "00:39:36.457",
+      "duration_seconds": 2.836167,
+      "frame_count": 68,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00615_f00000.jpg",
+          "size_bytes": 279051,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 34,
+          "file": "stills\\m036_046\\shot_00615_f00034.jpg",
+          "size_bytes": 205804,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 67,
+          "file": "stills\\m036_046\\shot_00615_f00067.jpg",
+          "size_bytes": 213556,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00615.wav"
+    },
+    {
+      "shot_id": "shot:00616",
+      "start_tc": "00:39:36.457",
+      "end_tc": "00:39:37.375",
+      "duration_seconds": 0.917583,
+      "frame_count": 22,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00616_f00000.jpg",
+          "size_bytes": 214211,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 11,
+          "file": "stills\\m036_046\\shot_00616_f00011.jpg",
+          "size_bytes": 216932,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 21,
+          "file": "stills\\m036_046\\shot_00616_f00021.jpg",
+          "size_bytes": 220993,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00616.wav"
+    },
+    {
+      "shot_id": "shot:00617",
+      "start_tc": "00:39:37.375",
+      "end_tc": "00:39:48.553",
+      "duration_seconds": 11.177833,
+      "frame_count": 268,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00617_f00000.jpg",
+          "size_bytes": 362647,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 134,
+          "file": "stills\\m036_046\\shot_00617_f00134.jpg",
+          "size_bytes": 277572,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 267,
+          "file": "stills\\m036_046\\shot_00617_f00267.jpg",
+          "size_bytes": 283179,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00617.wav"
+    },
+    {
+      "shot_id": "shot:00618",
+      "start_tc": "00:39:48.553",
+      "end_tc": "00:40:00.982",
+      "duration_seconds": 12.429083,
+      "frame_count": 298,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00618_f00000.jpg",
+          "size_bytes": 297105,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 149,
+          "file": "stills\\m036_046\\shot_00618_f00149.jpg",
+          "size_bytes": 216352,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 297,
+          "file": "stills\\m036_046\\shot_00618_f00297.jpg",
+          "size_bytes": 201290,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00618.wav"
+    },
+    {
+      "shot_id": "shot:00619",
+      "start_tc": "00:40:00.982",
+      "end_tc": "00:40:13.661",
+      "duration_seconds": 12.679333,
+      "frame_count": 304,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00619_f00000.jpg",
+          "size_bytes": 311791,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 152,
+          "file": "stills\\m036_046\\shot_00619_f00152.jpg",
+          "size_bytes": 225872,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 303,
+          "file": "stills\\m036_046\\shot_00619_f00303.jpg",
+          "size_bytes": 259219,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00619.wav"
+    },
+    {
+      "shot_id": "shot:00620",
+      "start_tc": "00:40:13.661",
+      "end_tc": "00:40:27.175",
+      "duration_seconds": 13.5135,
+      "frame_count": 324,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00620_f00000.jpg",
+          "size_bytes": 319928,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 162,
+          "file": "stills\\m036_046\\shot_00620_f00162.jpg",
+          "size_bytes": 220249,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 323,
+          "file": "stills\\m036_046\\shot_00620_f00323.jpg",
+          "size_bytes": 177829,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00620.wav"
+    },
+    {
+      "shot_id": "shot:00621",
+      "start_tc": "00:40:27.175",
+      "end_tc": "00:40:34.057",
+      "duration_seconds": 6.881875,
+      "frame_count": 165,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00621_f00000.jpg",
+          "size_bytes": 310111,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 82,
+          "file": "stills\\m036_046\\shot_00621_f00082.jpg",
+          "size_bytes": 243079,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 164,
+          "file": "stills\\m036_046\\shot_00621_f00164.jpg",
+          "size_bytes": 228168,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00621.wav"
+    },
+    {
+      "shot_id": "shot:00622",
+      "start_tc": "00:40:34.057",
+      "end_tc": "00:40:35.558",
+      "duration_seconds": 1.5015,
+      "frame_count": 36,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00622_f00000.jpg",
+          "size_bytes": 277347,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 18,
+          "file": "stills\\m036_046\\shot_00622_f00018.jpg",
+          "size_bytes": 222433,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 35,
+          "file": "stills\\m036_046\\shot_00622_f00035.jpg",
+          "size_bytes": 214184,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00622.wav"
+    },
+    {
+      "shot_id": "shot:00623",
+      "start_tc": "00:40:35.558",
+      "end_tc": "00:40:37.977",
+      "duration_seconds": 2.419083,
+      "frame_count": 58,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00623_f00000.jpg",
+          "size_bytes": 204975,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 29,
+          "file": "stills\\m036_046\\shot_00623_f00029.jpg",
+          "size_bytes": 108962,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 57,
+          "file": "stills\\m036_046\\shot_00623_f00057.jpg",
+          "size_bytes": 108708,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00623.wav"
+    },
+    {
+      "shot_id": "shot:00624",
+      "start_tc": "00:40:37.977",
+      "end_tc": "00:40:46.402",
+      "duration_seconds": 8.425083,
+      "frame_count": 202,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00624_f00000.jpg",
+          "size_bytes": 268827,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 101,
+          "file": "stills\\m036_046\\shot_00624_f00101.jpg",
+          "size_bytes": 196056,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 201,
+          "file": "stills\\m036_046\\shot_00624_f00201.jpg",
+          "size_bytes": 205112,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00624.wav"
+    },
+    {
+      "shot_id": "shot:00625",
+      "start_tc": "00:40:46.402",
+      "end_tc": "00:40:47.570",
+      "duration_seconds": 1.167833,
+      "frame_count": 28,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00625_f00000.jpg",
+          "size_bytes": 208412,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 14,
+          "file": "stills\\m036_046\\shot_00625_f00014.jpg",
+          "size_bytes": 159217,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 27,
+          "file": "stills\\m036_046\\shot_00625_f00027.jpg",
+          "size_bytes": 150265,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00625.wav"
+    },
+    {
+      "shot_id": "shot:00626",
+      "start_tc": "00:40:47.570",
+      "end_tc": "00:40:48.071",
+      "duration_seconds": 0.5005,
+      "frame_count": 12,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00626_f00000.jpg",
+          "size_bytes": 138375,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 6,
+          "file": "stills\\m036_046\\shot_00626_f00006.jpg",
+          "size_bytes": 148751,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 11,
+          "file": "stills\\m036_046\\shot_00626_f00011.jpg",
+          "size_bytes": 149714,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00626.wav"
+    },
+    {
+      "shot_id": "shot:00627",
+      "start_tc": "00:40:48.071",
+      "end_tc": "00:40:49.238",
+      "duration_seconds": 1.167833,
+      "frame_count": 28,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00627_f00000.jpg",
+          "size_bytes": 138850,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 14,
+          "file": "stills\\m036_046\\shot_00627_f00014.jpg",
+          "size_bytes": 131325,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 27,
+          "file": "stills\\m036_046\\shot_00627_f00027.jpg",
+          "size_bytes": 134866,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00627.wav"
+    },
+    {
+      "shot_id": "shot:00628",
+      "start_tc": "00:40:49.238",
+      "end_tc": "00:40:55.244",
+      "duration_seconds": 6.006,
+      "frame_count": 144,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00628_f00000.jpg",
+          "size_bytes": 131426,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 72,
+          "file": "stills\\m036_046\\shot_00628_f00072.jpg",
+          "size_bytes": 192787,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 143,
+          "file": "stills\\m036_046\\shot_00628_f00143.jpg",
+          "size_bytes": 194474,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00628.wav"
+    },
+    {
+      "shot_id": "shot:00629",
+      "start_tc": "00:40:55.244",
+      "end_tc": "00:41:01.793",
+      "duration_seconds": 6.548208,
+      "frame_count": 157,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00629_f00000.jpg",
+          "size_bytes": 293265,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 78,
+          "file": "stills\\m036_046\\shot_00629_f00078.jpg",
+          "size_bytes": 225773,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 156,
+          "file": "stills\\m036_046\\shot_00629_f00156.jpg",
+          "size_bytes": 180014,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00629.wav"
+    },
+    {
+      "shot_id": "shot:00630",
+      "start_tc": "00:41:01.793",
+      "end_tc": "00:41:05.713",
+      "duration_seconds": 3.920583,
+      "frame_count": 94,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00630_f00000.jpg",
+          "size_bytes": 168949,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 47,
+          "file": "stills\\m036_046\\shot_00630_f00047.jpg",
+          "size_bytes": 165187,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 93,
+          "file": "stills\\m036_046\\shot_00630_f00093.jpg",
+          "size_bytes": 190493,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00630.wav"
+    },
+    {
+      "shot_id": "shot:00631",
+      "start_tc": "00:41:05.713",
+      "end_tc": "00:41:07.006",
+      "duration_seconds": 1.292958,
+      "frame_count": 31,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00631_f00000.jpg",
+          "size_bytes": 346946,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 15,
+          "file": "stills\\m036_046\\shot_00631_f00015.jpg",
+          "size_bytes": 311000,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 30,
+          "file": "stills\\m036_046\\shot_00631_f00030.jpg",
+          "size_bytes": 305132,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00631.wav"
+    },
+    {
+      "shot_id": "shot:00632",
+      "start_tc": "00:41:07.006",
+      "end_tc": "00:41:10.635",
+      "duration_seconds": 3.628625,
+      "frame_count": 87,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00632_f00000.jpg",
+          "size_bytes": 316118,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 43,
+          "file": "stills\\m036_046\\shot_00632_f00043.jpg",
+          "size_bytes": 225304,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 86,
+          "file": "stills\\m036_046\\shot_00632_f00086.jpg",
+          "size_bytes": 213678,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00632.wav"
+    },
+    {
+      "shot_id": "shot:00633",
+      "start_tc": "00:41:10.635",
+      "end_tc": "00:41:13.554",
+      "duration_seconds": 2.919583,
+      "frame_count": 70,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00633_f00000.jpg",
+          "size_bytes": 279633,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 35,
+          "file": "stills\\m036_046\\shot_00633_f00035.jpg",
+          "size_bytes": 228360,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 69,
+          "file": "stills\\m036_046\\shot_00633_f00069.jpg",
+          "size_bytes": 238123,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00633.wav"
+    },
+    {
+      "shot_id": "shot:00634",
+      "start_tc": "00:41:13.554",
+      "end_tc": "00:41:15.431",
+      "duration_seconds": 1.876875,
+      "frame_count": 45,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00634_f00000.jpg",
+          "size_bytes": 255722,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 22,
+          "file": "stills\\m036_046\\shot_00634_f00022.jpg",
+          "size_bytes": 221165,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 44,
+          "file": "stills\\m036_046\\shot_00634_f00044.jpg",
+          "size_bytes": 208768,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00634.wav"
+    },
+    {
+      "shot_id": "shot:00635",
+      "start_tc": "00:41:15.431",
+      "end_tc": "00:41:18.935",
+      "duration_seconds": 3.5035,
+      "frame_count": 84,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00635_f00000.jpg",
+          "size_bytes": 225462,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 42,
+          "file": "stills\\m036_046\\shot_00635_f00042.jpg",
+          "size_bytes": 183008,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 83,
+          "file": "stills\\m036_046\\shot_00635_f00083.jpg",
+          "size_bytes": 173859,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00635.wav"
+    },
+    {
+      "shot_id": "shot:00636",
+      "start_tc": "00:41:18.935",
+      "end_tc": "00:41:21.312",
+      "duration_seconds": 2.377375,
+      "frame_count": 57,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00636_f00000.jpg",
+          "size_bytes": 308810,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 28,
+          "file": "stills\\m036_046\\shot_00636_f00028.jpg",
+          "size_bytes": 274802,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 56,
+          "file": "stills\\m036_046\\shot_00636_f00056.jpg",
+          "size_bytes": 270074,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00636.wav"
+    },
+    {
+      "shot_id": "shot:00637",
+      "start_tc": "00:41:21.312",
+      "end_tc": "00:41:22.563",
+      "duration_seconds": 1.25125,
+      "frame_count": 30,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00637_f00000.jpg",
+          "size_bytes": 239729,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 15,
+          "file": "stills\\m036_046\\shot_00637_f00015.jpg",
+          "size_bytes": 206755,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 29,
+          "file": "stills\\m036_046\\shot_00637_f00029.jpg",
+          "size_bytes": 200614,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00637.wav"
+    },
+    {
+      "shot_id": "shot:00638",
+      "start_tc": "00:41:22.563",
+      "end_tc": "00:41:23.773",
+      "duration_seconds": 1.209542,
+      "frame_count": 29,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00638_f00000.jpg",
+          "size_bytes": 212412,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 14,
+          "file": "stills\\m036_046\\shot_00638_f00014.jpg",
+          "size_bytes": 192141,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 28,
+          "file": "stills\\m036_046\\shot_00638_f00028.jpg",
+          "size_bytes": 184660,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00638.wav"
+    },
+    {
+      "shot_id": "shot:00639",
+      "start_tc": "00:41:23.773",
+      "end_tc": "00:41:24.607",
+      "duration_seconds": 0.834167,
+      "frame_count": 20,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00639_f00000.jpg",
+          "size_bytes": 234522,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 10,
+          "file": "stills\\m036_046\\shot_00639_f00010.jpg",
+          "size_bytes": 216617,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 19,
+          "file": "stills\\m036_046\\shot_00639_f00019.jpg",
+          "size_bytes": 212997,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00639.wav"
+    },
+    {
+      "shot_id": "shot:00640",
+      "start_tc": "00:41:24.607",
+      "end_tc": "00:41:27.777",
+      "duration_seconds": 3.169833,
+      "frame_count": 76,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00640_f00000.jpg",
+          "size_bytes": 299524,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 38,
+          "file": "stills\\m036_046\\shot_00640_f00038.jpg",
+          "size_bytes": 247795,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 75,
+          "file": "stills\\m036_046\\shot_00640_f00075.jpg",
+          "size_bytes": 251554,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00640.wav"
+    },
+    {
+      "shot_id": "shot:00641",
+      "start_tc": "00:41:27.777",
+      "end_tc": "00:41:30.488",
+      "duration_seconds": 2.711042,
+      "frame_count": 65,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00641_f00000.jpg",
+          "size_bytes": 246150,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 32,
+          "file": "stills\\m036_046\\shot_00641_f00032.jpg",
+          "size_bytes": 219387,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 64,
+          "file": "stills\\m036_046\\shot_00641_f00064.jpg",
+          "size_bytes": 202720,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00641.wav"
+    },
+    {
+      "shot_id": "shot:00642",
+      "start_tc": "00:41:30.488",
+      "end_tc": "00:41:33.658",
+      "duration_seconds": 3.169833,
+      "frame_count": 76,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00642_f00000.jpg",
+          "size_bytes": 264048,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 38,
+          "file": "stills\\m036_046\\shot_00642_f00038.jpg",
+          "size_bytes": 205515,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 75,
+          "file": "stills\\m036_046\\shot_00642_f00075.jpg",
+          "size_bytes": 223345,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00642.wav"
+    },
+    {
+      "shot_id": "shot:00643",
+      "start_tc": "00:41:33.658",
+      "end_tc": "00:41:34.951",
+      "duration_seconds": 1.292958,
+      "frame_count": 31,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00643_f00000.jpg",
+          "size_bytes": 265953,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 15,
+          "file": "stills\\m036_046\\shot_00643_f00015.jpg",
+          "size_bytes": 217075,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 30,
+          "file": "stills\\m036_046\\shot_00643_f00030.jpg",
+          "size_bytes": 202832,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00643.wav"
+    },
+    {
+      "shot_id": "shot:00644",
+      "start_tc": "00:41:34.951",
+      "end_tc": "00:42:07.400",
+      "duration_seconds": 32.449083,
+      "frame_count": 778,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00644_f00000.jpg",
+          "size_bytes": 188323,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 389,
+          "file": "stills\\m036_046\\shot_00644_f00389.jpg",
+          "size_bytes": 291012,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 777,
+          "file": "stills\\m036_046\\shot_00644_f00777.jpg",
+          "size_bytes": 263424,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00644.wav"
+    },
+    {
+      "shot_id": "shot:00645",
+      "start_tc": "00:42:07.400",
+      "end_tc": "00:42:20.413",
+      "duration_seconds": 13.013,
+      "frame_count": 312,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00645_f00000.jpg",
+          "size_bytes": 377478,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 156,
+          "file": "stills\\m036_046\\shot_00645_f00156.jpg",
+          "size_bytes": 268699,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 311,
+          "file": "stills\\m036_046\\shot_00645_f00311.jpg",
+          "size_bytes": 289841,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00645.wav"
+    },
+    {
+      "shot_id": "shot:00646",
+      "start_tc": "00:42:20.413",
+      "end_tc": "00:43:04.749",
+      "duration_seconds": 44.335958,
+      "frame_count": 1063,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00646_f00000.jpg",
+          "size_bytes": 254668,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 531,
+          "file": "stills\\m036_046\\shot_00646_f00531.jpg",
+          "size_bytes": 232096,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 1062,
+          "file": "stills\\m036_046\\shot_00646_f01062.jpg",
+          "size_bytes": 193890,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00646.wav"
+    },
+    {
+      "shot_id": "shot:00647",
+      "start_tc": "00:43:04.749",
+      "end_tc": "00:43:20.431",
+      "duration_seconds": 15.682333,
+      "frame_count": 376,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00647_f00000.jpg",
+          "size_bytes": 413737,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 188,
+          "file": "stills\\m036_046\\shot_00647_f00188.jpg",
+          "size_bytes": 289288,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 375,
+          "file": "stills\\m036_046\\shot_00647_f00375.jpg",
+          "size_bytes": 195345,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00647.wav"
+    },
+    {
+      "shot_id": "shot:00648",
+      "start_tc": "00:43:20.431",
+      "end_tc": "00:43:28.439",
+      "duration_seconds": 8.008,
+      "frame_count": 192,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00648_f00000.jpg",
+          "size_bytes": 319254,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 96,
+          "file": "stills\\m036_046\\shot_00648_f00096.jpg",
+          "size_bytes": 210454,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 191,
+          "file": "stills\\m036_046\\shot_00648_f00191.jpg",
+          "size_bytes": 277873,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00648.wav"
+    },
+    {
+      "shot_id": "shot:00649",
+      "start_tc": "00:43:28.439",
+      "end_tc": "00:43:32.610",
+      "duration_seconds": 4.170833,
+      "frame_count": 100,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00649_f00000.jpg",
+          "size_bytes": 322291,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 50,
+          "file": "stills\\m036_046\\shot_00649_f00050.jpg",
+          "size_bytes": 72401,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 99,
+          "file": "stills\\m036_046\\shot_00649_f00099.jpg",
+          "size_bytes": 94872,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00649.wav"
+    },
+    {
+      "shot_id": "shot:00650",
+      "start_tc": "00:43:32.610",
+      "end_tc": "00:43:39.450",
+      "duration_seconds": 6.840167,
+      "frame_count": 164,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00650_f00000.jpg",
+          "size_bytes": 170048,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 82,
+          "file": "stills\\m036_046\\shot_00650_f00082.jpg",
+          "size_bytes": 187766,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 163,
+          "file": "stills\\m036_046\\shot_00650_f00163.jpg",
+          "size_bytes": 109043,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00650.wav"
+    },
+    {
+      "shot_id": "shot:00651",
+      "start_tc": "00:43:39.450",
+      "end_tc": "00:43:43.287",
+      "duration_seconds": 3.837167,
+      "frame_count": 92,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00651_f00000.jpg",
+          "size_bytes": 128591,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 46,
+          "file": "stills\\m036_046\\shot_00651_f00046.jpg",
+          "size_bytes": 210848,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 91,
+          "file": "stills\\m036_046\\shot_00651_f00091.jpg",
+          "size_bytes": 198232,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00651.wav"
+    },
+    {
+      "shot_id": "shot:00652",
+      "start_tc": "00:43:43.287",
+      "end_tc": "00:43:44.497",
+      "duration_seconds": 1.209542,
+      "frame_count": 29,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00652_f00000.jpg",
+          "size_bytes": 171892,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 14,
+          "file": "stills\\m036_046\\shot_00652_f00014.jpg",
+          "size_bytes": 168084,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 28,
+          "file": "stills\\m036_046\\shot_00652_f00028.jpg",
+          "size_bytes": 142493,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00652.wav"
+    },
+    {
+      "shot_id": "shot:00653",
+      "start_tc": "00:43:44.497",
+      "end_tc": "00:43:45.998",
+      "duration_seconds": 1.5015,
+      "frame_count": 36,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00653_f00000.jpg",
+          "size_bytes": 151847,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 18,
+          "file": "stills\\m036_046\\shot_00653_f00018.jpg",
+          "size_bytes": 166704,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 35,
+          "file": "stills\\m036_046\\shot_00653_f00035.jpg",
+          "size_bytes": 162102,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00653.wav"
+    },
+    {
+      "shot_id": "shot:00654",
+      "start_tc": "00:43:45.998",
+      "end_tc": "00:43:47.250",
+      "duration_seconds": 1.25125,
+      "frame_count": 30,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00654_f00000.jpg",
+          "size_bytes": 183575,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 15,
+          "file": "stills\\m036_046\\shot_00654_f00015.jpg",
+          "size_bytes": 198180,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 29,
+          "file": "stills\\m036_046\\shot_00654_f00029.jpg",
+          "size_bytes": 188979,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00654.wav"
+    },
+    {
+      "shot_id": "shot:00655",
+      "start_tc": "00:43:47.250",
+      "end_tc": "00:43:48.292",
+      "duration_seconds": 1.042708,
+      "frame_count": 25,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00655_f00000.jpg",
+          "size_bytes": 156307,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 12,
+          "file": "stills\\m036_046\\shot_00655_f00012.jpg",
+          "size_bytes": 167144,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 24,
+          "file": "stills\\m036_046\\shot_00655_f00024.jpg",
+          "size_bytes": 173508,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00655.wav"
+    },
+    {
+      "shot_id": "shot:00656",
+      "start_tc": "00:43:48.292",
+      "end_tc": "00:43:55.716",
+      "duration_seconds": 7.424083,
+      "frame_count": 178,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00656_f00000.jpg",
+          "size_bytes": 145435,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 89,
+          "file": "stills\\m036_046\\shot_00656_f00089.jpg",
+          "size_bytes": 128086,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 177,
+          "file": "stills\\m036_046\\shot_00656_f00177.jpg",
+          "size_bytes": 122332,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00656.wav"
+    },
+    {
+      "shot_id": "shot:00657",
+      "start_tc": "00:43:55.716",
+      "end_tc": "00:43:56.384",
+      "duration_seconds": 0.667333,
+      "frame_count": 16,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00657_f00000.jpg",
+          "size_bytes": 121573,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 8,
+          "file": "stills\\m036_046\\shot_00657_f00008.jpg",
+          "size_bytes": 118827,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 15,
+          "file": "stills\\m036_046\\shot_00657_f00015.jpg",
+          "size_bytes": 134956,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00657.wav"
+    },
+    {
+      "shot_id": "shot:00658",
+      "start_tc": "00:43:56.384",
+      "end_tc": "00:43:59.720",
+      "duration_seconds": 3.336667,
+      "frame_count": 80,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00658_f00000.jpg",
+          "size_bytes": 323322,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 40,
+          "file": "stills\\m036_046\\shot_00658_f00040.jpg",
+          "size_bytes": 260138,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 79,
+          "file": "stills\\m036_046\\shot_00658_f00079.jpg",
+          "size_bytes": 242036,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00658.wav"
+    },
+    {
+      "shot_id": "shot:00659",
+      "start_tc": "00:43:59.720",
+      "end_tc": "00:44:13.109",
+      "duration_seconds": 13.388375,
+      "frame_count": 321,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00659_f00000.jpg",
+          "size_bytes": 282156,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 160,
+          "file": "stills\\m036_046\\shot_00659_f00160.jpg",
+          "size_bytes": 227285,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 320,
+          "file": "stills\\m036_046\\shot_00659_f00320.jpg",
+          "size_bytes": 232671,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00659.wav"
+    },
+    {
+      "shot_id": "shot:00660",
+      "start_tc": "00:44:13.109",
+      "end_tc": "00:44:15.611",
+      "duration_seconds": 2.5025,
+      "frame_count": 60,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00660_f00000.jpg",
+          "size_bytes": 335632,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 30,
+          "file": "stills\\m036_046\\shot_00660_f00030.jpg",
+          "size_bytes": 265928,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 59,
+          "file": "stills\\m036_046\\shot_00660_f00059.jpg",
+          "size_bytes": 245791,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00660.wav"
+    },
+    {
+      "shot_id": "shot:00661",
+      "start_tc": "00:44:15.611",
+      "end_tc": "00:44:22.827",
+      "duration_seconds": 7.215542,
+      "frame_count": 173,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00661_f00000.jpg",
+          "size_bytes": 316036,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 86,
+          "file": "stills\\m036_046\\shot_00661_f00086.jpg",
+          "size_bytes": 203422,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 172,
+          "file": "stills\\m036_046\\shot_00661_f00172.jpg",
+          "size_bytes": 214691,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00661.wav"
+    },
+    {
+      "shot_id": "shot:00662",
+      "start_tc": "00:44:22.827",
+      "end_tc": "00:44:27.164",
+      "duration_seconds": 4.337667,
+      "frame_count": 104,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00662_f00000.jpg",
+          "size_bytes": 96029,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 52,
+          "file": "stills\\m036_046\\shot_00662_f00052.jpg",
+          "size_bytes": 98602,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 103,
+          "file": "stills\\m036_046\\shot_00662_f00103.jpg",
+          "size_bytes": 105384,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00662.wav"
+    },
+    {
+      "shot_id": "shot:00663",
+      "start_tc": "00:44:27.164",
+      "end_tc": "00:44:33.087",
+      "duration_seconds": 5.922583,
+      "frame_count": 142,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00663_f00000.jpg",
+          "size_bytes": 262436,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 71,
+          "file": "stills\\m036_046\\shot_00663_f00071.jpg",
+          "size_bytes": 224319,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 141,
+          "file": "stills\\m036_046\\shot_00663_f00141.jpg",
+          "size_bytes": 233841,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00663.wav"
+    },
+    {
+      "shot_id": "shot:00664",
+      "start_tc": "00:44:33.087",
+      "end_tc": "00:44:36.424",
+      "duration_seconds": 3.336667,
+      "frame_count": 80,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00664_f00000.jpg",
+          "size_bytes": 357728,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 40,
+          "file": "stills\\m036_046\\shot_00664_f00040.jpg",
+          "size_bytes": 289803,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 79,
+          "file": "stills\\m036_046\\shot_00664_f00079.jpg",
+          "size_bytes": 278787,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00664.wav"
+    },
+    {
+      "shot_id": "shot:00665",
+      "start_tc": "00:44:36.424",
+      "end_tc": "00:44:48.269",
+      "duration_seconds": 11.845167,
+      "frame_count": 284,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00665_f00000.jpg",
+          "size_bytes": 193879,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 142,
+          "file": "stills\\m036_046\\shot_00665_f00142.jpg",
+          "size_bytes": 186053,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 283,
+          "file": "stills\\m036_046\\shot_00665_f00283.jpg",
+          "size_bytes": 189341,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00665.wav"
+    },
+    {
+      "shot_id": "shot:00666",
+      "start_tc": "00:44:48.269",
+      "end_tc": "00:44:49.729",
+      "duration_seconds": 1.459792,
+      "frame_count": 35,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00666_f00000.jpg",
+          "size_bytes": 193482,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 17,
+          "file": "stills\\m036_046\\shot_00666_f00017.jpg",
+          "size_bytes": 141327,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 34,
+          "file": "stills\\m036_046\\shot_00666_f00034.jpg",
+          "size_bytes": 131064,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00666.wav"
+    },
+    {
+      "shot_id": "shot:00667",
+      "start_tc": "00:44:49.729",
+      "end_tc": "00:44:53.524",
+      "duration_seconds": 3.795458,
+      "frame_count": 91,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00667_f00000.jpg",
+          "size_bytes": 288927,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 45,
+          "file": "stills\\m036_046\\shot_00667_f00045.jpg",
+          "size_bytes": 210643,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 90,
+          "file": "stills\\m036_046\\shot_00667_f00090.jpg",
+          "size_bytes": 194442,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00667.wav"
+    },
+    {
+      "shot_id": "shot:00668",
+      "start_tc": "00:44:53.524",
+      "end_tc": "00:45:07.288",
+      "duration_seconds": 13.76375,
+      "frame_count": 330,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00668_f00000.jpg",
+          "size_bytes": 255400,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 165,
+          "file": "stills\\m036_046\\shot_00668_f00165.jpg",
+          "size_bytes": 165095,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 329,
+          "file": "stills\\m036_046\\shot_00668_f00329.jpg",
+          "size_bytes": 141264,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00668.wav"
+    },
+    {
+      "shot_id": "shot:00669",
+      "start_tc": "00:45:07.288",
+      "end_tc": "00:45:10.207",
+      "duration_seconds": 2.919583,
+      "frame_count": 70,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00669_f00000.jpg",
+          "size_bytes": 141646,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 35,
+          "file": "stills\\m036_046\\shot_00669_f00035.jpg",
+          "size_bytes": 211444,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 69,
+          "file": "stills\\m036_046\\shot_00669_f00069.jpg",
+          "size_bytes": 202256,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00669.wav"
+    },
+    {
+      "shot_id": "shot:00670",
+      "start_tc": "00:45:10.207",
+      "end_tc": "00:45:12.209",
+      "duration_seconds": 2.002,
+      "frame_count": 48,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00670_f00000.jpg",
+          "size_bytes": 274772,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 24,
+          "file": "stills\\m036_046\\shot_00670_f00024.jpg",
+          "size_bytes": 220430,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 47,
+          "file": "stills\\m036_046\\shot_00670_f00047.jpg",
+          "size_bytes": 211364,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00670.wav"
+    },
+    {
+      "shot_id": "shot:00671",
+      "start_tc": "00:45:12.209",
+      "end_tc": "00:45:16.714",
+      "duration_seconds": 4.5045,
+      "frame_count": 108,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00671_f00000.jpg",
+          "size_bytes": 313239,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 54,
+          "file": "stills\\m036_046\\shot_00671_f00054.jpg",
+          "size_bytes": 207775,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 107,
+          "file": "stills\\m036_046\\shot_00671_f00107.jpg",
+          "size_bytes": 206602,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00671.wav"
+    },
+    {
+      "shot_id": "shot:00672",
+      "start_tc": "00:45:16.714",
+      "end_tc": "00:45:19.884",
+      "duration_seconds": 3.169833,
+      "frame_count": 76,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00672_f00000.jpg",
+          "size_bytes": 244082,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 38,
+          "file": "stills\\m036_046\\shot_00672_f00038.jpg",
+          "size_bytes": 179878,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 75,
+          "file": "stills\\m036_046\\shot_00672_f00075.jpg",
+          "size_bytes": 169037,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00672.wav"
+    },
+    {
+      "shot_id": "shot:00673",
+      "start_tc": "00:45:19.884",
+      "end_tc": "00:45:21.677",
+      "duration_seconds": 1.793458,
+      "frame_count": 43,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00673_f00000.jpg",
+          "size_bytes": 264940,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 21,
+          "file": "stills\\m036_046\\shot_00673_f00021.jpg",
+          "size_bytes": 191585,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 42,
+          "file": "stills\\m036_046\\shot_00673_f00042.jpg",
+          "size_bytes": 184961,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00673.wav"
+    },
+    {
+      "shot_id": "shot:00674",
+      "start_tc": "00:45:21.677",
+      "end_tc": "00:45:23.638",
+      "duration_seconds": 1.960292,
+      "frame_count": 47,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00674_f00000.jpg",
+          "size_bytes": 290950,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 23,
+          "file": "stills\\m036_046\\shot_00674_f00023.jpg",
+          "size_bytes": 216715,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 46,
+          "file": "stills\\m036_046\\shot_00674_f00046.jpg",
+          "size_bytes": 215381,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00674.wav"
+    },
+    {
+      "shot_id": "shot:00675",
+      "start_tc": "00:45:23.638",
+      "end_tc": "00:45:27.767",
+      "duration_seconds": 4.129125,
+      "frame_count": 99,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00675_f00000.jpg",
+          "size_bytes": 243185,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 49,
+          "file": "stills\\m036_046\\shot_00675_f00049.jpg",
+          "size_bytes": 160959,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 98,
+          "file": "stills\\m036_046\\shot_00675_f00098.jpg",
+          "size_bytes": 153662,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00675.wav"
+    },
+    {
+      "shot_id": "shot:00676",
+      "start_tc": "00:45:27.767",
+      "end_tc": "00:45:29.185",
+      "duration_seconds": 1.418083,
+      "frame_count": 34,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00676_f00000.jpg",
+          "size_bytes": 272634,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 17,
+          "file": "stills\\m036_046\\shot_00676_f00017.jpg",
+          "size_bytes": 190742,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 33,
+          "file": "stills\\m036_046\\shot_00676_f00033.jpg",
+          "size_bytes": 180744,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00676.wav"
+    },
+    {
+      "shot_id": "shot:00677",
+      "start_tc": "00:45:29.185",
+      "end_tc": "00:45:30.561",
+      "duration_seconds": 1.376375,
+      "frame_count": 33,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00677_f00000.jpg",
+          "size_bytes": 263977,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 16,
+          "file": "stills\\m036_046\\shot_00677_f00016.jpg",
+          "size_bytes": 209196,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 32,
+          "file": "stills\\m036_046\\shot_00677_f00032.jpg",
+          "size_bytes": 199393,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00677.wav"
+    },
+    {
+      "shot_id": "shot:00678",
+      "start_tc": "00:45:30.561",
+      "end_tc": "00:45:34.440",
+      "duration_seconds": 3.878875,
+      "frame_count": 93,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00678_f00000.jpg",
+          "size_bytes": 275894,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 46,
+          "file": "stills\\m036_046\\shot_00678_f00046.jpg",
+          "size_bytes": 207570,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 92,
+          "file": "stills\\m036_046\\shot_00678_f00092.jpg",
+          "size_bytes": 200001,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00678.wav"
+    },
+    {
+      "shot_id": "shot:00679",
+      "start_tc": "00:45:34.440",
+      "end_tc": "00:45:41.948",
+      "duration_seconds": 7.5075,
+      "frame_count": 180,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00679_f00000.jpg",
+          "size_bytes": 254474,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 90,
+          "file": "stills\\m036_046\\shot_00679_f00090.jpg",
+          "size_bytes": 165770,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 179,
+          "file": "stills\\m036_046\\shot_00679_f00179.jpg",
+          "size_bytes": 165223,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00679.wav"
+    },
+    {
+      "shot_id": "shot:00680",
+      "start_tc": "00:45:41.948",
+      "end_tc": "00:45:44.742",
+      "duration_seconds": 2.794458,
+      "frame_count": 67,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00680_f00000.jpg",
+          "size_bytes": 200779,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 33,
+          "file": "stills\\m036_046\\shot_00680_f00033.jpg",
+          "size_bytes": 153663,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 66,
+          "file": "stills\\m036_046\\shot_00680_f00066.jpg",
+          "size_bytes": 150306,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00680.wav"
+    },
+    {
+      "shot_id": "shot:00681",
+      "start_tc": "00:45:44.742",
+      "end_tc": "00:45:48.955",
+      "duration_seconds": 4.212542,
+      "frame_count": 101,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00681_f00000.jpg",
+          "size_bytes": 244318,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 50,
+          "file": "stills\\m036_046\\shot_00681_f00050.jpg",
+          "size_bytes": 167681,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 100,
+          "file": "stills\\m036_046\\shot_00681_f00100.jpg",
+          "size_bytes": 162718,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00681.wav"
+    },
+    {
+      "shot_id": "shot:00682",
+      "start_tc": "00:45:48.955",
+      "end_tc": "00:45:50.957",
+      "duration_seconds": 2.002,
+      "frame_count": 48,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00682_f00000.jpg",
+          "size_bytes": 276734,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 24,
+          "file": "stills\\m036_046\\shot_00682_f00024.jpg",
+          "size_bytes": 192532,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 47,
+          "file": "stills\\m036_046\\shot_00682_f00047.jpg",
+          "size_bytes": 178988,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00682.wav"
+    },
+    {
+      "shot_id": "shot:00683",
+      "start_tc": "00:45:50.957",
+      "end_tc": "00:45:52.959",
+      "duration_seconds": 2.002,
+      "frame_count": 48,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00683_f00000.jpg",
+          "size_bytes": 269121,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 24,
+          "file": "stills\\m036_046\\shot_00683_f00024.jpg",
+          "size_bytes": 203483,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 47,
+          "file": "stills\\m036_046\\shot_00683_f00047.jpg",
+          "size_bytes": 172663,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00683.wav"
+    },
+    {
+      "shot_id": "shot:00684",
+      "start_tc": "00:45:52.959",
+      "end_tc": "00:45:56.087",
+      "duration_seconds": 3.128125,
+      "frame_count": 75,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00684_f00000.jpg",
+          "size_bytes": 260664,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 37,
+          "file": "stills\\m036_046\\shot_00684_f00037.jpg",
+          "size_bytes": 193512,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 74,
+          "file": "stills\\m036_046\\shot_00684_f00074.jpg",
+          "size_bytes": 182849,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00684.wav"
+    },
+    {
+      "shot_id": "shot:00685",
+      "start_tc": "00:45:56.087",
+      "end_tc": "00:46:00.800",
+      "duration_seconds": 4.713042,
+      "frame_count": 113,
+      "still_samples": [
+        {
+          "frame_index": 0,
+          "file": "stills\\m036_046\\shot_00685_f00000.jpg",
+          "size_bytes": 346902,
+          "blank": false,
+          "role": "first"
+        },
+        {
+          "frame_index": 56,
+          "file": "stills\\m036_046\\shot_00685_f00056.jpg",
+          "size_bytes": 273020,
+          "blank": false,
+          "role": "median"
+        },
+        {
+          "frame_index": 112,
+          "file": "stills\\m036_046\\shot_00685_f00112.jpg",
+          "size_bytes": 240718,
+          "blank": false,
+          "role": "last"
+        }
+      ],
+      "stem": "audio\\stems\\m036_046\\shot_00685.wav"
+    }
+  ],
+  "failures": []
+}

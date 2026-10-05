@@ -1,0 +1,21 @@
+# graph_length_seconds: 6.583
+# graph_length_frames: 158
+# source_duration_seconds: 6.01
+
+subject_definitions:
+<Subject 1>: the blond man, muscular, brown belt with a gold buckle, bone necklace. Seen in <Picture 1>.
+<Picture 1>: a still of the blond man, muscular, brown belt with a gold buckle, bone necklace. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, dense jungle. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. Larn in dense jungle.
+[Shot 2] At 00:00:02.5, the camera pushes in slowly. Larn in dense forest.
+[Shot 3] At 00:00:05.0, the camera pushes in slowly. the figures in dense jungle.
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A

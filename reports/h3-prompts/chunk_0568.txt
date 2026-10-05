@@ -1,0 +1,21 @@
+# graph_length_seconds: 6.583
+# graph_length_frames: 158
+# source_duration_seconds: 6.51
+
+subject_definitions:
+<Subject 1>: the pale man with long white hair in a dark purple robe. Seen in <Picture 1>.
+<Picture 1>: a still of the pale man with long white hair in a dark purple robe. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 2]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, ice cave. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. the figures in ice cave.
+[Shot 2] At 00:00:02.5, the camera pushes in slowly. Nekron in icy landscape.
+[Shot 3] At 00:00:05.0, the camera pushes in slowly. the figures in ice cave.
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A

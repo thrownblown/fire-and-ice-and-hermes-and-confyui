@@ -1,0 +1,20 @@
+[22:28:19] hashing master Fire.And.Ice.1983.1080p.BluRay.x264-[YTS.AM].mp4
+[22:28:20] sha256=2d6195fbb16c9ab34d3f8eff8709a349bcdccdd39f07391fda721f1827d5cc93 in 0.9s
+[22:28:20] opening video for cut detection
+[22:28:20] reported fps=23.976024 duration=01:21:38.060
+[22:28:20] detecting cuts (threshold=27.0, min_len=12)
+[22:33:35] detection finished in 315.0s
+[22:33:35] detected 1308 scenes
+E:\FNI\cut_detect.py:118: DeprecationWarning: get_frames() is deprecated, use the `frame_num` property instead.
+  start_f = start.get_frames()
+E:\FNI\cut_detect.py:119: DeprecationWarning: get_frames() is deprecated, use the `frame_num` property instead.
+  end_f = end.get_frames()  # exclusive: first frame of next shot
+[22:33:35] coverage: 117436 frames / 4898.060s
+
+wrote master.json, shots.jsonl (1308 shots), cut_detect.log
+
+duration: min=0.500s  median=2.419s  max=244.077s
+shots exceeding H3 trained max (362f): 24
+shots floored to 124f minimum:         1093
+
+total H3 generated seconds if 1 take/shot: 8133.6s

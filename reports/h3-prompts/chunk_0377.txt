@@ -1,0 +1,21 @@
+# graph_length_seconds: 8.000
+# graph_length_frames: 192
+# source_duration_seconds: 7.42
+
+subject_definitions:
+<Subject 1>: the blond man, muscular, brown belt with a gold buckle, bone necklace. Seen in <Picture 1>.
+<Picture 1>: a still of the blond man, muscular, brown belt with a gold buckle, bone necklace. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, ruined castle by water. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. Larn in ruined castle by water.
+[Shot 2] At 00:00:02.5, the camera pushes in slowly. the figures in coastal cliff with distant city.
+[Shot 3] At 00:00:05.0, the camera pushes in slowly. the figures in ruined cityscape. <Subject 1> (S1) says, <d>[English] Teegra!.</d>
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A

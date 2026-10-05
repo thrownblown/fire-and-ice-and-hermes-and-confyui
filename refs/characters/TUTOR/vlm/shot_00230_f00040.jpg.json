@@ -1,0 +1,7 @@
+{
+ "file": "shot_00230_f00040.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5540402,
+ "size": 211985,
+ "text": "A female figure reclines on purple cushions, body angled diagonally, head tilted back, mouth slightly open, one arm raised and reaching outward. Light brown skin, short black bob. Pale light blue ancient-style garment, wide gold belt with circular medallions, gold shoulder strap detail. (corrected by cross-check vision model: local VLM misgendered this figure)"
+}

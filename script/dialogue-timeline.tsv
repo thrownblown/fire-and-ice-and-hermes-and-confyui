@@ -1,0 +1,291 @@
+id	scene	cue	start	end	speaker	conf	text
+L001	S01	1	00:02:41,703	00:02:44,913	NARRATOR	HIGH	And her ambition was to extend her realm...
+L002	S01	2	00:02:44,998	00:02:47,166	NARRATOR	HIGH	to all the regions of the known world.
+L003	S01	3	00:02:47,250	00:02:50,335	NARRATOR	HIGH	To this end, she gathered an army.
+L004	S01	4	00:02:50,420	00:02:54,298	NARRATOR	HIGH	And she bore a son, and named him Nekron.
+L005	S01	5	00:02:54,382	00:02:59,094	NARRATOR	HIGH	And him she tutored in the black arts and in the powers of the mind.
+L006	S01	6	00:02:59,596	00:03:02,264	NARRATOR	HIGH	And when Nekron came of age...
+L007	S01	7	00:03:02,348	00:03:05,058	NARRATOR	HIGH	and attained mastery of those powers...
+L008	S01	8	00:03:05,143	00:03:08,854	NARRATOR	HIGH	together they seized control of the region of Ice.
+L009	S01	9	00:03:09,105	00:03:11,356	NARRATOR	HIGH	And from their castle called Ice Peak...
+L010	S01	10	00:03:11,441	00:03:14,359	NARRATOR	HIGH	they sent a giant glacier rumbling southward.
+L011	S01	11	00:03:14,444	00:03:19,156	NARRATOR	HIGH	No village or people could stand against its relentless onslaught.
+L012	S01	12	00:03:19,449	00:03:23,035	NARRATOR	HIGH	And so the remnants of humanity fled south...
+L013	S01	13	00:03:23,119	00:03:26,038	NARRATOR	HIGH	and huddled for warmth among the volcanoes...
+L014	S01	14	00:03:26,122	00:03:30,751	NARRATOR	HIGH	of a mountain region ruled by a generous king named Jarol...
+L015	S01	15	00:03:30,835	00:03:34,463	NARRATOR	HIGH	from his fortress, which men called Fire Keep.
+L016	S01	16	00:03:34,797	00:03:38,717	NARRATOR	HIGH	And still Nekron pushed the Ice ever southward...
+L017	S01	17	00:03:38,801	00:03:42,679	NARRATOR	HIGH	into the temperate zone toward Fire Keep.
+L018	S01	18	00:03:42,764	00:03:46,058	NARRATOR	HIGH	And no one dared guess at the outcome...
+L019	S01	19	00:03:46,142	00:03:49,228	NARRATOR	HIGH	of a meeting on the field of battle...
+L020	S01	20	00:03:49,312	00:03:51,480	NARRATOR	HIGH	between Fire and Ice.
+L021	S02	21	00:04:26,391	00:04:29,268	VILLAGE CHIEF	LOW	Hold your positions, men. Steady.
+L022	S02	22	00:04:41,281	00:04:44,574	VILLAGE ELDER	LOW	Larn, it cannot be stopped. Join your brother.
+L023	S03	23	00:06:56,249	00:06:58,417	JULIANA	HIGH	You have done well, my son.
+L024	S03	24	00:06:59,168	00:07:02,796	JULIANA	HIGH	The North Village has fallen. We have won.
+L025	S03	25	00:07:03,256	00:07:05,465	NEKRON	HIGH	I want to thank you, Mother.
+L026	S03	26	00:07:05,925	00:07:10,053	NEKRON	HIGH	The Great Plain is all that stands between ourselves and Fire Keep.
+L027	S03	27	00:07:10,680	00:07:12,681	JULIANA	HIGH	That is a long distance.
+L028	S03	28	00:07:13,641	00:07:16,101	NEKRON	HIGH	A distance we may not have to travel.
+L029	S03	29	00:07:16,853	00:07:20,647	NEKRON	HIGH	I am sending our envoys to Jarol with our new demands.
+L030	S03	30	00:07:20,940	00:07:24,025	JULIANA	HIGH	He will not submit.
+L031	S03	30	00:07:20,940	00:07:24,025	NEKRON	HIGH	Perhaps.
+L032	S03	31	00:07:24,110	00:07:28,071	NEKRON	HIGH	You will present our demands to King Jarol at Fire Keep and...
+L033	S03	32	00:07:28,614	00:07:31,908	NEKRON	HIGH	give our royal regards to his lovely daughter.
+L034	S04	33	00:12:55,691	00:12:58,526	TEEGRA	HIGH	But, Father, I want to be with you when you meet Nekron's men.
+L035	S04	34	00:12:58,611	00:13:01,905	JAROL	HIGH	You will serve your people better here with your studies, my daughter.
+L036	S04	35	00:13:01,989	00:13:03,364	JAROL	HIGH	Give me your love.
+L037	S04	36	00:13:05,743	00:13:07,535	TEEGRA	HIGH	You have it always, Father.
+L038	S05	37	00:13:23,177	00:13:26,429	TUTOR	HIGH	All matter in our world is from the natural bases...
+L039	S05	38	00:13:26,514	00:13:29,182	TUTOR	HIGH	which are earth, air, fire and water...
+L040	S05	39	00:13:32,311	00:13:35,688	TUTOR	HIGH	the four elements from which all things are created.
+L041	S05	40	00:13:36,398	00:13:40,860	TEEGRA	HIGH	How can you talk about elements when the war draws nearer to us every hour?
+L042	S05	41	00:13:41,278	00:13:44,531	TUTOR	HIGH	Princess Teegra, we all have our duty.
+L043	S05	42	00:13:44,615	00:13:47,200	TUTOR	HIGH	Your father's duty is to be king and lead.
+L044	S05	43	00:13:47,493	00:13:52,413	TUTOR	HIGH	Your brother's duty is to soldier. And your duty is to learn.
+L045	S05	44	00:13:53,249	00:13:55,834	TEEGRA	HIGH	You mean my duty is to stay shut up...
+L046	S05	45	00:13:55,918	00:13:59,295	TEEGRA	HIGH	while all the men do the fighting and share all the glory.
+L047	S05	46	00:14:00,923	00:14:03,049	TEEGRA	HIGH	We think that stinks.
+L048	S05	47	00:14:04,927	00:14:06,427	TEEGRA	HIGH	Don't we, Shaitan?
+L049	S06	48	00:14:06,512	00:14:10,557	ENVOY	HIGH	If you peacefully surrender, my lord Nekron will cease the destruction of-
+L050	S06	49	00:14:10,641	00:14:12,141	TARO	HIGH	This is your message of peace?
+L051	S06	50	00:14:12,226	00:14:15,311	TARO	HIGH	A demand for our total and unconditional surrender?
+L052	S06	51	00:14:15,396	00:14:18,940	ENVOY	HIGH	We call it an offer of alliance, Your Majesty.
+L053	S06	52	00:14:19,024	00:14:20,817	TARO	HIGH	I call it blackmail.
+L054	S06	53	00:14:20,901	00:14:23,236	ENVOY	HIGH	My lord Nekron's offer-
+L055	S06	54	00:14:23,320	00:14:27,282	TARO	HIGH	To hell with Nekron and his offer. We are free men, not slaves.
+L056	S06	55	00:14:29,034	00:14:30,952	ENVOY	HIGH	King Jarol, be reasonable.
+L057	S06	56	00:14:31,954	00:14:35,164	JAROL	HIGH	My son, Taro, speaks more with his heart than with his head.
+L058	S06	57	00:14:35,249	00:14:37,208	JAROL	HIGH	But he speaks for all of us.
+L059	S06	58	00:14:37,293	00:14:39,168	JAROL	HIGH	There can be no alliance.
+L060	S06	59	00:14:39,253	00:14:41,379	JAROL	HIGH	We will fight you to the death.
+L061	S06	60	00:14:41,463	00:14:46,175	ENVOY	HIGH	Perhaps, you will soon change your mind.
+L062	S07	61	00:15:37,353	00:15:38,478	TEEGRA	HIGH	No!
+L063	S07	62	00:16:06,840	00:16:08,091	JAROL	HIGH	Teegra!
+L064	S07	63	00:16:08,759	00:16:10,051	JAROL	HIGH	Guards!
+L065	S07	64	00:16:23,774	00:16:26,985	JAROL	LOW	Make for the glacier. Man the Dragonhawks.
+L066	S07	65	00:16:27,152	00:16:29,070	JAROL	LOW	Hurry!
+L067	S08	66	00:16:49,091	00:16:52,093	TARO	HIGH	The Dragonhawks will find her, Father. They've got to.
+L068	S08	67	00:16:52,886	00:16:57,765	JAROL	HIGH	The night's so dark, the jungle so thick. A bird couldn't find its own nest.
+L069	S08	68	00:17:00,227	00:17:04,022	TARO	HIGH	What do we do then, Father?
+L070	S08	68	00:17:00,227	00:17:04,022	JAROL	HIGH	We wait.
+L071	S08	69	00:17:04,565	00:17:07,775	TARO	HIGH	For Nekron's new demands?
+L072	S08	69	00:17:04,565	00:17:07,775	JAROL	HIGH	For his siege!
+L073	S09	70	00:25:45,877	00:25:49,838	JULIANA	HIGH	What is your report? Have you done as I commanded?
+L074	S09	71	00:25:50,465	00:25:53,968	JULIANA	HIGH	Have you captured the girl, Teegra, Jarol's daughter?
+L075	S09	72	00:25:54,886	00:25:56,428	JULIANA	HIGH	Where is she?
+L076	S09	73	00:25:56,888	00:25:59,473	JULIANA	HIGH	Bring her forth that I may see her.
+L077	S09	74	00:26:00,308	00:26:02,351	SUBHUMAN	HIGH	Gone.
+L078	S09	74	00:26:00,308	00:26:02,351	JULIANA	HIGH	Gone?
+L079	S09	75	00:26:03,478	00:26:04,812	JULIANA	HIGH	Gone!
+L080	S09	76	00:26:04,896	00:26:08,983	JULIANA	HIGH	Escaped? You filth-spawned scum!
+L081	S09	77	00:26:13,363	00:26:16,156	JULIANA	HIGH	What punishment does failure demand?
+L082	S09	78	00:26:17,993	00:26:19,994	NEKRON	HIGH	Death.
+L083	S09	79	00:26:31,047	00:26:34,633	JULIANA	HIGH	Find the girl. Find her, or his punishment shall be yours.
+L084	S10	80	00:29:07,328	00:29:09,163	LARN	HIGH	Gods of my father.
+L085	S11	81	00:31:14,247	00:31:15,914	LARN	LOW	What do you want?
+L086	S11	82	00:31:29,554	00:31:32,264	LARN	HIGH	If you want it, take it.
+L087	S11	83	00:31:37,645	00:31:39,730	TEEGRA	HIGH	I am not a thief.
+L088	S11	84	00:33:19,622	00:33:22,416	LARN	HIGH	Not so close, you'll burn it.
+L089	S11	85	00:33:22,500	00:33:24,918	TEEGRA	HIGH	I've always lived close to a fire.
+L090	S11	86	00:33:29,090	00:33:32,676	TEEGRA	HIGH	Sometimes in the night, I'm so afraid.
+L091	S11	87	00:33:50,987	00:33:52,487	LARN	HIGH	It's getting colder.
+L092	S11	88	00:34:02,290	00:34:06,251	TEEGRA	HIGH	Cold comes from Nekron.
+L093	S11	88	00:34:02,290	00:34:06,251	LARN	HIGH	I know.
+L094	S11	89	00:34:17,930	00:34:20,682	TEEGRA	HIGH	Where are you going?
+L095	S11	89	00:34:17,930	00:34:20,682	LARN	HIGH	I'm going home to my people.
+L096	S11	90	00:34:24,479	00:34:27,606	TEEGRA	HIGH	Where is home?
+L097	S11	90	00:34:24,479	00:34:27,606	LARN	HIGH	Far away, to the south.
+L098	S11	91	00:34:27,690	00:34:30,233	TEEGRA	HIGH	I'm going south, too.
+L099	S11	91	00:34:27,690	00:34:30,233	LARN	HIGH	Yeah?
+L100	S11	92	00:34:30,318	00:34:33,570	TEEGRA	HIGH	You can come along if you behave yourself.
+L101	S11	93	00:34:33,654	00:34:35,113	LARN	HIGH	If I behave myself?
+L102	S11	94	00:34:38,951	00:34:40,035	TEEGRA	HIGH	No.
+L103	S11	95	00:35:23,663	00:35:25,413	TEEGRA	LOW	Larn.
+L104	S12	96	00:37:11,979	00:37:15,857	LARN	HIGH	You've caught me, but you'll never hand me over to Nekron.
+L105	S12	97	00:37:15,942	00:37:17,817	LARN	HIGH	You'll have to kill me first.
+L106	S12	98	00:37:22,156	00:37:24,282	DARKWOLF	HIGH	Don't hunt for death, boy.
+L107	S12	99	00:37:25,868	00:37:27,827	DARKWOLF	HIGH	It finds us all soon enough.
+L108	S12	100	00:37:33,584	00:37:38,171	DARKWOLF	HIGH	The travois was to keep you from killing yourself till you're all healed.
+L109	S12	101	00:37:39,507	00:37:41,466	DARKWOLF	HIGH	You need rest and food.
+L110	S12	102	00:37:47,306	00:37:52,978	DARKWOLF	HIGH	If you're gonna kill the Ice Lord, boy, you better learn to live with pain.
+L111	S12	103	00:37:55,690	00:37:59,276	LARN	HIGH	Ice Lord? You mean you're fighting Nekron?
+L112	S12	104	00:37:59,360	00:38:01,361	DARKWOLF	HIGH	Him and his mother.
+L113	S12	105	00:38:02,488	00:38:04,990	DARKWOLF	HIGH	That wolf bitch, Juliana.
+L114	S13	106	00:38:17,003	00:38:18,253	LARN	HIGH	Teegra!
+L115	S13	107	00:38:21,132	00:38:22,716	DARKWOLF	HIGH	They were here.
+L116	S13	108	00:38:23,050	00:38:25,552	DARKWOLF	HIGH	Nekron's dogs, they got the girl.
+L117	S13	109	00:38:26,595	00:38:28,388	DARKWOLF	HIGH	They took her west.
+L118	S13	110	00:38:38,566	00:38:40,233	DARKWOLF	LOW	Guard Teegra.
+L119	S13	111	00:39:21,359	00:39:23,777	DARKWOLF	HIGH	They camped less than two miles from here.
+L120	S13	112	00:39:23,861	00:39:25,111	DARKWOLF	HIGH	Come.
+L121	S14	113	00:41:53,969	00:41:57,305	DARKWOLF	HIGH	I saw the girl before. She is on the far side of the big tree.
+L122	S14	114	00:41:58,432	00:42:02,018	DARKWOLF	HIGH	You go get her out, and I'll distract the others.
+L123	S14	115	00:42:02,102	00:42:05,980	LARN	HIGH	There must be 50 of them.
+L124	S14	115	00:42:02,102	00:42:05,980	DARKWOLF	HIGH	That sounds about right.
+L125	S14	116	00:43:32,568	00:43:34,944	DARKWOLF	LOW	Where's the girl?
+L126	S14	116	00:43:32,568	00:43:34,944	LARN	LOW	I couldn't find her.
+L127	S14	117	00:44:00,137	00:44:02,513	LARN	LOW	No!
+L128	S14	117	00:44:00,137	00:44:02,513	LARN	LOW	The horses!
+L129	S14	118	00:44:02,598	00:44:05,183	DARKWOLF	HIGH	No, they'd be on our heels before we could reach them.
+L130	S14	119	00:44:05,267	00:44:08,478	LARN	HIGH	But Teegra's still back there.
+L131	S14	119	00:44:05,267	00:44:08,478	DARKWOLF	HIGH	Then we'll come back for her.
+L132	S14	120	00:44:08,562	00:44:11,189	DARKWOLF	HIGH	First, we lead the Nekron's dogs on a wild chase.
+L133	S14	121	00:44:11,273	00:44:12,357	DARKWOLF	HIGH	Come.
+L134	S14	122	00:45:05,035	00:45:07,245	DARKWOLF	HIGH	We'll take our stand up there. Come.
+L135	S14	123	00:45:14,586	00:45:15,670	JAROL	LOW	Enough!
+L136	S15	124	00:45:16,463	00:45:19,340	JAROL	HIGH	I want you to go to Nekron, to his mother,Juliana.
+L137	S15	125	00:45:20,843	00:45:22,969	JAROL	LOW	We must negotiate.
+L138	S15	125	00:45:20,843	00:45:22,969	TARO	LOW	With the enemy?
+L139	S15	126	00:45:23,971	00:45:25,430	JAROL	HIGH	No man is wholly evil.
+L140	S15	127	00:45:25,514	00:45:27,640	JAROL	HIGH	Surely there is some way to appeal to Nekron.
+L141	S15	128	00:45:27,725	00:45:29,100	TARO	HIGH	You expect his mercy?
+L142	S15	129	00:45:30,519	00:45:34,355	TARO	HIGH	Father, do you know what he will do if I enter his land under a flag of truce?
+L143	S15	130	00:45:34,440	00:45:36,107	JAROL	HIGH	We have no choice!
+L144	S15	131	00:45:36,525	00:45:37,567	JAROL	HIGH	We must take that risk.
+L145	S15	132	00:45:37,651	00:45:41,821	JAROL	HIGH	You must take that risk, my son, for the sake of Fire Keep.
+L146	S15	133	00:45:42,573	00:45:44,407	JAROL	HIGH	For the sake of your sister.
+L147	S15	134	00:45:45,826	00:45:48,828	JAROL	HIGH	Go, ride swiftly.
+L148	S16	135	00:46:14,521	00:46:16,606	ROLIEL	HIGH	Welcome to my hearth.
+L149	S16	136	00:46:16,690	00:46:19,984	ROLIEL	HIGH	I am Roliel and these woods are my home.
+L150	S16	137	00:46:20,527	00:46:23,362	ROLIEL	HIGH	You've had a trying journey.
+L151	S16	138	00:46:24,740	00:46:27,450	ROLIEL	HIGH	Please let me give you some food and drink.
+L152	S16	139	00:46:27,534	00:46:30,203	ROLIEL	HIGH	First, you shall rest. Then we will talk.
+L153	S16	140	00:46:32,039	00:46:33,998	ROLIEL	HIGH	Poor, poor darling.
+L154	S16	141	00:46:34,374	00:46:37,502	ROLIEL	HIGH	Did Great Otwa frighten you?
+L155	S16	142	00:46:37,586	00:46:42,590	ROLIEL	HIGH	You mustn't be afraid. He's as gentle as a child.
+L156	S16	143	00:46:48,806	00:46:51,307	TEEGRA	HIGH	I saw him twist a chain apart with his bare hands.
+L157	S16	144	00:46:51,391	00:46:54,852	ROLIEL	HIGH	Yes, he is strong, my sweet.
+L158	S16	145	00:46:55,646	00:46:59,398	ROLIEL	HIGH	But he means well, my darling . He brought you to me, did he not?
+L159	S16	146	00:47:06,490	00:47:07,657	TEEGRA	HIGH	I'm so tired.
+L160	S16	147	00:47:07,741	00:47:11,369	ROLIEL	HIGH	Yes, my poor, poor darling.
+L161	S16	148	00:47:12,037	00:47:14,413	ROLIEL	HIGH	Yes, you're so tired...
+L162	S16	149	00:47:16,124	00:47:18,125	ROLIEL	HIGH	and so beautiful.
+L163	S16	150	00:47:18,210	00:47:19,585	ROLIEL	HIGH	You must...
+L164	S16	151	00:47:39,982	00:47:41,774	ROLIEL	HIGH	Tell me your secrets.
+L165	S16	152	00:47:46,113	00:47:47,113	ROLIEL	HIGH	Nekron?
+L166	S16	153	00:47:51,285	00:47:56,372	ROLIEL	HIGH	The girl is wanted by Nekron? The bitch!
+L167	S16	154	00:47:56,456	00:47:58,958	ROLIEL	HIGH	She brings danger into my house!
+L168	S16	155	00:48:05,173	00:48:08,175	ROLIEL	HIGH	Perhaps I can turn this to my advantage.
+L169	S16	156	00:48:09,678	00:48:11,095	ROLIEL	HIGH	Otwa, my son.
+L170	S16	157	00:48:12,681	00:48:16,058	ROLIEL	HIGH	Go and bring the subhumans, Nekron's dogs.
+L171	S16	158	00:48:16,476	00:48:18,936	ROLIEL	HIGH	Tell them we have the girl that he wants.
+L172	S16	159	00:48:21,106	00:48:24,233	ROLIEL	HIGH	Tell them he can have her, for a price.
+L173	S17	160	00:48:54,056	00:48:55,056	ROLIEL	LOW	Kill.
+L174	S17	161	00:48:59,353	00:49:00,561	DARKWOLF	LOW	Get out of here.
+L175	S17	162	00:49:00,646	00:49:03,230	LARN	LOW	No.
+L176	S17	162	00:49:00,646	00:49:03,230	DARKWOLF	LOW	The hell you won't.
+L177	S17	163	00:49:03,398	00:49:04,774	DARKWOLF	LOW	Go find the girl.
+L178	S17	164	00:49:42,062	00:49:44,063	ROLIEL	HIGH	Enter, my son. It is not barred.
+L179	S17	165	00:49:49,486	00:49:51,946	ROLIEL	HIGH	What's wrong with you? Where are the dogs?
+L180	S17	166	00:49:58,912	00:50:00,413	ROLIEL	HIGH	You would do this-
+L181	S18	167	00:50:55,844	00:50:58,429	SPIRIT	HIGH	Why do the living...
+L182	S18	168	00:50:58,513	00:51:01,640	SPIRIT	HIGH	disturb the sleep of the dead?
+L183	S18	169	00:51:03,935	00:51:08,481	LARN	HIGH	I followed a trail. I seek a girl, Teegra.
+L184	S18	170	00:51:09,649	00:51:10,900	SPIRIT	HIGH	A girl?
+L185	S18	171	00:51:11,485	00:51:16,155	SPIRIT	HIGH	Yes. She did this to me.
+L186	S18	172	00:51:16,740	00:51:18,616	SPIRIT	HIGH	She and Nekron.
+L187	S18	173	00:51:21,161	00:51:23,454	SPIRIT	HIGH	Cursed Nekron.
+L188	S18	174	00:51:24,039	00:51:25,664	LARN	HIGH	Where can I find her?
+L189	S18	175	00:51:28,668	00:51:33,089	SPIRIT	HIGH	Why should I answer?
+L190	S18	175	00:51:28,668	00:51:33,089	LARN	HIGH	For revenge against Nekron.
+L191	S18	176	00:51:36,259	00:51:37,968	SPIRIT	HIGH	Nekron?
+L192	S18	177	00:51:40,013	00:51:43,849	SPIRIT	HIGH	Akatar. They take her to Akatar.
+L193	S18	178	00:51:43,934	00:51:46,894	SPIRIT	HIGH	And from there to the Icy King's realm.
+L194	S18	179	00:51:47,854	00:51:49,188	SPIRIT	HIGH	Avenge me.
+L195	S18	180	00:51:50,649	00:51:54,193	SPIRIT	HIGH	Avenge me!
+L196	S18	181	00:51:56,154	00:51:57,530	LARN	HIGH	Akatar.
+L197	S19	182	00:52:18,051	00:52:19,718	LARN	HIGH	Teegra!
+L198	S19	183	00:52:36,653	00:52:38,737	SUBHUMAN CAPTAIN	LOW	My Prince, all is arranged.
+L199	S19	184	00:52:38,822	00:52:42,158	SUBHUMAN CAPTAIN	LOW	I've hired a ship. It waits for us at the dock.
+L200	S19	185	00:52:42,367	00:52:44,451	SUBHUMAN CAPTAIN	LOW	Nekron waits at Ice Peak.
+L201	S19	186	00:52:51,084	00:52:54,962	SUBHUMAN CAPTAIN	LOW	Get the gangplanks aboard. Move, you scum!
+L202	S19	187	00:52:55,380	00:52:58,048	SUBHUMAN CAPTAIN	LOW	We must be well on our way before sunrise.
+L203	S20	188	00:53:11,813	00:53:14,023	NEKRON	HIGH	Why have you brought me this?
+L204	S20	189	00:53:16,693	00:53:18,903	JULIANA	HIGH	This is your bride, my son.
+L205	S20	190	00:53:21,615	00:53:23,449	JULIANA	HIGH	She will be mother to your sons.
+L206	S20	191	00:53:23,533	00:53:26,619	NEKRON	HIGH	How thoughtful, Mother.
+L207	S20	192	00:53:27,495	00:53:31,290	NEKRON	HIGH	I need no bride, and no sons.
+L208	S20	193	00:53:32,000	00:53:35,669	JULIANA	HIGH	But you need heirs.
+L209	S20	193	00:53:32,000	00:53:35,669	NEKRON	HIGH	I need nothing !
+L210	S20	194	00:53:35,754	00:53:36,795	TEEGRA	HIGH	Nekron?
+L211	S20	195	00:53:45,013	00:53:47,514	TEEGRA	HIGH	Nekron, you're a great power in the world.
+L212	S20	196	00:53:48,642	00:53:51,310	TEEGRA	HIGH	You have all that any man ever wants or needed.
+L213	S20	197	00:53:53,063	00:53:54,563	TEEGRA	HIGH	And yet you despair.
+L214	S20	198	00:53:55,941	00:53:57,983	TEEGRA	HIGH	For there is one thing you lack.
+L215	S20	199	00:54:00,195	00:54:03,656	TEEGRA	HIGH	One gift that only you can bestow between our people.
+L216	S20	200	00:54:05,450	00:54:07,368	TEEGRA	HIGH	Peace.
+L217	S20	201	00:54:07,452	00:54:10,371	TEEGRA	HIGH	This is the gift that heals the heart of the giver.
+L218	S20	202	00:54:11,623	00:54:15,000	TEEGRA	HIGH	Nekron, I extend my hand in friendship.
+L219	S20	203	00:54:15,794	00:54:18,337	TEEGRA	HIGH	I offer peace between our people.
+L220	S20	204	00:54:19,214	00:54:21,131	TEEGRA	HIGH	Will you not take my hand?
+L221	S20	205	00:54:25,387	00:54:27,513	TEEGRA	HIGH	Will you not call me friend?
+L222	S20	206	00:55:07,220	00:55:08,220	NEKRON	HIGH	Woman...
+L223	S20	207	00:55:09,014	00:55:12,766	NEKRON	HIGH	I spit on peace.
+L224	S20	208	00:55:14,060	00:55:16,395	NEKRON	HIGH	I spit on you.
+L225	S20	209	00:55:22,485	00:55:26,405	NEKRON	HIGH	Next time you present me with one of your little sluts, Mother dear...
+L226	S20	210	00:55:26,531	00:55:28,866	NEKRON	HIGH	I'll squash you like a bug.
+L227	S20	211	00:55:33,163	00:55:35,122	NEKRON	HIGH	Get that garbage out of here.
+L228	S21	212	00:56:30,470	00:56:32,137	TARO	HIGH	Don't look up.
+L229	S21	213	00:56:32,222	00:56:35,933	TARO	HIGH	We are riders of Fire Keep. We pay no heed to such trash.
+L230	S21	214	00:57:51,468	00:57:56,221	TARO	HIGH	We have come, Lord Nekron, to negotiate between our two peoples.
+L231	S21	215	00:57:56,556	00:57:59,349	TARO	HIGH	And the return to Fire Keep of my sister, Teegra...
+L232	S21	216	00:57:59,434	00:58:02,311	TARO	HIGH	whom your warriors basely kidnapped.
+L233	S21	217	00:58:02,395	00:58:05,689	TARO	HIGH	My father, King Jarol, has empowered me...
+L234	S21	218	00:58:06,357	00:58:08,734	TARO	HIGH	to offer a peace between our kingdoms...
+L235	S21	219	00:58:10,069	00:58:13,113	TARO	HIGH	in exchange for his continued sovereignty...
+L236	S21	220	00:58:13,531	00:58:15,449	TARO	HIGH	and my sister's freedom.
+L237	S21	221	00:58:15,533	00:58:21,246	NEKRON	HIGH	It seems to me that my envoys made a similar offer not long since...
+L238	S21	222	00:58:22,123	00:58:25,542	NEKRON	HIGH	and that it was spurned by your illustrious sire.
+L239	S21	223	00:58:25,627	00:58:27,794	TARO	HIGH	You know full well, Nekron, that offer was made...
+L240	S21	224	00:58:27,879	00:58:30,297	TARO	HIGH	before your minions kidnapped my sister.
+L241	S21	225	00:58:30,381	00:58:33,800	NEKRON	HIGH	I fear, Good Prince, I cannot offer peace to a people...
+L242	S21	226	00:58:33,885	00:58:37,679	NEKRON	HIGH	who have refused to proclaim me their rightful overlord.
+L243	S21	227	00:58:40,892	00:58:43,227	NEKRON	HIGH	As to your sister...
+L244	S21	228	00:58:43,895	00:58:46,605	NEKRON	HIGH	I must admit that until this moment...
+L245	S21	229	00:58:46,689	00:58:50,609	NEKRON	HIGH	the idea of mating with her filled me with loathing.
+L246	S21	230	00:58:51,194	00:58:53,278	NEKRON	HIGH	Perhaps I should reconsider.
+L247	S21	231	00:58:54,489	00:58:57,282	NEKRON	HIGH	Your sister, after all, is not wholly unattractive.
+L248	S21	232	00:58:59,244	00:59:01,286	NEKRON	HIGH	As lesser beasts go.
+L249	S21	233	00:59:18,805	00:59:21,139	TARO	HIGH	Pig you are.
+L250	S21	234	00:59:21,224	00:59:23,809	TARO	HIGH	And like a pig shall you die.
+L251	S22	235	01:00:31,169	01:00:33,045	TEEGRA	LOW	No!
+L252	S22	236	01:00:58,112	01:01:00,238	NEKRON	HIGH	No, I don't think so.
+L253	S22	237	01:01:12,085	01:01:13,877	NEKRON	HIGH	You interest me.
+L254	S22	238	01:01:13,961	01:01:16,338	NEKRON	HIGH	Guards!
+L255	S22	239	01:01:16,422	01:01:18,256	NEKRON	HIGH	Bring him to me.
+L256	S22	240	01:01:23,054	01:01:24,262	NEKRON	HIGH	Release him.
+L257	S22	241	01:01:35,650	01:01:39,403	NEKRON	HIGH	Why have you come seeking me?
+L258	S22	241	01:01:35,650	01:01:39,403	LARN	HIGH	You killed my people.
+L259	S22	242	01:01:39,487	01:01:42,948	NEKRON	HIGH	We've had to dispose of so many undesirables of late.
+L260	S22	243	01:03:12,288	01:03:16,124	NEKRON	HIGH	Let him rest. There is still fight in him.
+L261	S23	244	01:04:12,265	01:04:13,598	TEEGRA	HIGH	Larn.
+L262	S23	245	01:04:17,687	01:04:19,145	LARN	HIGH	Teegra, is that you?
+L263	S23	246	01:04:20,815	01:04:23,692	LARN	HIGH	Teegra, are you all right?
+L264	S23	246	01:04:20,815	01:04:23,692	TEEGRA	HIGH	Yes. I'm trying to unlock the door.
+L265	S23	247	01:04:23,776	01:04:25,443	LARN	HIGH	Never mind the door, you've to get out of here.
+L266	S23	248	01:04:25,528	01:04:28,488	TEEGRA	HIGH	I'm not leaving without you. Maybe I can get a key somehow.
+L267	S23	249	01:04:28,573	01:04:29,990	LARN	HIGH	No, Teegra, don't.
+L268	S24	250	01:07:18,325	01:07:19,617	JAROL	HIGH	Is he certain?
+L269	S24	251	01:07:19,702	01:07:23,747	JAROL	HIGH	It was my son you saw?
+L270	S24	251	01:07:19,702	01:07:23,747	LARN	LOW	They called him Prince Taro.
+L271	S24	252	01:07:24,749	01:07:25,749	JAROL	HIGH	He died.
+L272	S24	253	01:07:28,252	01:07:31,796	JAROL	LOW	What about Teegra?
+L273	S24	253	01:07:28,252	01:07:31,796	LARN	LOW	He's got her, too.
+L274	S24	254	01:07:31,881	01:07:33,673	LARN	LOW	Maybe she's still alive.
+L275	S24	255	01:07:33,758	01:07:34,841	LARN	LOW	It's a chance.
+L276	S24	256	01:07:34,925	01:07:38,303	DARKWOLF	LOW	Believe what you want, but that glacier is a fact.
+L277	S24	257	01:07:41,098	01:07:43,975	DARKWOLF	LOW	For three days and nights it's been pushing south.
+L278	S24	258	01:07:45,102	01:07:48,563	DARKWOLF	LOW	A thousand souls lost because of Nekron's rage.
+L279	S24	259	01:07:48,647	01:07:52,275	DARKWOLF	LOW	Fire Keep is next. We must attack.
+L280	S24	260	01:07:52,359	01:07:54,277	DARKWOLF	LOW	I need the Dragonhawks.
+L281	S24	261	01:07:54,361	01:07:58,073	JAROL	HIGH	The Dragonhawks are too few.
+L282	S24	261	01:07:54,361	01:07:58,073	DARKWOLF	LOW	Enough to get in with.
+L283	S24	262	01:07:58,157	01:08:01,785	DARKWOLF	LOW	One us might get through and destroy him.
+L284	S24	263	01:08:02,703	01:08:07,332	JAROL	HIGH	But if that glacier passes beyond the river, I will have no choice.
+L285	S24	264	01:08:07,416	01:08:09,084	JAROL	HIGH	I will have to release the lava.
+L286	S25	265	01:12:30,471	01:12:31,763	LARN	HIGH	Teegra.
+L287	S25	266	01:13:01,960	01:13:02,960	TEEGRA	HIGH	Larn.
+L288	S25	267	01:13:11,553	01:13:13,179	DARKWOLF	HIGH	Nekron!
+L289	S25	268	01:13:54,388	01:13:58,474	LARN	HIGH	Die! Die! Why don't you die?
+L290	S26	269	01:17:14,254	01:17:17,381	TEEGRA	HIGH	No, Larn! No, it's over, don't you see? We have to start over.

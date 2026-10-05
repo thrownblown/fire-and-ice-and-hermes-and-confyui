@@ -1,0 +1,21 @@
+# S16 line assignment
+
+Rule: cue midpoint. Speaker from the timeline. Action shots between the first and last line are kept.
+
+| shot | time | lines |
+|---|---|---|
+| shot:00691 | 00:46:12.979–00:46:21.821 | L148 ROLIEL, L149 ROLIEL |
+| shot:00692 | 00:46:21.821–00:46:24.782 | L150 ROLIEL |
+| shot:00693 | 00:46:24.782–00:46:30.287 | L151 ROLIEL, L152 ROLIEL |
+| shot:00694 | 00:46:30.287–00:46:37.628 | L153 ROLIEL, L154 ROLIEL |
+| shot:00695 | 00:46:37.628–00:46:42.717 | L155 ROLIEL |
+| shot:00696 | 00:46:42.717–00:46:55.688 | L156 TEEGRA, L157 ROLIEL |
+| shot:00697 | 00:46:55.688–00:47:00.234 | L158 ROLIEL |
+| shot:00698 | 00:47:00.234–00:47:18.252 | L159 TEEGRA, L160 ROLIEL, L161 ROLIEL, L162 ROLIEL |
+| shot:00699 | 00:47:18.252–00:47:32.433 | L163 ROLIEL |
+| shot:00700 | 00:47:32.433–00:47:33.434 | (no dialogue) |
+| shot:00701 | 00:47:33.434–00:47:33.976 | (no dialogue) |
+| shot:00702 | 00:47:33.976–00:47:59.376 | L164 ROLIEL, L165 ROLIEL, L166 ROLIEL, L167 ROLIEL |
+| shot:00703 | 00:47:59.376–00:48:00.753 | (no dialogue) |
+| shot:00704 | 00:48:00.753–00:48:21.148 | L168 ROLIEL, L169 ROLIEL, L170 ROLIEL, L171 ROLIEL |
+| shot:00705 | 00:48:21.148–00:48:25.653 | L172 ROLIEL |

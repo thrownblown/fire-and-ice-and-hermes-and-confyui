@@ -1,0 +1,19 @@
+# graph_length_seconds: 4.458
+# graph_length_frames: 107
+# source_duration_seconds: 2.84
+
+subject_definitions:
+<Subject 1>: the blond man, muscular, brown belt with a gold buckle, bone necklace. Seen in <Picture 1>.
+<Picture 1>: a still of the blond man, muscular, brown belt with a gold buckle, bone necklace. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, ice cave. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. Larn in ice cave.
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A
