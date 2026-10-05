@@ -1,0 +1,13 @@
+# chunk: s03-c01 | test: T0003 | scene: S03 | mode: FL2VA
+# first_frame: shot_00067_f00000.jpg | last_frame: shot_00067_f00127.jpg
+# graph_length_seconds: 5.875
+# graph_length_frames: 141
+# lines: L023 L024
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.88-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted cavern backgrounds, Ice Peak throne hall, cold blue-grey cavern light. The opening frame matches <Picture 1>: A female character with long, straight black hair adorned with a thin headband is shown in profile, facing left. The camera holds a static medium three-quarter shot. On screen: a young woman with extremely pale white skin, an angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, and a deep purple long-sleeved gown. the pale young woman with long jet-black hair (S1) says: <d>[English] You have done well, my son.</d> the pale young woman with long jet-black hair (S1) says: <d>[English] The North Village has fallen. We have won.</d> The action resolves into the exact pose, framing, and composition established by <Picture 2>: A female character with long, straight black hair adorned with a small headpiece is shown in profile, facing left.
+
+overall_soundscape: Cavernous hall reverb under the dialogue, distant wind moving through stone corridors, soft fabric rustle as the robed figures move.
+
+non_diegetic_music: A cold, sinister orchestral theme: low sustained strings, sparse brass swells, slow tempo, quiet dynamics under the voices.

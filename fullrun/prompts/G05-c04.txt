@@ -1,0 +1,13 @@
+# chunk: G05-c04 | scene: G05 | action stretch
+# shots: 00481 00482 00483
+# src: 00:29:54.626-00:30:01.341  lines: none
+# h3: 175 frames / 7.292s  seed: 2537579534
+# words: 354
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 7.29-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A muscular figure with short blond hair stands in profile, looking upward toward a bright, hazy sky. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. On screen: muscular, blond, short, styled in a ponytail, tan, naked except for a necklace with a large circular pendant and smaller beads. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 2] At 00:01.668, the camera cuts to a new angle. The camera stays low and tilts up slightly as the figure moves. The camera pulls out with small amplitude at slow speed, opening the space around the figures. On screen: muscular, blond, braided, tan, brown loincloth with belt and arm bands, black boots. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 3] At 00:06.048, the camera cuts to a new angle. The camera looks straight down from above as the figures move below it. The camera pushes in with large amplitude at slow speed, closing in until the frame is filled with the face. The move slows and stops as the figure settles. The figure turns and steps, the body leading the movement and the clothing trailing behind. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

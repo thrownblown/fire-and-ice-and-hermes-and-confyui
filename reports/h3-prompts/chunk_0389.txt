@@ -1,0 +1,19 @@
+# graph_length_seconds: 11.542
+# graph_length_frames: 277
+# source_duration_seconds: 11.01
+
+subject_definitions:
+<Subject 1>: the woman with long black hair and a light purple two-piece, gold earrings. Seen in <Picture 1>.
+<Picture 1>: a still of the woman with long black hair and a light purple two-piece, gold earrings. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, ice cave. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. Teegra in ice cave. <Subject 1> (S1) says, <d>[English] Nekron, you're a great power in the world.</d>
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A

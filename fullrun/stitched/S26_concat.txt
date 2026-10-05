@@ -1,0 +1,5 @@
+file 'E:/FNI/fullrun/output/S26-c01_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S26-c02_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S26-c03_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S26-c04_full_t01.mp4'
+file 'E:/FNI/fullrun/output/S26-c05_full_t01.mp4'

@@ -1,0 +1,21 @@
+# graph_length_seconds: 5.875
+# graph_length_frames: 141
+# source_duration_seconds: 5.88
+
+subject_definitions:
+<Subject 1>: the woman with long black hair and a light purple two-piece, gold earrings. Seen in <Picture 1>.
+<Picture 1>: a still of the woman with long black hair and a light purple two-piece, gold earrings. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, rocky riverbank. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. Teegra in rocky riverbank.
+[Shot 2] At 00:00:02.5, the camera pushes in slowly. Teegra in night camp under stars.
+[Shot 3] At 00:00:05.0, the camera pushes in slowly. Teegra in rocky riverbank.
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A

@@ -1,0 +1,13 @@
+# chunk: G09-c24 | scene: G09 | action stretch
+# shots: 01289
+# src: 01:16:27.541-01:16:44.892  lines: none
+# h3: 362 frames / 15.083s  seed: 1619454861
+# words: 236
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: This still shows a large, billowing cloud formation illuminated from within, appearing bright white and blue against darker surroundings. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. On screen: muscular, blond, light brown, brown belt, black boots; slender, black, light brown, minimal bikini-like attire. She turns her head, lifts one hand near her chest, and lowers it again, her hair and clothing shifting with the movement. The movement carries through and then settles back, and in the closing seconds everything slows and stops. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

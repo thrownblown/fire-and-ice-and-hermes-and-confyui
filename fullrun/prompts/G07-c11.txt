@@ -1,0 +1,13 @@
+# chunk: G07-c11 | scene: G07 | action stretch
+# shots: 00998
+# src: 01:05:56.995-01:06:05.962  lines: none
+# h3: 226 frames / 9.417s  seed: 2230448800
+# words: 234
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 9.42-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A person with short, light-colored hair stands facing forward, wearing a collared shirt with dark sleeves, their arms slightly bent at the sides. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. On screen: slim, blond, light, shirt with dark sleeves and dark pants. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. The movement carries through and then settles back, and in the closing seconds everything slows and stops. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

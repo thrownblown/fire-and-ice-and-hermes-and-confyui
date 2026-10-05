@@ -1,0 +1,641 @@
+{
+  "version": 1,
+  "characters": [
+    {
+      "name": "DARKWOLF",
+      "display": "Darkwolf",
+      "aliases": [
+        "darkwolf"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "ELDER",
+      "display": "Elder",
+      "aliases": [
+        "elder"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "ENVOY",
+      "display": "Envoy",
+      "aliases": [
+        "envoy"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "ENVOYS",
+      "display": "Envoys",
+      "aliases": [
+        "envoys"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "GUARDS",
+      "display": "Guards",
+      "aliases": [
+        "guards"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "JAROL",
+      "display": "Jarol",
+      "aliases": [
+        "jarol"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "JULIANA",
+      "display": "Juliana",
+      "aliases": [
+        "juliana"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "LARN",
+      "display": "Larn",
+      "aliases": [
+        "larn"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "NARRATOR",
+      "display": "Narrator",
+      "aliases": [
+        "narrator"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "NEKRON",
+      "display": "Nekron",
+      "aliases": [
+        "nekron"
+      ],
+      "traits": "long white hair, pale gray skin, dark purple robe",
+      "refs": []
+    },
+    {
+      "name": "OTWA",
+      "display": "Otwa",
+      "aliases": [
+        "otwa"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "OTWA?",
+      "display": "Otwa?",
+      "aliases": [
+        "otwa?"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "RIDERS",
+      "display": "Riders",
+      "aliases": [
+        "riders"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "ROLIEL",
+      "display": "Roliel",
+      "aliases": [
+        "roliel"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "SHAITAN",
+      "display": "Shaitan",
+      "aliases": [
+        "shaitan"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "SPIRIT",
+      "display": "Spirit",
+      "aliases": [
+        "spirit"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "SUBHUMAN",
+      "display": "Subhuman",
+      "aliases": [
+        "subhuman"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "SUBHUMAN CAPTAIN",
+      "display": "Subhuman Captain",
+      "aliases": [
+        "subhuman captain"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "SUBHUMAN LEADER",
+      "display": "Subhuman Leader",
+      "aliases": [
+        "subhuman leader"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "SUBHUMANS",
+      "display": "Subhumans",
+      "aliases": [
+        "subhumans"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "TARO",
+      "display": "Taro",
+      "aliases": [
+        "taro"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "TEEGRA",
+      "display": "Teegra",
+      "aliases": [
+        "teegra"
+      ],
+      "traits": "very long dark hair, pale skin, lightweight two-piece costume",
+      "refs": []
+    },
+    {
+      "name": "TUTOR",
+      "display": "Tutor",
+      "aliases": [
+        "tutor"
+      ],
+      "traits": "",
+      "refs": [
+        "ComfyUI_00063_.png",
+        "shot_00191_f00043.jpg",
+        "shot_00191_f00085.jpg",
+        "shot_00193_f00058.jpg",
+        "shot_00230_f00000.jpg",
+        "shot_00230_f00040.jpg",
+        "shot_00230_f00079.jpg",
+        "shot_00580_f00000.jpg"
+      ]
+    },
+    {
+      "name": "VILLAGE CHIEF",
+      "display": "Village Chief",
+      "aliases": [
+        "village chief"
+      ],
+      "traits": "",
+      "refs": []
+    },
+    {
+      "name": "VILLAGE ELDER",
+      "display": "Village Elder",
+      "aliases": [
+        "village elder"
+      ],
+      "traits": "",
+      "refs": []
+    }
+  ],
+  "backgrounds": [
+    {
+      "slug": "ice-cave",
+      "name": "Ice Cave",
+      "settings": [
+        "ice cave"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "cave-interior",
+      "name": "Cave Interior",
+      "settings": [
+        "cave interior"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "icy-cavern",
+      "name": "Icy Cavern",
+      "settings": [
+        "icy cavern"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "cloudy-sky",
+      "name": "Cloudy Sky",
+      "settings": [
+        "cloudy sky"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "rocky-terrain",
+      "name": "Rocky Terrain",
+      "settings": [
+        "rocky terrain"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "forest-clearing",
+      "name": "Forest Clearing",
+      "settings": [
+        "forest clearing"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "icy-landscape",
+      "name": "Icy Landscape",
+      "settings": [
+        "icy landscape"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "ice-landscape",
+      "name": "Ice Landscape",
+      "settings": [
+        "ice landscape"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dense-forest",
+      "name": "Dense Forest",
+      "settings": [
+        "dense forest"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "forest-at-night",
+      "name": "Forest At Night",
+      "settings": [
+        "forest at night"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "rocky-cave-interior",
+      "name": "Rocky Cave Interior",
+      "settings": [
+        "rocky cave interior"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "frozen-landscape",
+      "name": "Frozen Landscape",
+      "settings": [
+        "frozen landscape"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "rocky-ground",
+      "name": "Rocky Ground",
+      "settings": [
+        "rocky ground"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dense-jungle-canopy",
+      "name": "Dense Jungle Canopy",
+      "settings": [
+        "dense jungle canopy"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "forest-undergrowth",
+      "name": "Forest Undergrowth",
+      "settings": [
+        "forest undergrowth"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "rocky-cave-floor",
+      "name": "Rocky Cave Floor",
+      "settings": [
+        "rocky cave floor"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "rocky-cliffside",
+      "name": "Rocky Cliffside",
+      "settings": [
+        "rocky cliffside"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dense-jungle",
+      "name": "Dense Jungle",
+      "settings": [
+        "dense jungle"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dense-jungle-foliage",
+      "name": "Dense Jungle Foliage",
+      "settings": [
+        "dense jungle foliage"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "stone-chamber",
+      "name": "Stone Chamber",
+      "settings": [
+        "stone chamber"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "night-sky-with-stars",
+      "name": "Night Sky With Stars",
+      "settings": [
+        "night sky with stars"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "rocky-cave-wall",
+      "name": "Rocky Cave Wall",
+      "settings": [
+        "rocky cave wall"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "underwater-cave",
+      "name": "Underwater Cave",
+      "settings": [
+        "underwater cave"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "cave-entrance",
+      "name": "Cave Entrance",
+      "settings": [
+        "cave entrance"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "icy-cave-interior",
+      "name": "Icy Cave Interior",
+      "settings": [
+        "icy cave interior"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dark-rocky-area",
+      "name": "Dark Rocky Area",
+      "settings": [
+        "dark rocky area"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "open-sky",
+      "name": "Open Sky",
+      "settings": [
+        "open sky"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "underwater-environment",
+      "name": "Underwater Environment",
+      "settings": [
+        "underwater environment"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "frozen-wasteland",
+      "name": "Frozen Wasteland",
+      "settings": [
+        "frozen wasteland"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "deserted-wasteland",
+      "name": "Deserted Wasteland",
+      "settings": [
+        "deserted wasteland"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "night-sky",
+      "name": "Night Sky",
+      "settings": [
+        "night sky"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "snowy-landscape",
+      "name": "Snowy Landscape",
+      "settings": [
+        "snowy landscape"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "snowy-ground",
+      "name": "Snowy Ground",
+      "settings": [
+        "snowy ground"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "snowy-mountain-peak",
+      "name": "Snowy Mountain Peak",
+      "settings": [
+        "snowy mountain peak"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "stone-structure",
+      "name": "Stone Structure",
+      "settings": [
+        "stone structure"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dense-forest-undergrowth",
+      "name": "Dense Forest Undergrowth",
+      "settings": [
+        "dense forest undergrowth"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dense-forest-canopy",
+      "name": "Dense Forest Canopy",
+      "settings": [
+        "dense forest canopy"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "indoor-room",
+      "name": "Indoor Room",
+      "settings": [
+        "indoor room"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "snowy-mountain-landscape",
+      "name": "Snowy Mountain Landscape",
+      "settings": [
+        "snowy mountain landscape"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "mountainous-landscape",
+      "name": "Mountainous Landscape",
+      "settings": [
+        "mountainous landscape"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "icy-canyon",
+      "name": "Icy Canyon",
+      "settings": [
+        "icy canyon"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "icy-cave",
+      "name": "Icy Cave",
+      "settings": [
+        "icy cave"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "ice-cavern",
+      "name": "Ice Cavern",
+      "settings": [
+        "ice cavern"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dark-cave",
+      "name": "Dark Cave",
+      "settings": [
+        "dark cave"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "rocky-landscape",
+      "name": "Rocky Landscape",
+      "settings": [
+        "rocky landscape"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "ice-cave-ceiling",
+      "name": "Ice Cave Ceiling",
+      "settings": [
+        "ice cave ceiling"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "forest-clearing-with-water",
+      "name": "Forest Clearing With Water",
+      "settings": [
+        "forest clearing with water"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "dark-forest-floor",
+      "name": "Dark Forest Floor",
+      "settings": [
+        "dark forest floor"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "stone-room",
+      "name": "Stone Room",
+      "settings": [
+        "stone room"
+      ],
+      "refs": []
+    },
+    {
+      "slug": "stone-throne-room",
+      "name": "Stone Throne Room",
+      "settings": [
+        "stone throne room"
+      ],
+      "refs": []
+    }
+  ]
+}

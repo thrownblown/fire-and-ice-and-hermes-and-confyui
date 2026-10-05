@@ -1,0 +1,13 @@
+# chunk: G03-c53 | scene: G03 | action stretch
+# shots: 00404 00405 00406
+# src: 00:25:13.429-00:25:18.600  lines: none
+# h3: 124 frames / 5.167s  seed: 4212387912
+# words: 352
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 5.17-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: This is a close-up shot of a muscular, bare-chested humanoid figure with dark, shaggy hair falling over their face. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, dark brown, shoulder-length, brown, white armband, dark loincloth. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 2] At 00:01.335, the camera cuts to a new angle. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, dark brown, shoulder-length, brown, none. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. [Shot 3] At 00:03.670, the camera cuts to a new angle. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. On screen: slender, long, straight, black, light brown, necklace with yellow pendant, gold earrings; muscular, short, dark, spiky, dark brown, none. She turns her head, lifts one hand near her chest, and lowers it again, her hair and clothing shifting with the movement. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

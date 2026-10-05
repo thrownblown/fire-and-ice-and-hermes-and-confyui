@@ -1,0 +1,74 @@
+schema_version: fi.policy/0.3
+status: design_defaults_unmeasured
+execution:
+  local_only: true
+  hosted_adapters_enabled: false
+  heavy_gpu_leases: 1
+  external_spend_limit: 0
+  ram_reserve_gib: 10
+  vram_reserve_gib: 2
+  canary_wall_seconds: 1800
+  canary_generation_limit: 3
+  cold_peak_ram_bytes: null
+  cold_peak_vram_bytes: null
+  generation_seconds_estimate: null
+  unqualified_profiles_admitted_to_production: false
+creative:
+  default_mode: narrative_reinterpretation
+  source_master: user_existing_copy
+  audio_policy: preserve_original_mix
+  training_enabled: false
+  approved_lead_design_required: true
+  endpoint_lock_default: false
+  output_aspect: source_display_aspect
+  output_frame_rate: derive_from_master_and_freeze_in_project_policy
+  style_bible_revision: null
+exploration:
+  baseline_attempts_per_shot: 1
+  repair_attempts_per_shot: 1
+  pilot_shots: 6
+  pilot_conditions_max: 2
+  pilot_seeds_per_condition_max: 2
+  pilot_total_render_limit: 24
+  mandatory_final_rerender: false
+  unknown_submission_auto_retry: false
+  failed_runs_count_toward_budget: true
+perception:
+  initial_sampling_fps: 2
+  targeted_sampling_fps: 4
+  include_exact_endpoints: true
+  field_schema_repair_limit: 1
+  larger_model_required: false
+context:
+  text_token_target: 4000
+  evidence_thumbnails_max: 8
+  reference_candidates_per_role_max: 5
+  hard_constraints_may_be_truncated: false
+acquisition:
+  demand_driven: true
+  initial_page_limit: 50
+  initial_image_limit: 200
+  initial_download_bytes_limit: 1073741824
+  global_requests_in_flight: 2
+  per_domain_requests_in_flight: 1
+  minimum_domain_delay_seconds: 2
+  transient_retries_max: 2
+  respect_retry_after: true
+  decoded_image_pixels_limit: 100000000
+  source_image_bytes_limit: 52428800
+  normalized_long_edge_max: 6000
+  near_duplicate_phash_candidate_distance: 6
+  near_duplicates_auto_merge: false
+acceptance:
+  human_visual_acceptance_initially_required: true
+  unknown_hard_criteria_auto_pass: false
+  stale_selections_exportable: false
+  hidden_source_placeholders_exportable: false
+retention:
+  preserve_source_master: true
+  preserve_approved_designs: true
+  preserve_selected_outputs: true
+  preserve_manifests_and_provenance: true
+  evict_recomputable_cache_first: true
+  delete_protected_reachable_blobs: false
+  evicted_historical_media_marked_unavailable: true

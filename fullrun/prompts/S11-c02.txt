@@ -1,0 +1,13 @@
+# chunk: S11-c02 | scene: S11 | Larn & Teegra meet
+# shots: 00499 00500 00501
+# src: 00:31:26.968-00:31:34.851  lines: L086
+# h3: 192 frames / 8.000s  seed: 3547204739
+# words: 392
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 8.00-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over lush painted jungle and forest backgrounds, dappled green and gold light. The opening frame matches <Picture 1>: A female character with long black hair is shown from the chest up, her head tilted back and eyes closed as she yawns widely, revealing a red interior of her mouth. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: slender, long black, pinkish, red garment with white feather. She turns her head, lifts one hand near her chest, and lowers it again, her hair and clothing shifting with the movement. [Shot 2] At 00:02.628, the camera cuts to a new angle. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. On screen: muscular, blond, brown, necklace with teeth. a young athletic man with shoulder-length blond hair, bare-chested in a brown loincloth with a gold buckle, arm bands and black boots, carrying a sword (S1) says: <d>[English] If you want it, take it.</d> He plants his feet, swings one arm up and across his body, and drives it down hard, his weight shifting onto the front foot. [Shot 3] At 00:05.380, the camera cuts to a new angle. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. On screen: slender, long black, pinkish, necklace with gold pendant, red garment on shoulder; muscular, not visible, brown, not visible. She turns her head, lifts one hand near her chest, and lowers it again, her hair and clothing shifting with the movement. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
+
+non_diegetic_music: Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.

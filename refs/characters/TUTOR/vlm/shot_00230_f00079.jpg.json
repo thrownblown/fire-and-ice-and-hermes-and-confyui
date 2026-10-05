@@ -1,0 +1,7 @@
+{
+ "file": "shot_00230_f00079.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5550506,
+ "size": 209159,
+ "text": "A female figure lies on a purple surface, light brown skin, short black bob, oval face with wide-open mouth showing teeth. Pale light blue draped garment secured with gold medallion belt and gold shoulder piece. (corrected by cross-check vision model: local VLM misgendered this figure)"
+}

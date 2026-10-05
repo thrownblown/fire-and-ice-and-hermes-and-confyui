@@ -1,0 +1,29 @@
+# chunk: s03-c02 | scene: S03 Ice Peak: Juliana and Nekron send envoys
+# source: 00:07:10.472-00:07:24.152 | lines: L027-L031
+# prev: Nekron thanks his mother. The Great Plain is all that stands before Fire Keep. | next: Nekron tells the envoys to present the demands at Fire Keep.
+# graph_length_seconds: 13.667
+# graph_length_frames: 328
+# source_duration_seconds: 13.68
+
+subject_definitions:
+<Subject 1>: JULIANA, extremely pale white skin, angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, a deep purple long-sleeved gown with a plunging neckline and hip-high slits. Seen in <Picture 1>, <Picture 2>.
+<Subject 2>: NEKRON, pale skin, long white hair, a dark purple robe. Seen in <Picture 3>, <Picture 4>.
+<Picture 1>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 2>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 3>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 4>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer — retains the traits listed above.
+<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, Ice Peak throne hall. Cool cavern light, painted backgrounds, inked figures.
+[Shot 1] (0.0s) medium, three-quarter angle, static. The white-haired man, seated, speaks. <Subject 1> (off-screen) says, <d>[English] That is a long distance.</d>
+[Shot 2] (3.2s) medium, three-quarter angle, static. The pale woman in the purple gown extends an arm as she speaks. <Subject 2> (off-screen) says, <d>[English] A distance we may not have to travel.</d> <Subject 2> (off-screen) says, <d>[English] I am sending our envoys to Jarol with our new demands.</d>
+[Shot 3] (9.0s) medium close-up, three-quarter angle, static. The white-haired man turns his head slightly while speaking. <Subject 1> (off-screen) says, <d>[English] He will not submit.</d> <Subject 2> says, <d>[English] Perhaps.</d>
+
+overall_soundscape: cavernous hall reverb, distant wind. No music under the dialogue.
+
+non_diegetic_music: cold, sinister theme.

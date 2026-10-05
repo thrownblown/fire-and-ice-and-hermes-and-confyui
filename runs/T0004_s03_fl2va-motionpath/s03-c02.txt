@@ -1,0 +1,14 @@
+# chunk: s03-c02 | test: T0004 | scene: S03 | mode: FL2VA | variable: motion path
+# first_frame: s03-c02_first.jpg | last_frame: s03-c02_last.jpg
+# graph_length_seconds: 9.417
+# graph_length_frames: 226
+# lines: L025 L026
+# words: 459
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 9.42-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted cavern backgrounds, Ice Peak throne hall, cold blue-grey cavern light. The opening frame matches <Picture 1>: A character with long white hair and pale skin is shown from the chest up, wearing a dark purple robe over a darker inner garment. The camera pushes in with small amplitude at slow speed, closing in on his raised hand and the single visible eye. On screen: a pale man with long white hair in a dark purple robe. the white-haired man in the dark purple robe (S1) says: <d>[English] I want to thank you, Mother.</d> His right hand stays pressed across his face and the fingers shift against his brow; the one visible eye blinks and its blue glow pulses brighter and then dims. He breathes, his chest lifting under the dark robe, and his head tilts a few degrees downward as he speaks, the white hair at his shoulder sliding with the tilt. In the last second of the shot his hand begins to lower, uncovering more of his cheek. [Shot 2] At 00:04.338, the camera cuts to a new angle. The camera pulls out with small amplitude at slow speed, opening from her clasped hands to her head and shoulders. On screen: a young woman with extremely pale white skin, an angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, and a deep purple long-sleeved gown. a pale man with long white hair in a dark purple robe (S1) speaks while off-screen: <d>[English] The Great Plain is all that stands between ourselves and Fire Keep.</d> Her hands stay clasped at her chest and her fingers tighten once; she blinks and her gaze drops to her hands, then lifts again toward the off-screen voice. Her shoulders rise and fall with her breathing and the loose black hair at her temple shifts as she turns her head a few degrees toward the sound. By the end her chin has lifted and her eyes are level. Only in the last seconds do these changes slow and narrow, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Cavernous hall reverb under the dialogue, distant wind moving through stone corridors, soft fabric rustle as the robed figures move.
+
+non_diegetic_music: A cold, sinister orchestral theme: low sustained strings, sparse brass swells, slow tempo, quiet dynamics under the voices.

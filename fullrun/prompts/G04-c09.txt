@@ -1,0 +1,13 @@
+# chunk: G04-c09 | scene: G04 | action stretch
+# shots: 00446 00447 00448
+# src: 00:28:03.140-00:28:08.896  lines: none
+# h3: 141 frames / 5.875s  seed: 3566285059
+# words: 336
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 5.88-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A lone figure with light-colored braided hair is shown from behind, crouched low on a rocky, uneven ground. The camera stays low and tilts up slightly as the figure moves. The camera pulls out with small amplitude at slow speed, opening the space around the figures. On screen: slim, blond, long braid, light, white tunic, brown belt with gold studs, black boots. The figure moves forward, upper body tilted into the advance, one arm reaching ahead. [Shot 2] At 00:02.753, the camera cuts to a new angle. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The figure turns and steps, the body leading the movement and the clothing trailing behind. [Shot 3] At 00:03.670, the camera cuts to a new angle. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. On screen: a young athletic man with shoulder-length blond hair, bare-chested in a brown loincloth with a gold buckle, arm bands and black boots, carrying a sword. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

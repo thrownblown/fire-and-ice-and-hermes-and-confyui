@@ -1,0 +1,23 @@
+# graph_length_seconds: 10.833
+# graph_length_frames: 260
+# source_duration_seconds: 10.47
+
+subject_definitions:
+<Subject 1>: the woman with long black hair and a light purple two-piece, gold earrings. Seen in <Picture 1>.
+<Subject 2>: the pale man with long white hair in a dark purple robe. Seen in <Picture 2>.
+<Picture 1>: a still of the woman with long black hair and a light purple two-piece, gold earrings. Anchors their first appearance. Do not import the pose or the action from this still.
+<Picture 2>: a still of the pale man with long white hair in a dark purple robe. Anchors their first appearance. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): attribute_transfer — retains the traits listed above.
+<Subject 2> (appears in [Shot 2]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, ice cave. Cool light, painted backgrounds, inked figures.
+[Shot 1] The camera holds. Teegra in ice cave. <Subject 1> (S1) says, <d>[English] A distance we may not have to travel.</d>
+[Shot 2] At 00:00:02.5, the camera pushes in slowly. Nekron in cave interior. <Subject 1> (S1) says, <d>[English] - He will not submit.</d>
+
+overall_soundscape: wind, footsteps, and the room tone of the place. No music.
+
+non_diegetic_music: N/A

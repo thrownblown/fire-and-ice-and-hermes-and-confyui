@@ -1,0 +1,7 @@
+{
+ "file": "shot_00230_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.553537,
+ "size": 319678,
+ "text": "A female figure lies supine on a purple cushion. She has light brown skin and short black hair in a bob. Face oval, eyes closed. She wears a pale light blue draped garment with a wide gold belt of circular medallions and a gold shoulder piece. (corrected by cross-check vision model: local VLM misgendered this figure)"
+}

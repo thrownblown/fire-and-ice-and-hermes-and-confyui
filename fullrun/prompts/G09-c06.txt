@@ -1,0 +1,13 @@
+# chunk: G09-c06 | scene: G09 | action stretch
+# shots: 01235 01236 01237
+# src: 01:14:15.326-01:14:25.836  lines: none
+# h3: 260 frames / 10.833s  seed: 3166627875
+# words: 365
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 3) aligns with the 10.83-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted backgrounds, broad graphic acting with strong gesture and clear body poses. The opening frame matches <Picture 1>: A figure with white hair, seen from behind, wears a dark blue robe cinched at the waist with a black belt. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, black, long, tied back, dark brown, black mask with cat-like ears, black wristbands, dark green loincloth; slender, white, long and flowing, light, purple robe with black belt and blue circular accents. She turns her head, lifts one hand near her chest, and lowers it again, her hair and clothing shifting with the movement. [Shot 2] At 00:06.423, the camera cuts to a new angle. The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen: muscular, bald, light, dark red sleeveless top with gold circular decorations and a gold earring; slender, long, dark, in a high bun, light, simple draped garment. She turns her head, lifts one hand near her chest, and lowers it again, her hair and clothing shifting with the movement. [Shot 3] At 00:08.508, the camera cuts to a new angle. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. The figure turns and steps, the body leading the movement and the clothing trailing behind. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

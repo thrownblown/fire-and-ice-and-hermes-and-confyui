@@ -1,0 +1,26 @@
+{
+  "character": "DARKWOLF",
+  "lineage": "Frank Frazetta's 'Death Dealer' (horned-helm rider silhouetted against sky, raised axe) is the stylistic ancestor of Darkwolf. Fire & Ice quotes it directly in shot_00029 (rider silhouetted on a mountaintop, backlit, arm raised). The Frazetta paintings are INSPIRATION-tier: they establish silhouette, posture, and menace, but are NOT the literal design and must be pruned from wired <Picture N> clip refs, or H3 drifts toward an armored knight on horseback (cuirass, eagle emblem, mount). The canonical design is the wolf-head hood worn by a human, per the production model sheet and the user's traits.",
+  "eye_color_open_question": "Refs disagree: model sheet production codes say WG25/UG20 (white/warm-grey); film still shot_01229 glows green, shot_01232 white; user notes say yellow. Pin before prompt build.",
+  "head_open_question": "Model sheet draws a full anthropomorphic wolf head; film stills read as a horned helmet or cat/wolf hood with eyes glowing through. User intent = a human wearing a wolf's head as hood/helmet, eyes looking through the wolf's. Canonical design should follow user intent, not the sheet's literal wolf head.",
+  "tiers": {
+    "canonical": "literal Darkwolf design — safe to wire as <Picture N>",
+    "pose": "good for silhouette/posture reference, design secondary",
+    "inspiration": "style/ethos ONLY — prune from wired clip refs"
+  },
+  "refs": {
+    "darkwolf_color_model_sheet.jpeg": {"tier": "canonical", "note": "official prod model sheet, front+back turnaround (PROD. 11 FOR COLOR). Primary design authority. Wolf head, fur-trimmed waist belt, no metal plates, tall black boots, double-bladed axe."},
+    "darkwolf_mask_axe.jpeg": {"tier": "canonical", "note": "horned mask, glowing eyes, axe"},
+    "darkwolf_mask_closeup.webp": {"tier": "canonical", "note": "mask closeup, skull pendant at chest"},
+    "darkwolf_axe_raised.png": {"tier": "canonical", "note": "topknot, roaring, bone necklace, axe raised"},
+    "darkwolf_roar_archway.jpeg": {"tier": "canonical", "note": "black horned mask, loincloth with yellow circles, roaring in archway"},
+    "darkwolf_roar_ice.jpeg": {"tier": "canonical", "note": "two braids, angular face, roaring against ice"},
+    "ComfyUI_00020_.png": {"tier": "canonical", "note": "generated; muscular, dark skin, long black hair, glowing green eyes, brown loincloth, skull necklace — wolf hood NOT visible in this one, treat as unmasked/alt-design ref"},
+    "shot_01229_f00012.jpg": {"tier": "canonical", "note": "film still; dark hood with glowing green eyes, tunic with jagged white trim, skull pendant, arm raised"},
+    "shot_01232_f00014.jpg": {"tier": "canonical", "note": "film still; black horned helmet, glowing eyes, dark loincloth w/ circular medallions, arm bracers, single-blade axe, lunging"},
+    "shot_01243_f00059.jpg": {"tier": "canonical", "note": "film still; black mask, glowing green eyes, bare-chested, angular jaw"},
+    "shot_00029_f00000.jpg": {"tier": "pose", "note": "THE Death Dealer homage: rider silhouetted on a peak, helmeted, arm raised. Use for silhouette/posture; this is the in-film bridge that justifies the Frazetta lineage."},
+    "frazetta_death_dealer_axe_raised.jpeg": {"tier": "inspiration", "note": "Frazetta painting — mounted, dark armor, red eyes, curved axe. Silhouette/ethos only. DO NOT WIRE as clip ref."},
+    "frazetta_death_dealer_ridge_silhouette.jpeg": {"tier": "inspiration", "note": "Frazetta painting — mounted warrior, armored cuirass, chainmail, ridge silhouette. Silhouette/ethos only. DO NOT WIRE as clip ref."}
+  }
+}

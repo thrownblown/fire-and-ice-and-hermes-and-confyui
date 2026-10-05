@@ -1,0 +1,29 @@
+# chunk: s03-c01 | scene: S03 Ice Peak: Juliana and Nekron send envoys
+# source: 00:06:56.291-00:07:10.472 | lines: L023-L026
+# prev: The glacier has taken the North Village. | next: Juliana calls the distance long. Nekron says they may not have to travel it.
+# graph_length_seconds: 14.375
+# graph_length_frames: 345
+# source_duration_seconds: 14.18
+
+subject_definitions:
+<Subject 1>: JULIANA, extremely pale white skin, angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, a deep purple long-sleeved gown with a plunging neckline and hip-high slits. Seen in <Picture 1>, <Picture 2>.
+<Subject 2>: NEKRON, pale skin, long white hair, a dark purple robe. Seen in <Picture 3>, <Picture 4>.
+<Picture 1>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 2>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 3>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 4>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 3]): attribute_transfer — retains the traits listed above.
+<Subject 2> (appears in [Shot 2], [Shot 3]): attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, Ice Peak throne hall. Cool cavern light, painted backgrounds, inked figures.
+[Shot 1] (0.0s) medium, three-quarter angle, static. The pale woman in the purple gown stands and looks up, a slight smile. <Subject 1> says, <d>[English] You have done well, my son.</d> <Subject 1> says, <d>[English] The North Village has fallen. We have won.</d>
+[Shot 2] (5.3s) medium, straight-on, static. The white-haired man lowers his hand from his face. <Subject 2> says, <d>[English] I want to thank you, Mother.</d>
+[Shot 3] (9.7s) medium, three-quarter angle, static. The pale woman in the purple gown gestures, then crosses her arms. <Subject 2> (off-screen) says, <d>[English] The Great Plain is all that stands between ourselves and Fire Keep.</d>
+
+overall_soundscape: cavernous hall reverb, distant wind. No music under the dialogue.
+
+non_diegetic_music: cold, sinister theme.

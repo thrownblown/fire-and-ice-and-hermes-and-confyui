@@ -1,0 +1,7 @@
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over wide painted exteriors, wind and dust in the air, hard natural light. The opening frame matches <Picture 1>: A muscular figure with blonde hair lies on their back, head tilted slightly upward, eyes closed. The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. On screen: muscular, blond, light, red and gold belt, green straps. He shifts his weight, turns his shoulders, and brings one arm up across his chest before letting it fall. The movement carries through and then settles back, and in the closing seconds everything slows and stops. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
+
+non_diegetic_music: Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

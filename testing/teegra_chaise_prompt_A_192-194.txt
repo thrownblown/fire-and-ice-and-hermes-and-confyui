@@ -1,0 +1,27 @@
+# graph_length_frames: 243
+subject_definitions:
+<Subject 1> is Teegra, the young woman shown in <Picture 1>, <Picture 2>, <Picture 3>, and <Picture 4>. Use those pictures for her face, very long dark hair, pale skin, and lightweight two-piece costume. Do not import any pose or action from the stills. She is the one reclining on the chaise in <Video 1> and <Video 2>.
+<Subject 2> is the tutor. She is heard but not seen in <Video 2>; keep her off-screen and do not invent her face.
+<Video 1> and <Video 2> supply her posture on the chaise, the rhythm of the scene, and the spoken dialogue.
+
+summary:
+[video editing + audio reuse] A single continuous 2D-animated rotoscope scene of <Subject 1> reclining on the chaise, speaking her line and then listening to the off-screen tutor, preserving her appearance from the reference pictures and the timing, posture, and speech of the reference videos.
+
+retention_analysis:
+<Subject 1>: fully_preserved — keep her face, very long dark hair, pale skin, and costume consistent across <Picture 1> through <Picture 4> and both videos.
+<Video 1> <Video 2>: attribute_transfer — carry the chaise posture, facial performance, and the exact spoken dialogue and delivery into the generated clip.
+Dialogue audio of <Video 1> <Video 2>: fully_copy — reuse the spoken lines and their timing.
+<Subject 2>: weak_reference — she remains an off-screen voice; do not visualize her.
+
+detailed_description:
+2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted interiors.
+
+[Shot 1] <Subject 1> (S1) reclines on the chaise, propped on one arm, and complains to the room, her face turned toward the camera. She says: <d>[English] How can you talk about elements when the war draws nearer to us every hour?</d>
+
+[Shot 2] At 00:06.381, the scene continues on the chaise as <Subject 1> (S1) shifts, raising her legs and stretching an arm upward. <Subject 2> (S2) speaks while off-screen, and <Subject 1> listens with growing impatience. <Subject 2> says: <d>[English] Your brother's duty is to soldier. And your duty is to learn.</d>
+
+overall_soundscape:
+Room tone of a stone interior, faint echo off hard walls, the rustle of the chaise cushion and her hair and costume as she shifts.
+
+non_diegetic_music:
+N/A

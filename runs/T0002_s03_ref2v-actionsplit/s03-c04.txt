@@ -1,0 +1,26 @@
+# chunk: s03-c04 | test: T0002 | scene: S03
+# source: 00:07:19.481-00:07:24.152 | lines: L030 L031
+# graph_length_seconds: 5.167
+# graph_length_frames: 124
+# source_duration_seconds: 4.67
+
+subject_definitions:
+<Subject 1>: JULIANA, extremely pale white skin, angular face, crimson lips, long straight jet-black hair with small white beads at the crown, long silver dagger-shaped earrings, a deep purple long-sleeved gown with a plunging neckline and hip-high slits. Seen in <Picture 1>, <Picture 2>.
+<Subject 2>: NEKRON, pale skin, long white hair, a dark purple robe. Seen in <Picture 3>, <Picture 4>.
+<Picture 1>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 2>: a still of JULIANA. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 3>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+<Picture 4>: a still of NEKRON. Anchors identity only. Do not import the pose or the action from this still.
+
+summary: reference generation + audio reference
+
+retention_analysis:
+<Subject 1>: attribute_transfer — retains the traits listed above.
+<Subject 2>: attribute_transfer — retains the traits listed above.
+
+detailed_description: rotoscope painted animation, Ice Peak throne hall. Cool cavern light, painted backgrounds, inked figures.
+[Shot 1] (0.0s) medium close-up, three-quarter angle, static. <Subject 1> (off-screen) says, <d>[English] He will not submit.</d> <Subject 2> says, <d>[English] Perhaps.</d>
+
+overall_soundscape: cavernous hall reverb, distant wind. No music under the dialogue.
+
+non_diegetic_music: cold, sinister theme.
