@@ -1,0 +1,14 @@
+{
+  "source": "E:\\FNI\\clips\\full",
+  "target_fps": 24,
+  "scale": "1280:720",
+  "count": 1,
+  "refs": [
+    {
+      "shot": "shot_00177.mp4",
+      "src": "1920x1072@23.976fps",
+      "ref": "1280x720@24.000fps"
+    }
+  ],
+  "failures": []
+}

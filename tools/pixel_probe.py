@@ -93,40 +93,40 @@ def cmd_probe(args):
 
 
 def cmd_glow(args):
-    """Find small bright saturated blobs — glowing eyes, gems, magic."""
+    """Find SMALL bright blobs = glowing eyes/gems. Connected components on
+    V>min_val (catches white glows too, not just saturated), then keep only
+    blobs with area <= max_px so large bright backgrounds (sky) are rejected.
+    Reports each blob's exact median/mean hex so color is numeric, not named."""
+    import cv2
     im = load(args.img, args.max_side)
-    a = np.asarray(im.convert("HSV")).astype(np.int16)
-    h, s, v = a[..., 0], a[..., 1], a[..., 2]
-    mask = (s > args.min_sat) & (v > args.min_val)
-    ys, xs = np.nonzero(mask)
-    if len(xs) < args.min_px:
-        print(f"no glow blobs (need >= {args.min_px} px with S>{args.min_sat}, V>{args.min_val})")
-        return
-    # cluster by simple grid binning then merge adjacent bins
-    rgb = np.asarray(im).astype(np.int16)
+    rgb = np.asarray(im).astype(np.uint8)
+    hsv = cv2.cvtColor(rgb, cv2.COLOR_RGB2HSV)
+    v = hsv[..., 2]
+    mask = (v > args.min_val).astype(np.uint8)
+    n, labels, stats, cents = cv2.connectedComponentsWithStats(mask, connectivity=8)
     H, W = mask.shape
-    binx, biny = 16, 16
-    gx = np.clip(xs // binx, 0, W // binx)
-    gy = np.clip(ys // biny, 0, H // biny)
-    keys = {}
-    for x, y in zip(gx, gy):
-        keys.setdefault((y, x), 0)
-        keys[(y, x)] += 1
-    blobs = []
-    for (by, bx), cnt in sorted(keys.items(), key=lambda kv: -kv[1]):
-        y0, y1 = by * biny, min(H, (by + 1) * biny)
-        x0, x1 = bx * binx, min(W, (bx + 1) * binx)
-        sel = mask[y0:y1, x0:x1]
-        if sel.sum() < args.min_px // 4:
+    rows = []
+    for i in range(1, n):
+        x, y, w, h, area = stats[i]
+        if area < args.min_px or area > args.max_px:
             continue
-        px = rgb[y0:y1, x0:x1][sel]
-        med = np.median(px, axis=0)
-        blobs.append((cnt, (x0, y0, x1, y1), hexes(med), px.mean(axis=0)))
-        if len(blobs) >= args.top:
-            break
-    print(f"glow blobs in {os.path.basename(args.img)} (S>{args.min_sat}, V>{args.min_val}):")
-    for cnt, bbox, med, mean in blobs:
-        print(f"  {cnt:5d} px  bbox={bbox}  median={med}  mean={hexes(mean)}")
+        sel = labels[y:y + h, x:x + w] == i
+        px = rgb[y:y + h, x:x + w][sel].astype(np.int16)
+        med = hexes(np.median(px, axis=0))
+        mean = hexes(px.mean(axis=0))
+        sat = int(hsv[y:y + h, x:x + w][sel][..., 1].mean()) if sel.ndim == 2 else int(hsv[..., 1][y:y+h, x:x+w][sel].mean())
+        cx, cy = int(cents[i][0]), int(cents[i][1])
+        rows.append((area, (int(x), int(y), int(x + w), int(y + h)), (cx, cy), med, mean, sat))
+    rows.sort(key=lambda r: r[0])
+    print(f"small bright blobs in {os.path.basename(args.img)} "
+          f"({W}x{H}, V>{args.min_val}, area {args.min_px}..{args.max_px}):")
+    if not rows:
+        print("  none — try raising --max-px (eyes may be larger) or lowering --min-val")
+        return
+    for area, bbox, c, med, mean, sat in rows[:args.top]:
+        print(f"  area={area:4d}  bbox={bbox}  centroid={c}  median={med}  mean={mean}  sat={sat}")
+    # eye-pair heuristic: two similar-color blobs near same y, close in x
+    print("  (eye pair = two blobs at similar y, small dx, matching hex)")
 
 
 def cmd_rows(args):
@@ -134,10 +134,15 @@ def cmd_rows(args):
     im = load(args.img, args.max_side)
     a = np.asarray(im.convert("HSV")).astype(np.int16)
     rgb = np.asarray(im).astype(np.int16)
+    W0 = a.shape[1]
+    xa = args.x0
+    xb = args.x1 if args.x1 > xa else W0
+    a = a[:, xa:xb]
+    rgb = rgb[:, xa:xb]
     h, s, v = a[..., 0], a[..., 1], a[..., 2]
     H, W = v.shape
     step = max(1, H // args.rows)
-    print(f"row profile {os.path.basename(args.img)} ({W}x{H}, every {step}px)")
+    print(f"row profile {os.path.basename(args.img)} x[{xa},{xb}] ({W}x{H}, every {step}px)")
     print("   y  dark%  bright%  sat%  domHueBucket  medianRGB")
     buckets = [(0, 11, "red"), (11, 22, "orange"), (22, 43, "YELLOW"),
                (43, 96, "GREEN"), (96, 128, "cyan"), (128, 171, "blue"),
@@ -178,15 +183,17 @@ def main():
     gl = sub.add_parser("glow")
     gl.add_argument("img")
     gl.add_argument("--max-side", type=int, default=900)
-    gl.add_argument("--min-sat", type=int, default=100)
     gl.add_argument("--min-val", type=int, default=180)
-    gl.add_argument("--min-px", type=int, default=12)
-    gl.add_argument("--top", type=int, default=8)
+    gl.add_argument("--min-px", type=int, default=8)
+    gl.add_argument("--max-px", type=int, default=1200)
+    gl.add_argument("--top", type=int, default=12)
 
     r = sub.add_parser("rows")
     r.add_argument("img")
     r.add_argument("--max-side", type=int, default=900)
     r.add_argument("--rows", type=int, default=40)
+    r.add_argument("--x0", type=int, default=0)
+    r.add_argument("--x1", type=int, default=0, help="x-range to scan (0 = full width)")
 
     args = ap.parse_args()
     {"grid": cmd_grid, "probe": cmd_probe, "glow": cmd_glow, "rows": cmd_rows}[args.cmd](args)

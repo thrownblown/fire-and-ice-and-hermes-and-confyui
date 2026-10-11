@@ -1,0 +1,13 @@
+# chunk: S02-k03 | scene: S02 | Fall of the North Village
+# shots: 00020 00021
+# src: 00:04:17.090-00:04:26.433  lines: none
+# h3: 226 frames / 9.417s  seed: 646366424
+# words: 262
+
+How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 9.42-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] 2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over wide painted exteriors, wind and dust in the air, hard natural light. The opening frame matches <Picture 1>: . The camera looks down, holding above the figures as they move. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The figure turns and steps, the body leading the movement and the clothing trailing behind. [Shot 2] At 00:02.669, the camera cuts to a new angle. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. On screen: slim, none, dark, tunic and pants, and 11 others with the same build and dress. He shifts his weight in a tight group, turns his shoulders, and brings one arm up across his chest before letting it fall. Only in the last seconds do these movements slow and stop, and the figure comes to rest in the pose, spacing, framing, and lighting established by <Picture 2>.
+
+overall_soundscape: Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
+
+non_diegetic_music: Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

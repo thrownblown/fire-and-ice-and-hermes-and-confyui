@@ -60,6 +60,18 @@ def h3_frames(seconds):
     return raw + (5 - (raw % 17)) % 17
 
 
+def picture_line(n, name, fname):
+    """Per-reference keep/drop line, sparkleriley-style. Sheets get the
+    multi-view warning so H3 does not read panels as different people."""
+    if "sheet" in fname.lower():
+        return ("<Picture %d> is a character reference sheet of %s: the same person shown from "
+                "several angles in separate panels. Do not treat the panels as different people. "
+                "Keep the face, hair, costume and proportions; do not keep the white background "
+                "or the neutral poses." % (n, name))
+    return ("<Picture %d> is a still of %s. Keep the face, hair and costume; do not keep the "
+            "pose, the framing, the background or the lighting of the still." % (n, name))
+
+
 def main():
     shots = {}
     for line in (ROOT / "shots.jsonl").read_text(encoding="utf-8").splitlines():
@@ -101,18 +113,17 @@ def main():
                     names.append(name)
         pic_of = {n: [] for n in names}
         pic_names = []
+        pic_files = []
         for name in names:
             for _fn in REF_FILES.get(name, []):
                 pic_names.append(name)
+                pic_files.append(_fn)
                 pic_of[name].append(len(pic_names))
         subs = []
         for i, name in enumerate(names, 1):
             seen = ", ".join("<Picture %d>" % n for n in pic_of[name]) or "no reference still"
             subs.append("<Subject %d>: %s, %s. Seen in %s." % (i, name, DESC[name], seen))
-        pic_lines = [
-            "<Picture %d>: a still of %s. Anchors identity only. Do not import the pose or the action from this still."
-            % (n, name) for n, name in enumerate(pic_names, 1)
-        ]
+        pic_lines = [picture_line(n, name, fn) for n, (name, fn) in enumerate(zip(pic_names, pic_files), 1)]
         subject_of = {name: i for i, name in enumerate(names, 1)}
         shot_lines = []
         for idx, s in enumerate(group, 1):
