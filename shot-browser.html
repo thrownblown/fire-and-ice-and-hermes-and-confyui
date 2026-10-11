@@ -92,6 +92,24 @@ a:hover { text-decoration:underline; }
 .refgrid .ref .nm { font-size:10.5px; color:var(--dim); margin-top:3px; word-break:break-all; }
 .refgrid .ref .del { position:absolute; top:4px; left:4px; font-size:11px; padding:1px 7px; border-radius:4px; background:#0009; color:#f88; border:1px solid #f88; cursor:pointer; display:none; }
 .refgrid .ref:hover .del { display:block; }
+.scenestills { display:flex; gap:14px; flex-direction:column; }
+.scenestill-grp .gh { font-size:12px; color:var(--dim); margin-bottom:6px; }
+.scenestill-grp .gh a { font-family:ui-monospace,Consolas,monospace; }
+.pickrow { display:flex; gap:8px; flex-wrap:wrap; }
+.pick { position:relative; width:110px; cursor:pointer; }
+.pick img { width:110px; height:72px; object-fit:contain; background:#000; border:1px solid var(--line); border-radius:4px; display:block; }
+.pick:hover img { border-color:var(--accent); }
+.pick .nm { font-size:10px; color:var(--dim); margin-top:2px; word-break:break-all; }
+.pick.added img { border-color:var(--accent2); }
+.pick .badge { position:absolute; top:4px; right:4px; font-size:10px; padding:1px 5px; border-radius:3px; background:#000c; color:var(--accent2); display:none; }
+.pick.added .badge { display:block; }
+.seqstrip { display:flex; flex-wrap:wrap; gap:3px; }
+.seqtag { padding:2px 6px; background:var(--panel2); border:1px solid var(--line); border-radius:3px; font-size:10.5px; font-family:ui-monospace,Consolas,monospace; color:var(--dim); cursor:pointer; user-select:none; }
+.seqtag:hover { border-color:var(--accent); color:var(--txt); }
+.seqtag.sel { background:var(--accent2); color:#071318; border-color:var(--accent2); }
+.setupcard { border:1px solid var(--line); border-radius:8px; padding:10px 12px; margin-bottom:12px; background:var(--panel); }
+.setupcard .shead { font-size:12.5px; margin-bottom:8px; }
+.setupcard .shead a:first-child { font-family:ui-monospace,Consolas,monospace; color:var(--accent); font-weight:600; }
 .addref { width:130px; height:98px; border:1px dashed var(--line); border-radius:6px; display:flex; align-items:center; justify-content:center; color:var(--dim); cursor:pointer; font-size:24px; user-select:none; }
 .addref:hover { border-color:var(--accent); color:var(--accent); }
 .banner { padding:8px 14px; background:#221d10; border:1px solid var(--line); border-radius:6px; font-size:12px; color:var(--dim); margin-bottom:14px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
@@ -100,7 +118,7 @@ textarea.trait { width:100%; background:var(--panel2); border:1px solid var(--li
 .slot { display:flex; gap:10px; align-items:center; padding:6px 0; border-bottom:1px dashed var(--line); flex-wrap:wrap; }
 .slot .lbl { flex:0 0 84px; color:var(--accent2); font-weight:600; font-size:12.5px; font-family:ui-monospace,Consolas,monospace; }
 .slot select { background:var(--panel2); color:var(--txt); border:1px solid var(--line); border-radius:4px; padding:3px 6px; font-size:12.5px; max-width:280px; }
-.slot video { height:56px; width:auto; background:#000; border:1px solid var(--line); border-radius:4px; }
+.slot video { height:120px; width:auto; background:#000; border:1px solid var(--line); border-radius:4px; }
 .slot img.pick { height:56px; border:1px solid var(--line); border-radius:4px; }
 input[type=text].inline { background:var(--panel2); border:1px solid var(--line); color:var(--txt); padding:4px 8px; border-radius:4px; font-size:12.5px; width:100%; }
 code { background:var(--panel2); border:1px solid var(--line); border-radius:3px; padding:0 4px; font-size:11.5px; }
@@ -112,8 +130,10 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   <div class="tabs">
     <div class="tab" id="tabShots">Shots <span id="nShots"></span></div>
     <div class="tab" id="tabChunks">Chunks <span id="nChunks"></span></div>
+    <div class="tab" id="tabSetups">Setups <span id="nSetups"></span></div>
     <div class="tab" id="tabChars">Characters <span id="nChars"></span></div>
     <div class="tab" id="tabBgs">Backgrounds <span id="nBgs"></span></div>
+    <div class="tab" id="tabTests">Test runs <span id="nTests"></span></div>
   </div>
   <div class="search">
     <span class="chip" id="fNekron">Nekron</span>
@@ -129,6 +149,8 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
 
 <script src="shot-browser-data.js"></script>
 <script src="refs/refs-data.js"></script>
+<script src="setups-data.js"></script>
+<script src="runs/testruns-data.js"></script>
 <script>
 (function(){
   'use strict';
@@ -149,6 +171,8 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
      ================================================================ */
   var D = window.SHOTDATA;
   var R = window.REFSDATA || {characters:[], backgrounds:[]};
+  var T = window.TESTDATA || {runs:[]};
+  var SU = window.SETUPDATA || {scenes:[], shot_setup:{}};
   var shots = D.shots, chunks = D.chunks, caps = D.captions;
   var names = {NEKRON:'Nekron', TEEGRA:'Teegra', LARN:'Larn'};
 
@@ -156,8 +180,10 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   var $detail = document.getElementById('detail');
   document.getElementById('nShots').textContent = shots.length;
   document.getElementById('nChunks').textContent = chunks.length;
+  document.getElementById('nSetups').textContent = SU.scenes.length;
   document.getElementById('nChars').textContent = R.characters.length;
   document.getElementById('nBgs').textContent = R.backgrounds.length;
+  document.getElementById('nTests').textContent = T.runs.length;
 
   /* ---------------------------------------------------------- url state */
   function params(){ return new URLSearchParams(location.search); }
@@ -187,7 +213,10 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       selShot: pad5(p.get('shot') || p.get('shotid') || p.get('s')),
       selChunk: p.get('chunk') || p.get('chunkid') || p.get('c'),
       selChar: (p.get('char') || p.get('charid') || '').toUpperCase() || null,
-      selBg: p.get('bg') || p.get('bgid') || null
+      selBg: p.get('bg') || p.get('bgid') || null,
+      selScene: (view==='setups') ? (p.get('scene') || null) : null,
+      selSetup: (view==='setups') ? (p.get('setup') || null) : null,
+      selRun: (p.get('run') || '').toUpperCase() || null
     };
   }
 
@@ -247,6 +276,43 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       if (t && charByName(t)) out[t] = 1;
     });
     return Object.keys(out);
+  }
+
+  /* ------------------------------------------------------------ setups
+     A setup = one camera angle shared by 1+ shots of a scene (SSIM
+     clustering, core/continuity.py). Cross-cut scenes alternate between
+     setups; shots in one setup are prompted together (shared master
+     background plate) then split apart again at assembly.
+     Manual overlay: shot→setup reassignments + setup→background-plate
+     binding + notes, in localStorage; exportable via the bundle. */
+  var setupMoves = lsGet('fni.setupmoves.v1', {});   // shotnum -> tag
+  var setupPlates = lsGet('fni.setupplates.v1', {}); // tag -> bg slug
+  var setupNotes = lsGet('fni.setupnotes.v1', {});   // tag -> text
+  function saveSetupMoves(){ lsSet('fni.setupmoves.v1', setupMoves); }
+  function saveSetupPlates(){ lsSet('fni.setupplates.v1', setupPlates); }
+  function saveSetupNotes(){ lsSet('fni.setupnotes.v1', setupNotes); }
+
+  function sceneById(id){ for (var i=0;i<SU.scenes.length;i++) if (SU.scenes[i].scene===id) return SU.scenes[i]; return null; }
+  function setupSceneOf(tag){ return tag ? sceneById(tag.split('-')[0]) : null; }
+  function setupTagOfShot(n){ return setupMoves[n] || SU.shot_setup[n] || null; }
+  // every shot number belonging to a scene (disk clustering ∪ manual moves)
+  function sceneShots(sc){
+    var out = {};
+    Object.keys(sc.setups).forEach(function(t){ sc.setups[t].forEach(function(n){ out[n] = 1; }); });
+    Object.keys(setupMoves).forEach(function(n){
+      var sh = shotByNum(n);
+      if (sh && sceneOf(sh) === sc.scene) out[n] = 1;
+    });
+    return Object.keys(out).sort();
+  }
+  // effective membership: disk clustering with manual moves applied
+  function setupMembers(sc, tag){
+    return sceneShots(sc).filter(function(n){ return setupTagOfShot(n) === tag; });
+  }
+  function allSetupTags(sc){
+    var tags = {};
+    sceneShots(sc).forEach(function(n){ var t = setupTagOfShot(n); if (t) tags[t] = 1; });
+    return Object.keys(tags).sort();
   }
 
   /* ---------------------------------------------------------- matching */
@@ -309,6 +375,19 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
           function(){ nav({chunk:c.id}); });
       });
       if (!$list.children.length) $list.innerHTML = '<div class="empty">no chunks match</div>';
+    } else if (st.view === 'setups'){
+      SU.scenes.forEach(function(sc){
+        if (st.q){
+          var hay = (sc.scene + ' ' + allSetupTags(sc).join(' ')).toLowerCase();
+          if (hay.indexOf(st.q.toLowerCase()) < 0) return;
+        }
+        var multi = allSetupTags(sc).filter(function(t){ return setupMembers(sc, t).length > 1; }).length;
+        item(st.selScene===sc.scene,
+          '<div class="t"><span class="id">'+esc(sc.scene)+'</span>'+(sc.crosscut?' <span style="color:var(--accent2);font-size:11px">CROSS-CUT</span>':'')+'</div>'
+          + '<div class="m">'+sc.shots+' shots · '+Object.keys(sc.setups).length+' setups · <b>'+multi+' multi-shot</b>'+(sc.alternations?' · '+sc.alternations+' alts':'')+'</div>',
+          function(){ nav({scene:sc.scene, setup:null}); });
+      });
+      if (!$list.children.length) $list.innerHTML = '<div class="empty">no scenes match — run core/continuity.py + tools/build_setups_data.py</div>';
     } else if (st.view === 'chars'){
       R.characters.forEach(function(c){
         if (!matchesChar(c, st)) return;
@@ -327,6 +406,19 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
           function(){ nav({bg:b.slug}); });
       });
       if (!$list.children.length) $list.innerHTML = '<div class="empty">no backgrounds match</div>';
+    } else if (st.view === 'tests'){
+      if (!T.runs.length) $list.innerHTML = '<div class="empty">no test runs recorded — run tools/build_testruns_data.py</div>';
+      T.runs.forEach(function(r){
+        if (st.q){
+          var hay = (r.id+' '+(r.scope||'')+' '+(r.title||'')+' '+(r.question||'')+' '+(r.notes||'')).toLowerCase();
+          if (hay.indexOf(st.q.toLowerCase()) < 0) return;
+        }
+        item(st.selRun===r.id,
+          '<div class="t"><span class="id">'+esc(r.id)+'</span> '+(r.scope?esc(r.scope)+' · ':'')+esc(r.title||'')+'</div>'
+          + '<div class="m">'+r.files.length+' clips · <b>'+esc(r.verdict||'')+'</b></div>',
+          function(){ nav({run:r.id}); });
+      });
+      if (!$list.children.length) $list.innerHTML = '<div class="empty">no test runs match</div>';
     }
   }
 
@@ -352,6 +444,12 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
 
     var chk = s.chunk ? chunkById(s.chunk) : null;
     var cs = chk ? charsOfChunk(chk) : [];
+    var stag = setupTagOfShot(s.num);
+    if (stag){
+      h += '<div class="section"><h3>Setup</h3>'
+        + '<a href="#" data-nav="setup:'+esc(stag)+'">'+esc(stag)+'</a>'
+        + ' <span style="color:var(--dim);font-size:12px">— camera angle group · shots of this setup are prompted together</span></div>';
+    }
     if (cs.length){
       h += '<div class="section"><h3>Characters (via '+esc(s.chunk)+')</h3><div class="pills">';
       cs.forEach(function(n){ var c = charByName(n); h += '<span class="pill"><a href="#" data-nav="char:'+esc(n)+'">'+esc(c?(c.display||c.name):n)+'</a></span>'; });
@@ -442,7 +540,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       var vi = vids.indexOf(sn);
       h += '<div class="slot"><span class="lbl">Video '+(vi>=0 ? (vi+1) : '–')+'</span>'
         + '<label style="font-size:12.5px;cursor:pointer"><input type="checkbox" data-videopick="'+esc(sn)+'"'+(vi>=0?' checked':'')+'> shot #'+esc(sn)+' clip</label>'
-        + '<video preload="metadata" src="clips/full/shot_'+esc(sn)+'.mp4"></video></div>';
+        + '<video controls preload="metadata" src="clips/full/shot_'+esc(sn)+'.mp4"></video></div>';
     });
     var bgSlug = inp.bg || null;
     var bg = bgSlug ? bgBySlug(bgSlug) : null;
@@ -509,6 +607,34 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     if (appChunks.length > 40) h += '<div style="color:var(--dim)">…and '+(appChunks.length-40)+' more</div>';
     if (!appChunks.length) h += '<div style="color:var(--dim)">no chunks reference this character</div>';
     h += '</div>';
+    h += '<div class="section"><h3>Stills from scenes they appear in</h3>';
+    h += '<div style="color:var(--dim);font-size:12px;margin-bottom:8px">Click a still to copy it into this character\'s refs. If the refs folder isn\'t connected, you\'ll be asked again.</div>';
+    h += '<div class="scenestills" id="sceneStills">';
+    var seenShot = {};
+    var stillCount = 0;
+    appChunks.forEach(function(k){
+      var bits = '';
+      (k.shot_nums||[]).forEach(function(sn){
+        if (seenShot[sn]) return;
+        seenShot[sn] = 1;
+        var sh = shotByNum(sn);
+        if (!sh || !sh.stills || !sh.stills.length) return;
+        sh.stills.forEach(function(fn){
+          stillCount++;
+          var already = refs.some(function(r){ return r.name === fn; });
+          bits += '<div class="pick'+(already?' added':'')+'" data-addstill="'+esc(fn)+'" title="add '+esc(fn)+' to refs">'
+            + '<img src="stills/full/'+encodeURIComponent(fn)+'" loading="lazy" alt="'+esc(fn)+'">'
+            + '<span class="badge">added</span>'
+            + '<div class="nm">'+esc(fn)+'</div></div>';
+        });
+      });
+      if (bits){
+        h += '<div class="scenestill-grp"><div class="gh"><a href="#" data-nav="chunk:'+esc(k.id)+'">'+esc(k.id)+'</a> '
+          + esc(k.scene||'')+'</div><div class="pickrow">'+bits+'</div></div>';
+      }
+    });
+    if (!stillCount) h += '<div style="color:var(--dim)">no stills for this character\'s shots</div>';
+    h += '</div></div>';
     $detail.innerHTML = h;
     document.getElementById('traitBox').onchange = function(){
       traitEdits[c.name] = this.value; saveTraits(); renderList(state());
@@ -525,6 +651,12 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       });
     };
     document.getElementById('addRef').onclick = function(){ pickFiles('char', c.name); };
+    Array.prototype.forEach.call($detail.querySelectorAll('[data-addstill]'), function(el){
+      el.onclick = function(){
+        var fn = this.getAttribute('data-addstill');
+        addStillAsRef('char', c.name, fn, this);
+      };
+    });
     Array.prototype.forEach.call($detail.querySelectorAll('[data-delref]'), function(el){
       el.onclick = function(){
         var nm = this.getAttribute('data-delref');
@@ -575,6 +707,127 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       };
     });
     wireUpload();
+  }
+
+  /* Setups workspace: scene overview (setup strip + manual re-tag) and
+     single-setup detail (shots, plate binding, prompt-together context). */
+  function detailScene(sc){
+    var tags = allSetupTags(sc);
+    var h = '';
+    h += '<div class="crumb">setups</div>';
+    h += '<h2><span class="mono">'+esc(sc.scene)+'</span>'+(sc.crosscut?' <span style="color:var(--accent2);font-size:13px">CROSS-CUT ('+sc.alternations+' alternations)</span>':'')+'</h2>';
+    h += '<div class="metaline">'+sc.shots+' shots · '+tags.length+' setups · SSIM clustering from core/continuity.py, manual moves override</div>';
+    h += '<div class="banner"><span>Prompt all shots of one setup together (shared background plate), then split them apart again at assembly. Click a setup to open it; drag is not supported — use the shot page or setup detail to move shots between setups.</span></div>';
+    // sequence strip
+    h += '<div class="section"><h3>Cut sequence</h3><div class="seqstrip">';
+    sc.seq.forEach(function(t, idx){
+      var sel = st_setupSelected && t===st_setupSelected;
+      h += '<span class="seqtag'+(sel?' sel':'')+'" data-nav="setup:'+esc(t)+'" title="'+esc(t)+'">'+esc(t.split('-')[1]||t)+'</span>';
+    });
+    h += '</div></div>';
+    // setup cards
+    h += '<div class="section"><h3>Setups</h3>';
+    tags.forEach(function(t){
+      var mem = setupMembers(sc, t);
+      var plate = setupPlates[t];
+      var moved = mem.filter(function(n){ return setupMoves[n]; }).length;
+      h += '<div class="setupcard">';
+      h += '<div class="shead"><a href="#" data-nav="setup:'+esc(t)+'">'+esc(t)+'</a> · '+mem.length+' shot'+(mem.length===1?'':'s')
+        + (moved?' <span style="color:var(--accent);font-size:11px">'+moved+' moved</span>':'')
+        + (plate?' · plate: <a href="#" data-nav="bg:'+esc(plate)+'">'+esc(plate)+'</a>':' · <span style="color:var(--dim2);font-size:11.5px">no plate</span>')+'</div>';
+      h += '<div class="pickrow">';
+      mem.slice(0,12).forEach(function(n){
+        var sh = shotByNum(n);
+        h += '<div class="pick" data-nav="shot:'+esc(n)+'" title="shot '+esc(n)+(sh?' · '+sh.dur+'s':'')+'">'
+          + '<img src="stills/boundary/shot_'+encodeURIComponent(n)+'_first.jpg" loading="lazy" alt="shot '+esc(n)+'">'
+          + '<div class="nm">#'+esc(n)+'</div></div>';
+      });
+      if (mem.length > 12) h += '<div class="pick" data-nav="setup:'+esc(t)+'"><div class="nm" style="padding-top:24px">+'+(mem.length-12)+' more…</div></div>';
+      h += '</div></div>';
+    });
+    h += '</div>';
+    $detail.innerHTML = h;
+  }
+
+  var st_setupSelected = null;
+  function detailSetup(sc, tag){
+    st_setupSelected = tag;
+    var mem = setupMembers(sc, tag);
+    var plate = setupPlates[tag] || '';
+    var h = '';
+    h += '<div class="crumb">setups · <a href="#" data-nav="scene:'+esc(sc.scene)+'">'+esc(sc.scene)+'</a></div>';
+    h += '<h2><span class="mono">'+esc(tag)+'</span></h2>';
+    h += '<div class="metaline">'+mem.length+' shots'+(sc.crosscut?' · <span style="color:var(--accent2)">scene is CROSS-CUT</span>':'')+'</div>';
+    // master plate binding
+    h += '<div class="section"><h3>Master background plate</h3>';
+    h += '<div class="slot"><span class="lbl">plate</span><select id="plateSel">'
+      + '<option value="">— none —</option>';
+    R.backgrounds.forEach(function(b){
+      h += '<option value="'+esc(b.slug)+'"'+(plate===b.slug?' selected':'')+'>'+esc(b.name||b.slug)+'</option>';
+    });
+    h += '</select>'
+      + (plate?' <a href="#" data-nav="bg:'+esc(plate)+'">open background</a>':' <span style="color:var(--dim);font-size:12px">bind one plate; every shot of this setup is prompted with it</span>')+'</div>';
+    h += '</div>';
+    // notes
+    h += '<div class="section"><h3>Setup notes</h3>'
+      + '<textarea class="trait" id="setupNote" placeholder="staging, lighting, what the shared plate must hold…">'+esc(setupNotes[tag]||'')+'</textarea></div>';
+    // shots with move controls
+    h += '<div class="section"><h3>Shots ('+mem.length+')</h3>';
+    var otherTags = allSetupTags(sc).filter(function(t){ return t !== tag; });
+    mem.forEach(function(n){
+      var sh = shotByNum(n);
+      h += '<div class="slot"><span class="lbl">#'+esc(n)+'</span>'
+        + '<video controls preload="metadata" src="clips/full/shot_'+encodeURIComponent(n)+'.mp4"></video>';
+      if (sh) h += '<span style="color:var(--dim);font-size:12px">'+sh.dur+'s · '+esc(sh.chunk||'')+' · '+esc(sh.detail.setting||'')+'</span>';
+      if (setupMoves[n]) h += '<span style="color:var(--accent);font-size:11px">moved from '+esc(SU.shot_setup[n]||'?')+'</span>';
+      h += '<a href="#" data-nav="shot:'+esc(n)+'">open</a>';
+      h += '<select data-moveshot="'+esc(n)+'"><option value="">move to…</option>';
+      otherTags.forEach(function(t){ h += '<option value="'+esc(t)+'">'+esc(t)+'</option>'; });
+      h += '<option value="__new">+ new setup…</option></select>';
+      h += '</div>';
+    });
+    if (!mem.length) h += '<div style="color:var(--dim)">this setup has no shots (all moved away) — <a href="#" data-nav="scene:'+esc(sc.scene)+'">back to scene</a></div>';
+    h += '</div>';
+    // edges touching these shots
+    var edges = sc.edges.filter(function(e){
+      var a = e.from.replace('shot:',''), b2 = e.to.replace('shot:','');
+      return mem.indexOf(a) >= 0 || mem.indexOf(b2) >= 0;
+    });
+    if (edges.length){
+      h += '<div class="section"><h3>SSIM edges</h3>';
+      edges.forEach(function(e){
+        h += '<div class="dl"><span class="sp">'+esc(e.from.replace('shot:','#'))+'→'+esc(e.to.replace('shot:','#'))+'</span>'
+          + '<span class="tx">'+e.ssim.toFixed(3)+' · '+esc(e.edge)+'</span></div>';
+      });
+      h += '</div>';
+    }
+    $detail.innerHTML = h;
+    document.getElementById('plateSel').onchange = function(){
+      if (this.value) setupPlates[tag] = this.value; else delete setupPlates[tag];
+      saveSetupPlates(); render();
+    };
+    document.getElementById('setupNote').onchange = function(){
+      if (this.value) setupNotes[tag] = this.value; else delete setupNotes[tag];
+      saveSetupNotes();
+    };
+    Array.prototype.forEach.call($detail.querySelectorAll('[data-moveshot]'), function(sel){
+      sel.onchange = function(){
+        var n = this.getAttribute('data-moveshot');
+        var v = this.value;
+        if (!v) return;
+        if (v === '__new'){
+          var base = tag.split('-')[0];
+          var used = {};
+          allSetupTags(sc).forEach(function(t){ var m = t.match(/-([A-Za-z]+)$/); if (m) used[m[1]] = 1; });
+          var code = 'A';
+          while (used[code]) code = String.fromCharCode(code.charCodeAt(0)+1);
+          v = base + '-' + code;
+        }
+        if ((SU.shot_setup[n]||null) === v) delete setupMoves[n];
+        else setupMoves[n] = v;
+        saveSetupMoves(); render();
+      };
+    });
   }
 
   /* ----------------------------------------------------------- uploads
@@ -658,6 +911,73 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     };
     inp.click();
   }
+  /* Copy a scene still into the character's refs folder.
+     file:// pages cannot fetch(), so read the pixels off the <img>
+     that already loaded. Folder connection is still a prereq. */
+  function addStillAsRef(kind, key, fn, el){
+    function already(){
+      return refsFor(kind, key).some(function(r){ return r.name === fn; });
+    }
+    if (already()) return;
+    var img = el ? el.querySelector('img') : null;
+    function blobFromImg(done, fail){
+      if (!img || !img.complete || !img.naturalWidth){ fail(new Error('still not loaded')); return; }
+      try {
+        var cnv = document.createElement('canvas');
+        cnv.width = img.naturalWidth; cnv.height = img.naturalHeight;
+        cnv.getContext('2d').drawImage(img, 0, 0);
+        cnv.toBlob(function(blob){
+          if (blob) done(blob); else fail(new Error('could not encode still'));
+        }, 'image/jpeg', 0.92);
+      } catch (e) { fail(e); }
+    }
+    function viaFetch(done, fail){
+      fetch('stills/full/' + encodeURIComponent(fn)).then(function(res){
+        if (!res.ok) throw new Error('HTTP '+res.status);
+        return res.blob();
+      }).then(done).catch(fail);
+    }
+    function writeBlob(blob){
+      var sub = kind==='char' ? 'characters' : 'backgrounds';
+      var outName = fn.replace(/\.jpe?g$/i, '.jpg');
+      dirHandle.getDirectoryHandle(sub, {create:true})
+        .then(function(d1){ return d1.getDirectoryHandle(key, {create:true}); })
+        .then(function(d2){ return d2.getFileHandle(outName, {create:true}); })
+        .then(function(fh){ return fh.createWritable(); })
+        .then(function(w){ return w.write(blob).then(function(){ return w.close(); }); })
+        .then(function(){
+          var fr = new FileReader();
+          fr.onload = function(){
+            localRefs = localRefs.filter(function(r){ return !(r.kind===kind && r.key===key && r.name===outName); });
+            localRefs.push({kind:kind, key:key, name:outName, dataUrl:fr.result});
+            saveRefs();
+            render();
+          };
+          fr.readAsDataURL(blob);
+        })
+        .catch(function(e){ console.error('still copy failed', e); alert('Could not write '+outName+' into the refs folder: '+e); });
+    }
+    function readThenWrite(){
+      blobFromImg(writeBlob, function(){
+        viaFetch(writeBlob, function(e){
+          alert('Could not read still '+fn+' ('+e+'). The thumbnail has to finish loading first.');
+        });
+      });
+    }
+    if (!window.showDirectoryPicker){
+      alert('This browser cannot write files (needs Chrome/Edge). Copy stills/full/'+fn+' into refs/' + (kind==='char'?'characters':'backgrounds') + '/'+key+'/ manually, then run tools/scan_refs.py');
+      return;
+    }
+    if (!dirHandle){
+      window.showDirectoryPicker({mode:'readwrite'}).then(function(dh){
+        dirHandle = dh; wireUpload(); readThenWrite();
+      }).catch(function(){
+        alert('Connect the refs folder (E:\\FNI\\refs) before adding stills.');
+      });
+      return;
+    }
+    readThenWrite();
+  }
   // traits save: writes refs/characters/<NAME>/traits.txt via the connected folder
   function saveTraitsToFile(name, text, done){
     function writeIt(){
@@ -682,7 +1002,10 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       refs: localRefs,
       traits: traitEdits,
       bg_settings: settingEdits,
-      prompt_inputs: promptInputs
+      prompt_inputs: promptInputs,
+      setup_moves: setupMoves,
+      setup_plates: setupPlates,
+      setup_notes: setupNotes
     };
     var blob = new Blob([JSON.stringify(bundle)], {type:'application/json'});
     var a = document.createElement('a');
@@ -691,14 +1014,46 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     document.body.appendChild(a); a.click(); a.remove();
   }
 
+  /* ------------------------------------------------------------ tests */
+  function detailRun(r){
+    var h = '';
+    h += '<div class="crumb">test run · <span class="mono">'+esc(r.id)+'</span>'
+      + (r.scope ? ' · scene '+esc(r.scope) : '') + '</div>';
+    h += '<h2><span class="mono">'+esc(r.id)+'</span> '+esc(r.title||'')+'</h2>';
+    h += '<div class="metaline">'+esc(r.status||'')+' <span>·</span> '+r.files.length+' clips'
+      + (r.verdict ? ' <span>·</span> verdict: '+esc(r.verdict) : '') + '</div>';
+    if (r.question){
+      h += '<div class="section"><h3>Question</h3><div>'+esc(r.question)+'</div></div>';
+    }
+    if (r.notes){
+      h += '<div class="section"><h3>Notes</h3><div>'+esc(r.notes)+'</div></div>';
+    }
+    if (r.files.length){
+      h += '<div class="section"><h3>Clips</h3>';
+      r.files.forEach(function(f){
+        h += '<div class="slot"><span class="lbl">'+esc(f.split("/").pop())+'</span>'
+          + '<video controls preload="metadata" src="'+esc(encodeURI(f))+'"></video>'
+          + '<a href="'+esc(encodeURI(f))+'" target="_blank">open</a></div>';
+      });
+      h += '</div>';
+    } else {
+      h += '<div class="section"><h3>Clips</h3><div class="empty">no clips on disk yet — '
+        + 'renders may still be in flight, or copy them from the 5090 output drive into runs/testruns/ '
+        + 'and re-run <code>tools/build_testruns_data.py</code></div></div>';
+    }
+    $detail.innerHTML = h;
+  }
+
   /* ------------------------------------------------------------ render
      Pure function of the URL. */
   function render(){
     var st = state();
     document.getElementById('tabShots').className  = 'tab' + (st.view==='shots'?' active':'');
     document.getElementById('tabChunks').className = 'tab' + (st.view==='chunks'?' active':'');
+    document.getElementById('tabSetups').className = 'tab' + (st.view==='setups'?' active':'');
     document.getElementById('tabChars').className  = 'tab' + (st.view==='chars'?' active':'');
     document.getElementById('tabBgs').className    = 'tab' + (st.view==='bgs'?' active':'');
+    document.getElementById('tabTests').className  = 'tab' + (st.view==='tests'?' active':'');
     ['NEKRON','TEEGRA','LARN'].forEach(function(x){
       var el = document.getElementById('f'+(x.charAt(0)+x.slice(1).toLowerCase()));
       el.className = 'chip' + (st.charFilter===x?' active':'');
@@ -706,7 +1061,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     });
     var q = document.getElementById('q');
     if (q.value !== st.q && document.activeElement !== q) q.value = st.q;
-    q.placeholder = st.view==='chars' ? 'search characters…' : st.view==='bgs' ? 'search backgrounds…' : 'search shot / chunk / text…';
+    q.placeholder = st.view==='chars' ? 'search characters…' : st.view==='bgs' ? 'search backgrounds…' : st.view==='setups' ? 'search scenes / setups…' : st.view==='tests' ? 'search test runs…' : 'search shot / chunk / text…';
 
     renderList(st);
 
@@ -716,6 +1071,20 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     } else if (st.view === 'chunks'){
       var c = st.selChunk ? chunkById(st.selChunk) : null;
       detailChunk(c || chunks[0]);
+    } else if (st.view === 'setups'){
+      if (st.selSetup){
+        var sc2 = setupSceneOf(st.selSetup);
+        if (sc2) detailSetup(sc2, st.selSetup);
+        else $detail.innerHTML = '<div class="empty">unknown setup '+esc(st.selSetup)+'</div>';
+      } else if (st.selScene){
+        var sc1 = sceneById(st.selScene);
+        if (sc1) { st_setupSelected = null; detailScene(sc1); }
+        else $detail.innerHTML = '<div class="empty">unknown scene '+esc(st.selScene)+'</div>';
+      } else if (SU.scenes.length){
+        st_setupSelected = null; detailScene(SU.scenes[0]);
+      } else {
+        $detail.innerHTML = '<div class="empty">no continuity data — run core/continuity.py then tools/build_setups_data.py</div>';
+      }
     } else if (st.view === 'chars'){
       var ch = st.selChar ? charByName(st.selChar) : null;
       if (ch) detailChar(ch);
@@ -724,6 +1093,12 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       var bg = st.selBg ? bgBySlug(st.selBg) : null;
       if (bg) detailBg(bg);
       else $detail.innerHTML = '<div class="empty">select a background — upload plates and edit the setting strings it should match</div>';
+    } else if (st.view === 'tests'){
+      var run = null;
+      for (var i=0;i<T.runs.length;i++) if (T.runs[i].id===st.selRun) run = T.runs[i];
+      if (!run) run = T.runs[0];
+      if (run) detailRun(run);
+      else $detail.innerHTML = '<div class="empty">no test runs recorded — run <code>tools/build_testruns_data.py</code></div>';
     }
     var sel = $list.querySelector('.selected');
     if (sel) sel.scrollIntoView({block:'nearest'});
@@ -732,10 +1107,12 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   /* ------------------------------------------------------------ wiring */
   window.addEventListener('popstate', render);
 
-  document.getElementById('tabShots').onclick  = function(){ var st = state(); nav({view:'shots',  chunk:null, char:null, bg:null, shot: st.selShot || shots[0].num}); };
-  document.getElementById('tabChunks').onclick = function(){ var st = state(); nav({view:'chunks', shot:null,  char:null, bg:null, chunk: st.selChunk || chunks[0].id}); };
-  document.getElementById('tabChars').onclick  = function(){ nav({view:'chars',  shot:null, chunk:null, bg:null}); };
-  document.getElementById('tabBgs').onclick    = function(){ nav({view:'bgs',    shot:null, chunk:null, char:null}); };
+  document.getElementById('tabShots').onclick  = function(){ var st = state(); nav({view:'shots',  chunk:null, char:null, bg:null, scene:null, setup:null, shot: st.selShot || shots[0].num}); };
+  document.getElementById('tabChunks').onclick = function(){ var st = state(); nav({view:'chunks', shot:null,  char:null, bg:null, scene:null, setup:null, chunk: st.selChunk || chunks[0].id}); };
+  document.getElementById('tabSetups').onclick = function(){ nav({view:'setups', shot:null, chunk:null, char:null, bg:null, run:null, setup:null, scene: (state().selScene || (SU.scenes[0] && SU.scenes[0].scene) || null)}); };
+  document.getElementById('tabChars').onclick  = function(){ nav({view:'chars',  shot:null, chunk:null, bg:null, scene:null, setup:null}); };
+  document.getElementById('tabBgs').onclick    = function(){ nav({view:'bgs',    shot:null, chunk:null, char:null, scene:null, setup:null}); };
+  document.getElementById('tabTests').onclick  = function(){ nav({view:'tests',  shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run: (state().selRun || (T.runs[0] && T.runs[0].id) || null)}); };
 
   function toggleChip(k){ var st = state(); nav({f: st.charFilter===k ? null : k}); }
   document.getElementById('fNekron').onclick = function(){ toggleChip('NEKRON'); };
@@ -758,11 +1135,13 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     var i = spec.indexOf(':');
     if (i < 0) return;
     var k = spec.slice(0, i), v = spec.slice(i+1);
-    var patch = {shot:null, chunk:null, char:null, bg:null};
+    var patch = {shot:null, chunk:null, char:null, bg:null, scene:null, setup:null};
     if (k === 'shot'){ patch.view = 'shots'; patch.shot = v; }
     else if (k === 'chunk'){ patch.view = 'chunks'; patch.chunk = v; }
     else if (k === 'char'){ patch.view = 'chars'; patch.char = v; }
     else if (k === 'bg'){ patch.view = 'bgs'; patch.bg = v; }
+    else if (k === 'setup'){ patch.view = 'setups'; patch.setup = v; patch.scene = v.split('-')[0]; }
+    else if (k === 'scene'){ patch.view = 'setups'; patch.scene = v; }
     else if (k === 'view'){ patch.view = v; }
     else return;
     nav(patch);
@@ -776,18 +1155,25 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     var view = p.get('view');
     if (!view){
       if (p.get('chunk')||p.get('chunkid')||p.get('c')) view = 'chunks';
+      else if (p.get('setup')||p.get('scene')) view = 'setups';
       else if (p.get('char')||p.get('charid')) view = 'chars';
       else if (p.get('bg')||p.get('bgid')) view = 'bgs';
       else view = 'shots';
     }
-    if (['shots','chunks','chars','bgs'].indexOf(view) < 0) view = 'shots';
-    var sn = null, cid = null, cn = null, bs = null;
+    if (['shots','chunks','setups','chars','bgs'].indexOf(view) < 0) view = 'shots';
+    var sn = null, cid = null, cn = null, bs = null, scn = null, su = null;
     if (view === 'shots'){
       sn = pad5(p.get('shot') || p.get('shotid') || p.get('s'));
       if (!sn || !shotByNum(sn)) sn = shots[0].num;
     } else if (view === 'chunks'){
       cid = p.get('chunk') || p.get('chunkid') || p.get('c');
       if (!cid || !chunkById(cid)) cid = chunks[0].id;
+    } else if (view === 'setups'){
+      su = p.get('setup');
+      scn = p.get('scene');
+      if (su){ var sc = setupSceneOf(su); if (sc){ scn = sc.scene; } else { su = null; } }
+      if (scn && !sceneById(scn)) scn = null;
+      if (!scn && SU.scenes.length) scn = SU.scenes[0].scene;
     } else if (view === 'chars'){
       cn = (p.get('char') || p.get('charid') || '').toUpperCase();
       if (cn && !charByName(cn)) cn = null;
@@ -801,6 +1187,8 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     if (cid) p2.set('chunk', cid);
     if (cn) p2.set('char', cn);
     if (bs) p2.set('bg', bs);
+    if (scn) p2.set('scene', scn);
+    if (su) p2.set('setup', su);
     if (p.get('f')) p2.set('f', String(p.get('f')).toUpperCase());
     if (p.get('q')) p2.set('q', p.get('q'));
     history.replaceState(null, '', location.pathname + (p2.toString() ? '?' + p2.toString() : ''));

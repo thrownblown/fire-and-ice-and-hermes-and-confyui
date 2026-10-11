@@ -1,0 +1,1 @@
+{"i": 2, "kind": "note", "text": "shots.jsonl = 1308 shots cut from the master. script/dialogue-timeline.tsv = 290 lines from the SRT with speakers, across 26 scenes (docs/beat-sheet-1.md). Rule: assign lines by cue midpoint, never split a shared cue, never let the VLM name characters.", "size": 258, "date": "2026-09-25T00:00:00"}

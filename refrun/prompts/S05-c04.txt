@@ -1,0 +1,41 @@
+# ref_video: S05-c04_ref.mp4
+
+subject_definitions:
+
+<Subject 1> is TEEGRA, a young woman with pale skin and very long dark hair in a light purple sleeveless top and skirt, shown in <Picture 1>, <Picture 2>. She is the one in <Video 1>.
+
+
+
+summary:
+
+[video editing + audio reuse] A single continuous 2D-animated rotoscope scene of TEEGRA in <Video 1>, preserving appearance from the reference pictures and the timing, posture, and speech of the reference video.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep a young woman with pale skin and very long dark hair in a light purple sleeveless top and skirt consistent across [Shot 1], [Shot 2] and <Video 1>.
+<Video 1>: attribute_transfer — carry the posture, facial performance, and exact spoken dialogue and delivery into the clip.
+Dialogue audio of <Video 1>: fully_copy — reuse the spoken lines and timing.
+
+
+
+detailed_description:
+
+2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted stone interiors, cold blue-grey cavern light
+
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. TEEGRA.
+
+[Shot 2] At 00:02.377, The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] You mean my duty is to stay shut up...</d> <Subject 1> (S1) says: <d>[English] while all the men do the fighting and share all the glory.</d> <Subject 1> (S1) says: <d>[English] We think that stinks.</d> <Subject 1> (S1) says: <d>[English] Don't we, Shaitan?</d>
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.
