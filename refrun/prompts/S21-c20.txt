@@ -1,0 +1,43 @@
+# ref_video: S21-c20_ref.mp4
+
+subject_definitions:
+
+<Subject 1> is the person shown in <Video 1>, as in the reference video, shown in <Picture 1>. She is the one in <Video 1>.
+
+
+
+summary:
+
+[video editing + audio reuse] A single continuous 2D-animated rotoscope scene of the person shown in <Video 1> in <Video 1>, preserving appearance from the reference pictures and the timing, posture, and speech of the reference video.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep as in the reference video consistent across [Shot 1], [Shot 2], [Shot 3] and <Video 1>.
+<Video 1>: attribute_transfer — carry the posture, facial performance, and exact spoken dialogue and delivery into the clip.
+Dialogue audio of <Video 1>: fully_copy — reuse the spoken lines and timing.
+
+
+
+detailed_description:
+
+2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted stone interiors, cold blue-grey cavern light
+
+[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. the person shown in <Video 1>.
+
+[Shot 2] At 00:01.627, The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 3] At 00:02.836, The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

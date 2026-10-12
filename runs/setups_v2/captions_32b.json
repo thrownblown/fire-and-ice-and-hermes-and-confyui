@@ -1,0 +1,86 @@
+{
+ "shot:00016": {
+  "location": "dark interior room",
+  "framing": "CU",
+  "angle": "high-angle",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00017": {
+  "location": "underwater cave interior",
+  "framing": "WS",
+  "angle": "eye-level",
+  "persons": 0,
+  "creatures": 1
+ },
+ "shot:00018": {
+  "location": "underwater ocean scene",
+  "framing": "XWS",
+  "angle": "eye-level",
+  "persons": 0,
+  "creatures": 1
+ },
+ "shot:00019": {
+  "location": "wooden structure interior",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00020": {
+  "location": "village surrounded by wooden fence",
+  "framing": "WS",
+  "angle": "high-angle",
+  "persons": 0,
+  "creatures": 0
+ },
+ "shot:00021": {
+  "location": "icy mountain pass",
+  "framing": "WS",
+  "angle": "eye-level",
+  "persons": 8,
+  "creatures": 0
+ },
+ "shot:00022": {
+  "location": "icy fortress wall",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00023": {
+  "location": "village clearing",
+  "framing": "WS",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00024": {
+  "location": "mountainous landscape",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 0
+ },
+ "shot:00025": {
+  "location": "sky",
+  "framing": "CU",
+  "angle": "high-angle",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00026": {
+  "location": "village clearing",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00027": {
+  "location": "icy fortress wall",
+  "framing": "MS",
+  "angle": "low-angle",
+  "persons": 5,
+  "creatures": 0
+ }
+}

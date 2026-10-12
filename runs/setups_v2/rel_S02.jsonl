@@ -1,0 +1,1 @@
+{"scene": "S02", "shots": 12, "setups": {"S02-A": [16], "S02-B": [17, 18], "S02-C": [19], "S02-D": [20, 23, 26], "S02-E": [21, 22, 24, 25, 27]}, "seq": ["S02-A", "S02-B", "S02-B", "S02-C", "S02-D", "S02-E", "S02-E", "S02-D", "S02-E", "S02-E", "S02-D", "S02-E"], "edges": [], "alternations": 2, "crosscut": false, "details": {}}

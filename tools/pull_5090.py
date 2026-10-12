@@ -16,6 +16,7 @@ class_types) — that ledger is the durable record of what the 5090 produced.
 """
 import argparse
 import json
+import os
 import sys
 import time
 import urllib.parse
@@ -23,7 +24,9 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(r"E:/FNI")
-COMFY = "http://192.168.12.177:8188"
+# ComfyUI endpoint: Tailscale is the default so remote sessions work; override for
+# LAN (faster) with FNI_COMFY=http://192.168.12.177:8188
+COMFY = os.environ.get("FNI_COMFY", "http://100.104.7.72:8188")
 DEST = ROOT / "renders" / "5090"
 INDEX = DEST / "INDEX.jsonl"
 

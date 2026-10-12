@@ -66,6 +66,39 @@ RUNS = {
 }
 
 
+# --------------------------------------------------------------------------
+# chunk -> [source shot nums] per run. Copy these from each run's manifest.md
+# (the chunk/shots table). The S03 pilot is shots 00067-00074: T0001/T0008 use
+# a 3-chunk split, T0002-T0005 a 5-chunk action-beat split over the same 8
+# shots. T0009 packs S02 shots 00016-00027 into 6 continuity segments.
+# Keys are lowercased chunk ids to match clip filenames case-insensitively.
+# --------------------------------------------------------------------------
+_S03_THREE = {"s03-c01": ["00067", "00068", "00069"],
+              "s03-c02": ["00070", "00071", "00072"],
+              "s03-c03": ["00073", "00074"]}
+_S03_FIVE = {"s03-c01": ["00067"],
+             "s03-c02": ["00068", "00069"],
+             "s03-c03": ["00070", "00071"],
+             "s03-c04": ["00072"],
+             "s03-c05": ["00073", "00074"]}
+_S02_SIX = {"s02-k01": ["00016"],
+            "s02-k02": ["00017", "00018", "00019"],
+            "s02-k03": ["00020", "00021"],
+            "s02-k04": ["00022"],
+            "s02-k05": ["00023", "00024", "00025"],
+            "s02-k06": ["00026", "00027"]}
+
+CHUNK_SHOTS = {
+    "T0001": _S03_THREE,
+    "T0002": _S03_FIVE,
+    "T0003": _S03_FIVE,
+    "T0004": _S03_FIVE,
+    "T0005": _S03_FIVE,
+    "T0008": _S03_THREE,
+    "T0009": _S02_SIX,
+}
+
+
 def rel(p):
     return p.relative_to(ROOT).as_posix()
 
@@ -107,6 +140,7 @@ def main():
         rec = {"id": rid}
         rec.update(meta)
         rec["files"] = files.get(rid, [])
+        rec["chunks"] = CHUNK_SHOTS.get(rid, {})
         runs.append(rec)
     # any discovered run with no curated record still gets shown
     for rid in sorted(set(files) - set(RUNS)):

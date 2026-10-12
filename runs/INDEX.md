@@ -9,8 +9,10 @@
 | T0005 | S03 | fl2va action variant | (Alex, after watching) |
 | T0008 | S03 | original master audio over the T0001 video (audio plan A baseline) | audition pending |
 | T0009 | S02 | continuity-packed segments (SSIM chains/setups) vs chronological | renders done — compare S02_continuity_audioA vs S02_chronological_audioA |
+| T0011 | S06 | setup-ref2va baseline: chronological chunk S06-c01 (3 shots) | (Alex, after watching) |
+| T0012 | S06 | setup-ref2va stitched-video: setup S06-A (5 shots) as one ref | (Alex, after watching) |
 
-Browsable in the shot browser: `shot-browser.html?view=tests` — data generated
+Browsable in the shot browser: `index.html?view=tests` — data generated
 by `tools/build_testruns_data.py`, re-run it after copying new renders in.
 Clips: `runs/<id>_*/output/`, `runs/testruns/` (copies from the 5090 drive),
 plus `runs/T0008_*/` and `runs/T0009_*/` audio overlays.

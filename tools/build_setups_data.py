@@ -14,6 +14,7 @@ one master background plate, then are split apart again at assembly.
 
 Usage: python tools/build_setups_data.py
 """
+import argparse
 import json
 import os
 import re
@@ -24,9 +25,14 @@ OUT = os.path.join(ROOT, "setups-data.js")
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--src", default=SRC,
+                    help="input jsonl (default: v1 continuity.jsonl)")
+    args = ap.parse_args()
+
     scenes = []
     shot_setup = {}
-    with open(SRC, encoding="utf-8") as f:
+    with open(args.src, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if not line:

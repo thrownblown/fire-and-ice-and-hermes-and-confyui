@@ -1,0 +1,12 @@
+{"chunk_id": "S02-k01", "state": "queued", "prompt_id": "d4626399-7452-4ca9-aaff-135f50298b77", "clip_index": 1, "ts": 1791759921.2242508}
+{"chunk_id": "S02-k02", "state": "queued", "prompt_id": "bf887509-8d2d-4e0e-902a-d98c34daccac", "clip_index": 2, "ts": 1791759999.4279346}
+{"chunk_id": "S02-k03", "state": "queued", "prompt_id": "3df39cd1-bf8c-41aa-b6e8-4770bf7b0108", "clip_index": 3, "ts": 1791760108.3789716}
+{"chunk_id": "S02-k04", "state": "queued", "prompt_id": "9489d9d5-6de9-4e76-9f0a-b95b69cedc9d", "clip_index": 4, "ts": 1791760354.827034}
+{"chunk_id": "S02-k05", "state": "queued", "prompt_id": "caf01780-7819-4b84-90e9-9b203e7f3382", "clip_index": 5, "ts": 1791760463.8401263}
+{"chunk_id": "S02-k06", "state": "queued", "prompt_id": "4461db13-786b-415c-871d-fa762697f653", "clip_index": 6, "ts": 1791760573.681797}
+{"chunk_id": "S02-k01", "state": "done", "prompt_id": "d4626399-7452-4ca9-aaff-135f50298b77", "file": "S02-k01_full_t01.mp4", "bytes": 1669305, "ts": 1791760790.543774}
+{"chunk_id": "S02-k02", "state": "done", "prompt_id": "bf887509-8d2d-4e0e-902a-d98c34daccac", "file": "S02-k02_full_t01.mp4", "bytes": 1885237, "ts": 1791760793.2035904}
+{"chunk_id": "S02-k03", "state": "done", "prompt_id": "3df39cd1-bf8c-41aa-b6e8-4770bf7b0108", "file": "S02-k03_full_t01.mp4", "bytes": 3271153, "ts": 1791760796.4712408}
+{"chunk_id": "S02-k04", "state": "done", "prompt_id": "9489d9d5-6de9-4e76-9f0a-b95b69cedc9d", "file": "S02-k04_full_t01.mp4", "bytes": 1854778, "ts": 1791760798.5371635}
+{"chunk_id": "S02-k05", "state": "done", "prompt_id": "caf01780-7819-4b84-90e9-9b203e7f3382", "file": "S02-k05_full_t01.mp4", "bytes": 1448049, "ts": 1791760801.418758}
+{"chunk_id": "S02-k06", "state": "done", "prompt_id": "4461db13-786b-415c-871d-fa762697f653", "file": "S02-k06_full_t01.mp4", "bytes": 2837350, "ts": 1791760804.51273}

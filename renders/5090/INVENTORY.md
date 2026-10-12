@@ -93,3 +93,275 @@ were queued on the 5090 but never written into project memory while they ran.
 - subject_definitions: <Subject 1> is the warrior on the polar bear sled. <Subject 2> is the armored penguin and narwhal army. <Subject 3> is the defensive seal and walrus army. summary: The video is focusing on the violent collision between <Subject 2> and <Subject 3>, before <Subject 1> charges down the glacier into the fray. retention_analysis: <Subject 1> (appears in [Shot 2]): fully_preserved - warrior, sword, sled
 - summary: The video is focusing on the violent collision between <Subject 2> and <Subject 3>, before <Subject 1> charges down the glacier into the fray. retention_analysis: <Subject 1> (appears in [Shot 2]): fully_preserved - warrior, sword, sled, and polar bears retained. <Subject 2> (appears in [Shot 1]): fully_preserved - penguin armor, spears, and narwhal horns retained. <Subject 3> (appears in [Shot 1]
 
+## renders/5090/SCAIL/scail2_00238.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00239.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00240.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00241.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00242.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00243.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00244.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00245.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00246.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00247.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00248.png
+- sidecars: 1
+- reference images: 00140-Job_20250725081619_Seed_1_BatchSz_8_GenNo_1_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00249.png
+- sidecars: 1
+- reference images: 00140-Job_20250725081619_Seed_1_BatchSz_8_GenNo_1_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00250.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00251.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00252.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/SCAIL/scail2_00253.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00001.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00002.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00003.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00004.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00005.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00006.png
+- sidecars: 1
+- reference images: 00140-Job_20250725081619_Seed_1_BatchSz_8_GenNo_1_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00007.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00008.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/AnimateDiff_00009.png
+- sidecars: 1
+- reference images: 00140-Job_20250725081619_Seed_1_BatchSz_8_GenNo_1_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00001_.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00002_.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00003_.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00004_.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00005_.png
+- sidecars: 1
+- reference images: 00007-Job_20250310085522_Seed_3767097607_BatchSz_2_GenNo_2_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00006_.png
+- sidecars: 1
+- reference images: 00140-Job_20250725081619_Seed_1_BatchSz_8_GenNo_1_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00007_.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00008_.png
+- sidecars: 1
+- reference images: 00015-Job_20250331215834_Seed_3767097607_BatchSz_8_GenNo_8_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+
+## renders/5090/temp/ComfyUI_temp_epcgc_00009_.png
+- sidecars: 1
+- reference images: 00140-Job_20250725081619_Seed_1_BatchSz_8_GenNo_1_.png
+- LoRAs enabled: none
+- LoRAs available: 
+- models: umt5_xxl_fp8_e4m3fn_scaled.safetensors, wan/wan2.1_14B_SCAIL_2_int8_convrot.safetensors, wan_2.1_vae.safetensors
+- seeds: 
+

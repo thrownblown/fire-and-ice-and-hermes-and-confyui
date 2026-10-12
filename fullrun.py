@@ -38,7 +38,7 @@ import zlib
 from pathlib import Path
 
 ROOT = Path(r"E:/FNI")
-COMFY = os.environ.get("FNI_COMFY", "http://192.168.12.177:8188")
+COMFY = os.environ.get("FNI_COMFY", "http://100.104.7.72:8188")
 LM = os.environ.get("FNI_LM", "http://127.0.0.1:1234/v1/chat/completions")
 VLM_MODEL = os.environ.get("FNI_VLM", "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s")
 

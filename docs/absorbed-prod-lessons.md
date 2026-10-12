@@ -81,7 +81,7 @@ in rough value order:
 A full feature film, fully unattended, is not there yet in either project: "keeping faces, wardrobe
 and space consistent across hundreds of shots still needs human review." FNI's 1300-shot remake is
 up against that same wall. Neither repo tooling removes it — they just make the human review loop
-cheap and recordable, which is what FNI's h3-prompt-review.html and shot-browser.html already do.
+cheap and recordable, which is what FNI's h3-prompt-review.html and the index.html shot browser already do.
 
 ## What was deliberately NOT absorbed
 
