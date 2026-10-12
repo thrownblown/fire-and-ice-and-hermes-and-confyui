@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Import a shot-browser export bundle into refs/ on disk.
 
-The browser page (shot-browser.html) keeps edits in localStorage when it
+The browser page (index.html, the former shot-browser) keeps edits in localStorage when it
 can't write files directly (Firefox, or Chrome without the refs folder
 connected). Its "export bundle" button downloads fni-refs-bundle.json;
 this script folds that bundle into on-disk truth:

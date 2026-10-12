@@ -8,7 +8,21 @@
         "darkwolf"
       ],
       "traits": "",
-      "refs": []
+      "refs": [
+        "ComfyUI_00020_.png",
+        "darkwolf_axe_raised.png",
+        "darkwolf_color_model_sheet.jpeg",
+        "darkwolf_mask_axe.jpeg",
+        "darkwolf_mask_closeup.webp",
+        "darkwolf_roar_archway.jpeg",
+        "darkwolf_roar_ice.jpeg",
+        "frazetta_death_dealer_axe_raised.jpeg",
+        "frazetta_death_dealer_ridge_silhouette.jpeg",
+        "shot_00029_f00000.jpg",
+        "shot_01229_f00012.jpg",
+        "shot_01232_f00014.jpg",
+        "shot_01243_f00059.jpg"
+      ]
     },
     {
       "name": "ELDER",
@@ -53,7 +67,13 @@
         "jarol"
       ],
       "traits": "",
-      "refs": []
+      "refs": [
+        "shot_00185_f00000.jpg",
+        "shot_00198_f00056.jpg",
+        "shot_00206_f00024.jpg",
+        "shot_00253_f00069.jpg",
+        "shot_00683_f00047.jpg"
+      ]
     },
     {
       "name": "JULIANA",
@@ -197,7 +217,31 @@
         "teegra"
       ],
       "traits": "very long dark hair, pale skin, lightweight two-piece costume",
-      "refs": []
+      "refs": [
+        "3b9EKe8xFvNNJq05ZbNkAZ82L3v.webp",
+        "3e6d7962-79d8-4ca6-a2e2-32b3d7488666-3.jpg",
+        "ComfyUI_00028_ (1).png",
+        "ae69fd_04acbbd18c054a37bd945805119532a0~mv2.jpg",
+        "ae69fd_81198c4a8cfd4e3d86a9786adacba3c1~mv2.jpg",
+        "ae69fd_95d126c5ba3844cf8d9c295ea4e2f98bf000.jpg",
+        "ae69fd_b1970494dd79467e8c054f7946fa3f4a~mv2.jpg",
+        "images (1).jpg",
+        "images (5).jpg",
+        "images (6).jpg",
+        "images (7).jpg",
+        "shot_00263_f00000.jpg",
+        "shot_00270_f00000.jpg",
+        "shot_00271_f00030.jpg",
+        "shot_00273_f00026.jpg",
+        "shot_00280_f00000.jpg",
+        "shot_00280_f00063.jpg",
+        "shot_00370_f00021.jpg",
+        "shot_00395_f00035.jpg",
+        "shot_00398_f00037.jpg",
+        "shot_00630_f00093.jpg",
+        "shot_00632_f00000.jpg",
+        "teegra_sheer_robe_captors.jpeg"
+      ]
     },
     {
       "name": "TUTOR",
@@ -213,8 +257,7 @@
         "shot_00193_f00058.jpg",
         "shot_00230_f00000.jpg",
         "shot_00230_f00040.jpg",
-        "shot_00230_f00079.jpg",
-        "shot_00580_f00000.jpg"
+        "shot_00230_f00079.jpg"
       ]
     },
     {

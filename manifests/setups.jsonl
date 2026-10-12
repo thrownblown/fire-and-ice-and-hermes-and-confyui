@@ -1,0 +1,5 @@
+{"setup_id": "S06-A", "scene": "S06", "tag": "S06-A", "shots": ["shot:00197", "shot:00199", "shot:00201", "shot:00203", "shot:00205"], "shot_nums": [197, 199, 201, 203, 205], "n_members": 5}
+{"setup_id": "S06-B", "scene": "S06", "tag": "S06-B", "shots": ["shot:00198", "shot:00206", "shot:00208"], "shot_nums": [198, 206, 208], "n_members": 3}
+{"setup_id": "S06-C", "scene": "S06", "tag": "S06-C", "shots": ["shot:00200", "shot:00202", "shot:00204", "shot:00207", "shot:00209"], "shot_nums": [200, 202, 204, 207, 209], "n_members": 5}
+{"setup_id": "S06-D", "scene": "S06", "tag": "S06-D", "shots": ["shot:00210", "shot:00211", "shot:00212", "shot:00213"], "shot_nums": [210, 211, 212, 213], "n_members": 4}
+{"setup_id": "S06-E", "scene": "S06", "tag": "S06-E", "shots": ["shot:00214", "shot:00215", "shot:00216", "shot:00217", "shot:00218", "shot:00219", "shot:00220"], "shot_nums": [214, 215, 216, 217, 218, 219, 220], "n_members": 7}

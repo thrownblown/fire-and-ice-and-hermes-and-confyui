@@ -1,0 +1,310 @@
+{
+ "shot:00016": {
+  "location": "rocky cavern interior",
+  "framing": "ECU",
+  "angle": "low-angle",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00017": {
+  "location": "ocean surface",
+  "framing": "XWS",
+  "angle": "aerial",
+  "persons": 0,
+  "creatures": 0
+ },
+ "shot:00018": {
+  "location": "cloudy sky",
+  "framing": "XWS",
+  "angle": "aerial",
+  "persons": 0,
+  "creatures": 0
+ },
+ "shot:00019": {
+  "location": "forest clearing",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00020": {
+  "location": "fortified village exterior",
+  "framing": "XWS",
+  "angle": "aerial",
+  "persons": 0,
+  "creatures": 0
+ },
+ "shot:00021": {
+  "location": "ice fortress walls",
+  "framing": "WS",
+  "angle": "eye-level",
+  "persons": 12,
+  "creatures": 0
+ },
+ "shot:00022": {
+  "location": "ice cave interior",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 4,
+  "creatures": 0
+ },
+ "shot:00023": {
+  "location": "grassland village",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00024": {
+  "location": "open sky",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 0
+ },
+ "shot:00025": {
+  "location": "open sky",
+  "framing": "ECU",
+  "angle": "low-angle",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00026": {
+  "location": "grassland village",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00027": {
+  "location": "fortress wall",
+  "framing": "WS",
+  "angle": "low-angle",
+  "persons": 4,
+  "creatures": 0
+ },
+ "shot:00067": {
+  "location": "ice cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00068": {
+  "location": "cave interior",
+  "framing": "ECU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00069": {
+  "location": "ice cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00070": {
+  "location": "cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00071": {
+  "location": "ice cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00072": {
+  "location": "cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00073": {
+  "location": "ice cave interior",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00074": {
+  "location": "cave interior",
+  "framing": "ECU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 1
+ },
+ "shot:00197": {
+  "location": "cave throne room",
+  "framing": "WS",
+  "angle": "eye-level",
+  "persons": 4,
+  "creatures": 0
+ },
+ "shot:00198": {
+  "location": "dark stone chamber",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00199": {
+  "location": "cave throne room",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 4,
+  "creatures": 0
+ },
+ "shot:00200": {
+  "location": "stone chamber interior",
+  "framing": "MCU",
+  "angle": "eye-level",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00201": {
+  "location": "cave interior",
+  "framing": "MCU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 0
+ },
+ "shot:00202": {
+  "location": "stone chamber interior",
+  "framing": "MCU",
+  "angle": "eye-level",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00203": {
+  "location": "cave interior",
+  "framing": "MCU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 0
+ },
+ "shot:00204": {
+  "location": "stone chamber interior",
+  "framing": "MCU",
+  "angle": "eye-level",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00205": {
+  "location": "cave interior",
+  "framing": "MCU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 0
+ },
+ "shot:00206": {
+  "location": "dark stone chamber",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 0
+ },
+ "shot:00207": {
+  "location": "wooden interior",
+  "framing": "ECU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00208": {
+  "location": "forest clearing",
+  "framing": "ECU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00209": {
+  "location": "wooden interior",
+  "framing": "ECU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00210": {
+  "location": "ice cave interior",
+  "framing": "WS",
+  "angle": "aerial",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00211": {
+  "location": "cracked stone ceiling",
+  "framing": "ECU",
+  "angle": "low-angle",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00212": {
+  "location": "rocky cave ceiling",
+  "framing": "ECU",
+  "angle": "low-angle",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00213": {
+  "location": "snowy mountain pass",
+  "framing": "WS",
+  "angle": "low-angle",
+  "persons": 3,
+  "creatures": 0
+ },
+ "shot:00214": {
+  "location": "cracked stone pathway",
+  "framing": "XWS",
+  "angle": "eye-level",
+  "persons": 0,
+  "creatures": 0
+ },
+ "shot:00215": {
+  "location": "bedroom interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 1
+ },
+ "shot:00216": {
+  "location": "ornate wooden interior",
+  "framing": "ECU",
+  "angle": "eye-level",
+  "persons": 0,
+  "creatures": 1
+ },
+ "shot:00217": {
+  "location": "bedroom interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 0,
+  "creatures": 1
+ },
+ "shot:00218": {
+  "location": "night sky viewed through window",
+  "framing": "XWS",
+  "angle": "POV",
+  "persons": 0,
+  "creatures": 1
+ },
+ "shot:00219": {
+  "location": "sky",
+  "framing": "ECU",
+  "angle": "low-angle",
+  "persons": 0,
+  "creatures": 0
+ },
+ "shot:00220": {
+  "location": "indoor abstract space",
+  "framing": "ECU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ }
+}

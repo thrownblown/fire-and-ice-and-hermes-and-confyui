@@ -283,8 +283,8 @@ def build_ref_graph(row, still_names, use_lightning=True):
     # reference wiring: stills + the ref video (GetVideoComponents)
     ref_images = {}
     for i, name in enumerate(still_names):
-        nid = 137 + i
-        node(nid, "LoadImage", {"image": name}, f"Load Image {i}")
+        nid = 149 + i
+        node(nid, "LoadImage", {"image": name}, f"Load Image {i+1}")
         ref_images[f"ref_images.ref_image_{i}"] = [str(nid), 0]
     vid_pic_nid = 137 + len(still_names)
     node(148, "LoadVideo", {"file": ref_video_name(row["chunk_id"]), "video-preview": ""}, "Load Video")

@@ -1,0 +1,6 @@
+file 'E:/FNI/runs/T0010_s02_chain/output/S02-k01_full_t01.mp4'
+file 'E:/FNI/runs/T0010_s02_chain/output/S02-k02_full_t01.mp4'
+file 'E:/FNI/runs/T0010_s02_chain/output/S02-k03_full_t01.mp4'
+file 'E:/FNI/runs/T0010_s02_chain/output/S02-k04_full_t01.mp4'
+file 'E:/FNI/runs/T0010_s02_chain/output/S02-k05_full_t01.mp4'
+file 'E:/FNI/runs/T0010_s02_chain/output/S02-k06_full_t01.mp4'
