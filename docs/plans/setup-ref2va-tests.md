@@ -48,8 +48,8 @@ S06-A member durations: 3.34/3.17/1.88/4.05/4.21s = 16.64s (→ capped 15s).
 |----|-------|---------|
 | T0011 | running on 5090 (prompt f873cc58, #106) | (Alex, after watching) |
 | T0012 | queued on 5090 (prompt 39bdd146, #107) | (Alex, after watching) |
-| T0013 | planned — needs plate-injection in refrun build_ref_graph | — |
-| T0014 | planned — needs plate-injection in refrun build_ref_graph | — |
+| T0013 | plate-injection built + dry-run verified (NOT queued; wait for T0011/T0012 verdicts) | — |
+| T0014 | plate-injection built + dry-run verified (NOT queued; wait for T0011/T0012 verdicts) | — |
 
 ## Findings (session 2026-10-12)
 
@@ -72,6 +72,9 @@ S06-A member durations: 3.34/3.17/1.88/4.05/4.21s = 16.64s (→ capped 15s).
 - Baseline: `.venv/Scripts/python.exe refrun.py render --chunk S06-c01`.
 - Setup render driver: `runs/build_setup_ref2va_test.py --setup S06-A --seed 42`
   (`--dry` builds prompt+graph with no queue).
+- Plate driver (T0013/T0014, dry by default): `runs/build_plate_ref2va_test.py
+  --t t0013|t0014 --setup S06-A --shot 197 --seed 42`; add `--queue` to render, only
+  after T0011/T0012 have verdicts.
 - Endpoint: Tailscale `http://100.104.7.72:8188` (LAN 192.168.12.177 stale;
   `FNI_COMFY` unset → fullrun defaults to Tailscale).
 - Pull outputs: `tools/pull_5090.py`; copy into `runs/<dir>/` and refresh

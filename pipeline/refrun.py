@@ -130,8 +130,14 @@ def retention_lines(subjects, n_shots):
     return "\n".join(lines)
 
 
-def build_ref_prompt(row, caps, people, dialogue_by_id):
-    """6-field ref2va prompt for one chunk."""
+def build_ref_prompt(row, caps, people, dialogue_by_id, plate_count=0):
+    """6-field ref2va prompt for one chunk.
+
+    plate_count (optional) is the number of extra PLATE images wired into the
+    graph after the stills; each gets a retention line telling H3 the plate is a
+    location collage (keep environment, ignore figures) so it does not read the
+    collage cells as different people/scenes.
+    """
     subjects = []          # (name, traits, [picture indices])
     pic_of = {}            # name -> picture index
     n_pic = 0
@@ -183,6 +189,11 @@ def build_ref_prompt(row, caps, people, dialogue_by_id):
             f"scene of {subjects[0][0]} in <Video 1>, preserving appearance from the "
             "reference pictures and the timing, posture, and speech of the reference video.")
     rt = retention_lines(subjects, len(row["shots"]))
+    for k in range(plate_count):
+        p = n_pic + k + 1  # plate picture index follows the stills (1-indexed)
+        rt += (f"\n<Picture {p}>: background_only — this is a reference collage of the "
+               "location from several angles, not different people or scenes; keep ONLY "
+               "the environment (layout, lighting, color, architecture) and ignore the figures.")
 
     # detailed_description: style + per-shot [Shot N] blocks with dialogue.
     style = F.style_line(row["location"])
@@ -243,10 +254,14 @@ def build_ref_prompt(row, caps, people, dialogue_by_id):
 
 
 # ------------------------------------------------------------------ graph
-def build_ref_graph(row, still_names, use_lightning=True):
+def build_ref_graph(row, still_names, use_lightning=True, plate_names=()):
     """Build the MiniMaxH3ReferenceToVideo API graph from scratch.
 
     still_names is a list of uploaded image filenames ordered Picture 1..N.
+    plate_names is an optional list of extra uploaded image filenames (setup
+    master plates / background collages) appended AFTER the stills as further
+    <Picture N> ref images (ref_image_{len(still_names)+j}); they share the same
+    ref_images list, so their 1-indexed picture number is len(still_names)+j+1.
     """
     steps = STEPS_LIGHTNING if use_lightning else STEPS_FULL
     g = {}
@@ -280,13 +295,19 @@ def build_ref_graph(row, still_names, use_lightning=True):
           "values.a": ["132", 0]}, "Math Expression")
     node(132, "PrimitiveFloat", {"value": row["h3_seconds"]}, "Float (Duration)")
 
-    # reference wiring: stills + the ref video (GetVideoComponents)
+    # reference wiring: stills + optional plates + the ref video (GetVideoComponents).
+    # LoadImage ids start at 149 (past the highest fixed id) — see the collision
+    # pitfall in the skill; the prompt-text node is 138 and sharing ids 400s.
     ref_images = {}
+    nid = 149
     for i, name in enumerate(still_names):
-        nid = 149 + i
         node(nid, "LoadImage", {"image": name}, f"Load Image {i+1}")
         ref_images[f"ref_images.ref_image_{i}"] = [str(nid), 0]
-    vid_pic_nid = 137 + len(still_names)
+        nid += 1
+    for j, name in enumerate(plate_names):
+        node(nid, "LoadImage", {"image": name}, f"Load Image Plate {j+1}")
+        ref_images[f"ref_images.ref_image_{len(still_names) + j}"] = [str(nid), 0]
+        nid += 1
     node(148, "LoadVideo", {"file": ref_video_name(row["chunk_id"]), "video-preview": ""}, "Load Video")
     node(147, "GetVideoComponents", {"video": ["148", 0]}, "Get Video Components")
 

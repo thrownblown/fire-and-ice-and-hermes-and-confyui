@@ -26,6 +26,7 @@ from pathlib import Path
 
 ROOT = Path(r"E:/FNI")
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "pipeline"))  # fullrun.py moved into pipeline/ (reorg 562c6a1)
 import fullrun as fr  # noqa: E402
 
 T9 = ROOT / "runs" / "T0009_s02_continuity"
