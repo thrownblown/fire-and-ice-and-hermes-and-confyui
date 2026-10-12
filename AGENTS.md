@@ -58,7 +58,7 @@ them, render out of order, reassemble chronologically by shot id (the timeline T
 - **`pipeline/fullrun.py`** = main FL2VA pipeline (plan/caption/prompt/render/collect/recover). **Archived
   as tag `fl2va-baseline`** — the old full run is versioned there. Its 3-field prompt grammar is
   `integrated_multimodal_description / overall_soundscape / non_diegetic_music`.
-- **`refrun.py`** = the REF2VA successor (reference-VIDEO conditioned). Emits the SIX-field
+- **`pipeline/refrun.py`** = the REF2VA successor (reference-VIDEO conditioned). Emits the SIX-field
   grammar: `subject_definitions / summary / retention_analysis / detailed_description /
   overall_soundscape / non_diegetic_music`. Imports `fullrun` for loaders/roster. Commands:
   `pipeline/refrun.py prompt --chunk S05-c04` (dry-run, no GPU) and `pipeline/refrun.py render ...` (upload + queue).
