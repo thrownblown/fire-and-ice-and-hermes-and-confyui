@@ -55,29 +55,39 @@ them, render out of order, reassemble chronologically by shot id (the timeline T
 
 ## Pipeline
 
-- **`fullrun.py`** = main FL2VA pipeline (plan/caption/prompt/render/collect/recover). **Archived
+- **`pipeline/fullrun.py`** = main FL2VA pipeline (plan/caption/prompt/render/collect/recover). **Archived
   as tag `fl2va-baseline`** — the old full run is versioned there. Its 3-field prompt grammar is
   `integrated_multimodal_description / overall_soundscape / non_diegetic_music`.
 - **`refrun.py`** = the REF2VA successor (reference-VIDEO conditioned). Emits the SIX-field
   grammar: `subject_definitions / summary / retention_analysis / detailed_description /
   overall_soundscape / non_diegetic_music`. Imports `fullrun` for loaders/roster. Commands:
-  `refrun.py prompt --chunk S05-c04` (dry-run, no GPU) and `refrun.py render ...` (upload + queue).
-- Stages: `cut_detect.py` → `chop.py` → `keyframes.py` (1–1c, resumable);
+  `pipeline/refrun.py prompt --chunk S05-c04` (dry-run, no GPU) and `pipeline/refrun.py render ...` (upload + queue).
+- Stages: `pipeline/cut_detect.py` → `pipeline/chop.py` → `pipeline/keyframes.py` (1–1c, resumable);
   `stage1_inventory` → `stage2_characters`/`stage2b_names` → `stage3_composition` →
   `stage4_alignment` → `stage5_chunks` → `stage6_h3_prompts` → `stage7_queue`. Shared library
   in `core/` (optmem, chunker, continuity, setups_v2, asr, align, …). Dialogue lives in
   `script/dialogue-timeline.tsv` (id, speaker, text, start/end PTS).
 - Grammar mode MUST match the model mode (FL2VA ⇄ 3-field, REF2VA ⇄ 6-field). Never drift.
-- `validate_prompt()` (fullrun.py) checks the 3-field contract; `refrun.py` has
+- `validate_prompt()` (pipeline/fullrun.py) checks the 3-field contract; `pipeline/refrun.py` has
   `validate_ref_prompt()` for the 6-field contract. Both are non-fatal advisory checks.
+- **Reorg note (2026-10-12):** scripts moved to `pipeline/`; several still assume the old root
+  location (`ROOT = Path(__file__).parent` in cut_detect/chop/keyframes/preprocess_ref/
+  build_shot_browser; `from core import ...` / `import fullrun` in stage2/3/4, run_align/asr/join,
+  run_scene10_ledger, asr/vlm_probe, refrun). Fix each the next time it runs.
 
 ## Data layout
 
+    pipeline/              entry-point scripts (cut_detect, chop, keyframes, stage1-7,
+                           run_align/asr/join, preprocess_ref, fullrun, refrun,
+                           run_scene10_ledger + the *.sh runners)
+    browser/               shot browser (index.html + *.js + build_shot_browser.py)
+    probes/                throwaway probes (asr_probe, vlm_probe, te_inventory)
+    archive/               superseded dirs: test_runs/, testing/, chunks/, s03/
     shots.jsonl            1308 shots; PTS integer-exact (start_pts == start_frame * 1001)
     fullrun/chunks.jsonl   494 render chunks (15 s cap) — the render unit; each has scene,
                            shots[], shot_nums[], speakers[], stamped_names[], line_ids[],
                            h3_seconds, h3_frames, seed, motion[], shot_type[], angle[]
-    refs/*.mp4             1308 preprocessed REFERENCE clips, 1280x720 @ 24 fps (preprocess_ref.py)
+    refs/*.mp4             1308 preprocessed REFERENCE clips, 1280x720 @ 24 fps (pipeline/preprocess_ref.py)
     refs/refs_manifest.json  provenance for the above
     stills/full/           3924 stills (first/median/last per shot, 3x1308)
     audio/                 master_audio_48k_stereo.wav (81 min), stems/full/*.wav
