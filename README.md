@@ -18,13 +18,16 @@ shot lists, manifests, ASR, prompts, and per-run metadata.
 
 | Script | Stage | Notes |
 | --- | --- | --- |
-| `cut_detect.py` | 1 | Hashes master, PySceneDetect ContentDetector (thr 27, min_len 12) → `shots.jsonl`, `master.json` |
-| `chop.py` | 1b | Frame-exact slice per shot. Re-encode CRF 14 — the master's ~10.4s GOP defeats stream copy |
-| `keyframes.py` | 1c | first/median/last stills per shot + per-shot audio stems; optional full-master audio decode |
-| `run_overnight.sh` | — | Full-film chop + keyframes, resumable |
+| `pipeline/cut_detect.py` | 1 | Hashes master, PySceneDetect ContentDetector (thr 27, min_len 12) → `shots.jsonl`, `master.json` |
+| `pipeline/chop.py` | 1b | Frame-exact slice per shot. Re-encode CRF 14 — the master's ~10.4s GOP defeats stream copy |
+| `pipeline/keyframes.py` | 1c | first/median/last stills per shot + per-shot audio stems; optional full-master audio decode |
+| `pipeline/run_overnight.sh` | — | Full-film chop + keyframes, resumable |
 
 All three accept `--offset`/`--minutes` (minutes from film start) and `--tag`.
 Re-running is safe: existing clips/stills/stems are skipped.
+
+Entry-point scripts live in `pipeline/` (the shot browser in `browser/`, throwaway probes
+in `probes/`, superseded dirs in `archive/`).
 
 ## Data
 
