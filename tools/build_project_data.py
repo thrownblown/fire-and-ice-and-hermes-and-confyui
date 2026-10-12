@@ -119,17 +119,10 @@ STATUS = [
 # was ruled + when under "resolved".
 # --------------------------------------------------------------------------
 DECISIONS = [
-    {
-        "id": "voice-picks",
-        "name": "Voice-clip picks",
-        "category": "Audio",
-        "state": "open",
-        "owner": "Alex",
-        "question": "Pick 3-5 clean voice lines per character to use as H3 voice refs (RefMod cloning).",
-        "context": "223 clean lines across 9 characters, recut from the Demucs vocal stem (score/FX out). "
-                   "42 shared-cue lines excluded.",
-        "docs": ["audio/voice-review.md"],
-    },
+    # "voice-picks" (Voice-clip picks) moved to the character page: each
+    # character's detail now lists their clean voice lines from
+    # audio/voice-review.md with playable <audio> and keep-checkboxes
+    # (localStorage fni.voicepicks.v1; builder tools/build_voice_data.py).
     {
         "id": "sheet-verdicts",
         "name": "Character sheet verdicts",
