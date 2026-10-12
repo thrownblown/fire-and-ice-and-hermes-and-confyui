@@ -18,7 +18,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(r"E:/FNI")
-OUT = ROOT / "project-data.js"
+OUT = ROOT / "browser" / "project-data.js"
 
 
 def _js_obj(p):
@@ -212,12 +212,12 @@ def rel(p):
 
 def compute_counts():
     c = {}
-    sd = _js_obj(ROOT / "shot-browser-data.js")
+    sd = _js_obj(ROOT / "browser" / "shot-browser-data.js")
     c["shots"] = len(sd["shots"])
     c["chunks"] = len(sd["chunks"])
     c["captions"] = len(sd.get("captions", {}))
 
-    su = _js_obj(ROOT / "setups-data.js")
+    su = _js_obj(ROOT / "browser" / "setups-data.js")
     c["scenes"] = len(su.get("scenes", []))
     c["shot_setup"] = len(su.get("shot_setup", {}))
 

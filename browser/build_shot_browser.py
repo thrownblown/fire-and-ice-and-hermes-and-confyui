@@ -13,7 +13,7 @@ Sources (read-only):
   script/dialogue-timeline.tsv -> dialog lines keyed by timecode
 
 Outputs (written to E:/FNI):
-  shot-browser-data.js      -> single JS assignment window.SHOTDATA = {...}
+  browser/shot-browser-data.js -> single JS assignment window.SHOTDATA = {...}
 """
 
 import json
@@ -21,7 +21,7 @@ import os
 import re
 import glob
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root; script lives in browser/ (reorg 562c6a1)
 
 FMT = re.compile(r"^(\d+):(\d+):(\d+)[.,](\d+)$")
 
@@ -235,7 +235,7 @@ out = {
 
 js = "window.SHOTDATA = " + json.dumps(out, ensure_ascii=False, separators=(",", ":")) + ";\n"
 
-outpath = os.path.join(ROOT, "shot-browser-data.js")
+outpath = os.path.join(ROOT, "browser", "shot-browser-data.js")
 with open(outpath, "w", encoding="utf-8") as f:
     f.write(js)
 
