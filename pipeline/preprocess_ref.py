@@ -23,7 +23,7 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/ (reorg 562c6a1)
 CLIPS = ROOT / "clips" / "full"
 OUT = ROOT / "refs"
 SRC_FPS = 24000 / 1001

@@ -6,7 +6,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-sys.path.insert(0, str(Path(r"E:/FNI")))
+sys.path.insert(0, str(Path(r"E:/FNI/pipeline")))
 
 import fullrun as F
 import refrun as R

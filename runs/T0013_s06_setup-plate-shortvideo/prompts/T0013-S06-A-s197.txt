@@ -1,0 +1,42 @@
+# ref_video: T0013-S06-A-s197_ref.mp4
+
+subject_definitions:
+
+<Subject 1> is ENVOY, a hooded subhuman envoy in a dark robe with yellow eyes and dark skin, shown in <Picture 1>. She is the one in <Video 1>.
+<Subject 2> is TARO, a young prince with dark hair, in Fire Keep dress with a high collar, shown in <Picture 1>.
+
+
+
+summary:
+
+[video editing + audio reuse] A single continuous 2D-animated rotoscope scene of ENVOY in <Video 1>, preserving appearance from the reference pictures and the timing, posture, and speech of the reference video.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep a hooded subhuman envoy in a dark robe with yellow eyes and dark skin consistent across [Shot 1] and <Video 1>.
+<Subject 2>: fully_preserved — keep a young prince with dark hair, in Fire Keep dress with a high collar consistent across [Shot 1] and <Video 1>.
+<Video 1>: attribute_transfer — carry the posture, facial performance, and exact spoken dialogue and delivery into the clip.
+Dialogue audio of <Video 1>: fully_copy — reuse the spoken lines and timing.
+<Picture 2>: background_only — this is a reference collage of the location from several angles, not different people or scenes; keep ONLY the environment (layout, lighting, color, architecture) and ignore the figures.
+
+
+
+detailed_description:
+
+2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted stone interiors, cold blue-grey cavern light
+
+[Shot 1] The camera stays low and tilts up slightly as the figure moves. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. ENVOY. <Subject 1> (S1) speaks off-screen: <d>[English] If you peacefully surrender, my lord Nekron will cease the destruction of-</d>
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

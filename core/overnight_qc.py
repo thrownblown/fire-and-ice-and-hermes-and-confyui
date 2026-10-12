@@ -24,6 +24,7 @@ from pathlib import Path
 ROOT = Path(r"E:/FNI")
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "core"))
+sys.path.insert(0, str(ROOT / "pipeline"))  # fullrun.py moved into pipeline/ (reorg 562c6a1)
 import fullrun  # reuse api(), upload(), queue_state(), ledgers  # noqa: E402
 
 RUN = ROOT / "fullrun"

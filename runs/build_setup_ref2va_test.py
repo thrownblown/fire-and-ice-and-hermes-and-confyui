@@ -18,7 +18,7 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, r"E:/FNI")
+sys.path.insert(0, r"E:/FNI/pipeline")  # fullrun.py/refrun.py live in pipeline/ now
 
 import fullrun as F
 import refrun as R
