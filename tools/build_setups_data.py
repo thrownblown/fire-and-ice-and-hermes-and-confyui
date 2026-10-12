@@ -21,7 +21,7 @@ import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "manifests", "continuity.jsonl")
-OUT = os.path.join(ROOT, "setups-data.js")
+OUT = os.path.join(ROOT, "browser", "setups-data.js")
 
 
 def main():
