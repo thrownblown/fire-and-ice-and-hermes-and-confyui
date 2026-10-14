@@ -139,8 +139,9 @@ def prompt_for(names, shots, duration):
         "retention_analysis:",
         *retains,
         "",
-        "detailed_description: rotoscope painted animation, "
-        f"{place}. Cool light, painted backgrounds, inked figures.",
+        "detailed_description: a technicolor 80s sword-and-sandals epic, shot on 35mm, "
+        f"{place}. Vivid saturated colour, deep blacks and high contrast, epic practical sets, "
+        "high-fantasy practical effects on an unlimited budget.",
         *shot_lines,
         "",
         "overall_soundscape: wind, footsteps, and the room tone of the place. No music.",

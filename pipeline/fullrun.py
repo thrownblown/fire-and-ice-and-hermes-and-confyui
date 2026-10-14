@@ -184,11 +184,20 @@ ROSTER = {
     "SUBHUMAN CAPTAIN": ("a large hunched fur-covered ape-like humanoid with heavy shoulder armor"),
 }
 
+# House style: DIRECTION SET 2026-10-13 — the film is remade as a TECHNICOLOR 80s
+# sword-and-sandals epic, "halfway between Ben-Hur and Beastmaster with an unlimited
+# effects budget": live-action register, vivid saturated colour, epic scale. NOT a
+# rotoscope animation, and NOT muted/faded. These strings are the single source of truth
+# for the 3-field grammar; `refrun.py` and `stage6_h3_prompts.py` carry the matching line
+# for the 6-field grammar. See docs/plans/direction-80s-sword-and-sandals.md
+_TECH = ("a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, "
+         "deep blacks and high contrast, epic practical sets and crowds, "
+         "high-fantasy practical effects on an unlimited budget")
 STYLE_BY_LOCATION = [
-    (r"jungle|woods|forest|hut", "2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over lush painted jungle and forest backgrounds, dappled green and gold light"),
-    (r"throne hall|ice peak|keep|fortress|citadel", "2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over cool-toned painted stone interiors, cold blue-grey cavern light"),
-    (r"camp|tent|village|ruin|dock|harbor|plain|ground|outdoor|cliff|volcano|lava", "2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over wide painted exteriors, wind and dust in the air, hard natural light"),
-    (r"cell|dungeon|prison", "2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked figures over painted stone interiors lit by a single weak source, deep shadow"),
+    (r"jungle|woods|forest|hut", _TECH + ", lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze"),
+    (r"throne hall|ice peak|keep|fortress|citadel", _TECH + ", vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour"),
+    (r"camp|tent|village|ruin|dock|harbor|plain|ground|outdoor|cliff|volcano|lava", _TECH + ", sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds"),
+    (r"cell|dungeon|prison", _TECH + ", damp stone interiors lit by a single guttering torch, saturated warm torchlight against deep blacks"),
 ]
 
 
@@ -196,9 +205,8 @@ def style_line(location):
     for pat, line in STYLE_BY_LOCATION:
         if re.search(pat, (location or "").lower()):
             return line
-    return ("2D-animated rotoscope painted animation in the style of a 1983 fantasy film: inked "
-            "figures over painted backgrounds, broad graphic acting with strong gesture and clear "
-            "body poses")
+    return (_TECH + ", practical costumes and armour, broad physical performance, "
+            "theatrical staging")
 
 
 # ----------------------------------------------------------------- scene spans
