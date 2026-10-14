@@ -1,0 +1,92 @@
+SHAITAN — candidate identification, for Alex's approval
+======================================================
+
+Status: UNCONFIRMED IDENTIFICATION. Alex approves descriptors and refs (roster rule).
+Do not promote these to identity refs until approved.
+
+What Shaitan is
+---------------
+Shaitan is Teegra's companion at Fire Keep (beat-sheet S05: "Teegra, Tutor, Shaitan (pet)";
+roster: appearance "TBD"). It has exactly one line addressed to it in the whole film —
+L048, spoken by Teegra in shot 00196: "Don't we, Shaitan?"
+
+The film's own frames answer this: Shaitan is a BLACK FELINE (big-cat scale, panther-like),
+not a human. It is in the chamber during the lesson scene.
+
+Evidence (all from S05, the Fire Keep study, shots 00190 and 00196)
+-------------------------------------------------------------------
+- shot 00190 f00069 — almost the whole animal visible: lying on a deep red cushion, head
+  turned slightly toward camera, front paws tucked, hindquarters and most of the tail in
+  frame, nothing overlapping it. Clean silhouette. BEST CANDIDATE.
+- shot 00190 f00138 — same animal, sphinx pose on the red cushion; hindquarters cut off by
+  the crop; a human hand rests on the same cushion but does not overlap the body.
+- shot 00196 f00000 — head + one eye only, bottom-right corner, right beside Teegra's face
+  (this is the shot where she says "Don't we, Shaitan?"). Too tightly cropped for a ref,
+  but it is the strongest link between the animal and the name.
+
+Reported appearance (local vision model, two independent passes agreed on the animal):
+  sleek solid-black feline; bright glowing YELLOW eyes with black slit pupils; white
+  whiskers; no collar, no markings, no visible pattern. Reads LARGE against the furniture
+  (big-cat / panther scale) — one pass called it domestic-sized, so scale is the one
+  uncertain attribute. Confirm on the frames.
+  NOTE: colour here is VLM-reported, which outranks any typed note (Alex is colour blind).
+
+ADDENDUM 2026-10-13 — the abduction sequence (shots 00216, 00217)
+----------------------------------------------------------------
+Alex supplied two frames from the abduction. Both show the panther at its most
+legible, and they are the best identity refs found so far:
+
+- shot 00216 f00000 — chest-up, facing camera, mouth open in a snarl/hiss showing
+  sharp white fangs and pink interior, long white whiskers, bright yellow eyes.
+  Only creature in frame. Ornate carved dark-wood structure behind with TWO small
+  glowing blue gem-like insets; purple twilight above. (crop kept: right 82%)
+- shot 00217 f00013 — the whole animal, roaring, mouth wide, yellow-green slit
+  pupils, claws extended on the front paw, standing on a magenta/deep-purple
+  cushion. Carved furniture behind with FOUR blue gem-like insets in a square.
+  A human's legs in purple tights intrude at the top edge.
+
+BOTH frames are the same set as S05, identifiable by the carved furniture with the
+blue gem insets — a repeating Fire Keep set element worth reproducing on the plate.
+
+Frames are untouched copies plus crops. The 00217 "face" crop drops the human legs.
+
+Scene placement (important): shots 00216/00217 are S06-c07, i.e. THE ABDUCTION, not
+the lesson. The run is:
+  00214  two dark-brown muscular males crouching low, no clothing  (the intruders)
+  00215  Teegra lying on a bed, sitting up startled
+  00216  SHAITAN snarling, chest-up                                  <- ref
+  00217  SHAITAN roaring, claws out                                  <- ref
+  00218-00220  Teegra, arm raised, mouth open in fear
+  00221  a subhuman on a ledge, mohawk, snarling  (S07 opener)
+So Shaitan is present in BOTH the lesson (S05, passive, on a cushion) and the
+abduction (S06/S07, fighting the kidnappers). The Tutor is in S05 only; the
+subhuman kidnapper is in the abduction only. No single pipeline scene contains all
+four of Teegra + Tutor + Shaitan + the kidnapper. Shaitan is the character that
+bridges the two.
+
+Files in candidates/
+--------------------
+  SHAITAN_s00190_f00069_tight.png   780x552   full-body-ish, on red cushion
+  SHAITAN_s00190_f00138_tight.png   780x552   sphinx pose, hindquarters cut
+  SHAITAN_s00196_f00000_crop.png    864x590   head/eye detail beside Teegra
+  SHAITAN_s00216_f00000_crop.png   1575x1072  snarl, chest-up, teeth/whiskers  <- best face
+  SHAITAN_s00217_f00013_crop.png   1248x1072  roaring, whole animal, claws
+  SHAITAN_s00217_f00013_face.png   1248x880   as above, human legs cropped out
+  (+ the two untouched source frames as .jpg)
+
+Provenance: crops from stills/full/shot_00190_f00069.jpg and shot_00196_f00000.jpg
+(source 1920x1072). Crops are generous on purpose; tighten once approved.
+
+Draft descriptor (DO NOT USE until approved)
+--------------------------------------------
+A large sleek solid-black feline companion, panther-like, with bright yellow eyes and
+black slit pupils and pale whiskers. No collar or markings. Restful, feline, watchful of
+Teegra. Not a subhuman: subhumans are hunched, fur-covered ape-like humanoids with
+primitive weapons.
+
+Open items
+----------
+1. Confirm the identification (is this animal Shaitan, and is it big-cat or house-cat scale?).
+2. Scan the rest of S04/S05 and S07 for more Shaitan frames before settling on refs —
+   only shots 00190 and 00196 have been checked so far.
+3. If approved, promote 2-3 crops into refs/characters/SHAITAN/ and write the roster entry.

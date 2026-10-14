@@ -12,6 +12,11 @@
 # cut / loop + a timeline node, built on NikoDemon80/ComfyUI-H3-Motion-Context,
 # which provides the motion-context (latent) primitives. Bridging is the candidate
 # replacement for FNI's first/last-frame chain anchoring.
+#
+# Larryvrh/ComfyUI-MiniMax-H3-Turbo provides the two nodes (MiniMax-H3 Turbo LoRA,
+# MiniMax-H3 Turbo Sampler) that the Larry v4-600 LoRA needs — the LoRA alone does
+# not work. Larry v4 step600 EMA @ 6 steps was the winner of Lumibelle's measured
+# 2026-09-11 acceleration benchmark (see docs/h3-peers-2026-10-12.md §1a).
 set -euo pipefail
 
 COMFY_DIR="${COMFY_DIR:-$HOME/comfyvenv/ComfyUI}"
@@ -20,7 +25,8 @@ mkdir -p "$CN"
 
 for repo in \
   https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context \
-  https://github.com/chanon/comfyui-obvpm-timeline ; do
+  https://github.com/chanon/comfyui-obvpm-timeline \
+  https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo ; do
   name="$(basename "$repo")"
   if [ -d "$CN/$name/.git" ]; then
     echo "== updating $name"
