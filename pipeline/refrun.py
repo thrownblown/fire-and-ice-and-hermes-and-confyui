@@ -185,9 +185,10 @@ def build_ref_prompt(row, caps, people, dialogue_by_id, plate_count=0):
         subjects = [("the person shown in <Video 1>", "as in the reference video", [1])]
 
     sd = subject_lines(subjects)
-    summ = ("[video editing + audio reuse] A single continuous 2D-animated rotoscope "
-            f"scene of {subjects[0][0]} in <Video 1>, preserving appearance from the "
-            "reference pictures and the timing, posture, and speech of the reference video.")
+    summ = ("[video editing + audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: "
+            f"a single continuous live-action scene of {subjects[0][0]} in <Video 1>, preserving "
+            "appearance from the reference pictures and the timing, posture, and speech of the "
+            "reference video.")
     rt = retention_lines(subjects, len(row["shots"]))
     for k in range(plate_count):
         p = n_pic + k + 1  # plate picture index follows the stills (1-indexed)
