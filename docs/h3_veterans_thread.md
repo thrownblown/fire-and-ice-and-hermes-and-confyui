@@ -57,3 +57,35 @@ meaningfully so the model rethinks from scratch.
   or rftv anymore" (SecretSteel).
 - Timeline / seed-hunter workflows (obvpm) for extending past 30s.
   See: mini_video_editor_timeline_node_for_h3_extend.
+
+---
+
+## Re-pull 2026-10-12 (now 35 comments; 23 at first pull)
+
+New since the 2026-10-11 pull — comments posted 2026-10-11 21:23Z → 2026-10-12 13:39Z:
+
+- **Comfy version regression (conkikhon, 10-12):** "worse adherence after comfy 0.35 update
+  onward. Adherence drop noticeably, and character randomly sing for no reason." Unconfirmed
+  single report — if our renders regressed, note the ComfyUI version before blaming the prompt.
+- **Random singing traced to ref/overrun length (DietAshamed2246, 10-12):** in a v2v gen they
+  set the gen duration LONGER than the reference video; the extra last 0.5–1s the character
+  sang in an unknown language. Directly relevant: our chunk `h3_seconds` must not exceed the
+  reference clip length, or H3 fills the tail with invented vocalisation.
+- **Restart-test diagnostic (mellowanon, 10-11 21:23Z):** when a gen hallucinates, SAVE the
+  video, restart ComfyUI, reload that video (it carries the workflow metadata), regenerate with
+  identical settings. Same output ⇒ your prompt/settings are the cause; different output ⇒
+  something is wrong with the install/state. A cheap way to separate prompt bugs from the
+  known seed/deep-fry instability.
+- **Seed vs prompt (xyzdist / Entert-AI, 10-12):** continued debate — Entert-AI holds that
+  changing seed is "randomly re-initialising"; tuning the prompt against a fixed seed gives
+  you *understanding* of what each change does, while seed-hopping gives the result but not the
+  reason. Robust models shouldn't be too seed-dependent.
+- **Refinement to the latent-upscale recipe (dramaton42, already in first pull but detail was
+  not captured):** generate at 480p with the BASE ref2vid model, then upscale with the turbo
+  LoRA at **2 steps or more to 2× the size** using the **latent upscale node**. With
+  `ref_image_size=match` the refs scale to 480p on the first pass and 960p on upscale.
+- **No_Taste_4102 refinement:** `singularity33b` + `minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16`
+  at 0.4 strength, 25 steps, Spectrum feature forecasting at **25%**, 720 native renders.
+- **obvpm timeline praise (MurkyStatistician09 / Apprehensive_Sky892, 10-11):** the default
+  simple workflow is NOT best for H3; seed-hunting + extending clips with references is where
+  H3 shines. Watch the whole YouTube tutorial before using it.

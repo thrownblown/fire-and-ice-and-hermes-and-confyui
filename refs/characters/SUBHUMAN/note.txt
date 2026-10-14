@@ -1,0 +1,59 @@
+SUBHUMAN — candidate sourcing, for Alex's approval
+==================================================
+
+Status: NOT APPROVED. No refs folder, no descriptor. `refs/roster.json` carries the
+names SUBHUMAN / SUBHUMAN CAPTAIN / SUBHUMAN LEADER / SUBHUMANS with empty refs.
+
+Roster group line (existing): "ape-like humanoid creatures; hunched; fur-covered;
+primitive weapons. Group taxonomy; individual tracks assigned later."
+
+Why this is needed now: Pass 2 of the pilot (setup S06-E, the abduction) has the
+subhumans as the intruders — shots 00213/00214 ("climbers ascending") and 00221 (S07
+opener). Nothing can render until there is an approved look.
+
+What the film shows (from the pipeline's own VLM pass on the abduction)
+----------------------------------------------------------------------
+- shot 00213 — three figures scaling the outer wall at night. Full-body SILHOUETTES
+  against a dark starry sky. Good for staging/scale, useless for identity.
+- shot 00214 — two figures crouching low: "male, muscular, short dark hair, dark brown
+  skin, no clothing". The intruders in the bedchamber.
+- shot 00221 (S07 opener) — "male, muscular, black mohawk, dark brown skin, black
+  wristbands and dark shorts, crouching on a ledge, one hand gripping the edge, mouth
+  open in a snarl".
+
+Where they appear across the film (316 unnamed humanoid shots match subhuman-ish
+descriptors — dark brown skin, loincloth, club/spear, hunched). Concentrations:
+  S02  shots ~00054–00058, 00080  — the village attack (horde, many, in motion)
+  S07  shots ~00221–00250         — the abduction / pursuit
+  S14  shots ~00108–00119         — the subhuman camp
+  S12  shot  00221 area           — Akatar/transport
+Most are the horde in motion; few are clean identity frames. This is a GROUP taxon
+first, individuals later — so the practical target is 1 approved horde look, with the
+leader/captain as a separate, later distinction.
+
+One frame worth a second look
+-----------------------------
+shot 00119 — a hulking, massively built primitive: dark greyish-brown skin, shaggy
+unkempt hair past the shoulders, dark primitive loincloth, a necklace of large white
+triangular objects (animal teeth or claws), a thick gold band on the left wrist, and
+a lit cigar clenched in his teeth, standing with one hand on his hip.
+The vision pass guessed "Darkwolf", but that does not hold: Darkwolf is a wolf-masked,
+bare-chested, axe-carrying figure in a fur loincloth — no cigar, no tooth necklace,
+no gold band. Either this is a subhuman leader with a comic design flourish, or it is
+another unnamed brute. Needs a human eye. Full body is visible.
+
+Still to check (vision model was rate-limited mid-run; retry shortly)
+--------------------------------------------------------------------
+  00221 f00000   the mohawk subhuman on the ledge — best face candidate
+  00214 f00000   the two crouching intruders
+
+Next steps
+----------
+1. Finish the two pending frames above once the vision model clears, crop candidates
+   into refs/characters/SUBHUMAN/candidates/.
+2. Pick the look (horde vs leader) and write an approved descriptor.
+3. Only then wire the subhumans into the S06-E prompts.
+
+Blocker note: the local VLM (qwen3-vl-8b on LM Studio, the 4090) is the project's
+normal batch labeller for this and is currently busy with Alex's own tests — that is
+the alternative to waiting on the hosted vision model.

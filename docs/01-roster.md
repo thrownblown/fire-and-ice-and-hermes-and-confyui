@@ -89,3 +89,5 @@ One still: `corpus/ice-witch/ice_witch_roar_skulls.jpeg`.
 ## Others
 
 TUTOR: no approved descriptor yet. Do not invent one from a VLM sentence. ENVOY has two stills in `corpus/refs/` from S03.
+
+SHAITAN: identified 2026-10-12 as a **black feline** (big-cat scale, yellow eyes, white whiskers) — not a human. Candidates awaiting approval in `refs/characters/SHAITAN/candidates/`; evidence and a draft descriptor in `refs/characters/SHAITAN/note.txt`. Not approved — do not use as an identity ref yet.
