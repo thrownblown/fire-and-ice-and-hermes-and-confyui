@@ -1,0 +1,12 @@
+{"model": "qwen3.8-27b-heretic-abliterated-uncensored", "type": "vlm", "quant": "Q4_K_S", "loaded": true, "seconds": 19.5, "flags": "default", "log": "ok"}
+{"model": "qwen2.5-vl-32b-instruct-abliterated", "type": "vlm", "quant": "Q4_K_S", "loaded": true, "seconds": 30.8, "flags": "default", "log": "ok"}
+{"model": "qwen3.8-flash-next@bf16", "type": "vlm", "quant": "BF16", "loaded": false, "seconds": 0.0, "flags": "none", "log": "\u001b[K\u001b[?25hError: Engine protocol runtime llama-server for LlUGzTm7tAA8duPQkm2QIWgN exited before becoming healthy. exitCode=3221225477, signal=null"}
+{"model": "qwen3.8-flash-next@q8_0", "type": "vlm", "quant": "Q8_0", "loaded": false, "seconds": 0.0, "flags": "none", "log": "\u001b[K\u001b[?25hError: Engine protocol runtime llama-server for b/NZHgRZhH1eCDcCVDH8VHyP exited before becoming healthy. exitCode=3221225477, signal=null"}
+{"model": "gemma-4-26b-a4b-it-heretic", "type": "llm", "quant": "Q4_K_S", "loaded": true, "seconds": 12.1, "flags": "default", "log": "ok"}
+{"model": "qwen3.8-27b-obliterated", "type": "vlm", "quant": "Q4_K_M", "loaded": true, "seconds": 21.3, "flags": "default", "log": "ok"}
+{"model": "mistral-7b-instruct-v0.3-abliterated", "type": "llm", "quant": "F16", "loaded": true, "seconds": 8.7, "flags": "default", "log": "ok"}
+{"model": "supergemma4-e4b-abliterated", "type": "llm", "quant": "F16", "loaded": true, "seconds": 7.3, "flags": "default", "log": "ok"}
+{"model": "qwen3-vl-8b-instruct-abliterated-v2.0@f16", "type": "vlm", "quant": "F16", "loaded": true, "seconds": 36.0, "flags": "gpu-max", "log": "ok"}
+{"model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s", "type": "vlm", "quant": "Q4_K_S", "loaded": true, "seconds": 23.2, "flags": "default", "log": "ok"}
+{"model": "q3.5-bluestar-v2-27b", "type": "llm", "quant": "Q5_K_M", "loaded": true, "seconds": 19.0, "flags": "default", "log": "ok"}
+{"model": "qwq-32b-arliai-rpr-v4", "type": "llm", "quant": "Q4_K_S", "loaded": true, "seconds": 15.3, "flags": "default", "log": "ok"}
