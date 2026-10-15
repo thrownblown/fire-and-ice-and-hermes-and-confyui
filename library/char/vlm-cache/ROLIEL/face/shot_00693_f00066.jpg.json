@@ -1,0 +1,21 @@
+{
+ "char": "ROLIEL",
+ "lens": "face",
+ "file": "shot_00693_f00066.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932310.7540658,
+ "size": 225579,
+ "ts": "2026-10-15T04:57:26Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"yellow irises, narrow almond shape, slightly narrowed in expression\",\n \"brows\": \"dark, arched, angled downward at the ends\",\n \"nose\": \"straight bridge, small nostrils\",\n \"lips\": \"full, red, slightly parted with a subtle smirk\",\n \"distinguishing_features\": [\n  \"eyebrows shaped like sharp angles\",\n  \"red hair framing face\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "yellow irises, narrow almond shape, slightly narrowed in expression",
+  "brows": "dark, arched, angled downward at the ends",
+  "nose": "straight bridge, small nostrils",
+  "lips": "full, red, slightly parted with a subtle smirk",
+  "distinguishing_features": [
+   "eyebrows shaped like sharp angles",
+   "red hair framing face"
+  ]
+ }
+}

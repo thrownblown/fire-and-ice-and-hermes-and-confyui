@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "teegra_sheer_robe_captors.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 48067,
+ "ts": "2026-10-15T10:58:13Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"light purple tunic\", \"bare legs\"],\n \"unmistakable_because\": \"The figure's light purple tunic and bare legs contrast sharply with the surrounding characters' brown skin and minimal clothing.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "light purple tunic",
+   "bare legs"
+  ],
+  "unmistakable_because": "The figure's light purple tunic and bare legs contrast sharply with the surrounding characters' brown skin and minimal clothing."
+ }
+}

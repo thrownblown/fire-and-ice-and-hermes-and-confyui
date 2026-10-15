@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "images.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032241.3015685,
+ "size": 58887,
+ "ts": "2026-10-15T10:53:23Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"bikini top\",\n      \"color\": \"light purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted\"\n    },\n    {\n      \"item\": \"bikini bottom\",\n      \"color\": \"light purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "bikini top",
+    "color": "light purple",
+    "material": "cloth",
+    "cut": "fitted"
+   },
+   {
+    "item": "bikini bottom",
+    "color": "light purple",
+    "material": "cloth",
+    "cut": "fitted"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

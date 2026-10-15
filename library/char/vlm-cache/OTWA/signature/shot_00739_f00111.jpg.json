@@ -1,0 +1,20 @@
+{
+ "char": "OTWA",
+ "lens": "signature",
+ "file": "shot_00739_f00111.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931815.5538163,
+ "size": 246957,
+ "ts": "2026-10-15T04:45:52Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"bare chest\", \"yellow loincloth\", \"arms raised in anguish\", \"wide-open mouth\"],\n \"unmistakable_because\": \"The figure's long, flowing red hair and exaggerated facial expression of screaming make it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "bare chest",
+   "yellow loincloth",
+   "arms raised in anguish",
+   "wide-open mouth"
+  ],
+  "unmistakable_because": "The figure's long, flowing red hair and exaggerated facial expression of screaming make it instantly recognizable."
+ }
+}

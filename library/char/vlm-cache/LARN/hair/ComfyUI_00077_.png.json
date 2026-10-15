@@ -1,0 +1,17 @@
+{
+ "char": "LARN",
+ "lens": "hair",
+ "file": "ComfyUI_00077_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935159.4630673,
+ "size": 4873563,
+ "ts": "2026-10-15T04:33:51Z",
+ "text": "{\n \"color\": \"blond\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"braided\",\n \"notes\": \"two thick braids, bangs present\"\n}",
+ "json": {
+  "color": "blond",
+  "length": "very long",
+  "texture": "straight",
+  "style": "braided",
+  "notes": "two thick braids, bangs present"
+ }
+}

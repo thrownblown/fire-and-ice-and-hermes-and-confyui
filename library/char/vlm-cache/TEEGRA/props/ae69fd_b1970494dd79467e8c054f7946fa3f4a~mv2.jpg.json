@@ -1,0 +1,14 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "ae69fd_b1970494dd79467e8c054f7946fa3f4a~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7248971,
+ "size": 26982,
+ "ts": "2026-10-15T10:50:49Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

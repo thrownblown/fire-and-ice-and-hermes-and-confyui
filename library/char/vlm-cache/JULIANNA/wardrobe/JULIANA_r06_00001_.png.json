@@ -1,0 +1,27 @@
+{
+ "char": "JULIANNA",
+ "lens": "wardrobe",
+ "file": "JULIANA_r06_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643149.91,
+ "size": 4002161,
+ "ts": "2026-10-15T04:33:33Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted, long-sleeved, V-neck\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"high-heeled, pointed toe\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "fitted, long-sleeved, V-neck"
+   },
+   {
+    "item": "boots",
+    "color": "black",
+    "material": "leather",
+    "cut": "high-heeled, pointed toe"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

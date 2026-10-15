@@ -1,0 +1,21 @@
+{
+ "char": "OTWA",
+ "lens": "wardrobe",
+ "file": "shot_00706_f00021.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931801.3537695,
+ "size": 284934,
+ "ts": "2026-10-15T04:44:26Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting, wrapped around waist\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "material": "cloth",
+    "cut": "tight-fitting, wrapped around waist"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

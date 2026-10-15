@@ -1,0 +1,18 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00773_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025484.7173803,
+ "size": 216144,
+ "ts": "2026-10-15T04:39:55Z",
+ "text": "{\n \"memorable_traits\": [\"blond hair\", \"necklace with circular pendant\", \"earrings\"],\n \"unmistakable_because\": \"The combination of blond hair, a distinctive necklace with a circular pendant, and earrings makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "necklace with circular pendant",
+   "earrings"
+  ],
+  "unmistakable_because": "The combination of blond hair, a distinctive necklace with a circular pendant, and earrings makes this figure uniquely identifiable."
+ }
+}

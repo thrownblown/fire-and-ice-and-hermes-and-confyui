@@ -1,0 +1,14 @@
+{
+ "char": "SHAITAN",
+ "lens": "props",
+ "file": "ComfyUI_00072_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932052.471479,
+ "size": 2249342,
+ "ts": "2026-10-15T04:58:57Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "Z81TNK3BSYNJCKBFZK5QMP93D0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.6085138,
+ "size": 1302661,
+ "ts": "2026-10-15T04:57:00Z",
+ "text": "{\n  \"memorable_traits\": [\"long red hair\", \"white draped garment\", \"blue glowing circular pattern on floor\"],\n  \"unmistakable_because\": \"The figure's long, flowing red hair and the distinctive white garment contrast sharply with the glowing blue circle beneath her.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "white draped garment",
+   "blue glowing circular pattern on floor"
+  ],
+  "unmistakable_because": "The figure's long, flowing red hair and the distinctive white garment contrast sharply with the glowing blue circle beneath her."
+ }
+}

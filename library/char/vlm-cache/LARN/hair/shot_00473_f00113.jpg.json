@@ -1,0 +1,17 @@
+{
+ "char": "LARN",
+ "lens": "hair",
+ "file": "shot_00473_f00113.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931141.673677,
+ "size": 228387,
+ "ts": "2026-10-15T04:38:02Z",
+ "text": "{\n \"color\": \"blond\",\n \"length\": \"shoulder-length\",\n \"texture\": \"straight\",\n \"style\": \"braided\",\n \"notes\": \"long braid down back, bangs framing face\"\n}",
+ "json": {
+  "color": "blond",
+  "length": "shoulder-length",
+  "texture": "straight",
+  "style": "braided",
+  "notes": "long braid down back, bangs framing face"
+ }
+}

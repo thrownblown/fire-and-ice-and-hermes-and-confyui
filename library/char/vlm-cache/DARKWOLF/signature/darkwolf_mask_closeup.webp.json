@@ -1,0 +1,18 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "darkwolf_mask_closeup.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3846512,
+ "size": 8520,
+ "ts": "2026-10-15T04:26:07Z",
+ "text": "{\n  \"memorable_traits\": [\"black cat-like hood\", \"glowing yellow eyes\", \"skull pendant\"],\n  \"unmistakable_because\": \"The combination of the black hood with pointed ears, glowing eyes, and skull necklace creates a unique and instantly recognizable silhouette.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black cat-like hood",
+   "glowing yellow eyes",
+   "skull pendant"
+  ],
+  "unmistakable_because": "The combination of the black hood with pointed ears, glowing eyes, and skull necklace creates a unique and instantly recognizable silhouette."
+ }
+}

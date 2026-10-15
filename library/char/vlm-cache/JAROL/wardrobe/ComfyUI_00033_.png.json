@@ -1,0 +1,45 @@
+{
+ "char": "JAROL",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00033_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935131.8724194,
+ "size": 4286778,
+ "ts": "2026-10-15T04:29:59Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"maroon\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, fitted around waist\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"ankle-high, fitted\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"worn around upper arms\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"multiple circular pendants, draped around neck\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "maroon",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   },
+   {
+    "item": "belt",
+    "color": "brown",
+    "material": "leather",
+    "cut": "wide, fitted around waist"
+   },
+   {
+    "item": "boots",
+    "color": "brown",
+    "material": "leather",
+    "cut": "ankle-high, fitted"
+   },
+   {
+    "item": "arm bands",
+    "color": "brown",
+    "material": "leather",
+    "cut": "worn around upper arms"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "multiple circular pendants, draped around neck"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

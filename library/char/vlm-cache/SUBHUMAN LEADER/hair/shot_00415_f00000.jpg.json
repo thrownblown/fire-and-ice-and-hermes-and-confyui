@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "hair",
+ "file": "shot_00415_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932185.9253,
+ "size": 334885,
+ "ts": "2026-10-15T05:08:47Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"very short\",\n \"texture\": \"straight\",\n \"style\": \"tied back\",\n \"notes\": \"short tuft at nape\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "very short",
+  "texture": "straight",
+  "style": "tied back",
+  "notes": "short tuft at nape"
+ }
+}

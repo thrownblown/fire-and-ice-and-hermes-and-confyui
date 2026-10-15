@@ -1,0 +1,18 @@
+{
+ "char": "ROLIEL",
+ "lens": "colors",
+ "file": "1MZCTVJ8C9G1BZC94VMC4F76S0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.6155138,
+ "size": 1295603,
+ "ts": "2026-10-15T04:46:21Z",
+ "text": "{\n \"skin\": \"light beige\",\n \"hair\": \"red\",\n \"eyes\": \"orange\",\n \"garment_primary\": \"white\",\n \"garment_secondary\": null,\n \"metal_accent\": \"blue\"\n}",
+ "json": {
+  "skin": "light beige",
+  "hair": "red",
+  "eyes": "orange",
+  "garment_primary": "white",
+  "garment_secondary": null,
+  "metal_accent": "blue"
+ }
+}

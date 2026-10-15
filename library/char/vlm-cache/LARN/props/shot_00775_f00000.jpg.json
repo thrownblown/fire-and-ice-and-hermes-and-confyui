@@ -1,0 +1,33 @@
+{
+ "char": "LARN",
+ "lens": "props",
+ "file": "shot_00775_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025498.1101148,
+ "size": 256639,
+ "ts": "2026-10-15T04:40:52Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"white\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"earring\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"left ear\"\n    },\n    {\n      \"item\": \"earring\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"right ear\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "white",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "earring",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "left ear"
+   },
+   {
+    "item": "earring",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "right ear"
+   }
+  ],
+  "weapons": []
+ }
+}

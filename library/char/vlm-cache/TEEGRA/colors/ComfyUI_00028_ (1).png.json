@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "colors",
+ "file": "ComfyUI_00028_ (1).png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.5850036,
+ "size": 4583561,
+ "ts": "2026-10-15T10:49:18Z",
+ "text": "{\n \"skin\": \"tan\",\n \"hair\": \"black\",\n \"eyes\": \"green\",\n \"garment_primary\": \"purple\",\n \"garment_secondary\": null,\n \"metal_accent\": \"gold\"\n}",
+ "json": {
+  "skin": "tan",
+  "hair": "black",
+  "eyes": "green",
+  "garment_primary": "purple",
+  "garment_secondary": null,
+  "metal_accent": "gold"
+ }
+}

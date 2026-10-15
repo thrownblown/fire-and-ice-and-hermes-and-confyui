@@ -1,0 +1,21 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "wardrobe",
+ "file": "shot_00415_f00016.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932188.2041452,
+ "size": 290714,
+ "ts": "2026-10-15T05:09:11Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"orange\",\n      \"material\": \"unknown\",\n      \"cut\": \"pendant hanging from neck\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "necklace",
+    "color": "orange",
+    "material": "unknown",
+    "cut": "pendant hanging from neck"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "ae69fd_81198c4a8cfd4e3d86a9786adacba3c1~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7258976,
+ "size": 82943,
+ "ts": "2026-10-15T10:50:04Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark, almond-shaped, looking upward\",\n \"brows\": \"thin, arched\",\n \"nose\": \"small, straight\",\n \"lips\": \"full, slightly parted\",\n \"distinguishing_features\": [\n  \"black hair\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark, almond-shaped, looking upward",
+  "brows": "thin, arched",
+  "nose": "small, straight",
+  "lips": "full, slightly parted",
+  "distinguishing_features": [
+   "black hair"
+  ]
+ }
+}

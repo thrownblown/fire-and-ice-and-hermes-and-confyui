@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "ComfyUI_00027_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.8274086,
+ "size": 5936517,
+ "ts": "2026-10-15T04:49:26Z",
+ "text": "{\n  \"memorable_traits\": [\"long red hair\", \"orange eyes\", \"red lips\", \"blue beaded necklace\"],\n  \"unmistakable_because\": \"The combination of long, flowing red hair and striking orange eyes makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "orange eyes",
+   "red lips",
+   "blue beaded necklace"
+  ],
+  "unmistakable_because": "The combination of long, flowing red hair and striking orange eyes makes this figure instantly recognizable."
+ }
+}

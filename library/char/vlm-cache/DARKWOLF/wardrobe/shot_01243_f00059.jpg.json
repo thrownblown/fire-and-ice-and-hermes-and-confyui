@@ -1,0 +1,27 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "shot_01243_f00059.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.031551,
+ "size": 169758,
+ "ts": "2026-10-15T04:29:34Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"tight\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "necklace",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose"
+   },
+   {
+    "item": "arm bands",
+    "color": "black",
+    "material": "leather",
+    "cut": "tight"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

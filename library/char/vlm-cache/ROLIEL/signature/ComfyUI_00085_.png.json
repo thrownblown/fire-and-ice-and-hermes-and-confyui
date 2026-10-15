@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "ComfyUI_00085_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.407606,
+ "size": 5646931,
+ "ts": "2026-10-15T04:49:50Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"golden eyes\", \"blue teardrop earrings\", \"blue beaded choker\"],\n \"unmistakable_because\": \"The combination of long, flowing red hair and distinctive golden eyes uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "golden eyes",
+   "blue teardrop earrings",
+   "blue beaded choker"
+  ],
+  "unmistakable_because": "The combination of long, flowing red hair and distinctive golden eyes uniquely identifies this figure."
+ }
+}

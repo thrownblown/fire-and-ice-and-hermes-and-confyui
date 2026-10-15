@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00772_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025493.254031,
+ "size": 239575,
+ "ts": "2026-10-15T04:39:34Z",
+ "text": "{\n \"memorable_traits\": [\"long blonde braid\", \"muscular back\", \"brown belt with yellow circles\", \"dark wristbands\"],\n \"unmistakable_because\": \"The combination of the long, thick blonde braid running down the spine and the distinctive brown belt with circular gold accents is unique to this character.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long blonde braid",
+   "muscular back",
+   "brown belt with yellow circles",
+   "dark wristbands"
+  ],
+  "unmistakable_because": "The combination of the long, thick blonde braid running down the spine and the distinctive brown belt with circular gold accents is unique to this character."
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "frazetta_death_dealer_axe_raised.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3901615,
+ "size": 60006,
+ "ts": "2026-10-15T04:26:48Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"red\",\n \"brows\": \"dark and arched\",\n \"nose\": \"pointed\",\n \"lips\": \"thin\",\n \"distinguishing_features\": [\n  \"horn-like protrusions from head\",\n  \"metallic helmet covering most of face\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "red",
+  "brows": "dark and arched",
+  "nose": "pointed",
+  "lips": "thin",
+  "distinguishing_features": [
+   "horn-like protrusions from head",
+   "metallic helmet covering most of face"
+  ]
+ }
+}

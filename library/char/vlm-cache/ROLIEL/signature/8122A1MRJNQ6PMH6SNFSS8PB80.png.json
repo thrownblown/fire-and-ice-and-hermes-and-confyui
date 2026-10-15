@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "8122A1MRJNQ6PMH6SNFSS8PB80.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7745845,
+ "size": 1258473,
+ "ts": "2026-10-15T04:48:34Z",
+ "text": "{\n \"memorable_traits\": [\"vibrant red hair\", \"orange eyes\", \"white sheer garment\", \"blue beaded accessories\"],\n \"unmistakable_because\": \"The combination of vivid red hair, glowing orange eyes, and the distinctive white sheer outfit with blue adornments creates an instantly recognizable silhouette.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "vibrant red hair",
+   "orange eyes",
+   "white sheer garment",
+   "blue beaded accessories"
+  ],
+  "unmistakable_because": "The combination of vivid red hair, glowing orange eyes, and the distinctive white sheer outfit with blue adornments creates an instantly recognizable silhouette."
+ }
+}

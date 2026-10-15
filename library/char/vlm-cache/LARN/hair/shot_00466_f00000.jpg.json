@@ -1,0 +1,17 @@
+{
+ "char": "LARN",
+ "lens": "hair",
+ "file": "shot_00466_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931135.5448272,
+ "size": 216476,
+ "ts": "2026-10-15T04:37:13Z",
+ "text": "{\n \"color\": \"blond\",\n \"length\": \"short\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"hair accessories: gold hoop earrings\"\n}",
+ "json": {
+  "color": "blond",
+  "length": "short",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "hair accessories: gold hoop earrings"
+ }
+}

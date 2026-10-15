@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "darkwolf_mask_closeup.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3846512,
+ "size": 8520,
+ "ts": "2026-10-15T04:25:59Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"hair has bangs covering forehead; hair accessories not visible\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "hair has bangs covering forehead; hair accessories not visible"
+ }
+}

@@ -1,0 +1,683 @@
+{
+ "char": "OTWA",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 56,
+  "ok": 56
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "middle-aged",
+    "share": 0.75,
+    "n": 8,
+    "outliers": [
+     "young adult",
+     "elderly"
+    ],
+    "all_values": [
+     "middle-aged",
+     "middle-aged",
+     "young adult",
+     "elderly",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "muscular",
+    "share": 0.875,
+    "n": 8,
+    "outliers": [
+     "slim"
+    ],
+    "all_values": [
+     "muscular",
+     "slim",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "tall",
+    "share": 0.625,
+    "n": 8,
+    "outliers": [
+     "average",
+     "imposing",
+     "imposing"
+    ],
+    "all_values": [
+     "tall",
+     "average",
+     "tall",
+     "imposing",
+     "tall",
+     "tall",
+     "imposing",
+     "tall"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "male",
+    "share": 0.875,
+    "n": 8,
+    "outliers": [
+     "female"
+    ],
+    "all_values": [
+     "male",
+     "female",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "light",
+    "share": 0.75,
+    "n": 8,
+    "outliers": [
+     "pale",
+     "pale"
+    ],
+    "all_values": [
+     "light brown",
+     "light",
+     "light brown",
+     "pale",
+     "pale",
+     "light brown",
+     "light brown",
+     "light brown"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thick and arched",
+    "share": 0.625,
+    "n": 8,
+    "outliers": [
+     "thick, arched, furrowed",
+     "thick, arched upward, furrowed in a tense manner",
+     "raised"
+    ],
+    "all_values": [
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched downward",
+     "thick and arched",
+     "thick, arched, furrowed",
+     "thick, arched upward, furrowed in a tense manner",
+     "raised"
+    ],
+    "stable": true
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 8,
+    "stable_items": [],
+    "disputed_items": [
+     "dark skin tone",
+     "deep wrinkles around eyes and mouth",
+     "expression of surprise or fear",
+     "long red hair",
+     "long red hair covering face",
+     "long red hair covering shoulders",
+     "long red hair partially obscuring face",
+     "muscular build",
+     "reddish-brown hair",
+     "reddish-brown skin tone",
+     "sunken cheeks",
+     "visible teeth",
+     "wrinkled forehead",
+     "wrinkled skin",
+     "wrinkles around eyes"
+    ],
+    "counts": {
+     "dark skin tone": 1,
+     "deep wrinkles around eyes and mouth": 1,
+     "expression of surprise or fear": 1,
+     "long red hair": 2,
+     "long red hair covering face": 2,
+     "long red hair covering shoulders": 1,
+     "long red hair partially obscuring face": 1,
+     "muscular build": 1,
+     "reddish-brown hair": 1,
+     "reddish-brown skin tone": 1,
+     "sunken cheeks": 1,
+     "visible teeth": 1,
+     "wrinkled forehead": 2,
+     "wrinkled skin": 2,
+     "wrinkles around eyes": 2
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "wide open",
+    "share": 0.375,
+    "n": 8,
+    "outliers": [
+     "narrow and slanted",
+     "small and downturned",
+     "narrow and intense",
+     "wide-set, dark, slightly bulging",
+     "wide-set, slightly bulging, with dark pupils and pale sclerae; expression appears startled or fearful"
+    ],
+    "all_values": [
+     "narrow and slanted",
+     "wide open, dark pupils",
+     "wide open",
+     "small and downturned",
+     "narrow and intense",
+     "wide-set, dark, slightly bulging",
+     "wide-set, slightly bulging, with dark pupils and pale sclerae; expression appears startled or fearful",
+     "wide open"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 8,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "full and slightly parted",
+    "share": 0.125,
+    "n": 8,
+    "outliers": [
+     "thin with a slight smile",
+     "thin and slightly parted",
+     "thin with a toothy grin",
+     "thin with visible teeth",
+     "thin, downturned, cracked",
+     "thin, downturned at the corners, slightly parted as if gasping or speaking",
+     "parted wide in scream"
+    ],
+    "all_values": [
+     "thin with a slight smile",
+     "thin and slightly parted",
+     "full and slightly parted",
+     "thin with a toothy grin",
+     "thin with visible teeth",
+     "thin, downturned, cracked",
+     "thin, downturned at the corners, slightly parted as if gasping or speaking",
+     "parted wide in scream"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "large and broad",
+    "share": 0.25,
+    "n": 8,
+    "outliers": [
+     "small and rounded",
+     "large and bulbous",
+     "large and bulbous",
+     "prominent and slightly hooked",
+     "large, broad, flat",
+     "large, broad, with flared nostrils"
+    ],
+    "all_values": [
+     "large and broad",
+     "small and rounded",
+     "large and broad",
+     "large and bulbous",
+     "prominent and slightly hooked",
+     "large, broad, flat",
+     "large, broad, with flared nostrils",
+     "large and bulbous"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "red",
+    "share": 0.75,
+    "n": 8,
+    "outliers": [
+     "reddish-brown",
+     "reddish-brown"
+    ],
+    "all_values": [
+     "dark red",
+     "reddish-brown",
+     "reddish-brown",
+     "red",
+     "red",
+     "red",
+     "red",
+     "red"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "very long",
+    "share": 1.0,
+    "n": 8,
+    "outliers": [],
+    "all_values": [
+     "very long",
+     "very long",
+     "very long",
+     "very long",
+     "very long",
+     "very long",
+     "very long",
+     "very long"
+    ],
+    "stable": true
+   },
+   "notes": {
+    "kind": "str",
+    "value": "bangs",
+    "share": 0.625,
+    "n": 8,
+    "outliers": [
+     "long hair falls past shoulders; no bangs or accessories visible",
+     "long bangs covering face",
+     "long red hair falls past shoulders; no bangs or accessories"
+    ],
+    "all_values": [
+     "long bangs",
+     "long bangs covering forehead",
+     "long hair falls past shoulders; no bangs or accessories visible",
+     "long bangs",
+     "long bangs covering face",
+     "long bangs",
+     "bangs",
+     "long red hair falls past shoulders; no bangs or accessories"
+    ],
+    "stable": true
+   },
+   "style": {
+    "kind": "str",
+    "value": "loose",
+    "share": 1.0,
+    "n": 8,
+    "outliers": [],
+    "all_values": [
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 8,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 8,
+    "stable_items": [
+     "loincloth"
+    ],
+    "disputed_items": [],
+    "detail": {
+     "loincloth": {
+      "n": 7,
+      "values": [
+       "brown",
+       "brown",
+       "brown",
+       "yellow",
+       "brown",
+       "brown",
+       "brown"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "partially clad",
+    "share": 1.0,
+    "n": 8,
+    "outliers": [],
+    "all_values": [
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 8,
+    "stable_items": [
+     "loincloth"
+    ],
+    "disputed_items": [],
+    "detail": {
+     "loincloth": {
+      "n": 5,
+      "values": [
+       "brown",
+       "brown",
+       "brown",
+       "brown",
+       "brown"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 8,
+    "stable_items": [],
+    "disputed_items": [],
+    "counts": {}
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.625,
+    "n": 8,
+    "outliers": [
+     "dark",
+     "dark brown",
+     "light gray"
+    ],
+    "all_values": [
+     "black",
+     "dark",
+     "dark brown",
+     "black",
+     "light gray",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "brown",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": "yellow",
+    "share": 1.0,
+    "n": 1,
+    "outliers": [],
+    "all_values": [
+     "yellow"
+    ],
+    "stable": true
+   },
+   "hair": {
+    "kind": "str",
+    "value": "red",
+    "share": 0.75,
+    "n": 8,
+    "outliers": [
+     "reddish-brown",
+     "reddish-brown"
+    ],
+    "all_values": [
+     "dark red",
+     "reddish-brown",
+     "reddish-brown",
+     "dark red",
+     "dark red",
+     "red",
+     "red",
+     "red"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "skin": {
+    "kind": "str",
+    "value": "pale",
+    "share": 0.75,
+    "n": 8,
+    "outliers": [
+     "gray",
+     "tan"
+    ],
+    "all_values": [
+     "gray",
+     "pale",
+     "tan",
+     "pale pink",
+     "pale",
+     "pink",
+     "pink",
+     "pink"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 8,
+    "stable_items": [
+     "long red hair"
+    ],
+    "disputed_items": [
+     "arms raised in anguish",
+     "bald head",
+     "bare chest",
+     "bared teeth",
+     "broad shoulders and muscular build",
+     "brown loincloth",
+     "gaunt face",
+     "long, straight, dark red hair",
+     "muscular build",
+     "naked torso",
+     "open mouth",
+     "pale grayish skin",
+     "pale skin",
+     "simple brown loincloth",
+     "wide eyes",
+     "wide-open mouth",
+     "wrinkled face",
+     "yellow loincloth"
+    ],
+    "counts": {
+     "arms raised in anguish": 1,
+     "bald head": 3,
+     "bare chest": 3,
+     "bared teeth": 1,
+     "broad shoulders and muscular build": 1,
+     "brown loincloth": 2,
+     "gaunt face": 1,
+     "long red hair": 7,
+     "long, straight, dark red hair": 1,
+     "muscular build": 2,
+     "naked torso": 1,
+     "open mouth": 1,
+     "pale grayish skin": 1,
+     "pale skin": 2,
+     "simple brown loincloth": 1,
+     "wide eyes": 1,
+     "wide-open mouth": 1,
+     "wrinkled face": 1,
+     "yellow loincloth": 1
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of long red hair, wide eyes, and an open mouth makes this figure visually distinctive.",
+    "share": 0.125,
+    "n": 8,
+    "outliers": [
+     "The combination of long, straight, dark red hair and pale grayish skin makes this figure instantly recognizable.",
+     "The figure's long, flowing red hair and muscular physique make it instantly recognizable.",
+     "The figure's long, flowing red hair and wrinkled, bald head make it instantly recognizable.",
+     "The figure's long, flowing red hair and gaunt, pale facial features with bared teeth make it instantly recognizable.",
+     "The figure's long, flowing red hair and bald head are uniquely distinctive features.",
+     "The combination of long, flowing red hair and a bald head makes this figure instantly recognizable.",
+     "The figure's long, flowing red hair and exaggerated facial expression of screaming make it instantly recognizable."
+    ],
+    "all_values": [
+     "The combination of long, straight, dark red hair and pale grayish skin makes this figure instantly recognizable.",
+     "The combination of long red hair, wide eyes, and an open mouth makes this figure visually distinctive.",
+     "The figure's long, flowing red hair and muscular physique make it instantly recognizable.",
+     "The figure's long, flowing red hair and wrinkled, bald head make it instantly recognizable.",
+     "The figure's long, flowing red hair and gaunt, pale facial features with bared teeth make it instantly recognizable.",
+     "The figure's long, flowing red hair and bald head are uniquely distinctive features.",
+     "The combination of long, flowing red hair and a bald head makes this figure instantly recognizable.",
+     "The figure's long, flowing red hair and exaggerated facial expression of screaming make it instantly recognizable."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.eyes",
+  "colors.garment_primary",
+  "colors.garment_secondary",
+  "colors.hair",
+  "colors.skin",
+  "face.brows",
+  "face.face_shape",
+  "hair.color",
+  "hair.length",
+  "hair.notes",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "props.items:loincloth",
+  "signature.memorable_traits:long red hair",
+  "wardrobe.garments:loincloth",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "face.distinguishing_features:dark skin tone",
+  "face.distinguishing_features:deep wrinkles around eyes and mouth",
+  "face.distinguishing_features:expression of surprise or fear",
+  "face.distinguishing_features:long red hair",
+  "face.distinguishing_features:long red hair covering face",
+  "face.distinguishing_features:long red hair covering shoulders",
+  "face.distinguishing_features:long red hair partially obscuring face",
+  "face.distinguishing_features:muscular build",
+  "face.distinguishing_features:reddish-brown hair",
+  "face.distinguishing_features:reddish-brown skin tone",
+  "face.distinguishing_features:sunken cheeks",
+  "face.distinguishing_features:visible teeth",
+  "face.distinguishing_features:wrinkled forehead",
+  "face.distinguishing_features:wrinkled skin",
+  "face.distinguishing_features:wrinkles around eyes",
+  "face.eyes",
+  "face.lips",
+  "face.nose",
+  "signature.memorable_traits:arms raised in anguish",
+  "signature.memorable_traits:bald head",
+  "signature.memorable_traits:bare chest",
+  "signature.memorable_traits:bared teeth",
+  "signature.memorable_traits:broad shoulders and muscular build",
+  "signature.memorable_traits:brown loincloth",
+  "signature.memorable_traits:gaunt face",
+  "signature.memorable_traits:long, straight, dark red hair",
+  "signature.memorable_traits:muscular build",
+  "signature.memorable_traits:naked torso",
+  "signature.memorable_traits:open mouth",
+  "signature.memorable_traits:pale grayish skin",
+  "signature.memorable_traits:pale skin",
+  "signature.memorable_traits:simple brown loincloth",
+  "signature.memorable_traits:wide eyes",
+  "signature.memorable_traits:wide-open mouth",
+  "signature.memorable_traits:wrinkled face",
+  "signature.memorable_traits:yellow loincloth",
+  "signature.unmistakable_because"
+ ],
+ "prompt_block": "middle-aged male, muscular build, tall height impression, light skin, red very long straight loose hair, oval face, black eyes, dressed in brown and yellow, wearing loincloth, carrying loincloth, memorable for long red hair."
+}

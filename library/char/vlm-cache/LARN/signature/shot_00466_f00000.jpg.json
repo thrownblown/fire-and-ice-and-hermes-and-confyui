@@ -1,0 +1,20 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00466_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931135.5448272,
+ "size": 216476,
+ "ts": "2026-10-15T04:37:32Z",
+ "text": "{\n \"memorable_traits\": [\"blond hair\", \"muscular build\", \"red armband\", \"gold belt buckle\", \"tusk-like teeth\"],\n \"unmistakable_because\": \"The combination of blond hair, muscular physique, and distinctive gold accessories makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "muscular build",
+   "red armband",
+   "gold belt buckle",
+   "tusk-like teeth"
+  ],
+  "unmistakable_because": "The combination of blond hair, muscular physique, and distinctive gold accessories makes this figure instantly recognizable."
+ }
+}

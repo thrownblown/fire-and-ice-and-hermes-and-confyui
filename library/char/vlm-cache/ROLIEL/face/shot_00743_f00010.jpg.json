@@ -1,0 +1,20 @@
+{
+ "char": "ROLIEL",
+ "lens": "face",
+ "file": "shot_00743_f00010.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932332.644639,
+ "size": 273544,
+ "ts": "2026-10-15T04:58:33Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and intense\",\n \"brows\": \"thin and arched\",\n \"nose\": \"straight and prominent\",\n \"lips\": \"full with red lipstick\",\n \"distinguishing_features\": [\n  \"blue beaded necklace\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and intense",
+  "brows": "thin and arched",
+  "nose": "straight and prominent",
+  "lips": "full with red lipstick",
+  "distinguishing_features": [
+   "blue beaded necklace"
+  ]
+ }
+}

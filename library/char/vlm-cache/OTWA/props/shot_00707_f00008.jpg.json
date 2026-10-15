@@ -1,0 +1,14 @@
+{
+ "char": "OTWA",
+ "lens": "props",
+ "file": "shot_00707_f00008.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931804.0408504,
+ "size": 322518,
+ "ts": "2026-10-15T04:44:46Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

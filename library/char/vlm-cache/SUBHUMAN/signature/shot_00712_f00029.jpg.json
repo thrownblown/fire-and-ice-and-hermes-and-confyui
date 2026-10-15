@@ -1,0 +1,20 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00712_f00029.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.182869,
+ "size": 298421,
+ "ts": "2026-10-15T05:04:21Z",
+ "text": "{\n \"memorable_traits\": [\"muscular build\", \"dark skin\", \"long black hair\", \"bent posture\", \"holding spear\"],\n \"unmistakable_because\": \"The figure's exaggerated muscularity, dark skin, and crouched stance with a spear make it visually distinct.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "muscular build",
+   "dark skin",
+   "long black hair",
+   "bent posture",
+   "holding spear"
+  ],
+  "unmistakable_because": "The figure's exaggerated muscularity, dark skin, and crouched stance with a spear make it visually distinct."
+ }
+}

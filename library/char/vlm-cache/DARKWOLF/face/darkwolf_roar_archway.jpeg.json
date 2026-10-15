@@ -1,0 +1,22 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "darkwolf_roar_archway.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.38816,
+ "size": 27172,
+ "ts": "2026-10-15T04:26:12Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide open, black pupils\",\n \"brows\": \"thick, arched\",\n \"nose\": \"small, pointed\",\n \"lips\": \"thin, parted in a scream\",\n \"distinguishing_features\": [\n  \"black fur covering face\",\n  \"pointed ears\",\n  \"white markings around mouth\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide open, black pupils",
+  "brows": "thick, arched",
+  "nose": "small, pointed",
+  "lips": "thin, parted in a scream",
+  "distinguishing_features": [
+   "black fur covering face",
+   "pointed ears",
+   "white markings around mouth"
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00773_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025483.2302268,
+ "size": 267596,
+ "ts": "2026-10-15T04:40:27Z",
+ "text": "{\n  \"garments\": [],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [],
+  "state_of_dress": "partially clad"
+ }
+}

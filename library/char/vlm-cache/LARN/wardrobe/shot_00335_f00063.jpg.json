@@ -1,0 +1,27 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00335_f00063.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931124.370634,
+ "size": 339135,
+ "ts": "2026-10-15T04:36:32Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, fitted around waist\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"tied at ankle, covering lower legs\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "belt",
+    "color": "brown",
+    "material": "leather",
+    "cut": "wide, fitted around waist"
+   },
+   {
+    "item": "boots",
+    "color": "black",
+    "material": "leather",
+    "cut": "tied at ankle, covering lower legs"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

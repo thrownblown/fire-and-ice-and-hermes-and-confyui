@@ -1,0 +1,21 @@
+{
+ "char": "NEKRON",
+ "lens": "face",
+ "file": "NEKRON_r03_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643305.81,
+ "size": 3837920,
+ "ts": "2026-10-15T04:42:10Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and slanted\",\n \"brows\": \"thick and arched\",\n \"nose\": \"long and straight\",\n \"lips\": \"thin with a slight frown\",\n \"distinguishing_features\": [\n  \"white hair\",\n  \"pale skin\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and slanted",
+  "brows": "thick and arched",
+  "nose": "long and straight",
+  "lips": "thin with a slight frown",
+  "distinguishing_features": [
+   "white hair",
+   "pale skin"
+  ]
+ }
+}

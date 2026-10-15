@@ -1,0 +1,27 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00027_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.8274086,
+ "size": 5936517,
+ "ts": "2026-10-15T04:49:16Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"cloak\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"flowing, draped loosely over the body\"\n    },\n    {\n      \"item\": \"choker\",\n      \"color\": \"blue\",\n      \"material\": \"leather\",\n      \"cut\": \"tight-fitting around the neck\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "cloak",
+    "color": "white",
+    "material": "cloth",
+    "cut": "flowing, draped loosely over the body"
+   },
+   {
+    "item": "choker",
+    "color": "blue",
+    "material": "leather",
+    "cut": "tight-fitting around the neck"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

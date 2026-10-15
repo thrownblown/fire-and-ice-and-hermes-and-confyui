@@ -1,0 +1,39 @@
+{
+ "char": "ROLIEL",
+ "lens": "props",
+ "file": "601K7VAFZ0HZJV62HCTB4CEG60.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7945845,
+ "size": 1338194,
+ "ts": "2026-10-15T04:47:53Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"blue glowing orb\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"held\",\n      \"body_location\": \"left hand\"\n    },\n    {\n      \"item\": \"blue braided belt\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    },\n    {\n      \"item\": \"blue choker\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"blue wristband\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"left wrist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "blue glowing orb",
+    "color": "blue",
+    "worn_or_carried": "held",
+    "body_location": "left hand"
+   },
+   {
+    "item": "blue braided belt",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   },
+   {
+    "item": "blue choker",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "blue wristband",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "left wrist"
+   }
+  ],
+  "weapons": []
+ }
+}

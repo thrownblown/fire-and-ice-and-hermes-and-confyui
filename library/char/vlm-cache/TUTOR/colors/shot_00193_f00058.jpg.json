@@ -1,0 +1,18 @@
+{
+ "char": "TUTOR",
+ "lens": "colors",
+ "file": "shot_00193_f00058.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.552537,
+ "size": 95143,
+ "ts": "2026-10-15T05:21:02Z",
+ "text": "{\n \"skin\": \"light beige\",\n \"hair\": \"black\",\n \"eyes\": \"dark brown\",\n \"garment_primary\": \"beige\",\n \"garment_secondary\": \"gold\",\n \"metal_accent\": null\n}",
+ "json": {
+  "skin": "light beige",
+  "hair": "black",
+  "eyes": "dark brown",
+  "garment_primary": "beige",
+  "garment_secondary": "gold",
+  "metal_accent": null
+ }
+}

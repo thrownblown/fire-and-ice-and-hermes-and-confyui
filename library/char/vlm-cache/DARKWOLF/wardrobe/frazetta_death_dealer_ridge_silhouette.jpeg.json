@@ -1,0 +1,33 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "frazetta_death_dealer_ridge_silhouette.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.40116,
+ "size": 509272,
+ "ts": "2026-10-15T04:27:20Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"helmet\",\n      \"color\": \"dark metallic\",\n      \"material\": \"metal\",\n      \"cut\": \"tightly fitted\"\n    },\n    {\n      \"item\": \"armor\",\n      \"color\": \"dark metallic\",\n      \"material\": \"metal\",\n      \"cut\": \"plate armor covering torso and limbs\"\n    },\n    {\n      \"item\": \"shield\",\n      \"color\": \"dark metallic with black emblem\",\n      \"material\": \"metal\",\n      \"cut\": \"oval shape, strapped to arm\"\n    }\n  ],\n  \"state_of_dress\": \"armored\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "helmet",
+    "color": "dark metallic",
+    "material": "metal",
+    "cut": "tightly fitted"
+   },
+   {
+    "item": "armor",
+    "color": "dark metallic",
+    "material": "metal",
+    "cut": "plate armor covering torso and limbs"
+   },
+   {
+    "item": "shield",
+    "color": "dark metallic with black emblem",
+    "material": "metal",
+    "cut": "oval shape, strapped to arm"
+   }
+  ],
+  "state_of_dress": "armored"
+ }
+}

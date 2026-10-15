@@ -1,0 +1,22 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "face",
+ "file": "ComfyUI_00104_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935247.9240584,
+ "size": 3864748,
+ "ts": "2026-10-15T05:03:21Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark, almond-shaped, slightly narrowed\",\n \"brows\": \"thick, arched, dark\",\n \"nose\": \"large, broad, flat\",\n \"lips\": \"full, slightly parted\",\n \"distinguishing_features\": [\n  \"deep wrinkles around eyes and mouth\",\n  \"heavy brow ridge\",\n  \"dark hair falling over forehead\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark, almond-shaped, slightly narrowed",
+  "brows": "thick, arched, dark",
+  "nose": "large, broad, flat",
+  "lips": "full, slightly parted",
+  "distinguishing_features": [
+   "deep wrinkles around eyes and mouth",
+   "heavy brow ridge",
+   "dark hair falling over forehead"
+  ]
+ }
+}

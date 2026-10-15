@@ -1,0 +1,20 @@
+{
+ "char": "JAROL",
+ "lens": "signature",
+ "file": "ComfyUI_00033_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935131.8724194,
+ "size": 4286778,
+ "ts": "2026-10-15T04:30:14Z",
+ "text": "{\n \"memorable_traits\": [\"bald head\", \"long white beard\", \"gold circular necklace\", \"maroon tunic\", \"brown boots\"],\n \"unmistakable_because\": \"The combination of the bald head, long white beard, and distinctive gold circular necklace makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "bald head",
+   "long white beard",
+   "gold circular necklace",
+   "maroon tunic",
+   "brown boots"
+  ],
+  "unmistakable_because": "The combination of the bald head, long white beard, and distinctive gold circular necklace makes this figure uniquely identifiable."
+ }
+}

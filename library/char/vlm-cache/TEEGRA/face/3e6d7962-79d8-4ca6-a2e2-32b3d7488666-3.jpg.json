@@ -1,0 +1,22 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "3e6d7962-79d8-4ca6-a2e2-32b3d7488666-3.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7248971,
+ "size": 114356,
+ "ts": "2026-10-15T10:48:36Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"green, almond-shaped, slightly narrowed\",\n \"brows\": \"thin, arched, dark\",\n \"nose\": \"small, straight, defined bridge\",\n \"lips\": \"full, pinkish-red, parted slightly\",\n \"distinguishing_features\": [\n  \"long black hair with bangs\",\n  \"gold earring\",\n  \"golden crescent moon on forehead\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "green, almond-shaped, slightly narrowed",
+  "brows": "thin, arched, dark",
+  "nose": "small, straight, defined bridge",
+  "lips": "full, pinkish-red, parted slightly",
+  "distinguishing_features": [
+   "long black hair with bangs",
+   "gold earring",
+   "golden crescent moon on forehead"
+  ]
+ }
+}

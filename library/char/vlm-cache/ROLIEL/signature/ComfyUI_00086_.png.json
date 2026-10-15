@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "ComfyUI_00086_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.386247,
+ "size": 5319840,
+ "ts": "2026-10-15T04:50:17Z",
+ "text": "{\n  \"memorable_traits\": [\"long red hair\", \"tear-shaped blue earrings\", \"blue beaded choker with large teardrop pendant\", \"light blue sheer gown\"],\n  \"unmistakable_because\": \"The combination of long, flowing red hair and the distinctive blue tear-drop earrings makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "tear-shaped blue earrings",
+   "blue beaded choker with large teardrop pendant",
+   "light blue sheer gown"
+  ],
+  "unmistakable_because": "The combination of long, flowing red hair and the distinctive blue tear-drop earrings makes this figure instantly recognizable."
+ }
+}

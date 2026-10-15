@@ -1,0 +1,20 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "face",
+ "file": "ae69fd_6761d255b64342e2aae915c9395b0d91~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932193.0585334,
+ "size": 38297,
+ "ts": "2026-10-15T05:08:24Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"round\",\n \"brows\": \"thick\",\n \"nose\": \"large\",\n \"lips\": \"full\",\n \"distinguishing_features\": [\n  \"scar on forehead\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "round",
+  "brows": "thick",
+  "nose": "large",
+  "lips": "full",
+  "distinguishing_features": [
+   "scar on forehead"
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "princess_teegra_by_synth_crush_dj5kqou-414w.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032360.2804964,
+ "size": 30200,
+ "ts": "2026-10-15T10:53:34Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark, almond-shaped, looking forward\",\n \"brows\": \"arched, dark\",\n \"nose\": \"small, straight bridge\",\n \"lips\": \"full, slightly parted\",\n \"distinguishing_features\": [\n  \"long dark hair\",\n  \"subtle makeup\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark, almond-shaped, looking forward",
+  "brows": "arched, dark",
+  "nose": "small, straight bridge",
+  "lips": "full, slightly parted",
+  "distinguishing_features": [
+   "long dark hair",
+   "subtle makeup"
+  ]
+ }
+}

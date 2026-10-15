@@ -1,0 +1,27 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "shot_01232_f00014.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.031551,
+ "size": 138722,
+ "ts": "2026-10-15T04:29:14Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"dark brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting, with circular patches\"\n    },\n    {\n      \"item\": \"arm guards\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"short sleeves covering forearms\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "dark brown",
+    "material": "cloth",
+    "cut": "tight-fitting, with circular patches"
+   },
+   {
+    "item": "arm guards",
+    "color": "black",
+    "material": "leather",
+    "cut": "short sleeves covering forearms"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

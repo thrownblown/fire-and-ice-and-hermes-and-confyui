@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "frazetta_death_dealer_axe_raised.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3901615,
+ "size": 60006,
+ "ts": "2026-10-15T04:26:49Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very short\",\n \"texture\": \"straight\",\n \"style\": \"covered\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very short",
+  "texture": "straight",
+  "style": "covered",
+  "notes": null
+ }
+}

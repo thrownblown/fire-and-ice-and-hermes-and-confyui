@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "25JNVDM5PD75BR64B2GHY24MS0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7645845,
+ "size": 1216898,
+ "ts": "2026-10-15T04:46:41Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose, draped\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"material\": \"unknown\",\n      \"cut\": \"choker-style\"\n    },\n    {\n      \"item\": \"bracelet\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"woven band\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose, draped"
+   },
+   {
+    "item": "necklace",
+    "color": "blue",
+    "material": "unknown",
+    "cut": "choker-style"
+   },
+   {
+    "item": "bracelet",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "woven band"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

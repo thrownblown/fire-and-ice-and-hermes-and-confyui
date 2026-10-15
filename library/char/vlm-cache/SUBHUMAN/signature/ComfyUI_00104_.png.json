@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "ComfyUI_00104_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935247.9240584,
+ "size": 3864748,
+ "ts": "2026-10-15T05:03:31Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"broad muscular build\", \"dark skin\", \"simple loincloth\"],\n  \"unmistakable_because\": \"The figure's combination of long black hair, massive musculature, and dark skin makes it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "broad muscular build",
+   "dark skin",
+   "simple loincloth"
+  ],
+  "unmistakable_because": "The figure's combination of long black hair, massive musculature, and dark skin makes it instantly recognizable."
+ }
+}

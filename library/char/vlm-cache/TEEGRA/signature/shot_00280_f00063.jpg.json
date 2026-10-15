@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "shot_00280_f00063.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723634.8941662,
+ "size": 141843,
+ "ts": "2026-10-15T10:55:53Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"purple top\", \"thin gold necklace\"],\n  \"unmistakable_because\": \"The combination of long black hair, a purple top, and a thin gold necklace makes this figure visually unique.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "purple top",
+   "thin gold necklace"
+  ],
+  "unmistakable_because": "The combination of long black hair, a purple top, and a thin gold necklace makes this figure visually unique."
+ }
+}

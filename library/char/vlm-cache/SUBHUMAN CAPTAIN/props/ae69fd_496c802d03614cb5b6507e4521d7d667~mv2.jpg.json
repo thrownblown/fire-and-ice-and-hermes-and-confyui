@@ -1,0 +1,30 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "props",
+ "file": "ae69fd_496c802d03614cb5b6507e4521d7d667~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932136.4510386,
+ "size": 36959,
+ "ts": "2026-10-15T05:06:52Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"axehandle\",\n      \"color\": \"gray\",\n      \"worn_or_carried\": \"carried\",\n      \"body_location\": \"left hand\"\n    },\n    {\n      \"item\": \"axehead\",\n      \"color\": \"gray\",\n      \"worn_or_carried\": \"carried\",\n      \"body_location\": \"left hand\"\n    }\n  ],\n  \"weapons\": [\n    \"axehandle\",\n    \"axehead\"\n  ]\n}",
+ "json": {
+  "items": [
+   {
+    "item": "axehandle",
+    "color": "gray",
+    "worn_or_carried": "carried",
+    "body_location": "left hand"
+   },
+   {
+    "item": "axehead",
+    "color": "gray",
+    "worn_or_carried": "carried",
+    "body_location": "left hand"
+   }
+  ],
+  "weapons": [
+   "axehandle",
+   "axehead"
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "char": "OTWA",
+ "lens": "face",
+ "file": "otwa_closeup.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931887.0075073,
+ "size": 2904,
+ "ts": "2026-10-15T04:43:56Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide open, dark pupils\",\n \"brows\": \"thick and arched\",\n \"nose\": \"small and rounded\",\n \"lips\": \"thin and slightly parted\",\n \"distinguishing_features\": [\n  \"reddish-brown hair\",\n  \"wrinkles around eyes\",\n  \"expression of surprise or fear\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide open, dark pupils",
+  "brows": "thick and arched",
+  "nose": "small and rounded",
+  "lips": "thin and slightly parted",
+  "distinguishing_features": [
+   "reddish-brown hair",
+   "wrinkles around eyes",
+   "expression of surprise or fear"
+  ]
+ }
+}

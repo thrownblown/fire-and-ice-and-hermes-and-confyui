@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "colors",
+ "file": "ae69fd_95d126c5ba3844cf8d9c295ea4e2f98bf000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7238934,
+ "size": 37049,
+ "ts": "2026-10-15T10:50:35Z",
+ "text": "{\n \"skin\": \"pale\",\n \"hair\": \"black\",\n \"eyes\": \"dark\",\n \"garment_primary\": \"blue\",\n \"garment_secondary\": null,\n \"metal_accent\": \"gold\"\n}",
+ "json": {
+  "skin": "pale",
+  "hair": "black",
+  "eyes": "dark",
+  "garment_primary": "blue",
+  "garment_secondary": null,
+  "metal_accent": "gold"
+ }
+}

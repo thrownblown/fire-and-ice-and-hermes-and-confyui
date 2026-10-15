@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "hair",
+ "file": "shot_00713_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.182869,
+ "size": 232789,
+ "ts": "2026-10-15T05:04:46Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"short\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "black",
+  "length": "short",
+  "texture": "straight",
+  "style": "loose",
+  "notes": null
+ }
+}

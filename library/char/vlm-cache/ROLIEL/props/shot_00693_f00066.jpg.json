@@ -1,0 +1,21 @@
+{
+ "char": "ROLIEL",
+ "lens": "props",
+ "file": "shot_00693_f00066.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932310.7540658,
+ "size": 225579,
+ "ts": "2026-10-15T04:57:36Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"blue collar\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "blue collar",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   }
+  ],
+  "weapons": []
+ }
+}

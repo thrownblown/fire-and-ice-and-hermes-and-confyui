@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "3e6d7962-79d8-4ca6-a2e2-32b3d7488666-3.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7248971,
+ "size": 114356,
+ "ts": "2026-10-15T10:48:56Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"purple bikini\", \"gold earring\", \"green eyes\"],\n  \"unmistakable_because\": \"The combination of long black hair, purple bikini, and distinctive gold earring makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "purple bikini",
+   "gold earring",
+   "green eyes"
+  ],
+  "unmistakable_because": "The combination of long black hair, purple bikini, and distinctive gold earring makes this figure instantly recognizable."
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "LARN",
+ "lens": "props",
+ "file": "shot_00773_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025483.2302268,
+ "size": 267596,
+ "ts": "2026-10-15T04:40:30Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"white\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "white",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   }
+  ],
+  "weapons": []
+ }
+}

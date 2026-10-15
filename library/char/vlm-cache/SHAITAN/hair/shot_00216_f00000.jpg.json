@@ -1,0 +1,17 @@
+{
+ "char": "SHAITAN",
+ "lens": "hair",
+ "file": "shot_00216_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931744.0758822,
+ "size": 211295,
+ "ts": "2026-10-15T04:59:34Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very short\",\n \"texture\": \"straight\",\n \"style\": \"covered\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very short",
+  "texture": "straight",
+  "style": "covered",
+  "notes": null
+ }
+}

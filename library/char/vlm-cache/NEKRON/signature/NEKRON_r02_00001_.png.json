@@ -1,0 +1,19 @@
+{
+ "char": "NEKRON",
+ "lens": "signature",
+ "file": "NEKRON_r02_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643257.09,
+ "size": 4167877,
+ "ts": "2026-10-15T04:42:05Z",
+ "text": "{\n \"memorable_traits\": [\"long white hair\", \"purple robe\", \"black boots\", \"angular facial features\"],\n \"unmistakable_because\": \"The combination of long white hair, a distinctive purple robe with black trim, and angular facial features creates an instantly recognizable silhouette.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long white hair",
+   "purple robe",
+   "black boots",
+   "angular facial features"
+  ],
+  "unmistakable_because": "The combination of long white hair, a distinctive purple robe with black trim, and angular facial features creates an instantly recognizable silhouette."
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "DARKWOLF",
+ "lens": "props",
+ "file": "darkwolf_roar_archway.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.38816,
+ "size": 27172,
+ "ts": "2026-10-15T04:26:20Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"headpiece\",\n      \"color\": \"black\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"head\"\n    },\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"dark brown with yellow circles\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "headpiece",
+    "color": "black",
+    "worn_or_carried": "worn",
+    "body_location": "head"
+   },
+   {
+    "item": "loincloth",
+    "color": "dark brown with yellow circles",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   }
+  ],
+  "weapons": []
+ }
+}

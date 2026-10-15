@@ -1,0 +1,17 @@
+{
+ "char": "JAROL",
+ "lens": "hair",
+ "file": "ComfyUI_00033_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935131.8724194,
+ "size": 4286778,
+ "ts": "2026-10-15T04:29:50Z",
+ "text": "{\n \"color\": \"white\",\n \"length\": \"shaved\",\n \"texture\": \"straight\",\n \"style\": \"covered\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "white",
+  "length": "shaved",
+  "texture": "straight",
+  "style": "covered",
+  "notes": null
+ }
+}

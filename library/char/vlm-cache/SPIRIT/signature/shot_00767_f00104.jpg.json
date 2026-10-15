@@ -1,0 +1,18 @@
+{
+ "char": "SPIRIT",
+ "lens": "signature",
+ "file": "shot_00767_f00104.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932288.698849,
+ "size": 356595,
+ "ts": "2026-10-15T05:02:42Z",
+ "text": "{\n \"memorable_traits\": [\"skeleton\", \"long white hair\", \"black beaded necklace\"],\n \"unmistakable_because\": \"The figure is a skeletal humanoid with long white hair and a black beaded necklace, making it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "skeleton",
+   "long white hair",
+   "black beaded necklace"
+  ],
+  "unmistakable_because": "The figure is a skeletal humanoid with long white hair and a black beaded necklace, making it instantly recognizable."
+ }
+}

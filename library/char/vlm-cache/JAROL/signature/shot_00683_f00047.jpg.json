@@ -1,0 +1,19 @@
+{
+ "char": "JAROL",
+ "lens": "signature",
+ "file": "shot_00683_f00047.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729705.3978615,
+ "size": 211020,
+ "ts": "2026-10-15T04:32:10Z",
+ "text": "{\n \"memorable_traits\": [\"bald head\", \"long white beard\", \"gold hoop earring\", \"red sleeveless top with gold circles\"],\n \"unmistakable_because\": \"The combination of the bald head, long white beard, and distinctive gold hoop earring makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "bald head",
+   "long white beard",
+   "gold hoop earring",
+   "red sleeveless top with gold circles"
+  ],
+  "unmistakable_because": "The combination of the bald head, long white beard, and distinctive gold hoop earring makes this figure instantly recognizable."
+ }
+}

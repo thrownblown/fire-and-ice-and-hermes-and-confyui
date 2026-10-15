@@ -1,0 +1,21 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "face",
+ "file": "ae69fd_496c802d03614cb5b6507e4521d7d667~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932136.4510386,
+ "size": 36959,
+ "ts": "2026-10-15T05:06:44Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark and almond-shaped\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and broad\",\n \"lips\": \"full and slightly parted\",\n \"distinguishing_features\": [\n  \"scar across forehead\",\n  \"tattoo on cheek\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark and almond-shaped",
+  "brows": "thick and arched",
+  "nose": "large and broad",
+  "lips": "full and slightly parted",
+  "distinguishing_features": [
+   "scar across forehead",
+   "tattoo on cheek"
+  ]
+ }
+}

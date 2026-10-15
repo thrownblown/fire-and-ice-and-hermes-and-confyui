@@ -64,6 +64,19 @@ LoRA — they stack, but re-check audio when you stack them at strength.
 
 All three are in `tools/download_5090_models.sh` (tier 1 / tier 2).
 
+## Character Swap LoRA (Akatz Labs) — the third identity route
+
+- `h3_character_swap_pro4500_1000.safetensors` (155 MB) — **REF2VA** DiT LoRA
+  (`ss_base_model_version: minimax_h3_ref2va`, 416 tensors, ostris/ai-toolkit, step 1000).
+  Swaps a foreground character in a source video for a `<Picture 1>` reference character,
+  preserving video camera/framing/background/lighting and matching pose/scale/movement.
+  No trigger word. Full recipe + the replace/preserve/match prompt contract + the
+  `ref_image_size: match` tension: `docs/h3-character-swap-lora.md`.
+- Author HF: `akatz-ai/MiniMax-H3-Character-Swap-LoRA`. Workflow: `MINIMAXA CHARACTER SWAP
+  patreon (1).json`. This is a THIRD identity route beside (A) Krea→Qwen-Edit wardrobe and
+  (B) H3 ref2va sheet-holding — and the strongest match yet for "transplant live-action
+  Teegra over the 1983 rotoscope choreography."
+
 ## Testing notes
 - Test one variable at a time with a fixed seed; a style LoRA changes the look, so compare against
   the same prompt without it.

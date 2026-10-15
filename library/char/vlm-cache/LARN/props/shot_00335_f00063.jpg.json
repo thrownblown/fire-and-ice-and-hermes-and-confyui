@@ -1,0 +1,33 @@
+{
+ "char": "LARN",
+ "lens": "props",
+ "file": "shot_00335_f00063.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931124.370634,
+ "size": 339135,
+ "ts": "2026-10-15T04:36:39Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"white\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"medallion\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"chest\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "belt",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   },
+   {
+    "item": "necklace",
+    "color": "white",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "medallion",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "chest"
+   }
+  ],
+  "weapons": []
+ }
+}

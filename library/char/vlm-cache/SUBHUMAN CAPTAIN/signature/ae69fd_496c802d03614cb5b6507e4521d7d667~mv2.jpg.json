@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "signature",
+ "file": "ae69fd_496c802d03614cb5b6507e4521d7d667~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932136.4510386,
+ "size": 36959,
+ "ts": "2026-10-15T05:06:56Z",
+ "text": "{\n  \"memorable_traits\": [\"long dark hair\", \"bare torso\", \"black loincloth\", \"axe with gray handle\"],\n  \"unmistakable_because\": \"The figure's long dark hair, bare chest, and distinctive axe with a gray handle make it uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "bare torso",
+   "black loincloth",
+   "axe with gray handle"
+  ],
+  "unmistakable_because": "The figure's long dark hair, bare chest, and distinctive axe with a gray handle make it uniquely identifiable."
+ }
+}

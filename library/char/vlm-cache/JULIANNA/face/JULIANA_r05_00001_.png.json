@@ -1,0 +1,21 @@
+{
+ "char": "JULIANNA",
+ "lens": "face",
+ "file": "JULIANA_r05_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643115.85,
+ "size": 4600417,
+ "ts": "2026-10-15T04:33:04Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"green\",\n \"brows\": \"dark and arched\",\n \"nose\": \"straight and narrow\",\n \"lips\": \"full and red\",\n \"distinguishing_features\": [\n  \"long dark hair\",\n  \"earrings\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "green",
+  "brows": "dark and arched",
+  "nose": "straight and narrow",
+  "lips": "full and red",
+  "distinguishing_features": [
+   "long dark hair",
+   "earrings"
+  ]
+ }
+}

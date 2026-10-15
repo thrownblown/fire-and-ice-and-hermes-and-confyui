@@ -1,0 +1,27 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "shot_01229_f00012.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.0305507,
+ "size": 131502,
+ "ts": "2026-10-15T04:28:50Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"head covering\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"hooded, fitting tightly around head and shoulders\"\n    },\n    {\n      \"item\": \"neck adornment\",\n      \"color\": \"light brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"spiky, hanging down from neck\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "head covering",
+    "color": "black",
+    "material": "cloth",
+    "cut": "hooded, fitting tightly around head and shoulders"
+   },
+   {
+    "item": "neck adornment",
+    "color": "light brown",
+    "material": "cloth",
+    "cut": "spiky, hanging down from neck"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

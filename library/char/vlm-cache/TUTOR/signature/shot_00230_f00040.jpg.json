@@ -1,0 +1,19 @@
+{
+ "char": "TUTOR",
+ "lens": "signature",
+ "file": "shot_00230_f00040.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5540402,
+ "size": 211985,
+ "ts": "2026-10-15T05:21:46Z",
+ "text": "{\n \"memorable_traits\": [\"light blue draped clothing\", \"brown skin tone\", \"golden belt with circular ornaments\", \"dark hair\"],\n \"unmistakable_because\": \"The combination of light blue draped attire, golden belt with circular ornaments, and dark hair uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "light blue draped clothing",
+   "brown skin tone",
+   "golden belt with circular ornaments",
+   "dark hair"
+  ],
+  "unmistakable_because": "The combination of light blue draped attire, golden belt with circular ornaments, and dark hair uniquely identifies this figure."
+ }
+}

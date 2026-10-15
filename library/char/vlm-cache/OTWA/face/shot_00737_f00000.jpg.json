@@ -1,0 +1,22 @@
+{
+ "char": "OTWA",
+ "lens": "face",
+ "file": "shot_00737_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931813.7527254,
+ "size": 293397,
+ "ts": "2026-10-15T04:44:59Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide-set, dark, slightly bulging\",\n \"brows\": \"thick, arched, furrowed\",\n \"nose\": \"large, broad, flat\",\n \"lips\": \"thin, downturned, cracked\",\n \"distinguishing_features\": [\n  \"long red hair covering shoulders\",\n  \"wrinkled forehead\",\n  \"sunken cheeks\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide-set, dark, slightly bulging",
+  "brows": "thick, arched, furrowed",
+  "nose": "large, broad, flat",
+  "lips": "thin, downturned, cracked",
+  "distinguishing_features": [
+   "long red hair covering shoulders",
+   "wrinkled forehead",
+   "sunken cheeks"
+  ]
+ }
+}

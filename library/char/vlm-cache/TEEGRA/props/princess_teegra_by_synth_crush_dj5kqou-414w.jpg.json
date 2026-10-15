@@ -1,0 +1,14 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "princess_teegra_by_synth_crush_dj5kqou-414w.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032360.2804964,
+ "size": 30200,
+ "ts": "2026-10-15T10:53:38Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

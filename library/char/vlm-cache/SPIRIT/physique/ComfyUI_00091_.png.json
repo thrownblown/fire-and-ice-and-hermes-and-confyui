@@ -1,0 +1,17 @@
+{
+ "char": "SPIRIT",
+ "lens": "physique",
+ "file": "ComfyUI_00091_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.8226674,
+ "size": 5485533,
+ "ts": "2026-10-15T05:00:34Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"indeterminate\",\n \"build\": \"slim\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"pale\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "indeterminate",
+  "build": "slim",
+  "height_impression": "tall",
+  "skin_neutral_light": "pale"
+ }
+}

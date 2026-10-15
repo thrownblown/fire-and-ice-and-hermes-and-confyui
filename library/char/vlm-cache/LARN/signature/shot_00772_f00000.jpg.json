@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00772_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025489.5304525,
+ "size": 311608,
+ "ts": "2026-10-15T04:39:09Z",
+ "text": "{\n \"memorable_traits\": [\"blond hair\", \"naked torso\", \"red belt with gold buckle\", \"sword at hip\"],\n \"unmistakable_because\": \"The combination of blond hair, bare chest, and the distinctive red belt with a large gold buckle makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "naked torso",
+   "red belt with gold buckle",
+   "sword at hip"
+  ],
+  "unmistakable_because": "The combination of blond hair, bare chest, and the distinctive red belt with a large gold buckle makes this figure instantly recognizable."
+ }
+}

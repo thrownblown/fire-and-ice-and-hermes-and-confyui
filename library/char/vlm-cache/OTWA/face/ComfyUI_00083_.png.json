@@ -1,0 +1,21 @@
+{
+ "char": "OTWA",
+ "lens": "face",
+ "file": "ComfyUI_00083_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935186.763673,
+ "size": 5077263,
+ "ts": "2026-10-15T04:43:39Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and slanted\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and broad\",\n \"lips\": \"thin with a slight smile\",\n \"distinguishing_features\": [\n  \"wrinkles around eyes\",\n  \"dark skin tone\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and slanted",
+  "brows": "thick and arched",
+  "nose": "large and broad",
+  "lips": "thin with a slight smile",
+  "distinguishing_features": [
+   "wrinkles around eyes",
+   "dark skin tone"
+  ]
+ }
+}

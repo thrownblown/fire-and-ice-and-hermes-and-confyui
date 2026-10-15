@@ -1,0 +1,18 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "darkwolf_roar_archway.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.38816,
+ "size": 27172,
+ "ts": "2026-10-15T04:26:25Z",
+ "text": "{\n  \"memorable_traits\": [\"black horned helmet\", \"muscular build\", \"dark loincloth with yellow circles\"],\n  \"unmistakable_because\": \"The combination of the black horned helmet, muscular physique, and distinctive dark loincloth with yellow circles makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black horned helmet",
+   "muscular build",
+   "dark loincloth with yellow circles"
+  ],
+  "unmistakable_because": "The combination of the black horned helmet, muscular physique, and distinctive dark loincloth with yellow circles makes this figure instantly recognizable."
+ }
+}

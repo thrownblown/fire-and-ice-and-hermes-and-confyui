@@ -23,6 +23,25 @@ Last full re-review: 2026-10-12 (`docs/h3_repull_2026-10-12.md`).
   `H3 Memory Optimization` (fit long/hi-res video in VRAM) + `H3 Sparse Attention` (speed) nodes;
   50% attention budget suffices; int8 fine. Relevant to the 4090/5090 split.
 
+## [READ] "Can Qwen Image 2.1 replace multi-stage turnaround?" (1wmgbx9)
+- https://www.reddit.com/r/StableDiffusion/comments/1wmgbx9/can_qwen_image_21_replace_multistage_turnaround/
+- Digest: `docs/qwen21-turnaround-thread.md`
+- Takeaway: Qwen Image 2.1 (7B DiT) holds 4-panel layout + identity coherence 44/44 in
+  one T2I pass (~47s on a 3090) — but prompt-only fails framing (dwarfism, camera-distance
+  drift, shin cropping). No prompt lever for camera distance/bounding boxes. Cheap wins:
+  vertical 3:4/2:3 panels per quadrant, mandatory seed-hunting. Decouple medium emulation
+  (style = post-pass, not in the sheet prompt). Directly relevant to FNI's identity-sheet
+  work + the edit-model framing fix.
+
+## [READ] Character-sheet 3-way — Krea2 vs Qwen 2.1 vs MiniMax H3 (video App5Rhnn-K0)
+- https://www.youtube.com/watch?v=App5Rhnn-K0
+- Digest: `docs/charsheet-krea2-qwen21-h3-comparison.md`
+- Takeaway: Qwen 2.1 = best identity-holding (face closest to ref); MiniMax H3 = best
+  sheet layout but face drifts every time; Krea 2 = mid, turnaround layout. Two cheap
+  fixes: full-body reference (head-shots drift women into swimsuits — the Teegra failure)
+  and check megapixels before debugging a stalled Qwen job. Sato Dive's H3 sheet workflow
+  has style presets (realistic/anime/3D-Pixar/preserve-style).
+
 ## [READ] "Mini Video Editor / timeline node for H3 extend"
 - https://www.reddit.com/r/StableDiffusion/comments/1wmj6xr/mini_video_editor_timeline_node_for_h3_extend/
 - Digest: `docs/h3_repull_2026-10-12.md` §3. obvpm timeline workflow (extend/prepend/bridge/

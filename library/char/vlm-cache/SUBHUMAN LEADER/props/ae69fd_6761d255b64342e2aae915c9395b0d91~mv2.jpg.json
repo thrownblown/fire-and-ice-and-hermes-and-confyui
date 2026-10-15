@@ -1,0 +1,29 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "props",
+ "file": "ae69fd_6761d255b64342e2aae915c9395b0d91~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932193.0585334,
+ "size": 38297,
+ "ts": "2026-10-15T05:08:34Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"tooth necklace\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"spear handle\",\n      \"color\": \"dark brown\",\n      \"worn_or_carried\": \"carried\",\n      \"body_location\": \"left hand\"\n    }\n  ],\n  \"weapons\": [\n    \"sword blade\"\n  ]\n}",
+ "json": {
+  "items": [
+   {
+    "item": "tooth necklace",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "spear handle",
+    "color": "dark brown",
+    "worn_or_carried": "carried",
+    "body_location": "left hand"
+   }
+  ],
+  "weapons": [
+   "sword blade"
+  ]
+ }
+}

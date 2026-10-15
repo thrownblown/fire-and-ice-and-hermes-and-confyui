@@ -1,0 +1,16 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "props",
+ "file": "shot_00712_f00058.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1863708,
+ "size": 277898,
+ "ts": "2026-10-15T05:04:33Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": [\n    \"spear\"\n  ]\n}",
+ "json": {
+  "items": [],
+  "weapons": [
+   "spear"
+  ]
+ }
+}

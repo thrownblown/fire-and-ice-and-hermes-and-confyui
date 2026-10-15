@@ -1,0 +1,17 @@
+{
+ "char": "TEEGRA",
+ "lens": "physique",
+ "file": "teegra_cosplay_by_synth_crush_di9eund-414w.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032327.0699873,
+ "size": 37541,
+ "ts": "2026-10-15T10:57:46Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"young adult\",\n \"build\": \"slim\",\n \"height_impression\": \"average\",\n \"skin_neutral_light\": \"light\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "young adult",
+  "build": "slim",
+  "height_impression": "average",
+  "skin_neutral_light": "light"
+ }
+}

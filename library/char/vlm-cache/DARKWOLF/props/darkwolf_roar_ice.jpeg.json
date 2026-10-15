@@ -1,0 +1,29 @@
+{
+ "char": "DARKWOLF",
+ "lens": "props",
+ "file": "darkwolf_roar_ice.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.39316,
+ "size": 59537,
+ "ts": "2026-10-15T04:26:39Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"white\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"black\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    }\n  ],\n  \"weapons\": [\n    \"sword\"\n  ]\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "white",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "belt",
+    "color": "black",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   }
+  ],
+  "weapons": [
+   "sword"
+  ]
+ }
+}

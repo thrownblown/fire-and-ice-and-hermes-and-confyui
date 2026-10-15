@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00335_f00063.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931124.370634,
+ "size": 339135,
+ "ts": "2026-10-15T04:36:45Z",
+ "text": "{\n  \"memorable_traits\": [\"blond hair\", \"naked torso\", \"brown belt with gold buckle\", \"dark boots\"],\n  \"unmistakable_because\": \"The figure's distinctive blond hair, bare chest, and brown belt with a large gold buckle are unique visual markers.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "naked torso",
+   "brown belt with gold buckle",
+   "dark boots"
+  ],
+  "unmistakable_because": "The figure's distinctive blond hair, bare chest, and brown belt with a large gold buckle are unique visual markers."
+ }
+}

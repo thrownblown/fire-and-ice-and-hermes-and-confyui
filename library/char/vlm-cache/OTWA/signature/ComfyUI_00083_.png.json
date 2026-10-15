@@ -1,0 +1,19 @@
+{
+ "char": "OTWA",
+ "lens": "signature",
+ "file": "ComfyUI_00083_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935186.763673,
+ "size": 5077263,
+ "ts": "2026-10-15T04:43:52Z",
+ "text": "{\n \"memorable_traits\": [\"long, straight, dark red hair\", \"pale grayish skin\", \"broad shoulders and muscular build\", \"simple brown loincloth\"],\n \"unmistakable_because\": \"The combination of long, straight, dark red hair and pale grayish skin makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long, straight, dark red hair",
+   "pale grayish skin",
+   "broad shoulders and muscular build",
+   "simple brown loincloth"
+  ],
+  "unmistakable_because": "The combination of long, straight, dark red hair and pale grayish skin makes this figure instantly recognizable."
+ }
+}

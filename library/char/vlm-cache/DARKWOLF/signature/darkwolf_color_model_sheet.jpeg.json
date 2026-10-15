@@ -1,0 +1,20 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "darkwolf_color_model_sheet.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3866518,
+ "size": 28370,
+ "ts": "2026-10-15T04:25:31Z",
+ "text": "{\n  \"memorable_traits\": [\"black fur-like skin\", \"pointed ears\", \"long black hair\", \"dark leather armor\", \"clawed gauntlets\"],\n  \"unmistakable_because\": \"The combination of dark, textured skin, pointed ears, and long black hair with heavy armor makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black fur-like skin",
+   "pointed ears",
+   "long black hair",
+   "dark leather armor",
+   "clawed gauntlets"
+  ],
+  "unmistakable_because": "The combination of dark, textured skin, pointed ears, and long black hair with heavy armor makes this figure instantly recognizable."
+ }
+}

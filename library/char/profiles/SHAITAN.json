@@ -1,0 +1,444 @@
+{
+ "char": "SHAITAN",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 35,
+  "ok": 35
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "young adult",
+    "share": 0.6,
+    "n": 5,
+    "outliers": [
+     "indeterminate",
+     "indeterminate"
+    ],
+    "all_values": [
+     "indeterminate",
+     "young adult",
+     "indeterminate",
+     "young adult",
+     "young adult"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "muscular",
+    "share": 0.4,
+    "n": 5,
+    "outliers": [
+     "stocky",
+     "slim",
+     "slim"
+    ],
+    "all_values": [
+     "stocky",
+     "slim",
+     "slim",
+     "muscular",
+     "muscular"
+    ],
+    "stable": false
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "imposing",
+    "share": 0.4,
+    "n": 5,
+    "outliers": [
+     "average",
+     "tall",
+     "tall"
+    ],
+    "all_values": [
+     "average",
+     "tall",
+     "tall",
+     "imposing",
+     "imposing"
+    ],
+    "stable": false
+   },
+   "sex": {
+    "kind": "str",
+    "value": "indeterminate",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "indeterminate",
+     "indeterminate",
+     "indeterminate",
+     "indeterminate",
+     "indeterminate"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "dark brown",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 5,
+    "stable_items": [
+     "whiskers"
+    ],
+    "disputed_items": [
+     "black fur",
+     "sharp teeth"
+    ],
+    "counts": {
+     "black fur": 1,
+     "sharp teeth": 1,
+     "whiskers": 5
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "yellow",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "yellow",
+     "yellow",
+     "yellow",
+     "yellow and round",
+     "yellow and round"
+    ],
+    "stable": true
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "pink",
+    "share": 0.6666666666666666,
+    "n": 3,
+    "outliers": [
+     "pink and parted"
+    ],
+    "all_values": [
+     "pink",
+     "pink with white teeth",
+     "pink and parted"
+    ],
+    "stable": true
+   },
+   "nose": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.4,
+    "n": 5,
+    "outliers": [
+     "dark brown",
+     "brown",
+     "brown and triangular"
+    ],
+    "all_values": [
+     "black",
+     "dark brown",
+     "brown",
+     "brown and triangular",
+     "black and blunt"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.8,
+    "n": 5,
+    "outliers": [
+     "brown"
+    ],
+    "all_values": [
+     "black",
+     "brown",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "very long",
+    "share": 0.4,
+    "n": 5,
+    "outliers": [
+     "shoulder-length",
+     "very short",
+     "very short"
+    ],
+    "all_values": [
+     "very long",
+     "shoulder-length",
+     "very long",
+     "very short",
+     "very short"
+    ],
+    "stable": false
+   },
+   "notes": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "loose",
+    "share": 0.6,
+    "n": 5,
+    "outliers": [
+     "covered",
+     "covered"
+    ],
+    "all_values": [
+     "loose",
+     "loose",
+     "loose",
+     "covered",
+     "covered"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 5,
+    "stable_items": [],
+    "disputed_items": [],
+    "detail": {}
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "partially clad",
+    "share": 0.8,
+    "n": 5,
+    "outliers": [
+     "barefoot"
+    ],
+    "all_values": [
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "barefoot"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 5,
+    "stable_items": [],
+    "disputed_items": [],
+    "detail": {}
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 5,
+    "stable_items": [],
+    "disputed_items": [],
+    "counts": {}
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "yellow",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "yellow",
+     "yellow",
+     "yellow",
+     "yellow",
+     "yellow"
+    ],
+    "stable": true
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 1,
+    "outliers": [],
+    "all_values": [
+     "black"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "hair": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "skin": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 5,
+    "stable_items": [
+     "black fur",
+     "yellow eyes"
+    ],
+    "disputed_items": [
+     "bared teeth",
+     "pointed ears",
+     "prominent whiskers"
+    ],
+    "counts": {
+     "bared teeth": 2,
+     "black fur": 4,
+     "pointed ears": 1,
+     "prominent whiskers": 1,
+     "yellow eyes": 4
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the figure's entirely black silhouette combined with its bright yellow eyes creates a unique and instantly recognizable visual signature.",
+    "share": 0.5,
+    "n": 4,
+    "outliers": [
+     "The figure is a black panther with glowing yellow eyes and sharp, bared teeth.",
+     "The figure is a black panther with glowing yellow eyes and an open mouth showing sharp teeth."
+    ],
+    "all_values": [
+     "The figure's entirely black silhouette combined with its bright yellow eyes creates a unique and instantly recognizable visual signature.",
+     "The figure's entirely black silhouette combined with its bright yellow eyes creates a unique and instantly recognizable visual signature.",
+     "The figure is a black panther with glowing yellow eyes and sharp, bared teeth.",
+     "The figure is a black panther with glowing yellow eyes and an open mouth showing sharp teeth."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.eyes",
+  "colors.garment_primary",
+  "face.distinguishing_features:whiskers",
+  "face.eyes",
+  "face.face_shape",
+  "face.lips",
+  "hair.color",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "signature.memorable_traits:black fur",
+  "signature.memorable_traits:yellow eyes",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "face.distinguishing_features:black fur",
+  "face.distinguishing_features:sharp teeth",
+  "face.nose",
+  "hair.length",
+  "physique.build",
+  "physique.height_impression",
+  "signature.memorable_traits:bared teeth",
+  "signature.memorable_traits:pointed ears",
+  "signature.memorable_traits:prominent whiskers",
+  "signature.unmistakable_because"
+ ],
+ "prompt_block": "young adult indeterminate, dark brown skin, black straight loose hair, oval face, yellow eyes, dressed in black, memorable for black fur, yellow eyes."
+}

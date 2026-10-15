@@ -1,0 +1,18 @@
+{
+ "char": "ROLIEL",
+ "lens": "colors",
+ "file": "ComfyUI_00085_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.407606,
+ "size": 5646931,
+ "ts": "2026-10-15T04:49:48Z",
+ "text": "{\n \"skin\": \"light brown\",\n \"hair\": \"reddish-brown\",\n \"eyes\": \"golden-yellow\",\n \"garment_primary\": \"light blue\",\n \"garment_secondary\": null,\n \"metal_accent\": \"blue\"\n}",
+ "json": {
+  "skin": "light brown",
+  "hair": "reddish-brown",
+  "eyes": "golden-yellow",
+  "garment_primary": "light blue",
+  "garment_secondary": null,
+  "metal_accent": "blue"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "char": "OTWA",
+ "lens": "hair",
+ "file": "ComfyUI_00083_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935186.763673,
+ "size": 5077263,
+ "ts": "2026-10-15T04:43:41Z",
+ "text": "{\n \"color\": \"dark red\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"long bangs\"\n}",
+ "json": {
+  "color": "dark red",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "long bangs"
+ }
+}

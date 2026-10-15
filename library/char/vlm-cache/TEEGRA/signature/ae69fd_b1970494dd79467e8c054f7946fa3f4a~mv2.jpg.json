@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "ae69fd_b1970494dd79467e8c054f7946fa3f4a~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7248971,
+ "size": 26982,
+ "ts": "2026-10-15T10:50:53Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"exposed shoulders and midriff\", \"thin body shape\", \"pale skin tone\"],\n \"unmistakable_because\": \"The combination of long, flowing dark hair, a revealing outfit with thin straps, and pale skin makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "exposed shoulders and midriff",
+   "thin body shape",
+   "pale skin tone"
+  ],
+  "unmistakable_because": "The combination of long, flowing dark hair, a revealing outfit with thin straps, and pale skin makes this figure instantly recognizable."
+ }
+}

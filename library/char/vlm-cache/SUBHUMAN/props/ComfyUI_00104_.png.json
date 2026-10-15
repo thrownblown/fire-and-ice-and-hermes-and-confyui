@@ -1,0 +1,14 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "props",
+ "file": "ComfyUI_00104_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935247.9240584,
+ "size": 3864748,
+ "ts": "2026-10-15T05:03:26Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

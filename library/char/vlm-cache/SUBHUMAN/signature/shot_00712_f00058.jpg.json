@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00712_f00058.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1863708,
+ "size": 277898,
+ "ts": "2026-10-15T05:04:38Z",
+ "text": "{\n \"memorable_traits\": [\"muscular build\", \"dark skin\", \"long black hair\", \"holding spear\"],\n \"unmistakable_because\": \"The figure's exaggerated muscularity and crouched, aggressive stance with a spear make them visually dominant.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "muscular build",
+   "dark skin",
+   "long black hair",
+   "holding spear"
+  ],
+  "unmistakable_because": "The figure's exaggerated muscularity and crouched, aggressive stance with a spear make them visually dominant."
+ }
+}

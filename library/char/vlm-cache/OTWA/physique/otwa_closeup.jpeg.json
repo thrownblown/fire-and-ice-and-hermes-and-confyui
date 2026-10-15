@@ -1,0 +1,17 @@
+{
+ "char": "OTWA",
+ "lens": "physique",
+ "file": "otwa_closeup.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931887.0075073,
+ "size": 2904,
+ "ts": "2026-10-15T04:43:54Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"middle-aged\",\n \"build\": \"slim\",\n \"height_impression\": \"average\",\n \"skin_neutral_light\": \"light\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "middle-aged",
+  "build": "slim",
+  "height_impression": "average",
+  "skin_neutral_light": "light"
+ }
+}

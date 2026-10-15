@@ -1,0 +1,45 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00020_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159331.143274,
+ "size": 3935365,
+ "ts": "2026-10-15T04:24:42Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"tied at the top, covering ankles and feet\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"tight-fitting around upper arms\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"dark brown\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, with circular green decorations\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"brown\",\n      \"material\": \"bone\",\n      \"cut\": \"bone-like pieces arranged in a pattern around the neck\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "material": "leather",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "boots",
+    "color": "black",
+    "material": "leather",
+    "cut": "tied at the top, covering ankles and feet"
+   },
+   {
+    "item": "arm bands",
+    "color": "brown",
+    "material": "leather",
+    "cut": "tight-fitting around upper arms"
+   },
+   {
+    "item": "belt",
+    "color": "dark brown",
+    "material": "leather",
+    "cut": "wide, with circular green decorations"
+   },
+   {
+    "item": "necklace",
+    "color": "brown",
+    "material": "bone",
+    "cut": "bone-like pieces arranged in a pattern around the neck"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

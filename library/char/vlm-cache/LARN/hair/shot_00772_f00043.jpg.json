@@ -1,0 +1,17 @@
+{
+ "char": "LARN",
+ "lens": "hair",
+ "file": "shot_00772_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025493.254031,
+ "size": 239575,
+ "ts": "2026-10-15T04:39:17Z",
+ "text": "{\n \"color\": \"blond\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"braided\",\n \"notes\": \"hair is braided down the back, with small circular accessories at the sides\"\n}",
+ "json": {
+  "color": "blond",
+  "length": "very long",
+  "texture": "straight",
+  "style": "braided",
+  "notes": "hair is braided down the back, with small circular accessories at the sides"
+ }
+}

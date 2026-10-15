@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "shot_00395_f00035.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723646.708113,
+ "size": 274173,
+ "ts": "2026-10-15T10:56:31Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"knife\",\n      \"color\": \"dark brown\",\n      \"worn_or_carried\": \"held\",\n      \"body_location\": \"right hand\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "knife",
+    "color": "dark brown",
+    "worn_or_carried": "held",
+    "body_location": "right hand"
+   }
+  ],
+  "weapons": []
+ }
+}

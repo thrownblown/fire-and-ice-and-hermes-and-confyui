@@ -1,0 +1,17 @@
+{
+ "char": "LARN",
+ "lens": "hair",
+ "file": "shot_00335_f00063.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931124.370634,
+ "size": 339135,
+ "ts": "2026-10-15T04:36:28Z",
+ "text": "{\n \"color\": \"blond\",\n \"length\": \"long\",\n \"texture\": \"straight\",\n \"style\": \"tied back\",\n \"notes\": \"hair is pulled into a braid\"\n}",
+ "json": {
+  "color": "blond",
+  "length": "long",
+  "texture": "straight",
+  "style": "tied back",
+  "notes": "hair is pulled into a braid"
+ }
+}

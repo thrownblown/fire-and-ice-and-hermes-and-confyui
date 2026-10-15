@@ -1,0 +1,18 @@
+{
+ "char": "SPIRIT",
+ "lens": "signature",
+ "file": "shot_00763_f00057.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932283.8135953,
+ "size": 359351,
+ "ts": "2026-10-15T05:02:24Z",
+ "text": "{\n \"memorable_traits\": [\"long white hair\", \"skeletal face\", \"black collar\"],\n \"unmistakable_because\": \"The figure's skull-like head and long white hair combined with its skeletal frame make it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long white hair",
+   "skeletal face",
+   "black collar"
+  ],
+  "unmistakable_because": "The figure's skull-like head and long white hair combined with its skeletal frame make it instantly recognizable."
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "TUTOR",
+ "lens": "wardrobe",
+ "file": "shot_00193_f00058.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.552537,
+ "size": 95143,
+ "ts": "2026-10-15T05:20:58Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"light pink\",\n      \"material\": \"cloth\",\n      \"cut\": \"simple, fitted\"\n    },\n    {\n      \"item\": \"neckband\",\n      \"color\": \"gold\",\n      \"material\": \"cloth\",\n      \"cut\": \"striped, draped over shoulders\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "light pink",
+    "material": "cloth",
+    "cut": "simple, fitted"
+   },
+   {
+    "item": "neckband",
+    "color": "gold",
+    "material": "cloth",
+    "cut": "striped, draped over shoulders"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "signature",
+ "file": "ComfyUI_00096_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935265.465433,
+ "size": 4264775,
+ "ts": "2026-10-15T05:06:40Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"broad muscular build\", \"dark brown skin\", \"distinctive facial features\"],\n \"unmistakable_because\": \"The combination of long dark hair, broad muscular physique, and unique facial structure makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "broad muscular build",
+   "dark brown skin",
+   "distinctive facial features"
+  ],
+  "unmistakable_because": "The combination of long dark hair, broad muscular physique, and unique facial structure makes this figure instantly recognizable."
+ }
+}

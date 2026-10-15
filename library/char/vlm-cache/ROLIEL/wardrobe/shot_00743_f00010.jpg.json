@@ -1,0 +1,27 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "shot_00743_f00010.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932332.644639,
+ "size": 273544,
+ "ts": "2026-10-15T04:58:40Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"material\": \"unknown\",\n      \"cut\": \"choker-style, beaded or patterned\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   },
+   {
+    "item": "necklace",
+    "color": "blue",
+    "material": "unknown",
+    "cut": "choker-style, beaded or patterned"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

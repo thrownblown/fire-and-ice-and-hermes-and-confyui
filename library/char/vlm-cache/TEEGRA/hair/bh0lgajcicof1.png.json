@@ -1,0 +1,17 @@
+{
+ "char": "TEEGRA",
+ "lens": "hair",
+ "file": "bh0lgajcicof1.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032304.4854043,
+ "size": 2283424,
+ "ts": "2026-10-15T10:51:02Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"shoulder-length\",\n \"texture\": \"straight\",\n \"style\": \"tied back\",\n \"notes\": \"hair is styled in a low ponytail with no bangs or accessories\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "shoulder-length",
+  "texture": "straight",
+  "style": "tied back",
+  "notes": "hair is styled in a low ponytail with no bangs or accessories"
+ }
+}

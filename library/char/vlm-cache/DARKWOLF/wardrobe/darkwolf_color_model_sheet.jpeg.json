@@ -1,0 +1,39 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "darkwolf_color_model_sheet.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3866518,
+ "size": 28370,
+ "ts": "2026-10-15T04:25:24Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"dark brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"dark brown\",\n      \"material\": \"leather\",\n      \"cut\": \"wide and wrapped around waist\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"dark brown\",\n      \"material\": \"leather\",\n      \"cut\": \"ankle-high, fitted\"\n    },\n    {\n      \"item\": \"arm guards\",\n      \"color\": \"dark brown\",\n      \"material\": \"leather\",\n      \"cut\": \"short, covering forearms\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "dark brown",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "belt",
+    "color": "dark brown",
+    "material": "leather",
+    "cut": "wide and wrapped around waist"
+   },
+   {
+    "item": "boots",
+    "color": "dark brown",
+    "material": "leather",
+    "cut": "ankle-high, fitted"
+   },
+   {
+    "item": "arm guards",
+    "color": "dark brown",
+    "material": "leather",
+    "cut": "short, covering forearms"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "LARN",
+ "lens": "props",
+ "file": "shot_00772_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025493.254031,
+ "size": 239575,
+ "ts": "2026-10-15T04:39:28Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"forearms\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "belt",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   },
+   {
+    "item": "arm bands",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "forearms"
+   }
+  ],
+  "weapons": []
+ }
+}

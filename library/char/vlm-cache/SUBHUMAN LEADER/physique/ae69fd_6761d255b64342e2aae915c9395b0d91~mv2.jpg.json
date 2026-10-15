@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "physique",
+ "file": "ae69fd_6761d255b64342e2aae915c9395b0d91~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932193.0585334,
+ "size": 38297,
+ "ts": "2026-10-15T05:08:22Z",
+ "text": "{\n \"sex\": \"male\",\n \"age_range\": \"middle-aged\",\n \"build\": \"muscular\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"dark brown\"\n}",
+ "json": {
+  "sex": "male",
+  "age_range": "middle-aged",
+  "build": "muscular",
+  "height_impression": "tall",
+  "skin_neutral_light": "dark brown"
+ }
+}

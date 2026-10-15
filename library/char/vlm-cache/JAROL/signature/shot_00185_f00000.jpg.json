@@ -1,0 +1,20 @@
+{
+ "char": "JAROL",
+ "lens": "signature",
+ "file": "shot_00185_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729662.215001,
+ "size": 319332,
+ "ts": "2026-10-15T04:30:37Z",
+ "text": "{\n \"memorable_traits\": [\"bald head\", \"muscular build\", \"red sleeveless garment\", \"gold armbands\", \"earring\"],\n \"unmistakable_because\": \"The combination of a bald head, muscular physique, and distinctive red clothing with gold armbands creates an unmistakable silhouette.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "bald head",
+   "muscular build",
+   "red sleeveless garment",
+   "gold armbands",
+   "earring"
+  ],
+  "unmistakable_because": "The combination of a bald head, muscular physique, and distinctive red clothing with gold armbands creates an unmistakable silhouette."
+ }
+}

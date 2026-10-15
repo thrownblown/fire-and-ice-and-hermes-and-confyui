@@ -1,0 +1,17 @@
+{
+ "char": "ROLIEL",
+ "lens": "physique",
+ "file": "Y552M1P3VPAFR6JRD8GS9B8DE0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.805588,
+ "size": 1328925,
+ "ts": "2026-10-15T04:55:38Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"young adult\",\n \"build\": \"slim\",\n \"height_impression\": \"average\",\n \"skin_neutral_light\": \"light beige\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "young adult",
+  "build": "slim",
+  "height_impression": "average",
+  "skin_neutral_light": "light beige"
+ }
+}

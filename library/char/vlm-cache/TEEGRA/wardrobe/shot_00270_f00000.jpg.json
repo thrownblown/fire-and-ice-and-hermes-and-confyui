@@ -1,0 +1,33 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "shot_00270_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723623.5959723,
+ "size": 341222,
+ "ts": "2026-10-15T10:54:39Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitting\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"choker style\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"dangling\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "fitting"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "choker style"
+   },
+   {
+    "item": "earrings",
+    "color": "gold",
+    "material": "metal",
+    "cut": "dangling"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

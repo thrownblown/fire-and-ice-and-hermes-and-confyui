@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "ae69fd_b1970494dd79467e8c054f7946fa3f4a~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7248971,
+ "size": 26982,
+ "ts": "2026-10-15T10:50:43Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide open, showing surprise or fear\",\n \"brows\": \"arched upward\",\n \"nose\": \"small and rounded\",\n \"lips\": \"partially open in a gasp\",\n \"distinguishing_features\": [\n  \"dark hair\",\n  \"expression of shock\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide open, showing surprise or fear",
+  "brows": "arched upward",
+  "nose": "small and rounded",
+  "lips": "partially open in a gasp",
+  "distinguishing_features": [
+   "dark hair",
+   "expression of shock"
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "images (6).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 13568,
+ "ts": "2026-10-15T10:52:59Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"gold hoop earrings\", \"purple top\"],\n  \"unmistakable_because\": \"The combination of long black hair, gold hoop earrings, and a purple top makes this figure visually distinct.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "gold hoop earrings",
+   "purple top"
+  ],
+  "unmistakable_because": "The combination of long black hair, gold hoop earrings, and a purple top makes this figure visually distinct."
+ }
+}

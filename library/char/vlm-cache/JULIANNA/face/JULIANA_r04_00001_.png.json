@@ -1,0 +1,20 @@
+{
+ "char": "JULIANNA",
+ "lens": "face",
+ "file": "JULIANA_r04_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643081.74,
+ "size": 3869228,
+ "ts": "2026-10-15T04:32:40Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"blue\",\n \"brows\": \"arched\",\n \"nose\": \"straight\",\n \"lips\": \"full\",\n \"distinguishing_features\": [\n  \"red lipstick\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "blue",
+  "brows": "arched",
+  "nose": "straight",
+  "lips": "full",
+  "distinguishing_features": [
+   "red lipstick"
+  ]
+ }
+}

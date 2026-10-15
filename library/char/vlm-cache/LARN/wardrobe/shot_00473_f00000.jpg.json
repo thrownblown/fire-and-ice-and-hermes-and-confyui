@@ -1,0 +1,21 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00473_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931138.438335,
+ "size": 278057,
+ "ts": "2026-10-15T04:37:43Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"arm guards\",\n      \"color\": \"red\",\n      \"material\": \"leather\",\n      \"cut\": \"tightly fitted\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "arm guards",
+    "color": "red",
+    "material": "leather",
+    "cut": "tightly fitted"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

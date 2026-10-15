@@ -1,0 +1,21 @@
+{
+ "char": "ROLIEL",
+ "lens": "face",
+ "file": "40N69SBFKVDWEGJ4NJY1CYZK50.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.617513,
+ "size": 1133091,
+ "ts": "2026-10-15T04:46:59Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"large, almond-shaped, golden-brown\",\n \"brows\": \"thin, arched, dark\",\n \"nose\": \"small, straight, delicate\",\n \"lips\": \"full, red, slightly parted\",\n \"distinguishing_features\": [\n  \"red hair\",\n  \"choker necklace\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "large, almond-shaped, golden-brown",
+  "brows": "thin, arched, dark",
+  "nose": "small, straight, delicate",
+  "lips": "full, red, slightly parted",
+  "distinguishing_features": [
+   "red hair",
+   "choker necklace"
+  ]
+ }
+}

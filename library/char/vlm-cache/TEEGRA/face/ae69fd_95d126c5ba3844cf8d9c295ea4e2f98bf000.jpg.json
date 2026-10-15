@@ -1,0 +1,22 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "ae69fd_95d126c5ba3844cf8d9c295ea4e2f98bf000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7238934,
+ "size": 37049,
+ "ts": "2026-10-15T10:50:21Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"large, dark pupils, slightly downturned corners\",\n \"brows\": \"thin, arched, dark\",\n \"nose\": \"small, straight bridge\",\n \"lips\": \"full, reddish-pink, parted slightly\",\n \"distinguishing_features\": [\n  \"long black hair with bangs\",\n  \"gold teardrop earring\",\n  \"gold heart-shaped pendant\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "large, dark pupils, slightly downturned corners",
+  "brows": "thin, arched, dark",
+  "nose": "small, straight bridge",
+  "lips": "full, reddish-pink, parted slightly",
+  "distinguishing_features": [
+   "long black hair with bangs",
+   "gold teardrop earring",
+   "gold heart-shaped pendant"
+  ]
+ }
+}

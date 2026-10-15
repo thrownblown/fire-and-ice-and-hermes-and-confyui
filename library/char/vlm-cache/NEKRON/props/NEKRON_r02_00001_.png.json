@@ -1,0 +1,27 @@
+{
+ "char": "NEKRON",
+ "lens": "props",
+ "file": "NEKRON_r02_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643257.09,
+ "size": 4167877,
+ "ts": "2026-10-15T04:41:59Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"belt\",\n      \"color\": \"black\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"dark blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"legs\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "belt",
+    "color": "black",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   },
+   {
+    "item": "boots",
+    "color": "dark blue",
+    "worn_or_carried": "worn",
+    "body_location": "legs"
+   }
+  ],
+  "weapons": []
+ }
+}

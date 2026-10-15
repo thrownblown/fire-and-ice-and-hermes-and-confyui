@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "shot_00697_f00054.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932314.4434545,
+ "size": 242161,
+ "ts": "2026-10-15T04:58:02Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"pale skin\", \"yellow eyes\", \"blue collar\"],\n \"unmistakable_because\": \"The combination of long, flowing red hair and distinctive yellow eyes makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "pale skin",
+   "yellow eyes",
+   "blue collar"
+  ],
+  "unmistakable_because": "The combination of long, flowing red hair and distinctive yellow eyes makes this figure instantly recognizable."
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "shot_00280_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723634.4802587,
+ "size": 158560,
+ "ts": "2026-10-15T10:55:22Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"almond-shaped, light-colored, looking slightly to the side\",\n \"brows\": \"thin, arched\",\n \"nose\": \"small, straight bridge\",\n \"lips\": \"full, red-painted\",\n \"distinguishing_features\": [\n  \"long dark hair\",\n  \"gold earrings\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "almond-shaped, light-colored, looking slightly to the side",
+  "brows": "thin, arched",
+  "nose": "small, straight bridge",
+  "lips": "full, red-painted",
+  "distinguishing_features": [
+   "long dark hair",
+   "gold earrings"
+  ]
+ }
+}

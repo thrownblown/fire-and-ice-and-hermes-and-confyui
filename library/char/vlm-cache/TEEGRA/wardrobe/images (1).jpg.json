@@ -1,0 +1,14 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "images (1).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7258976,
+ "size": 18466,
+ "ts": "2026-10-15T10:51:51Z",
+ "text": "{\n  \"garments\": [],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [],
+  "state_of_dress": "partially clad"
+ }
+}

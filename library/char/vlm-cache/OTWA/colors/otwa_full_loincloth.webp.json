@@ -1,0 +1,18 @@
+{
+ "char": "OTWA",
+ "lens": "colors",
+ "file": "otwa_full_loincloth.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931887.0075073,
+ "size": 19020,
+ "ts": "2026-10-15T04:44:13Z",
+ "text": "{\n \"skin\": \"tan\",\n \"hair\": \"reddish-brown\",\n \"eyes\": \"dark brown\",\n \"garment_primary\": \"brown\",\n \"garment_secondary\": null,\n \"metal_accent\": null\n}",
+ "json": {
+  "skin": "tan",
+  "hair": "reddish-brown",
+  "eyes": "dark brown",
+  "garment_primary": "brown",
+  "garment_secondary": null,
+  "metal_accent": null
+ }
+}

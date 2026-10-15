@@ -1,0 +1,19 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "shot_01229_f00012.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.0305507,
+ "size": 131502,
+ "ts": "2026-10-15T04:29:01Z",
+ "text": "{\n \"memorable_traits\": [\"black panther-like hood\", \"glowing green eyes\", \"skull pendant\", \"sharp fang-like neck adornments\"],\n \"unmistakable_because\": \"The combination of the black panther mask, glowing green eyes, and skull necklace makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black panther-like hood",
+   "glowing green eyes",
+   "skull pendant",
+   "sharp fang-like neck adornments"
+  ],
+  "unmistakable_because": "The combination of the black panther mask, glowing green eyes, and skull necklace makes this figure instantly recognizable."
+ }
+}

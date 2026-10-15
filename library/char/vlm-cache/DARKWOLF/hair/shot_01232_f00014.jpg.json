@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "shot_01232_f00014.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.031551,
+ "size": 138722,
+ "ts": "2026-10-15T04:29:09Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very short\",\n \"texture\": \"straight\",\n \"style\": \"covered\",\n \"notes\": \"hair is covered by a horned helmet\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very short",
+  "texture": "straight",
+  "style": "covered",
+  "notes": "hair is covered by a horned helmet"
+ }
+}

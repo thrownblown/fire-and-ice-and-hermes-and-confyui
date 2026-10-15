@@ -1,0 +1,21 @@
+{
+ "char": "JAROL",
+ "lens": "wardrobe",
+ "file": "shot_00253_f00069.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729693.0075867,
+ "size": 242863,
+ "ts": "2026-10-15T04:31:36Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"red\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "red",
+    "material": "cloth",
+    "cut": "loose-fitting"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

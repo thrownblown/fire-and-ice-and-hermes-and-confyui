@@ -1,0 +1,20 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "darkwolf_mask_axe.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.4001594,
+ "size": 173702,
+ "ts": "2026-10-15T04:25:36Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"yellow glowing\",\n \"brows\": \"null\",\n \"nose\": \"null\",\n \"lips\": \"null\",\n \"distinguishing_features\": [\n  \"black fur mask with horns\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "yellow glowing",
+  "brows": null,
+  "nose": null,
+  "lips": null,
+  "distinguishing_features": [
+   "black fur mask with horns"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "TUTOR",
+ "lens": "wardrobe",
+ "file": "shot_00191_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.552537,
+ "size": 103050,
+ "ts": "2026-10-15T05:20:22Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"choker-style\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "fitted"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "choker-style"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "shot_00029_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159404.7391505,
+ "size": 289932,
+ "ts": "2026-10-15T04:28:37Z",
+ "text": "{\n \"memorable_traits\": [],\n \"unmistakable_because\": \"\"\n}",
+ "json": {
+  "memorable_traits": [],
+  "unmistakable_because": null
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "darkwolf_roar_archway.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.38816,
+ "size": 27172,
+ "ts": "2026-10-15T04:26:17Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"tight-fitting with circular yellow patterns\"\n    },\n    {\n      \"item\": \"headpiece\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"horned, covering head and shoulders\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "black",
+    "material": "leather",
+    "cut": "tight-fitting with circular yellow patterns"
+   },
+   {
+    "item": "headpiece",
+    "color": "black",
+    "material": "leather",
+    "cut": "horned, covering head and shoulders"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

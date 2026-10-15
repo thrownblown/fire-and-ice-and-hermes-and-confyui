@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "images (3).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032338.6120553,
+ "size": 22794,
+ "ts": "2026-10-15T10:52:23Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"top\",\n      \"color\": \"light gray\",\n      \"material\": \"cloth\",\n      \"cut\": \"strapless, halter-style with thin straps\"\n    },\n    {\n      \"item\": \"bottoms\",\n      \"color\": \"light gray\",\n      \"material\": \"cloth\",\n      \"cut\": \"high-waisted briefs\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "top",
+    "color": "light gray",
+    "material": "cloth",
+    "cut": "strapless, halter-style with thin straps"
+   },
+   {
+    "item": "bottoms",
+    "color": "light gray",
+    "material": "cloth",
+    "cut": "high-waisted briefs"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

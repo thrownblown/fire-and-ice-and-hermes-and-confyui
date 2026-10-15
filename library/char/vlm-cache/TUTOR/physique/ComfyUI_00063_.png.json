@@ -1,0 +1,17 @@
+{
+ "char": "TUTOR",
+ "lens": "physique",
+ "file": "ComfyUI_00063_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5505452,
+ "size": 4507684,
+ "ts": "2026-10-15T04:17:02Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"young adult\",\n \"build\": \"slim\",\n \"height_impression\": \"average\",\n \"skin_neutral_light\": \"brown\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "young adult",
+  "build": "slim",
+  "height_impression": "average",
+  "skin_neutral_light": "brown"
+ }
+}

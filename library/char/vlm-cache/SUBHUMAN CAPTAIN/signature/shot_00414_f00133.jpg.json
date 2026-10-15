@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "signature",
+ "file": "shot_00414_f00133.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932085.7533538,
+ "size": 225022,
+ "ts": "2026-10-15T05:07:40Z",
+ "text": "{\n \"memorable_traits\": [\"dark brown skin\", \"long black hair\", \"bared teeth\", \"headband\"],\n \"unmistakable_because\": \"The figure's dark brown skin, long black hair, and bared teeth make it unmistakable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "dark brown skin",
+   "long black hair",
+   "bared teeth",
+   "headband"
+  ],
+  "unmistakable_because": "The figure's dark brown skin, long black hair, and bared teeth make it unmistakable."
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "char": "JAROL",
+ "lens": "colors",
+ "file": "shot_00683_f00047.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729705.3978615,
+ "size": 211020,
+ "ts": "2026-10-15T04:32:07Z",
+ "text": "{\n \"skin\": \"pink\",\n \"hair\": \"null\",\n \"eyes\": \"dark brown\",\n \"garment_primary\": \"maroon\",\n \"garment_secondary\": \"null\",\n \"metal_accent\": \"gold\"\n}",
+ "json": {
+  "skin": "pink",
+  "hair": null,
+  "eyes": "dark brown",
+  "garment_primary": "maroon",
+  "garment_secondary": null,
+  "metal_accent": "gold"
+ }
+}

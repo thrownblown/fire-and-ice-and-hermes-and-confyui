@@ -799,6 +799,20 @@ def build_graph(row, first_name, last_name):
         g.pop(nid, None)
     g["126"]["inputs"]["model"] = ["127", 0]
     g["124"]["inputs"]["steps"] = STEPS
+    # Optional style LoRA (e.g. the technicolor retro-fantasy look). Off by default:
+    # set FNI_STYLE_LORA to a filename in the 5090's LoraLoader list to inject it.
+    # Kept as one env-var hook rather than a CLI flag so the render path stays a
+    # single code path shared with the baseline.
+    style_lora = os.environ.get("FNI_STYLE_LORA", "").strip()
+    if style_lora:
+        strength = float(os.environ.get("FNI_STYLE_LORA_STRENGTH", "0.8"))
+        g["147"] = {
+            "inputs": {"model": ["127", 0], "lora_name": style_lora,
+                       "strength_model": strength},
+            "class_type": "LoraLoaderModelOnly",
+            "_meta": {"title": "Style LoRA (%s @ %s)" % (os.path.basename(style_lora), strength)},
+        }
+        g["126"]["inputs"]["model"] = ["147", 0]
     return g
 
 

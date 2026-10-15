@@ -1,0 +1,19 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "ComfyUI_00020_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159331.143274,
+ "size": 3935365,
+ "ts": "2026-10-15T04:24:54Z",
+ "text": "{\n \"memorable_traits\": [\"black fur mask\", \"glowing green eyes\", \"long black hair\", \"skull necklace\"],\n \"unmistakable_because\": \"The combination of the black fur mask, glowing green eyes, and skull necklace makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black fur mask",
+   "glowing green eyes",
+   "long black hair",
+   "skull necklace"
+  ],
+  "unmistakable_because": "The combination of the black fur mask, glowing green eyes, and skull necklace makes this figure instantly recognizable."
+ }
+}

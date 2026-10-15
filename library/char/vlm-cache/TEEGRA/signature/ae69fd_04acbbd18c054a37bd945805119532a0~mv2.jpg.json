@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "ae69fd_04acbbd18c054a37bd945805119532a0~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7248971,
+ "size": 34307,
+ "ts": "2026-10-15T10:49:58Z",
+ "text": "{\n  \"memorable_traits\": [\n    \"long dark hair\",\n    \"necklace with heart-shaped pendant\",\n    \"gold earrings\"\n  ],\n  \"unmistakable_because\": \"The combination of long dark hair, a distinctive heart-shaped necklace, and gold earrings uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "necklace with heart-shaped pendant",
+   "gold earrings"
+  ],
+  "unmistakable_because": "The combination of long dark hair, a distinctive heart-shaped necklace, and gold earrings uniquely identifies this figure."
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "images (6).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 13568,
+ "ts": "2026-10-15T10:52:53Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"top\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"strapless, fitted\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"dark\",\n      \"material\": \"unknown\",\n      \"cut\": \"string of beads\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "top",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "strapless, fitted"
+   },
+   {
+    "item": "necklace",
+    "color": "dark",
+    "material": "unknown",
+    "cut": "string of beads"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

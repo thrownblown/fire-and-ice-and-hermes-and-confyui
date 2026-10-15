@@ -1,0 +1,33 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "3b9EKe8xFvNNJq05ZbNkAZ82L3v.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.5860047,
+ "size": 14284,
+ "ts": "2026-10-15T10:48:22Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"top\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted, strapless\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"yellow\",\n      \"material\": \"metal\",\n      \"cut\": \"pendant style\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"yellow\",\n      \"material\": \"metal\",\n      \"cut\": \"drop style\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "top",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "fitted, strapless"
+   },
+   {
+    "item": "necklace",
+    "color": "yellow",
+    "material": "metal",
+    "cut": "pendant style"
+   },
+   {
+    "item": "earrings",
+    "color": "yellow",
+    "material": "metal",
+    "cut": "drop style"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

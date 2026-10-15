@@ -1,0 +1,21 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "wardrobe",
+ "file": "shot_00712_f00058.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1863708,
+ "size": 277898,
+ "ts": "2026-10-15T05:04:31Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "black",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

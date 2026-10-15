@@ -1,0 +1,17 @@
+{
+ "char": "ROLIEL",
+ "lens": "hair",
+ "file": "ComfyUI_00085_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.407606,
+ "size": 5646931,
+ "ts": "2026-10-15T04:49:35Z",
+ "text": "{\n \"color\": \"reddish-brown\",\n \"length\": \"very long\",\n \"texture\": \"wavy\",\n \"style\": \"loose\",\n \"notes\": \"long bangs\"\n}",
+ "json": {
+  "color": "reddish-brown",
+  "length": "very long",
+  "texture": "wavy",
+  "style": "loose",
+  "notes": "long bangs"
+ }
+}

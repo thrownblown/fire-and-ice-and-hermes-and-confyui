@@ -1,0 +1,33 @@
+{
+ "char": "NEKRON",
+ "lens": "wardrobe",
+ "file": "NEKRON_r03_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643305.81,
+ "size": 3837920,
+ "ts": "2026-10-15T04:42:19Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"dark purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, fitted around waist\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"tall, covering ankles and calves\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "dark purple",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   },
+   {
+    "item": "belt",
+    "color": "black",
+    "material": "leather",
+    "cut": "wide, fitted around waist"
+   },
+   {
+    "item": "boots",
+    "color": "black",
+    "material": "cloth",
+    "cut": "tall, covering ankles and calves"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

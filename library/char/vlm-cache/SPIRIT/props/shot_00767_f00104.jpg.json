@@ -1,0 +1,14 @@
+{
+ "char": "SPIRIT",
+ "lens": "props",
+ "file": "shot_00767_f00104.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932288.698849,
+ "size": 356595,
+ "ts": "2026-10-15T05:02:37Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

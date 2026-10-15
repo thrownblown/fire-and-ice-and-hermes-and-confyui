@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00096_f00119.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931102.7617507,
+ "size": 292651,
+ "ts": "2026-10-15T04:36:20Z",
+ "text": "{\n \"memorable_traits\": [\"blond braided hair\", \"naked torso\", \"brown leather belt with circular metal plates\", \"dark wristbands\"],\n \"unmistakable_because\": \"The combination of long blond braided hair, bare skin, and distinctive brown leather gear makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond braided hair",
+   "naked torso",
+   "brown leather belt with circular metal plates",
+   "dark wristbands"
+  ],
+  "unmistakable_because": "The combination of long blond braided hair, bare skin, and distinctive brown leather gear makes this figure uniquely identifiable."
+ }
+}

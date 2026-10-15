@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "bh0lgajcicof1.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032304.4854043,
+ "size": 2283424,
+ "ts": "2026-10-15T10:51:15Z",
+ "text": "{\n  \"memorable_traits\": [\"long dark hair\", \"naked body\", \"posed back view\", \"thin black string bikini bottom\"],\n  \"unmistakable_because\": \"The figure's long dark hair, naked form, and distinctive thin black string bikini bottom combined with a specific pose make her visually unique.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "naked body",
+   "posed back view",
+   "thin black string bikini bottom"
+  ],
+  "unmistakable_because": "The figure's long dark hair, naked form, and distinctive thin black string bikini bottom combined with a specific pose make her visually unique."
+ }
+}

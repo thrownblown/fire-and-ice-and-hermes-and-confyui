@@ -1,0 +1,17 @@
+{
+ "char": "OTWA",
+ "lens": "hair",
+ "file": "shot_00739_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931820.6471546,
+ "size": 294786,
+ "ts": "2026-10-15T04:45:21Z",
+ "text": "{\n \"color\": \"red\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"bangs\"\n}",
+ "json": {
+  "color": "red",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "bangs"
+ }
+}

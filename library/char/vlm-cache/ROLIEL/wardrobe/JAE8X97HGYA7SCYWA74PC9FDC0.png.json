@@ -1,0 +1,27 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "JAE8X97HGYA7SCYWA74PC9FDC0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7805843,
+ "size": 1245669,
+ "ts": "2026-10-15T04:52:01Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"choker\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"fabric\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"draped\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "choker",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "fabric",
+    "color": "white",
+    "material": "cloth",
+    "cut": "draped"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

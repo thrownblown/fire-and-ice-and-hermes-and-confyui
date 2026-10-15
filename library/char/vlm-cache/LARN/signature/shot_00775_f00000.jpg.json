@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00775_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025498.1101148,
+ "size": 256639,
+ "ts": "2026-10-15T04:40:57Z",
+ "text": "{\n \"memorable_traits\": [\"blond hair\", \"blue eyes\", \"earrings\", \"naked torso\"],\n \"unmistakable_because\": \"The combination of blond hair, blue eyes, and distinct facial features makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "blue eyes",
+   "earrings",
+   "naked torso"
+  ],
+  "unmistakable_because": "The combination of blond hair, blue eyes, and distinct facial features makes this figure instantly recognizable."
+ }
+}

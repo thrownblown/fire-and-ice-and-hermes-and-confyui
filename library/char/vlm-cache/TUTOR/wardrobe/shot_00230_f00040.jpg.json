@@ -1,0 +1,27 @@
+{
+ "char": "TUTOR",
+ "lens": "wardrobe",
+ "file": "shot_00230_f00040.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5540402,
+ "size": 211985,
+ "ts": "2026-10-15T05:21:36Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"wrapped around waist and hips, tied with strings\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, with large circular beads\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "wrapped around waist and hips, tied with strings"
+   },
+   {
+    "item": "belt",
+    "color": "brown",
+    "material": "leather",
+    "cut": "wide, with large circular beads"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

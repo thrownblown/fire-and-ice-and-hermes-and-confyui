@@ -1,0 +1,19 @@
+{
+ "char": "NEKRON",
+ "lens": "signature",
+ "file": "NEKRON_r01_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643208.59,
+ "size": 3854339,
+ "ts": "2026-10-15T04:41:39Z",
+ "text": "{\n \"memorable_traits\": [\"long white hair\", \"pale skin\", \"dark robe with belt\", \"angular facial features\"],\n \"unmistakable_because\": \"The combination of long white hair, pale skin, and the distinctive dark robe with a belt makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long white hair",
+   "pale skin",
+   "dark robe with belt",
+   "angular facial features"
+  ],
+  "unmistakable_because": "The combination of long white hair, pale skin, and the distinctive dark robe with a belt makes this figure uniquely identifiable."
+ }
+}

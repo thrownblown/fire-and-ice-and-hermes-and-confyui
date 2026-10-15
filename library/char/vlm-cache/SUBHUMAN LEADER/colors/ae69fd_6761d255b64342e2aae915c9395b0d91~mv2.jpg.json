@@ -1,0 +1,18 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "colors",
+ "file": "ae69fd_6761d255b64342e2aae915c9395b0d91~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932193.0585334,
+ "size": 38297,
+ "ts": "2026-10-15T05:08:36Z",
+ "text": "{\n \"skin\": \"dark brown\",\n \"hair\": \"black\",\n \"eyes\": \"dark brown\",\n \"garment_primary\": \"dark brown\",\n \"garment_secondary\": null,\n \"metal_accent\": \"silver\"\n}",
+ "json": {
+  "skin": "dark brown",
+  "hair": "black",
+  "eyes": "dark brown",
+  "garment_primary": "dark brown",
+  "garment_secondary": null,
+  "metal_accent": "silver"
+ }
+}

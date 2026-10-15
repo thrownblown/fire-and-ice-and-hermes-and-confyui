@@ -1,0 +1,22 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "face",
+ "file": "shot_00414_f00265.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932086.5916343,
+ "size": 229357,
+ "ts": "2026-10-15T05:07:46Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide-set, dark, slightly bulging\",\n \"brows\": \"thick, arched, furrowed\",\n \"nose\": \"large, broad, flat\",\n \"lips\": \"thin, downturned, showing teeth\",\n \"distinguishing_features\": [\n  \"dark skin\",\n  \"long hair\",\n  \"expression of fear or surprise\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide-set, dark, slightly bulging",
+  "brows": "thick, arched, furrowed",
+  "nose": "large, broad, flat",
+  "lips": "thin, downturned, showing teeth",
+  "distinguishing_features": [
+   "dark skin",
+   "long hair",
+   "expression of fear or surprise"
+  ]
+ }
+}

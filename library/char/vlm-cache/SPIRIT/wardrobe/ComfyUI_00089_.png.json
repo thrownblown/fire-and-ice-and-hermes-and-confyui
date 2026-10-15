@@ -1,0 +1,33 @@
+{
+ "char": "SPIRIT",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00089_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.80314,
+ "size": 5290556,
+ "ts": "2026-10-15T05:00:11Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"dress\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"form-fitting, floor-length with side slits\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"choker-style, wrapped around neck\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"high-heeled, form-fitting\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "dress",
+    "color": "black",
+    "material": "cloth",
+    "cut": "form-fitting, floor-length with side slits"
+   },
+   {
+    "item": "necklace",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "choker-style, wrapped around neck"
+   },
+   {
+    "item": "boots",
+    "color": "black",
+    "material": "leather",
+    "cut": "high-heeled, form-fitting"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

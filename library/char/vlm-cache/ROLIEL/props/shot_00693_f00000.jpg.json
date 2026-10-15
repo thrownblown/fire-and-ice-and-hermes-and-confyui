@@ -1,0 +1,14 @@
+{
+ "char": "ROLIEL",
+ "lens": "props",
+ "file": "shot_00693_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932309.7928762,
+ "size": 223625,
+ "ts": "2026-10-15T04:57:14Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

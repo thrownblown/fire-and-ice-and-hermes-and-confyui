@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "shot_00029_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159404.7391505,
+ "size": 289932,
+ "ts": "2026-10-15T04:28:31Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"covered\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very long",
+  "texture": "straight",
+  "style": "covered",
+  "notes": null
+ }
+}

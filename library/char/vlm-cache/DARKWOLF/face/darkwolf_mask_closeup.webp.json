@@ -1,0 +1,21 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "darkwolf_mask_closeup.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3846512,
+ "size": 8520,
+ "ts": "2026-10-15T04:25:57Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"yellow, narrow, slit-like\",\n \"brows\": \"dark, thick, arched\",\n \"nose\": \"small, flat\",\n \"lips\": \"thin, straight\",\n \"distinguishing_features\": [\n  \"black fur covering head and shoulders\",\n  \"skull pendant on chest\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "yellow, narrow, slit-like",
+  "brows": "dark, thick, arched",
+  "nose": "small, flat",
+  "lips": "thin, straight",
+  "distinguishing_features": [
+   "black fur covering head and shoulders",
+   "skull pendant on chest"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "MC11AEY3KVESNN0P25C57VV7D0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.6215134,
+ "size": 1163373,
+ "ts": "2026-10-15T04:53:31Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"deeply plunging neckline, draped loosely\"\n    },\n    {\n      \"item\": \"choker\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting around neck\"\n    },\n    {\n      \"item\": \"bracelets\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"worn on wrists\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "deeply plunging neckline, draped loosely"
+   },
+   {
+    "item": "choker",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "tight-fitting around neck"
+   },
+   {
+    "item": "bracelets",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "worn on wrists"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

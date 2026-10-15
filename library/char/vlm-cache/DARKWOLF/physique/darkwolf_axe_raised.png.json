@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "physique",
+ "file": "darkwolf_axe_raised.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3921602,
+ "size": 172581,
+ "ts": "2026-10-15T04:24:56Z",
+ "text": "{\n \"sex\": \"male\",\n \"age_range\": \"young adult\",\n \"build\": \"muscular\",\n \"height_impression\": \"imposing\",\n \"skin_neutral_light\": \"dark brown\"\n}",
+ "json": {
+  "sex": "male",
+  "age_range": "young adult",
+  "build": "muscular",
+  "height_impression": "imposing",
+  "skin_neutral_light": "dark brown"
+ }
+}

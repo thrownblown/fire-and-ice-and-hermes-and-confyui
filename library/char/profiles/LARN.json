@@ -1,0 +1,1266 @@
+{
+ "char": "LARN",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 133,
+  "ok": 133
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "young adult",
+    "share": 1.0,
+    "n": 19,
+    "outliers": [],
+    "all_values": [
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "muscular",
+    "share": 1.0,
+    "n": 19,
+    "outliers": [],
+    "all_values": [
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "tall",
+    "share": 1.0,
+    "n": 19,
+    "outliers": [],
+    "all_values": [
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "male",
+    "share": 1.0,
+    "n": 19,
+    "outliers": [],
+    "all_values": [
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "light brown",
+    "share": 0.5263157894736842,
+    "n": 19,
+    "outliers": [
+     "tan",
+     "tan",
+     "tan",
+     "tan",
+     "tan",
+     "tan",
+     "tan",
+     "tan",
+     "light beige"
+    ],
+    "all_values": [
+     "tan",
+     "tan",
+     "tan",
+     "light brown",
+     "light brown",
+     "light brown",
+     "light brown",
+     "tan",
+     "light brown",
+     "light brown",
+     "tan",
+     "light brown",
+     "light beige",
+     "light brown",
+     "light brown",
+     "tan",
+     "tan",
+     "light brown",
+     "tan"
+    ],
+    "stable": false
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thin",
+    "share": 0.3888888888888889,
+    "n": 18,
+    "outliers": [
+     "arched",
+     "thick, arched, dark brown",
+     "arched, dark, thick",
+     "dark, thick, arched",
+     "thick and arched",
+     "thick and arched",
+     "dark, thick, arched downward",
+     "furrowed",
+     "arched, slightly furrowed",
+     "dark, arched upward",
+     "thin, arched upward"
+    ],
+    "all_values": [
+     "arched",
+     "thick, arched, dark brown",
+     "arched, dark, thick",
+     "thin, arched",
+     "thick and arched",
+     "thin, arched",
+     "thin",
+     "dark, thick, arched downward",
+     "furrowed",
+     "thick and arched",
+     "thin and arched",
+     "thin, arched",
+     "thin, arched",
+     "thin, arched",
+     "dark, arched upward",
+     "thin, arched upward",
+     "arched, slightly furrowed",
+     "dark, thick, arched"
+    ],
+    "stable": false
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 19,
+    "stable_items": [],
+    "disputed_items": [
+     "belt with gold buckle",
+     "blond hair",
+     "blond hair in a braid",
+     "braided blonde hair",
+     "braided hair",
+     "earring",
+     "earrings",
+     "gold hoop earrings",
+     "large gold hoop earrings",
+     "large hoop earrings",
+     "long blonde braid",
+     "long blonde braid over shoulder",
+     "necklace",
+     "necklace with circular pendant",
+     "necklace with pendant",
+     "necklace with white pendant",
+     "necklace with white teeth-like pendants",
+     "tusk-like teeth",
+     "white teeth visible in mouth"
+    ],
+    "counts": {
+     "belt with gold buckle": 1,
+     "blond hair": 9,
+     "blond hair in a braid": 1,
+     "braided blonde hair": 1,
+     "braided hair": 2,
+     "earring": 2,
+     "earrings": 7,
+     "gold hoop earrings": 1,
+     "large gold hoop earrings": 1,
+     "large hoop earrings": 1,
+     "long blonde braid": 2,
+     "long blonde braid over shoulder": 1,
+     "necklace": 2,
+     "necklace with circular pendant": 2,
+     "necklace with pendant": 2,
+     "necklace with white pendant": 1,
+     "necklace with white teeth-like pendants": 1,
+     "tusk-like teeth": 1,
+     "white teeth visible in mouth": 1
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "blue",
+    "share": 0.1111111111111111,
+    "n": 18,
+    "outliers": [
+     "blue, almond-shaped, slightly narrowed",
+     "narrowed",
+     "dark, intense gaze",
+     "dark, intense gaze",
+     "narrow and intense",
+     "dark, narrow, focused",
+     "closed",
+     "blue, wide-set, slightly narrowed",
+     "dark and intense",
+     "dark and intense",
+     "dark, almond-shaped, looking forward",
+     "dark, almond-shaped, looking forward",
+     "blue, wide open, intense expression",
+     "blue, wide open, slightly narrowed",
+     "blue, wide open, intense gaze",
+     "blue, wide-set, looking straight ahead"
+    ],
+    "all_values": [
+     "blue",
+     "blue, almond-shaped, intense gaze",
+     "blue, almond-shaped, slightly narrowed",
+     "dark, intense gaze",
+     "narrow and intense",
+     "dark, narrow, focused",
+     "closed",
+     "blue, wide-set, slightly narrowed",
+     "narrowed",
+     "dark and intense",
+     "dark and intense",
+     "dark, almond-shaped, looking forward",
+     "dark, almond-shaped, looking forward",
+     "dark, intense gaze",
+     "blue, wide open, intense expression",
+     "blue, wide open, slightly narrowed",
+     "blue, wide open, intense gaze",
+     "blue, wide-set, looking straight ahead"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 18,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "full",
+    "share": 0.3888888888888889,
+    "n": 18,
+    "outliers": [
+     "thin",
+     "thin, slightly parted, neutral expression",
+     "thin, neutral expression",
+     "thin, slightly parted",
+     "thin, slightly parted",
+     "thin, straight, neutral expression",
+     "full with a grimace",
+     "partially open with teeth visible",
+     "thin with a stern expression",
+     "partially open, showing teeth, strained",
+     "partially parted, thin"
+    ],
+    "all_values": [
+     "thin",
+     "thin, slightly parted, neutral expression",
+     "thin, straight, neutral expression",
+     "full, slightly parted",
+     "full with a grimace",
+     "full, slightly parted",
+     "full",
+     "thin, neutral expression",
+     "partially open with teeth visible",
+     "thin with a stern expression",
+     "full and slightly parted",
+     "full, slightly parted",
+     "full, slightly parted",
+     "full, slightly parted",
+     "partially open, showing teeth, strained",
+     "partially parted, thin",
+     "thin, slightly parted",
+     "thin, slightly parted"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "straight",
+    "share": 0.3333333333333333,
+    "n": 18,
+    "outliers": [
+     "straight, prominent bridge",
+     "prominent",
+     "straight, prominent bridge",
+     "prominent and straight",
+     "straight and prominent",
+     "straight, small",
+     "small, straight",
+     "straight, small",
+     "straight and narrow",
+     "straight, defined bridge",
+     "straight, defined bridge",
+     "straight, narrow bridge"
+    ],
+    "all_values": [
+     "straight",
+     "straight, medium-sized",
+     "straight, medium-sized",
+     "straight, prominent bridge",
+     "prominent and straight",
+     "straight, small",
+     "straight",
+     "straight, medium-sized",
+     "prominent",
+     "straight and prominent",
+     "straight and narrow",
+     "small, straight",
+     "straight, small",
+     "straight, defined bridge",
+     "straight, prominent bridge",
+     "straight, narrow bridge",
+     "straight, defined bridge",
+     "straight, medium-sized"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "blond",
+    "share": 1.0,
+    "n": 19,
+    "outliers": [],
+    "all_values": [
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "shoulder-length",
+    "share": 0.5789473684210527,
+    "n": 19,
+    "outliers": [
+     "very long",
+     "long",
+     "very long",
+     "long",
+     "long",
+     "long",
+     "very long",
+     "short"
+    ],
+    "all_values": [
+     "very long",
+     "long",
+     "very long",
+     "shoulder-length",
+     "long",
+     "long",
+     "long",
+     "shoulder-length",
+     "short",
+     "shoulder-length",
+     "shoulder-length",
+     "shoulder-length",
+     "shoulder-length",
+     "very long",
+     "shoulder-length",
+     "shoulder-length",
+     "shoulder-length",
+     "shoulder-length",
+     "shoulder-length"
+    ],
+    "stable": false
+   },
+   "notes": {
+    "kind": "str",
+    "value": "bangs",
+    "share": 0.5263157894736842,
+    "n": 19,
+    "outliers": [
+     "single long braid down back, no bangs",
+     "single braid over one shoulder",
+     "hair is pulled into a braid",
+     "hair accessories: gold hoop earrings",
+     "long braid over shoulder, no bangs",
+     "long braid down back, bangs framing face",
+     "no bangs, no accessories",
+     "no bangs, no accessories",
+     "hair is braided down the back, with small circular accessories at the sides"
+    ],
+    "all_values": [
+     "two thick braids, bangs present",
+     "bangs present",
+     "bangs present",
+     "bangs",
+     "single long braid down back, no bangs",
+     "single braid over one shoulder",
+     "hair is pulled into a braid",
+     "bangs present",
+     "hair accessories: gold hoop earrings",
+     "long braid over shoulder, no bangs",
+     "long braid down back, bangs framing face",
+     "no bangs, no accessories",
+     "no bangs, no accessories",
+     "hair is braided down the back, with small circular accessories at the sides",
+     "bangs",
+     "bangs",
+     "bangs",
+     "bangs",
+     "bangs present"
+    ],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "loose",
+    "share": 0.5263157894736842,
+    "n": 19,
+    "outliers": [
+     "braided",
+     "braided",
+     "braided",
+     "braided",
+     "braided",
+     "braided",
+     "braided",
+     "braided",
+     "tied back"
+    ],
+    "all_values": [
+     "braided",
+     "braided",
+     "braided",
+     "loose",
+     "braided",
+     "braided",
+     "tied back",
+     "loose",
+     "loose",
+     "braided",
+     "braided",
+     "loose",
+     "loose",
+     "braided",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose"
+    ],
+    "stable": false
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 0.9473684210526315,
+    "n": 19,
+    "outliers": [
+     "wavy"
+    ],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "wavy",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 19,
+    "stable_items": [],
+    "disputed_items": [
+     "arm bands",
+     "arm guards",
+     "armband",
+     "belt",
+     "belt with pouches",
+     "boots",
+     "loincloth",
+     "necklace"
+    ],
+    "detail": {
+     "arm bands": {
+      "n": 7,
+      "values": [
+       "brown",
+       "black",
+       "brown",
+       "dark red",
+       "dark red",
+       "red",
+       "dark brown"
+      ]
+     },
+     "arm guards": {
+      "n": 1,
+      "values": [
+       "red"
+      ]
+     },
+     "armband": {
+      "n": 1,
+      "values": [
+       "red"
+      ]
+     },
+     "belt": {
+      "n": 10,
+      "values": [
+       "brown",
+       "brown",
+       "brown",
+       "brown",
+       "gold",
+       "brown",
+       "red and gold",
+       "brown",
+       "brown",
+       "brown"
+      ]
+     },
+     "belt with pouches": {
+      "n": 1,
+      "values": [
+       "brown and gold"
+      ]
+     },
+     "boots": {
+      "n": 4,
+      "values": [
+       "dark brown",
+       "black",
+       "dark brown",
+       "black"
+      ]
+     },
+     "loincloth": {
+      "n": 10,
+      "values": [
+       "dark brown",
+       "black",
+       "dark brown",
+       "black",
+       "brown",
+       "dark brown",
+       "brown",
+       "brown",
+       "black",
+       "dark brown"
+      ]
+     },
+     "necklace": {
+      "n": 5,
+      "values": [
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "brown"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "partially clad",
+    "share": 0.9473684210526315,
+    "n": 19,
+    "outliers": [
+     "fully dressed"
+    ],
+    "all_values": [
+     "fully dressed",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 19,
+    "stable_items": [
+     "necklace"
+    ],
+    "disputed_items": [
+     "arm bands",
+     "belt",
+     "belt buckle",
+     "boots",
+     "bracelet",
+     "braided hair",
+     "earring",
+     "leg guards",
+     "medallion",
+     "tassels"
+    ],
+    "detail": {
+     "arm bands": {
+      "n": 2,
+      "values": [
+       "dark brown",
+       "brown"
+      ]
+     },
+     "belt": {
+      "n": 8,
+      "values": [
+       "brown",
+       "brown",
+       "brown",
+       "brown",
+       "red and gold",
+       "brown",
+       "brown",
+       "brown"
+      ]
+     },
+     "belt buckle": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "boots": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "bracelet": {
+      "n": 1,
+      "values": [
+       "red"
+      ]
+     },
+     "braided hair": {
+      "n": 1,
+      "values": [
+       "blond"
+      ]
+     },
+     "earring": {
+      "n": 8,
+      "values": [
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "gold"
+      ]
+     },
+     "leg guards": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "medallion": {
+      "n": 1,
+      "values": [
+       "gold"
+      ]
+     },
+     "necklace": {
+      "n": 15,
+      "values": [
+       "brown",
+       "brown",
+       "brown",
+       "gold",
+       "gold",
+       "white",
+       "gold",
+       "brown",
+       "gold",
+       "gold",
+       "brown",
+       "white",
+       "white",
+       "white",
+       "gold"
+      ]
+     },
+     "tassels": {
+      "n": 2,
+      "values": [
+       "white",
+       "brown"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 19,
+    "stable_items": [],
+    "disputed_items": [
+     "knife",
+     "spear",
+     "sword"
+    ],
+    "counts": {
+     "knife": 2,
+     "spear": 3,
+     "sword": 2
+    }
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "brown",
+    "share": 0.5555555555555556,
+    "n": 18,
+    "outliers": [
+     "blue",
+     "blue",
+     "blue",
+     "blue",
+     "blue",
+     "blue",
+     "blue",
+     "blue"
+    ],
+    "all_values": [
+     "blue",
+     "blue",
+     "blue",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "blue",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "brown",
+     "dark brown",
+     "dark brown",
+     "blue",
+     "blue",
+     "blue",
+     "blue"
+    ],
+    "stable": false
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.7777777777777778,
+    "n": 9,
+    "outliers": [
+     "red",
+     "brown"
+    ],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "red",
+     "brown",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": "brown",
+    "share": 0.5,
+    "n": 8,
+    "outliers": [
+     "green",
+     "black",
+     "red",
+     "red"
+    ],
+    "all_values": [
+     "brown",
+     "green",
+     "brown",
+     "brown",
+     "black",
+     "red",
+     "red",
+     "brown"
+    ],
+    "stable": false
+   },
+   "hair": {
+    "kind": "str",
+    "value": "blond",
+    "share": 1.0,
+    "n": 19,
+    "outliers": [],
+    "all_values": [
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond",
+     "blond"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "gold",
+    "share": 0.8421052631578947,
+    "n": 19,
+    "outliers": [
+     "silver",
+     "silver",
+     "silver"
+    ],
+    "all_values": [
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "silver",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "silver",
+     "silver",
+     "gold"
+    ],
+    "stable": true
+   },
+   "skin": {
+    "kind": "str",
+    "value": "tan",
+    "share": 0.6842105263157895,
+    "n": 19,
+    "outliers": [
+     "light brown",
+     "light brown",
+     "light brown",
+     "light brown",
+     "pink",
+     "pink"
+    ],
+    "all_values": [
+     "tan",
+     "tan",
+     "tan",
+     "light brown",
+     "pink",
+     "pink",
+     "light brown",
+     "tan",
+     "tan",
+     "tan",
+     "tan",
+     "tan",
+     "light brown",
+     "tan",
+     "light brown",
+     "tan",
+     "tan",
+     "tan",
+     "tan"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 19,
+    "stable_items": [],
+    "disputed_items": [
+     "bare chest",
+     "bare chest with white bone-like adornments",
+     "black loincloth and boots",
+     "blond braided hair",
+     "blond hair",
+     "blue eyes",
+     "brown belt with gold buckle",
+     "brown belt with yellow circles",
+     "brown leather belt with circular metal plates",
+     "brown leather belt with gold buckle",
+     "brown skin tone",
+     "dark boots",
+     "dark brown skin",
+     "dark shorts and boots",
+     "dark wristbands",
+     "earrings",
+     "gold belt",
+     "gold belt buckle",
+     "gold hoop earrings",
+     "holding a dagger",
+     "large hoop earrings",
+     "long blonde braid",
+     "long blonde braided hair",
+     "muscular back",
+     "muscular build",
+     "naked torso",
+     "necklace with circular pendant",
+     "open mouth in scream",
+     "red and gold belt",
+     "red armband",
+     "red belt with gold buckle",
+     "sword at hip",
+     "tall muscular build",
+     "tattooed neck",
+     "tusk-like teeth"
+    ],
+    "counts": {
+     "bare chest": 1,
+     "bare chest with white bone-like adornments": 1,
+     "black loincloth and boots": 1,
+     "blond braided hair": 3,
+     "blond hair": 11,
+     "blue eyes": 7,
+     "brown belt with gold buckle": 2,
+     "brown belt with yellow circles": 1,
+     "brown leather belt with circular metal plates": 1,
+     "brown leather belt with gold buckle": 1,
+     "brown skin tone": 1,
+     "dark boots": 1,
+     "dark brown skin": 1,
+     "dark shorts and boots": 1,
+     "dark wristbands": 2,
+     "earrings": 4,
+     "gold belt": 1,
+     "gold belt buckle": 1,
+     "gold hoop earrings": 1,
+     "holding a dagger": 1,
+     "large hoop earrings": 4,
+     "long blonde braid": 3,
+     "long blonde braided hair": 2,
+     "muscular back": 1,
+     "muscular build": 3,
+     "naked torso": 6,
+     "necklace with circular pendant": 3,
+     "open mouth in scream": 1,
+     "red and gold belt": 1,
+     "red armband": 1,
+     "red belt with gold buckle": 1,
+     "sword at hip": 2,
+     "tall muscular build": 2,
+     "tattooed neck": 1,
+     "tusk-like teeth": 2
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of blond hair, a distinctive necklace with a circular pendant, and earrings makes this figure uniquely identifiable.",
+    "share": 0.05263157894736842,
+    "n": 19,
+    "outliers": [
+     "The combination of the long blonde braid, large hoop earrings, and tattooed neck uniquely identifies this figure.",
+     "The combination of long blonde braided hair, blue eyes, and distinctive large hoop earrings uniquely identifies this character.",
+     "The combination of long blonde braided hair, blue eyes, and distinctive gold hoop earrings makes this figure instantly recognizable.",
+     "The combination of blond hair, bare torso, and distinctive gold belt makes this figure instantly recognizable.",
+     "The combination of the long blonde braid, tusk-like teeth, and muscular physique with distinctive attire makes this figure uniquely identifiable.",
+     "The combination of long blond braided hair, bare skin, and distinctive brown leather gear makes this figure uniquely identifiable.",
+     "The figure's distinctive blond hair, bare chest, and brown belt with a large gold buckle are unique visual markers.",
+     "The combination of blond hair, blue eyes, and large hoop earrings makes this figure uniquely identifiable.",
+     "The combination of blond hair, muscular physique, and distinctive gold accessories makes this figure instantly recognizable.",
+     "The combination of long blond braided hair, bare chest, and the way he grips a dagger makes this figure instantly recognizable.",
+     "The combination of long blond braided hair, distinctive earrings, and a unique necklace makes this figure instantly recognizable.",
+     "The figure's distinctive blond hair, bare chest, and brown belt with a gold buckle are unique identifiers.",
+     "The combination of blond hair, bare chest, and the distinctive red belt with a large gold buckle makes this figure instantly recognizable.",
+     "The combination of the long, thick blonde braid running down the spine and the distinctive brown belt with circular gold accents is unique to this character.",
+     "The combination of blond hair, blue eyes, and the intense facial expression with open mouth makes this figure unmistakable.",
+     "The combination of blond hair, blue eyes, and the distinctive white bone-like necklaces makes this figure instantly recognizable.",
+     "The combination of blond hair, blue eyes, and distinct facial features makes this figure instantly recognizable.",
+     "The combination of the distinctive blond hair, piercing blue eyes, and prominent gold hoop earrings creates an instantly recognizable visual signature."
+    ],
+    "all_values": [
+     "The combination of the long blonde braid, large hoop earrings, and tattooed neck uniquely identifies this figure.",
+     "The combination of long blonde braided hair, blue eyes, and distinctive large hoop earrings uniquely identifies this character.",
+     "The combination of long blonde braided hair, blue eyes, and distinctive gold hoop earrings makes this figure instantly recognizable.",
+     "The combination of blond hair, bare torso, and distinctive gold belt makes this figure instantly recognizable.",
+     "The combination of the long blonde braid, tusk-like teeth, and muscular physique with distinctive attire makes this figure uniquely identifiable.",
+     "The combination of long blond braided hair, bare skin, and distinctive brown leather gear makes this figure uniquely identifiable.",
+     "The figure's distinctive blond hair, bare chest, and brown belt with a large gold buckle are unique visual markers.",
+     "The combination of blond hair, blue eyes, and large hoop earrings makes this figure uniquely identifiable.",
+     "The combination of blond hair, muscular physique, and distinctive gold accessories makes this figure instantly recognizable.",
+     "The combination of long blond braided hair, bare chest, and the way he grips a dagger makes this figure instantly recognizable.",
+     "The combination of long blond braided hair, distinctive earrings, and a unique necklace makes this figure instantly recognizable.",
+     "The figure's distinctive blond hair, bare chest, and brown belt with a gold buckle are unique identifiers.",
+     "The combination of blond hair, bare chest, and the distinctive red belt with a large gold buckle makes this figure instantly recognizable.",
+     "The combination of the long, thick blonde braid running down the spine and the distinctive brown belt with circular gold accents is unique to this character.",
+     "The combination of blond hair, a distinctive necklace with a circular pendant, and earrings makes this figure uniquely identifiable.",
+     "The combination of blond hair, blue eyes, and the intense facial expression with open mouth makes this figure unmistakable.",
+     "The combination of blond hair, blue eyes, and the distinctive white bone-like necklaces makes this figure instantly recognizable.",
+     "The combination of blond hair, blue eyes, and distinct facial features makes this figure instantly recognizable.",
+     "The combination of the distinctive blond hair, piercing blue eyes, and prominent gold hoop earrings creates an instantly recognizable visual signature."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.garment_primary",
+  "colors.hair",
+  "colors.metal_accent",
+  "colors.skin",
+  "face.face_shape",
+  "hair.color",
+  "hair.texture",
+  "physique.age_range",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "props.items:necklace",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "colors.eyes",
+  "colors.garment_secondary",
+  "face.brows",
+  "face.distinguishing_features:belt with gold buckle",
+  "face.distinguishing_features:blond hair",
+  "face.distinguishing_features:blond hair in a braid",
+  "face.distinguishing_features:braided blonde hair",
+  "face.distinguishing_features:braided hair",
+  "face.distinguishing_features:earring",
+  "face.distinguishing_features:earrings",
+  "face.distinguishing_features:gold hoop earrings",
+  "face.distinguishing_features:large gold hoop earrings",
+  "face.distinguishing_features:large hoop earrings",
+  "face.distinguishing_features:long blonde braid",
+  "face.distinguishing_features:long blonde braid over shoulder",
+  "face.distinguishing_features:necklace",
+  "face.distinguishing_features:necklace with circular pendant",
+  "face.distinguishing_features:necklace with pendant",
+  "face.distinguishing_features:necklace with white pendant",
+  "face.distinguishing_features:necklace with white teeth-like pendants",
+  "face.distinguishing_features:tusk-like teeth",
+  "face.distinguishing_features:white teeth visible in mouth",
+  "face.eyes",
+  "face.lips",
+  "face.nose",
+  "hair.length",
+  "hair.notes",
+  "hair.style",
+  "physique.skin_neutral_light",
+  "props.items:arm bands",
+  "props.items:belt",
+  "props.items:belt buckle",
+  "props.items:boots",
+  "props.items:bracelet",
+  "props.items:braided hair",
+  "props.items:earring",
+  "props.items:leg guards",
+  "props.items:medallion",
+  "props.items:tassels",
+  "props.weapons:knife",
+  "props.weapons:spear",
+  "props.weapons:sword",
+  "signature.memorable_traits:bare chest",
+  "signature.memorable_traits:bare chest with white bone-like adornments",
+  "signature.memorable_traits:black loincloth and boots",
+  "signature.memorable_traits:blond braided hair",
+  "signature.memorable_traits:blond hair",
+  "signature.memorable_traits:blue eyes",
+  "signature.memorable_traits:brown belt with gold buckle",
+  "signature.memorable_traits:brown belt with yellow circles",
+  "signature.memorable_traits:brown leather belt with circular metal plates",
+  "signature.memorable_traits:brown leather belt with gold buckle",
+  "signature.memorable_traits:brown skin tone",
+  "signature.memorable_traits:dark boots",
+  "signature.memorable_traits:dark brown skin",
+  "signature.memorable_traits:dark shorts and boots",
+  "signature.memorable_traits:dark wristbands",
+  "signature.memorable_traits:earrings",
+  "signature.memorable_traits:gold belt",
+  "signature.memorable_traits:gold belt buckle",
+  "signature.memorable_traits:gold hoop earrings",
+  "signature.memorable_traits:holding a dagger",
+  "signature.memorable_traits:large hoop earrings",
+  "signature.memorable_traits:long blonde braid",
+  "signature.memorable_traits:long blonde braided hair",
+  "signature.memorable_traits:muscular back",
+  "signature.memorable_traits:muscular build",
+  "signature.memorable_traits:naked torso",
+  "signature.memorable_traits:necklace with circular pendant",
+  "signature.memorable_traits:open mouth in scream",
+  "signature.memorable_traits:red and gold belt",
+  "signature.memorable_traits:red armband",
+  "signature.memorable_traits:red belt with gold buckle",
+  "signature.memorable_traits:sword at hip",
+  "signature.memorable_traits:tall muscular build",
+  "signature.memorable_traits:tattooed neck",
+  "signature.memorable_traits:tusk-like teeth",
+  "signature.unmistakable_because",
+  "wardrobe.garments:arm bands",
+  "wardrobe.garments:arm guards",
+  "wardrobe.garments:armband",
+  "wardrobe.garments:belt",
+  "wardrobe.garments:belt with pouches",
+  "wardrobe.garments:boots",
+  "wardrobe.garments:loincloth",
+  "wardrobe.garments:necklace"
+ ],
+ "prompt_block": "young adult male, muscular build, tall height impression, blond straight hair, oval face, dressed in black, carrying necklace."
+}

@@ -1,0 +1,22 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "ComfyUI_00028_ (1).png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.5850036,
+ "size": 4583561,
+ "ts": "2026-10-15T10:49:02Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"green, almond-shaped, slightly narrowed at the outer corners\",\n \"brows\": \"thin, arched, dark brown\",\n \"nose\": \"straight bridge, small nostrils\",\n \"lips\": \"full, naturally colored, with a subtle pink tint\",\n \"distinguishing_features\": [\n  \"long black hair with bangs\",\n  \"gold necklace with teardrop pendant\",\n  \"gold drop earrings\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "green, almond-shaped, slightly narrowed at the outer corners",
+  "brows": "thin, arched, dark brown",
+  "nose": "straight bridge, small nostrils",
+  "lips": "full, naturally colored, with a subtle pink tint",
+  "distinguishing_features": [
+   "long black hair with bangs",
+   "gold necklace with teardrop pendant",
+   "gold drop earrings"
+  ]
+ }
+}

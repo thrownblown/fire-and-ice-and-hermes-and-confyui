@@ -1,0 +1,27 @@
+{
+ "char": "SPIRIT",
+ "lens": "wardrobe",
+ "file": "shot_00759_f00100.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932277.043583,
+ "size": 347277,
+ "ts": "2026-10-15T05:01:21Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"ruffled, circular collar\"\n    },\n    {\n      \"item\": \"tunic\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted, sleeveless with visible ribcage\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "necklace",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "ruffled, circular collar"
+   },
+   {
+    "item": "tunic",
+    "color": "black",
+    "material": "cloth",
+    "cut": "fitted, sleeveless with visible ribcage"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

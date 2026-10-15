@@ -1,0 +1,705 @@
+{
+ "char": "JAROL",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 42,
+  "ok": 42
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "elderly",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "elderly",
+     "elderly",
+     "elderly",
+     "elderly",
+     "elderly",
+     "elderly"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "stocky",
+    "share": 0.5,
+    "n": 6,
+    "outliers": [
+     "muscular",
+     "heavy",
+     "slim"
+    ],
+    "all_values": [
+     "muscular",
+     "heavy",
+     "stocky",
+     "stocky",
+     "slim",
+     "stocky"
+    ],
+    "stable": false
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "imposing",
+    "share": 0.6666666666666666,
+    "n": 6,
+    "outliers": [
+     "tall",
+     "average"
+    ],
+    "all_values": [
+     "tall",
+     "imposing",
+     "imposing",
+     "imposing",
+     "average",
+     "imposing"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "male",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "light brown",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "light brown",
+     "light brown",
+     "light brown",
+     "light brown",
+     "light brown",
+     "light brown"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thick and arched",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "thick and arched",
+     "thick and arched downward",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched downward",
+     "thick and arched downward"
+    ],
+    "stable": true
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 6,
+    "stable_items": [
+     "white beard"
+    ],
+    "disputed_items": [
+     "earring",
+     "earrings",
+     "gold earring",
+     "gold hoop earring",
+     "gold necklace",
+     "wrinkles around eyes",
+     "wrinkles around eyes and mouth"
+    ],
+    "counts": {
+     "earring": 1,
+     "earrings": 1,
+     "gold earring": 2,
+     "gold hoop earring": 2,
+     "gold necklace": 2,
+     "white beard": 5,
+     "wrinkles around eyes": 1,
+     "wrinkles around eyes and mouth": 2
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "narrow and intense",
+    "share": 0.5,
+    "n": 6,
+    "outliers": [
+     "green",
+     "narrow and squinting",
+     "narrow and downturned"
+    ],
+    "all_values": [
+     "green",
+     "narrow and squinting",
+     "narrow and intense",
+     "narrow and intense",
+     "narrow and intense",
+     "narrow and downturned"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "thin with a slight smile",
+    "share": 0.5,
+    "n": 6,
+    "outliers": [
+     "full with a mustache",
+     "thin with a mustache",
+     "thin and slightly parted"
+    ],
+    "all_values": [
+     "full with a mustache",
+     "thin with a slight smile",
+     "thin with a slight smile",
+     "thin with a slight smile",
+     "thin with a mustache",
+     "thin and slightly parted"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "large and broad",
+    "share": 0.3333333333333333,
+    "n": 6,
+    "outliers": [
+     "large and bulbous",
+     "large and prominent",
+     "prominent and slightly hooked",
+     "prominent with flared nostrils"
+    ],
+    "all_values": [
+     "large and broad",
+     "large and bulbous",
+     "large and prominent",
+     "prominent and slightly hooked",
+     "prominent with flared nostrils",
+     "large and broad with a flat bridge"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "white",
+    "share": 0.6666666666666666,
+    "n": 6,
+    "outliers": [
+     "bald",
+     "black"
+    ],
+    "all_values": [
+     "white",
+     "bald",
+     "white",
+     "white",
+     "white",
+     "black"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "shaved",
+    "share": 0.8333333333333334,
+    "n": 6,
+    "outliers": [
+     "very long"
+    ],
+    "all_values": [
+     "shaved",
+     "shaved",
+     "shaved",
+     "shaved",
+     "shaved",
+     "very long"
+    ],
+    "stable": true
+   },
+   "notes": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "covered",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "covered",
+     "covered",
+     "covered",
+     "covered",
+     "covered",
+     "covered"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 6,
+    "stable_items": [
+     "tunic"
+    ],
+    "disputed_items": [
+     "arm bands",
+     "belt",
+     "boots",
+     "earring",
+     "necklace",
+     "ornament"
+    ],
+    "detail": {
+     "arm bands": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "belt": {
+      "n": 2,
+      "values": [
+       "brown",
+       "dark red"
+      ]
+     },
+     "boots": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "earring": {
+      "n": 1,
+      "values": [
+       "gold"
+      ]
+     },
+     "necklace": {
+      "n": 3,
+      "values": [
+       "gold",
+       "gold",
+       "gold"
+      ]
+     },
+     "ornament": {
+      "n": 1,
+      "values": [
+       "gold"
+      ]
+     },
+     "tunic": {
+      "n": 6,
+      "values": [
+       "maroon",
+       "dark red",
+       "red",
+       "red",
+       "red",
+       "dark red"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "fully dressed",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 6,
+    "stable_items": [
+     "earring"
+    ],
+    "disputed_items": [
+     "arm bands",
+     "beard",
+     "beard ornament",
+     "belt",
+     "boots",
+     "bracelets",
+     "earrings",
+     "necklace"
+    ],
+    "detail": {
+     "arm bands": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "beard": {
+      "n": 1,
+      "values": [
+       "white"
+      ]
+     },
+     "beard ornament": {
+      "n": 1,
+      "values": [
+       "white"
+      ]
+     },
+     "belt": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "boots": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "bracelets": {
+      "n": 1,
+      "values": [
+       "gold"
+      ]
+     },
+     "earring": {
+      "n": 5,
+      "values": [
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "gold"
+      ]
+     },
+     "earrings": {
+      "n": 1,
+      "values": [
+       "gold"
+      ]
+     },
+     "necklace": {
+      "n": 3,
+      "values": [
+       "gold",
+       "gold",
+       "gold"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 6,
+    "stable_items": [],
+    "disputed_items": [],
+    "counts": {}
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.3333333333333333,
+    "n": 6,
+    "outliers": [
+     "green",
+     "green",
+     "blue",
+     "dark brown"
+    ],
+    "all_values": [
+     "green",
+     "black",
+     "black",
+     "blue",
+     "green",
+     "dark brown"
+    ],
+    "stable": false
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "red",
+    "share": 0.6666666666666666,
+    "n": 6,
+    "outliers": [
+     "maroon",
+     "maroon"
+    ],
+    "all_values": [
+     "maroon",
+     "dark red",
+     "red",
+     "red",
+     "red",
+     "maroon"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "hair": {
+    "kind": "str",
+    "value": "white",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "white",
+     "white",
+     "white",
+     "white"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "gold",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold"
+    ],
+    "stable": true
+   },
+   "skin": {
+    "kind": "str",
+    "value": "pink",
+    "share": 0.8333333333333334,
+    "n": 6,
+    "outliers": [
+     "tan"
+    ],
+    "all_values": [
+     "tan",
+     "pink",
+     "pink",
+     "pink",
+     "pink",
+     "pink"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 6,
+    "stable_items": [
+     "bald head"
+    ],
+    "disputed_items": [
+     "brown boots",
+     "earring",
+     "furrowed brow",
+     "gold armbands",
+     "gold circular necklace",
+     "gold earring",
+     "gold hoop earring",
+     "gold hoop earrings",
+     "gold necklace with large oval beads",
+     "long white beard",
+     "maroon tunic",
+     "muscular build",
+     "red sleeveless garment",
+     "red sleeveless top",
+     "red sleeveless top with gold circles",
+     "white beard"
+    ],
+    "counts": {
+     "bald head": 6,
+     "brown boots": 1,
+     "earring": 1,
+     "furrowed brow": 1,
+     "gold armbands": 1,
+     "gold circular necklace": 2,
+     "gold earring": 1,
+     "gold hoop earring": 2,
+     "gold hoop earrings": 1,
+     "gold necklace with large oval beads": 1,
+     "long white beard": 3,
+     "maroon tunic": 1,
+     "muscular build": 1,
+     "red sleeveless garment": 1,
+     "red sleeveless top": 2,
+     "red sleeveless top with gold circles": 1,
+     "white beard": 2
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of the bald head, white beard, and distinctive gold jewelry makes this figure instantly recognizable.",
+    "share": 0.3333333333333333,
+    "n": 6,
+    "outliers": [
+     "The combination of the bald head, long white beard, and distinctive gold circular necklace makes this figure uniquely identifiable.",
+     "The combination of a bald head, muscular physique, and distinctive red clothing with gold armbands creates an unmistakable silhouette.",
+     "The combination of a bald head, long white beard, and distinctive gold earring makes this figure instantly recognizable.",
+     "The combination of the bald head, long white beard, and distinctive gold hoop earring makes this figure instantly recognizable."
+    ],
+    "all_values": [
+     "The combination of the bald head, long white beard, and distinctive gold circular necklace makes this figure uniquely identifiable.",
+     "The combination of a bald head, muscular physique, and distinctive red clothing with gold armbands creates an unmistakable silhouette.",
+     "The combination of the bald head, white beard, and distinctive gold jewelry makes this figure instantly recognizable.",
+     "The combination of the bald head, prominent white beard, and distinctive gold jewelry makes this figure instantly recognizable.",
+     "The combination of a bald head, long white beard, and distinctive gold earring makes this figure instantly recognizable.",
+     "The combination of the bald head, long white beard, and distinctive gold hoop earring makes this figure instantly recognizable."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.garment_primary",
+  "colors.hair",
+  "colors.metal_accent",
+  "colors.skin",
+  "face.brows",
+  "face.distinguishing_features:white beard",
+  "face.face_shape",
+  "hair.color",
+  "hair.length",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "props.items:earring",
+  "signature.memorable_traits:bald head",
+  "wardrobe.garments:tunic",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "colors.eyes",
+  "face.distinguishing_features:earring",
+  "face.distinguishing_features:earrings",
+  "face.distinguishing_features:gold earring",
+  "face.distinguishing_features:gold hoop earring",
+  "face.distinguishing_features:gold necklace",
+  "face.distinguishing_features:wrinkles around eyes",
+  "face.distinguishing_features:wrinkles around eyes and mouth",
+  "face.eyes",
+  "face.lips",
+  "face.nose",
+  "physique.build",
+  "props.items:arm bands",
+  "props.items:beard",
+  "props.items:beard ornament",
+  "props.items:belt",
+  "props.items:boots",
+  "props.items:bracelets",
+  "props.items:earrings",
+  "props.items:necklace",
+  "signature.memorable_traits:brown boots",
+  "signature.memorable_traits:earring",
+  "signature.memorable_traits:furrowed brow",
+  "signature.memorable_traits:gold armbands",
+  "signature.memorable_traits:gold circular necklace",
+  "signature.memorable_traits:gold earring",
+  "signature.memorable_traits:gold hoop earring",
+  "signature.memorable_traits:gold hoop earrings",
+  "signature.memorable_traits:gold necklace with large oval beads",
+  "signature.memorable_traits:long white beard",
+  "signature.memorable_traits:maroon tunic",
+  "signature.memorable_traits:muscular build",
+  "signature.memorable_traits:red sleeveless garment",
+  "signature.memorable_traits:red sleeveless top",
+  "signature.memorable_traits:red sleeveless top with gold circles",
+  "signature.memorable_traits:white beard",
+  "signature.unmistakable_because",
+  "wardrobe.garments:arm bands",
+  "wardrobe.garments:belt",
+  "wardrobe.garments:boots",
+  "wardrobe.garments:earring",
+  "wardrobe.garments:necklace",
+  "wardrobe.garments:ornament"
+ ],
+ "prompt_block": "elderly male, imposing height impression, light brown skin, white shaved straight covered hair, oval face, dressed in red, wearing tunic, carrying earring, memorable for bald head."
+}

@@ -1,0 +1,19 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "shot_01243_f00059.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.031551,
+ "size": 169758,
+ "ts": "2026-10-15T04:29:42Z",
+ "text": "{\n \"memorable_traits\": [\"black mask\", \"glowing green eyes\", \"skull necklace\", \"muscular build\"],\n \"unmistakable_because\": \"The combination of the black mask, glowing green eyes, and skull necklace uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black mask",
+   "glowing green eyes",
+   "skull necklace",
+   "muscular build"
+  ],
+  "unmistakable_because": "The combination of the black mask, glowing green eyes, and skull necklace uniquely identifies this figure."
+ }
+}

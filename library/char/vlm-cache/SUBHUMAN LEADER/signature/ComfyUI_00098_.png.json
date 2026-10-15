@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "signature",
+ "file": "ComfyUI_00098_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935235.9692163,
+ "size": 4418573,
+ "ts": "2026-10-15T05:08:21Z",
+ "text": "{\n \"memorable_traits\": [\"broad muscular build\", \"tightly coiled topknot hairstyle\", \"sharp facial features\", \"necklace with orange pendant\"],\n \"unmistakable_because\": \"The combination of his massive, heavily muscled physique and the distinctive topknot hairstyle makes him instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "broad muscular build",
+   "tightly coiled topknot hairstyle",
+   "sharp facial features",
+   "necklace with orange pendant"
+  ],
+  "unmistakable_because": "The combination of his massive, heavily muscled physique and the distinctive topknot hairstyle makes him instantly recognizable."
+ }
+}

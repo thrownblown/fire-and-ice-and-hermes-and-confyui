@@ -1,0 +1,18 @@
+{
+ "char": "SHAITAN",
+ "lens": "signature",
+ "file": "shot_00217_f00013.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931744.0748787,
+ "size": 86900,
+ "ts": "2026-10-15T04:59:57Z",
+ "text": "{\n \"memorable_traits\": [\"black fur\", \"yellow eyes\", \"bared teeth\"],\n \"unmistakable_because\": \"The figure is a black panther with glowing yellow eyes and an open mouth showing sharp teeth.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black fur",
+   "yellow eyes",
+   "bared teeth"
+  ],
+  "unmistakable_because": "The figure is a black panther with glowing yellow eyes and an open mouth showing sharp teeth."
+ }
+}

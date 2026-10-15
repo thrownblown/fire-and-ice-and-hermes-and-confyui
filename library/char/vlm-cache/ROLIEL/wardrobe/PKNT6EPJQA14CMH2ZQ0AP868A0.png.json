@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "PKNT6EPJQA14CMH2ZQ0AP868A0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.801588,
+ "size": 1339109,
+ "ts": "2026-10-15T04:54:24Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"waistband\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"choker-style\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   },
+   {
+    "item": "belt",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "waistband"
+   },
+   {
+    "item": "necklace",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "choker-style"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

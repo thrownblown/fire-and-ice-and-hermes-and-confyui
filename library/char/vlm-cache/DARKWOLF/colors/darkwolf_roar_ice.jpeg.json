@@ -1,0 +1,18 @@
+{
+ "char": "DARKWOLF",
+ "lens": "colors",
+ "file": "darkwolf_roar_ice.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.39316,
+ "size": 59537,
+ "ts": "2026-10-15T04:26:41Z",
+ "text": "{\n \"skin\": \"brown\",\n \"hair\": \"black\",\n \"eyes\": \"green\",\n \"garment_primary\": \"black\",\n \"garment_secondary\": null,\n \"metal_accent\": null\n}",
+ "json": {
+  "skin": "brown",
+  "hair": "black",
+  "eyes": "green",
+  "garment_primary": "black",
+  "garment_secondary": null,
+  "metal_accent": null
+ }
+}

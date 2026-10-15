@@ -1,0 +1,14 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00716_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.189375,
+ "size": 345764,
+ "ts": "2026-10-15T05:05:09Z",
+ "text": "{\n \"memorable_traits\": [],\n \"unmistakable_because\": \"\"\n}",
+ "json": {
+  "memorable_traits": [],
+  "unmistakable_because": null
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "char": "OTWA",
+ "lens": "face",
+ "file": "shot_00739_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931820.6471546,
+ "size": 294786,
+ "ts": "2026-10-15T04:45:19Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide-set, slightly bulging, with dark pupils and pale sclerae; expression appears startled or fearful\",\n \"brows\": \"thick, arched upward, furrowed in a tense manner\",\n \"nose\": \"large, broad, with flared nostrils\",\n \"lips\": \"thin, downturned at the corners, slightly parted as if gasping or speaking\",\n \"distinguishing_features\": [\n  \"deep wrinkles around eyes and mouth\",\n  \"reddish-brown skin tone\",\n  \"long red hair partially obscuring face\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide-set, slightly bulging, with dark pupils and pale sclerae; expression appears startled or fearful",
+  "brows": "thick, arched upward, furrowed in a tense manner",
+  "nose": "large, broad, with flared nostrils",
+  "lips": "thin, downturned at the corners, slightly parted as if gasping or speaking",
+  "distinguishing_features": [
+   "deep wrinkles around eyes and mouth",
+   "reddish-brown skin tone",
+   "long red hair partially obscuring face"
+  ]
+ }
+}

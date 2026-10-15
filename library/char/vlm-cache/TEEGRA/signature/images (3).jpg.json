@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "images (3).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032338.6120553,
+ "size": 22794,
+ "ts": "2026-10-15T10:52:30Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"eyebrows shaped like horns\", \"gold chain necklace\", \"skin tone appearing pale under purple light\"],\n \"unmistakable_because\": \"The combination of long dark hair, horn-shaped eyebrows, and a gold chain necklace makes this figure visually unique.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "eyebrows shaped like horns",
+   "gold chain necklace",
+   "skin tone appearing pale under purple light"
+  ],
+  "unmistakable_because": "The combination of long dark hair, horn-shaped eyebrows, and a gold chain necklace makes this figure visually unique."
+ }
+}

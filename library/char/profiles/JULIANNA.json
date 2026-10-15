@@ -1,0 +1,591 @@
+{
+ "char": "JULIANNA",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 28,
+  "ok": 28
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "young adult",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "slim",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "slim",
+     "slim",
+     "slim",
+     "slim"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "tall",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "tall",
+     "tall",
+     "tall",
+     "tall"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "female",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "female",
+     "female",
+     "female",
+     "female"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "light",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "light",
+     "light beige",
+     "light",
+     "light"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "arched",
+    "share": 0.75,
+    "n": 4,
+    "outliers": [
+     "dark and arched"
+    ],
+    "all_values": [
+     "thin and arched",
+     "arched",
+     "dark and arched",
+     "thin and arched"
+    ],
+    "stable": true
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 4,
+    "stable_items": [],
+    "disputed_items": [
+     "earrings",
+     "headband with gems",
+     "headband with three dots",
+     "long black hair",
+     "long dark hair",
+     "red lipstick"
+    ],
+    "counts": {
+     "earrings": 1,
+     "headband with gems": 1,
+     "headband with three dots": 1,
+     "long black hair": 1,
+     "long dark hair": 2,
+     "red lipstick": 1
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "blue",
+    "share": 0.5,
+    "n": 4,
+    "outliers": [
+     "green",
+     "green"
+    ],
+    "all_values": [
+     "blue",
+     "blue",
+     "green",
+     "green"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "full",
+    "share": 0.75,
+    "n": 4,
+    "outliers": [
+     "full with red lipstick"
+    ],
+    "all_values": [
+     "full and red",
+     "full",
+     "full and red",
+     "full with red lipstick"
+    ],
+    "stable": true
+   },
+   "nose": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "straight and narrow",
+     "straight",
+     "straight and narrow",
+     "straight and narrow"
+    ],
+    "stable": true
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "very long",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "very long",
+     "very long",
+     "very long",
+     "very long"
+    ],
+    "stable": true
+   },
+   "notes": {
+    "kind": "str",
+    "value": "hair accessories: headband",
+    "share": 0.25,
+    "n": 4,
+    "outliers": [
+     "long straight hair with bangs",
+     "has bangs, adorned with a headband",
+     "long bangs, adorned with a jeweled headband"
+    ],
+    "all_values": [
+     "hair accessories: headband",
+     "long straight hair with bangs",
+     "has bangs, adorned with a headband",
+     "long bangs, adorned with a jeweled headband"
+    ],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "loose",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "loose",
+     "loose",
+     "loose",
+     "loose"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 4,
+    "stable_items": [
+     "boots",
+     "tunic"
+    ],
+    "disputed_items": [
+     "dress"
+    ],
+    "detail": {
+     "boots": {
+      "n": 4,
+      "values": [
+       "black",
+       "black",
+       "black",
+       "black"
+      ]
+     },
+     "dress": {
+      "n": 1,
+      "values": [
+       "purple"
+      ]
+     },
+     "tunic": {
+      "n": 3,
+      "values": [
+       "purple",
+       "purple",
+       "purple"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "fully dressed",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 4,
+    "stable_items": [],
+    "disputed_items": [
+     "crown",
+     "earring",
+     "earrings",
+     "headband",
+     "high heels",
+     "necklace",
+     "rope",
+     "wand"
+    ],
+    "detail": {
+     "crown": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "earring": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "earrings": {
+      "n": 2,
+      "values": [
+       "gray",
+       "black"
+      ]
+     },
+     "headband": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "high heels": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "necklace": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "rope": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "wand": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 4,
+    "stable_items": [],
+    "disputed_items": [
+     "wand"
+    ],
+    "counts": {
+     "wand": 1
+    }
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "blue",
+    "share": 0.5,
+    "n": 4,
+    "outliers": [
+     "green",
+     "green"
+    ],
+    "all_values": [
+     "blue",
+     "blue",
+     "green",
+     "green"
+    ],
+    "stable": false
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "purple",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "purple",
+     "purple",
+     "purple",
+     "purple"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "hair": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "silver",
+    "share": 1.0,
+    "n": 4,
+    "outliers": [],
+    "all_values": [
+     "silver",
+     "silver",
+     "silver",
+     "silver"
+    ],
+    "stable": true
+   },
+   "skin": {
+    "kind": "str",
+    "value": "light beige",
+    "share": 0.75,
+    "n": 4,
+    "outliers": [
+     "light pink"
+    ],
+    "all_values": [
+     "light pink",
+     "light beige",
+     "light beige",
+     "light beige"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 4,
+    "stable_items": [
+     "long black hair",
+     "red lips"
+    ],
+    "disputed_items": [
+     "black heels",
+     "blue eyes",
+     "dark eye makeup",
+     "green eyes",
+     "headband with gems",
+     "purple gown",
+     "purple gown with high slit",
+     "purple gown with slit",
+     "tall and slender build",
+     "tall slender build"
+    ],
+    "counts": {
+     "black heels": 1,
+     "blue eyes": 1,
+     "dark eye makeup": 2,
+     "green eyes": 1,
+     "headband with gems": 1,
+     "long black hair": 4,
+     "purple gown": 1,
+     "purple gown with high slit": 2,
+     "purple gown with slit": 1,
+     "red lips": 4,
+     "tall and slender build": 1,
+     "tall slender build": 1
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of long black hair, a distinctive purple gown with a high slit, and bold red lips makes this figure instantly recognizable.",
+    "share": 0.5,
+    "n": 4,
+    "outliers": [
+     "The combination of long black hair, a distinctive purple gown with a high slit, and bold red lips creates an instantly recognizable silhouette.",
+     "The combination of long black hair, a distinctive purple gown with high slits, and bold red lips makes this figure instantly recognizable."
+    ],
+    "all_values": [
+     "The combination of long black hair, a distinctive purple gown with a high slit, and bold red lips makes this figure instantly recognizable.",
+     "The combination of long black hair, a distinctive purple gown with a high slit, and bold red lips creates an instantly recognizable silhouette.",
+     "The combination of long black hair, a distinctive purple gown with high slits, and bold red lips makes this figure instantly recognizable.",
+     "The combination of long black hair, a distinctive purple gown with a high slit, and bold red lips makes this figure instantly recognizable."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.garment_primary",
+  "colors.garment_secondary",
+  "colors.hair",
+  "colors.metal_accent",
+  "colors.skin",
+  "face.brows",
+  "face.face_shape",
+  "face.lips",
+  "face.nose",
+  "hair.color",
+  "hair.length",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "signature.memorable_traits:long black hair",
+  "signature.memorable_traits:red lips",
+  "wardrobe.garments:boots",
+  "wardrobe.garments:tunic",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "colors.eyes",
+  "face.distinguishing_features:earrings",
+  "face.distinguishing_features:headband with gems",
+  "face.distinguishing_features:headband with three dots",
+  "face.distinguishing_features:long black hair",
+  "face.distinguishing_features:long dark hair",
+  "face.distinguishing_features:red lipstick",
+  "face.eyes",
+  "hair.notes",
+  "props.items:crown",
+  "props.items:earring",
+  "props.items:earrings",
+  "props.items:headband",
+  "props.items:high heels",
+  "props.items:necklace",
+  "props.items:rope",
+  "props.items:wand",
+  "props.weapons:wand",
+  "signature.memorable_traits:black heels",
+  "signature.memorable_traits:blue eyes",
+  "signature.memorable_traits:dark eye makeup",
+  "signature.memorable_traits:green eyes",
+  "signature.memorable_traits:headband with gems",
+  "signature.memorable_traits:purple gown",
+  "signature.memorable_traits:purple gown with high slit",
+  "signature.memorable_traits:purple gown with slit",
+  "signature.memorable_traits:tall and slender build",
+  "signature.memorable_traits:tall slender build",
+  "signature.unmistakable_because",
+  "wardrobe.garments:dress"
+ ],
+ "prompt_block": "young adult female, slim build, tall height impression, light skin, black very long straight loose hair, oval face, dressed in purple and black, wearing boots, tunic, memorable for long black hair, red lips."
+}

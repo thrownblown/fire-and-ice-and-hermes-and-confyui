@@ -1,0 +1,19 @@
+{
+ "char": "TUTOR",
+ "lens": "signature",
+ "file": "shot_00230_f00079.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5550506,
+ "size": 209159,
+ "ts": "2026-10-15T05:22:09Z",
+ "text": "{\n \"memorable_traits\": [\"light blue loincloth\", \"brown skin\", \"wide-open mouth\", \"dark hair\"],\n \"unmistakable_because\": \"The figure's distinctive light blue loincloth and wide-open mouth make them immediately recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "light blue loincloth",
+   "brown skin",
+   "wide-open mouth",
+   "dark hair"
+  ],
+  "unmistakable_because": "The figure's distinctive light blue loincloth and wide-open mouth make them immediately recognizable."
+ }
+}

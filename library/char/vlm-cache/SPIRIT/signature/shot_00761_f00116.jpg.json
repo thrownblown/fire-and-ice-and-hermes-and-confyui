@@ -1,0 +1,18 @@
+{
+ "char": "SPIRIT",
+ "lens": "signature",
+ "file": "shot_00761_f00116.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932279.686568,
+ "size": 349183,
+ "ts": "2026-10-15T05:02:03Z",
+ "text": "{\n \"memorable_traits\": [\"long white hair\", \"skeletal face with dark eye sockets\", \"dark patterned top\"],\n \"unmistakable_because\": \"The figure's skull-like head and long white hair are uniquely combined to form an instantly recognizable silhouette.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long white hair",
+   "skeletal face with dark eye sockets",
+   "dark patterned top"
+  ],
+  "unmistakable_because": "The figure's skull-like head and long white hair are uniquely combined to form an instantly recognizable silhouette."
+ }
+}

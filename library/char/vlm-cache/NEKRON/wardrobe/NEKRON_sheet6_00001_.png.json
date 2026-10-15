@@ -1,0 +1,39 @@
+{
+ "char": "NEKRON",
+ "lens": "wardrobe",
+ "file": "NEKRON_sheet6_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790642850.34,
+ "size": 3776081,
+ "ts": "2026-10-15T04:43:25Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"dark purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, long-sleeved\"\n    },\n    {\n      \"item\": \"pants\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"baggy, below the knee\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, with a buckle\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"ankle-high, closed-toe\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "dark purple",
+    "material": "cloth",
+    "cut": "loose-fitting, long-sleeved"
+   },
+   {
+    "item": "pants",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "baggy, below the knee"
+   },
+   {
+    "item": "belt",
+    "color": "black",
+    "material": "leather",
+    "cut": "wide, with a buckle"
+   },
+   {
+    "item": "boots",
+    "color": "black",
+    "material": "leather",
+    "cut": "ankle-high, closed-toe"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "JAROL",
+ "lens": "face",
+ "file": "shot_00185_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729662.215001,
+ "size": 319332,
+ "ts": "2026-10-15T04:30:20Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and squinting\",\n \"brows\": \"thick and arched downward\",\n \"nose\": \"large and bulbous\",\n \"lips\": \"thin with a slight smile\",\n \"distinguishing_features\": [\n  \"wrinkles around eyes\",\n  \"earring\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and squinting",
+  "brows": "thick and arched downward",
+  "nose": "large and bulbous",
+  "lips": "thin with a slight smile",
+  "distinguishing_features": [
+   "wrinkles around eyes",
+   "earring"
+  ]
+ }
+}

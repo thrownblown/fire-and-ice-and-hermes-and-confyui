@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "hair",
+ "file": "ae69fd_496c802d03614cb5b6507e4521d7d667~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932136.4510386,
+ "size": 36959,
+ "ts": "2026-10-15T05:06:46Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"has bangs\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "has bangs"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00473_f00113.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931141.673677,
+ "size": 228387,
+ "ts": "2026-10-15T04:38:06Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"pendant-style\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "material": "leather",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "pendant-style"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "frazetta_death_dealer_ridge_silhouette.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.40116,
+ "size": 509272,
+ "ts": "2026-10-15T04:27:32Z",
+ "text": "{\n \"memorable_traits\": [\"horned helmet\", \"red skin\", \"scythe weapon\", \"ornate shield\"],\n \"unmistakable_because\": \"The figure's red-skinned face, horned helmet, and scythe weapon create a unique combination of features.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "horned helmet",
+   "red skin",
+   "scythe weapon",
+   "ornate shield"
+  ],
+  "unmistakable_because": "The figure's red-skinned face, horned helmet, and scythe weapon create a unique combination of features."
+ }
+}

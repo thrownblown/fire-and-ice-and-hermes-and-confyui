@@ -1,0 +1,18 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00473_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931138.438335,
+ "size": 278057,
+ "ts": "2026-10-15T04:37:54Z",
+ "text": "{\n \"memorable_traits\": [\"blond braided hair\", \"naked torso\", \"holding a dagger\"],\n \"unmistakable_because\": \"The combination of long blond braided hair, bare chest, and the way he grips a dagger makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond braided hair",
+   "naked torso",
+   "holding a dagger"
+  ],
+  "unmistakable_because": "The combination of long blond braided hair, bare chest, and the way he grips a dagger makes this figure instantly recognizable."
+ }
+}

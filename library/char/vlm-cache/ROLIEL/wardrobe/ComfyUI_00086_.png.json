@@ -1,0 +1,39 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00086_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.386247,
+ "size": 5319840,
+ "ts": "2026-10-15T04:50:07Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"sheer, draped, revealing\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"thin, tied around waist\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"material\": \"metal\",\n      \"cut\": \"choker-style with pendant\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"blue\",\n      \"material\": \"metal\",\n      \"cut\": \"teardrop-shaped\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "sheer, draped, revealing"
+   },
+   {
+    "item": "belt",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "thin, tied around waist"
+   },
+   {
+    "item": "necklace",
+    "color": "blue",
+    "material": "metal",
+    "cut": "choker-style with pendant"
+   },
+   {
+    "item": "earrings",
+    "color": "blue",
+    "material": "metal",
+    "cut": "teardrop-shaped"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

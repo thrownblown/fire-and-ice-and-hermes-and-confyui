@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "shot_00263_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723622.1734984,
+ "size": 201927,
+ "ts": "2026-10-15T10:54:19Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"ears\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "earrings",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "ears"
+   }
+  ],
+  "weapons": []
+ }
+}

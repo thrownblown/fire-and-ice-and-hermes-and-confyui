@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "Larn.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932029.0960357,
+ "size": 18160,
+ "ts": "2026-10-15T04:35:31Z",
+ "text": "{\n \"memorable_traits\": [\"blond hair\", \"bare chest\", \"gold belt\", \"necklace with circular pendant\"],\n \"unmistakable_because\": \"The combination of blond hair, bare torso, and distinctive gold belt makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "bare chest",
+   "gold belt",
+   "necklace with circular pendant"
+  ],
+  "unmistakable_because": "The combination of blond hair, bare torso, and distinctive gold belt makes this figure instantly recognizable."
+ }
+}

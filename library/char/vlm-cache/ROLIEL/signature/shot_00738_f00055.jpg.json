@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "shot_00738_f00055.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932330.825598,
+ "size": 240393,
+ "ts": "2026-10-15T04:58:28Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"blue beaded necklace\", \"red lips\", \"light skin\"],\n \"unmistakable_because\": \"The combination of long, vivid red hair and a distinctive blue beaded necklace makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "blue beaded necklace",
+   "red lips",
+   "light skin"
+  ],
+  "unmistakable_because": "The combination of long, vivid red hair and a distinctive blue beaded necklace makes this figure instantly recognizable."
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "char": "SPIRIT",
+ "lens": "hair",
+ "file": "ComfyUI_00090_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.837751,
+ "size": 5487736,
+ "ts": "2026-10-15T05:00:23Z",
+ "text": "{\n \"color\": \"blond\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"long bangs\"\n}",
+ "json": {
+  "color": "blond",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "long bangs"
+ }
+}

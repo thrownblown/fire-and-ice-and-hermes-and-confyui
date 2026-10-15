@@ -1,0 +1,27 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "wardrobe",
+ "file": "ae69fd_6761d255b64342e2aae915c9395b0d91~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932193.0585334,
+ "size": 38297,
+ "ts": "2026-10-15T05:08:30Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"dark brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting, minimal coverage\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"dark brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"band-like, wraps around upper arms\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "dark brown",
+    "material": "cloth",
+    "cut": "tight-fitting, minimal coverage"
+   },
+   {
+    "item": "arm bands",
+    "color": "dark brown",
+    "material": "cloth",
+    "cut": "band-like, wraps around upper arms"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

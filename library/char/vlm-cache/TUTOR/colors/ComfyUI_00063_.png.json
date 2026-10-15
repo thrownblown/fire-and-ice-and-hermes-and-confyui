@@ -1,0 +1,18 @@
+{
+ "char": "TUTOR",
+ "lens": "colors",
+ "file": "ComfyUI_00063_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5505452,
+ "size": 4507684,
+ "ts": "2026-10-15T05:20:12Z",
+ "text": "{\n \"skin\": \"brown\",\n \"hair\": \"black\",\n \"eyes\": \"dark brown\",\n \"garment_primary\": \"light blue\",\n \"garment_secondary\": \"null\",\n \"metal_accent\": \"gold\"\n}",
+ "json": {
+  "skin": "brown",
+  "hair": "black",
+  "eyes": "dark brown",
+  "garment_primary": "light blue",
+  "garment_secondary": null,
+  "metal_accent": "gold"
+ }
+}

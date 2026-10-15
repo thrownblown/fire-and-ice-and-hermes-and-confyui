@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "s-l1200.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032230.2964208,
+ "size": 147269,
+ "ts": "2026-10-15T10:53:57Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   }
+  ],
+  "weapons": []
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "HQrPej9WYAAcgAV.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032261.3389945,
+ "size": 156348,
+ "ts": "2026-10-15T10:49:44Z",
+ "text": "{\n \"memorable_traits\": [\"long black hair\", \"red lipstick\", \"purple bikini top\", \"gold necklace\"],\n \"unmistakable_because\": \"The combination of long black hair, red lipstick, and a distinctive purple bikini with gold accessories makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "red lipstick",
+   "purple bikini top",
+   "gold necklace"
+  ],
+  "unmistakable_because": "The combination of long black hair, red lipstick, and a distinctive purple bikini with gold accessories makes this figure uniquely identifiable."
+ }
+}

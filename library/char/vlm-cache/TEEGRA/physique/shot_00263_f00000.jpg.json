@@ -1,0 +1,17 @@
+{
+ "char": "TEEGRA",
+ "lens": "physique",
+ "file": "shot_00263_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723622.1734984,
+ "size": 201927,
+ "ts": "2026-10-15T10:54:05Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"young adult\",\n \"build\": \"slim\",\n \"height_impression\": \"average\",\n \"skin_neutral_light\": \"light brown\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "young adult",
+  "build": "slim",
+  "height_impression": "average",
+  "skin_neutral_light": "light brown"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "signature",
+ "file": "shot_00415_f00016.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932188.2041452,
+ "size": 290714,
+ "ts": "2026-10-15T05:09:20Z",
+ "text": "{\n \"memorable_traits\": [\"broad muscular build\", \"dark brown skin\", \"sharp teeth showing in grin\", \"short black hair\", \"necklace with orange pendant\"],\n \"unmistakable_because\": \"The combination of his broad, muscular physique, dark brown skin, and the distinctive sharp-toothed grin makes him instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "broad muscular build",
+   "dark brown skin",
+   "sharp teeth showing in grin",
+   "short black hair",
+   "necklace with orange pendant"
+  ],
+  "unmistakable_because": "The combination of his broad, muscular physique, dark brown skin, and the distinctive sharp-toothed grin makes him instantly recognizable."
+ }
+}

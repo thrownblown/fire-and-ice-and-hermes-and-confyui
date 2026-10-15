@@ -1,0 +1,33 @@
+{
+ "char": "TUTOR",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00063_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5505452,
+ "size": 4507684,
+ "ts": "2026-10-15T05:20:05Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"top\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"strapless, fitted to torso\"\n    },\n    {\n      \"item\": \"skirt\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"flowing, draped from waist to ankles\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"choker-style, segmented\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "top",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "strapless, fitted to torso"
+   },
+   {
+    "item": "skirt",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "flowing, draped from waist to ankles"
+   },
+   {
+    "item": "necklace",
+    "color": "brown",
+    "material": "leather",
+    "cut": "choker-style, segmented"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

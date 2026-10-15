@@ -1,0 +1,22 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "teegra_cosplay_by_synth_crush_di9eund-414w.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032327.0699873,
+ "size": 37541,
+ "ts": "2026-10-15T10:57:49Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark, almond-shaped, looking straight ahead\",\n \"brows\": \"thin, arched, dark\",\n \"nose\": \"small, straight bridge, slightly upturned tip\",\n \"lips\": \"full, glossy, slightly parted\",\n \"distinguishing_features\": [\n  \"eyeliner along upper lash line\",\n  \"dark hair with bangs\",\n  \"choker necklace\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark, almond-shaped, looking straight ahead",
+  "brows": "thin, arched, dark",
+  "nose": "small, straight bridge, slightly upturned tip",
+  "lips": "full, glossy, slightly parted",
+  "distinguishing_features": [
+   "eyeliner along upper lash line",
+   "dark hair with bangs",
+   "choker necklace"
+  ]
+ }
+}
