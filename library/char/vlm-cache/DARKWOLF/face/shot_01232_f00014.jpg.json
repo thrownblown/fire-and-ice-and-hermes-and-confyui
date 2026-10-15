@@ -1,0 +1,21 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "shot_01232_f00014.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.031551,
+ "size": 138722,
+ "ts": "2026-10-15T04:29:07Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and intense\",\n \"brows\": \"thick and arched\",\n \"nose\": \"prominent and wide\",\n \"lips\": \"thin with a grimace\",\n \"distinguishing_features\": [\n  \"horns on head\",\n  \"teeth visible in grin\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and intense",
+  "brows": "thick and arched",
+  "nose": "prominent and wide",
+  "lips": "thin with a grimace",
+  "distinguishing_features": [
+   "horns on head",
+   "teeth visible in grin"
+  ]
+ }
+}

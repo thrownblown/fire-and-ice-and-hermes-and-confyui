@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "shot_00263_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723622.1734984,
+ "size": 201927,
+ "ts": "2026-10-15T10:54:15Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped over shoulders\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"thin chain with pendant\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "loose-fitting, draped over shoulders"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "thin chain with pendant"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,722 @@
+{
+ "char": "SPIRIT",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 70,
+  "ok": 70
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "indeterminate",
+    "share": 0.6,
+    "n": 10,
+    "outliers": [
+     "young adult",
+     "young adult",
+     "elderly",
+     "elderly"
+    ],
+    "all_values": [
+     "young adult",
+     "young adult",
+     "indeterminate",
+     "indeterminate",
+     "indeterminate",
+     "indeterminate",
+     "indeterminate",
+     "indeterminate",
+     "elderly",
+     "elderly"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "slim",
+    "share": 1.0,
+    "n": 10,
+    "outliers": [],
+    "all_values": [
+     "slim",
+     "slim",
+     "slim",
+     "slim",
+     "slim",
+     "slim",
+     "slim",
+     "slim",
+     "slim",
+     "slim"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "average",
+    "share": 0.7,
+    "n": 10,
+    "outliers": [
+     "tall",
+     "tall",
+     "tall"
+    ],
+    "all_values": [
+     "tall",
+     "tall",
+     "tall",
+     "average",
+     "average",
+     "average",
+     "average",
+     "average",
+     "average",
+     "average"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "female",
+    "share": 0.8,
+    "n": 10,
+    "outliers": [
+     "indeterminate",
+     "indeterminate"
+    ],
+    "all_values": [
+     "female",
+     "female",
+     "female",
+     "female",
+     "female",
+     "female",
+     "female",
+     "female",
+     "indeterminate",
+     "indeterminate"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "pale",
+    "share": 1.0,
+    "n": 10,
+    "outliers": [],
+    "all_values": [
+     "pale",
+     "pale",
+     "pale",
+     "pale",
+     "pale",
+     "pale",
+     "pale",
+     "pale",
+     "pale",
+     "pale"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 10,
+    "stable_items": [
+     "long white hair"
+    ],
+    "disputed_items": [
+     "long blonde hair",
+     "long hair",
+     "necklace",
+     "skull structure",
+     "visible ribcage",
+     "visible teeth"
+    ],
+    "counts": {
+     "long blonde hair": 2,
+     "long hair": 2,
+     "long white hair": 6,
+     "necklace": 2,
+     "skull structure": 4,
+     "visible ribcage": 2,
+     "visible teeth": 1
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "black circles",
+    "share": 0.5,
+    "n": 10,
+    "outliers": [
+     "black hollow sockets",
+     "black hollow sockets",
+     "black hollow sockets",
+     "black hollow sockets",
+     "black hollow sockets"
+    ],
+    "all_values": [
+     "black circles",
+     "black hollow sockets",
+     "black circles",
+     "black hollow sockets",
+     "black hollow sockets",
+     "black hollow sockets",
+     "black circles",
+     "black hollow sockets",
+     "black hollow circles",
+     "black circles"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 10,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "grinning teeth",
+    "share": 0.375,
+    "n": 8,
+    "outliers": [
+     "thin line with teeth visible",
+     "visible teeth in mouth",
+     "thin and cracked",
+     "grinning teeth visible",
+     "empty socket"
+    ],
+    "all_values": [
+     "thin line with teeth visible",
+     "visible teeth in mouth",
+     "grinning teeth",
+     "grinning teeth",
+     "grinning teeth exposed",
+     "thin and cracked",
+     "grinning teeth visible",
+     "empty socket"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "skeletal shape",
+    "share": 0.25,
+    "n": 8,
+    "outliers": [
+     "triangular shape",
+     "skeletal structure",
+     "skeletal structure",
+     "hollow nasal cavity",
+     "bone structure with two holes",
+     "empty socket"
+    ],
+    "all_values": [
+     "triangular shape",
+     "skeletal structure",
+     "skeletal shape",
+     "skeletal structure",
+     "hollow nasal cavity",
+     "skeletal shape",
+     "bone structure with two holes",
+     "empty socket"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "white",
+    "share": 0.8,
+    "n": 10,
+    "outliers": [
+     "blond",
+     "blond"
+    ],
+    "all_values": [
+     "blond",
+     "blond",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "long",
+    "share": 1.0,
+    "n": 10,
+    "outliers": [],
+    "all_values": [
+     "very long",
+     "very long",
+     "very long",
+     "very long",
+     "long",
+     "very long",
+     "very long",
+     "very long",
+     "long",
+     "very long"
+    ],
+    "stable": true
+   },
+   "notes": {
+    "kind": "str",
+    "value": "bangs",
+    "share": 0.4,
+    "n": 10,
+    "outliers": [
+     "long white hair falls past shoulders; no bangs or accessories visible",
+     "long white hair falls past shoulders; no bangs or accessories visible",
+     "hair falls past shoulders, no bangs or accessories",
+     "hair falls past shoulders; no bangs or accessories",
+     "long white hair flows down past shoulders; no bangs or accessories visible",
+     "long white hair flows down past shoulders; no bangs or accessories visible"
+    ],
+    "all_values": [
+     "long bangs",
+     "long bangs",
+     "long straight hair falls past shoulders; bangs cover forehead",
+     "long white hair falls past shoulders; no bangs or accessories visible",
+     "bangs",
+     "long white hair falls past shoulders; no bangs or accessories visible",
+     "long white hair flows down past shoulders; no bangs or accessories visible",
+     "long white hair flows down past shoulders; no bangs or accessories visible",
+     "hair falls past shoulders, no bangs or accessories",
+     "hair falls past shoulders; no bangs or accessories"
+    ],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "loose",
+    "share": 1.0,
+    "n": 10,
+    "outliers": [],
+    "all_values": [
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 10,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 10,
+    "stable_items": [
+     "necklace",
+     "tunic"
+    ],
+    "disputed_items": [
+     "boots",
+     "dress"
+    ],
+    "detail": {
+     "boots": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "dress": {
+      "n": 3,
+      "values": [
+       "black",
+       "black",
+       "black"
+      ]
+     },
+     "necklace": {
+      "n": 9,
+      "values": [
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue"
+      ]
+     },
+     "tunic": {
+      "n": 6,
+      "values": [
+       "black",
+       "black",
+       "black",
+       "black",
+       "black",
+       "white"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "fully dressed",
+    "share": 0.5,
+    "n": 10,
+    "outliers": [
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "all_values": [
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "fully dressed",
+     "fully dressed",
+     "partially clad",
+     "partially clad"
+    ],
+    "stable": false
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 10,
+    "stable_items": [],
+    "disputed_items": [
+     "bracelet",
+     "necklace"
+    ],
+    "detail": {
+     "bracelet": {
+      "n": 1,
+      "values": [
+       "dark blue"
+      ]
+     },
+     "necklace": {
+      "n": 5,
+      "values": [
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue",
+       "dark blue"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 10,
+    "stable_items": [],
+    "disputed_items": [],
+    "counts": {}
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 10,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.9,
+    "n": 10,
+    "outliers": [
+     "dark blue"
+    ],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "dark blue"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "hair": {
+    "kind": "str",
+    "value": "white",
+    "share": 0.8,
+    "n": 10,
+    "outliers": [
+     "blond",
+     "blond"
+    ],
+    "all_values": [
+     "blond",
+     "blond",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "skin": {
+    "kind": "str",
+    "value": "white",
+    "share": 0.7,
+    "n": 10,
+    "outliers": [
+     "gray",
+     "gray",
+     "gray"
+    ],
+    "all_values": [
+     "gray",
+     "gray",
+     "gray",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 10,
+    "stable_items": [
+     "long white hair"
+    ],
+    "disputed_items": [
+     "black beaded necklace",
+     "black collar",
+     "black dress",
+     "dark circular neck ornament",
+     "dark collar",
+     "dark patterned top",
+     "high heels",
+     "long blonde hair",
+     "skeletal face",
+     "skeletal face with dark eye sockets",
+     "skeleton",
+     "skeleton body",
+     "skeleton face",
+     "skull face",
+     "visible ribcage",
+     "visible skeleton structure"
+    ],
+    "counts": {
+     "black beaded necklace": 1,
+     "black collar": 3,
+     "black dress": 3,
+     "dark circular neck ornament": 1,
+     "dark collar": 1,
+     "dark patterned top": 1,
+     "high heels": 1,
+     "long blonde hair": 2,
+     "long white hair": 8,
+     "skeletal face": 3,
+     "skeletal face with dark eye sockets": 1,
+     "skeleton": 1,
+     "skeleton body": 1,
+     "skeleton face": 2,
+     "skull face": 1,
+     "visible ribcage": 1,
+     "visible skeleton structure": 1
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the figure's skull-like head and long white hair are uniquely combined with a black collar, creating an instantly recognizable silhouette.",
+    "share": 0.2,
+    "n": 10,
+    "outliers": [
+     "The combination of long blonde hair, a visible skeletal frame, and a black dress makes this figure uniquely identifiable.",
+     "The combination of a skull-like face, long blonde hair, and a black dress makes this figure uniquely identifiable.",
+     "The combination of a fully visible skeletal structure, long flowing white hair, and a black dress makes this figure uniquely identifiable.",
+     "The figure's skull-like head with long white hair and exposed skeletal structure make it instantly recognizable.",
+     "The figure's skull-like head and long white hair are uniquely combined to form an instantly recognizable silhouette.",
+     "The figure's skull-like head and long white hair combined with its skeletal frame make it instantly recognizable.",
+     "The figure is a skeletal humanoid with long white hair and a black beaded necklace, making it instantly recognizable.",
+     "The figure's skull-like head and long white hair combined with its dark, ornamental collar make it instantly recognizable."
+    ],
+    "all_values": [
+     "The combination of long blonde hair, a visible skeletal frame, and a black dress makes this figure uniquely identifiable.",
+     "The combination of a skull-like face, long blonde hair, and a black dress makes this figure uniquely identifiable.",
+     "The combination of a fully visible skeletal structure, long flowing white hair, and a black dress makes this figure uniquely identifiable.",
+     "The figure's skull-like head and long white hair are uniquely combined with a black collar, creating an instantly recognizable silhouette.",
+     "The figure's skull-like head and long white hair are uniquely combined with a black collar, creating an instantly recognizable silhouette.",
+     "The figure's skull-like head with long white hair and exposed skeletal structure make it instantly recognizable.",
+     "The figure's skull-like head and long white hair are uniquely combined to form an instantly recognizable silhouette.",
+     "The figure's skull-like head and long white hair combined with its skeletal frame make it instantly recognizable.",
+     "The figure is a skeletal humanoid with long white hair and a black beaded necklace, making it instantly recognizable.",
+     "The figure's skull-like head and long white hair combined with its dark, ornamental collar make it instantly recognizable."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.eyes",
+  "colors.garment_primary",
+  "colors.hair",
+  "colors.skin",
+  "face.distinguishing_features:long white hair",
+  "face.face_shape",
+  "hair.color",
+  "hair.length",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "signature.memorable_traits:long white hair",
+  "wardrobe.garments:necklace",
+  "wardrobe.garments:tunic"
+ ],
+ "disputed": [
+  "face.distinguishing_features:long blonde hair",
+  "face.distinguishing_features:long hair",
+  "face.distinguishing_features:necklace",
+  "face.distinguishing_features:skull structure",
+  "face.distinguishing_features:visible ribcage",
+  "face.distinguishing_features:visible teeth",
+  "face.eyes",
+  "face.lips",
+  "face.nose",
+  "hair.notes",
+  "props.items:bracelet",
+  "props.items:necklace",
+  "signature.memorable_traits:black beaded necklace",
+  "signature.memorable_traits:black collar",
+  "signature.memorable_traits:black dress",
+  "signature.memorable_traits:dark circular neck ornament",
+  "signature.memorable_traits:dark collar",
+  "signature.memorable_traits:dark patterned top",
+  "signature.memorable_traits:high heels",
+  "signature.memorable_traits:long blonde hair",
+  "signature.memorable_traits:skeletal face",
+  "signature.memorable_traits:skeletal face with dark eye sockets",
+  "signature.memorable_traits:skeleton",
+  "signature.memorable_traits:skeleton body",
+  "signature.memorable_traits:skeleton face",
+  "signature.memorable_traits:skull face",
+  "signature.memorable_traits:visible ribcage",
+  "signature.memorable_traits:visible skeleton structure",
+  "signature.unmistakable_because",
+  "wardrobe.garments:boots",
+  "wardrobe.garments:dress",
+  "wardrobe.state_of_dress"
+ ],
+ "prompt_block": "indeterminate female, slim build, average height impression, pale skin, white long straight loose hair, oval face, black eyes, dressed in black, wearing necklace, tunic, memorable for long white hair."
+}

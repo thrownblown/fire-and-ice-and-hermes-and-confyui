@@ -1,0 +1,27 @@
+{
+ "char": "SPIRIT",
+ "lens": "wardrobe",
+ "file": "shot_00767_f00104.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932288.698849,
+ "size": 356595,
+ "ts": "2026-10-15T05:02:36Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped over the torso\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"circular, hanging around the neck\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose-fitting, draped over the torso"
+   },
+   {
+    "item": "necklace",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "circular, hanging around the neck"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

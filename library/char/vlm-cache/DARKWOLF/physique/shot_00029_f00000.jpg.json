@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "physique",
+ "file": "shot_00029_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159404.7391505,
+ "size": 289932,
+ "ts": "2026-10-15T04:28:27Z",
+ "text": "{\n \"sex\": \"indeterminate\",\n \"age_range\": \"young adult\",\n \"build\": \"slim\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"dark\"\n}",
+ "json": {
+  "sex": "indeterminate",
+  "age_range": "young adult",
+  "build": "slim",
+  "height_impression": "tall",
+  "skin_neutral_light": "dark"
+ }
+}

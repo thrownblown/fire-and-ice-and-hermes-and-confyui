@@ -1,0 +1,45 @@
+{
+ "char": "JAROL",
+ "lens": "props",
+ "file": "ComfyUI_00033_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935131.8724194,
+ "size": 4286778,
+ "ts": "2026-10-15T04:30:08Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"ears\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"arms\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"feet\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "earrings",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "ears"
+   },
+   {
+    "item": "belt",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   },
+   {
+    "item": "arm bands",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "arms"
+   },
+   {
+    "item": "boots",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "feet"
+   }
+  ],
+  "weapons": []
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "char": "NEKRON",
+ "lens": "physique",
+ "file": "NEKRON_r05_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643403.48,
+ "size": 4219551,
+ "ts": "2026-10-15T04:42:50Z",
+ "text": "{\n \"sex\": \"male\",\n \"age_range\": \"middle-aged\",\n \"build\": \"slim\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"pale\"\n}",
+ "json": {
+  "sex": "male",
+  "age_range": "middle-aged",
+  "build": "slim",
+  "height_impression": "tall",
+  "skin_neutral_light": "pale"
+ }
+}

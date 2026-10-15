@@ -1,0 +1,20 @@
+{
+ "char": "JULIANNA",
+ "lens": "signature",
+ "file": "JULIANA_r03_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643047.7,
+ "size": 4331290,
+ "ts": "2026-10-15T04:32:35Z",
+ "text": "{\n \"memorable_traits\": [\"long black hair\", \"purple gown with high slit\", \"red lips\", \"dark eye makeup\", \"tall and slender build\"],\n \"unmistakable_because\": \"The combination of long black hair, a distinctive purple gown with a high slit, and bold red lips makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "purple gown with high slit",
+   "red lips",
+   "dark eye makeup",
+   "tall and slender build"
+  ],
+  "unmistakable_because": "The combination of long black hair, a distinctive purple gown with a high slit, and bold red lips makes this figure instantly recognizable."
+ }
+}

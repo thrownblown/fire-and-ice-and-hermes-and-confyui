@@ -1,0 +1,21 @@
+{
+ "char": "DARKWOLF",
+ "lens": "props",
+ "file": "darkwolf_mask_closeup.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3846512,
+ "size": 8520,
+ "ts": "2026-10-15T04:26:04Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"skull pendant\",\n      \"color\": \"white\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "skull pendant",
+    "color": "white",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   }
+  ],
+  "weapons": []
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "OTWA",
+ "lens": "signature",
+ "file": "otwa_full_loincloth.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931887.0075073,
+ "size": 19020,
+ "ts": "2026-10-15T04:44:15Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"muscular build\", \"bare chest\", \"brown loincloth\"],\n \"unmistakable_because\": \"The figure's long, flowing red hair and muscular physique make it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "muscular build",
+   "bare chest",
+   "brown loincloth"
+  ],
+  "unmistakable_because": "The figure's long, flowing red hair and muscular physique make it instantly recognizable."
+ }
+}

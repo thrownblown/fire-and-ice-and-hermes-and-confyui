@@ -1,0 +1,21 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "face",
+ "file": "ComfyUI_00098_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935235.9692163,
+ "size": 4418573,
+ "ts": "2026-10-15T05:08:04Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and intense\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and broad\",\n \"lips\": \"thin with bared teeth\",\n \"distinguishing_features\": [\n  \"mohawk hairstyle\",\n  \"necklace with orange pendant\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and intense",
+  "brows": "thick and arched",
+  "nose": "large and broad",
+  "lips": "thin with bared teeth",
+  "distinguishing_features": [
+   "mohawk hairstyle",
+   "necklace with orange pendant"
+  ]
+ }
+}

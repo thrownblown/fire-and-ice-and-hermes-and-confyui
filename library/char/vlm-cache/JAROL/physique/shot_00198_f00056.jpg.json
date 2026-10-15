@@ -1,0 +1,17 @@
+{
+ "char": "JAROL",
+ "lens": "physique",
+ "file": "shot_00198_f00056.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729663.6465838,
+ "size": 231980,
+ "ts": "2026-10-15T04:30:39Z",
+ "text": "{\n \"sex\": \"male\",\n \"age_range\": \"elderly\",\n \"build\": \"stocky\",\n \"height_impression\": \"imposing\",\n \"skin_neutral_light\": \"light brown\"\n}",
+ "json": {
+  "sex": "male",
+  "age_range": "elderly",
+  "build": "stocky",
+  "height_impression": "imposing",
+  "skin_neutral_light": "light brown"
+ }
+}

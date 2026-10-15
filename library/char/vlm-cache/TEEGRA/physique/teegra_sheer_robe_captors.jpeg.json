@@ -1,0 +1,17 @@
+{
+ "char": "TEEGRA",
+ "lens": "physique",
+ "file": "teegra_sheer_robe_captors.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 48067,
+ "ts": "2026-10-15T10:58:02Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"young adult\",\n \"build\": \"slim\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"light brown\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "young adult",
+  "build": "slim",
+  "height_impression": "tall",
+  "skin_neutral_light": "light brown"
+ }
+}

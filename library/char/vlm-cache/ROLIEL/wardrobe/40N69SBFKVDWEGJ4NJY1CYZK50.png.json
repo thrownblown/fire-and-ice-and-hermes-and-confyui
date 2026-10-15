@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "40N69SBFKVDWEGJ4NJY1CYZK50.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.617513,
+ "size": 1133091,
+ "ts": "2026-10-15T04:47:10Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"deeply cut, clinging to the body\"\n    },\n    {\n      \"item\": \"cloak\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"flowing, draped over one shoulder and down the back\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"dark blue\",\n      \"material\": \"metal\",\n      \"cut\": \"wide, with a central circular buckle\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "deeply cut, clinging to the body"
+   },
+   {
+    "item": "cloak",
+    "color": "white",
+    "material": "cloth",
+    "cut": "flowing, draped over one shoulder and down the back"
+   },
+   {
+    "item": "belt",
+    "color": "dark blue",
+    "material": "metal",
+    "cut": "wide, with a central circular buckle"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

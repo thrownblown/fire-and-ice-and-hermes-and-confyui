@@ -1,0 +1,20 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "JAE8X97HGYA7SCYWA74PC9FDC0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7805843,
+ "size": 1245669,
+ "ts": "2026-10-15T04:52:12Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"glowing orange eyes\", \"blue choker\", \"nude body\", \"sitting on glowing pentagram\"],\n \"unmistakable_because\": \"The combination of long, flowing red hair and glowing orange eyes makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "glowing orange eyes",
+   "blue choker",
+   "nude body",
+   "sitting on glowing pentagram"
+  ],
+  "unmistakable_because": "The combination of long, flowing red hair and glowing orange eyes makes this figure instantly recognizable."
+ }
+}

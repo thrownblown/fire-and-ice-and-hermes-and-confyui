@@ -1,0 +1,17 @@
+{
+ "char": "JULIANNA",
+ "lens": "physique",
+ "file": "JULIANA_r03_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643047.7,
+ "size": 4331290,
+ "ts": "2026-10-15T04:32:13Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"young adult\",\n \"build\": \"slim\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"light\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "young adult",
+  "build": "slim",
+  "height_impression": "tall",
+  "skin_neutral_light": "light"
+ }
+}

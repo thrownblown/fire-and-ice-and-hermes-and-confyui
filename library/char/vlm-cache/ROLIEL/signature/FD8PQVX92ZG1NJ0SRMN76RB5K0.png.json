@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "FD8PQVX92ZG1NJ0SRMN76RB5K0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.6115143,
+ "size": 1107880,
+ "ts": "2026-10-15T04:51:46Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"white flowing gown\", \"dark blue choker\", \"blue armbands\"],\n \"unmistakable_because\": \"The combination of long, vibrant red hair and the sheer white gown with dark accessories creates a unique visual signature.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "white flowing gown",
+   "dark blue choker",
+   "blue armbands"
+  ],
+  "unmistakable_because": "The combination of long, vibrant red hair and the sheer white gown with dark accessories creates a unique visual signature."
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00773_f00022.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025480.7561285,
+ "size": 274844,
+ "ts": "2026-10-15T04:40:17Z",
+ "text": "{\n \"memorable_traits\": [\"blond hair\", \"blue eyes\", \"earrings\", \"open mouth in scream\"],\n \"unmistakable_because\": \"The combination of blond hair, blue eyes, and the intense facial expression with open mouth makes this figure unmistakable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "blue eyes",
+   "earrings",
+   "open mouth in scream"
+  ],
+  "unmistakable_because": "The combination of blond hair, blue eyes, and the intense facial expression with open mouth makes this figure unmistakable."
+ }
+}

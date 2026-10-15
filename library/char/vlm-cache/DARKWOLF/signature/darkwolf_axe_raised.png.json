@@ -1,0 +1,19 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "darkwolf_axe_raised.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3921602,
+ "size": 172581,
+ "ts": "2026-10-15T04:25:12Z",
+ "text": "{\n \"memorable_traits\": [\"muscular build\", \"bear-like head with long dark hair\", \"skull necklace\", \"holding a double-bladed axe\"],\n \"unmistakable_because\": \"The combination of the bear-like head, muscular physique, and skull necklace makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "muscular build",
+   "bear-like head with long dark hair",
+   "skull necklace",
+   "holding a double-bladed axe"
+  ],
+  "unmistakable_because": "The combination of the bear-like head, muscular physique, and skull necklace makes this figure instantly recognizable."
+ }
+}

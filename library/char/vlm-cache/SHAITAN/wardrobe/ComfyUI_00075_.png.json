@@ -1,0 +1,14 @@
+{
+ "char": "SHAITAN",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00075_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932052.4662485,
+ "size": 3202763,
+ "ts": "2026-10-15T04:59:10Z",
+ "text": "{\n  \"garments\": [],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [],
+  "state_of_dress": "partially clad"
+ }
+}

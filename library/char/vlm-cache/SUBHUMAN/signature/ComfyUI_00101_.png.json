@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "ComfyUI_00101_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935247.9190593,
+ "size": 3612424,
+ "ts": "2026-10-15T05:03:15Z",
+ "text": "{\n  \"memorable_traits\": [\"long dark hair\", \"broad muscular build\", \"dark skin tone\", \"simple loincloth\"],\n  \"unmistakable_because\": \"The combination of long dark hair, immense musculature, and the distinctive simple loincloth makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "broad muscular build",
+   "dark skin tone",
+   "simple loincloth"
+  ],
+  "unmistakable_because": "The combination of long dark hair, immense musculature, and the distinctive simple loincloth makes this figure instantly recognizable."
+ }
+}

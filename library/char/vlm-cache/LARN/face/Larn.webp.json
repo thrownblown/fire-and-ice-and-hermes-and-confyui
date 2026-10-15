@@ -1,0 +1,22 @@
+{
+ "char": "LARN",
+ "lens": "face",
+ "file": "Larn.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932029.0960357,
+ "size": 18160,
+ "ts": "2026-10-15T04:35:17Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark, intense gaze\",\n \"brows\": \"thin, arched\",\n \"nose\": \"straight, prominent bridge\",\n \"lips\": \"full, slightly parted\",\n \"distinguishing_features\": [\n  \"blond hair\",\n  \"necklace with circular pendant\",\n  \"belt with gold buckle\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark, intense gaze",
+  "brows": "thin, arched",
+  "nose": "straight, prominent bridge",
+  "lips": "full, slightly parted",
+  "distinguishing_features": [
+   "blond hair",
+   "necklace with circular pendant",
+   "belt with gold buckle"
+  ]
+ }
+}

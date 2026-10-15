@@ -1,0 +1,17 @@
+{
+ "char": "SPIRIT",
+ "lens": "hair",
+ "file": "shot_00759_f00100.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932277.043583,
+ "size": 347277,
+ "ts": "2026-10-15T05:01:16Z",
+ "text": "{\n \"color\": \"white\",\n \"length\": \"long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"bangs\"\n}",
+ "json": {
+  "color": "white",
+  "length": "long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "bangs"
+ }
+}

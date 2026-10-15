@@ -1,0 +1,18 @@
+{
+ "char": "JAROL",
+ "lens": "colors",
+ "file": "ComfyUI_00033_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935131.8724194,
+ "size": 4286778,
+ "ts": "2026-10-15T04:30:11Z",
+ "text": "{\n \"skin\": \"tan\",\n \"hair\": \"white\",\n \"eyes\": \"green\",\n \"garment_primary\": \"maroon\",\n \"garment_secondary\": null,\n \"metal_accent\": \"gold\"\n}",
+ "json": {
+  "skin": "tan",
+  "hair": "white",
+  "eyes": "green",
+  "garment_primary": "maroon",
+  "garment_secondary": null,
+  "metal_accent": "gold"
+ }
+}

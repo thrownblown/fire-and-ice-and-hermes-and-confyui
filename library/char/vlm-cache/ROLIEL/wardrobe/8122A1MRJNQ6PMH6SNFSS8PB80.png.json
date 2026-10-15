@@ -1,0 +1,39 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "8122A1MRJNQ6PMH6SNFSS8PB80.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7745845,
+ "size": 1258473,
+ "ts": "2026-10-15T04:48:20Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"waistband with patterned trim\"\n    },\n    {\n      \"item\": \"bracelets\",\n      \"color\": \"blue\",\n      \"material\": \"unknown\",\n      \"cut\": \"woven or beaded, wrapped around wrists\"\n    },\n    {\n      \"item\": \"choker\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"neckband with patterned trim\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   },
+   {
+    "item": "belt",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "waistband with patterned trim"
+   },
+   {
+    "item": "bracelets",
+    "color": "blue",
+    "material": "unknown",
+    "cut": "woven or beaded, wrapped around wrists"
+   },
+   {
+    "item": "choker",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "neckband with patterned trim"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

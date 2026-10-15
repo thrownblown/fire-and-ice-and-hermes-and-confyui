@@ -1,0 +1,33 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "shot_00370_f00021.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723643.1292088,
+ "size": 305036,
+ "ts": "2026-10-15T10:56:06Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"top\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"strapless, fitted\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"choker-style\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"dangling\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "top",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "strapless, fitted"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "choker-style"
+   },
+   {
+    "item": "earrings",
+    "color": "gold",
+    "material": "metal",
+    "cut": "dangling"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

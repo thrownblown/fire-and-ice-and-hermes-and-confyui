@@ -1,0 +1,21 @@
+{
+ "char": "OTWA",
+ "lens": "face",
+ "file": "otwa_full_loincloth.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931887.0075073,
+ "size": 19020,
+ "ts": "2026-10-15T04:44:05Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide open\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and broad\",\n \"lips\": \"full and slightly parted\",\n \"distinguishing_features\": [\n  \"long red hair\",\n  \"muscular build\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide open",
+  "brows": "thick and arched",
+  "nose": "large and broad",
+  "lips": "full and slightly parted",
+  "distinguishing_features": [
+   "long red hair",
+   "muscular build"
+  ]
+ }
+}

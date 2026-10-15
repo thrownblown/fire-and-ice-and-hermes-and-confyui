@@ -1,0 +1,33 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "frazetta_death_dealer_axe_raised.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3901615,
+ "size": 60006,
+ "ts": "2026-10-15T04:26:55Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"helmet\",\n      \"color\": \"dark metallic\",\n      \"material\": \"metal\",\n      \"cut\": \"tightly fitted with horned crest\"\n    },\n    {\n      \"item\": \"armor\",\n      \"color\": \"dark metallic\",\n      \"material\": \"metal\",\n      \"cut\": \"plate armor covering torso and limbs\"\n    },\n    {\n      \"item\": \"shield\",\n      \"color\": \"dark metallic\",\n      \"material\": \"metal\",\n      \"cut\": \"oval with embossed emblem\"\n    }\n  ],\n  \"state_of_dress\": \"armored\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "helmet",
+    "color": "dark metallic",
+    "material": "metal",
+    "cut": "tightly fitted with horned crest"
+   },
+   {
+    "item": "armor",
+    "color": "dark metallic",
+    "material": "metal",
+    "cut": "plate armor covering torso and limbs"
+   },
+   {
+    "item": "shield",
+    "color": "dark metallic",
+    "material": "metal",
+    "cut": "oval with embossed emblem"
+   }
+  ],
+  "state_of_dress": "armored"
+ }
+}

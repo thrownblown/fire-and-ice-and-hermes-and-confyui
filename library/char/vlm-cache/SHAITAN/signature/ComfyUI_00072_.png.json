@@ -1,0 +1,18 @@
+{
+ "char": "SHAITAN",
+ "lens": "signature",
+ "file": "ComfyUI_00072_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932052.471479,
+ "size": 2249342,
+ "ts": "2026-10-15T04:59:02Z",
+ "text": "{\n \"memorable_traits\": [\"black fur\", \"yellow eyes\", \"prominent whiskers\"],\n \"unmistakable_because\": \"The figure's entirely black silhouette combined with its bright yellow eyes creates a unique and instantly recognizable visual signature.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "black fur",
+   "yellow eyes",
+   "prominent whiskers"
+  ],
+  "unmistakable_because": "The figure's entirely black silhouette combined with its bright yellow eyes creates a unique and instantly recognizable visual signature."
+ }
+}

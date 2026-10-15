@@ -1,0 +1,18 @@
+{
+ "char": "SPIRIT",
+ "lens": "signature",
+ "file": "ComfyUI_00090_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.837751,
+ "size": 5487736,
+ "ts": "2026-10-15T05:00:32Z",
+ "text": "{\n \"memorable_traits\": [\"long blonde hair\", \"skeleton face\", \"black dress\"],\n \"unmistakable_because\": \"The combination of a skull-like face, long blonde hair, and a black dress makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long blonde hair",
+   "skeleton face",
+   "black dress"
+  ],
+  "unmistakable_because": "The combination of a skull-like face, long blonde hair, and a black dress makes this figure uniquely identifiable."
+ }
+}

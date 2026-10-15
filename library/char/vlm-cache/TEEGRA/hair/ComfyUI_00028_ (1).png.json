@@ -1,0 +1,17 @@
+{
+ "char": "TEEGRA",
+ "lens": "hair",
+ "file": "ComfyUI_00028_ (1).png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.5850036,
+ "size": 4583561,
+ "ts": "2026-10-15T10:49:04Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"bangs\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "bangs"
+ }
+}

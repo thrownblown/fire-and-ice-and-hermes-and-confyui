@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "s-l1200.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032230.2964208,
+ "size": 147269,
+ "ts": "2026-10-15T10:54:02Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"eyebrow shape\", \"body build\", \"necklace\"],\n \"unmistakable_because\": \"The combination of long dark hair, distinct eyebrow shape, and specific body proportions make this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "eyebrow shape",
+   "body build",
+   "necklace"
+  ],
+  "unmistakable_because": "The combination of long dark hair, distinct eyebrow shape, and specific body proportions make this figure uniquely identifiable."
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "shot_00280_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723634.4802587,
+ "size": 158560,
+ "ts": "2026-10-15T10:55:30Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"ears\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "earrings",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "ears"
+   }
+  ],
+  "weapons": []
+ }
+}

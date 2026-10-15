@@ -1,0 +1,33 @@
+{
+ "char": "JAROL",
+ "lens": "wardrobe",
+ "file": "shot_00206_f00024.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729666.0413432,
+ "size": 255331,
+ "ts": "2026-10-15T04:31:15Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"red\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"multiple circular links\"\n    },\n    {\n      \"item\": \"earring\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"teardrop-shaped\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "red",
+    "material": "cloth",
+    "cut": "loose-fitting"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "multiple circular links"
+   },
+   {
+    "item": "earring",
+    "color": "gold",
+    "material": "metal",
+    "cut": "teardrop-shaped"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "char": "TUTOR",
+ "lens": "physique",
+ "file": "shot_00230_f00040.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5540402,
+ "size": 211985,
+ "ts": "2026-10-15T05:21:27Z",
+ "text": "{\n \"sex\": \"male\",\n \"age_range\": \"young adult\",\n \"build\": \"muscular\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"tan\"\n}",
+ "json": {
+  "sex": "male",
+  "age_range": "young adult",
+  "build": "muscular",
+  "height_impression": "tall",
+  "skin_neutral_light": "tan"
+ }
+}

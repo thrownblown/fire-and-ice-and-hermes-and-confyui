@@ -1,0 +1,20 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "ComfyUI_00077_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935159.4630673,
+ "size": 4873563,
+ "ts": "2026-10-15T04:34:13Z",
+ "text": "{\n \"memorable_traits\": [\"long blonde braid\", \"large hoop earrings\", \"tattooed neck\", \"muscular build\", \"dark brown skin\"],\n \"unmistakable_because\": \"The combination of the long blonde braid, large hoop earrings, and tattooed neck uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long blonde braid",
+   "large hoop earrings",
+   "tattooed neck",
+   "muscular build",
+   "dark brown skin"
+  ],
+  "unmistakable_because": "The combination of the long blonde braid, large hoop earrings, and tattooed neck uniquely identifies this figure."
+ }
+}

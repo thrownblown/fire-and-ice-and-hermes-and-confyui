@@ -1,0 +1,20 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "ComfyUI_00020_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159331.143274,
+ "size": 3935365,
+ "ts": "2026-10-15T04:24:30Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"glowing green\",\n \"brows\": \"null\",\n \"nose\": \"null\",\n \"lips\": \"null\",\n \"distinguishing_features\": [\n  \"skull necklace\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "glowing green",
+  "brows": null,
+  "nose": null,
+  "lips": null,
+  "distinguishing_features": [
+   "skull necklace"
+  ]
+ }
+}

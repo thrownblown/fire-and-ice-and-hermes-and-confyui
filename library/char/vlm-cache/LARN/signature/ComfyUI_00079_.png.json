@@ -1,0 +1,21 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "ComfyUI_00079_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931907.6132612,
+ "size": 4384179,
+ "ts": "2026-10-15T04:35:12Z",
+ "text": "{\n \"memorable_traits\": [\"long blonde braided hair\", \"blue eyes\", \"gold hoop earrings\", \"tall muscular build\", \"brown leather belt with gold buckle\", \"dark shorts and boots\"],\n \"unmistakable_because\": \"The combination of long blonde braided hair, blue eyes, and distinctive gold hoop earrings makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long blonde braided hair",
+   "blue eyes",
+   "gold hoop earrings",
+   "tall muscular build",
+   "brown leather belt with gold buckle",
+   "dark shorts and boots"
+  ],
+  "unmistakable_because": "The combination of long blonde braided hair, blue eyes, and distinctive gold hoop earrings makes this figure instantly recognizable."
+ }
+}

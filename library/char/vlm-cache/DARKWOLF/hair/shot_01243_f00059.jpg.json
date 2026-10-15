@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "shot_01243_f00059.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.031551,
+ "size": 169758,
+ "ts": "2026-10-15T04:29:29Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"covered\",\n \"notes\": \"hair covers the face and appears to be tied back or pulled up\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very long",
+  "texture": "straight",
+  "style": "covered",
+  "notes": "hair covers the face and appears to be tied back or pulled up"
+ }
+}

@@ -1,0 +1,1067 @@
+{
+ "char": "DARKWOLF",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 91,
+  "ok": 91
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "young adult",
+    "share": 0.8461538461538461,
+    "n": 13,
+    "outliers": [
+     "middle-aged",
+     "middle-aged"
+    ],
+    "all_values": [
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "middle-aged",
+     "middle-aged",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "muscular",
+    "share": 0.9230769230769231,
+    "n": 13,
+    "outliers": [
+     "slim"
+    ],
+    "all_values": [
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "slim",
+     "muscular",
+     "muscular",
+     "muscular"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "tall",
+    "share": 0.7692307692307693,
+    "n": 13,
+    "outliers": [
+     "imposing",
+     "imposing",
+     "imposing"
+    ],
+    "all_values": [
+     "tall",
+     "imposing",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "imposing",
+     "tall",
+     "imposing"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "male",
+    "share": 0.9230769230769231,
+    "n": 13,
+    "outliers": [
+     "indeterminate"
+    ],
+    "all_values": [
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "indeterminate",
+     "male",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "dark",
+    "share": 0.8461538461538461,
+    "n": 13,
+    "outliers": [
+     "tan",
+     "reddish-brown"
+    ],
+    "all_values": [
+     "brown",
+     "dark brown",
+     "brown",
+     "brown",
+     "tan",
+     "brown",
+     "brown",
+     "dark brown",
+     "dark brown",
+     "dark",
+     "dark brown",
+     "reddish-brown",
+     "brown"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thick, arched",
+    "share": 0.4444444444444444,
+    "n": 9,
+    "outliers": [
+     "dark, thick, arched",
+     "dark, thick, arched",
+     "dark and arched",
+     "thick and curved",
+     "dark and thick"
+    ],
+    "all_values": [
+     "thick and arched",
+     "thick and arched",
+     "dark, thick, arched",
+     "thick, arched",
+     "dark, thick, arched",
+     "dark and arched",
+     "thick and curved",
+     "thick and arched",
+     "dark and thick"
+    ],
+    "stable": false
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 13,
+    "stable_items": [],
+    "disputed_items": [
+     "beard",
+     "black fur covering face",
+     "black fur covering head and shoulders",
+     "black fur mask with horns",
+     "black fur-like hair covering head and shoulders",
+     "black mask covering forehead and eyes",
+     "black panther mask with pointed ears",
+     "horn-like protrusions from head",
+     "horns on head",
+     "long dark hair",
+     "long hair",
+     "metallic helmet covering most of face",
+     "metallic helmet with spikes",
+     "necklace with skull",
+     "necklace with skull pendant",
+     "pointed ears",
+     "skull necklace",
+     "skull pendant on chest",
+     "teeth visible in grin",
+     "white fang-like teeth visible",
+     "white markings around mouth"
+    ],
+    "counts": {
+     "beard": 1,
+     "black fur covering face": 1,
+     "black fur covering head and shoulders": 1,
+     "black fur mask with horns": 1,
+     "black fur-like hair covering head and shoulders": 1,
+     "black mask covering forehead and eyes": 1,
+     "black panther mask with pointed ears": 1,
+     "horn-like protrusions from head": 2,
+     "horns on head": 1,
+     "long dark hair": 1,
+     "long hair": 1,
+     "metallic helmet covering most of face": 1,
+     "metallic helmet with spikes": 1,
+     "necklace with skull": 1,
+     "necklace with skull pendant": 1,
+     "pointed ears": 2,
+     "skull necklace": 1,
+     "skull pendant on chest": 2,
+     "teeth visible in grin": 1,
+     "white fang-like teeth visible": 1,
+     "white markings around mouth": 1
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "glowing green",
+    "share": 0.3333333333333333,
+    "n": 12,
+    "outliers": [
+     "dark and almond-shaped",
+     "yellow glowing",
+     "yellow, narrow, slit-like",
+     "wide open, black pupils",
+     "green, wide open, intense",
+     "red",
+     "red",
+     "narrow and intense"
+    ],
+    "all_values": [
+     "glowing green",
+     "wide open, glowing green",
+     "dark and almond-shaped",
+     "yellow glowing",
+     "yellow, narrow, slit-like",
+     "wide open, black pupils",
+     "green, wide open, intense",
+     "red",
+     "red",
+     "green glowing",
+     "narrow and intense",
+     "green glowing"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 12,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "thin",
+    "share": 0.3,
+    "n": 10,
+    "outliers": [
+     "partially open in a roar",
+     "full and red",
+     "thin, parted in a scream",
+     "wide, mouth open in a roar",
+     "open wide showing teeth",
+     "thin with a grimace",
+     "thin with a grimace"
+    ],
+    "all_values": [
+     "partially open in a roar",
+     "full and red",
+     "thin, straight",
+     "thin, parted in a scream",
+     "wide, mouth open in a roar",
+     "thin",
+     "thin",
+     "open wide showing teeth",
+     "thin with a grimace",
+     "thin with a grimace"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "pointed",
+    "share": 0.4444444444444444,
+    "n": 9,
+    "outliers": [
+     "large and broad",
+     "prominent and slightly curved",
+     "small, flat",
+     "large, prominent",
+     "prominent and wide"
+    ],
+    "all_values": [
+     "large and broad",
+     "prominent and slightly curved",
+     "small, flat",
+     "small, pointed",
+     "large, prominent",
+     "pointed",
+     "pointed",
+     "prominent and wide",
+     "small and pointed"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.7692307692307693,
+    "n": 13,
+    "outliers": [
+     "dark brown",
+     "dark brown",
+     "dark brown"
+    ],
+    "all_values": [
+     "black",
+     "dark brown",
+     "dark brown",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "dark brown",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "long",
+    "share": 0.6923076923076923,
+    "n": 13,
+    "outliers": [
+     "very short",
+     "very short",
+     "very short",
+     "very short"
+    ],
+    "all_values": [
+     "very long",
+     "long",
+     "very long",
+     "very long",
+     "very long",
+     "very short",
+     "long",
+     "very short",
+     "very short",
+     "very long",
+     "very long",
+     "very short",
+     "very long"
+    ],
+    "stable": true
+   },
+   "notes": {
+    "kind": "str",
+    "value": "has bangs",
+    "share": 0.2222222222222222,
+    "n": 9,
+    "outliers": [
+     "long bangs",
+     "two long strands hang down past the shoulders; no bangs or accessories visible",
+     "long bangs covering forehead",
+     "hair is covered by a black animal mask with horns",
+     "hair is part of a black panther-like mask with pointed ears",
+     "hair is covered by a horned helmet",
+     "hair covers the face and appears to be tied back or pulled up"
+    ],
+    "all_values": [
+     "long bangs",
+     "two long strands hang down past the shoulders; no bangs or accessories visible",
+     "long bangs covering forehead",
+     "hair is covered by a black animal mask with horns",
+     "hair has bangs covering forehead; hair accessories not visible",
+     "has bangs",
+     "hair is part of a black panther-like mask with pointed ears",
+     "hair is covered by a horned helmet",
+     "hair covers the face and appears to be tied back or pulled up"
+    ],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "covered",
+    "share": 0.6153846153846154,
+    "n": 13,
+    "outliers": [
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose"
+    ],
+    "all_values": [
+     "loose",
+     "loose",
+     "loose",
+     "covered",
+     "loose",
+     "covered",
+     "loose",
+     "covered",
+     "covered",
+     "covered",
+     "covered",
+     "covered",
+     "covered"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 0.9230769230769231,
+    "n": 13,
+    "outliers": [
+     "coarse"
+    ],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "coarse",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 13,
+    "stable_items": [],
+    "disputed_items": [
+     "arm bands",
+     "arm guards",
+     "armor",
+     "belt",
+     "boots",
+     "head covering",
+     "headpiece",
+     "helmet",
+     "loincloth",
+     "neck adornment",
+     "necklace",
+     "shield"
+    ],
+    "detail": {
+     "arm bands": {
+      "n": 3,
+      "values": [
+       "brown",
+       "black",
+       "black"
+      ]
+     },
+     "arm guards": {
+      "n": 2,
+      "values": [
+       "dark brown",
+       "black"
+      ]
+     },
+     "armor": {
+      "n": 2,
+      "values": [
+       "dark metallic",
+       "dark metallic"
+      ]
+     },
+     "belt": {
+      "n": 2,
+      "values": [
+       "dark brown",
+       "dark brown"
+      ]
+     },
+     "boots": {
+      "n": 2,
+      "values": [
+       "black",
+       "dark brown"
+      ]
+     },
+     "head covering": {
+      "n": 2,
+      "values": [
+       "black",
+       "black"
+      ]
+     },
+     "headpiece": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "helmet": {
+      "n": 2,
+      "values": [
+       "dark metallic",
+       "dark metallic"
+      ]
+     },
+     "loincloth": {
+      "n": 7,
+      "values": [
+       "brown",
+       "dark brown",
+       "dark brown",
+       "brown",
+       "black",
+       "black",
+       "dark brown"
+      ]
+     },
+     "neck adornment": {
+      "n": 1,
+      "values": [
+       "light brown"
+      ]
+     },
+     "necklace": {
+      "n": 5,
+      "values": [
+       "brown",
+       "white",
+       "light brown",
+       "brown",
+       "white"
+      ]
+     },
+     "shield": {
+      "n": 2,
+      "values": [
+       "dark metallic",
+       "dark metallic with black emblem"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "partially clad",
+    "share": 0.6923076923076923,
+    "n": 13,
+    "outliers": [
+     "fully dressed",
+     "fully dressed",
+     "armored",
+     "armored"
+    ],
+    "all_values": [
+     "fully dressed",
+     "partially clad",
+     "fully dressed",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "armored",
+     "armored",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 13,
+    "stable_items": [],
+    "disputed_items": [
+     "arm guards",
+     "axe",
+     "belt",
+     "boots",
+     "claw-like adornments",
+     "headpiece",
+     "helmet",
+     "loincloth",
+     "necklace",
+     "shield",
+     "skull pendant"
+    ],
+    "detail": {
+     "arm guards": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "axe": {
+      "n": 1,
+      "values": [
+       "dark gray"
+      ]
+     },
+     "belt": {
+      "n": 2,
+      "values": [
+       "dark brown",
+       "black"
+      ]
+     },
+     "boots": {
+      "n": 1,
+      "values": [
+       "dark brown"
+      ]
+     },
+     "claw-like adornments": {
+      "n": 1,
+      "values": [
+       "light brown"
+      ]
+     },
+     "headpiece": {
+      "n": 1,
+      "values": [
+       "black"
+      ]
+     },
+     "helmet": {
+      "n": 2,
+      "values": [
+       "black and silver",
+       "metallic silver with red accents"
+      ]
+     },
+     "loincloth": {
+      "n": 1,
+      "values": [
+       "dark brown with yellow circles"
+      ]
+     },
+     "necklace": {
+      "n": 5,
+      "values": [
+       "brown",
+       "white",
+       "light brown",
+       "white",
+       "white"
+      ]
+     },
+     "shield": {
+      "n": 2,
+      "values": [
+       "dark gray with gold emblem",
+       "silver and black"
+      ]
+     },
+     "skull pendant": {
+      "n": 3,
+      "values": [
+       "white",
+       "white",
+       "white"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 13,
+    "stable_items": [],
+    "disputed_items": [
+     "axe",
+     "sword"
+    ],
+    "counts": {
+     "axe": 7,
+     "sword": 4
+    }
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "green",
+    "share": 0.4166666666666667,
+    "n": 12,
+    "outliers": [
+     "black",
+     "black",
+     "yellow",
+     "yellow",
+     "red",
+     "red",
+     "white"
+    ],
+    "all_values": [
+     "green",
+     "green",
+     "black",
+     "yellow",
+     "yellow",
+     "black",
+     "green",
+     "red",
+     "red",
+     "green",
+     "white",
+     "green"
+    ],
+    "stable": false
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "brown",
+    "share": 0.8181818181818182,
+    "n": 11,
+    "outliers": [
+     "black",
+     "black"
+    ],
+    "all_values": [
+     "brown",
+     "brown",
+     "dark brown",
+     "dark brown",
+     "brown",
+     "black",
+     "black",
+     "dark brown",
+     "dark brown",
+     "brown",
+     "dark brown"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.4,
+    "n": 5,
+    "outliers": [
+     "yellow",
+     "dark brown",
+     "gold"
+    ],
+    "all_values": [
+     "black",
+     "yellow",
+     "dark brown",
+     "gold",
+     "black"
+    ],
+    "stable": false
+   },
+   "hair": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 11,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "silver",
+    "share": 0.5714285714285714,
+    "n": 7,
+    "outliers": [
+     "gray",
+     "gold",
+     "gold"
+    ],
+    "all_values": [
+     "silver",
+     "gray",
+     "gold",
+     "silver",
+     "silver",
+     "gold",
+     "silver"
+    ],
+    "stable": false
+   },
+   "skin": {
+    "kind": "str",
+    "value": "brown",
+    "share": 0.8,
+    "n": 10,
+    "outliers": [
+     "tan",
+     "reddish-brown"
+    ],
+    "all_values": [
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "tan",
+     "brown",
+     "brown",
+     "dark brown",
+     "reddish-brown",
+     "brown"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 13,
+    "stable_items": [],
+    "disputed_items": [
+     "axe weapon",
+     "bear-like head with long dark hair",
+     "black cat-like hood",
+     "black fur mask",
+     "black fur-like skin",
+     "black horned helmet",
+     "black horned mask",
+     "black mask",
+     "black panther-like head",
+     "black panther-like hood",
+     "clawed gauntlets",
+     "clawed hands",
+     "dark armor",
+     "dark leather armor",
+     "dark loincloth with green circles",
+     "dark loincloth with yellow circles",
+     "dark skin tone",
+     "glowing green eyes",
+     "glowing yellow eyes",
+     "holding a double-bladed axe",
+     "horned helmet",
+     "long black hair",
+     "muscular build",
+     "ornate shield",
+     "pointed ears",
+     "red skin",
+     "scythe weapon",
+     "sharp fang-like neck adornments",
+     "shield with eagle emblem",
+     "skull necklace",
+     "skull pendant"
+    ],
+    "counts": {
+     "axe weapon": 1,
+     "bear-like head with long dark hair": 1,
+     "black cat-like hood": 1,
+     "black fur mask": 1,
+     "black fur-like skin": 1,
+     "black horned helmet": 2,
+     "black horned mask": 1,
+     "black mask": 1,
+     "black panther-like head": 1,
+     "black panther-like hood": 1,
+     "clawed gauntlets": 1,
+     "clawed hands": 1,
+     "dark armor": 1,
+     "dark leather armor": 1,
+     "dark loincloth with green circles": 1,
+     "dark loincloth with yellow circles": 1,
+     "dark skin tone": 1,
+     "glowing green eyes": 3,
+     "glowing yellow eyes": 2,
+     "holding a double-bladed axe": 1,
+     "horned helmet": 2,
+     "long black hair": 2,
+     "muscular build": 6,
+     "ornate shield": 1,
+     "pointed ears": 1,
+     "red skin": 1,
+     "scythe weapon": 2,
+     "sharp fang-like neck adornments": 1,
+     "shield with eagle emblem": 1,
+     "skull necklace": 4,
+     "skull pendant": 2
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of dark, textured skin, pointed ears, and long black hair with heavy armor makes this figure instantly recognizable.",
+    "share": 0.08333333333333333,
+    "n": 12,
+    "outliers": [
+     "The combination of the black fur mask, glowing green eyes, and skull necklace makes this figure instantly recognizable.",
+     "The combination of the bear-like head, muscular physique, and skull necklace makes this figure instantly recognizable.",
+     "The combination of the black horned mask with glowing yellow eyes and the skull necklace makes this figure instantly recognizable.",
+     "The combination of the black hood with pointed ears, glowing eyes, and skull necklace creates a unique and instantly recognizable silhouette.",
+     "The combination of the black horned helmet, muscular physique, and distinctive dark loincloth with yellow circles makes this figure instantly recognizable.",
+     "The figure's distinctive black panther head and muscular physique make it instantly recognizable.",
+     "The figure is a heavily armored rider with a horned helmet, wielding a scythe and carrying a shield adorned with an eagle, mounted on a dark horse.",
+     "The figure's red-skinned face, horned helmet, and scythe weapon create a unique combination of features.",
+     "The combination of the black panther mask, glowing green eyes, and skull necklace makes this figure instantly recognizable.",
+     "The figure's distinctive black horned helmet and muscular physique, combined with the axe he wields, make him instantly recognizable.",
+     "The combination of the black mask, glowing green eyes, and skull necklace uniquely identifies this figure."
+    ],
+    "all_values": [
+     "The combination of the black fur mask, glowing green eyes, and skull necklace makes this figure instantly recognizable.",
+     "The combination of the bear-like head, muscular physique, and skull necklace makes this figure instantly recognizable.",
+     "The combination of dark, textured skin, pointed ears, and long black hair with heavy armor makes this figure instantly recognizable.",
+     "The combination of the black horned mask with glowing yellow eyes and the skull necklace makes this figure instantly recognizable.",
+     "The combination of the black hood with pointed ears, glowing eyes, and skull necklace creates a unique and instantly recognizable silhouette.",
+     "The combination of the black horned helmet, muscular physique, and distinctive dark loincloth with yellow circles makes this figure instantly recognizable.",
+     "The figure's distinctive black panther head and muscular physique make it instantly recognizable.",
+     "The figure is a heavily armored rider with a horned helmet, wielding a scythe and carrying a shield adorned with an eagle, mounted on a dark horse.",
+     "The figure's red-skinned face, horned helmet, and scythe weapon create a unique combination of features.",
+     "The combination of the black panther mask, glowing green eyes, and skull necklace makes this figure instantly recognizable.",
+     "The figure's distinctive black horned helmet and muscular physique, combined with the axe he wields, make him instantly recognizable.",
+     "The combination of the black mask, glowing green eyes, and skull necklace uniquely identifies this figure."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.garment_primary",
+  "colors.hair",
+  "colors.skin",
+  "face.face_shape",
+  "hair.color",
+  "hair.length",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "colors.eyes",
+  "colors.garment_secondary",
+  "colors.metal_accent",
+  "face.brows",
+  "face.distinguishing_features:beard",
+  "face.distinguishing_features:black fur covering face",
+  "face.distinguishing_features:black fur covering head and shoulders",
+  "face.distinguishing_features:black fur mask with horns",
+  "face.distinguishing_features:black fur-like hair covering head and shoulders",
+  "face.distinguishing_features:black mask covering forehead and eyes",
+  "face.distinguishing_features:black panther mask with pointed ears",
+  "face.distinguishing_features:horn-like protrusions from head",
+  "face.distinguishing_features:horns on head",
+  "face.distinguishing_features:long dark hair",
+  "face.distinguishing_features:long hair",
+  "face.distinguishing_features:metallic helmet covering most of face",
+  "face.distinguishing_features:metallic helmet with spikes",
+  "face.distinguishing_features:necklace with skull",
+  "face.distinguishing_features:necklace with skull pendant",
+  "face.distinguishing_features:pointed ears",
+  "face.distinguishing_features:skull necklace",
+  "face.distinguishing_features:skull pendant on chest",
+  "face.distinguishing_features:teeth visible in grin",
+  "face.distinguishing_features:white fang-like teeth visible",
+  "face.distinguishing_features:white markings around mouth",
+  "face.eyes",
+  "face.lips",
+  "face.nose",
+  "hair.notes",
+  "props.items:arm guards",
+  "props.items:axe",
+  "props.items:belt",
+  "props.items:boots",
+  "props.items:claw-like adornments",
+  "props.items:headpiece",
+  "props.items:helmet",
+  "props.items:loincloth",
+  "props.items:necklace",
+  "props.items:shield",
+  "props.items:skull pendant",
+  "props.weapons:axe",
+  "props.weapons:sword",
+  "signature.memorable_traits:axe weapon",
+  "signature.memorable_traits:bear-like head with long dark hair",
+  "signature.memorable_traits:black cat-like hood",
+  "signature.memorable_traits:black fur mask",
+  "signature.memorable_traits:black fur-like skin",
+  "signature.memorable_traits:black horned helmet",
+  "signature.memorable_traits:black horned mask",
+  "signature.memorable_traits:black mask",
+  "signature.memorable_traits:black panther-like head",
+  "signature.memorable_traits:black panther-like hood",
+  "signature.memorable_traits:clawed gauntlets",
+  "signature.memorable_traits:clawed hands",
+  "signature.memorable_traits:dark armor",
+  "signature.memorable_traits:dark leather armor",
+  "signature.memorable_traits:dark loincloth with green circles",
+  "signature.memorable_traits:dark loincloth with yellow circles",
+  "signature.memorable_traits:dark skin tone",
+  "signature.memorable_traits:glowing green eyes",
+  "signature.memorable_traits:glowing yellow eyes",
+  "signature.memorable_traits:holding a double-bladed axe",
+  "signature.memorable_traits:horned helmet",
+  "signature.memorable_traits:long black hair",
+  "signature.memorable_traits:muscular build",
+  "signature.memorable_traits:ornate shield",
+  "signature.memorable_traits:pointed ears",
+  "signature.memorable_traits:red skin",
+  "signature.memorable_traits:scythe weapon",
+  "signature.memorable_traits:sharp fang-like neck adornments",
+  "signature.memorable_traits:shield with eagle emblem",
+  "signature.memorable_traits:skull necklace",
+  "signature.memorable_traits:skull pendant",
+  "signature.unmistakable_because",
+  "wardrobe.garments:arm bands",
+  "wardrobe.garments:arm guards",
+  "wardrobe.garments:armor",
+  "wardrobe.garments:belt",
+  "wardrobe.garments:boots",
+  "wardrobe.garments:head covering",
+  "wardrobe.garments:headpiece",
+  "wardrobe.garments:helmet",
+  "wardrobe.garments:loincloth",
+  "wardrobe.garments:neck adornment",
+  "wardrobe.garments:necklace",
+  "wardrobe.garments:shield"
+ ],
+ "prompt_block": "young adult male, muscular build, tall height impression, dark skin, black long straight covered hair, oval face, dressed in brown."
+}

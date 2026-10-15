@@ -1,0 +1,21 @@
+{
+ "char": "LARN",
+ "lens": "face",
+ "file": "ComfyUI_00077_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935159.4630673,
+ "size": 4873563,
+ "ts": "2026-10-15T04:33:49Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"blue\",\n \"brows\": \"arched\",\n \"nose\": \"straight\",\n \"lips\": \"thin\",\n \"distinguishing_features\": [\n  \"braided hair\",\n  \"earring\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "blue",
+  "brows": "arched",
+  "nose": "straight",
+  "lips": "thin",
+  "distinguishing_features": [
+   "braided hair",
+   "earring"
+  ]
+ }
+}

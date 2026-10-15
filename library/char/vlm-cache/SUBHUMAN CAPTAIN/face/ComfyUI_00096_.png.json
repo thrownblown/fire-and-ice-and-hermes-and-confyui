@@ -1,0 +1,22 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "face",
+ "file": "ComfyUI_00096_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935265.465433,
+ "size": 4264775,
+ "ts": "2026-10-15T05:06:29Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark, almond-shaped, slightly narrowed\",\n \"brows\": \"thick, arched, dark\",\n \"nose\": \"large, broad, flat\",\n \"lips\": \"full, slightly parted, with visible teeth when smiling\",\n \"distinguishing_features\": [\n  \"long black hair falling over forehead\",\n  \"wrinkled skin around eyes and mouth\",\n  \"prominent brow ridge\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark, almond-shaped, slightly narrowed",
+  "brows": "thick, arched, dark",
+  "nose": "large, broad, flat",
+  "lips": "full, slightly parted, with visible teeth when smiling",
+  "distinguishing_features": [
+   "long black hair falling over forehead",
+   "wrinkled skin around eyes and mouth",
+   "prominent brow ridge"
+  ]
+ }
+}

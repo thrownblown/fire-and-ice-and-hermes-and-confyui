@@ -1,0 +1,17 @@
+{
+ "char": "JULIANNA",
+ "lens": "hair",
+ "file": "JULIANA_r06_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643149.91,
+ "size": 4002161,
+ "ts": "2026-10-15T04:33:29Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"long bangs, adorned with a jeweled headband\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "long bangs, adorned with a jeweled headband"
+ }
+}

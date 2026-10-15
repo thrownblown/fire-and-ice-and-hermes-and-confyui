@@ -1,0 +1,14 @@
+{
+ "char": "SHAITAN",
+ "lens": "signature",
+ "file": "ComfyUI_00076_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932052.456213,
+ "size": 2055613,
+ "ts": "2026-10-15T04:59:26Z",
+ "text": "{\n \"memorable_traits\": [],\n \"unmistakable_because\": \"\"\n}",
+ "json": {
+  "memorable_traits": [],
+  "unmistakable_because": null
+ }
+}

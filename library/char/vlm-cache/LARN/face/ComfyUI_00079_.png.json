@@ -1,0 +1,22 @@
+{
+ "char": "LARN",
+ "lens": "face",
+ "file": "ComfyUI_00079_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931907.6132612,
+ "size": 4384179,
+ "ts": "2026-10-15T04:34:47Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"blue, almond-shaped, slightly narrowed\",\n \"brows\": \"arched, dark, thick\",\n \"nose\": \"straight, medium-sized\",\n \"lips\": \"thin, straight, neutral expression\",\n \"distinguishing_features\": [\n  \"long blonde braid\",\n  \"earrings\",\n  \"necklace with white teeth-like pendants\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "blue, almond-shaped, slightly narrowed",
+  "brows": "arched, dark, thick",
+  "nose": "straight, medium-sized",
+  "lips": "thin, straight, neutral expression",
+  "distinguishing_features": [
+   "long blonde braid",
+   "earrings",
+   "necklace with white teeth-like pendants"
+  ]
+ }
+}

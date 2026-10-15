@@ -1,0 +1,14 @@
+{
+ "char": "NEKRON",
+ "lens": "props",
+ "file": "NEKRON_r03_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643305.81,
+ "size": 3837920,
+ "ts": "2026-10-15T04:42:20Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

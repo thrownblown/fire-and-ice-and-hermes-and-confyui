@@ -1,0 +1,27 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "props",
+ "file": "shot_00414_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932079.074484,
+ "size": 303085,
+ "ts": "2026-10-15T05:07:12Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"arm band\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"left arm\"\n    },\n    {\n      \"item\": \"arm band\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"right arm\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "arm band",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "left arm"
+   },
+   {
+    "item": "arm band",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "right arm"
+   }
+  ],
+  "weapons": []
+ }
+}

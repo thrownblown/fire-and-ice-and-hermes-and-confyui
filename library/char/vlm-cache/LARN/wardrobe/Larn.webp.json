@@ -1,0 +1,33 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "Larn.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932029.0960357,
+ "size": 18160,
+ "ts": "2026-10-15T04:35:23Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, with gold circular accents\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"pendant-style with white bone-like adornments\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "black",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "belt",
+    "color": "brown",
+    "material": "leather",
+    "cut": "wide, with gold circular accents"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "pendant-style with white bone-like adornments"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

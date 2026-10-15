@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "images (2).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032246.0338476,
+ "size": 39662,
+ "ts": "2026-10-15T10:52:05Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"top\",\n      \"color\": \"light purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted, halter-style with straps\"\n    },\n    {\n      \"item\": \"bottoms\",\n      \"color\": \"light purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"minimalist, bikini style\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "top",
+    "color": "light purple",
+    "material": "cloth",
+    "cut": "fitted, halter-style with straps"
+   },
+   {
+    "item": "bottoms",
+    "color": "light purple",
+    "material": "cloth",
+    "cut": "minimalist, bikini style"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

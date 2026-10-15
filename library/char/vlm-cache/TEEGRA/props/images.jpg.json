@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "images.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032241.3015685,
+ "size": 58887,
+ "ts": "2026-10-15T10:53:26Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"bikini top\",\n      \"color\": \"light purple\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"chest\"\n    },\n    {\n      \"item\": \"bikini bottom\",\n      \"color\": \"light purple\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"hips\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "bikini top",
+    "color": "light purple",
+    "worn_or_carried": "worn",
+    "body_location": "chest"
+   },
+   {
+    "item": "bikini bottom",
+    "color": "light purple",
+    "worn_or_carried": "worn",
+    "body_location": "hips"
+   }
+  ],
+  "weapons": []
+ }
+}

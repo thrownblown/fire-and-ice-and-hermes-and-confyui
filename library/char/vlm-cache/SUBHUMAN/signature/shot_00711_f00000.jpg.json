@@ -1,0 +1,20 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00711_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1848676,
+ "size": 353276,
+ "ts": "2026-10-15T05:03:47Z",
+ "text": "{\n \"memorable_traits\": [\"muscular build\", \"dark skin\", \"long dark hair\", \"holding a spear\", \"aggressive expression\"],\n \"unmistakable_because\": \"The figure's muscular physique, long dark hair, and aggressive stance while wielding a spear make him instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "muscular build",
+   "dark skin",
+   "long dark hair",
+   "holding a spear",
+   "aggressive expression"
+  ],
+  "unmistakable_because": "The figure's muscular physique, long dark hair, and aggressive stance while wielding a spear make him instantly recognizable."
+ }
+}

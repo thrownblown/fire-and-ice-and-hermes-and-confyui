@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "hair",
+ "file": "ComfyUI_00093_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935265.475443,
+ "size": 4117657,
+ "ts": "2026-10-15T05:06:13Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"bangs\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "bangs"
+ }
+}

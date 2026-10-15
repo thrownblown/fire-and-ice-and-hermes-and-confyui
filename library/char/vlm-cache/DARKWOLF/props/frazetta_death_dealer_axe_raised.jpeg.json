@@ -1,0 +1,30 @@
+{
+ "char": "DARKWOLF",
+ "lens": "props",
+ "file": "frazetta_death_dealer_axe_raised.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3901615,
+ "size": 60006,
+ "ts": "2026-10-15T04:26:59Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"shield\",\n      \"color\": \"dark gray with gold emblem\",\n      \"worn_or_carried\": \"carried\",\n      \"body_location\": \"left arm\"\n    },\n    {\n      \"item\": \"helmet\",\n      \"color\": \"black and silver\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"head\"\n    }\n  ],\n  \"weapons\": [\n    \"axe\",\n    \"sword\"\n  ]\n}",
+ "json": {
+  "items": [
+   {
+    "item": "shield",
+    "color": "dark gray with gold emblem",
+    "worn_or_carried": "carried",
+    "body_location": "left arm"
+   },
+   {
+    "item": "helmet",
+    "color": "black and silver",
+    "worn_or_carried": "worn",
+    "body_location": "head"
+   }
+  ],
+  "weapons": [
+   "axe",
+   "sword"
+  ]
+ }
+}

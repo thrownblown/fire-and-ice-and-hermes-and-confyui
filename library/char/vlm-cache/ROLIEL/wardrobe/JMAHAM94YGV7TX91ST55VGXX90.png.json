@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "JMAHAM94YGV7TX91ST55VGXX90.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7745845,
+ "size": 1217221,
+ "ts": "2026-10-15T04:52:29Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"choker-style, tight around neck\"\n    },\n    {\n      \"item\": \"bracelets\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"wristbands, fitted snugly\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"blue\",\n      \"material\": \"metal\",\n      \"cut\": \"dangling, teardrop shape\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "necklace",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "choker-style, tight around neck"
+   },
+   {
+    "item": "bracelets",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "wristbands, fitted snugly"
+   },
+   {
+    "item": "earrings",
+    "color": "blue",
+    "material": "metal",
+    "cut": "dangling, teardrop shape"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

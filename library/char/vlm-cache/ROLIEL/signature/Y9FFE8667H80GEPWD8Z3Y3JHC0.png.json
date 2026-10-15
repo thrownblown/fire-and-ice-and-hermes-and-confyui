@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "Y9FFE8667H80GEPWD8Z3Y3JHC0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7835844,
+ "size": 1247188,
+ "ts": "2026-10-15T04:56:33Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"glowing orange eyes\", \"white draped garment\", \"blue beaded necklace\"],\n \"unmistakable_because\": \"The combination of glowing orange eyes and long, flowing red hair makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "glowing orange eyes",
+   "white draped garment",
+   "blue beaded necklace"
+  ],
+  "unmistakable_because": "The combination of glowing orange eyes and long, flowing red hair makes this figure instantly recognizable."
+ }
+}

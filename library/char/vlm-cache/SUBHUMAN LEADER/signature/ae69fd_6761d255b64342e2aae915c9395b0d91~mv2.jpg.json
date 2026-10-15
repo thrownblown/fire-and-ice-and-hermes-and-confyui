@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "signature",
+ "file": "ae69fd_6761d255b64342e2aae915c9395b0d91~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932193.0585334,
+ "size": 38297,
+ "ts": "2026-10-15T05:08:38Z",
+ "text": "{\n  \"memorable_traits\": [\"large muscular build\", \"barefoot\", \"dark skin\", \"tall stature\"],\n  \"unmistakable_because\": \"The figure's immense, exaggerated musculature and tall, imposing silhouette make it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "large muscular build",
+   "barefoot",
+   "dark skin",
+   "tall stature"
+  ],
+  "unmistakable_because": "The figure's immense, exaggerated musculature and tall, imposing silhouette make it instantly recognizable."
+ }
+}

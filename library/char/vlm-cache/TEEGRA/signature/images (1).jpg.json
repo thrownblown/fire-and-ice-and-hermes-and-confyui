@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "images (1).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7258976,
+ "size": 18466,
+ "ts": "2026-10-15T10:51:55Z",
+ "text": "{\n \"memorable_traits\": [\"large, expressive eyes\", \"distinctive high cheekbones\", \"dark hair with bangs\"],\n \"unmistakable_because\": \"The combination of large, detailed eyes and prominent facial structure makes this figure immediately recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "large, expressive eyes",
+   "distinctive high cheekbones",
+   "dark hair with bangs"
+  ],
+  "unmistakable_because": "The combination of large, detailed eyes and prominent facial structure makes this figure immediately recognizable."
+ }
+}

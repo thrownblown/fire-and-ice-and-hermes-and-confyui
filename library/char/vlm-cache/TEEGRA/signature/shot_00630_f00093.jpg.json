@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "shot_00630_f00093.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723665.7294126,
+ "size": 228942,
+ "ts": "2026-10-15T10:57:22Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"purple bikini top\", \"chain belt with knife\", \"gold necklace\"],\n  \"unmistakable_because\": \"The combination of long black hair, purple bikini top, and chain belt with a knife makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "purple bikini top",
+   "chain belt with knife",
+   "gold necklace"
+  ],
+  "unmistakable_because": "The combination of long black hair, purple bikini top, and chain belt with a knife makes this figure uniquely identifiable."
+ }
+}

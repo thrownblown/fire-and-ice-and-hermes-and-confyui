@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "signature",
+ "file": "shot_00415_f00032.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932187.0925136,
+ "size": 283294,
+ "ts": "2026-10-15T05:09:40Z",
+ "text": "{\n \"memorable_traits\": [\"bald head with short dark hair on the sides\", \"wide grin showing sharp teeth\", \"muscular build\", \"necklace with a single orange pendant\"],\n \"unmistakable_because\": \"The combination of his bald head, wide toothy grin, and muscular physique makes him instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "bald head with short dark hair on the sides",
+   "wide grin showing sharp teeth",
+   "muscular build",
+   "necklace with a single orange pendant"
+  ],
+  "unmistakable_because": "The combination of his bald head, wide toothy grin, and muscular physique makes him instantly recognizable."
+ }
+}

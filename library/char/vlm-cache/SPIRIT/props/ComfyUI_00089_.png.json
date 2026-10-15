@@ -1,0 +1,14 @@
+{
+ "char": "SPIRIT",
+ "lens": "props",
+ "file": "ComfyUI_00089_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.80314,
+ "size": 5290556,
+ "ts": "2026-10-15T05:00:12Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

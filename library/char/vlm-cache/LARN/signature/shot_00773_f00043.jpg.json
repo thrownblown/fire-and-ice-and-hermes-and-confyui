@@ -1,0 +1,18 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00773_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025483.2302268,
+ "size": 267596,
+ "ts": "2026-10-15T04:40:35Z",
+ "text": "{\n \"memorable_traits\": [\"blond hair\", \"blue eyes\", \"bare chest with white bone-like adornments\"],\n \"unmistakable_because\": \"The combination of blond hair, blue eyes, and the distinctive white bone-like necklaces makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond hair",
+   "blue eyes",
+   "bare chest with white bone-like adornments"
+  ],
+  "unmistakable_because": "The combination of blond hair, blue eyes, and the distinctive white bone-like necklaces makes this figure instantly recognizable."
+ }
+}

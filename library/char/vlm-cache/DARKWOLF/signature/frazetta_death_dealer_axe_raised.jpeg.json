@@ -1,0 +1,19 @@
+{
+ "char": "DARKWOLF",
+ "lens": "signature",
+ "file": "frazetta_death_dealer_axe_raised.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3901615,
+ "size": 60006,
+ "ts": "2026-10-15T04:27:03Z",
+ "text": "{\n  \"memorable_traits\": [\"horned helmet\", \"scythe weapon\", \"dark armor\", \"shield with eagle emblem\"],\n  \"unmistakable_because\": \"The figure is a heavily armored rider with a horned helmet, wielding a scythe and carrying a shield adorned with an eagle, mounted on a dark horse.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "horned helmet",
+   "scythe weapon",
+   "dark armor",
+   "shield with eagle emblem"
+  ],
+  "unmistakable_because": "The figure is a heavily armored rider with a horned helmet, wielding a scythe and carrying a shield adorned with an eagle, mounted on a dark horse."
+ }
+}

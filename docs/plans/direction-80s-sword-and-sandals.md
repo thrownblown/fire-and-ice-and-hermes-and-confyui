@@ -120,6 +120,49 @@ VLM is currently **omitting the style register** entirely, so if we keep a VLM i
 labelling prompts should ask for technicolor-era descriptors ("vibrant technicolor", "cinematic
 35mm", "high-fantasy practical effects") instead of its current default vocabulary.
 
+## TEST 1 RESULT (2026-10-13) — the direction does NOT survive FL2VA on source stills
+
+First real test: S05-c01 (Fire Keep study, 12.25 s, 294 frames, 20 steps), technicolor style string
++ `retro-fantasy-step00003750.safetensors` @ 0.8, same seed as the existing take. 322 s on the 5090.
+Output: `renders/5090/video/S05-c01_technicolor_t01_00001_.mp4`.
+
+**Verdict: the look did not change.** Sampled frames at 2 s and 9 s both still classify as 2D cel
+animation, with muted/flat colour — not a live-action film frame.
+
+**Mechanism, measured rather than argued.** The generated frame at t=0 differs from the source still
+(`shot_00188_f00000.jpg`, the graph's `first_frame`) by a **mean absolute pixel difference of
+5.6/255 = 2.2%**, and mean saturation only moves 0.613 → 0.650. The clip *starts as the exact 1983
+animation frame* and never escapes it.
+
+**Consequence:** FL2VA with source stills pinned as first/last frames is structurally incapable of
+changing the medium register. A prompt and a style LoRA cannot override two pinned animation frames.
+That kills the obvious approach — and the ones downstream of it, Track C (FFLF) and any Track B wired
+to source stills — for **322 seconds of GPU time** instead of a day of character sheets.
+
+This is Consequence 2 above, now confirmed by measurement: **the endpoints must be restyled first.**
+The LoRA author's own advice points the same way (drive H3 from a prepared start frame).
+
+### Next tests
+1. **Restyle the endpoints** with Z-Image Turbo + the Fun ControlNet union, then FL2VA from the
+   restyled first/last frames. Needs the **4090** (that is where the union controlnet and the
+   plate tooling live). Blocked while LM Studio holds ~22 GB of 24.5 GB.
+   Cannot run on the 5090: its `ModelPatchLoader` list is empty (no union controlnet) and it has no
+   Qwen-Image-Edit base model.
+2. **Control — DONE. The LoRA works, but it is not delivering the direction.**
+   Same chunk, same seed, LoRA stripped (`--strip-lora`), 302 s. Frame-by-frame mean absolute pixel
+   difference between the two takes:
+
+   | t (s) | 0 | 2 | 4 | 6 | 8 | 9 | 11 |
+   | --- | --- | --- | --- | --- | --- | --- | --- |
+   | diff | **1.08 %** | 10.7 % | 14.7 % | 13.7 % | 13.9 % | 11.8 % | 9.5 % |
+
+   So: **t=0 is identical in both takes** (1.08 % — the pinned source frame again), and the LoRA
+   demonstrably changes the body of the clip by 10–15 %. It is wired correctly and it is doing real
+   work. But mean saturation comes out *lower* with the LoRA (0.557) than without (0.598) — the
+   opposite of technicolor. Conclusion: the LoRA is functional, the endpoints still dominate the
+   register, and at 0.8 it is not producing the look on its own.
+3. Only then: does a restyled endpoint + LoRA actually hold the look in motion.
+
 ## The question the plan ends on
 
 It asks: rebuild the character sheets (Larn, Teegra, Darkwolf) first, or run a Track B probe on an

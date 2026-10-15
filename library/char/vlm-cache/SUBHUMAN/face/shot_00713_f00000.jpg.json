@@ -1,0 +1,21 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "face",
+ "file": "shot_00713_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.182869,
+ "size": 232789,
+ "ts": "2026-10-15T05:04:44Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and intense\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and broad\",\n \"lips\": \"thin with a grimace\",\n \"distinguishing_features\": [\n  \"deep wrinkles around eyes\",\n  \"scar on forehead\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and intense",
+  "brows": "thick and arched",
+  "nose": "large and broad",
+  "lips": "thin with a grimace",
+  "distinguishing_features": [
+   "deep wrinkles around eyes",
+   "scar on forehead"
+  ]
+ }
+}

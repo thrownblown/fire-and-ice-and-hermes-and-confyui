@@ -1,0 +1,19 @@
+{
+ "char": "NEKRON",
+ "lens": "signature",
+ "file": "NEKRON_r04_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643354.65,
+ "size": 4620379,
+ "ts": "2026-10-15T04:42:48Z",
+ "text": "{\n \"memorable_traits\": [\"long white hair\", \"pale skin\", \"dark robe with green buttons\", \"angular facial features\"],\n \"unmistakable_because\": \"The combination of long white hair, pale skin, and the distinctive dark robe with green buttons creates a unique visual signature.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long white hair",
+   "pale skin",
+   "dark robe with green buttons",
+   "angular facial features"
+  ],
+  "unmistakable_because": "The combination of long white hair, pale skin, and the distinctive dark robe with green buttons creates a unique visual signature."
+ }
+}

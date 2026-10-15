@@ -1,0 +1,319 @@
+{
+ "94": {
+  "inputs": {
+   "text": [
+    "139",
+    0
+   ],
+   "clip": [
+    "124",
+    1
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "CLIP Text Encode (Positive Prompt)"
+  }
+ },
+ "98": {
+  "inputs": {
+   "samples": [
+    "102",
+    0
+   ],
+   "vae": [
+    "122",
+    0
+   ]
+  },
+  "class_type": "VAEDecode",
+  "_meta": {
+   "title": "VAE Decode"
+  }
+ },
+ "101": {
+  "inputs": {
+   "text": "",
+   "clip": [
+    "124",
+    1
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "CLIP Text Encode (Negative Prompt)"
+  }
+ },
+ "102": {
+  "inputs": {
+   "seed": 82036621553942,
+   "steps": 9,
+   "cfg": 1.0,
+   "sampler_name": "er_sde",
+   "scheduler": "sgm_uniform",
+   "denoise": 1.0,
+   "model": [
+    "124",
+    0
+   ],
+   "positive": [
+    "129",
+    0
+   ],
+   "negative": [
+    "125",
+    0
+   ],
+   "latent_image": [
+    "127",
+    0
+   ]
+  },
+  "class_type": "KSampler",
+  "_meta": {
+   "title": "KSampler"
+  }
+ },
+ "105": {
+  "inputs": {
+   "images": [
+    "98",
+    0
+   ]
+  },
+  "class_type": "PreviewImage",
+  "_meta": {
+   "title": "Preview Image"
+  }
+ },
+ "120": {
+  "inputs": {
+   "clip_name": "Huihui-Qwen3-VL-4B-Instruct-abliterated-int8_convrot.safetensors",
+   "type": "krea2",
+   "device": "cpu"
+  },
+  "class_type": "CLIPLoader",
+  "_meta": {
+   "title": "Load CLIP"
+  }
+ },
+ "121": {
+  "inputs": {
+   "unet_name": "krea/finepornV2TURBOKrea2_v10.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader",
+  "_meta": {
+   "title": "Load Diffusion Model"
+  }
+ },
+ "122": {
+  "inputs": {
+   "vae_name": "Wan2_1_VAE_fp32.safetensors",
+   "device": "main_device",
+   "weight_dtype": "fp32"
+  },
+  "class_type": "VAELoaderKJ",
+  "_meta": {
+   "title": "VAELoader KJ"
+  }
+ },
+ "124": {
+  "inputs": {
+   "PowerLoraLoaderHeaderWidget": {
+    "type": "PowerLoraLoaderHeaderWidget"
+   },
+   "lora_1": {
+    "on": true,
+    "lora": "krea/RLY-thot_shot-KREA2-aspen-v11-trigger-rlyaspen.safetensors",
+    "strength": 0.7
+   },
+   "lora_2": {
+    "on": false,
+    "lora": "krea\\RLY-thot_shot-KREA2-farrah-v1-trigger-rlyfarrah.safetensors",
+    "strength": 1
+   },
+   "lora_3": {
+    "on": false,
+    "lora": "krea\\RLY-thot_shot-KREA2-solana-v1-trigger-rlysolana.safetensors",
+    "strength": 0.6
+   },
+   "lora_4": {
+    "on": false,
+    "lora": "krea\\30sTechnicolor_Krea2Raw.safetensors",
+    "strength": 1
+   },
+   "lora_5": {
+    "on": false,
+    "lora": "krea\\80sFantasy_Krea2Raw_000004500.safetensors",
+    "strength": 1
+   },
+   "lora_6": {
+    "on": false,
+    "lora": "krea\\retro-80s.safetensors",
+    "strength": 1
+   },
+   "lora_7": {
+    "on": true,
+    "lora": "krea\\retro-fantasy.safetensors",
+    "strength": 1
+   },
+   "lora_8": {
+    "on": false,
+    "lora": "krea/krea2_jenniferconnelly_v1_onetrainer.safetensors",
+    "strength": 1
+   },
+   "lora_9": {
+    "on": false,
+    "lora": "krea/krea2_margaretqualley_v1_onetrainer.safetensors",
+    "strength": 1
+   },
+   "lora_10": {
+    "on": true,
+    "lora": "krea/krea2_millyalcock_v1_onetrainer.safetensors",
+    "strength": 0.7
+   },
+   "\u2795 Add Lora": "",
+   "model": [
+    "121",
+    0
+   ],
+   "clip": [
+    "120",
+    0
+   ]
+  },
+  "class_type": "Power Lora Loader (rgthree)",
+  "_meta": {
+   "title": "Power Lora Loader (rgthree)"
+  }
+ },
+ "125": {
+  "inputs": {
+   "conditioning": [
+    "101",
+    0
+   ]
+  },
+  "class_type": "ConditioningZeroOut",
+  "_meta": {
+   "title": "Conditioning Zero Out"
+  }
+ },
+ "126": {
+  "inputs": {
+   "aspect_ratio": "16:9 (Widescreen)",
+   "megapixels": 2.0,
+   "multiple": 8
+  },
+  "class_type": "ResolutionSelector",
+  "_meta": {
+   "title": "Resolution Selector"
+  }
+ },
+ "127": {
+  "inputs": {
+   "width": [
+    "126",
+    0
+   ],
+   "height": [
+    "126",
+    1
+   ],
+   "batch_size": 1
+  },
+  "class_type": "EmptyLatentImage",
+  "_meta": {
+   "title": "Empty Latent Image"
+  }
+ },
+ "128": {
+  "inputs": {
+   "filename_prefix": "ComfyUI",
+   "images": [
+    "98",
+    0
+   ]
+  },
+  "class_type": "SaveImage",
+  "_meta": {
+   "title": "Save Image"
+  }
+ },
+ "129": {
+  "inputs": {
+   "multiplier": 1.0,
+   "per_layer_weights": "1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.5,5.0,1.1,4.0,1.0",
+   "conditioning": [
+    "94",
+    0
+   ]
+  },
+  "class_type": "ConditioningKrea2Rebalance",
+  "_meta": {
+   "title": "Conditioning Krea2 Rebalance"
+  }
+ },
+ "135": {
+  "inputs": {
+   "positive": "a still frame from a horror movie of A young teenage girl with platinum blonde hair and freckles sits on the edge of a bed, she is nude on a rumpled linen bedspread in a stone-walled medieval room. She is positioned with legs spread wide, knees bent, gazing directly at viewer with parted lips and dilated pupils. moonlight streams through a wooden-framed window revealing a full moon and distant castle turrets.\nA large gray wolf with thick fur, piercing blue eyes, and wet snout kneels between her thighs. Its tongue flicks out to lap at the girl\u2019s asshole below her pussy while its teeth gently graze her inner labia. The wolf's head is tilted upward as it focuses intently on the act of cunnilingus.\n\nThe scene is lit by cool moonlight casting soft shadows across the stone walls and wooden beams. The texture of the wolf\u2019s fur is detailed with individual strands catching light, while the girl\u2019s pale freckeld skin catches the moonlight. Her pubic hair is blonde and dense against her pale thighs. The bedspread beneath them shows creases and folds from movement.\n\n"
+  },
+  "class_type": "easy positive",
+  "_meta": {
+   "title": "Positive"
+  }
+ },
+ "136": {
+  "inputs": {
+   "positive": ""
+  },
+  "class_type": "easy positive",
+  "_meta": {
+   "title": "POST-PROMPT"
+  }
+ },
+ "137": {
+  "inputs": {
+   "positive": "retr0fantasy, 60s Soviet fantasy-film, subtle film grain, aged theatrical print quality, caucasian, rlyaspen,"
+  },
+  "class_type": "easy positive",
+  "_meta": {
+   "title": "PRE-PROMPT"
+  }
+ },
+ "138": {
+  "inputs": {
+   "separator": ".",
+   "prompt1": [
+    "137",
+    0
+   ],
+   "prompt2": [
+    "135",
+    0
+   ]
+  },
+  "class_type": "easy promptConcat",
+  "_meta": {
+   "title": "PromptConcat"
+  }
+ },
+ "139": {
+  "inputs": {
+   "separator": ".",
+   "prompt1": [
+    "138",
+    0
+   ],
+   "prompt2": [
+    "136",
+    0
+   ]
+  },
+  "class_type": "easy promptConcat",
+  "_meta": {
+   "title": "PromptConcat"
+  }
+ }
+}

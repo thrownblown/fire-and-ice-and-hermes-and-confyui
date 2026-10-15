@@ -1,0 +1,17 @@
+{
+ "char": "SPIRIT",
+ "lens": "physique",
+ "file": "shot_00759_f00100.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932277.043583,
+ "size": 347277,
+ "ts": "2026-10-15T05:01:11Z",
+ "text": "{\n \"sex\": \"female\",\n \"age_range\": \"indeterminate\",\n \"build\": \"slim\",\n \"height_impression\": \"average\",\n \"skin_neutral_light\": \"pale\"\n}",
+ "json": {
+  "sex": "female",
+  "age_range": "indeterminate",
+  "build": "slim",
+  "height_impression": "average",
+  "skin_neutral_light": "pale"
+ }
+}

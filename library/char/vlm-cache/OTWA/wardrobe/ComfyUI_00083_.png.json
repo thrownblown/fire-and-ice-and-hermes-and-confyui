@@ -1,0 +1,21 @@
+{
+ "char": "OTWA",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00083_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935186.763673,
+ "size": 5077263,
+ "ts": "2026-10-15T04:43:44Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"wrapped around waist, hanging in front\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "material": "cloth",
+    "cut": "wrapped around waist, hanging in front"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

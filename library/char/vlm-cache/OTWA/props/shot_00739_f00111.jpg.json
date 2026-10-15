@@ -1,0 +1,21 @@
+{
+ "char": "OTWA",
+ "lens": "props",
+ "file": "shot_00739_f00111.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931815.5538163,
+ "size": 246957,
+ "ts": "2026-10-15T04:45:47Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   }
+  ],
+  "weapons": []
+ }
+}

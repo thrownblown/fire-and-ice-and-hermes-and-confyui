@@ -1,0 +1,21 @@
+{
+ "char": "SPIRIT",
+ "lens": "wardrobe",
+ "file": "shot_00761_f00116.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932279.686568,
+ "size": 349183,
+ "ts": "2026-10-15T05:01:57Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, with a wide neckline\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "black",
+    "material": "cloth",
+    "cut": "loose-fitting, with a wide neckline"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

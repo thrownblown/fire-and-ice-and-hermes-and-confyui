@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "frazetta_death_dealer_ridge_silhouette.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.40116,
+ "size": 509272,
+ "ts": "2026-10-15T04:27:12Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"very short\",\n \"texture\": \"coarse\",\n \"style\": \"covered\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "very short",
+  "texture": "coarse",
+  "style": "covered",
+  "notes": null
+ }
+}

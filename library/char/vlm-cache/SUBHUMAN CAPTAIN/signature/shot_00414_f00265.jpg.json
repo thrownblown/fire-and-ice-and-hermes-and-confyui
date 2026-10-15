@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "signature",
+ "file": "shot_00414_f00265.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932086.5916343,
+ "size": 229357,
+ "ts": "2026-10-15T05:07:58Z",
+ "text": "{\n \"memorable_traits\": [\"dark brown skin\", \"long black hair\", \"broad muscular build\", \"holding a red staff\"],\n \"unmistakable_because\": \"The figure's dark brown skin, long black hair, and broad muscular build combined with the red staff make him uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "dark brown skin",
+   "long black hair",
+   "broad muscular build",
+   "holding a red staff"
+  ],
+  "unmistakable_because": "The figure's dark brown skin, long black hair, and broad muscular build combined with the red staff make him uniquely identifiable."
+ }
+}

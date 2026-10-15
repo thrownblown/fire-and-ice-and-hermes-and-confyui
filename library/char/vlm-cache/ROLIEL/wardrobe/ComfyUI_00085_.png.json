@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00085_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.407606,
+ "size": 5646931,
+ "ts": "2026-10-15T04:49:41Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"sheer, draped, clinging to body\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting, tied around waist\"\n    },\n    {\n      \"item\": \"choker\",\n      \"color\": \"blue\",\n      \"material\": \"metal\",\n      \"cut\": \"necklace with pendant\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "sheer, draped, clinging to body"
+   },
+   {
+    "item": "belt",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "tight-fitting, tied around waist"
+   },
+   {
+    "item": "choker",
+    "color": "blue",
+    "material": "metal",
+    "cut": "necklace with pendant"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

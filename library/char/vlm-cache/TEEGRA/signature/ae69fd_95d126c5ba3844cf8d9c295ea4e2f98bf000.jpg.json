@@ -1,0 +1,20 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "ae69fd_95d126c5ba3844cf8d9c295ea4e2f98bf000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7238934,
+ "size": 37049,
+ "ts": "2026-10-15T10:50:38Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"purple dress\", \"gold pendant\", \"thin eyebrows\", \"red lips\"],\n  \"unmistakable_because\": \"The combination of long black hair, purple dress, and gold pendant uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "purple dress",
+   "gold pendant",
+   "thin eyebrows",
+   "red lips"
+  ],
+  "unmistakable_because": "The combination of long black hair, purple dress, and gold pendant uniquely identifies this figure."
+ }
+}

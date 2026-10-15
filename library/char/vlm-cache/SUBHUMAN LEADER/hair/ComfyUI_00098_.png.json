@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "hair",
+ "file": "ComfyUI_00098_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935235.9692163,
+ "size": 4418573,
+ "ts": "2026-10-15T05:08:06Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"very short\",\n \"texture\": \"straight\",\n \"style\": \"tied back\",\n \"notes\": \"mohawk-style topknot\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "very short",
+  "texture": "straight",
+  "style": "tied back",
+  "notes": "mohawk-style topknot"
+ }
+}

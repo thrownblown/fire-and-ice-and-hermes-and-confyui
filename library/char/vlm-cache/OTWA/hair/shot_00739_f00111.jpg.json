@@ -1,0 +1,17 @@
+{
+ "char": "OTWA",
+ "lens": "hair",
+ "file": "shot_00739_f00111.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931815.5538163,
+ "size": 246957,
+ "ts": "2026-10-15T04:45:41Z",
+ "text": "{\n \"color\": \"red\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"long red hair falls past shoulders; no bangs or accessories\"\n}",
+ "json": {
+  "color": "red",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "long red hair falls past shoulders; no bangs or accessories"
+ }
+}

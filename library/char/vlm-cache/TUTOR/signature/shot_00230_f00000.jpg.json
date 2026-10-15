@@ -1,0 +1,19 @@
+{
+ "char": "TUTOR",
+ "lens": "signature",
+ "file": "shot_00230_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.553537,
+ "size": 319678,
+ "ts": "2026-10-15T05:21:24Z",
+ "text": "{\n \"memorable_traits\": [\"light blue loincloth\", \"brown skin\", \"dark hair\", \"golden belt buckle\"],\n \"unmistakable_because\": \"The combination of the light blue loincloth, brown skin tone, and dark hair uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "light blue loincloth",
+   "brown skin",
+   "dark hair",
+   "golden belt buckle"
+  ],
+  "unmistakable_because": "The combination of the light blue loincloth, brown skin tone, and dark hair uniquely identifies this figure."
+ }
+}

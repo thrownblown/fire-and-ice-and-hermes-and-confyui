@@ -1,0 +1,22 @@
+{
+ "char": "JAROL",
+ "lens": "face",
+ "file": "shot_00198_f00056.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729663.6465838,
+ "size": 231980,
+ "ts": "2026-10-15T04:30:43Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and intense\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and prominent\",\n \"lips\": \"thin with a slight smile\",\n \"distinguishing_features\": [\n  \"white beard\",\n  \"gold hoop earring\",\n  \"gold necklace\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and intense",
+  "brows": "thick and arched",
+  "nose": "large and prominent",
+  "lips": "thin with a slight smile",
+  "distinguishing_features": [
+   "white beard",
+   "gold hoop earring",
+   "gold necklace"
+  ]
+ }
+}

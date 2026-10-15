@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "bh0lgajcicof1.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032304.4854043,
+ "size": 2283424,
+ "ts": "2026-10-15T10:51:09Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"thong\",\n      \"color\": \"white\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"lower back\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "thong",
+    "color": "white",
+    "worn_or_carried": "worn",
+    "body_location": "lower back"
+   }
+  ],
+  "weapons": []
+ }
+}

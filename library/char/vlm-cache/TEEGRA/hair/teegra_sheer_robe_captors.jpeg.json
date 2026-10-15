@@ -1,0 +1,17 @@
+{
+ "char": "TEEGRA",
+ "lens": "hair",
+ "file": "teegra_sheer_robe_captors.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 48067,
+ "ts": "2026-10-15T10:58:06Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"no bangs or accessories; appears dry\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "no bangs or accessories; appears dry"
+ }
+}

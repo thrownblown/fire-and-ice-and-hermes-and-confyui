@@ -1,0 +1,21 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00093_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935265.475443,
+ "size": 4117657,
+ "ts": "2026-10-15T05:06:16Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"dark brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting, draped at the sides\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "dark brown",
+    "material": "cloth",
+    "cut": "tight-fitting, draped at the sides"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

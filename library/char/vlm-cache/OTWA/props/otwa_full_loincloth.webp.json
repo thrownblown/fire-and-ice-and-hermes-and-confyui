@@ -1,0 +1,21 @@
+{
+ "char": "OTWA",
+ "lens": "props",
+ "file": "otwa_full_loincloth.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931887.0075073,
+ "size": 19020,
+ "ts": "2026-10-15T04:44:11Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   }
+  ],
+  "weapons": []
+ }
+}

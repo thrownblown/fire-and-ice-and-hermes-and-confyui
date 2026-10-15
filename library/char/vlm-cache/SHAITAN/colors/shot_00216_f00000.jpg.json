@@ -1,0 +1,18 @@
+{
+ "char": "SHAITAN",
+ "lens": "colors",
+ "file": "shot_00216_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931744.0758822,
+ "size": 211295,
+ "ts": "2026-10-15T04:59:38Z",
+ "text": "{\n \"skin\": null,\n \"hair\": null,\n \"eyes\": \"yellow\",\n \"garment_primary\": null,\n \"garment_secondary\": null,\n \"metal_accent\": null\n}",
+ "json": {
+  "skin": null,
+  "hair": null,
+  "eyes": "yellow",
+  "garment_primary": null,
+  "garment_secondary": null,
+  "metal_accent": null
+ }
+}

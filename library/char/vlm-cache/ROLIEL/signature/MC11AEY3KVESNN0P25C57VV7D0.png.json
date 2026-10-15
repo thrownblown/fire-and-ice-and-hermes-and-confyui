@@ -1,0 +1,19 @@
+{
+ "char": "ROLIEL",
+ "lens": "signature",
+ "file": "MC11AEY3KVESNN0P25C57VV7D0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.6215134,
+ "size": 1163373,
+ "ts": "2026-10-15T04:53:47Z",
+ "text": "{\n \"memorable_traits\": [\"long red hair\", \"orange eyes\", \"light blue sheer dress\", \"blue choker and wristbands\"],\n \"unmistakable_because\": \"The combination of long, flowing red hair, striking orange eyes, and the distinctive light blue sheer dress with dark accents creates a unique visual signature.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long red hair",
+   "orange eyes",
+   "light blue sheer dress",
+   "blue choker and wristbands"
+  ],
+  "unmistakable_because": "The combination of long, flowing red hair, striking orange eyes, and the distinctive light blue sheer dress with dark accents creates a unique visual signature."
+ }
+}

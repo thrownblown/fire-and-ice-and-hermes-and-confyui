@@ -1,0 +1,27 @@
+{
+ "char": "SPIRIT",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00090_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.837751,
+ "size": 5487736,
+ "ts": "2026-10-15T05:00:27Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"dress\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"long, asymmetrical hemline\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"dark blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"high collar with geometric pattern\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "dress",
+    "color": "black",
+    "material": "cloth",
+    "cut": "long, asymmetrical hemline"
+   },
+   {
+    "item": "necklace",
+    "color": "dark blue",
+    "material": "cloth",
+    "cut": "high collar with geometric pattern"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

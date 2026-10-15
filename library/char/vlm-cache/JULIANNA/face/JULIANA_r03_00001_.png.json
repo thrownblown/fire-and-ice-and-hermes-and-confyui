@@ -1,0 +1,21 @@
+{
+ "char": "JULIANNA",
+ "lens": "face",
+ "file": "JULIANA_r03_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643047.7,
+ "size": 4331290,
+ "ts": "2026-10-15T04:32:16Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"blue\",\n \"brows\": \"thin and arched\",\n \"nose\": \"straight and narrow\",\n \"lips\": \"full and red\",\n \"distinguishing_features\": [\n  \"long black hair\",\n  \"headband with three dots\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "blue",
+  "brows": "thin and arched",
+  "nose": "straight and narrow",
+  "lips": "full and red",
+  "distinguishing_features": [
+   "long black hair",
+   "headband with three dots"
+  ]
+ }
+}

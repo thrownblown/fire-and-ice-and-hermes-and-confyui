@@ -1,0 +1,17 @@
+{
+ "char": "SHAITAN",
+ "lens": "physique",
+ "file": "ComfyUI_00076_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932052.456213,
+ "size": 2055613,
+ "ts": "2026-10-15T04:59:17Z",
+ "text": "{\n \"sex\": \"indeterminate\",\n \"age_range\": \"indeterminate\",\n \"build\": \"slim\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"dark brown\"\n}",
+ "json": {
+  "sex": "indeterminate",
+  "age_range": "indeterminate",
+  "build": "slim",
+  "height_impression": "tall",
+  "skin_neutral_light": "dark brown"
+ }
+}

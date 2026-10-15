@@ -1,0 +1,18 @@
+{
+ "char": "SPIRIT",
+ "lens": "signature",
+ "file": "ComfyUI_00091_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.8226674,
+ "size": 5485533,
+ "ts": "2026-10-15T05:00:50Z",
+ "text": "{\n \"memorable_traits\": [\"skeleton body\", \"long white hair\", \"black dress\"],\n \"unmistakable_because\": \"The combination of a fully visible skeletal structure, long flowing white hair, and a black dress makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "skeleton body",
+   "long white hair",
+   "black dress"
+  ],
+  "unmistakable_because": "The combination of a fully visible skeletal structure, long flowing white hair, and a black dress makes this figure uniquely identifiable."
+ }
+}

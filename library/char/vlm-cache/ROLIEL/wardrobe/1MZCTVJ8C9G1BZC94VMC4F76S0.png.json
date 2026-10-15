@@ -1,0 +1,27 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "1MZCTVJ8C9G1BZC94VMC4F76S0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.6155138,
+ "size": 1295603,
+ "ts": "2026-10-15T04:46:07Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"cloak\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose, draped over shoulders and body\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"blue\",\n      \"material\": \"leather\",\n      \"cut\": \"thin, tied around waist\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "cloak",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose, draped over shoulders and body"
+   },
+   {
+    "item": "belt",
+    "color": "blue",
+    "material": "leather",
+    "cut": "thin, tied around waist"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

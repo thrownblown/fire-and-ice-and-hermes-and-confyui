@@ -1,0 +1,21 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "shot_01243_f00059.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.031551,
+ "size": 169758,
+ "ts": "2026-10-15T04:29:27Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"green glowing\",\n \"brows\": \"dark and thick\",\n \"nose\": \"small and pointed\",\n \"lips\": \"thin with a grimace\",\n \"distinguishing_features\": [\n  \"black mask covering forehead and eyes\",\n  \"necklace with skull pendant\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "green glowing",
+  "brows": "dark and thick",
+  "nose": "small and pointed",
+  "lips": "thin with a grimace",
+  "distinguishing_features": [
+   "black mask covering forehead and eyes",
+   "necklace with skull pendant"
+  ]
+ }
+}

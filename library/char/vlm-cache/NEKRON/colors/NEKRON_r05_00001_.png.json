@@ -1,0 +1,18 @@
+{
+ "char": "NEKRON",
+ "lens": "colors",
+ "file": "NEKRON_r05_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643403.48,
+ "size": 4219551,
+ "ts": "2026-10-15T04:43:07Z",
+ "text": "{\n \"skin\": \"gray\",\n \"hair\": \"white\",\n \"eyes\": \"light blue\",\n \"garment_primary\": \"dark purple\",\n \"garment_secondary\": \"blue\",\n \"metal_accent\": \"silver\"\n}",
+ "json": {
+  "skin": "gray",
+  "hair": "white",
+  "eyes": "light blue",
+  "garment_primary": "dark purple",
+  "garment_secondary": "blue",
+  "metal_accent": "silver"
+ }
+}

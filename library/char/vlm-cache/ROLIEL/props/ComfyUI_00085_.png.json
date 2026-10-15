@@ -1,0 +1,27 @@
+{
+ "char": "ROLIEL",
+ "lens": "props",
+ "file": "ComfyUI_00085_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.407606,
+ "size": 5646931,
+ "ts": "2026-10-15T04:49:46Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"ears\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "earrings",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "ears"
+   }
+  ],
+  "weapons": []
+ }
+}

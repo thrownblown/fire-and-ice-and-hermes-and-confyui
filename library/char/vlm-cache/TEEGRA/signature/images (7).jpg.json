@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "images (7).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 27870,
+ "ts": "2026-10-15T10:53:13Z",
+ "text": "{\n \"memorable_traits\": [\"long black hair\", \"dark skin tone\", \"chain belt\"],\n \"unmistakable_because\": \"The combination of long black hair, dark skin, and a chain belt makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "dark skin tone",
+   "chain belt"
+  ],
+  "unmistakable_because": "The combination of long black hair, dark skin, and a chain belt makes this figure uniquely identifiable."
+ }
+}

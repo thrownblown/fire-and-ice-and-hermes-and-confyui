@@ -1,0 +1,33 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00466_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931135.5448272,
+ "size": 216476,
+ "ts": "2026-10-15T04:37:19Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"belt\",\n      \"color\": \"red and gold\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, with a large central buckle\"\n    },\n    {\n      \"item\": \"armband\",\n      \"color\": \"red\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting on the upper arm\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"pendant with a circular shape\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "belt",
+    "color": "red and gold",
+    "material": "leather",
+    "cut": "wide, with a large central buckle"
+   },
+   {
+    "item": "armband",
+    "color": "red",
+    "material": "cloth",
+    "cut": "tight-fitting on the upper arm"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "pendant with a circular shape"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

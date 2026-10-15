@@ -1,0 +1,33 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00096_f00119.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931102.7617507,
+ "size": 292651,
+ "ts": "2026-10-15T04:36:09Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"dark brown\",\n      \"material\": \"leather\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"dark red\",\n      \"material\": \"cloth\",\n      \"cut\": \"tightly wrapped around upper arms\"\n    },\n    {\n      \"item\": \"belt with pouches\",\n      \"color\": \"brown and gold\",\n      \"material\": \"leather\",\n      \"cut\": \"waist-length, hanging from hips\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "dark brown",
+    "material": "leather",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "arm bands",
+    "color": "dark red",
+    "material": "cloth",
+    "cut": "tightly wrapped around upper arms"
+   },
+   {
+    "item": "belt with pouches",
+    "color": "brown and gold",
+    "material": "leather",
+    "cut": "waist-length, hanging from hips"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

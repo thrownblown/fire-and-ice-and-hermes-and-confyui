@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "shot_00395_f00035.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723646.708113,
+ "size": 274173,
+ "ts": "2026-10-15T10:56:35Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"light skin\", \"small purple top\"],\n  \"unmistakable_because\": \"The figure's long black hair and light skin contrast sharply with the dark, swampy background.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "light skin",
+   "small purple top"
+  ],
+  "unmistakable_because": "The figure's long black hair and light skin contrast sharply with the dark, swampy background."
+ }
+}

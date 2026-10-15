@@ -1,0 +1,39 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00078_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935159.4635732,
+ "size": 5253259,
+ "ts": "2026-10-15T04:34:29Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"waistband with central circular buckle\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"short, tight-fitting sleeves\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"high-top, reaching mid-calf\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "black",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "belt",
+    "color": "brown",
+    "material": "leather",
+    "cut": "waistband with central circular buckle"
+   },
+   {
+    "item": "arm bands",
+    "color": "black",
+    "material": "cloth",
+    "cut": "short, tight-fitting sleeves"
+   },
+   {
+    "item": "boots",
+    "color": "black",
+    "material": "leather",
+    "cut": "high-top, reaching mid-calf"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

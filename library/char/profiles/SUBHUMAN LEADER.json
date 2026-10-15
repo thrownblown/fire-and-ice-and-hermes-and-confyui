@@ -1,0 +1,608 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 35,
+  "ok": 35
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "middle-aged",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "muscular",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "imposing",
+    "share": 0.6,
+    "n": 5,
+    "outliers": [
+     "tall",
+     "tall"
+    ],
+    "all_values": [
+     "tall",
+     "tall",
+     "imposing",
+     "imposing",
+     "imposing"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "male",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "male",
+     "male",
+     "male",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "brown",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thick",
+    "share": 0.8,
+    "n": 5,
+    "outliers": [
+     "thick, arched, furrowed"
+    ],
+    "all_values": [
+     "thick and arched",
+     "thick",
+     "thick, arched, furrowed",
+     "thick and arched downward",
+     "thick and arched"
+    ],
+    "stable": true
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 5,
+    "stable_items": [],
+    "disputed_items": [
+     "dark hair on top of head",
+     "dark skin tone",
+     "deep wrinkles around eyes and mouth",
+     "deep wrinkles around mouth",
+     "mohawk hairstyle",
+     "necklace with orange pendant",
+     "scar on forehead",
+     "short dark hair",
+     "short dark hair with a ponytail"
+    ],
+    "counts": {
+     "dark hair on top of head": 1,
+     "dark skin tone": 2,
+     "deep wrinkles around eyes and mouth": 2,
+     "deep wrinkles around mouth": 1,
+     "mohawk hairstyle": 1,
+     "necklace with orange pendant": 1,
+     "scar on forehead": 1,
+     "short dark hair": 1,
+     "short dark hair with a ponytail": 1
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "narrow and intense",
+    "share": 0.6,
+    "n": 5,
+    "outliers": [
+     "round",
+     "wide-set, dark, intense gaze"
+    ],
+    "all_values": [
+     "narrow and intense",
+     "round",
+     "wide-set, dark, intense gaze",
+     "narrow and intense",
+     "narrow and intense"
+    ],
+    "stable": true
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "full",
+    "share": 0.2,
+    "n": 5,
+    "outliers": [
+     "thin with bared teeth",
+     "thin, tightly pressed, showing teeth in grimace",
+     "thin and stretched in a grimace showing teeth",
+     "thin with sharp teeth showing"
+    ],
+    "all_values": [
+     "thin with bared teeth",
+     "full",
+     "thin, tightly pressed, showing teeth in grimace",
+     "thin and stretched in a grimace showing teeth",
+     "thin with sharp teeth showing"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "large",
+    "share": 0.8,
+    "n": 5,
+    "outliers": [
+     "large, broad, slightly flared"
+    ],
+    "all_values": [
+     "large and broad",
+     "large",
+     "large, broad, slightly flared",
+     "large and broad with flared nostrils",
+     "large and broad"
+    ],
+    "stable": true
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "dark brown",
+    "share": 0.6,
+    "n": 5,
+    "outliers": [
+     "black",
+     "black"
+    ],
+    "all_values": [
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "short",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "very short",
+     "very short",
+     "very short",
+     "short",
+     "very short"
+    ],
+    "stable": true
+   },
+   "notes": {
+    "kind": "str",
+    "value": "hair is pulled back from the face",
+    "share": 0.25,
+    "n": 4,
+    "outliers": [
+     "mohawk-style topknot",
+     "short tuft at nape",
+     "short tuft at the back"
+    ],
+    "all_values": [
+     "mohawk-style topknot",
+     "short tuft at nape",
+     "hair is pulled back from the face",
+     "short tuft at the back"
+    ],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "tied back",
+    "share": 0.8,
+    "n": 5,
+    "outliers": [
+     "covered"
+    ],
+    "all_values": [
+     "tied back",
+     "covered",
+     "tied back",
+     "tied back",
+     "tied back"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 0.8,
+    "n": 5,
+    "outliers": [
+     "coarse"
+    ],
+    "all_values": [
+     "straight",
+     "coarse",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 5,
+    "stable_items": [
+     "necklace"
+    ],
+    "disputed_items": [
+     "arm bands",
+     "loincloth"
+    ],
+    "detail": {
+     "arm bands": {
+      "n": 2,
+      "values": [
+       "black",
+       "dark brown"
+      ]
+     },
+     "loincloth": {
+      "n": 2,
+      "values": [
+       "brown",
+       "dark brown"
+      ]
+     },
+     "necklace": {
+      "n": 4,
+      "values": [
+       "orange",
+       "orange",
+       "orange",
+       "orange"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "partially clad",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 5,
+    "stable_items": [
+     "necklace"
+    ],
+    "disputed_items": [
+     "spear handle",
+     "tooth necklace"
+    ],
+    "detail": {
+     "necklace": {
+      "n": 4,
+      "values": [
+       "orange",
+       "orange",
+       "orange",
+       "orange"
+      ]
+     },
+     "spear handle": {
+      "n": 1,
+      "values": [
+       "dark brown"
+      ]
+     },
+     "tooth necklace": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 5,
+    "stable_items": [],
+    "disputed_items": [
+     "dagger",
+     "sword",
+     "sword blade"
+    ],
+    "counts": {
+     "dagger": 1,
+     "sword": 1,
+     "sword blade": 1
+    }
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "dark brown",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown"
+    ],
+    "stable": true
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "brown",
+    "share": 1.0,
+    "n": 2,
+    "outliers": [],
+    "all_values": [
+     "brown",
+     "dark brown"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": null,
+    "share": 0.0,
+    "n": 0,
+    "outliers": [],
+    "all_values": [],
+    "stable": false
+   },
+   "hair": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "orange",
+    "share": 0.6666666666666666,
+    "n": 3,
+    "outliers": [
+     "silver"
+    ],
+    "all_values": [
+     "silver",
+     "orange",
+     "orange"
+    ],
+    "stable": true
+   },
+   "skin": {
+    "kind": "str",
+    "value": "brown",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "brown",
+     "dark brown",
+     "brown",
+     "brown",
+     "brown"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 5,
+    "stable_items": [
+     "necklace with orange pendant"
+    ],
+    "disputed_items": [
+     "bald head with short dark hair at the back",
+     "bald head with short dark hair on the sides",
+     "barefoot",
+     "broad muscular build",
+     "dark brown skin",
+     "dark skin",
+     "distinctive facial expression with wide mouth and bared teeth",
+     "large muscular build",
+     "muscular build",
+     "necklace with a single orange pendant",
+     "sharp facial features",
+     "sharp teeth showing in grin",
+     "short black hair",
+     "tall stature",
+     "tightly coiled topknot hairstyle",
+     "wide grin showing sharp teeth"
+    ],
+    "counts": {
+     "bald head with short dark hair at the back": 1,
+     "bald head with short dark hair on the sides": 1,
+     "barefoot": 1,
+     "broad muscular build": 2,
+     "dark brown skin": 1,
+     "dark skin": 1,
+     "distinctive facial expression with wide mouth and bared teeth": 1,
+     "large muscular build": 2,
+     "muscular build": 1,
+     "necklace with a single orange pendant": 1,
+     "necklace with orange pendant": 3,
+     "sharp facial features": 1,
+     "sharp teeth showing in grin": 1,
+     "short black hair": 1,
+     "tall stature": 1,
+     "tightly coiled topknot hairstyle": 1,
+     "wide grin showing sharp teeth": 1
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of his bald head, wide toothy grin, and muscular physique makes him instantly recognizable.",
+    "share": 0.2,
+    "n": 5,
+    "outliers": [
+     "The combination of his massive, heavily muscled physique and the distinctive topknot hairstyle makes him instantly recognizable.",
+     "The figure's immense, exaggerated musculature and tall, imposing silhouette make it instantly recognizable.",
+     "The figure's bald head, exaggerated musculature, and fierce facial expression with bared teeth make it instantly recognizable.",
+     "The combination of his broad, muscular physique, dark brown skin, and the distinctive sharp-toothed grin makes him instantly recognizable."
+    ],
+    "all_values": [
+     "The combination of his massive, heavily muscled physique and the distinctive topknot hairstyle makes him instantly recognizable.",
+     "The figure's immense, exaggerated musculature and tall, imposing silhouette make it instantly recognizable.",
+     "The figure's bald head, exaggerated musculature, and fierce facial expression with bared teeth make it instantly recognizable.",
+     "The combination of his broad, muscular physique, dark brown skin, and the distinctive sharp-toothed grin makes him instantly recognizable.",
+     "The combination of his bald head, wide toothy grin, and muscular physique makes him instantly recognizable."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.eyes",
+  "colors.garment_primary",
+  "colors.hair",
+  "colors.metal_accent",
+  "colors.skin",
+  "face.brows",
+  "face.eyes",
+  "face.face_shape",
+  "face.nose",
+  "hair.color",
+  "hair.length",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "props.items:necklace",
+  "signature.memorable_traits:necklace with orange pendant",
+  "wardrobe.garments:necklace",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "face.distinguishing_features:dark hair on top of head",
+  "face.distinguishing_features:dark skin tone",
+  "face.distinguishing_features:deep wrinkles around eyes and mouth",
+  "face.distinguishing_features:deep wrinkles around mouth",
+  "face.distinguishing_features:mohawk hairstyle",
+  "face.distinguishing_features:necklace with orange pendant",
+  "face.distinguishing_features:scar on forehead",
+  "face.distinguishing_features:short dark hair",
+  "face.distinguishing_features:short dark hair with a ponytail",
+  "face.lips",
+  "hair.notes",
+  "props.items:spear handle",
+  "props.items:tooth necklace",
+  "props.weapons:dagger",
+  "props.weapons:sword",
+  "props.weapons:sword blade",
+  "signature.memorable_traits:bald head with short dark hair at the back",
+  "signature.memorable_traits:bald head with short dark hair on the sides",
+  "signature.memorable_traits:barefoot",
+  "signature.memorable_traits:broad muscular build",
+  "signature.memorable_traits:dark brown skin",
+  "signature.memorable_traits:dark skin",
+  "signature.memorable_traits:distinctive facial expression with wide mouth and bared teeth",
+  "signature.memorable_traits:large muscular build",
+  "signature.memorable_traits:muscular build",
+  "signature.memorable_traits:necklace with a single orange pendant",
+  "signature.memorable_traits:sharp facial features",
+  "signature.memorable_traits:sharp teeth showing in grin",
+  "signature.memorable_traits:short black hair",
+  "signature.memorable_traits:tall stature",
+  "signature.memorable_traits:tightly coiled topknot hairstyle",
+  "signature.memorable_traits:wide grin showing sharp teeth",
+  "signature.unmistakable_because",
+  "wardrobe.garments:arm bands",
+  "wardrobe.garments:loincloth"
+ ],
+ "prompt_block": "middle-aged male, muscular build, imposing height impression, brown skin, dark brown short straight tied back hair, oval face, narrow and intense eyes, dressed in brown, wearing necklace, carrying necklace, memorable for necklace with orange pendant."
+}

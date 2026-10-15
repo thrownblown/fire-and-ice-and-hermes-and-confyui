@@ -1,0 +1,23 @@
+{
+ "char": "DARKWOLF",
+ "lens": "props",
+ "file": "darkwolf_color_model_sheet.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3866518,
+ "size": 28370,
+ "ts": "2026-10-15T04:25:26Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"axe\",\n      \"color\": \"dark gray\",\n      \"worn_or_carried\": \"held\",\n      \"body_location\": \"left hand\"\n    }\n  ],\n  \"weapons\": [\n    \"axe\"\n  ]\n}",
+ "json": {
+  "items": [
+   {
+    "item": "axe",
+    "color": "dark gray",
+    "worn_or_carried": "held",
+    "body_location": "left hand"
+   }
+  ],
+  "weapons": [
+   "axe"
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "char": "DARKWOLF",
+ "lens": "colors",
+ "file": "shot_01229_f00012.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.0305507,
+ "size": 131502,
+ "ts": "2026-10-15T04:28:57Z",
+ "text": "{\n \"skin\": \"dark brown\",\n \"hair\": \"null\",\n \"eyes\": \"green\",\n \"garment_primary\": \"brown\",\n \"garment_secondary\": \"black\",\n \"metal_accent\": \"gold\"\n}",
+ "json": {
+  "skin": "dark brown",
+  "hair": null,
+  "eyes": "green",
+  "garment_primary": "brown",
+  "garment_secondary": "black",
+  "metal_accent": "gold"
+ }
+}

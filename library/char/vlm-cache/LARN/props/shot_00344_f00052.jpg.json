@@ -1,0 +1,27 @@
+{
+ "char": "LARN",
+ "lens": "props",
+ "file": "shot_00344_f00052.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931127.184883,
+ "size": 249547,
+ "ts": "2026-10-15T04:36:59Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"earring\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"left ear\"\n    },\n    {\n      \"item\": \"earring\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"right ear\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "earring",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "left ear"
+   },
+   {
+    "item": "earring",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "right ear"
+   }
+  ],
+  "weapons": []
+ }
+}

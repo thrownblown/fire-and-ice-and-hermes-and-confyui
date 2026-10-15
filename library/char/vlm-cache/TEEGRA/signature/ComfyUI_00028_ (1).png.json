@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "ComfyUI_00028_ (1).png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.5850036,
+ "size": 4583561,
+ "ts": "2026-10-15T10:49:21Z",
+ "text": "{\n \"memorable_traits\": [\"long black hair\", \"green eyes\", \"gold teardrop earrings\", \"yellow pendant necklace\"],\n \"unmistakable_because\": \"The combination of long black hair, green eyes, and distinctive gold teardrop earrings makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "green eyes",
+   "gold teardrop earrings",
+   "yellow pendant necklace"
+  ],
+  "unmistakable_because": "The combination of long black hair, green eyes, and distinctive gold teardrop earrings makes this figure instantly recognizable."
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "JULIANNA",
+ "lens": "props",
+ "file": "JULIANA_r05_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643115.85,
+ "size": 4600417,
+ "ts": "2026-10-15T04:33:16Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"rope\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"carried\",\n      \"body_location\": \"left hand\"\n    },\n    {\n      \"item\": \"rope\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"carried\",\n      \"body_location\": \"right hand\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "rope",
+    "color": "brown",
+    "worn_or_carried": "carried",
+    "body_location": "left hand"
+   },
+   {
+    "item": "rope",
+    "color": "brown",
+    "worn_or_carried": "carried",
+    "body_location": "right hand"
+   }
+  ],
+  "weapons": []
+ }
+}

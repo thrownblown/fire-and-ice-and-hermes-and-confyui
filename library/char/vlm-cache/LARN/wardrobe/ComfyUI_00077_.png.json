@@ -1,0 +1,39 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00077_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935159.4630673,
+ "size": 4873563,
+ "ts": "2026-10-15T04:34:00Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"dark brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting, triangular\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"wide, with a central circular buckle\"\n    },\n    {\n      \"item\": \"boots\",\n      \"color\": \"dark brown\",\n      \"material\": \"leather\",\n      \"cut\": \"tall, reaching mid-calf, with fur trim at top\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"short, wrapped around upper arms\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "dark brown",
+    "material": "cloth",
+    "cut": "tight-fitting, triangular"
+   },
+   {
+    "item": "belt",
+    "color": "brown",
+    "material": "leather",
+    "cut": "wide, with a central circular buckle"
+   },
+   {
+    "item": "boots",
+    "color": "dark brown",
+    "material": "leather",
+    "cut": "tall, reaching mid-calf, with fur trim at top"
+   },
+   {
+    "item": "arm bands",
+    "color": "brown",
+    "material": "cloth",
+    "cut": "short, wrapped around upper arms"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

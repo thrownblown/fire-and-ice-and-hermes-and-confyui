@@ -1,0 +1,27 @@
+{
+ "char": "SPIRIT",
+ "lens": "props",
+ "file": "shot_00763_f00057.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932283.8135953,
+ "size": 359351,
+ "ts": "2026-10-15T05:02:19Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"dark blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"bracelet\",\n      \"color\": \"dark blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"left wrist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "dark blue",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "bracelet",
+    "color": "dark blue",
+    "worn_or_carried": "worn",
+    "body_location": "left wrist"
+   }
+  ],
+  "weapons": []
+ }
+}

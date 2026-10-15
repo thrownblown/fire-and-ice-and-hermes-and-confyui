@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "props",
+ "file": "ComfyUI_00028_ (1).png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.5850036,
+ "size": 4583561,
+ "ts": "2026-10-15T10:49:16Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gold\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"ear\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "earrings",
+    "color": "gold",
+    "worn_or_carried": "worn",
+    "body_location": "ear"
+   }
+  ],
+  "weapons": []
+ }
+}

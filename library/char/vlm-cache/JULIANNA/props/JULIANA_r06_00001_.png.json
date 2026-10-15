@@ -1,0 +1,27 @@
+{
+ "char": "JULIANNA",
+ "lens": "props",
+ "file": "JULIANA_r06_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643149.91,
+ "size": 4002161,
+ "ts": "2026-10-15T04:33:38Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"headband\",\n      \"color\": \"black\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"head\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"black\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"ears\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "headband",
+    "color": "black",
+    "worn_or_carried": "worn",
+    "body_location": "head"
+   },
+   {
+    "item": "earrings",
+    "color": "black",
+    "worn_or_carried": "worn",
+    "body_location": "ears"
+   }
+  ],
+  "weapons": []
+ }
+}

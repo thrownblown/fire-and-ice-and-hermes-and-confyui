@@ -1,0 +1,17 @@
+{
+ "char": "JAROL",
+ "lens": "hair",
+ "file": "shot_00185_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729662.215001,
+ "size": 319332,
+ "ts": "2026-10-15T04:30:22Z",
+ "text": "{\n \"color\": \"bald\",\n \"length\": \"shaved\",\n \"texture\": \"\",\n \"style\": \"covered\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "bald",
+  "length": "shaved",
+  "texture": null,
+  "style": "covered",
+  "notes": null
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "shot_00632_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723666.9149024,
+ "size": 355364,
+ "ts": "2026-10-15T10:57:44Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"green eyes\", \"purple top\", \"gold necklace with pendant\"],\n  \"unmistakable_because\": \"The combination of long black hair, green eyes, and distinctive purple attire with a gold necklace makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "green eyes",
+   "purple top",
+   "gold necklace with pendant"
+  ],
+  "unmistakable_because": "The combination of long black hair, green eyes, and distinctive purple attire with a gold necklace makes this figure uniquely identifiable."
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "signature",
+ "file": "shot_00415_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932185.9253,
+ "size": 334885,
+ "ts": "2026-10-15T05:08:59Z",
+ "text": "{\n \"memorable_traits\": [\"bald head with short dark hair at the back\", \"large muscular build\", \"distinctive facial expression with wide mouth and bared teeth\", \"necklace with orange pendant\"],\n \"unmistakable_because\": \"The figure's bald head, exaggerated musculature, and fierce facial expression with bared teeth make it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "bald head with short dark hair at the back",
+   "large muscular build",
+   "distinctive facial expression with wide mouth and bared teeth",
+   "necklace with orange pendant"
+  ],
+  "unmistakable_because": "The figure's bald head, exaggerated musculature, and fierce facial expression with bared teeth make it instantly recognizable."
+ }
+}

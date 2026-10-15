@@ -1,0 +1,20 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "signature",
+ "file": "ComfyUI_00093_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935265.475443,
+ "size": 4117657,
+ "ts": "2026-10-15T05:06:22Z",
+ "text": "{\n \"memorable_traits\": [\"broad shoulders\", \"dark brown skin\", \"long dark hair\", \"thick eyebrows\", \"wide mouth with visible teeth\"],\n \"unmistakable_because\": \"The figure's exaggerated facial features, including thick brows and a wide mouth with prominent teeth, combined with its muscular build and long dark hair, create an instantly recognizable silhouette.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "broad shoulders",
+   "dark brown skin",
+   "long dark hair",
+   "thick eyebrows",
+   "wide mouth with visible teeth"
+  ],
+  "unmistakable_because": "The figure's exaggerated facial features, including thick brows and a wide mouth with prominent teeth, combined with its muscular build and long dark hair, create an instantly recognizable silhouette."
+ }
+}

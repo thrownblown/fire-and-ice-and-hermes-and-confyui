@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "601K7VAFZ0HZJV62HCTB4CEG60.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7945845,
+ "size": 1338194,
+ "ts": "2026-10-15T04:47:43Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"braided, tied around waist\"\n    },\n    {\n      \"item\": \"choker\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting, wrapped around neck\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   },
+   {
+    "item": "belt",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "braided, tied around waist"
+   },
+   {
+    "item": "choker",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "tight-fitting, wrapped around neck"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

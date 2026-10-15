@@ -1,0 +1,18 @@
+{
+ "char": "LARN",
+ "lens": "colors",
+ "file": "shot_00775_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025498.1101148,
+ "size": 256639,
+ "ts": "2026-10-15T04:40:54Z",
+ "text": "{\n \"skin\": \"tan\",\n \"hair\": \"blond\",\n \"eyes\": \"blue\",\n \"garment_primary\": null,\n \"garment_secondary\": null,\n \"metal_accent\": \"silver\"\n}",
+ "json": {
+  "skin": "tan",
+  "hair": "blond",
+  "eyes": "blue",
+  "garment_primary": null,
+  "garment_secondary": null,
+  "metal_accent": "silver"
+ }
+}

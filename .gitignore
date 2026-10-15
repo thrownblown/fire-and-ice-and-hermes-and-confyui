@@ -22,6 +22,7 @@
 .pytest_cache/
 __pycache__/
 *.pyc
+.worktrees/
 
 # Third-party clones; each is its own repo
 explore/

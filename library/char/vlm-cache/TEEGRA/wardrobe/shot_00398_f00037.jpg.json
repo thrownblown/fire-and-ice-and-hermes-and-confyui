@@ -1,0 +1,27 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "shot_00398_f00037.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723646.1230502,
+ "size": 248303,
+ "ts": "2026-10-15T10:56:49Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"simple pendant hanging from thin chain\"\n    },\n    {\n      \"item\": \"earring\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"small triangular drop\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "simple pendant hanging from thin chain"
+   },
+   {
+    "item": "earring",
+    "color": "gold",
+    "material": "metal",
+    "cut": "small triangular drop"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

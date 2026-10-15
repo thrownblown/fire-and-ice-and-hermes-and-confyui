@@ -1,0 +1,17 @@
+{
+ "char": "SHAITAN",
+ "lens": "physique",
+ "file": "shot_00217_f00013.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931744.0748787,
+ "size": 86900,
+ "ts": "2026-10-15T04:59:43Z",
+ "text": "{\n \"sex\": \"indeterminate\",\n \"age_range\": \"young adult\",\n \"build\": \"muscular\",\n \"height_impression\": \"imposing\",\n \"skin_neutral_light\": \"dark brown\"\n}",
+ "json": {
+  "sex": "indeterminate",
+  "age_range": "young adult",
+  "build": "muscular",
+  "height_impression": "imposing",
+  "skin_neutral_light": "dark brown"
+ }
+}

@@ -1,0 +1,743 @@
+{
+ "char": "SUBHUMAN",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 77,
+  "ok": 77
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "young adult",
+    "share": 0.5454545454545454,
+    "n": 11,
+    "outliers": [
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged"
+    ],
+    "all_values": [
+     "middle-aged",
+     "middle-aged",
+     "young adult",
+     "middle-aged",
+     "young adult",
+     "young adult",
+     "middle-aged",
+     "young adult",
+     "young adult",
+     "middle-aged",
+     "young adult"
+    ],
+    "stable": false
+   },
+   "build": {
+    "kind": "str",
+    "value": "muscular",
+    "share": 1.0,
+    "n": 11,
+    "outliers": [],
+    "all_values": [
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular",
+     "muscular"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "tall",
+    "share": 0.7272727272727273,
+    "n": 11,
+    "outliers": [
+     "average",
+     "average",
+     "imposing"
+    ],
+    "all_values": [
+     "tall",
+     "tall",
+     "tall",
+     "average",
+     "average",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "imposing",
+     "tall"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "male",
+    "share": 1.0,
+    "n": 11,
+    "outliers": [],
+    "all_values": [
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "brown",
+    "share": 0.8181818181818182,
+    "n": 11,
+    "outliers": [
+     "light brown",
+     "tan"
+    ],
+    "all_values": [
+     "brown",
+     "brown",
+     "dark brown",
+     "dark brown",
+     "brown",
+     "dark brown",
+     "brown",
+     "light brown",
+     "brown",
+     "brown",
+     "tan"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thick and arched",
+    "share": 0.7272727272727273,
+    "n": 11,
+    "outliers": [
+     "thick, arched, slightly furrowed",
+     "thick, arched",
+     "thick, arched, dark"
+    ],
+    "all_values": [
+     "thick, arched, slightly furrowed",
+     "thick, arched, dark",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick, arched",
+     "thick and arched"
+    ],
+    "stable": true
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 11,
+    "stable_items": [
+     "dark hair"
+    ],
+    "disputed_items": [
+     "dark hair falling over forehead",
+     "deep wrinkles around eyes",
+     "deep wrinkles around eyes and mouth",
+     "hair covering forehead",
+     "heavy brow ridge",
+     "long dark hair falling over forehead",
+     "muscular build",
+     "scar on forehead",
+     "visible teeth",
+     "wrinkled forehead"
+    ],
+    "counts": {
+     "dark hair": 7,
+     "dark hair falling over forehead": 1,
+     "deep wrinkles around eyes": 1,
+     "deep wrinkles around eyes and mouth": 2,
+     "hair covering forehead": 1,
+     "heavy brow ridge": 1,
+     "long dark hair falling over forehead": 1,
+     "muscular build": 6,
+     "scar on forehead": 2,
+     "visible teeth": 1,
+     "wrinkled forehead": 1
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "narrow and intense",
+    "share": 0.2727272727272727,
+    "n": 11,
+    "outliers": [
+     "dark, narrow, intense gaze",
+     "dark, almond-shaped, slightly narrowed",
+     "wide and intense",
+     "narrow and dark",
+     "wide open",
+     "wide open, intense expression",
+     "wide and round",
+     "wide-set, intense gaze"
+    ],
+    "all_values": [
+     "dark, narrow, intense gaze",
+     "dark, almond-shaped, slightly narrowed",
+     "wide and intense",
+     "narrow and intense",
+     "narrow and dark",
+     "narrow and intense",
+     "narrow and intense",
+     "wide open",
+     "wide and round",
+     "wide-set, intense gaze",
+     "wide open, intense expression"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 11,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "full, slightly parted",
+    "share": 0.2727272727272727,
+    "n": 11,
+    "outliers": [
+     "thin, straight, set in a stern expression",
+     "thin and set in a grimace",
+     "thin and set in a grimace",
+     "thin and set in a grimace",
+     "thin with a grimace",
+     "thin with a slight smile",
+     "thin, slightly parted",
+     "partially open in a scream"
+    ],
+    "all_values": [
+     "thin, straight, set in a stern expression",
+     "full, slightly parted",
+     "full and slightly parted",
+     "thin and set in a grimace",
+     "thin and set in a grimace",
+     "thin and set in a grimace",
+     "thin with a grimace",
+     "full and slightly parted",
+     "thin with a slight smile",
+     "thin, slightly parted",
+     "partially open in a scream"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "large and broad",
+    "share": 0.5454545454545454,
+    "n": 11,
+    "outliers": [
+     "large, broad, flat",
+     "large, broad, flat",
+     "large, broad",
+     "large and flat",
+     "prominent, slightly flared"
+    ],
+    "all_values": [
+     "large, broad, flat",
+     "large, broad, flat",
+     "large and broad",
+     "large and broad",
+     "large and broad",
+     "large and broad",
+     "large and broad",
+     "large and broad",
+     "large and flat",
+     "large, broad",
+     "prominent, slightly flared"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.5454545454545454,
+    "n": 11,
+    "outliers": [
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown"
+    ],
+    "all_values": [
+     "black",
+     "black",
+     "dark brown",
+     "black",
+     "black",
+     "black",
+     "black",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown"
+    ],
+    "stable": false
+   },
+   "length": {
+    "kind": "str",
+    "value": "shoulder-length",
+    "share": 0.5454545454545454,
+    "n": 11,
+    "outliers": [
+     "very long",
+     "long",
+     "long",
+     "long",
+     "short"
+    ],
+    "all_values": [
+     "very long",
+     "long",
+     "shoulder-length",
+     "long",
+     "shoulder-length",
+     "shoulder-length",
+     "short",
+     "long",
+     "shoulder-length",
+     "shoulder-length",
+     "shoulder-length"
+    ],
+    "stable": false
+   },
+   "notes": {
+    "kind": "str",
+    "value": "no bangs or accessories",
+    "share": 0.5555555555555556,
+    "n": 9,
+    "outliers": [
+     "bangs",
+     "bangs",
+     "has bangs",
+     "some strands fall over the face"
+    ],
+    "all_values": [
+     "bangs",
+     "bangs",
+     "has bangs",
+     "some strands fall over the face",
+     "no bangs, no accessories",
+     "no bangs or accessories",
+     "no bangs, no accessories",
+     "no bangs, no accessories",
+     "no bangs, no accessories"
+    ],
+    "stable": false
+   },
+   "style": {
+    "kind": "str",
+    "value": "loose",
+    "share": 1.0,
+    "n": 11,
+    "outliers": [],
+    "all_values": [
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 11,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 11,
+    "stable_items": [
+     "loincloth"
+    ],
+    "disputed_items": [],
+    "detail": {
+     "loincloth": {
+      "n": 10,
+      "values": [
+       "dark brown",
+       "black",
+       "dark brown",
+       "dark brown",
+       "red",
+       "black",
+       "dark brown",
+       "dark brown",
+       "dark brown",
+       "dark brown"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "partially clad",
+    "share": 0.9090909090909091,
+    "n": 11,
+    "outliers": [
+     "barefoot"
+    ],
+    "all_values": [
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "barefoot",
+     "partially clad",
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 11,
+    "stable_items": [],
+    "disputed_items": [],
+    "detail": {}
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 11,
+    "stable_items": [
+     "spear"
+    ],
+    "disputed_items": [
+     "axe",
+     "club",
+     "stick"
+    ],
+    "counts": {
+     "axe": 1,
+     "club": 1,
+     "spear": 7,
+     "stick": 1
+    }
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "dark brown",
+    "share": 0.9090909090909091,
+    "n": 11,
+    "outliers": [
+     "black"
+    ],
+    "all_values": [
+     "dark brown",
+     "dark brown",
+     "black",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown"
+    ],
+    "stable": true
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 8,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": "red",
+    "share": 1.0,
+    "n": 1,
+    "outliers": [],
+    "all_values": [
+     "red"
+    ],
+    "stable": true
+   },
+   "hair": {
+    "kind": "str",
+    "value": "black",
+    "share": 0.9090909090909091,
+    "n": 11,
+    "outliers": [
+     "dark brown"
+    ],
+    "all_values": [
+     "black",
+     "black",
+     "dark brown",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "silver",
+    "share": 1.0,
+    "n": 2,
+    "outliers": [],
+    "all_values": [
+     "silver",
+     "silver"
+    ],
+    "stable": true
+   },
+   "skin": {
+    "kind": "str",
+    "value": "brown",
+    "share": 1.0,
+    "n": 11,
+    "outliers": [],
+    "all_values": [
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown",
+     "brown"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 11,
+    "stable_items": [
+     "dark skin"
+    ],
+    "disputed_items": [
+     "aggressive expression",
+     "bare chest",
+     "bared teeth",
+     "bent posture",
+     "bent-over posture",
+     "broad muscular build",
+     "dark short hair",
+     "dark skin tone",
+     "holding a red pole",
+     "holding a spear",
+     "holding spear",
+     "intense facial expression",
+     "long black hair",
+     "long dark hair",
+     "muscular build",
+     "simple loincloth"
+    ],
+    "counts": {
+     "aggressive expression": 1,
+     "bare chest": 1,
+     "bared teeth": 1,
+     "bent posture": 2,
+     "bent-over posture": 1,
+     "broad muscular build": 3,
+     "dark short hair": 1,
+     "dark skin": 7,
+     "dark skin tone": 1,
+     "holding a red pole": 1,
+     "holding a spear": 3,
+     "holding spear": 3,
+     "intense facial expression": 2,
+     "long black hair": 6,
+     "long dark hair": 2,
+     "muscular build": 6,
+     "simple loincloth": 2
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the central figure's exaggerated muscularity, fierce grimace with bared teeth, and grip on the red pole make him visually dominant.",
+    "share": 0.1,
+    "n": 10,
+    "outliers": [
+     "The combination of long dark hair, immense musculature, and the distinctive simple loincloth makes this figure instantly recognizable.",
+     "The figure's combination of long black hair, massive musculature, and dark skin makes it instantly recognizable.",
+     "The figure's muscular physique, long dark hair, and aggressive stance while wielding a spear make him instantly recognizable.",
+     "The figure's muscular physique, dark skin, and long black hair combined with his crouched stance make him visually distinct.",
+     "The figure's exaggerated muscularity, dark skin, and crouched stance with a spear make it visually distinct.",
+     "The figure's exaggerated muscularity and crouched, aggressive stance with a spear make them visually dominant.",
+     "The figure's massive, defined musculature and fierce, detailed facial features make him instantly recognizable.",
+     "The figure's crouched stance and long dark hair distinguish them from the other two figures.",
+     "The figure's muscular physique, dark skin, and long black hair combined with the spear make it visually distinct."
+    ],
+    "all_values": [
+     "The combination of long dark hair, immense musculature, and the distinctive simple loincloth makes this figure instantly recognizable.",
+     "The figure's combination of long black hair, massive musculature, and dark skin makes it instantly recognizable.",
+     "The figure's muscular physique, long dark hair, and aggressive stance while wielding a spear make him instantly recognizable.",
+     "The figure's muscular physique, dark skin, and long black hair combined with his crouched stance make him visually distinct.",
+     "The figure's exaggerated muscularity, dark skin, and crouched stance with a spear make it visually distinct.",
+     "The figure's exaggerated muscularity and crouched, aggressive stance with a spear make them visually dominant.",
+     "The figure's massive, defined musculature and fierce, detailed facial features make him instantly recognizable.",
+     "The figure's crouched stance and long dark hair distinguish them from the other two figures.",
+     "The central figure's exaggerated muscularity, fierce grimace with bared teeth, and grip on the red pole make him visually dominant.",
+     "The figure's muscular physique, dark skin, and long black hair combined with the spear make it visually distinct."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.eyes",
+  "colors.garment_primary",
+  "colors.garment_secondary",
+  "colors.hair",
+  "colors.metal_accent",
+  "colors.skin",
+  "face.brows",
+  "face.distinguishing_features:dark hair",
+  "face.face_shape",
+  "hair.style",
+  "hair.texture",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "props.weapons:spear",
+  "signature.memorable_traits:dark skin",
+  "wardrobe.garments:loincloth",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "face.distinguishing_features:dark hair falling over forehead",
+  "face.distinguishing_features:deep wrinkles around eyes",
+  "face.distinguishing_features:deep wrinkles around eyes and mouth",
+  "face.distinguishing_features:hair covering forehead",
+  "face.distinguishing_features:heavy brow ridge",
+  "face.distinguishing_features:long dark hair falling over forehead",
+  "face.distinguishing_features:muscular build",
+  "face.distinguishing_features:scar on forehead",
+  "face.distinguishing_features:visible teeth",
+  "face.distinguishing_features:wrinkled forehead",
+  "face.eyes",
+  "face.lips",
+  "face.nose",
+  "hair.color",
+  "hair.length",
+  "hair.notes",
+  "physique.age_range",
+  "props.weapons:axe",
+  "props.weapons:club",
+  "props.weapons:stick",
+  "signature.memorable_traits:aggressive expression",
+  "signature.memorable_traits:bare chest",
+  "signature.memorable_traits:bared teeth",
+  "signature.memorable_traits:bent posture",
+  "signature.memorable_traits:bent-over posture",
+  "signature.memorable_traits:broad muscular build",
+  "signature.memorable_traits:dark short hair",
+  "signature.memorable_traits:dark skin tone",
+  "signature.memorable_traits:holding a red pole",
+  "signature.memorable_traits:holding a spear",
+  "signature.memorable_traits:holding spear",
+  "signature.memorable_traits:intense facial expression",
+  "signature.memorable_traits:long black hair",
+  "signature.memorable_traits:long dark hair",
+  "signature.memorable_traits:muscular build",
+  "signature.memorable_traits:simple loincloth",
+  "signature.unmistakable_because"
+ ],
+ "prompt_block": "male, muscular build, tall height impression, brown skin, straight loose hair, oval face, dark brown eyes, dressed in black and red, wearing loincloth, armed with spear, memorable for dark skin."
+}

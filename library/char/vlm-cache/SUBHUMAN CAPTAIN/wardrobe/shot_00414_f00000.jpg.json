@@ -1,0 +1,21 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "wardrobe",
+ "file": "shot_00414_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932079.074484,
+ "size": 303085,
+ "ts": "2026-10-15T05:07:07Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tightly wrapped around upper arms\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "arm bands",
+    "color": "brown",
+    "material": "cloth",
+    "cut": "tightly wrapped around upper arms"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

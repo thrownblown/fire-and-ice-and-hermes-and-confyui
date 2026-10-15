@@ -1,0 +1,18 @@
+{
+ "char": "OTWA",
+ "lens": "colors",
+ "file": "shot_00706_f00021.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931801.3537695,
+ "size": 284934,
+ "ts": "2026-10-15T04:44:31Z",
+ "text": "{\n \"skin\": \"pale pink\",\n \"hair\": \"dark red\",\n \"eyes\": \"black\",\n \"garment_primary\": \"brown\",\n \"garment_secondary\": null,\n \"metal_accent\": null\n}",
+ "json": {
+  "skin": "pale pink",
+  "hair": "dark red",
+  "eyes": "black",
+  "garment_primary": "brown",
+  "garment_secondary": null,
+  "metal_accent": null
+ }
+}

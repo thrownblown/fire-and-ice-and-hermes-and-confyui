@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "colors",
+ "file": "teegra_cosplay_by_synth_crush_di9eund-414w.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032327.0699873,
+ "size": 37541,
+ "ts": "2026-10-15T10:57:59Z",
+ "text": "{\n \"skin\": \"light beige\",\n \"hair\": \"dark brown\",\n \"eyes\": \"dark brown\",\n \"garment_primary\": \"light purple\",\n \"garment_secondary\": \"light purple\",\n \"metal_accent\": \"gold\"\n}",
+ "json": {
+  "skin": "light beige",
+  "hair": "dark brown",
+  "eyes": "dark brown",
+  "garment_primary": "light purple",
+  "garment_secondary": "light purple",
+  "metal_accent": "gold"
+ }
+}

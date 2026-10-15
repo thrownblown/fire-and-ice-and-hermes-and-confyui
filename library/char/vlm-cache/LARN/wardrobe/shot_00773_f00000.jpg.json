@@ -1,0 +1,21 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00773_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025484.7173803,
+ "size": 216144,
+ "ts": "2026-10-15T04:39:46Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"brown\",\n      \"material\": \"metal\",\n      \"cut\": \"pendant hanging from a chain\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "necklace",
+    "color": "brown",
+    "material": "metal",
+    "cut": "pendant hanging from a chain"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

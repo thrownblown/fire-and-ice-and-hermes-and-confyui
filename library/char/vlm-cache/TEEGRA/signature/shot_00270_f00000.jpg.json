@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "shot_00270_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791723623.5959723,
+ "size": 341222,
+ "ts": "2026-10-15T10:54:49Z",
+ "text": "{\n  \"memorable_traits\": [\"long black hair\", \"gold earrings\", \"purple garment\", \"necklace with gold pendant\"],\n  \"unmistakable_because\": \"The combination of long black hair, distinctive gold jewelry, and the purple garment makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long black hair",
+   "gold earrings",
+   "purple garment",
+   "necklace with gold pendant"
+  ],
+  "unmistakable_because": "The combination of long black hair, distinctive gold jewelry, and the purple garment makes this figure instantly recognizable."
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00098_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935235.9692163,
+ "size": 4418573,
+ "ts": "2026-10-15T05:08:12Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"black\",\n      \"material\": \"leather\",\n      \"cut\": \"tightly wrapped around upper arms\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"orange\",\n      \"material\": \"unknown\",\n      \"cut\": \"pendant hanging from neck\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "arm bands",
+    "color": "black",
+    "material": "leather",
+    "cut": "tightly wrapped around upper arms"
+   },
+   {
+    "item": "necklace",
+    "color": "orange",
+    "material": "unknown",
+    "cut": "pendant hanging from neck"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "JAROL",
+ "lens": "wardrobe",
+ "file": "shot_00185_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729662.215001,
+ "size": 319332,
+ "ts": "2026-10-15T04:30:26Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"dark red\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, sleeveless\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"dark red\",\n      \"material\": \"cloth\",\n      \"cut\": \"waistband\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "dark red",
+    "material": "cloth",
+    "cut": "loose-fitting, sleeveless"
+   },
+   {
+    "item": "belt",
+    "color": "dark red",
+    "material": "cloth",
+    "cut": "waistband"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

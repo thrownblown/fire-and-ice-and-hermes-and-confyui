@@ -1,0 +1,18 @@
+{
+ "char": "LARN",
+ "lens": "face",
+ "file": "shot_00772_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025493.254031,
+ "size": 239575,
+ "ts": "2026-10-15T04:39:14Z",
+ "text": "{\n \"face_shape\": null,\n \"eyes\": null,\n \"brows\": null,\n \"nose\": null,\n \"lips\": null,\n \"distinguishing_features\": []\n}",
+ "json": {
+  "face_shape": null,
+  "eyes": null,
+  "brows": null,
+  "nose": null,
+  "lips": null,
+  "distinguishing_features": []
+ }
+}

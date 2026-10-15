@@ -1,0 +1,17 @@
+{
+ "char": "TUTOR",
+ "lens": "hair",
+ "file": "shot_00230_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.553537,
+ "size": 319678,
+ "ts": "2026-10-15T05:21:11Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"\"\n}",
+ "json": {
+  "color": "black",
+  "length": "long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": null
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "char": "JULIANNA",
+ "lens": "props",
+ "file": "JULIANA_r03_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790643047.7,
+ "size": 4331290,
+ "ts": "2026-10-15T04:32:29Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"crown\",\n      \"color\": \"black\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"head\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gray\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"ears\"\n    },\n    {\n      \"item\": \"wand\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"carried\",\n      \"body_location\": \"right hand\"\n    }\n  ],\n  \"weapons\": [\n    \"wand\"\n  ]\n}",
+ "json": {
+  "items": [
+   {
+    "item": "crown",
+    "color": "black",
+    "worn_or_carried": "worn",
+    "body_location": "head"
+   },
+   {
+    "item": "earrings",
+    "color": "gray",
+    "worn_or_carried": "worn",
+    "body_location": "ears"
+   },
+   {
+    "item": "wand",
+    "color": "brown",
+    "worn_or_carried": "carried",
+    "body_location": "right hand"
+   }
+  ],
+  "weapons": [
+   "wand"
+  ]
+ }
+}

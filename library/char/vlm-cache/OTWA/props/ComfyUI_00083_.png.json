@@ -1,0 +1,21 @@
+{
+ "char": "OTWA",
+ "lens": "props",
+ "file": "ComfyUI_00083_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935186.763673,
+ "size": 5077263,
+ "ts": "2026-10-15T04:43:47Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   }
+  ],
+  "weapons": []
+ }
+}

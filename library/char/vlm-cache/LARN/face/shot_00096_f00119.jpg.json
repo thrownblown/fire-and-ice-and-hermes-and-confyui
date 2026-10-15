@@ -1,0 +1,20 @@
+{
+ "char": "LARN",
+ "lens": "face",
+ "file": "shot_00096_f00119.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931102.7617507,
+ "size": 292651,
+ "ts": "2026-10-15T04:36:00Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark, narrow, focused\",\n \"brows\": \"thin, arched\",\n \"nose\": \"straight, small\",\n \"lips\": \"full, slightly parted\",\n \"distinguishing_features\": [\n  \"blond hair in a braid\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark, narrow, focused",
+  "brows": "thin, arched",
+  "nose": "straight, small",
+  "lips": "full, slightly parted",
+  "distinguishing_features": [
+   "blond hair in a braid"
+  ]
+ }
+}

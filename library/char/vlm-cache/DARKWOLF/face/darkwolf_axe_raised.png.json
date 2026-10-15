@@ -1,0 +1,22 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "darkwolf_axe_raised.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3921602,
+ "size": 172581,
+ "ts": "2026-10-15T04:24:59Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"wide open, glowing green\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and broad\",\n \"lips\": \"partially open in a roar\",\n \"distinguishing_features\": [\n  \"long dark hair\",\n  \"beard\",\n  \"necklace with skull\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "wide open, glowing green",
+  "brows": "thick and arched",
+  "nose": "large and broad",
+  "lips": "partially open in a roar",
+  "distinguishing_features": [
+   "long dark hair",
+   "beard",
+   "necklace with skull"
+  ]
+ }
+}

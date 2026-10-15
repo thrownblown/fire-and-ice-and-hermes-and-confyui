@@ -1,0 +1,27 @@
+{
+ "char": "TUTOR",
+ "lens": "wardrobe",
+ "file": "shot_00230_f00079.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5550506,
+ "size": 209159,
+ "ts": "2026-10-15T05:21:59Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"light blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"wrapped around waist and hips, tied with brown beads\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"brown\",\n      \"material\": \"beads\",\n      \"cut\": \"stringed beads hanging from neck\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "light blue",
+    "material": "cloth",
+    "cut": "wrapped around waist and hips, tied with brown beads"
+   },
+   {
+    "item": "necklace",
+    "color": "brown",
+    "material": "beads",
+    "cut": "stringed beads hanging from neck"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

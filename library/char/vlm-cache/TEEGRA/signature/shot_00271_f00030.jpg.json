@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "shot_00271_f00030.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 9179,
+ "ts": "2026-10-15T10:54:58Z",
+ "text": "{\n  \"memorable_traits\": [\n    \"purple skin\",\n    \"naked body\",\n    \"long dark hair\"\n  ],\n  \"unmistakable_because\": \"The combination of purple skin, a naked body, and long dark hair makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "purple skin",
+   "naked body",
+   "long dark hair"
+  ],
+  "unmistakable_because": "The combination of purple skin, a naked body, and long dark hair makes this figure uniquely identifiable."
+ }
+}

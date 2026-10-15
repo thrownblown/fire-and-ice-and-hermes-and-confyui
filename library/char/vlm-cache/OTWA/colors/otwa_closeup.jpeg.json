@@ -1,0 +1,18 @@
+{
+ "char": "OTWA",
+ "lens": "colors",
+ "file": "otwa_closeup.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931887.0075073,
+ "size": 2904,
+ "ts": "2026-10-15T04:44:00Z",
+ "text": "{\n \"skin\": \"pale\",\n \"hair\": \"reddish-brown\",\n \"eyes\": \"dark\",\n \"garment_primary\": null,\n \"garment_secondary\": null,\n \"metal_accent\": null\n}",
+ "json": {
+  "skin": "pale",
+  "hair": "reddish-brown",
+  "eyes": "dark",
+  "garment_primary": null,
+  "garment_secondary": null,
+  "metal_accent": null
+ }
+}

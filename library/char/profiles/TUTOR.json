@@ -1,0 +1,695 @@
+{
+ "char": "TUTOR",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 50,
+  "ok": 50
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "young adult",
+    "share": 1.0,
+    "n": 7,
+    "outliers": [],
+    "all_values": [
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult",
+     "young adult"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "slim",
+    "share": 0.5714285714285714,
+    "n": 7,
+    "outliers": [
+     "muscular",
+     "muscular",
+     "muscular"
+    ],
+    "all_values": [
+     "slim",
+     "slim",
+     "slim",
+     "slim",
+     "muscular",
+     "muscular",
+     "muscular"
+    ],
+    "stable": false
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "average",
+    "share": 0.5714285714285714,
+    "n": 7,
+    "outliers": [
+     "tall",
+     "tall",
+     "tall"
+    ],
+    "all_values": [
+     "average",
+     "average",
+     "average",
+     "average",
+     "tall",
+     "tall",
+     "tall"
+    ],
+    "stable": false
+   },
+   "sex": {
+    "kind": "str",
+    "value": "female",
+    "share": 0.7142857142857143,
+    "n": 7,
+    "outliers": [
+     "male",
+     "male"
+    ],
+    "all_values": [
+     "female",
+     "female",
+     "female",
+     "female",
+     "female",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "brown",
+    "share": 0.5714285714285714,
+    "n": 7,
+    "outliers": [
+     "tan",
+     "tan",
+     "tan"
+    ],
+    "all_values": [
+     "brown",
+     "light brown",
+     "light brown",
+     "light brown",
+     "tan",
+     "tan",
+     "tan"
+    ],
+    "stable": false
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thin",
+    "share": 0.8333333333333334,
+    "n": 6,
+    "outliers": [
+     "thin and arched"
+    ],
+    "all_values": [
+     "thin, arched, dark brown",
+     "thin",
+     "thin, arched",
+     "thin",
+     "thin and arched",
+     "thin, arched"
+    ],
+    "stable": true
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 7,
+    "stable_items": [],
+    "disputed_items": [
+     "dark hair",
+     "gold necklace",
+     "golden headband",
+     "golden necklace",
+     "red eyes",
+     "short black bob haircut",
+     "short black hair"
+    ],
+    "counts": {
+     "dark hair": 2,
+     "gold necklace": 1,
+     "golden headband": 1,
+     "golden necklace": 1,
+     "red eyes": 1,
+     "short black bob haircut": 1,
+     "short black hair": 1
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "closed",
+    "share": 0.5714285714285714,
+    "n": 7,
+    "outliers": [
+     "dark brown, almond-shaped, slightly narrowed",
+     "dark, almond-shaped, looking down",
+     "wide open, red irises"
+    ],
+    "all_values": [
+     "dark brown, almond-shaped, slightly narrowed",
+     "closed",
+     "dark, almond-shaped, looking down",
+     "closed",
+     "closed",
+     "closed",
+     "wide open, red irises"
+    ],
+    "stable": false
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 7,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "full",
+    "share": 0.5,
+    "n": 6,
+    "outliers": [
+     "partially open",
+     "partially open, showing teeth",
+     "full and slightly parted"
+    ],
+    "all_values": [
+     "full, reddish-brown, slightly parted",
+     "full",
+     "full, slightly parted",
+     "partially open",
+     "full and slightly parted",
+     "partially open, showing teeth"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "small",
+    "share": 0.3333333333333333,
+    "n": 6,
+    "outliers": [
+     "straight, medium-sized, with a defined bridge",
+     "straight",
+     "small and straight",
+     "small, rounded"
+    ],
+    "all_values": [
+     "straight, medium-sized, with a defined bridge",
+     "straight",
+     "small, straight bridge",
+     "small",
+     "small and straight",
+     "small, rounded"
+    ],
+    "stable": false
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 7,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "short",
+    "share": 0.5714285714285714,
+    "n": 7,
+    "outliers": [
+     "long",
+     "long",
+     "shoulder-length"
+    ],
+    "all_values": [
+     "short",
+     "very short",
+     "very short",
+     "very short",
+     "long",
+     "long",
+     "shoulder-length"
+    ],
+    "stable": false
+   },
+   "notes": {
+    "kind": "str",
+    "value": "bangs",
+    "share": 1.0,
+    "n": 2,
+    "outliers": [],
+    "all_values": [
+     "bangs",
+     "bangs"
+    ],
+    "stable": true
+   },
+   "style": {
+    "kind": "str",
+    "value": "covered",
+    "share": 0.7142857142857143,
+    "n": 7,
+    "outliers": [
+     "loose",
+     "loose"
+    ],
+    "all_values": [
+     "covered",
+     "covered",
+     "covered",
+     "covered",
+     "loose",
+     "covered",
+     "loose"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 7,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 7,
+    "stable_items": [
+     "necklace"
+    ],
+    "disputed_items": [
+     "belt",
+     "loincloth",
+     "neckband",
+     "skirt",
+     "top",
+     "tunic"
+    ],
+    "detail": {
+     "belt": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "loincloth": {
+      "n": 3,
+      "values": [
+       "light blue",
+       "light blue",
+       "light blue"
+      ]
+     },
+     "neckband": {
+      "n": 1,
+      "values": [
+       "gold"
+      ]
+     },
+     "necklace": {
+      "n": 5,
+      "values": [
+       "brown",
+       "gold",
+       "gold",
+       "brown",
+       "brown"
+      ]
+     },
+     "skirt": {
+      "n": 1,
+      "values": [
+       "light blue"
+      ]
+     },
+     "top": {
+      "n": 1,
+      "values": [
+       "light blue"
+      ]
+     },
+     "tunic": {
+      "n": 3,
+      "values": [
+       "light blue",
+       "light blue",
+       "light pink"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "fully dressed",
+    "share": 0.5714285714285714,
+    "n": 7,
+    "outliers": [
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "all_values": [
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "partially clad",
+     "partially clad",
+     "partially clad"
+    ],
+    "stable": false
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 7,
+    "stable_items": [
+     "necklace"
+    ],
+    "disputed_items": [
+     "beads",
+     "belt"
+    ],
+    "detail": {
+     "beads": {
+      "n": 1,
+      "values": [
+       "brown"
+      ]
+     },
+     "belt": {
+      "n": 3,
+      "values": [
+       "brown",
+       "light blue",
+       "blue"
+      ]
+     },
+     "necklace": {
+      "n": 7,
+      "values": [
+       "brown",
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "gold",
+       "brown"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 7,
+    "stable_items": [],
+    "disputed_items": [],
+    "counts": {}
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "dark brown",
+    "share": 0.875,
+    "n": 8,
+    "outliers": [
+     "red"
+    ],
+    "all_values": [
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "dark brown",
+     "red"
+    ],
+    "stable": true
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "light blue",
+    "share": 0.875,
+    "n": 8,
+    "outliers": [
+     "beige"
+    ],
+    "all_values": [
+     "light blue",
+     "light blue",
+     "light blue",
+     "light blue",
+     "beige",
+     "light blue",
+     "light blue",
+     "light blue"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": "gold",
+    "share": 1.0,
+    "n": 3,
+    "outliers": [],
+    "all_values": [
+     "gold",
+     "gold",
+     "gold"
+    ],
+    "stable": true
+   },
+   "hair": {
+    "kind": "str",
+    "value": "black",
+    "share": 1.0,
+    "n": 8,
+    "outliers": [],
+    "all_values": [
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black",
+     "black"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "gold",
+    "share": 1.0,
+    "n": 5,
+    "outliers": [],
+    "all_values": [
+     "gold",
+     "gold",
+     "gold",
+     "gold",
+     "gold"
+    ],
+    "stable": true
+   },
+   "skin": {
+    "kind": "str",
+    "value": "brown",
+    "share": 0.625,
+    "n": 8,
+    "outliers": [
+     "light beige",
+     "tan",
+     "tan"
+    ],
+    "all_values": [
+     "brown",
+     "brown",
+     "light brown",
+     "light brown",
+     "light beige",
+     "tan",
+     "tan",
+     "brown"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 7,
+    "stable_items": [],
+    "disputed_items": [
+     "brown skin",
+     "brown skin tone",
+     "dark hair",
+     "gold choker necklace",
+     "golden belt buckle",
+     "golden belt with circular ornaments",
+     "light blue draped clothing",
+     "light blue draped garment",
+     "light blue loincloth",
+     "light skin tone",
+     "short black bob haircut",
+     "short black hair",
+     "side profile",
+     "wide-open mouth",
+     "yellow collar"
+    ],
+    "counts": {
+     "brown skin": 3,
+     "brown skin tone": 1,
+     "dark hair": 3,
+     "gold choker necklace": 1,
+     "golden belt buckle": 1,
+     "golden belt with circular ornaments": 1,
+     "light blue draped clothing": 1,
+     "light blue draped garment": 1,
+     "light blue loincloth": 2,
+     "light skin tone": 2,
+     "short black bob haircut": 1,
+     "short black hair": 3,
+     "side profile": 1,
+     "wide-open mouth": 1,
+     "yellow collar": 3
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of short black hair, yellow collar, and light skin tone uniquely identifies this figure.",
+    "share": 0.2857142857142857,
+    "n": 7,
+    "outliers": [
+     "The combination of the short black bob haircut, brown skin tone, and distinctive light blue draped attire with a gold choker makes this figure uniquely identifiable.",
+     "The combination of short black hair and a distinct yellow collar makes this figure easily recognizable.",
+     "The combination of the light blue loincloth, brown skin tone, and dark hair uniquely identifies this figure.",
+     "The combination of light blue draped attire, golden belt with circular ornaments, and dark hair uniquely identifies this figure.",
+     "The figure's distinctive light blue loincloth and wide-open mouth make them immediately recognizable."
+    ],
+    "all_values": [
+     "The combination of the short black bob haircut, brown skin tone, and distinctive light blue draped attire with a gold choker makes this figure uniquely identifiable.",
+     "The combination of short black hair, yellow collar, and light skin tone uniquely identifies this figure.",
+     "The combination of short black hair, yellow collar, and light skin tone uniquely identifies this figure.",
+     "The combination of short black hair and a distinct yellow collar makes this figure easily recognizable.",
+     "The combination of the light blue loincloth, brown skin tone, and dark hair uniquely identifies this figure.",
+     "The combination of light blue draped attire, golden belt with circular ornaments, and dark hair uniquely identifies this figure.",
+     "The figure's distinctive light blue loincloth and wide-open mouth make them immediately recognizable."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.eyes",
+  "colors.garment_primary",
+  "colors.garment_secondary",
+  "colors.hair",
+  "colors.metal_accent",
+  "colors.skin",
+  "face.brows",
+  "face.face_shape",
+  "hair.color",
+  "hair.notes",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.sex",
+  "props.items:necklace",
+  "wardrobe.garments:necklace"
+ ],
+ "disputed": [
+  "face.distinguishing_features:dark hair",
+  "face.distinguishing_features:gold necklace",
+  "face.distinguishing_features:golden headband",
+  "face.distinguishing_features:golden necklace",
+  "face.distinguishing_features:red eyes",
+  "face.distinguishing_features:short black bob haircut",
+  "face.distinguishing_features:short black hair",
+  "face.eyes",
+  "face.lips",
+  "face.nose",
+  "hair.length",
+  "physique.build",
+  "physique.height_impression",
+  "physique.skin_neutral_light",
+  "props.items:beads",
+  "props.items:belt",
+  "signature.memorable_traits:brown skin",
+  "signature.memorable_traits:brown skin tone",
+  "signature.memorable_traits:dark hair",
+  "signature.memorable_traits:gold choker necklace",
+  "signature.memorable_traits:golden belt buckle",
+  "signature.memorable_traits:golden belt with circular ornaments",
+  "signature.memorable_traits:light blue draped clothing",
+  "signature.memorable_traits:light blue draped garment",
+  "signature.memorable_traits:light blue loincloth",
+  "signature.memorable_traits:light skin tone",
+  "signature.memorable_traits:short black bob haircut",
+  "signature.memorable_traits:short black hair",
+  "signature.memorable_traits:side profile",
+  "signature.memorable_traits:wide-open mouth",
+  "signature.memorable_traits:yellow collar",
+  "signature.unmistakable_because",
+  "wardrobe.garments:belt",
+  "wardrobe.garments:loincloth",
+  "wardrobe.garments:neckband",
+  "wardrobe.garments:skirt",
+  "wardrobe.garments:top",
+  "wardrobe.garments:tunic",
+  "wardrobe.state_of_dress"
+ ],
+ "prompt_block": "young adult female, black straight covered hair, oval face, dark brown eyes, dressed in light blue and gold, wearing necklace, carrying necklace."
+}

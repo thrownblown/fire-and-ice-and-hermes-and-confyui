@@ -1,0 +1,22 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "face",
+ "file": "shot_00415_f00016.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932188.2041452,
+ "size": 290714,
+ "ts": "2026-10-15T05:09:06Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"narrow and intense\",\n \"brows\": \"thick and arched downward\",\n \"nose\": \"large and broad with flared nostrils\",\n \"lips\": \"thin and stretched in a grimace showing teeth\",\n \"distinguishing_features\": [\n  \"deep wrinkles around eyes and mouth\",\n  \"dark skin tone\",\n  \"short dark hair\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "narrow and intense",
+  "brows": "thick and arched downward",
+  "nose": "large and broad with flared nostrils",
+  "lips": "thin and stretched in a grimace showing teeth",
+  "distinguishing_features": [
+   "deep wrinkles around eyes and mouth",
+   "dark skin tone",
+   "short dark hair"
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "images.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032241.3015685,
+ "size": 58887,
+ "ts": "2026-10-15T10:53:30Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"light skin\", \"bikini\"],\n \"unmistakable_because\": \"The figure has long, flowing dark hair and is wearing a two-piece bikini with distinct light skin tone.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "light skin",
+   "bikini"
+  ],
+  "unmistakable_because": "The figure has long, flowing dark hair and is wearing a two-piece bikini with distinct light skin tone."
+ }
+}

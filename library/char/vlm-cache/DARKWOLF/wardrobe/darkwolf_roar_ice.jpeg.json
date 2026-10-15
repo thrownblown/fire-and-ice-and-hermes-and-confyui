@@ -1,0 +1,27 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "darkwolf_roar_ice.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.39316,
+ "size": 59537,
+ "ts": "2026-10-15T04:26:35Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"black\",\n      \"material\": \"cloth\",\n      \"cut\": \"tightly wrapped around arms\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "black",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "arm bands",
+    "color": "black",
+    "material": "cloth",
+    "cut": "tightly wrapped around arms"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

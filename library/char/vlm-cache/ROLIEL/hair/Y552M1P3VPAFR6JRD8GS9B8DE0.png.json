@@ -1,0 +1,17 @@
+{
+ "char": "ROLIEL",
+ "lens": "hair",
+ "file": "Y552M1P3VPAFR6JRD8GS9B8DE0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.805588,
+ "size": 1328925,
+ "ts": "2026-10-15T04:55:45Z",
+ "text": "{\n \"color\": \"red\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"no bangs, no hair accessories\"\n}",
+ "json": {
+  "color": "red",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "no bangs, no hair accessories"
+ }
+}

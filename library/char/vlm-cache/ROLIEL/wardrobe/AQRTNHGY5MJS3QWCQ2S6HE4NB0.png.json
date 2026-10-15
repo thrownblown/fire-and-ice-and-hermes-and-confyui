@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "AQRTNHGY5MJS3QWCQ2S6HE4NB0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7875845,
+ "size": 1312150,
+ "ts": "2026-10-15T04:48:50Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"material\": \"metal\",\n      \"cut\": \"choker-style with pendant\"\n    },\n    {\n      \"item\": \"bracelets\",\n      \"color\": \"blue\",\n      \"material\": \"metal\",\n      \"cut\": \"cuff-style\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   },
+   {
+    "item": "necklace",
+    "color": "blue",
+    "material": "metal",
+    "cut": "choker-style with pendant"
+   },
+   {
+    "item": "bracelets",
+    "color": "blue",
+    "material": "metal",
+    "cut": "cuff-style"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "DARKWOLF",
+ "lens": "face",
+ "file": "darkwolf_color_model_sheet.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3866518,
+ "size": 28370,
+ "ts": "2026-10-15T04:25:16Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark and almond-shaped\",\n \"brows\": \"thick and arched\",\n \"nose\": \"prominent and slightly curved\",\n \"lips\": \"full and red\",\n \"distinguishing_features\": [\n  \"pointed ears\",\n  \"long hair\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark and almond-shaped",
+  "brows": "thick and arched",
+  "nose": "prominent and slightly curved",
+  "lips": "full and red",
+  "distinguishing_features": [
+   "pointed ears",
+   "long hair"
+  ]
+ }
+}

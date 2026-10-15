@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "signature",
+ "file": "shot_00414_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932079.074484,
+ "size": 303085,
+ "ts": "2026-10-15T05:07:18Z",
+ "text": "{\n \"memorable_traits\": [\"dark brown skin\", \"long dark hair\", \"bared teeth\", \"muscular build\"],\n \"unmistakable_because\": \"The figure's combination of dark, textured skin, long hair framing a wide face with bared teeth, and muscular physique creates an instantly recognizable silhouette.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "dark brown skin",
+   "long dark hair",
+   "bared teeth",
+   "muscular build"
+  ],
+  "unmistakable_because": "The figure's combination of dark, textured skin, long hair framing a wide face with bared teeth, and muscular physique creates an instantly recognizable silhouette."
+ }
+}

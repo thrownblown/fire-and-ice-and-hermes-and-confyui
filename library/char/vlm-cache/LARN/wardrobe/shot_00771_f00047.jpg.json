@@ -1,0 +1,33 @@
+{
+ "char": "LARN",
+ "lens": "wardrobe",
+ "file": "shot_00771_f00047.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792025488.944701,
+ "size": 320094,
+ "ts": "2026-10-15T04:38:31Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"brown\",\n      \"material\": \"leather\",\n      \"cut\": \"waistband with buckle\"\n    },\n    {\n      \"item\": \"arm bands\",\n      \"color\": \"dark red\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "material": "leather",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "belt",
+    "color": "brown",
+    "material": "leather",
+    "cut": "waistband with buckle"
+   },
+   {
+    "item": "arm bands",
+    "color": "dark red",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

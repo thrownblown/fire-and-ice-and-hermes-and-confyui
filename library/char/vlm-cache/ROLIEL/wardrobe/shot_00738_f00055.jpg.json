@@ -1,0 +1,33 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "shot_00738_f00055.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932330.825598,
+ "size": 240393,
+ "ts": "2026-10-15T04:58:18Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"white\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, sleeveless\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"choker-style\"\n    },\n    {\n      \"item\": \"bracelet\",\n      \"color\": \"blue\",\n      \"material\": \"unknown\",\n      \"cut\": \"band-style\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "white",
+    "material": "cloth",
+    "cut": "loose-fitting, sleeveless"
+   },
+   {
+    "item": "necklace",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "choker-style"
+   },
+   {
+    "item": "bracelet",
+    "color": "blue",
+    "material": "unknown",
+    "cut": "band-style"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

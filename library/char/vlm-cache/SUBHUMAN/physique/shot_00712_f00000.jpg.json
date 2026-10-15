@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "physique",
+ "file": "shot_00712_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1838696,
+ "size": 302192,
+ "ts": "2026-10-15T05:03:49Z",
+ "text": "{\n \"sex\": \"male\",\n \"age_range\": \"middle-aged\",\n \"build\": \"muscular\",\n \"height_impression\": \"average\",\n \"skin_neutral_light\": \"dark brown\"\n}",
+ "json": {
+  "sex": "male",
+  "age_range": "middle-aged",
+  "build": "muscular",
+  "height_impression": "average",
+  "skin_neutral_light": "dark brown"
+ }
+}

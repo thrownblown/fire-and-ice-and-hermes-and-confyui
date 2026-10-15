@@ -1,0 +1,21 @@
+{
+ "char": "TUTOR",
+ "lens": "face",
+ "file": "ComfyUI_00063_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5505452,
+ "size": 4507684,
+ "ts": "2026-10-15T04:17:06Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark brown, almond-shaped, slightly narrowed\",\n \"brows\": \"thin, arched, dark brown\",\n \"nose\": \"straight, medium-sized, with a defined bridge\",\n \"lips\": \"full, reddish-brown, slightly parted\",\n \"distinguishing_features\": [\n  \"short black bob haircut\",\n  \"gold necklace\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark brown, almond-shaped, slightly narrowed",
+  "brows": "thin, arched, dark brown",
+  "nose": "straight, medium-sized, with a defined bridge",
+  "lips": "full, reddish-brown, slightly parted",
+  "distinguishing_features": [
+   "short black bob haircut",
+   "gold necklace"
+  ]
+ }
+}

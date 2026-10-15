@@ -1,0 +1,39 @@
+{
+ "char": "ROLIEL",
+ "lens": "props",
+ "file": "1MZCTVJ8C9G1BZC94VMC4F76S0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.6155138,
+ "size": 1295603,
+ "ts": "2026-10-15T04:46:17Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"necklace\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"neck\"\n    },\n    {\n      \"item\": \"belt\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"waist\"\n    },\n    {\n      \"item\": \"bracelet\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"left wrist\"\n    },\n    {\n      \"item\": \"bracelet\",\n      \"color\": \"blue\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"right wrist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "necklace",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "neck"
+   },
+   {
+    "item": "belt",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "waist"
+   },
+   {
+    "item": "bracelet",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "left wrist"
+   },
+   {
+    "item": "bracelet",
+    "color": "blue",
+    "worn_or_carried": "worn",
+    "body_location": "right wrist"
+   }
+  ],
+  "weapons": []
+ }
+}

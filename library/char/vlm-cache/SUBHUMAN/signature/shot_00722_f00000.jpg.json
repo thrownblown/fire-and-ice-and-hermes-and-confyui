@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00722_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1848676,
+ "size": 322413,
+ "ts": "2026-10-15T05:05:27Z",
+ "text": "{\n \"memorable_traits\": [\"bent-over posture\", \"dark skin\", \"long black hair\", \"holding a spear\"],\n \"unmistakable_because\": \"The figure's crouched stance and long dark hair distinguish them from the other two figures.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "bent-over posture",
+   "dark skin",
+   "long black hair",
+   "holding a spear"
+  ],
+  "unmistakable_because": "The figure's crouched stance and long dark hair distinguish them from the other two figures."
+ }
+}

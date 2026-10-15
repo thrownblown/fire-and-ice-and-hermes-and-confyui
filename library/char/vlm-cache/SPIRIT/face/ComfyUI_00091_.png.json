@@ -1,0 +1,21 @@
+{
+ "char": "SPIRIT",
+ "lens": "face",
+ "file": "ComfyUI_00091_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.8226674,
+ "size": 5485533,
+ "ts": "2026-10-15T05:00:37Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"black circles\",\n \"brows\": \"null\",\n \"nose\": \"skeletal shape\",\n \"lips\": \"grinning teeth\",\n \"distinguishing_features\": [\n  \"skull structure\",\n  \"long hair\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "black circles",
+  "brows": null,
+  "nose": "skeletal shape",
+  "lips": "grinning teeth",
+  "distinguishing_features": [
+   "skull structure",
+   "long hair"
+  ]
+ }
+}

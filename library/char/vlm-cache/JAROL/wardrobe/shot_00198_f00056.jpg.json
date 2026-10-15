@@ -1,0 +1,27 @@
+{
+ "char": "JAROL",
+ "lens": "wardrobe",
+ "file": "shot_00198_f00056.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791729663.6465838,
+ "size": 231980,
+ "ts": "2026-10-15T04:30:50Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"red\",\n      \"material\": \"cloth\",\n      \"cut\": \"sleeveless, fitted to torso\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"multiple circular beads hanging around neck\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "red",
+    "material": "cloth",
+    "cut": "sleeveless, fitted to torso"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "multiple circular beads hanging around neck"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

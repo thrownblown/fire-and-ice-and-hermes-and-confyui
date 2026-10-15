@@ -1,0 +1,21 @@
+{
+ "char": "SPIRIT",
+ "lens": "face",
+ "file": "shot_00759_f00050.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932277.9850545,
+ "size": 358704,
+ "ts": "2026-10-15T05:00:55Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"black hollow sockets\",\n \"brows\": \"null\",\n \"nose\": \"skeletal structure\",\n \"lips\": \"grinning teeth\",\n \"distinguishing_features\": [\n  \"long white hair\",\n  \"necklace\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "black hollow sockets",
+  "brows": null,
+  "nose": "skeletal structure",
+  "lips": "grinning teeth",
+  "distinguishing_features": [
+   "long white hair",
+   "necklace"
+  ]
+ }
+}

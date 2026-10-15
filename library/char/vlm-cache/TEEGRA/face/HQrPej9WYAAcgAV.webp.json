@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "face",
+ "file": "HQrPej9WYAAcgAV.webp",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032261.3389945,
+ "size": 156348,
+ "ts": "2026-10-15T10:49:27Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"dark brown, slightly almond-shaped, looking directly forward\",\n \"brows\": \"dark, arched, well-defined\",\n \"nose\": \"straight, medium-sized\",\n \"lips\": \"full, painted red\",\n \"distinguishing_features\": [\n  \"long dark hair\",\n  \"eyebrow piercing\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "dark brown, slightly almond-shaped, looking directly forward",
+  "brows": "dark, arched, well-defined",
+  "nose": "straight, medium-sized",
+  "lips": "full, painted red",
+  "distinguishing_features": [
+   "long dark hair",
+   "eyebrow piercing"
+  ]
+ }
+}

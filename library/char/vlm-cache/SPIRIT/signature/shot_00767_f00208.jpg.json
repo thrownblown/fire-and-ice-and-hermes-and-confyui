@@ -1,0 +1,18 @@
+{
+ "char": "SPIRIT",
+ "lens": "signature",
+ "file": "shot_00767_f00208.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932286.4266088,
+ "size": 347803,
+ "ts": "2026-10-15T05:02:59Z",
+ "text": "{\n \"memorable_traits\": [\"skeletal face\", \"long white hair\", \"dark circular neck ornament\"],\n \"unmistakable_because\": \"The figure's skull-like head and long white hair combined with its dark, ornamental collar make it instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "skeletal face",
+   "long white hair",
+   "dark circular neck ornament"
+  ],
+  "unmistakable_because": "The figure's skull-like head and long white hair combined with its dark, ornamental collar make it instantly recognizable."
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN LEADER",
+ "lens": "hair",
+ "file": "shot_00415_f00016.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932188.2041452,
+ "size": 290714,
+ "ts": "2026-10-15T05:09:08Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"short\",\n \"texture\": \"straight\",\n \"style\": \"tied back\",\n \"notes\": \"hair is pulled back from the face\"\n}",
+ "json": {
+  "color": "black",
+  "length": "short",
+  "texture": "straight",
+  "style": "tied back",
+  "notes": "hair is pulled back from the face"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "char": "SHAITAN",
+ "lens": "face",
+ "file": "shot_00216_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931744.0758822,
+ "size": 211295,
+ "ts": "2026-10-15T04:59:32Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"yellow and round\",\n \"brows\": null,\n \"nose\": \"brown and triangular\",\n \"lips\": \"pink with white teeth\",\n \"distinguishing_features\": [\n  \"black fur\",\n  \"whiskers\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "yellow and round",
+  "brows": null,
+  "nose": "brown and triangular",
+  "lips": "pink with white teeth",
+  "distinguishing_features": [
+   "black fur",
+   "whiskers"
+  ]
+ }
+}

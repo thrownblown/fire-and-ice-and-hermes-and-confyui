@@ -1,0 +1,608 @@
+{
+ "char": "NEKRON",
+ "generated": "2026-10-15T05:22:35Z",
+ "rows": {
+  "total": 42,
+  "ok": 42
+ },
+ "lenses": {
+  "physique": {
+   "age_range": {
+    "kind": "str",
+    "value": "middle-aged",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged",
+     "middle-aged"
+    ],
+    "stable": true
+   },
+   "build": {
+    "kind": "str",
+    "value": "lean",
+    "share": 0.6666666666666666,
+    "n": 6,
+    "outliers": [
+     "slim",
+     "slim"
+    ],
+    "all_values": [
+     "lean",
+     "slim",
+     "lean",
+     "lean",
+     "slim",
+     "lean"
+    ],
+    "stable": true
+   },
+   "height_impression": {
+    "kind": "str",
+    "value": "tall",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall",
+     "tall"
+    ],
+    "stable": true
+   },
+   "sex": {
+    "kind": "str",
+    "value": "male",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "male",
+     "male",
+     "male",
+     "male",
+     "male",
+     "male"
+    ],
+    "stable": true
+   },
+   "skin_neutral_light": {
+    "kind": "str",
+    "value": "pale",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "pale gray",
+     "pale",
+     "pale gray",
+     "pale",
+     "pale",
+     "pale"
+    ],
+    "stable": true
+   }
+  },
+  "face": {
+   "brows": {
+    "kind": "str",
+    "value": "thick and arched",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched",
+     "thick and arched"
+    ],
+    "stable": true
+   },
+   "distinguishing_features": {
+    "kind": "list",
+    "n_rows": 6,
+    "stable_items": [
+     "long white hair",
+     "pale skin"
+    ],
+    "disputed_items": [
+     "faint scar on forehead",
+     "white hair"
+    ],
+    "counts": {
+     "faint scar on forehead": 1,
+     "long white hair": 4,
+     "pale skin": 5,
+     "white hair": 2
+    }
+   },
+   "eyes": {
+    "kind": "str",
+    "value": "narrow and intense",
+    "share": 0.6666666666666666,
+    "n": 6,
+    "outliers": [
+     "narrow and slanted",
+     "narrow and slanted"
+    ],
+    "all_values": [
+     "narrow and intense",
+     "narrow and slanted",
+     "narrow and slanted",
+     "narrow and intense",
+     "narrow and intense",
+     "narrow and intense"
+    ],
+    "stable": true
+   },
+   "face_shape": {
+    "kind": "str",
+    "value": "oval",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval",
+     "oval"
+    ],
+    "stable": true
+   },
+   "lips": {
+    "kind": "str",
+    "value": "thin with a slight frown",
+    "share": 0.5,
+    "n": 6,
+    "outliers": [
+     "thin with a stern expression",
+     "thin with a stern expression",
+     "thin with a stern expression"
+    ],
+    "all_values": [
+     "thin with a slight frown",
+     "thin with a slight frown",
+     "thin with a slight frown",
+     "thin with a stern expression",
+     "thin with a stern expression",
+     "thin with a stern expression"
+    ],
+    "stable": false
+   },
+   "nose": {
+    "kind": "str",
+    "value": "straight and prominent",
+    "share": 0.6666666666666666,
+    "n": 6,
+    "outliers": [
+     "straight and narrow",
+     "long and straight"
+    ],
+    "all_values": [
+     "straight and prominent",
+     "straight and narrow",
+     "long and straight",
+     "straight and prominent",
+     "straight and prominent",
+     "straight and prominent"
+    ],
+    "stable": true
+   }
+  },
+  "hair": {
+   "color": {
+    "kind": "str",
+    "value": "white",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white"
+    ],
+    "stable": true
+   },
+   "length": {
+    "kind": "str",
+    "value": "very long",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "very long",
+     "very long",
+     "very long",
+     "very long",
+     "very long",
+     "very long"
+    ],
+    "stable": true
+   },
+   "notes": {
+    "kind": "str",
+    "value": "bangs",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "bangs",
+     "bangs",
+     "bangs",
+     "long bangs",
+     "bangs",
+     "bangs"
+    ],
+    "stable": true
+   },
+   "style": {
+    "kind": "str",
+    "value": "loose",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose",
+     "loose"
+    ],
+    "stable": true
+   },
+   "texture": {
+    "kind": "str",
+    "value": "straight",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight",
+     "straight"
+    ],
+    "stable": true
+   }
+  },
+  "wardrobe": {
+   "garments": {
+    "kind": "objlist",
+    "n_rows": 6,
+    "stable_items": [
+     "belt",
+     "boots",
+     "pants",
+     "tunic"
+    ],
+    "disputed_items": [],
+    "detail": {
+     "belt": {
+      "n": 6,
+      "values": [
+       "black",
+       "black",
+       "black",
+       "black",
+       "black",
+       "black"
+      ]
+     },
+     "boots": {
+      "n": 6,
+      "values": [
+       "black",
+       "black",
+       "black",
+       "black",
+       "black",
+       "black"
+      ]
+     },
+     "pants": {
+      "n": 4,
+      "values": [
+       "dark blue",
+       "blue",
+       "dark purple",
+       "dark blue"
+      ]
+     },
+     "tunic": {
+      "n": 6,
+      "values": [
+       "dark purple",
+       "dark purple",
+       "dark purple",
+       "dark purple",
+       "dark purple",
+       "dark purple"
+      ]
+     }
+    }
+   },
+   "state_of_dress": {
+    "kind": "str",
+    "value": "fully dressed",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed",
+     "fully dressed"
+    ],
+    "stable": true
+   }
+  },
+  "props": {
+   "items": {
+    "kind": "objlist",
+    "n_rows": 6,
+    "stable_items": [
+     "belt"
+    ],
+    "disputed_items": [
+     "boots"
+    ],
+    "detail": {
+     "belt": {
+      "n": 4,
+      "values": [
+       "black",
+       "black",
+       "black",
+       "black"
+      ]
+     },
+     "boots": {
+      "n": 1,
+      "values": [
+       "dark blue"
+      ]
+     }
+    }
+   },
+   "weapons": {
+    "kind": "list",
+    "n_rows": 6,
+    "stable_items": [],
+    "disputed_items": [],
+    "counts": {}
+   }
+  },
+  "colors": {
+   "eyes": {
+    "kind": "str",
+    "value": "blue",
+    "share": 0.8333333333333334,
+    "n": 6,
+    "outliers": [
+     "green"
+    ],
+    "all_values": [
+     "blue",
+     "blue",
+     "green",
+     "blue",
+     "light blue",
+     "blue"
+    ],
+    "stable": true
+   },
+   "garment_primary": {
+    "kind": "str",
+    "value": "dark purple",
+    "share": 0.8333333333333334,
+    "n": 6,
+    "outliers": [
+     "dark blue"
+    ],
+    "all_values": [
+     "dark blue",
+     "dark purple",
+     "dark purple",
+     "dark purple",
+     "dark purple",
+     "dark purple"
+    ],
+    "stable": true
+   },
+   "garment_secondary": {
+    "kind": "str",
+    "value": "blue",
+    "share": 0.8333333333333334,
+    "n": 6,
+    "outliers": [
+     "black"
+    ],
+    "all_values": [
+     "dark blue",
+     "blue",
+     "blue",
+     "black",
+     "blue",
+     "dark blue"
+    ],
+    "stable": true
+   },
+   "hair": {
+    "kind": "str",
+    "value": "white",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "white",
+     "white",
+     "white",
+     "white",
+     "white",
+     "white"
+    ],
+    "stable": true
+   },
+   "metal_accent": {
+    "kind": "str",
+    "value": "silver",
+    "share": 0.6666666666666666,
+    "n": 6,
+    "outliers": [
+     "black",
+     "black"
+    ],
+    "all_values": [
+     "silver",
+     "black",
+     "silver",
+     "silver",
+     "silver",
+     "black"
+    ],
+    "stable": true
+   },
+   "skin": {
+    "kind": "str",
+    "value": "gray",
+    "share": 1.0,
+    "n": 6,
+    "outliers": [],
+    "all_values": [
+     "gray",
+     "gray",
+     "gray",
+     "gray",
+     "gray",
+     "gray"
+    ],
+    "stable": true
+   }
+  },
+  "signature": {
+   "memorable_traits": {
+    "kind": "list",
+    "n_rows": 6,
+    "stable_items": [
+     "long white hair",
+     "pale skin"
+    ],
+    "disputed_items": [
+     "angular facial features",
+     "black boots",
+     "dark purple robe",
+     "dark robe with belt",
+     "dark robe with black belt",
+     "dark robe with green buttons",
+     "intense facial expression",
+     "purple robe",
+     "purple skin"
+    ],
+    "counts": {
+     "angular facial features": 3,
+     "black boots": 2,
+     "dark purple robe": 1,
+     "dark robe with belt": 2,
+     "dark robe with black belt": 1,
+     "dark robe with green buttons": 1,
+     "intense facial expression": 2,
+     "long white hair": 6,
+     "pale skin": 4,
+     "purple robe": 1,
+     "purple skin": 1
+    }
+   },
+   "unmistakable_because": {
+    "kind": "str",
+    "value": "the combination of long white hair, a distinctive purple robe with black trim, and angular facial features creates an instantly recognizable silhouette.",
+    "share": 0.16666666666666666,
+    "n": 6,
+    "outliers": [
+     "The combination of long white hair, pale skin, and the distinctive dark robe with a belt makes this figure uniquely identifiable.",
+     "The combination of long white hair, pale skin, and the distinctive dark purple robe with black boots makes this figure uniquely identifiable.",
+     "The combination of long white hair, pale skin, and the distinctive dark robe with green buttons creates a unique visual signature.",
+     "The combination of long white hair, purple skin, and a dark robe with a black belt uniquely identifies this figure.",
+     "The combination of long white hair, pale skin, and a dark robe with a distinct belt makes this figure instantly recognizable."
+    ],
+    "all_values": [
+     "The combination of long white hair, pale skin, and the distinctive dark robe with a belt makes this figure uniquely identifiable.",
+     "The combination of long white hair, a distinctive purple robe with black trim, and angular facial features creates an instantly recognizable silhouette.",
+     "The combination of long white hair, pale skin, and the distinctive dark purple robe with black boots makes this figure uniquely identifiable.",
+     "The combination of long white hair, pale skin, and the distinctive dark robe with green buttons creates a unique visual signature.",
+     "The combination of long white hair, purple skin, and a dark robe with a black belt uniquely identifies this figure.",
+     "The combination of long white hair, pale skin, and a dark robe with a distinct belt makes this figure instantly recognizable."
+    ],
+    "stable": false
+   }
+  }
+ },
+ "stable": [
+  "colors.eyes",
+  "colors.garment_primary",
+  "colors.garment_secondary",
+  "colors.hair",
+  "colors.metal_accent",
+  "colors.skin",
+  "face.brows",
+  "face.distinguishing_features:long white hair",
+  "face.distinguishing_features:pale skin",
+  "face.eyes",
+  "face.face_shape",
+  "face.nose",
+  "hair.color",
+  "hair.length",
+  "hair.notes",
+  "hair.style",
+  "hair.texture",
+  "physique.age_range",
+  "physique.build",
+  "physique.height_impression",
+  "physique.sex",
+  "physique.skin_neutral_light",
+  "props.items:belt",
+  "signature.memorable_traits:long white hair",
+  "signature.memorable_traits:pale skin",
+  "wardrobe.garments:belt",
+  "wardrobe.garments:boots",
+  "wardrobe.garments:pants",
+  "wardrobe.garments:tunic",
+  "wardrobe.state_of_dress"
+ ],
+ "disputed": [
+  "face.distinguishing_features:faint scar on forehead",
+  "face.distinguishing_features:white hair",
+  "face.lips",
+  "props.items:boots",
+  "signature.memorable_traits:angular facial features",
+  "signature.memorable_traits:black boots",
+  "signature.memorable_traits:dark purple robe",
+  "signature.memorable_traits:dark robe with belt",
+  "signature.memorable_traits:dark robe with black belt",
+  "signature.memorable_traits:dark robe with green buttons",
+  "signature.memorable_traits:intense facial expression",
+  "signature.memorable_traits:purple robe",
+  "signature.memorable_traits:purple skin",
+  "signature.unmistakable_because"
+ ],
+ "prompt_block": "middle-aged male, lean build, tall height impression, pale skin, white very long straight loose hair, oval face, narrow and intense eyes, dressed in dark purple and blue, wearing belt, boots, pants, tunic, carrying belt, memorable for long white hair, pale skin."
+}

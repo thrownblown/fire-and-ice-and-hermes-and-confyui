@@ -1,0 +1,39 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "ComfyUI_00028_ (1).png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.5850036,
+ "size": 4583561,
+ "ts": "2026-10-15T10:49:12Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"top\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted, bikini-style\"\n    },\n    {\n      \"item\": \"bottoms\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted, bikini-style\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"pendant style\"\n    },\n    {\n      \"item\": \"earrings\",\n      \"color\": \"gold\",\n      \"material\": \"metal\",\n      \"cut\": \"drop style\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "top",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "fitted, bikini-style"
+   },
+   {
+    "item": "bottoms",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "fitted, bikini-style"
+   },
+   {
+    "item": "necklace",
+    "color": "gold",
+    "material": "metal",
+    "cut": "pendant style"
+   },
+   {
+    "item": "earrings",
+    "color": "gold",
+    "material": "metal",
+    "cut": "drop style"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "char": "NEKRON",
+ "lens": "hair",
+ "file": "NEKRON_sheet6_00001_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1790642850.34,
+ "size": 3776081,
+ "ts": "2026-10-15T04:43:18Z",
+ "text": "{\n \"color\": \"white\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"bangs\"\n}",
+ "json": {
+  "color": "white",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "bangs"
+ }
+}

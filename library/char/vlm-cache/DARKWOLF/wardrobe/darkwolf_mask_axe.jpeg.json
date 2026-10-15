@@ -1,0 +1,27 @@
+{
+ "char": "DARKWOLF",
+ "lens": "wardrobe",
+ "file": "darkwolf_mask_axe.jpeg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.4001594,
+ "size": 173702,
+ "ts": "2026-10-15T04:25:43Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"loincloth\",\n      \"color\": \"brown\",\n      \"material\": \"cloth\",\n      \"cut\": \"tight-fitting\"\n    },\n    {\n      \"item\": \"necklace\",\n      \"color\": \"light brown\",\n      \"material\": \"bone\",\n      \"cut\": \"choker-style with pendant\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "loincloth",
+    "color": "brown",
+    "material": "cloth",
+    "cut": "tight-fitting"
+   },
+   {
+    "item": "necklace",
+    "color": "light brown",
+    "material": "bone",
+    "cut": "choker-style with pendant"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

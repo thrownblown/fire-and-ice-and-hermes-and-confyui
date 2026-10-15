@@ -1,0 +1,14 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "props",
+ "file": "ComfyUI_00093_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935265.475443,
+ "size": 4117657,
+ "ts": "2026-10-15T05:06:17Z",
+ "text": "{\n  \"items\": [],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [],
+  "weapons": []
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "char": "ROLIEL",
+ "lens": "wardrobe",
+ "file": "shot_00693_f00066.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932310.7540658,
+ "size": 225579,
+ "ts": "2026-10-15T04:57:33Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"blue\",\n      \"material\": \"cloth\",\n      \"cut\": \"fitted\"\n    },\n    {\n      \"item\": \"cloak\",\n      \"color\": \"red\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose\"\n    }\n  ],\n  \"state_of_dress\": \"fully dressed\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "blue",
+    "material": "cloth",
+    "cut": "fitted"
+   },
+   {
+    "item": "cloak",
+    "color": "red",
+    "material": "cloth",
+    "cut": "loose"
+   }
+  ],
+  "state_of_dress": "fully dressed"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "char": "LARN",
+ "lens": "signature",
+ "file": "shot_00473_f00113.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931141.673677,
+ "size": 228387,
+ "ts": "2026-10-15T04:38:17Z",
+ "text": "{\n \"memorable_traits\": [\"blond braided hair\", \"earrings\", \"brown skin tone\", \"necklace with circular pendant\"],\n \"unmistakable_because\": \"The combination of long blond braided hair, distinctive earrings, and a unique necklace makes this figure instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "blond braided hair",
+   "earrings",
+   "brown skin tone",
+   "necklace with circular pendant"
+  ],
+  "unmistakable_because": "The combination of long blond braided hair, distinctive earrings, and a unique necklace makes this figure instantly recognizable."
+ }
+}

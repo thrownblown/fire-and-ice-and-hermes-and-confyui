@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00732_f00079.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1883748,
+ "size": 283981,
+ "ts": "2026-10-15T05:06:04Z",
+ "text": "{\n \"memorable_traits\": [\"muscular build\", \"dark skin\", \"long black hair\", \"holding a spear\"],\n \"unmistakable_because\": \"The figure's muscular physique, dark skin, and long black hair combined with the spear make it visually distinct.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "muscular build",
+   "dark skin",
+   "long black hair",
+   "holding a spear"
+  ],
+  "unmistakable_because": "The figure's muscular physique, dark skin, and long black hair combined with the spear make it visually distinct."
+ }
+}

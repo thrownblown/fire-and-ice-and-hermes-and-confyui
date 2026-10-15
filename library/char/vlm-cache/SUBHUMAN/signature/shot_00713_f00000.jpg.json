@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00713_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.182869,
+ "size": 232789,
+ "ts": "2026-10-15T05:04:53Z",
+ "text": "{\n \"memorable_traits\": [\"broad muscular build\", \"dark short hair\", \"intense facial expression\", \"bare chest\"],\n \"unmistakable_because\": \"The figure's massive, defined musculature and fierce, detailed facial features make him instantly recognizable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "broad muscular build",
+   "dark short hair",
+   "intense facial expression",
+   "bare chest"
+  ],
+  "unmistakable_because": "The figure's massive, defined musculature and fierce, detailed facial features make him instantly recognizable."
+ }
+}

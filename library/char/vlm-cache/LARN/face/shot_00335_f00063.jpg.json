@@ -1,0 +1,20 @@
+{
+ "char": "LARN",
+ "lens": "face",
+ "file": "shot_00335_f00063.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791931124.370634,
+ "size": 339135,
+ "ts": "2026-10-15T04:36:25Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"closed\",\n \"brows\": \"thin\",\n \"nose\": \"straight\",\n \"lips\": \"full\",\n \"distinguishing_features\": [\n  \"earring\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "closed",
+  "brows": "thin",
+  "nose": "straight",
+  "lips": "full",
+  "distinguishing_features": [
+   "earring"
+  ]
+ }
+}

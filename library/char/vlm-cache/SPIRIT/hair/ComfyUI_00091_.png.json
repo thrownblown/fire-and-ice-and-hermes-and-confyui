@@ -1,0 +1,17 @@
+{
+ "char": "SPIRIT",
+ "lens": "hair",
+ "file": "ComfyUI_00091_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935222.8226674,
+ "size": 5485533,
+ "ts": "2026-10-15T05:00:39Z",
+ "text": "{\n \"color\": \"white\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"long straight hair falls past shoulders; bangs cover forehead\"\n}",
+ "json": {
+  "color": "white",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "long straight hair falls past shoulders; bangs cover forehead"
+ }
+}

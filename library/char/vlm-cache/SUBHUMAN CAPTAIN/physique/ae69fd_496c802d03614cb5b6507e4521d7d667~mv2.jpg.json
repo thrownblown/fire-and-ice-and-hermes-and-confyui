@@ -1,0 +1,17 @@
+{
+ "char": "SUBHUMAN CAPTAIN",
+ "lens": "physique",
+ "file": "ae69fd_496c802d03614cb5b6507e4521d7d667~mv2.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932136.4510386,
+ "size": 36959,
+ "ts": "2026-10-15T05:06:41Z",
+ "text": "{\n \"sex\": \"male\",\n \"age_range\": \"young adult\",\n \"build\": \"muscular\",\n \"height_impression\": \"tall\",\n \"skin_neutral_light\": \"dark brown\"\n}",
+ "json": {
+  "sex": "male",
+  "age_range": "young adult",
+  "build": "muscular",
+  "height_impression": "tall",
+  "skin_neutral_light": "dark brown"
+ }
+}

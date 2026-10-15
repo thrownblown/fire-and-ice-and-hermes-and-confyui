@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "images (2).jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032246.0338476,
+ "size": 39662,
+ "ts": "2026-10-15T10:52:13Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"light purple bikini top\", \"thin necklace with pendant\", \"hands covering face\"],\n \"unmistakable_because\": \"The combination of long dark hair, a light purple bikini top, and hands covering the face in an animated style makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "light purple bikini top",
+   "thin necklace with pendant",
+   "hands covering face"
+  ],
+  "unmistakable_because": "The combination of long dark hair, a light purple bikini top, and hands covering the face in an animated style makes this figure uniquely identifiable."
+ }
+}

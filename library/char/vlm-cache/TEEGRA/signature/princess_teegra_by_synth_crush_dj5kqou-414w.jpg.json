@@ -1,0 +1,19 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "princess_teegra_by_synth_crush_dj5kqou-414w.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032360.2804964,
+ "size": 30200,
+ "ts": "2026-10-15T10:53:41Z",
+ "text": "{\n \"memorable_traits\": [\"long dark hair\", \"naked body\", \"thin waist\", \"curved hips\"],\n \"unmistakable_because\": \"The figure's long dark hair and slender, curvaceous physique are visually distinctive and consistent across both the live-action and rotoscoped frames.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "naked body",
+   "thin waist",
+   "curved hips"
+  ],
+  "unmistakable_because": "The figure's long dark hair and slender, curvaceous physique are visually distinctive and consistent across both the live-action and rotoscoped frames."
+ }
+}

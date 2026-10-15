@@ -1,0 +1,21 @@
+{
+ "char": "ROLIEL",
+ "lens": "face",
+ "file": "ComfyUI_00086_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935203.386247,
+ "size": 5319840,
+ "ts": "2026-10-15T04:49:56Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"golden-yellow irises, dark eyeliner\",\n \"brows\": \"dark, arched eyebrows\",\n \"nose\": \"straight, medium-sized nose\",\n \"lips\": \"full, red lips\",\n \"distinguishing_features\": [\n  \"tear-shaped earrings\",\n  \"blue necklace with teardrop pendant\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "golden-yellow irises, dark eyeliner",
+  "brows": "dark, arched eyebrows",
+  "nose": "straight, medium-sized nose",
+  "lips": "full, red lips",
+  "distinguishing_features": [
+   "tear-shaped earrings",
+   "blue necklace with teardrop pendant"
+  ]
+ }
+}

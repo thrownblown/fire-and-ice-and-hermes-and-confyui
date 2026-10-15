@@ -1,0 +1,21 @@
+{
+ "char": "TEEGRA",
+ "lens": "wardrobe",
+ "file": "shot_00271_f00030.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791755219.7268982,
+ "size": 9179,
+ "ts": "2026-10-15T10:54:55Z",
+ "text": "{\n  \"garments\": [\n    {\n      \"item\": \"tunic\",\n      \"color\": \"purple\",\n      \"material\": \"cloth\",\n      \"cut\": \"loose-fitting, draped\"\n    }\n  ],\n  \"state_of_dress\": \"partially clad\"\n}",
+ "json": {
+  "garments": [
+   {
+    "item": "tunic",
+    "color": "purple",
+    "material": "cloth",
+    "cut": "loose-fitting, draped"
+   }
+  ],
+  "state_of_dress": "partially clad"
+ }
+}

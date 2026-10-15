@@ -1,0 +1,19 @@
+{
+ "char": "TUTOR",
+ "lens": "signature",
+ "file": "ComfyUI_00063_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.5505452,
+ "size": 4507684,
+ "ts": "2026-10-15T04:17:13Z",
+ "text": "{\n  \"memorable_traits\": [\"short black bob haircut\", \"brown skin\", \"light blue draped garment\", \"gold choker necklace\"],\n  \"unmistakable_because\": \"The combination of the short black bob haircut, brown skin tone, and distinctive light blue draped attire with a gold choker makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "short black bob haircut",
+   "brown skin",
+   "light blue draped garment",
+   "gold choker necklace"
+  ],
+  "unmistakable_because": "The combination of the short black bob haircut, brown skin tone, and distinctive light blue draped attire with a gold choker makes this figure uniquely identifiable."
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "char": "TUTOR",
+ "lens": "face",
+ "file": "shot_00193_f00058.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.552537,
+ "size": 95143,
+ "ts": "2026-10-15T05:20:52Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"closed\",\n \"brows\": \"thin\",\n \"nose\": \"small\",\n \"lips\": \"partially open\",\n \"distinguishing_features\": [\n  \"dark hair\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "closed",
+  "brows": "thin",
+  "nose": "small",
+  "lips": "partially open",
+  "distinguishing_features": [
+   "dark hair"
+  ]
+ }
+}

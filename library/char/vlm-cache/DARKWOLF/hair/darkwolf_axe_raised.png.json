@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "darkwolf_axe_raised.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159377.3921602,
+ "size": 172581,
+ "ts": "2026-10-15T04:25:01Z",
+ "text": "{\n \"color\": \"dark brown\",\n \"length\": \"long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"two long strands hang down past the shoulders; no bangs or accessories visible\"\n}",
+ "json": {
+  "color": "dark brown",
+  "length": "long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "two long strands hang down past the shoulders; no bangs or accessories visible"
+ }
+}

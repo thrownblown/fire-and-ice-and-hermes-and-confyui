@@ -1,0 +1,18 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "colors",
+ "file": "ComfyUI_00104_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935247.9240584,
+ "size": 3864748,
+ "ts": "2026-10-15T05:03:28Z",
+ "text": "{\n \"skin\": \"brown\",\n \"hair\": \"black\",\n \"eyes\": \"dark brown\",\n \"garment_primary\": \"black\",\n \"garment_secondary\": null,\n \"metal_accent\": null\n}",
+ "json": {
+  "skin": "brown",
+  "hair": "black",
+  "eyes": "dark brown",
+  "garment_primary": "black",
+  "garment_secondary": null,
+  "metal_accent": null
+ }
+}

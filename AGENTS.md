@@ -28,8 +28,9 @@ manifests, ASR, prompts, run metadata), not the media. Design authority:
   `VIRTUAL_ENV=E:/FNI/.venv uv pip install <pkg>`. Run scripts as
   `.venv/Scripts/python.exe <script>`. System python is 3.14 (too new for the wheels) — never
   use it for FNI.
-- **Two rigs.** RTX **5090** = dedicated H3 render box (only thing running there). RTX **4090**
-  Windows = general-purpose (LM Studio, dev). **Never run LM Studio and an H3 render on the
+- **Two rigs.** RTX **5090** = render box — does BOTH MiniMax H3 video AND Krea2 image stills
+  (one ComfyUI at Tailscale `100.104.7.72:8188`). RTX **4090** Windows = general-purpose (LM
+  Studio, dev) + its own ComfyUI image-gen/restyle (Krea2 / Qwen-Image-Edit / Z-Image Turbo). **Never run LM Studio and an H3 render on the
   same GPU** (H3 stack ~23 GB). ComfyUI: Tailscale `100.104.7.72:8188`, LAN `192.168.12.177:8188`
   (env `FNI_COMFY`, default now Tailscale). `/history` wipes on reboot — recover outputs with
   `tools/pull_5090.py`. Windows box IPv6 is broken: force IPv4 (`curl -4`).

@@ -1,0 +1,19 @@
+{
+ "char": "SUBHUMAN",
+ "lens": "signature",
+ "file": "shot_00724_f00000.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932499.1883748,
+ "size": 283756,
+ "ts": "2026-10-15T05:05:46Z",
+ "text": "{\n \"memorable_traits\": [\"muscular build\", \"bared teeth\", \"intense facial expression\", \"holding a red pole\"],\n \"unmistakable_because\": \"The central figure's exaggerated muscularity, fierce grimace with bared teeth, and grip on the red pole make him visually dominant.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "muscular build",
+   "bared teeth",
+   "intense facial expression",
+   "holding a red pole"
+  ],
+  "unmistakable_because": "The central figure's exaggerated muscularity, fierce grimace with bared teeth, and grip on the red pole make him visually dominant."
+ }
+}

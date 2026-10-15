@@ -1,0 +1,17 @@
+{
+ "char": "DARKWOLF",
+ "lens": "hair",
+ "file": "shot_01229_f00012.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791159459.0305507,
+ "size": 131502,
+ "ts": "2026-10-15T04:28:45Z",
+ "text": "{\n \"color\": \"black\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"covered\",\n \"notes\": \"hair is part of a black panther-like mask with pointed ears\"\n}",
+ "json": {
+  "color": "black",
+  "length": "very long",
+  "texture": "straight",
+  "style": "covered",
+  "notes": "hair is part of a black panther-like mask with pointed ears"
+ }
+}

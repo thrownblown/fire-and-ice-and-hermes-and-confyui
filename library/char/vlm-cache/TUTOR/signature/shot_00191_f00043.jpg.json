@@ -1,0 +1,18 @@
+{
+ "char": "TUTOR",
+ "lens": "signature",
+ "file": "shot_00191_f00043.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791151821.552537,
+ "size": 103050,
+ "ts": "2026-10-15T05:20:30Z",
+ "text": "{\n \"memorable_traits\": [\"short black hair\", \"yellow collar\", \"light skin tone\"],\n \"unmistakable_because\": \"The combination of short black hair, yellow collar, and light skin tone uniquely identifies this figure.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "short black hair",
+   "yellow collar",
+   "light skin tone"
+  ],
+  "unmistakable_because": "The combination of short black hair, yellow collar, and light skin tone uniquely identifies this figure."
+ }
+}

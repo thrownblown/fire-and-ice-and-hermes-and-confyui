@@ -1,0 +1,18 @@
+{
+ "char": "TEEGRA",
+ "lens": "signature",
+ "file": "teegra_cosplay_by_synth_crush_di9eund-414w.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1792032327.0699873,
+ "size": 37541,
+ "ts": "2026-10-15T10:58:01Z",
+ "text": "{\n  \"memorable_traits\": [\"long dark hair\", \"purple bikini\", \"gold chain necklace\"],\n  \"unmistakable_because\": \"The combination of long dark hair, a distinctive purple bikini, and a gold chain necklace makes this figure uniquely identifiable.\"\n}",
+ "json": {
+  "memorable_traits": [
+   "long dark hair",
+   "purple bikini",
+   "gold chain necklace"
+  ],
+  "unmistakable_because": "The combination of long dark hair, a distinctive purple bikini, and a gold chain necklace makes this figure uniquely identifiable."
+ }
+}

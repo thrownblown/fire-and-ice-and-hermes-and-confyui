@@ -1,0 +1,21 @@
+{
+ "char": "JAROL",
+ "lens": "face",
+ "file": "ComfyUI_00033_.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791935131.8724194,
+ "size": 4286778,
+ "ts": "2026-10-15T04:29:48Z",
+ "text": "{\n \"face_shape\": \"oval\",\n \"eyes\": \"green\",\n \"brows\": \"thick and arched\",\n \"nose\": \"large and broad\",\n \"lips\": \"full with a mustache\",\n \"distinguishing_features\": [\n  \"white beard\",\n  \"earrings\"\n ]\n}",
+ "json": {
+  "face_shape": "oval",
+  "eyes": "green",
+  "brows": "thick and arched",
+  "nose": "large and broad",
+  "lips": "full with a mustache",
+  "distinguishing_features": [
+   "white beard",
+   "earrings"
+  ]
+ }
+}

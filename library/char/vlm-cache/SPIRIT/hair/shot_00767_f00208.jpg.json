@@ -1,0 +1,17 @@
+{
+ "char": "SPIRIT",
+ "lens": "hair",
+ "file": "shot_00767_f00208.jpg",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932286.4266088,
+ "size": 347803,
+ "ts": "2026-10-15T05:02:49Z",
+ "text": "{\n \"color\": \"white\",\n \"length\": \"very long\",\n \"texture\": \"straight\",\n \"style\": \"loose\",\n \"notes\": \"hair falls past shoulders; no bangs or accessories\"\n}",
+ "json": {
+  "color": "white",
+  "length": "very long",
+  "texture": "straight",
+  "style": "loose",
+  "notes": "hair falls past shoulders; no bangs or accessories"
+ }
+}

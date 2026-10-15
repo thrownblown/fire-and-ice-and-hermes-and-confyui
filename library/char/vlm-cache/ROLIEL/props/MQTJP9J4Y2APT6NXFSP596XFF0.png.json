@@ -1,0 +1,27 @@
+{
+ "char": "ROLIEL",
+ "lens": "props",
+ "file": "MQTJP9J4Y2APT6NXFSP596XFF0.png",
+ "model": "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s",
+ "mtime": 1791932388.7725842,
+ "size": 1226486,
+ "ts": "2026-10-15T04:54:02Z",
+ "text": "{\n  \"items\": [\n    {\n      \"item\": \"bracelet\",\n      \"color\": \"gray\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"left wrist\"\n    },\n    {\n      \"item\": \"bracelet\",\n      \"color\": \"gray\",\n      \"worn_or_carried\": \"worn\",\n      \"body_location\": \"right wrist\"\n    }\n  ],\n  \"weapons\": []\n}",
+ "json": {
+  "items": [
+   {
+    "item": "bracelet",
+    "color": "gray",
+    "worn_or_carried": "worn",
+    "body_location": "left wrist"
+   },
+   {
+    "item": "bracelet",
+    "color": "gray",
+    "worn_or_carried": "worn",
+    "body_location": "right wrist"
+   }
+  ],
+  "weapons": []
+ }
+}
