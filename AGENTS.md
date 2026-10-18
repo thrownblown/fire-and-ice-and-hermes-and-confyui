@@ -73,10 +73,11 @@ them, render out of order, reassemble chronologically by shot id (the timeline T
 - Grammar mode MUST match the model mode (FL2VA ⇄ 3-field, REF2VA ⇄ 6-field). Never drift.
 - `validate_prompt()` (pipeline/fullrun.py) checks the 3-field contract; `pipeline/refrun.py` has
   `validate_ref_prompt()` for the 6-field contract. Both are non-fatal advisory checks.
-- **Reorg note (2026-10-12):** scripts moved to `pipeline/`; several still assume the old root
-  location (`ROOT = Path(__file__).parent` in cut_detect/chop/keyframes/preprocess_ref/
-  build_shot_browser; `from core import ...` / `import fullrun` in stage2/3/4, run_align/asr/join,
-  run_scene10_ledger, asr/vlm_probe, refrun). Fix each the next time it runs.
+- **Reorg complete (2026-10-18):** every `pipeline/` script now derives the repo root from
+  `__file__` (`Path(__file__).resolve().parent.parent`) and, where it imports `core`/`fullrun`,
+  bootstraps `sys.path` with `_REPO / "pipeline"` BEFORE `_REPO` (so `import fullrun` resolves to
+  `pipeline/fullrun.py`, never the `fullrun/` output dir). Fixed: chop/cut_detect/keyframes
+  (ROOT depth), refrun/run_align/run_asr/run_join/run_scene10_ledger/stage2/3/4 (imports).
 
 ## Data layout
 
