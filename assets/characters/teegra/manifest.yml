@@ -1,0 +1,28 @@
+schema: fni.asset/character/v1
+character_id: teegra
+name: Teegra
+status: approved
+version: 1
+
+canonical_refs:
+  face:
+    front: refs/face.front.png
+  body:
+    front: refs/body.front.png
+
+distinguishing_traits:
+  - very long jet-black hair, parted down the middle, usually loose
+  - pale fair skin
+  - green eyes
+  - winged eyeliner, muted red lips
+  - slender athletic build
+
+wardrobe_ids:
+  - teegra.top.halter
+
+lineage:
+  source: real Fire & Ice (1983) film stills (refs/characters/TEEGRA/)
+  source_frames: [shot_00263_f00000, shot_00273_f00026]
+  derived: VLM curation (qwen3-vl-8b)
+  note: in-situ film frames (not isolated on neutral ground) — approved explicitly for the
+    pilot edit per task t_fed3e6f2; see asset-schema section 6 isolation caveat.

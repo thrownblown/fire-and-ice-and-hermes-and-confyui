@@ -1,0 +1,23 @@
+schema: fni.asset/garment/v1
+garment_id: aria.outerwear.coat_02
+character_id: aria
+name: Aria's long coat (variant 02)
+slot: outerwear
+covers: ["full"]
+version: 2
+status: approved
+
+refs:
+  front: refs/front.png
+  back: refs/back.png
+  side: refs/side.png
+  detail.collar: refs/detail.collar.png
+
+materials:
+  color:
+    primary: [40, 40, 48]
+    primary_name: "charcoal"
+  material: "waxed canvas, matte, weathered"
+
+notes: |
+  Full-length coat with a high stiff collar and brass clasps. Worn over everything.

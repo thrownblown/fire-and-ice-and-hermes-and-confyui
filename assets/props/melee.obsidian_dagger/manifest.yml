@@ -1,0 +1,19 @@
+schema: fni.asset/prop/v1
+prop_id: melee.obsidian_dagger
+name: Obsidian dagger
+category: melee
+version: 1
+status: approved
+
+refs:
+  front: refs/front.png
+
+scale:
+  relative_to: "adult hand"
+  approx_length_cm: 28
+
+notes: |
+  Black obsidian (glassy black) blade, simple bone hilt. Carried at the hip, edge forward.
+  NOTE: one VLM pass over the film still (shot_00280_f00063) read the blade as brass/golden
+  metallic; the canonical spec (docs/edit-swap-templates.md 6b, docs/asset-schema.md) is black
+  obsidian. Flagged for human verification before scaling to the full cast.

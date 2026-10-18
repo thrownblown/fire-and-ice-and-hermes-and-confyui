@@ -1,0 +1,27 @@
+schema: fni.asset/character/v1
+character_id: aria
+name: Aria
+status: approved
+version: 1
+
+canonical_refs:
+  face:
+    front: refs/face.front.png
+    profile: refs/face.profile.png
+  body:
+    front: refs/body.front.png
+    back: refs/body.back.png
+
+distinguishing_traits:
+  - shoulder-length black hair, fringe over one eye
+  - angular cheekbones, narrow jaw
+  - lean athletic build
+
+wardrobe_ids:
+  - aria.outerwear.coat_02
+  - aria.shoes.boots
+  - aria.bottom.leggings
+
+lineage:
+  source_shot: shot:00001
+  derived: vlm + manual curation

@@ -1,0 +1,24 @@
+schema: fni.asset/garment/v1
+garment_id: teegra.top.halter
+character_id: teegra
+name: Teegra's halter top
+slot: top
+version: 1
+status: approved
+
+refs:
+  front: refs/front.png
+
+materials:
+  color:
+    primary: [166, 133, 196]
+    primary_name: "pale purple (lavender)"
+  material: "thin woven cloth, matte"
+
+notes: |
+  Inverted-triangle gathered-center halter: sleeveless, ties at the neck. The gathered/ruched
+  edges run vertically, facing each other down the center of the chest; the thin string from
+  each center edge ties up behind the neck; the bottom points of the triangles point down and
+  wrap under the bust to tie around the back. Deep V-neck halter illusion.
+  Colour: lavender / pale purple — VLM-reported "muted lavender-purple" (shot_00370); this
+  outranks earlier hand-typed "purple"/"blue". NOT a fur bikini.

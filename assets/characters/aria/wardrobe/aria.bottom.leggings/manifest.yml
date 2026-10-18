@@ -1,0 +1,19 @@
+schema: fni.asset/garment/v1
+garment_id: aria.bottom.leggings
+character_id: aria
+name: Aria's leggings
+slot: bottom
+version: 1
+status: draft
+
+refs:
+  front: refs/front.png
+  back: refs/back.png
+
+materials:
+  color:
+    primary: [80, 80, 90]
+    primary_name: "grey"
+
+notes: |
+  Draft — missing side ref and final colour pass (VLM report pending).

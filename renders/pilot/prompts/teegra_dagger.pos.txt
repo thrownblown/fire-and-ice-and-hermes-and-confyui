@@ -1,0 +1,10 @@
+Replace the prop in prop:melee.obsidian_dagger with the canonical reference prop.
+
+Reference prop: melee.obsidian_dagger — Obsidian dagger.
+Material and color (from the asset manifest — do not alter): black glass blade, simple bone hilt.
+Scale and placement: about 28 cm, relative to an adult hand; carried at the hip, edge forward.
+Match the reference prop's shape and geometry exactly.
+
+Keep the pose, framing, camera, background, lighting, and the character's hands, grip, and body proportions exactly as they are. Replace ONLY the prop within the hip / hand region.
+
+Preserve exactly: the character's face, facial features, hair, hairstyle, skin tone, eye color, body proportions, pose, hands, camera angle, framing, background, and lighting. Do not change, re-render, or alter any of these. Modify only the region specified by the hip / hand; every pixel outside that region must remain identical to the input image.

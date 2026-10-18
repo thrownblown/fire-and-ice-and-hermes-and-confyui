@@ -1,0 +1,9 @@
+Replace the garment in garment:top with the canonical reference garment.
+
+Reference garment: teegra.top.halter — Teegra's halter top.
+Material and color (from the asset manifest — do not alter): pale purple, RGB (166, 133, 196), thin woven cloth, matte.
+Fit the reference garment to the figure exactly as worn in the approved reference, including its defining geometry: sleeveless, ties at the neck; an inverted triangle top — the gathered/ruched edges run vertically facing each other down the center of the chest, the thin strings from those center edges tie up behind the neck, and the bottom points of the triangles point down and wrap under the bust to tie around the back.
+
+Keep the pose, framing, camera, background, and lighting exactly as they are. Replace ONLY the garment within the chest / torso; leave the face, hair, skin, hands, and body proportions identical to the base image.
+
+Preserve exactly: the character's face, facial features, hair, hairstyle, skin tone, eye color, body proportions, pose, hands, camera angle, framing, background, and lighting. Do not change, re-render, or alter any of these. Modify only the region specified by the chest / torso; every pixel outside that region must remain identical to the input image.

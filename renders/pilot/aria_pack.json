@@ -1,0 +1,110 @@
+{
+  "schema": "fni.asset/pack/v1",
+  "request": {
+    "character_ids": [
+      "aria"
+    ],
+    "wardrobe": [
+      "coat_02"
+    ],
+    "props": [
+      "lantern_01"
+    ],
+    "shot_id": null
+  },
+  "reference_images": [
+    {
+      "role": "character",
+      "asset_id": "aria",
+      "angle": "face.front",
+      "rel": "characters/aria/refs/face.front.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\refs\\face.front.png",
+      "status": "approved"
+    },
+    {
+      "role": "character",
+      "asset_id": "aria",
+      "angle": "face.profile",
+      "rel": "characters/aria/refs/face.profile.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\refs\\face.profile.png",
+      "status": "approved"
+    },
+    {
+      "role": "character",
+      "asset_id": "aria",
+      "angle": "body.front",
+      "rel": "characters/aria/refs/body.front.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\refs\\body.front.png",
+      "status": "approved"
+    },
+    {
+      "role": "character",
+      "asset_id": "aria",
+      "angle": "body.back",
+      "rel": "characters/aria/refs/body.back.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\refs\\body.back.png",
+      "status": "approved"
+    },
+    {
+      "role": "wardrobe",
+      "asset_id": "aria.outerwear.coat_02",
+      "angle": "front",
+      "rel": "characters/aria/wardrobe/aria.outerwear.coat_02/refs/front.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\wardrobe\\aria.outerwear.coat_02\\refs\\front.png",
+      "status": "approved"
+    },
+    {
+      "role": "wardrobe",
+      "asset_id": "aria.outerwear.coat_02",
+      "angle": "back",
+      "rel": "characters/aria/wardrobe/aria.outerwear.coat_02/refs/back.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\wardrobe\\aria.outerwear.coat_02\\refs\\back.png",
+      "status": "approved"
+    },
+    {
+      "role": "wardrobe",
+      "asset_id": "aria.outerwear.coat_02",
+      "angle": "side",
+      "rel": "characters/aria/wardrobe/aria.outerwear.coat_02/refs/side.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\wardrobe\\aria.outerwear.coat_02\\refs\\side.png",
+      "status": "approved"
+    },
+    {
+      "role": "wardrobe",
+      "asset_id": "aria.outerwear.coat_02",
+      "angle": "detail.collar",
+      "rel": "characters/aria/wardrobe/aria.outerwear.coat_02/refs/detail.collar.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\characters\\aria\\wardrobe\\aria.outerwear.coat_02\\refs\\detail.collar.png",
+      "status": "approved"
+    },
+    {
+      "role": "prop",
+      "asset_id": "set-dressing.lantern_01",
+      "angle": "front",
+      "rel": "props/set-dressing.lantern_01/refs/front.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\props\\set-dressing.lantern_01\\refs\\front.png",
+      "status": "approved"
+    },
+    {
+      "role": "prop",
+      "asset_id": "set-dressing.lantern_01",
+      "angle": "side",
+      "rel": "props/set-dressing.lantern_01/refs/side.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\props\\set-dressing.lantern_01\\refs\\side.png",
+      "status": "approved"
+    },
+    {
+      "role": "prop",
+      "asset_id": "set-dressing.lantern_01",
+      "angle": "detail.glass",
+      "rel": "props/set-dressing.lantern_01/refs/detail.glass.png",
+      "path": "E:\\FNI\\.worktrees\\t_f88b1bcf\\assets\\props\\set-dressing.lantern_01\\refs\\detail.glass.png",
+      "status": "approved"
+    }
+  ],
+  "description_block": "Character: Aria (aria)\n  distinguishing traits:\n    - shoulder-length black hair, fringe over one eye\n    - angular cheekbones, narrow jaw\n    - lean athletic build\n  curator notes:\n    Identity anchor for the character. VLM-reported colours outrank any hand-typed\n    colour below; the manifest is authoritative.\n    Skin: pale, cool undertone.\n    Hair: black, shoulder length, heavy fringe falling over the left eye.\n    Eyes: light grey.\n    Build: lean, upright posture, dancer's carriage.\n    Do not restyle the fringe out of the face \u2014 it is her defining silhouette cue.\n\nWardrobe: Aria's long coat (variant 02) [aria.outerwear.coat_02] slot=outerwear\n  color: charcoal (RGB 40, 40, 48)\n  material: waxed canvas, matte, weathered\n  notes: Full-length coat with a high stiff collar and brass clasps. Worn over everything.\n\nProp: Brass lantern [set-dressing.lantern_01] category=set-dressing\n  scale: adult hand, carried at hip height; ~35 cm\n  notes: Brass lantern with amber glass. Casts warm light when lit.\n",
+  "validation": {
+    "ok": true,
+    "errors": []
+  }
+}

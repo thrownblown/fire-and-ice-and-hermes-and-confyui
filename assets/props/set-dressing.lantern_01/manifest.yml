@@ -1,0 +1,18 @@
+schema: fni.asset/prop/v1
+prop_id: set-dressing.lantern_01
+name: Brass lantern
+category: set-dressing
+version: 1
+status: approved
+
+refs:
+  front: refs/front.png
+  side: refs/side.png
+  detail.glass: refs/detail.glass.png
+
+scale:
+  relative_to: "adult hand, carried at hip height"
+  approx_length_cm: 35
+
+notes: |
+  Brass lantern with amber glass. Casts warm light when lit.

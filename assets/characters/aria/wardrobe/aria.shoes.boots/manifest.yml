@@ -1,0 +1,20 @@
+schema: fni.asset/garment/v1
+garment_id: aria.shoes.boots
+character_id: aria
+name: Aria's boots
+slot: shoes
+version: 1
+status: approved
+
+refs:
+  front: refs/front.png
+  back: refs/back.png
+
+materials:
+  color:
+    primary: [60, 50, 40]
+    primary_name: "dark brown"
+  material: "worn leather"
+
+notes: |
+  Knee-high lace-up boots, scuffed toe caps.

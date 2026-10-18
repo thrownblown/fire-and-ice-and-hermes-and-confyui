@@ -1,0 +1,11 @@
+schema: fni.asset/shot/v1
+shot_id: shot:00023
+characters:
+  - character_id: aria
+    wardrobe_ids: [aria.outerwear.coat_02, aria.shoes.boots]
+    prop_ids: [set-dressing.lantern_01]
+base_generation:
+  image: null
+  plate: null
+edit_passes: []
+status: approved
