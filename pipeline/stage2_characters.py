@@ -7,6 +7,12 @@ Model: qwen3-vl-8b q4. Sequential. Resume skips shot_ids already in the jsonl.
 import json
 from pathlib import Path
 
+import sys
+
+_REPO = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
+sys.path.insert(0, str(_REPO / "pipeline"))      # `import fullrun`/`refrun` resolves here, not the output dir
+sys.path.insert(0, str(_REPO))                   # `from core import ...` resolves here
+
 from core.vlm_correlate import describe_people
 
 ROOT = Path(r"E:/FNI")

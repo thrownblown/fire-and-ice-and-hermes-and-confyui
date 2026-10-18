@@ -5,6 +5,12 @@ Does not write chunks. Does not call ComfyUI.
 import json
 from pathlib import Path
 
+import sys
+
+_REPO = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
+sys.path.insert(0, str(_REPO / "pipeline"))      # `import fullrun`/`refrun` resolves here, not the output dir
+sys.path.insert(0, str(_REPO))                   # `from core import ...` resolves here
+
 from core.cluster import cluster_people
 from core.ledger import is_unreliable, normalize_location, normalize_person
 from core.vlm_correlate import describe_creatures, describe_location, describe_people

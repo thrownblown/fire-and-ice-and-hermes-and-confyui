@@ -6,6 +6,12 @@ Report: reports/composition-pass.html
 import json
 from pathlib import Path
 
+import sys
+
+_REPO = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
+sys.path.insert(0, str(_REPO / "pipeline"))      # `import fullrun`/`refrun` resolves here, not the output dir
+sys.path.insert(0, str(_REPO))                   # `from core import ...` resolves here
+
 from core.vlm_correlate import call_vlm, SYSTEM_PROMPT
 
 ROOT = Path(r"E:/FNI")

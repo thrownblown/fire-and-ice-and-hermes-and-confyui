@@ -22,7 +22,7 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
 MASTER = ROOT / "<source-master>.mp4"
 SHOTS = ROOT / "shots.jsonl"
 TB_DEN = 24000

@@ -25,6 +25,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+_REPO = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
+sys.path.insert(0, str(_REPO / "pipeline"))      # `import fullrun` resolves here, not the output dir
+sys.path.insert(0, str(_REPO))                   # `from core import ...` resolves here
+
 import fullrun as F
 
 # ------------------------------------------------------------------ validate

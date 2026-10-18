@@ -24,7 +24,7 @@ from pathlib import Path
 
 from scenedetect import ContentDetector, SceneManager, open_video
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
 MASTER = ROOT / "<source-master>.mp4"
 
 # Source master properties, measured with ffprobe (see master.json).
