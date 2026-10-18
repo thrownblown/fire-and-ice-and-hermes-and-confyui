@@ -1,6 +1,7 @@
 # Fire & Ice — Project Folder
 
-Local-only H3 remake pipeline. Single RTX 5090, Ubuntu/Linux target.
+Local-only H3 remake pipeline. Two rigs — RTX 5090 (Linux render box) + RTX 4090 (Windows
+dev box); ground truth in `docs/canonical-setup.md`.
 Design authority: `docs/README (3).md` → `docs/IMPLEMENTATION_PLAN (1).md`.
 
 ## Source

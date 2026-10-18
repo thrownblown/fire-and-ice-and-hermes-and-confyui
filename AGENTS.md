@@ -16,27 +16,29 @@ manifests, ASR, prompts, run metadata), not the media. Design authority:
 1. **`memory/VIEW.md`** — whole project history, ~16 KB, one line per event, `id+span` addressed.
    Open a line: `python core/optmem.py zoom <id> <span>` (zoom again to reach the original).
 2. **This file** for conventions and layout.
-3. Load the skill **`fni-h3-pipeline`** (in the Hermes profile, not this repo) before touching
+3. **`docs/canonical-setup.md`** — canonical ground truth: rigs, addresses, services, env
+   vars, model stores, ComfyUI graph doctrine. Anything that disagrees with it is stale.
+4. Load the skill **`fni-h3-pipeline`** (in the Hermes profile, not this repo) before touching
    H3 prompts or debugging renders.
-4. Authoritative detail still lives where it belongs: ledgers, `docs/*.md`, the skill.
+5. Authoritative detail still lives where it belongs: ledgers, `docs/*.md`, the skill.
 
 ## Environment
 
-- Root `E:\FNI`. Host is **Windows**; the shell is **git-bash/MSYS** (POSIX syntax). Native
-  tools (git, rg, python) do NOT translate `/c/...` paths — pass `C:/...`/`E:/...` style.
-- **Venv: `E:\FNI\.venv`** — Python 3.11, uv-managed, **no pip**. Install with
-  `VIRTUAL_ENV=E:/FNI/.venv uv pip install <pkg>`. Run scripts as
-  `.venv/Scripts/python.exe <script>`. System python is 3.14 (too new for the wheels) — never
-  use it for FNI.
-- **Two rigs.** RTX **5090** = render box — does BOTH MiniMax H3 video AND Krea2 image stills
-  (one ComfyUI at Tailscale `<TOMBSTONE_TS_IP>:8188`). RTX **4090** Windows = general-purpose (LM
-  Studio, dev) + its own ComfyUI image-gen/restyle (Krea2 / Qwen-Image-Edit / Z-Image Turbo). **Never run LM Studio and an H3 render on the
-  same GPU** (H3 stack ~23 GB). ComfyUI: Tailscale `<TOMBSTONE_TS_IP>:8188`, LAN `<LAN_IP>:8188`
-  (env `FNI_COMFY`, default now Tailscale). `/history` wipes on reboot — recover outputs with
-  `tools/pull_5090.py`. Windows box IPv6 is broken: force IPv4 (`curl -4`).
-- LM Studio (`127.0.0.1:1234/v1`) roles: vision = `qwen3-vl-8b`; general small = mistral-7b;
-  prompt-craft = sulphur_2. Subagents use LM Studio via `delegation.provider`; the 27B models are
-  crash-prone and qwq-32b's 40k context is below Hermes's 64k floor.
+Ground truth is **`docs/canonical-setup.md`** (rigs, addresses, services, env vars, model
+stores, graph doctrine — each fact with its verify command). This section carries only the
+imperatives:
+
+- Root `E:\FNI`. Host is **Windows** (mh370, RTX 4090); shell is **git-bash/MSYS** (POSIX
+  syntax). Native tools do NOT translate `/c/...` paths — pass `C:/...`/`E:/...` style.
+  IPv6 is broken: force IPv4 (`curl -4`).
+- Run everything via **`.venv/Scripts/python.exe`** (py3.11, uv, no pip); system python 3.14
+  is never used for FNI.
+- **Never assume which rig ran a job** — identify it (`GET /system_stats`: win32 = mh370,
+  linux = tombstone/5090, HTTP-only). Serialize LM Studio vs ComfyUI on the 4090's one GPU;
+  never an H3 render and LM Studio on the same GPU.
+- **Graphs are artifacts**: read any render's PNG sidecar (`info['prompt']`) instead of
+  reconstructing; queue by POSTing on-disk graph JSON as-is.
+- 5090 `/history` wipes on reboot — recover outputs with `tools/pull_5090.py`.
 
 ## Core concept: SETUPS (read before planning any render)
 
