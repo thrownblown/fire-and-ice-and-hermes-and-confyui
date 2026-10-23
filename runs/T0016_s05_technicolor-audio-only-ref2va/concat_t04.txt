@@ -1,0 +1,4 @@
+file 'output/t04/S05-c01_audioOnly_t04_00001_.mp4'
+file 'output/t04/S05-c02_audioOnly_t04_00001_.mp4'
+file 'output/t04/S05-c03_audioOnly_t04_00001_.mp4'
+file 'output/t04/S05-c04_audioOnly_t04_00001_.mp4'
