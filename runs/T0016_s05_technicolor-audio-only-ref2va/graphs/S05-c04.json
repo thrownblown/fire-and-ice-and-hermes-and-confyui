@@ -1,7 +1,7 @@
 {
   "92": {
     "inputs": {
-      "filename_prefix": "video/S05-c04_audioOnly_t03",
+      "filename_prefix": "video/S05-c04_audioOnly_t04",
       "format": "auto",
       "format.codec": "auto",
       "codec": "auto",
@@ -230,7 +230,7 @@
   },
   "150": {
     "inputs": {
-      "image": "fire-keep-chamber_plate_t01_00001_.png"
+      "image": "fire-keep-chamber_plate_t03_00001_.png"
     },
     "class_type": "LoadImage",
     "_meta": {

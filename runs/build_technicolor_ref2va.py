@@ -70,9 +70,9 @@ def sheet_path(name: str) -> Path | None:
 
 def plate_path(slug: str) -> Path | None:
     d = ROOT / "refs" / "backgrounds" / slug
-    for p in sorted(d.glob(f"{slug}_plate_t*.png")):
-        return p
-    return None
+    # prefer the HIGHEST take (newest/regenerated plate), not the first alphabetically
+    cands = sorted(d.glob(f"{slug}_plate_t*.png"))
+    return cands[-1] if cands else None
 
 
 def build_sheet_prompt(row, subjects, plate_count, dialogue, people) -> str:
