@@ -1,0 +1,23 @@
+{
+ "akatar-harbor": "SCORE=4 DEFECT=minor sky texture artifacts",
+ "darkwolf-camp": "SCORE=4 DEFECT=slight AI smearing in foliage",
+ "fire-keep-chamber": "SCORE=4 DEFECT=slight texture mismatch in curtains",
+ "fire-keep-pool": "SCORE=4 DEFECT=minor AI smearing in foliage",
+ "fire-keep-ramparts": "SCORE=4 DEFECT=slight tonal mismatch in distant landscape",
+ "fire-keep-study": "SCORE=4 DEFECT=AI text artifacts on scroll",
+ "fire-keep-throne-hall": "SCORE=4 DEFECT=minor AI smudging in stone texture",
+ "frozen-landscape": "SCORE=4 DEFECT=slight vintage film grain inconsistency",
+ "ice-peak-cave": "SCORE=4 DEFECT=slight painterly texture inconsistency",
+ "ice-peak-dungeon": "SCORE=4 DEFECT=slight painterly texture in ice",
+ "ice-peak-lava": "SCORE=4 DEFECT=slight AI smearing in clouds",
+ "ice-peak-throne-hall": "SCORE=4 DEFECT=slight AI smearing in ice textures",
+ "jungle": "SCORE=4 DEFECT=slight grain/noise in foliage",
+ "north-village-plain": "SCORE=4 DEFECT=slight AI smearing in glacier texture",
+ "open-sky": "SCORE=4 DEFECT=artificial stars & sky edge artifacts",
+ "painted-map-montage": "SCORE=4 DEFECT=minor microtext artifacts",
+ "roliel-hut": "SCORE=4 DEFECT=slight AI texture artifacts",
+ "ruined-village": "SCORE=4 DEFECT=minor AI smearing in sky",
+ "subhuman-camp": "SCORE=4 DEFECT=slight AI smudging in distant cliffs",
+ "swamp": "SCORE=5 DEFECT=none",
+ "wilderness": "SCORE=4 DEFECT=slight texture blending artifacts"
+}

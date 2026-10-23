@@ -1,0 +1,162 @@
+{
+ "version": 1,
+ "canonical_locations": [
+  {
+   "slug": "painted-map-montage",
+   "name": "Painted Map / Montage",
+   "prompt": "a painterly hand-drawn fantasy map on aged parchment. A single large landmass with a frozen glacier region in the north, a volcanic mountain in the south, winding rivers and mountain ranges, a compass rose in one corner, and a decorative border of simple flourishes. 80s fantasy film title-sequence style, technicolor, painted cartography with heavy texture, coherent layout, no text, no lettering, no labels, no watermark, no signature, no people, no figures"
+  },
+  {
+   "slug": "north-village-plain",
+   "name": "North Village on the Plain",
+   "prompt": "a small frontier village of thatched huts on a windswept plain at the foot of an advancing glacier, matte-painted 80s fantasy background, technicolor, dramatic storm light, no people"
+  },
+  {
+   "slug": "ice-peak-throne-hall",
+   "name": "Ice Peak Throne Hall",
+   "prompt": "a vast icy throne hall inside a frozen mountain, blue-lit, stalactite columns, a throne of ice on a dais, matte-painted 80s fantasy film background, technicolor, deep blacks and cyan glow, no people"
+  },
+  {
+   "slug": "ice-peak-cave",
+   "name": "Ice Peak Cave / Cavern",
+   "prompt": "the interior of a glacial cave, walls of translucent blue ice, frozen stalactites, cold shafts of light, matte-painted 80s fantasy background, technicolor, no people"
+  },
+  {
+   "slug": "fire-keep-chamber",
+   "name": "Fire Keep — Teegra's Chamber",
+   "prompt": "a warm royal bedchamber inside Fire Keep, red and gold drapery, torchlit stone, painted-backdrop depth, matte-painted 80s fantasy interior, technicolor, no people"
+  },
+  {
+   "slug": "fire-keep-study",
+   "name": "Fire Keep — Study",
+   "prompt": "a royal study in Fire Keep, warm and cluttered. In the foreground, a carved wooden desk with a single open book and a brass candlestick; in the midground, tall bookshelves crammed with leather-bound volumes and scroll racks; in the background, a tall window with heavy drapery and warm torchlight. Matte-painted 80s fantasy interior, technicolor, warm gold light, painted-backdrop depth, coherent perspective, no text, no writing, no watermark, no signature, no people, no figures"
+  },
+  {
+   "slug": "fire-keep-throne-hall",
+   "name": "Fire Keep — Throne Hall",
+   "prompt": "the great throne hall of Fire Keep, vast and torchlit. In the foreground, a long red carpet leading the eye in; in the midground, a double row of massive stone columns with brass braziers; in the background, a king's throne on a high dais beneath a great banner, all lit by warm torchlight against deep shadow. Matte-painted 80s fantasy interior, technicolor, epic practical scale, coherent one-point perspective, no text, no watermark, no people, no figures"
+  },
+  {
+   "slug": "fire-keep-pool",
+   "name": "Fire Keep — Pool / Garden",
+   "prompt": "a palace garden with a still bathing pool inside Fire Keep at night. In the foreground, a stone pool edge with steps descending into dark water and floating flower petals; in the midground, a colonnade of torchlit arches reflected in the water; in the background, high painted walls with heavy red drapery and a moonlit sky. Matte-painted 80s fantasy interior, technicolor, warm torchlight and gold against deep blue shadow, coherent perspective, no text, no watermark, no people, no figures"
+  },
+  {
+   "slug": "fire-keep-ramparts",
+   "name": "Fire Keep — Ramparts",
+   "prompt": "the high stone ramparts of Fire Keep at night, seen from the parapet. In the foreground, crenellated battlements with burning torch sconces; in the midground, the wall walk receding along the curtain wall; in the background, the torchlit city below and the dark plain beyond under a wide starry sky. Matte-painted 80s fantasy background, technicolor, deep blacks and warm orange torchlight, coherent single-point perspective, no text, no watermark, no people, no figures"
+  },
+  {
+   "slug": "wilderness",
+   "name": "Wilderness",
+   "prompt": "a barren rocky wilderness under a storm sky, jagged peaks and scree, matte-painted 80s fantasy background, technicolor, high contrast, no people"
+  },
+  {
+   "slug": "frozen-landscape",
+   "name": "Frozen Landscape",
+   "prompt": "an endless frozen landscape of ice fields and snow-capped peaks, matte-painted 80s fantasy vista, technicolor, deep blue shadows, no people"
+  },
+  {
+   "slug": "jungle",
+   "name": "Jungle",
+   "prompt": "a steaming dense jungle of huge vines and lush foliage, shafts of light through the canopy, matte-painted 80s fantasy background, technicolor, no people"
+  },
+  {
+   "slug": "swamp",
+   "name": "Swamp",
+   "prompt": "a still steaming swamp with stagnant water and twisted trees, matte-painted 80s fantasy background, technicolor, green and gold light, no people"
+  },
+  {
+   "slug": "darkwolf-camp",
+   "name": "Darkwolf's Camp",
+   "prompt": "a small lone hunter's camp in a rocky wilderness at night. In the foreground, a low crackling campfire with a spit and a few scattered wolf pelts; in the midground, a lean-to shelter of branches and hide leaning against a boulder; in the background, dark pine silhouettes and a cold starry sky. Matte-painted 80s fantasy film background, technicolor, deep blacks, warm orange firelight against cool blue night, coherent perspective, no text, no watermark, no people, no figures"
+  },
+  {
+   "slug": "subhuman-camp",
+   "name": "Subhuman Camp",
+   "prompt": "a crude camp at the base of a massive ancient tree and cliffs. In the foreground, a ring of rough stones around a dying fire and scattered primitive tools; in the midground, crude hide-and-branch shelters against the cliff face; in the background, the towering tree trunk and dark cliffs under a stormy sky. Matte-painted 80s fantasy background, technicolor, deep blacks, coherent perspective, no text, no watermark, no people, no figures"
+  },
+  {
+   "slug": "roliel-hut",
+   "name": "Roliel's Hut in the Woods",
+   "prompt": "a witch's hut deep in the forest, seen from the path. In the foreground, a winding dirt path with scattered stones and ferns; in the midground, a crooked thatched hut with a smoking chimney and one window glowing warm; in the background, tall dark pines and mist. Matte-painted 80s fantasy background, technicolor, warm candlelight against cool green forest, coherent perspective, no text, no watermark, no people, no figures, no characters"
+  },
+  {
+   "slug": "ruined-village",
+   "name": "Ruined Village",
+   "prompt": "the burned ruins of a destroyed village in a cold morning. In the foreground, charred broken beams and a fallen cart wheel; in the midground, the shells of burned thatched huts with smoke still rising; in the background, a grey winter sky and bare trees. Matte-painted 80s fantasy background, technicolor, high contrast, coherent perspective, no text, no watermark, no people, no figures"
+  },
+  {
+   "slug": "akatar-harbor",
+   "name": "Akatar Harbor",
+   "prompt": "a wide establishing shot of a busy fantasy harbor town at golden dusk. In the foreground, rough wooden dock planks and coiled rope and barrels leading the eye in; in the midground, three tall-masted wooden sailing ships moored at the piers with furled sails; in the background, a row of waterfront warehouses and taverns with warm lantern light rising into a deep orange-and-violet sky. Matte-painted 80s fantasy film background, technicolor, painted-backdrop depth, coherent single-point perspective, no text, no watermark, no signature, no people, no figures"
+  },
+  {
+   "slug": "ice-peak-dungeon",
+   "name": "Ice Peak Dungeon",
+   "prompt": "a dark dungeon carved into the ice mountain, chains and iron bars, cold blue torchlight, matte-painted 80s fantasy background, technicolor, no people"
+  },
+  {
+   "slug": "ice-peak-lava",
+   "name": "Ice Peak — Lava / Dragonhawks",
+   "prompt": "the molten heart of the ice mountain, rivers of lava under black rock, dragonhawks wheeling in the smoke, matte-painted 80s fantasy background, technicolor, no people"
+  },
+  {
+   "slug": "open-sky",
+   "name": "Open Sky",
+   "prompt": "a vast open sky over a low wilderness horizon at the edge of day. In the foreground, a dark ridge of pines and rocks in silhouette; in the midground, a band of rolling hills; in the background, a broad sky of layered clouds catching the last warm light, fading to deep blue. Matte-painted 80s fantasy background, technicolor, painterly clouds, coherent horizon, no stars, no text, no watermark, no people, no figures"
+  }
+ ],
+ "slug_to_canonical": {
+  "ice-cave": "ice-peak-cave",
+  "cave-interior": "ice-peak-cave",
+  "icy-cavern": "ice-peak-cave",
+  "cloudy-sky": "open-sky",
+  "rocky-terrain": "wilderness",
+  "forest-clearing": "jungle",
+  "icy-landscape": "frozen-landscape",
+  "ice-landscape": "frozen-landscape",
+  "dense-forest": "jungle",
+  "forest-at-night": "jungle",
+  "rocky-cave-interior": "ice-peak-cave",
+  "frozen-landscape": "frozen-landscape",
+  "rocky-ground": "wilderness",
+  "dense-jungle-canopy": "jungle",
+  "forest-undergrowth": "jungle",
+  "rocky-cave-floor": "ice-peak-cave",
+  "rocky-cliffside": "wilderness",
+  "dense-jungle": "jungle",
+  "dense-jungle-foliage": "jungle",
+  "stone-chamber": "ice-peak-throne-hall",
+  "night-sky-with-stars": "open-sky",
+  "rocky-cave-wall": "ice-peak-cave",
+  "underwater-cave": "swamp",
+  "cave-entrance": "ice-peak-cave",
+  "icy-cave-interior": "ice-peak-cave",
+  "dark-rocky-area": "wilderness",
+  "open-sky": "open-sky",
+  "underwater-environment": "swamp",
+  "frozen-wasteland": "frozen-landscape",
+  "deserted-wasteland": "frozen-landscape",
+  "night-sky": "open-sky",
+  "snowy-landscape": "frozen-landscape",
+  "snowy-ground": "wilderness",
+  "snowy-mountain-peak": "frozen-landscape",
+  "stone-structure": "ice-peak-throne-hall",
+  "dense-forest-undergrowth": "jungle",
+  "dense-forest-canopy": "jungle",
+  "indoor-room": "ice-peak-throne-hall",
+  "snowy-mountain-landscape": "frozen-landscape",
+  "mountainous-landscape": "frozen-landscape",
+  "icy-canyon": "frozen-landscape",
+  "icy-cave": "ice-peak-cave",
+  "ice-cavern": "ice-peak-cave",
+  "dark-cave": "ice-peak-cave",
+  "rocky-landscape": "wilderness",
+  "ice-cave-ceiling": "ice-peak-cave",
+  "forest-clearing-with-water": "jungle",
+  "dark-forest-floor": "jungle",
+  "stone-room": "ice-peak-throne-hall",
+  "stone-throne-room": "fire-keep-throne-hall"
+ }
+}

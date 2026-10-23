@@ -5,25 +5,32 @@ ComfyUI graph doctrine. Everything else (AGENTS.md, Hermes skills, Hermes memory
 POINTS here and carries only behavioral rules. If another document disagrees with this one,
 this one wins until it is re-verified and edited here.
 
-All facts below verified 2026-10-15 by direct probe (`/system_stats`, `nvidia-smi`,
-`tailscale status`, grep of script defaults). Each section names its verify command —
+All facts below verified 2026-10-19 by direct probe (`/system_stats`, `nvidia-smi`,
+`tailscale status`, grep of script defaults). LAN subnet is UNSTABLE — DHCP is flapping
+between <LAN_SUBNET>/24 and <LAN_SUBNET>/24 (an old router/DHCP server is still alive),
+so LAN IPs drift while Tailscale IPs do not. Tailscale is the authoritative rig-to-rig
+path. Each section names its verify command —
 re-run it before changing a value; never edit from memory.
 
 ## 1. Rigs
 
-| | mh370 (the "4090 box") | tombstone (the "5090 box") |
-|---|---|---|
-| OS | Windows 11, git-bash/MSYS shell | Ubuntu Linux |
-| GPU | RTX 4090, 24 GB (driver 617.42) | RTX 5090, 32 GB (cudaMallocAsync) |
-| RAM | 68 GB | 66 GB |
-| LAN IP | <LAN_IP> | <LAN_IP> |
-| Tailscale | <MH370_TS_IP> | <TOMBSTONE_TS_IP> |
-| ComfyUI | localhost:8188, v0.40.0 (win32) | :8188, v0.39.0 (linux) — Tailscale <TOMBSTONE_TS_IP>:8188 (preferred) and LAN <LAN_IP>:8188 are the SAME box, two paths; both work from mh370 |
-| Access | local (Hermes sessions run here) | HTTP API ONLY — no SSH, ever. Filesystem visible only via `/view` and the LoRA Manager catalog |
-| Roles | LM Studio, FNI dev/venv, local ComfyUI (plates, Krea2 probes, restyle) | H3 video renders, Krea2 stills, Qwen-Edit wardrobe runs |
+| | mh370 (the "4090 box") | tombstone (the "5090 box") | goldfishbowl (Ollama box) |
+|---|---|---|---|
+| OS | Windows 11, git-bash/MSYS shell | Ubuntu Linux | Linux |
+| GPU | RTX 4090, 24 GB (driver 617.42) | RTX 5090, 32 GB (cudaMallocAsync) | unknown — ≥41 GB VRAM (qwen3.8-27b Q8_0 fully in VRAM per Ollama `/api/ps`) |
+| RAM | 68 GB | 66 GB | unknown |
+| LAN IP | <LAN_IP> (flapping) | <LAN_IP> (flapping) | <ROUTER_IP> (<LAN_SUBNET>/24 — different subnet from the flapping 12/1 nets) |
+| Tailscale | <MH370_TS_IP> | <TOMBSTONE_TS_IP> | <GOLDFISHBOWL_TS_IP> |
+| ComfyUI | localhost:8188, v0.40.0 (win32) | :8188, v0.39.0 (linux) — Tailscale <TOMBSTONE_TS_IP>:8188 (preferred) and LAN <LAN_IP>:8188 are the SAME box, two paths; both work from mh370 | none — no `/system_stats` on :8188 |
+| Access | local (Hermes sessions run here) | HTTP API ONLY — no SSH, ever. Filesystem visible only via `/view` and the LoRA Manager catalog | HTTP API only — Ollama :11434 (SSH unverified) |
+| Roles | LM Studio, FNI dev/venv, local ComfyUI (plates, Krea2 probes, restyle) | H3 video renders, Krea2 stills, Qwen-Edit wardrobe runs | Ollama model server (OpenAI-compatible `/v1`, no auth) |
 
 Verify: `curl -4 -s http://<addr>:8188/system_stats` — `os: win32` = mh370, `os: linux` =
 tombstone; GPU name in `devices[]`. Identity never depends on version numbers or IPs alone.
+goldfishbowl has no ComfyUI — identify via `tailscale status` (hostname, `os: linux`) and
+Ollama `curl -4 -s http://<GOLDFISHBOWL_TS_IP>:11434/api/version|/api/tags|/api/ps`.
+GPU/RAM/SSH for goldfishbowl are still UNVERIFIED (no SSH; Ollama HTTP exposes none of
+them) — added 2026-10-23, fill the unknowns in when `nvidia-smi` becomes reachable.
 
 Hard rules:
 - The 4090's GPU is ONE shared resource: LM Studio and ComfyUI image-gen are mutually
@@ -48,6 +55,14 @@ Hard rules:
   general small `mistral-7b`. Hermes `vision_analyze` also rides this LM Studio.
   The 27B models are crash-prone under delegation and qwq-32b's 40k context is below
   Hermes's 64k floor — subagents use the configured delegation provider, not these.
+- **Ollama** (goldfishbowl only): OpenAI-compatible at `http://<GOLDFISHBOWL_TS_IP>:11434/v1`,
+  no auth, Ollama 0.40.6. Native API at `/api/tags` (model list), `/api/ps` (loaded models +
+  `size_vram`). Models (2026-10-23): qwen3.8-27b-rvn (latest/Q8_0, :q6, :mtp-test),
+  qwen3.5-35b-a3b (Q8_0), llama3.3-70b (Q5_K_S, 131k ctx), magnum-v4-72b (32k ctx — below
+  Hermes's 64k floor), terse-coder + qwen3-coder:30b + huihui coder-abliterated (coder),
+  qwen3-vl-8b-abl + qwen3-vl-32b-heretic (vision), cydonia-24b (Q8_0, 131k).
+  Hermes aliases: `goldfishbowl` (qwen3.8-27b-rvn:latest), `goldfish-70b` (llama3.3-70b),
+  `goldfish-coder` (terse-coder), `goldfish-vision` (qwen3-vl-32b-heretic).
 - **/history and /queue are memory-only** on both rigs: a reboot wipes them. Output files
   survive on disk; recovery is by name (section 6).
 

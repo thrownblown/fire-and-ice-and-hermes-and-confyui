@@ -1,5 +1,2 @@
-file 'E:/FNI/refs/shot_00197.mp4'
-file 'E:/FNI/refs/shot_00199.mp4'
-file 'E:/FNI/refs/shot_00201.mp4'
-file 'E:/FNI/refs/shot_00203.mp4'
-file 'E:/FNI/refs/shot_00205.mp4'
+file 'E:/FNI/refs/shot_00188.mp4'
+file 'E:/FNI/refs/shot_00189.mp4'

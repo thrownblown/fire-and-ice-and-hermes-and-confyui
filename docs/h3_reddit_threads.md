@@ -113,7 +113,73 @@ Last full re-review: 2026-10-12 (`docs/h3_repull_2026-10-12.md`).
   our `core/h3_chain.py`), Speech Studio (LTX 2.3 voice ref), and **Set Studio** (3D staging →
   rendered reference images = a master-plate generator route).
 
-## Backlog — search for / not yet scraped (see repull doc §"Threads NOT yet in the index")
+## [READ] Seamless Vlog workflow — roycho87 (1x84uym)
+- https://www.reddit.com/r/StableDiffusion/comments/1x84uym/make_perfect_seamless_vlog_videos_with_1_click/
+- Digest: `docs/h3_clown_anchoring_overlap.md`
+- Takeaway: Clown Anchoring = copy real next-shot latents into end of current shot's latent,
+  hold with noise mask 0. No redraw flash (unlike Motion Context pinned frames which redraw
+  brighter + 17-frame pulse). Overlap must be 17n+5 frames (5, 22, 39, 56...); default 39.
+  Audio overlap is separate from video overlap (H3 audio on distinct timeline). GPL-3.0,
+  ComfyUI custom nodes. For continuous content (talking head), not shot-cut content.
+
+## [READ] Audio segmenter — roycho87 (1wtc1jo)
+- https://www.reddit.com/r/StableDiffusion/comments/1wtc1jo/new_audio_segmenter_workflow_for_continuous_geiru/
+- Digest: `docs/h3_clown_anchoring_overlap.md` §"Audio-side counterpart"
+- Takeaway: Explicit 39-frame overlap formula for audio segmentation. Confirms "any 17n+5
+  overlap works" and that audio/video overlaps are independent (different H3 timelines).
+  Includes FL ChatterboxVC voice swap before splitting.
+## [READ] ExactAudioLock — lock audio to exact frames before H3 generation
+- https://www.reddit.com/r/StableDiffusion/comments/1wywoon/audio_outputs_differ_from_the_provided_audio_with/
+- Repo: github.com/badids/ComfyUI-H3-ExactAudioLock
+- Takeaway: build desired audio FIRST, position each line/sound at exact frame, input into
+  H3 BEFORE generation. Full lock mode = H3 creates video to match that audio. Dialogue-only
+  setting keeps spoken lines accurate while H3 produces ambience/foley/music. Multiple speakers,
+  overlapping dialogue, per-event volume. Integrates with H3 Add Guide so audio + visual cues
+  sync on same frame. NOT post-hoc audio paste. Directly applicable to FNI's
+  dialogue-timeline.tsv.
+
+## [READ] Most successful Ref2VA prompt structure (1x8scrg)
+- https://www.reddit.com/r/StableDiffusion/comments/1x8scrg/most_successful_minimax_h3_referencetovideo/
+- Takeaway: six-section REF2VA structure (subject_definitions / summary / retention_analysis /
+  detailed_description / overall_soundscape / non_diegetic_music) — matches FNI's refrun.py
+  grammar. CRITICAL: image ordering = clearest close-up face → image_1, body front → image_2,
+  side/quarter → image_3. Trigger phrase: "The target is an [edited] version of [unchanged]".
+  LOCAL H3 WEIGHTS: NEVER mention <Video N>, <Audio N>, or <Subject N> in detailed_description —
+  define them in subject_definitions and retention_analysis only; use ONLY <Picture N> in
+  detailed_description.
+
+## [READ] Comfy Org invited H3 team — official guidance (1vj1czl)
+- https://www.reddit.com/r/comfyui/comments/1vj1czl/comfy_org_invited_minimax_h3_team_to_talk_text/
+- Takeaway: OFFICIAL — use quotation marks for exact dialogue lines ("...") to sync lip movement
+  to audio. Keep prompts simple. Enhance with LLM. Megapixels node (0.4 MP ≈ 864×480). Define
+  shots + duration (10s/5 shots = new shot every 2s). Up to 12 reference inputs. Kijai 4-to-8
+  step LoRA. Quantized models. Keep ComfyUI updated (fine-grained H3 offloading).
+
+## [READ] H3 first-day testing — ref_image_size=max, re-anchor character (1vemsal)
+- https://www.reddit.com/r/comfyui/comments/1vemsal/minimax_h3_first_day_of_testing_mostly_just/
+- Takeaway: ref_image_size = max (NOT match) for face/texture consistency across generations —
+  slower but worth it. Frame sound as tangible events (impact, tearing, breathing) not vague
+  mood — vague mood yields generic ambience. Explicitly re-anchor character in every clip.
+  res_multistep + beta for reference-heavy prompts. RTX 5090, 96GB RAM baseline.
+
+## [READ] Clip chaining — motion AND audio continuity (1vhppmv)
+- https://www.reddit.com/r/StableDiffusion/comments/1vhppmv/clip_chaining_for_minimax_h3_motion_and_audio/
+- Takeaway: Two 6s clips seamlessly combined — no crossfade, no editing tricks. Motion + audio
+  flow continuously across junction. Repo: github.com/Niko80/ComfyUI-H3-Motion-Context (GPL-3.0).
+  H3 lacks built-in consecutive-latent linking — this is the community solution. Competing
+  approach to Clown Anchoring for the seam problem.
+
+## [READ] H3 with heavy dialogue — audio quality update (1vrzu1o)
+- https://www.reddit.com/r/StableDiffusion/comments/1vrzu1o/h3_minimax_with_heavy_dialogue/
+- Takeaway: No quick fixes for dialogue. Turbo = subpar audio (general rule), BUT one report
+  claims latest lightx2v turbo LoRA at 8 steps outperformed 32 steps for ref2v audio. Contradicts
+  "more steps = better audio" — test against our setup. Use latest lightx2v LoRAs + latest Comfy.
+
+## [READ] Minimax H3 Lipsync — segment + integrate approach (1wto9m7)
+- https://www.reddit.com/r/StableDiffusion/comments/1wto9m7/minimax_h3_lipsync/
+- Takeaway: Split audio into 10-15s segments, generate clips with audio, integrate using
+  foxdit's minH3EDHTERLatent_v21 workflow. Official dialogue prompt guide exists. H3 has
+  tendency to improvise — results significantly improved but not perfect.
 - H3 latent upscale / second-pass threads (1w43syg; altoiddealer WF ships a latent upscale pass).
 - H3 Spectrum speedup threads (xmarre ComfyUI-Spectrum-MiniMax-H3).
 - H3 audio (dialogue/lip-sync) quality threads (1vj8nyp multi-speaker; 1vkh2mi any-language).

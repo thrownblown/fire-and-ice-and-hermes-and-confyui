@@ -75,8 +75,8 @@ S06-A member durations: 3.34/3.17/1.88/4.05/4.21s = 16.64s (→ capped 15s).
 - Plate driver (T0013/T0014, dry by default): `runs/build_plate_ref2va_test.py
   --t t0013|t0014 --setup S06-A --shot 197 --seed 42`; add `--queue` to render, only
   after T0011/T0012 have verdicts.
-- Endpoint: Tailscale `http://<TOMBSTONE_TS_IP>:8188` (LAN <LAN_IP> stale;
-  `FNI_COMFY` unset → fullrun defaults to Tailscale).
+- Endpoint: Tailscale `http://<TOMBSTONE_TS_IP>:8188` (preferred; LAN IP is DHCP-flapping
+  between subnets — see docs/canonical-setup.md §1. `FNI_COMFY` unset → Tailscale).
 - Pull outputs: `tools/pull_5090.py`; copy into `runs/<dir>/` and refresh
   `tools/build_testruns_data.py` so the shot-browser `?view=tests` shows them.
 - Log verdicts in this file + `runs/INDEX.md` + OptMem (`core/optmem.py add`).

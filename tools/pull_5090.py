@@ -25,7 +25,8 @@ from pathlib import Path
 
 ROOT = Path(r"E:/FNI")
 # ComfyUI endpoint: Tailscale is the default so remote sessions work; override for
-# LAN (faster) with FNI_COMFY=http://<LAN_IP>:8188
+# LAN (faster) with FNI_COMFY=http://<tombstone-LAN-IP>:8188 — LAN IP is DHCP-flapping,
+# see docs/canonical-setup.md section 1
 COMFY = os.environ.get("FNI_COMFY", "http://<TOMBSTONE_TS_IP>:8188")
 DEST = ROOT / "renders" / "5090"
 INDEX = DEST / "INDEX.jsonl"

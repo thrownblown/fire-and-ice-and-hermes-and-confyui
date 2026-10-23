@@ -1,0 +1,7 @@
+{
+  "_doc": "Hand-authored physical blocking per chunk, grounded in direct view of the source stills. Overrides the ledger-driven action beat. Needed because motion[] only carries 'static'/'walk' etc and cannot express 'lounging on a couch'. Edit by watching the source stills for the chunk.",
+  "S05-c01": "Both figures remain in the royal bedchamber, in place the whole time. Teegra lounges back on a low cushioned couch, propped on one elbow, listening; Tutor stands beside her, gesturing as she lectures. Nobody walks or moves toward the camera.",
+  "S05-c02": "Both figures remain in the royal bedchamber, in place the whole time. Teegra reclines lazily on the cushioned couch; Tutor stands beside her teaching. Nobody walks or moves toward the camera.",
+  "S05-c03": "Both figures remain in the royal bedchamber, in place the whole time. Teegra half-reclines on the couch while Tutor lectures and gestures beside her. Nobody walks or moves toward the camera.",
+  "S05-c04": "Both figures remain in the royal bedchamber, in place the whole time. Teegra lies back on the couch, relaxed and unimpressed, answering Tutor. Nobody walks or moves toward the camera."
+}
