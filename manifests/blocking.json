@@ -1,7 +1,7 @@
 {
-  "_doc": "Hand-authored physical blocking per chunk, grounded in direct view of the source stills. Overrides the ledger-driven action beat. Needed because motion[] only carries 'static'/'walk' etc and cannot express 'lounging on a couch'. Edit by watching the source stills for the chunk.",
-  "S05-c01": "Both figures remain in the royal bedchamber, in place the whole time. Teegra lounges back on a low cushioned couch, propped on one elbow, listening; Tutor stands beside her, gesturing as she lectures. Nobody walks or moves toward the camera.",
-  "S05-c02": "Both figures remain in the royal bedchamber, in place the whole time. Teegra reclines lazily on the cushioned couch; Tutor stands beside her teaching. Nobody walks or moves toward the camera.",
-  "S05-c03": "Both figures remain in the royal bedchamber, in place the whole time. Teegra half-reclines on the couch while Tutor lectures and gestures beside her. Nobody walks or moves toward the camera.",
-  "S05-c04": "Both figures remain in the royal bedchamber, in place the whole time. Teegra lies back on the couch, relaxed and unimpressed, answering Tutor. Nobody walks or moves toward the camera."
+  "_doc": "Per-chunk physical blocking. Drafted by the local VLM (tools/vlm_blocking.py, goldfishbowl qwen3-vl-32b-heretic / 'literal' = sweep winner) then hand-edited. Grounded in the source stills. motion[] only carries 'static' and cannot express 'lounging', so this file supplies the real blocking. Keep the 'ONLY these N, stay in place' clause.",
+  "S05-c01": "Only Teegra and Tutor are present, and both remain in the royal bedchamber the whole time. Teegra sits low and lounges back on a cushioned couch, relaxed and listening; Tutor stands beside her, teaching. Nobody walks or moves toward the camera.",
+  "S05-c02": "Only Teegra and Tutor are present, and both remain in the royal bedchamber the whole time. Teegra reclines on the cushioned couch, relaxed, reading; Tutor stands beside her with one arm raised, teaching. Nobody walks or moves toward the camera.",
+  "S05-c03": "Only Teegra and Tutor are present, and both remain in the royal bedchamber the whole time. Teegra reclines on a chaise lounge, relaxed and at ease; Tutor sits facing her, talking. Nobody walks or moves toward the camera.",
+  "S05-c04": "Only Teegra and Tutor are present, and both remain in the royal bedchamber the whole time. Teegra lies back on the couch with her arms stretched above her head, entirely relaxed; Tutor sits in profile beside her, talking. Nobody walks or moves toward the camera."
 }

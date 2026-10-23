@@ -22,11 +22,13 @@ Reference audio: fully_copy — reuse the spoken lines and their exact timing.
 
 detailed_description:
 
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, epic practical sets and crowds, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
 
-Both figures remain in the royal bedchamber, in place the whole time. Teegra half-reclines on the couch while Tutor lectures and gestures beside her. Nobody walks or moves toward the camera.
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
 
-[Shot 1] The camera stays low and tilts up slightly as the figure moves. The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] How can you talk about elements when the war draws nearer to us every hour?</d>
+Only Teegra and Tutor are present, and both remain in the royal bedchamber the whole time. Teegra reclines on a chaise lounge, relaxed and at ease; Tutor sits facing her, talking. Nobody walks or moves toward the camera.
+
+[Shot 1] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] How can you talk about elements when the war draws nearer to us every hour?</d>
 
 [Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 2> (S2) says: <d>[English] Princess Teegra, we all have our duty.</d> <Subject 2> (S2) says: <d>[English] Your father's duty is to be king and lead.</d>
 

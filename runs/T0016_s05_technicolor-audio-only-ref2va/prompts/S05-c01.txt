@@ -22,11 +22,13 @@ Reference audio: fully_copy — reuse the spoken lines and their exact timing.
 
 detailed_description:
 
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, epic practical sets and crowds, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
 
-Both figures remain in the royal bedchamber, in place the whole time. Teegra lounges back on a low cushioned couch, propped on one elbow, listening; Tutor stands beside her, gesturing as she lectures. Nobody walks or moves toward the camera.
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
 
-[Shot 1] The camera stays low and tilts up slightly as the figure moves. The camera pulls out with small amplitude at slow speed, opening the space around the figures.
+Only Teegra and Tutor are present, and both remain in the royal bedchamber the whole time. Teegra sits low and lounges back on a cushioned couch, relaxed and listening; Tutor stands beside her, teaching. Nobody walks or moves toward the camera.
+
+[Shot 1] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures.
 
 [Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] All matter in our world is from the natural bases...</d>
 

@@ -46,6 +46,16 @@ def load_blocking() -> dict:
     return {}
 
 
+# Always-on cast/scene constraint. Kills the two failure modes seen in the first
+# audio-only pass: H3 inventing background extras, and defaulting to a walk-in.
+GLOBAL_CONSTRAINT = (
+    "ONLY the named characters are present in the shot — there are no other people, "
+    "no crowd, no background figures and no extras at any point. The scene is quiet, "
+    "intimate and relaxed. The characters stay where they are; nobody walks, enters, "
+    "or moves toward the camera."
+)
+
+
 def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None) -> str:
     n_sub = len(subjects)
     sd = "\n".join(
@@ -70,11 +80,18 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None) ->
     rt = "\n".join(rt)
 
     style = F.style_line(row["location"])
+    # the shared style line says "epic practical sets and crowds" on EVERY location —
+    # for an intimate interior that directly invites H3 to add background people.
+    # Strip it here (do not touch the shared table; other tracks may want crowds).
+    style = style.replace("epic practical sets and crowds", "practical sets")
     sidx = {name: i + 1 for i, name in enumerate(subjects)}
     shot_lines = []
     for idx, (sid, snum) in enumerate(zip(row["shots"], row["shot_nums"]), 1):
         comp = {"shot_type": row["shot_type"][idx - 1], "angle": row["angle"][idx - 1]}
         cam = F.camera_move(comp, idx, len(row["shots"]))
+        # the shared camera_move embeds "as the figure moves" — conflicts with an
+        # explicit still/lounging blocking, so drop that clause
+        cam = cam.replace(" as the figure moves", "").replace("as the figure moves", "")
         bits = [f"[Shot {idx}]", cam]
         for lid in row["line_ids"]:
             r = dialogue.get(lid)
@@ -87,7 +104,7 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None) ->
             bits.append(f"<Subject {sidx.get(spk, 1)}> (S{sidx.get(spk, 1)}) says: "
                         f"<d>[English] {r['text']}</d>")
         shot_lines.append(" ".join(b for b in bits if b))
-    dd = f"{style}\n\n"
+    dd = f"{style}\n\n{GLOBAL_CONSTRAINT}\n\n"
     if blocking:
         dd += blocking + "\n\n"
     dd += "\n\n".join(shot_lines)

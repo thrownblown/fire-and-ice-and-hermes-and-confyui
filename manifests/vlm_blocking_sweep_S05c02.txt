@@ -1,0 +1,76 @@
+
+### S05-c02 — 2 stills: ['shot_00190_f00069.jpg', 'shot_00191_f00043.jpg']
+
+--- [goldfishbowl] qwen3-vl-8b-abl:latest / sys=literal ---
+Two people are visible: one seated and one standing. The seated person faces away from the camera, looking toward the standing person. The standing person faces the seated person with arms raised. The room is an ornate interior with a large window showing a starry night, decorative pillars, and a black cat lying on a cushion.
+
+--- [goldfishbowl] qwen3-vl-8b-abl:latest / sys=compact ---
+Three people and one cat are in frame: one woman is seated on a cushioned bed, one woman is standing with arms raised, and one cat is lying on a cushion. No one is walking toward the camera.
+
+--- [goldfishbowl] qwen3-vl-8b-abl:latest / sys=structured ---
+{"people": 2, "extras": 1, "alone": false, "poses": ["seated", "standing"], "facing_camera": false, "room": "luxurious bedroom"}
+
+--- [goldfishbowl] qwen3-vl-8b-abl:latest / sys=chen ---
+In a room with a large window and red curtains, one person is seated on a cushioned bed, holding a scroll. Another person stands with arms raised near the window. A black cat lies on a red cushion on the floor. A statue stands in the background.
+
+--- [goldfishbowl] qwen3-vl-32b-heretic:latest / sys=literal ---
+In the first frame, three figures are visible: two main characters and one background figure. A woman with dark hair is standing near a window, arms raised above her head, facing slightly away from the camera. Another woman is seated on a cushioned platform, facing left, with her back to the camera, reading a letter. A black cat is reclining on a red cushion to the right. The room appears to be an ornate, dimly lit chamber with Egyptian-style decor, including carved walls and a starry night visible through the window.
+
+In the second frame, the same seated woman is shown in a close-up, still seated and facing left, reading the letter. Her profile is visible, and she remains stationary. The background includes a red curtain and part of the window, consistent with the first frame. No other figures are visible in this shot.
+
+--- [goldfishbowl] qwen3-vl-32b-heretic:latest / sys=compact ---
+In the wide shot, three figures are in frame: one woman is seated on a cushioned dais, leaning forward and reading a letter; another woman stands near a window with arms raised above her head, stretching or posing; and a black cat lies resting on a red cushion to the right. No one is walking toward the camera. The close-up shows only the seated woman in profile, still reading, with no movement or additional figures visible.
+
+--- [goldfishbowl] qwen3-vl-32b-heretic:latest / sys=structured ---
+{"people": 2, "extras": 2, "alone": false, "poses": ["seated", "standing"], "facing_camera": false, "room": "ornate bedroom with starry window"}
+
+--- [goldfishbowl] qwen3-vl-32b-heretic:latest / sys=chen ---
+In the first frame, the scene is set in an ornate, dimly lit room with a large window revealing a starry night sky. A woman is seated on a cushioned divan on the left, leaning forward and reading a letter. Another woman stands near the center, arms raised above her head in a stretching or dancing pose. A black cat rests on a red cushion to the right, near a purple chaise. The room features carved walls, red drapes, and decorative floor patterns.
+
+In the second frame, the shot is a close-up of the seated woman, shown from the side, her head turned slightly as she reads the letter. The background includes the red drapes and a portion of the window with the night sky.
+
+--- [lmstudio] qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s / sys=literal ---
+Three people are visible: one seated on cushions facing away from the camera, one standing with arms raised and facing forward, and a black cat lying down on a cushion to the right. The room is an ornate interior space at night, featuring a large window showing stars, red curtains, decorative pillars, and patterned flooring.
+
+--- [lmstudio] qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s / sys=compact ---
+Three people are in frame: one person is seated on a cushioned bed, another stands with arms raised near a window, and a third lies motionless on a separate cushion. The standing person is not walking toward the camera.
+
+--- [lmstudio] qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s / sys=structured ---
+{"people": 2, "extras": 1, "alone": false, "poses": ["seated", "standing"], "facing_camera": false, "room": "luxurious bedroom"}
+
+--- [lmstudio] qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s / sys=chen ---
+One person seated on a cushioned bed, another standing with arms raised near a window, a cat lying on a pillow, in an ornate room with a large window and decorative furnishings.
+
+--- [lmstudio] qwen2.5-vl-32b-instruct-abliterated / sys=literal ---
+In total, there are three main individuals visible in the scene: two women and one man. One woman is reclining on a cushioned surface while reading from an open book or letter. The other woman is standing with her arm raised, facing away from the camera. The third individual, a man, is seated nearby, leaning forward slightly as he looks at the same book or letter that the reclining woman is holding.
+
+The room appears to be warmly lit and decorated in a traditional style, suggesting it might be an interior space such as a living room or study. There are ornate details visible on the walls and furniture, indicating a setting with some degree of elegance or formality. The presence of cushions, a small table with items on it, and open curtains framing a window further support this impression.
+
+The overall atmosphere is intimate and cozy, with soft lighting creating a sense of warmth and comfort within the room.
+
+--- [lmstudio] qwen2.5-vl-32b-instruct-abliterated / sys=compact ---
+In the first image, there are three people: one woman lying on a bed with her legs crossed and reading a book, another woman standing near the window with one arm raised, and a third person seated in the background. In the second image, two women are shown up close; one is leaning forward while holding a piece of paper, and the other appears to be looking at something off-screen. No one is walking toward the camera in either scene.
+
+--- [lmstudio] qwen2.5-vl-32b-instruct-abliterated / sys=structured ---
+```json
+{
+  "people": 2,
+  "extras": 0,
+  "alone": false,
+  "poses": ["lying", "standing"],
+  "facing_camera": true,
+  "room": "bedroom"
+}
+```
+
+--- [lmstudio] qwen2.5-vl-32b-instruct-abliterated / sys=chen ---
+**First Frame:**
+- A woman lounges on a cushioned surface.
+- Another woman stands nearby with one arm raised.
+- The setting appears to be an ornate room with decorative elements, including curtains and statues.
+
+**Second Frame:**
+- Two individuals are shown in close proximity, facing each other.
+- One person is partially obscured by the other's head.
+- A piece of paper is visible near them.
+
