@@ -1,0 +1,38 @@
+[FIGURES ] akatar-harbor: YES
+
+- Silhouettes of people standing on the dock near the buildings on the right side.
+- Human figures in cloaks and robes visible near the entrance 
+[ok      ] darkwolf-camp: NO and NONE.
+[ok      ] fire-keep-chamber: NO and NONE.
+[FIGURES ] fire-keep-pool: YES
+
+- Silhouette of a person standing at the top of the central steps, facing away from the viewer.
+- A human figure (woman) standing on the right si
+[FIGURES ] fire-keep-ramparts: YES
+
+- Several human figures are visible walking along the castle wall, wearing dark medieval-style robes or cloaks.
+- At least four distinct silhouet
+[ok      ] fire-keep-study: NO and NONE.
+[FIGURES ] fire-keep-throne-hall: YES
+
+- A human figure: A crowned monarch (king or queen) seated on a throne at the top of a red-carpeted staircase. The figure is wearing a red robe w
+[ok      ] frozen-landscape: NO and NONE.
+[ok      ] ice-peak-cave: NO and NONE.
+[ok      ] ice-peak-dungeon: NO and NONE.
+[ok      ] ice-peak-lava: NO and NONE.
+[ok      ] ice-peak-throne-hall: NO and NONE.
+
+The image depicts a fantastical ice cave with an intricately carved ice throne at its center, surrounded by towering icicles and frozen 
+[ok      ] jungle: NO and NONE.
+[FIGURES ] north-village-plain: YES
+
+1. A person in a brown robe stands near the center-left of the village, facing away from the viewer.
+2. Another figure in similar attire stands f
+[ok      ] open-sky: NO and NONE.
+[ok      ] painted-map-montage: NO and NONE.
+[ok      ] roliel-hut: NO and NONE.
+[ok      ] ruined-village: NO and NONE.
+[ok      ] subhuman-camp: NO and NONE.
+[ok      ] swamp: NO and NONE.
+[ok      ] wilderness: NO and NONE.
+PLATE FIGURE CHECK DONE
