@@ -14,6 +14,7 @@
 | T0015 | S05 | Track A ref2va: technicolor sheets + plate, WITH video ref | NEGATIVE — reads 2D rotoscope cel, not live-action |
 | T0016 | S05 | ref2va AUDIO-ONLY (no video ref) + authored blocking + clean plate | register HOLDS; two people lounging, no crowd |
 | T0017 | S03 | audio-only REF2VA, Ice Peak throne hall (Juliana/Nekron) | register holds; Nekron seated per blocking |
+| T0018 | S03-c01 | FL2VA VLM-authored prompt (VLM describes actual first/last frames + ROSTER strings), vs T0003 template (same stills/seed/weight) | structural fix: position FLLL (was LLLL), frozen 25% (was 75%); verdict pending |
 
 Browsable in the shot browser: `index.html?view=tests` — data generated
 by `tools/build_testruns_data.py`, re-run it after copying new renders in.
