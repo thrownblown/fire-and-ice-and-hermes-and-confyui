@@ -11,6 +11,9 @@
 | T0009 | S02 | continuity-packed segments (SSIM chains/setups) vs chronological | renders done — compare S02_continuity_audioA vs S02_chronological_audioA |
 | T0011 | S06 | setup-ref2va baseline: chronological chunk S06-c01 (3 shots) | (Alex, after watching) |
 | T0012 | S06 | setup-ref2va stitched-video: setup S06-A (5 shots) as one ref | (Alex, after watching) |
+| T0015 | S05 | Track A ref2va: technicolor sheets + plate, WITH video ref | NEGATIVE — reads 2D rotoscope cel, not live-action |
+| T0016 | S05 | ref2va AUDIO-ONLY (no video ref) + authored blocking + clean plate | register HOLDS; two people lounging, no crowd |
+| T0017 | S03 | audio-only REF2VA, Ice Peak throne hall (Juliana/Nekron) | register holds; Nekron seated per blocking |
 
 Browsable in the shot browser: `index.html?view=tests` — data generated
 by `tools/build_testruns_data.py`, re-run it after copying new renders in.

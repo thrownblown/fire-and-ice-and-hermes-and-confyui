@@ -63,6 +63,62 @@ RUNS = {
                   "[16,17,18][19,20,21][22,23,24][25,26,27]. Compare the two audioA files: "
                   "glacier chains 17->18 and 24->25 should read as continuous motion."),
     },
+    "T0010": {
+        "scope": "S02", "title": "motion-context chaining / bridging",
+        "question": "Can a clip be extended by feeding the previous clip's tail back as motion context (chaining/bridging) instead of fresh latents?",
+        "verdict": "awaiting Alex", "status": "pending",
+        "notes": "Skill reference: fni-h3-pipeline references/chaining.md.",
+    },
+    "T0011": {
+        "scope": "S06", "title": "setup-ref2va baseline (chronological chunk S06-c01)",
+        "question": "Control for the setup experiments: the ordinary chronological chunk (shots 197,198,199) as one reference.",
+        "verdict": "awaiting Alex", "status": "pending", "notes": "",
+    },
+    "T0012": {
+        "scope": "S06", "title": "setup-ref2va stitched-video (setup S06-A as one ref)",
+        "question": "Re-group by camera angle: concat one setup's shots (A/A/A) into a single reference video instead of a chronological A/B/A mix — does angle consistency improve the render?",
+        "verdict": "awaiting Alex", "status": "pending",
+        "notes": "Approach X2. See docs/plans/setup-ref2va-tests.md.",
+    },
+    "T0013": {
+        "scope": "S06", "title": "setup plate + ONE shot's video",
+        "question": "Can a still 'master plate' of the setup stand in for part of the video reference — plate image + a single shot's clip, to cut the reference-encode cost?",
+        "verdict": "awaiting Alex", "status": "pending",
+        "notes": "Approach X3. Setup plate injected as an extra <Picture> with a background_only retention line.",
+    },
+    "T0014": {
+        "scope": "S06", "title": "per-shot + shared plate",
+        "question": "Shared setup plate WITHOUT re-grouping: a single shot's video plus the setup's plate image — is the shared plate alone enough?",
+        "verdict": "awaiting Alex", "status": "pending", "notes": "Approach X4.",
+    },
+    "T0015": {
+        "scope": "S05", "title": "Track A ref2va — technicolor sheets + plate, WITH video ref",
+        "question": "With the technicolor character sheets + location plate wired as <Picture> refs, does REF2VA hold the live-action 80s register while the raw 1983 video ref conditions the motion?",
+        "verdict": "NEGATIVE — reads flat 2D rotoscope cel, not live-action (every sampled frame)",
+        "status": "judged",
+        "notes": ("The video reference dominates appearance, so styling only the PICTURE refs is not enough — the same "
+                  "failure as the FL2VA TEST-1 pinning result, one stage up. Resolved by T0016 (drop the video ref). "
+                  "Driver: runs/build_technicolor_ref2va.py."),
+    },
+    "T0016": {
+        "scope": "S05", "title": "ref2va AUDIO-ONLY (no video ref) + authored blocking + clean plate",
+        "question": "Drop the video reference, keep only the source AUDIO (ref_audios + audio_vae): do the technicolor sheets + plate then hold the live-action register, and does an explicit per-chunk blocking line stop H3 inventing a walk-in and a background crowd?",
+        "verdict": ("register HOLDS — live-action 80s technicolor; exactly two characters, no background extras, "
+                    "lounging/seated as authored. Residual: a brief mid-clip stand."),
+        "status": "judged",
+        "notes": ("Take ladder on one scene: t01 = walking to camera + crowd; t03 = two people seated (blocking added, "
+                  "but the plate still had painted figures); t04 = clean plate -> exactly two people, no crowd. "
+                  "Per-chunk takes in output/t02, output/t03; the 4x6 seed sweep in output/seedhunt/. "
+                  "Driver: runs/build_technicolor_audio_only.py. Stitched: S05_audioOnly_T0016_t04_stitched.mp4."),
+    },
+    "T0017": {
+        "scope": "S03", "title": "audio-only REF2VA — Ice Peak throne hall (Juliana / Nekron)",
+        "question": "Does the audio-only recipe carry to a second scene — different location plate, different cast — and land an authored sitting/standing blocking?",
+        "verdict": "register holds; two characters; Nekron seated on the ice throne per the authored blocking",
+        "status": "judged",
+        "notes": ("One blurred background figure in frame 1 (that chunk also carries a TEEGRA mis-stamp in the ledger). "
+                  "Driver: runs/build_technicolor_audio_only.py --chunk S03-c01 --subjects JULIANA,NEKRON."),
+    },
 }
 
 
@@ -88,6 +144,19 @@ _S02_SIX = {"s02-k01": ["00016"],
             "s02-k05": ["00023", "00024", "00025"],
             "s02-k06": ["00026", "00027"]}
 
+_S05_FOUR = {"s05-c01": ["00188", "00189"],
+             "s05-c02": ["00190", "00191"],
+             "s05-c03": ["00192", "00193", "00194"],
+             "s05-c04": ["00195", "00196"]}
+# S03 "Ice Peak: Juliana & Nekron send envoys" — the renderable interior chunks.
+_S03_TECH = {"s03-c01": ["00067", "00068", "00069"],
+             "s03-c02": ["00070", "00071", "00072"]}
+# S06 setup experiments (S06-A = shots 197,199,201,203,205).
+_S06_SETUP = {"s06-c01": ["00197", "00198", "00199"],
+              "setup-s06-a": ["00197", "00199", "00201", "00203", "00205"],
+              "t0013-s06-a-s197": ["00197"],
+              "t0014-s06-a-s197": ["00197"]}
+
 CHUNK_SHOTS = {
     "T0001": _S03_THREE,
     "T0002": _S03_FIVE,
@@ -96,6 +165,13 @@ CHUNK_SHOTS = {
     "T0005": _S03_FIVE,
     "T0008": _S03_THREE,
     "T0009": _S02_SIX,
+    "T0011": _S06_SETUP,
+    "T0012": _S06_SETUP,
+    "T0013": _S06_SETUP,
+    "T0014": _S06_SETUP,
+    "T0015": _S05_FOUR,
+    "T0016": _S05_FOUR,
+    "T0017": _S03_TECH,
 }
 
 
@@ -117,19 +193,28 @@ def scan():
         m = re.match(r".*_(T\d{4})_t\d+", p.name)
         if m:
             add(m.group(1), p)
-    # local run folders
-    for d in sorted((ROOT / "runs").glob("T000*")):
+    # local run folders — recurse so nested take dirs (output/t03, output/seedhunt)
+    # are picked up too. Glob T####_ not T000*: the old glob silently missed T0010+.
+    for d in sorted((ROOT / "runs").glob("T[0-9][0-9][0-9][0-9]_*")):
         rid = d.name[:5]
-        for sub in ("output", "stitched", ""):
-            for p in sorted((d / sub).glob("*.mp4")):
-                if p.is_file():
-                    add(rid, p)
+        for p in sorted(d.rglob("*.mp4")):
+            if p.is_file():
+                add(rid, p)
     # T0009 comparison baseline (chronological stitch) belongs to T0009
     base = ROOT / "fullrun" / "stitched" / "S02_full_t01.mp4"
     if base.exists():
         add("T0009", base)
+    def order(path):
+        b = path.rsplit("/", 1)[-1].lower()
+        # stitched deliverables first, then per-chunk takes, then seed sweeps
+        if "seedhunt" in path:
+            return (2, path)
+        if "stitched" in b:
+            return (0, path)
+        return (1, path)
+
     for k in found:
-        found[k] = sorted(set(found[k]))
+        found[k] = sorted(set(found[k]), key=order)
     return found
 
 

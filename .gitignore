@@ -32,6 +32,8 @@ scratch/
 *.log
 *.err
 tmp_*.json
+# Local scratch (node/jsdom test harness, extracted audio, temp graphs)
+.tmp/
 
 # Saved web pages and their asset dumps
 *.html
