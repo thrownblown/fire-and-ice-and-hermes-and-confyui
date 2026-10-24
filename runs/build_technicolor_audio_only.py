@@ -150,10 +150,12 @@ def build_audio_only_graph(row, sheet_names, plate_names, audio_name):
     g.pop("147", None)   # GetVideoComponents
     g["136"]["inputs"].pop("ref_videos.ref_video_0", None)
     g["136"]["inputs"].pop("ref_video_audios.ref_video_audio_0", None)
-    # add a standalone audio reference
-    g["152"] = {"inputs": {"audio": audio_name}, "class_type": "LoadAudio",
+    # add a standalone audio reference. NB: build_ref_graph numbers LoadImage nodes
+    # from 149 up (one per still + plate, up to ~157) — use an id clear of that range
+    # or a chunk with 4+ images collides and wires AUDIO into an IMAGE input.
+    g["190"] = {"inputs": {"audio": audio_name}, "class_type": "LoadAudio",
                 "_meta": {"title": "Load Reference Audio"}}
-    g["136"]["inputs"]["ref_audios.ref_audio_0"] = ["152", 0]
+    g["136"]["inputs"]["ref_audios.ref_audio_0"] = ["190", 0]
     return g
 
 
@@ -163,6 +165,7 @@ def main():
     ap.add_argument("--audio", default=None, help="server-side audio filename (default: <chunk>_ref.mp4)")
     ap.add_argument("--queue", action="store_true")
     ap.add_argument("--take", type=int, default=1)
+    ap.add_argument("--subjects", help="comma-list to override the ledger's subjects (fixes mis-stamps)")
     args = ap.parse_args()
 
     rows = [json.loads(l) for l in F.CHUNK_LEDGER.read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -176,6 +179,8 @@ def main():
         if nm not in order:
             order.append(nm)
     subjects = [n for n in order if T.sheet_path(n)]
+    if args.subjects:
+        subjects = [n.strip() for n in args.subjects.split(",") if n.strip()]
     if not subjects:
         print("no sheeted subjects; abort"); return
 
