@@ -1,0 +1,34 @@
+{
+  "s03-c02": {
+    "violations": [],
+    "words": 390,
+    "seed": 1125345046553186,
+    "length_s": 9.416666666666666,
+    "first": "s03-c02_first.jpg",
+    "last": "s03-c02_last.jpg"
+  },
+  "s03-c03": {
+    "violations": [],
+    "words": 390,
+    "seed": 1125345046553186,
+    "length_s": 9.416666666666666,
+    "first": "s03-c03_first.jpg",
+    "last": "s03-c03_last.jpg"
+  },
+  "s03-c04": {
+    "violations": [],
+    "words": 315,
+    "seed": 1125345046553186,
+    "length_s": 5.166666666666667,
+    "first": "s03-c04_first.jpg",
+    "last": "s03-c04_last.jpg"
+  },
+  "s03-c05": {
+    "violations": [],
+    "words": 438,
+    "seed": 1125345046553186,
+    "length_s": 8.0,
+    "first": "s03-c05_first.jpg",
+    "last": "s03-c05_last.jpg"
+  }
+}
