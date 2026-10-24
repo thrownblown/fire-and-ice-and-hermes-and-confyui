@@ -159,12 +159,25 @@ def build_audio_only_graph(row, sheet_names, plate_names, audio_name):
     return g
 
 
+def finalize_graph(g, chunk_id, take, text, seed=None):
+    """Set prompt text, output prefix, ref_image_size, and optional seed override."""
+    g["138"]["inputs"]["value"] = text
+    tag = f"{chunk_id}_audioOnly_t{take:02d}"
+    if seed is not None:
+        g["129"]["inputs"]["noise_seed"] = seed
+        tag += f"_s{seed}"
+    g["92"]["inputs"]["filename_prefix"] = f"video/{tag}"
+    g["136"]["inputs"]["ref_image_size"] = "max"
+    return g, tag
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--chunk", required=True)
     ap.add_argument("--audio", default=None, help="server-side audio filename (default: <chunk>_ref.mp4)")
     ap.add_argument("--queue", action="store_true")
     ap.add_argument("--take", type=int, default=1)
+    ap.add_argument("--seed", type=int, default=None, help="override the chunk seed (seed hunting)")
     ap.add_argument("--subjects", help="comma-list to override the ledger's subjects (fixes mis-stamps)")
     args = ap.parse_args()
 
@@ -201,12 +214,11 @@ def main():
 
     if not args.queue:
         g = build_audio_only_graph(row, sheet_names, plate_names, audio_name)
-        g["138"]["inputs"]["value"] = text
-        g["92"]["inputs"]["filename_prefix"] = f"video/{args.chunk}_audioOnly_t{args.take:02d}"
-        g["136"]["inputs"]["ref_image_size"] = "max"
-        (RUN_DIR / "graphs" / f"{args.chunk}.json").write_text(json.dumps(g, indent=2))
+        g, tag = finalize_graph(g, args.chunk, args.take, text, args.seed)
+        (RUN_DIR / "graphs" / f"{tag}.json").write_text(json.dumps(g, indent=2))
         inp = g["136"]["inputs"]
         print("DRY RUN OK — nothing queued")
+        print("  prefix:", tag, " seed:", g["129"]["inputs"]["noise_seed"])
         print("  subjects:", subjects)
         print("  plate:", plate_names)
         print("  ref_audios:", inp.get("ref_audios.ref_audio_0"), "->", audio_name)
@@ -224,14 +236,12 @@ def main():
     up_sheets = [F.upload(T.sheet_path(n)) for n in subjects]
     up_plates = [F.upload(plate)] if plate else []
     g = build_audio_only_graph(row, up_sheets, up_plates, audio_name)
-    g["138"]["inputs"]["value"] = text
-    g["92"]["inputs"]["filename_prefix"] = f"video/{args.chunk}_audioOnly_t{args.take:02d}"
-    g["136"]["inputs"]["ref_image_size"] = "max"
-    (RUN_DIR / "graphs" / f"{args.chunk}.json").write_text(json.dumps(g, indent=2))
+    g, tag = finalize_graph(g, args.chunk, args.take, text, args.seed)
+    (RUN_DIR / "graphs" / f"{tag}.json").write_text(json.dumps(g, indent=2))
     try:
         F.api("/prompt", {"prompt": g}, timeout=90)
-        print(f"QUEUED {args.chunk} audio-only ({len(up_sheets)} sheets + {len(up_plates)} plate, "
-              f"audio {audio_name})")
+        print(f"QUEUED {tag} ({len(up_sheets)} sheets + {len(up_plates)} plate, "
+              f"audio {audio_name}, seed {g['129']['inputs']['noise_seed']})")
     except Exception as e:  # noqa: BLE001
         print("queue failed:", e)
 
