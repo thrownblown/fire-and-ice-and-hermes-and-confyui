@@ -4,7 +4,7 @@ All sheets are the technicolor-register recipe: H3 ref2va still + `krea/retro-fa
 LoRA @1.05, identity from one staged still (`id_<NAME>.*`), template
 `graphs/H3CharSheet_technicolor.json`, driver `tools/gen_char_sheet.py`.
 
-## Done (16)
+## Done (17 characters, 19 sheet files)
 
 Mains, generated 2026-10-23 ~13:14-13:25:
 DARKWOLF, JAROL, JULIANA, LARN, NEKRON, OTWA, ROLIEL, SHAITAN, SPIRIT, TARO,
