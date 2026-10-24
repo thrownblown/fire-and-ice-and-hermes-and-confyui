@@ -1,0 +1,75 @@
+{
+  "note": "Structural frame metrics (MSE, 0-255 scale, frames resized to 192x108). Anchoring and liveness only -- not a quality judgement.",
+  "freeze_threshold_mse": 30.0,
+  "sample_at_pct": [
+    5,
+    25,
+    50,
+    75,
+    95
+  ],
+  "runs/T0018_s03_vlm-prompt-fl2va": {
+    "s03-c01": {
+      "frames": 141,
+      "anchor": {
+        "first_frame_to_keyframe": 14.0,
+        "last_frame_to_keyframe": 17.4,
+        "keyframe_gap": 2123.5
+      },
+      "position_profile": "F L L L L",
+      "frozen_pct": 25.0
+    }
+  },
+  "runs/T0003_s03_fl2va-srcfflf": {
+    "s03-c01": {
+      "frames": 141,
+      "anchor": {
+        "first_frame_to_keyframe": 14.0,
+        "last_frame_to_keyframe": 16.1,
+        "keyframe_gap": 2123.5
+      },
+      "position_profile": "L L L L L",
+      "frozen_pct": 75.0
+    },
+    "s03-c02": {
+      "frames": 226,
+      "anchor": {
+        "first_frame_to_keyframe": 20.5,
+        "last_frame_to_keyframe": 17.2,
+        "keyframe_gap": 6855.4
+      },
+      "position_profile": "F F L L L",
+      "frozen_pct": 0.0
+    },
+    "s03-c03": {
+      "frames": 226,
+      "anchor": {
+        "first_frame_to_keyframe": 17.6,
+        "last_frame_to_keyframe": 19.5,
+        "keyframe_gap": 8249.6
+      },
+      "position_profile": "F F L L L",
+      "frozen_pct": 25.0
+    },
+    "s03-c04": {
+      "frames": 124,
+      "anchor": {
+        "first_frame_to_keyframe": 19.7,
+        "last_frame_to_keyframe": 22.6,
+        "keyframe_gap": 7217.6
+      },
+      "position_profile": "F L L L L",
+      "frozen_pct": 0.0
+    },
+    "s03-c05": {
+      "frames": 192,
+      "anchor": {
+        "first_frame_to_keyframe": 25.5,
+        "last_frame_to_keyframe": 23.4,
+        "keyframe_gap": 8756.2
+      },
+      "position_profile": "F F F L L",
+      "frozen_pct": 50.0
+    }
+  }
+}

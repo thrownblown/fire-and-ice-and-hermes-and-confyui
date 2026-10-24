@@ -1,0 +1,11 @@
+{
+  "prompt_id": "afaa94ce-112b-4329-95f4-e83917c9ae1c",
+  "queued_at": "2026-10-24T09:50:50",
+  "comfy": "http://<TOMBSTONE_TS_IP>:8188",
+  "weight": "h3/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "seed": 1125345046553186,
+  "still_first": "s03-c01_first.jpg",
+  "still_last": "s03-c01_last.jpg",
+  "reference_t0003_prefix": "video/s03-c01_T0003_t01",
+  "t0018_prefix": "video/s03-c01_T0018_t01"
+}
