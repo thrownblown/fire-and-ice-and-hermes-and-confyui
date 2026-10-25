@@ -1,22 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Subhuman Krea2 LoRA sweep: fixed description, grid over style LoRA x actor.
+"""Krea2 LoRA sweep, rig-aware: fixed description, grid over style LoRA x actor.
 
-Kick off ONE run and get a wide set of stills, each varying only the LoRA
-configuration, so the effect of each style LoRA (and its combination with an
-actor/ID LoRA) can be judged side by side.
+Renders on either the 5090 (tombstone) or the 4090 (mh370 local ComfyUI).
+Each rig's clip/unet/vae names are fetched from that rig's own /object_info at
+startup (no hand-copied paths, no escaping bugs), and every actor LoRA is
+verified against the rig's LoRA Manager catalog before queueing — a missing
+actor raises, it can never silently render as "none".
 
-  style axis: the 4 era LoRAs alone at 1.0/1.2, plus pairs and a triple
-              (see STYLE_CONFIGS). Trigger words for each active style are
-              written into node 137 so the graph actually invokes the LoRA.
-  actor axis: none / person_07 / person_11 / person_03 (the krea2_*_onetrainer
-              celebrity faces Alex used for leader/captain).
-
-Base description: the verbatim description that produced his good leader still
-(node 135 of the 00125 render), unless --desc-file overrides it.
-
-    .venv/Scripts/python.exe tools/subhuman_sweep.py --char leader --dry-run
-    .venv/Scripts/python.exe tools/subhuman_sweep.py --char leader --count 44
-    .venv/Scripts/python.exe tools/subhuman_sweep.py --char leader --actor person_07 --style "80s-1.0"
+    .venv/Scripts/python.exe tools/subhuman_sweep.py --char taro --rig 4090 --dry-run
+    .venv/Scripts/python.exe tools/subhuman_sweep.py --char darkwolf --rig 4090
+    .venv/Scripts/python.exe tools/subhuman_sweep.py --char juliana --rig 5090
 """
 from __future__ import annotations
 
@@ -31,17 +24,20 @@ from pathlib import Path
 
 ROOT = Path(r"E:/FNI")
 RUN = ROOT / "runs" / "subhuman-krea2"
-COMFY = os.environ.get("FNI_COMFY", "http://<TOMBSTONE_TS_IP>:8188").rstrip("/")
+
+RIGS = {
+    "5090": "http://<TOMBSTONE_TS_IP>:8188",
+    "4090": "http://127.0.0.1:8188",
+}
 
 # --- style LoRAs: name -> (lora file, trigger words) ---------------------
-# Slot assignments mirror the extracted template graphs (node 124).
 STYLE_LORAS = {
-    "30sTechnicolor": ("krea\\30sTechnicolor_Krea2Raw.safetensors",
+    "30sTechnicolor": ("krea/30sTechnicolor_Krea2Raw.safetensors",
                        "ArsMovieStill, movie still from a 1930s technicolor movie"),
-    "80sFantasy": ("krea\\80sFantasy_Krea2Raw_000004500.safetensors",
+    "80sFantasy": ("krea/80sFantasy_Krea2Raw_000004500.safetensors",
                    "ArsMovieStill, 80s Fantasy Movie Still"),
-    "retro-fantasy": ("krea\\retro-fantasy.safetensors", "retr0fantasy"),
-    "retro-80s": ("krea\\retro-80s.safetensors", ""),  # Neon VHS Dreams: no trigger on record
+    "retro-fantasy": ("krea/retro-fantasy.safetensors", "retr0fantasy"),
+    "retro-80s": ("krea/retro-80s.safetensors", ""),  # Neon VHS Dreams: no trigger
 }
 STYLE_SLOT = {
     "30sTechnicolor": "lora_4",
@@ -51,16 +47,18 @@ STYLE_SLOT = {
 }
 
 # --- actor / ID LoRAs: name -> lora file ---------------------------------
-# 5090 inventory ONLY (verified via /api/lm/loras/list). person_11 is 4090-only
-# and must NOT appear here — the Power Lora Loader silently ignores a missing
-# LoRA, which renders as "none" without erroring.
 ACTORS = {
-    "none": None,
     "person_07": "krea/krea2_person_07_v1_onetrainer.safetensors",
     "person_03": "krea/krea2_person_03_v1_onetrainer.safetensors",
     "person_08": "krea/krea2_person_08_v1_onetrainer.safetensors",
     "person_04": "krea/krea2_person_04_v1_onetrainer.safetensors",
     "person_01": "krea/krea2_person_01_v1_onetrainer.safetensors",
+    "person_11": "krea/krea2_person_11_v1_onetrainer.safetensors",
+    "person_12": "krea/krea2_person_12_v1_onetrainer.safetensors",
+    "person_06": "krea/krea2_person_06_v1_onetrainer.safetensors",
+    "person_13": "krea/krea2_person_13_v1_onetrainer.safetensors",
+    "person_10": "krea/krea2_person_10_v1_onetrainer.safetensors",
+    "person_14": "krea/krea2_person_14_v1_onetrainer.safetensors",
     "person_25": "krea/krea2_person_25_v1_onetrainer.safetensors",
     "person_15": "krea/krea2_person_15_v1_onetrainer.safetensors",
     "person_17": "krea/krea2_person_17_v1_onetrainer.safetensors",
@@ -73,57 +71,39 @@ ACTORS = {
     "person_20": "krea/krea2_person_20_v1_onetrainer.safetensors",
     "person_18": "krea/krea2_person_18_v1_onetrainer.safetensors",
     "person_24": "krea/krea2_person_24_v1_onetrainer.safetensors",
+    "person_16": "krea/krea2_person_16_v1_onetrainer.safetensors",
+    "person_02": "krea/krea2_person_02_v1_onetrainer.safetensors",
 }
-ACTOR_SLOT = {
-    "person_07": "lora_10", "person_03": "lora_12", "person_08": "lora_13",
-    "person_04": "lora_14", "person_01": "lora_15",
-    "person_25": "lora_16", "person_15": "lora_17", "person_17": "lora_18",
-    "person_23": "lora_19", "person_22": "lora_20",
-    "person_09": "lora_21", "person_21": "lora_22", "person_05": "lora_23",
-    "person_19": "lora_24", "person_20": "lora_25", "person_18": "lora_26",
-    "person_24": "lora_27",
-}
-
-MALE_ACTORS = ["none", "person_07", "person_03", "person_08", "person_04"]
-FEMALE_ACTORS = ["none", "person_25", "person_15", "person_23", "person_21"]
+ACTOR_SLOTS = ["lora_10", "lora_11", "lora_12", "lora_13", "lora_14", "lora_15"]
 
 # --- per-character sweep config ------------------------------------------
-# desc paths under runs/subhuman-krea2/descs/<CHAR>.txt; template = the Krea2
-# stills graph (leader's krea170277 scaffold for everyone).
-def _c(name, actors, desc=None, prefix=None, template="leader_template.graph.json"):
-    return {"template": template, "prefix": prefix or name.lower().replace(" ", "_"),
+def _c(rig, actors, desc=None, prefix=None):
+    return {"rig": rig, "prefix": prefix,
             "actors": actors,
             "desc": str(RUN / desc) if desc else None}
 
 CHARS = {
-    # subhuman family (already swept; keep for re-runs)
-    "leader": {"template": "leader_template.graph.json", "prefix": "sub_leader",
-               "actors": ["none", "person_07", "person_03", "person_08"], "desc": None},
-    "captain": {"template": "captain_template.graph.json", "prefix": "sub_captain",
-                "actors": ["none", "person_07", "person_03", "person_08"], "desc": None},
-    "taro": {"template": "leader_template.graph.json", "prefix": "taro",
-             "actors": ["none", "person_08", "person_03", "person_07"],
-             "desc": str(RUN / "taro_description.txt")},
-    # full roster (descriptions in descs/)
-    "darkwolf": _c("DARKWOLF", MALE_ACTORS, "descs/DARKWOLF.txt"),
-    "envoys": _c("ENVOYS", ["none", "person_07"], "descs/ENVOYS.txt"),
-    "jarol": _c("JAROL", ["none", "person_04", "person_07", "person_03"], "descs/JAROL.txt"),
-    "juliana": _c("JULIANA", FEMALE_ACTORS, "descs/JULIANA.txt"),
-    "larn": _c("LARN", ["none", "person_03", "person_08", "person_01"], "descs/LARN.txt"),
-    "nekron": _c("NEKRON", ["none", "person_01", "person_03", "person_08"], "descs/NEKRON.txt"),
-    "otwa": _c("OTWA", ["none", "person_08", "person_03", "person_07"], "descs/OTWA.txt"),
-    "roliel": _c("ROLIEL", ["none", "person_23", "person_22", "person_09"],
-                 "descs/ROLIEL.txt"),
-    "shaitan": _c("SHAITAN", ["none"], "descs/SHAITAN.txt"),
-    "spirit": _c("SPIRIT", ["none"], "descs/SPIRIT.txt"),
-    "subhuman": _c("SUBHUMAN", ["none", "person_07", "person_03"], "descs/SUBHUMAN.txt"),
-    "teegra": _c("TEEGRA", ["none", "person_21", "person_05", "person_22"],
-                 "descs/TEEGRA.txt"),
-    "tutor": _c("TUTOR", ["none", "person_04", "person_07", "person_03"], "descs/TUTOR.txt"),
+    # 4090 rig — keanu/person_11/person_12/person_06/person_13/person_10 live here
+    "taro": _c("4090", ["none", "person_14", "person_11", "person_13"], "descs/TARO.txt", "taro"),
+    "darkwolf": _c("4090", ["none", "person_11", "person_12", "person_13"], "descs/DARKWOLF.txt"),
+    "jarol": _c("4090", ["none", "person_06", "person_12", "person_10"], "descs/JAROL.txt"),
+    "tutor": _c("4090", ["none", "person_06", "person_12", "person_10"], "descs/TUTOR.txt"),
+    "otwa": _c("4090", ["none", "person_13", "person_12", "person_10"], "descs/OTWA.txt"),
+    "nekron": _c("4090", ["none", "person_14", "person_11", "person_13"], "descs/NEKRON.txt"),
+    "envoys": _c("4090", ["none", "person_11", "person_06"], "descs/ENVOYS.txt"),
+    "subhuman": _c("4090", ["none", "person_11", "person_13"], "descs/SUBHUMAN.txt"),
+    # 5090 rig — person_08/person_03/person_07/person_04/person_01 + wide female pool
+    "larn": _c("5090", ["none", "person_03", "person_08", "person_01"], "descs/LARN.txt"),
+    "juliana": _c("5090", ["none", "person_25", "person_15", "person_17"], "descs/JULIANA.txt"),
+    "roliel": _c("5090", ["none", "person_23", "person_22", "person_09"], "descs/ROLIEL.txt"),
+    "teegra": _c("5090", ["none", "person_21", "person_05", "person_22"], "descs/TEEGRA.txt"),
+    "shaitan": _c("5090", ["none"], "descs/SHAITAN.txt"),
+    "spirit": _c("5090", ["none"], "descs/SPIRIT.txt"),
+    # subhuman family (already swept)
+    "leader": _c("5090", ["none", "person_07", "person_03", "person_08"], None, "sub_leader"),
+    "captain": _c("5090", ["none", "person_07", "person_03", "person_08"], None, "sub_captain"),
 }
 
-# --- style configs (the grid's style axis) -------------------------------
-# name -> list of (style, strength). Empty = no style LoRA (text-only style).
 STYLE_CONFIGS = [
     ("none", []),
     ("30s-1.0", [("30sTechnicolor", 1.0)]),
@@ -145,45 +125,12 @@ SAVE = "128"
 LORA_NODE = "124"
 SEED_BASE = 900000000000000
 QUALITY_TAIL = "subtle film grain, aged theatrical print quality"
+TEMPLATE = RUN / "templates" / "leader_template.graph.json"
 
 
-def load_graph(template: Path) -> dict:
-    return json.loads(template.read_text(encoding="utf-8"))
-
-
-def pre_prompt(active_styles) -> str:
-    trigs = []
-    for sname, _strength in active_styles:
-        t = STYLE_LORAS[sname][1].rstrip(",").strip()
-        if t:
-            trigs.append(t)
-    parts = list(dict.fromkeys(trigs)) + [QUALITY_TAIL]
-    return ", ".join(parts) + ","
-
-
-def build_graph(cfg: dict, template: Path, base_desc: str) -> dict:
-    g = load_graph(template)
-    g[POS_MAIN]["inputs"]["positive"] = base_desc
-    # trigger words for exactly the active style LoRAs (was hardcoded retr0fantasy)
-    g[POS_PRE]["inputs"]["positive"] = pre_prompt(cfg["styles"])
-    # clear every known style + actor slot first, then set the active ones
-    for slot in list(STYLE_SLOT.values()) + list(ACTOR_SLOT.values()):
-        if slot in g[LORA_NODE]["inputs"] and isinstance(g[LORA_NODE]["inputs"][slot], dict):
-            g[LORA_NODE]["inputs"][slot]["on"] = False
-    for sname, strength in cfg["styles"]:
-        slot = STYLE_SLOT[sname]
-        if slot in g[LORA_NODE]["inputs"] and isinstance(g[LORA_NODE]["inputs"][slot], dict):
-            g[LORA_NODE]["inputs"][slot]["on"] = True
-            g[LORA_NODE]["inputs"][slot]["strength"] = strength
-    if cfg["actor"] != "none":
-        aslot = ACTOR_SLOT[cfg["actor"]]
-        # add the slot if the template lacks it (leader template only has lora_10)
-        if aslot not in g[LORA_NODE]["inputs"]:
-            g[LORA_NODE]["inputs"][aslot] = {"on": True, "lora": ACTORS[cfg["actor"]], "strength": 1.0}
-        else:
-            g[LORA_NODE]["inputs"][aslot]["on"] = True
-            g[LORA_NODE]["inputs"][aslot]["strength"] = 1.0
-    return g
+def _get(url):
+    with urllib.request.urlopen(url, timeout=60) as r:
+        return json.loads(r.read().decode())
 
 
 def _post(url, payload):
@@ -193,27 +140,88 @@ def _post(url, payload):
         return json.loads(r.read().decode())
 
 
-def _get(url):
-    with urllib.request.urlopen(url, timeout=60) as r:
-        return json.loads(r.read().decode())
+def rig_models(comfy):
+    oi = _get(comfy + "/object_info/" + urllib.parse.quote("CLIPLoader"))
+    clips = list(oi.values())[0]["input"]["required"]["clip_name"][0]
+    oi = _get(comfy + "/object_info/" + urllib.parse.quote("UNETLoader"))
+    unets = list(oi.values())[0]["input"]["required"]["unet_name"][0]
+    oi = _get(comfy + "/object_info/" + urllib.parse.quote("VAELoader"))
+    vaes = list(oi.values())[0]["input"]["required"]["vae_name"][0]
+
+    def pick(items, *subs):
+        for it in items:
+            if all(s in it.lower() for s in subs):
+                return it
+        return None
+
+    clip = pick(clips, "qwen3-vl-4b") or pick(clips, "huihui")
+    unet = pick(unets, "krea170277")
+    vae = pick(vaes, "wan2_1_vae_fp32")
+    assert clip and unet and vae, "rig model resolution failed: clip=%s unet=%s vae=%s" % (clip, unet, vae)
+    return {"clip": clip, "unet": unet, "vae": vae}
 
 
-def render(g: dict, outdir: Path) -> str:
-    out = _post(f"{COMFY}/prompt", {"prompt": g, "client_id": "fni-sweep-%d" % int(time.time())})
+def rig_loras(comfy):
+    names = set()
+    page = 1
+    while True:
+        d = _get(f"{comfy}/api/lm/loras/list?page={page}&page_size=100")
+        b = d.get("items", [])
+        for it in b:
+            names.add(it.get("file_name", ""))
+        if len(b) < 100 or page > 30:
+            break
+        page += 1
+    return names
+
+
+def pre_prompt(active_styles):
+    trigs = []
+    for sname, _s in active_styles:
+        t = STYLE_LORAS[sname][1].rstrip(",").strip()
+        if t:
+            trigs.append(t)
+    parts = list(dict.fromkeys(trigs)) + [QUALITY_TAIL]
+    return ", ".join(parts) + ","
+
+
+def build_graph(cfg, models, base_desc):
+    g = json.loads(TEMPLATE.read_text(encoding="utf-8"))
+    g[POS_MAIN]["inputs"]["positive"] = base_desc
+    g[POS_PRE]["inputs"]["positive"] = pre_prompt(cfg["styles"])
+    g["120"]["inputs"]["clip_name"] = models["clip"]
+    g["121"]["inputs"]["unet_name"] = models["unet"]
+    g["122"]["inputs"]["vae_name"] = models["vae"]
+    for slot in list(STYLE_SLOT.values()) + ACTOR_SLOTS:
+        if slot in g[LORA_NODE]["inputs"] and isinstance(g[LORA_NODE]["inputs"][slot], dict):
+            g[LORA_NODE]["inputs"][slot]["on"] = False
+    for sname, strength in cfg["styles"]:
+        slot = STYLE_SLOT[sname]
+        if slot in g[LORA_NODE]["inputs"] and isinstance(g[LORA_NODE]["inputs"][slot], dict):
+            g[LORA_NODE]["inputs"][slot]["on"] = True
+            g[LORA_NODE]["inputs"][slot]["lora"] = STYLE_LORAS[sname][0]
+            g[LORA_NODE]["inputs"][slot]["strength"] = strength
+    if cfg["actor"] != "none":
+        aslot = ACTOR_SLOTS[0]
+        g[LORA_NODE]["inputs"][aslot] = {"on": True, "lora": ACTORS[cfg["actor"]], "strength": 1.0}
+    return g
+
+
+def render(comfy, g, outdir):
+    out = _post(f"{comfy}/prompt", {"prompt": g, "client_id": "fni-sweep-%d" % int(time.time())})
     if out.get("node_errors"):
         raise RuntimeError(json.dumps(out["node_errors"]))
     pid = out["prompt_id"]
-    prefix = g[SAVE]["inputs"]["filename_prefix"]
     outdir.mkdir(parents=True, exist_ok=True)
     deadline = time.time() + 600
     while time.time() < deadline:
-        rec = _get(f"{COMFY}/history/{pid}").get(pid)
+        rec = _get(f"{comfy}/history/{pid}").get(pid)
         if rec and rec.get("outputs"):
             for o in rec["outputs"].values():
                 for img in o.get("images", []):
                     if "ComfyUI_temp" in img["filename"]:
                         continue
-                    url = (f"{COMFY}/view?filename={urllib.parse.quote(img['filename'])}"
+                    url = (f"{comfy}/view?filename={urllib.parse.quote(img['filename'])}"
                            f"&subfolder={urllib.parse.quote(img.get('subfolder',''))}"
                            f"&type={urllib.parse.quote(img.get('type','output'))}")
                     dest = outdir / img["filename"]
@@ -223,39 +231,50 @@ def render(g: dict, outdir: Path) -> str:
         if rec and rec.get("status", {}).get("status_str") == "error":
             raise RuntimeError(f"render error {pid}")
         time.sleep(4)
-    raise TimeoutError(prefix)
+    raise TimeoutError(g[SAVE]["inputs"]["filename_prefix"])
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--char", choices=list(CHARS), default="leader")
+    ap.add_argument("--char", choices=list(CHARS), default="taro")
+    ap.add_argument("--rig", choices=list(RIGS), default=None)
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--count", type=int, default=0)
     ap.add_argument("--actor", default=None)
-    ap.add_argument("--style", default=None, help="style-config name, e.g. 80s-1.0")
+    ap.add_argument("--style", default=None)
     ap.add_argument("--desc-file", default=None)
     ap.add_argument("--seed-base", type=int, default=SEED_BASE)
     args = ap.parse_args()
 
     char = CHARS[args.char]
-    template = RUN / "templates" / char["template"]
-    # base description: explicit file > per-char default > the template's node 135
+    rig = args.rig or char["rig"]
+    comfy = RIGS[rig]
+    models = rig_models(comfy)
+    loras = rig_loras(comfy)
+
+    for aname in char["actors"]:
+        if aname == "none":
+            continue
+        fname = ACTORS[aname].split("/")[-1].replace(".safetensors", "")
+        if fname not in loras:
+            raise SystemExit("actor %r (%s) NOT on rig %s" % (aname, fname, rig))
+    for sname in STYLE_LORAS:
+        fname = STYLE_LORAS[sname][0].split("/")[-1].replace(".safetensors", "")
+        if fname not in loras:
+            raise SystemExit("style %r (%s) NOT on rig %s" % (sname, fname, rig))
+
     if args.desc_file:
         base_desc = Path(args.desc_file).read_text(encoding="utf-8").strip()
     elif char["desc"]:
         base_desc = Path(char["desc"]).read_text(encoding="utf-8").strip()
     else:
-        base_desc = load_graph(template)[POS_MAIN]["inputs"]["positive"]
+        base_desc = json.loads(TEMPLATE.read_text(encoding="utf-8"))[POS_MAIN]["inputs"]["positive"]
 
-    # build the grid
     style_map = dict(STYLE_CONFIGS)
     style_sel = [args.style] if args.style else [s for s, _ in STYLE_CONFIGS]
     actor_sel = [args.actor] if args.actor else char["actors"]
     cells = []
     for sname in style_sel:
-        conf = style_map.get(sname)
-        if conf is None:
-            raise SystemExit("unknown style config %r (have: %s)" % (sname, list(style_map)))
+        conf = style_map[sname]
         for aname in actor_sel:
             cells.append({"style_cfg": sname, "styles": conf, "actor": aname})
 
@@ -263,11 +282,11 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
 
     if args.dry_run:
-        print("base description (%d chars):" % len(base_desc), base_desc[:160] + "...")
-        print("cells: %d = %d style-configs x %d actors" % (len(cells), len(style_sel), len(actor_sel)))
+        print("rig %s (%s) models: %s" % (rig, comfy, models))
+        print("base description (%d chars):" % len(base_desc), base_desc[:140] + "...")
+        print("cells: %d = %d styles x %d actors" % (len(cells), len(style_sel), len(actor_sel)))
         for c in cells:
-            trig = pre_prompt(c["styles"])
-            print("  %-12s x %-12s -> pre=%r" % (c["style_cfg"], c["actor"], trig[:70]))
+            print("  %-12s x %-14s -> pre=%r" % (c["style_cfg"], c["actor"], pre_prompt(c["styles"])[:60]))
         return
 
     manifest = RUN / ("%s_sweep_manifest.jsonl" % args.char)
@@ -280,16 +299,16 @@ def main():
             if tag in done:
                 continue
             seed = args.seed_base + i
-            g = build_graph(c, template, base_desc)
+            g = build_graph(c, models, base_desc)
             g[SAMPLER]["inputs"]["seed"] = seed
             g[SAVE]["inputs"]["filename_prefix"] = tag
-            print("[%d] %s seed=%d ..." % (i, tag, seed), flush=True)
+            print("[%s/%d] %s seed=%d ..." % (rig, i, tag, seed), flush=True)
             try:
-                dest = render(g, outdir)
+                dest = render(comfy, g, outdir)
             except Exception as e:  # noqa: BLE001
                 dest = None
                 print("    FAILED:", e, flush=True)
-            mf.write(json.dumps({"tag": tag, "style_cfg": c["style_cfg"],
+            mf.write(json.dumps({"tag": tag, "rig": rig, "style_cfg": c["style_cfg"],
                                  "actor": c["actor"], "seed": seed,
                                  "pre": pre_prompt(c["styles"]), "file": dest}) + "\n")
             mf.flush()

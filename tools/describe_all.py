@@ -65,6 +65,9 @@ CHARACTERS = [
      ["refs/characters/TEEGRA/id_TEEGRA.jpg",
       "refs/characters/TEEGRA/TEEGRA_sheet_t01_00001_.png"],
      "green eyes, pale skin, long black hair, purple two-piece, gold necklace"),
+    ("TARO", "a young prince with dark hair in Fire Keep dress with a high collar",
+     ["refs/characters/TARO/id_TARO.webp",
+      "refs/characters/TARO/TARO_sheet_t01_00001_.png"], ""),
     ("TUTOR", "an older man in plain Fire Keep robes",
      ["refs/characters/TUTOR/id_TUTOR.jpg",
       "refs/characters/TUTOR/TUTOR_sheet_t01_00001_.png"], ""),
@@ -90,11 +93,15 @@ def b64(path, max_side=1280):
 
 def describe(subject, images, trait_hint, temperature=0.8):
     hint = (" Known canon: %s." % trait_hint) if trait_hint else ""
-    starter = ("describe %s from 1983's fire and ice movie. this will be used for a krea2 prompt "
-               "for a technicolor retro 80's/90's fantasy, ben hur meets Beastmaster, cleopatra "
-               "meets xena warrior princess. pay attention to the system prompt. be verbose and "
-               "descriptive. do not refer to the films and tv shows referenced. make this a pure "
-               "description.%s" % (subject, hint))
+    starter = (
+        "describe %s from 1983's fire and ice movie. this will be used for a krea2 prompt "
+        "for a sword-and-sandals fantasy epic set at the dawn of the bronze age and the end "
+        "of the neolithic: fur and hide garments, bone stone and wood weapons, the first "
+        "crude copper, megalithic standing stones, ritual fire, shamanic magic and spirit "
+        "totems — primal and mythic, not polished classical armour, not refined bronze-age "
+        "metallurgy. rendered in a technicolor 80's/90's retro fantasy film style. pay "
+        "attention to the system prompt. be verbose and descriptive. do not refer to the "
+        "films and tv shows referenced. make this a pure description.%s" % (subject, hint))
     body = json.dumps({
         "model": VLM_MODEL, "system": _sys_prompt(), "prompt": starter,
         "images": [b64(ROOT / p) for p in images], "stream": False,
