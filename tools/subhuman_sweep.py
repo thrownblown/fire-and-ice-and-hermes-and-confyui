@@ -56,8 +56,25 @@ ACTORS = {
     "person_07": "krea/krea2_person_07_v1_onetrainer.safetensors",
     "person_11": "krea/krea2_person_11_v1_onetrainer.safetensors",
     "person_03": "krea/krea2_person_03_v1_onetrainer.safetensors",
+    "person_08": "krea/krea2_person_08_v1_onetrainer.safetensors",
 }
-ACTOR_SLOT = {"person_07": "lora_10", "person_11": "lora_11", "person_03": "lora_12"}
+ACTOR_SLOT = {"person_07": "lora_10", "person_11": "lora_11", "person_03": "lora_12",
+              "person_08": "lora_13"}
+
+# --- per-character sweep config ------------------------------------------
+# taro: no prior Krea2 recipe, so reuse the leader graph (krea170277 unet) as
+# the render scaffold; his description is VLM-authored from id still + sheet.
+CHARS = {
+    "leader": {"template": "leader_template.graph.json", "prefix": "sub_leader",
+               "actors": ["none", "person_07", "person_11", "person_03"],
+               "desc": None},
+    "captain": {"template": "captain_template.graph.json", "prefix": "sub_captain",
+                "actors": ["none", "person_07", "person_11", "person_03"],
+                "desc": None},
+    "taro": {"template": "leader_template.graph.json", "prefix": "taro",
+             "actors": ["none", "person_08", "person_03", "person_11"],
+             "desc": str(RUN / "taro_description.txt")},
+}
 
 # --- style configs (the grid's style axis) -------------------------------
 # name -> list of (style, strength). Empty = no style LoRA (text-only style).
@@ -165,26 +182,29 @@ def render(g: dict, outdir: Path) -> str:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--char", choices=["leader", "captain"], default="leader")
+    ap.add_argument("--char", choices=list(CHARS), default="leader")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--count", type=int, default=0)
-    ap.add_argument("--actor", choices=list(ACTORS), default=None)
+    ap.add_argument("--actor", default=None)
     ap.add_argument("--style", default=None, help="style-config name, e.g. 80s-1.0")
     ap.add_argument("--desc-file", default=None)
     ap.add_argument("--seed-base", type=int, default=SEED_BASE)
     args = ap.parse_args()
 
-    template = RUN / "templates" / ("%s_template.graph.json" % args.char)
-    # base description: default = the verbatim good-leader description already in node 135
+    char = CHARS[args.char]
+    template = RUN / "templates" / char["template"]
+    # base description: explicit file > per-char default > the template's node 135
     if args.desc_file:
         base_desc = Path(args.desc_file).read_text(encoding="utf-8").strip()
+    elif char["desc"]:
+        base_desc = Path(char["desc"]).read_text(encoding="utf-8").strip()
     else:
         base_desc = load_graph(template)[POS_MAIN]["inputs"]["positive"]
 
     # build the grid
     style_map = dict(STYLE_CONFIGS)
     style_sel = [args.style] if args.style else [s for s, _ in STYLE_CONFIGS]
-    actor_sel = [args.actor] if args.actor else list(ACTORS)
+    actor_sel = [args.actor] if args.actor else char["actors"]
     cells = []
     for sname in style_sel:
         conf = style_map.get(sname)
@@ -210,13 +230,13 @@ def main():
         done = {json.loads(l)["tag"] for l in manifest.read_text(encoding="utf-8").splitlines() if l.strip()}
     with manifest.open("a", encoding="utf-8") as mf:
         for i, c in enumerate(cells):
-            tag = "%s_%s_%s" % (args.char, c["style_cfg"], c["actor"])
+            tag = "%s_%s_%s" % (char["prefix"], c["style_cfg"], c["actor"])
             if tag in done:
                 continue
             seed = args.seed_base + i
             g = build_graph(c, template, base_desc)
             g[SAMPLER]["inputs"]["seed"] = seed
-            g[SAVE]["inputs"]["filename_prefix"] = "sub_%s" % tag
+            g[SAVE]["inputs"]["filename_prefix"] = tag
             print("[%d] %s seed=%d ..." % (i, tag, seed), flush=True)
             try:
                 dest = render(g, outdir)
