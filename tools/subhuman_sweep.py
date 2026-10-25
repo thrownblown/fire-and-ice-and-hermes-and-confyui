@@ -293,9 +293,10 @@ def main():
     done = set()
     if manifest.exists():
         done = {json.loads(l)["tag"] for l in manifest.read_text(encoding="utf-8").splitlines() if l.strip()}
+    prefix = char["prefix"] or args.char
     with manifest.open("a", encoding="utf-8") as mf:
         for i, c in enumerate(cells):
-            tag = "%s_%s_%s" % (char["prefix"], c["style_cfg"], c["actor"])
+            tag = "%s_%s_%s" % (prefix, c["style_cfg"], c["actor"])
             if tag in done:
                 continue
             seed = args.seed_base + i
