@@ -51,29 +51,75 @@ STYLE_SLOT = {
 }
 
 # --- actor / ID LoRAs: name -> lora file ---------------------------------
+# 5090 inventory ONLY (verified via /api/lm/loras/list). person_11 is 4090-only
+# and must NOT appear here — the Power Lora Loader silently ignores a missing
+# LoRA, which renders as "none" without erroring.
 ACTORS = {
     "none": None,
     "person_07": "krea/krea2_person_07_v1_onetrainer.safetensors",
-    "person_11": "krea/krea2_person_11_v1_onetrainer.safetensors",
     "person_03": "krea/krea2_person_03_v1_onetrainer.safetensors",
     "person_08": "krea/krea2_person_08_v1_onetrainer.safetensors",
+    "person_04": "krea/krea2_person_04_v1_onetrainer.safetensors",
+    "person_01": "krea/krea2_person_01_v1_onetrainer.safetensors",
+    "person_25": "krea/krea2_person_25_v1_onetrainer.safetensors",
+    "person_15": "krea/krea2_person_15_v1_onetrainer.safetensors",
+    "person_17": "krea/krea2_person_17_v1_onetrainer.safetensors",
+    "person_23": "krea/krea2_person_23_v1_onetrainer.safetensors",
+    "person_22": "krea/krea2_person_22_v1_onetrainer.safetensors",
+    "person_09": "krea/krea2_person_09_v1_onetrainer.safetensors",
+    "person_21": "krea/krea2_person_21_v1_onetrainer.safetensors",
+    "person_05": "krea/krea2_person_05_v1_onetrainer.safetensors",
+    "person_19": "krea/krea2_person_19_v1_onetrainer.safetensors",
+    "person_20": "krea/krea2_person_20_v1_onetrainer.safetensors",
+    "person_18": "krea/krea2_person_18_v1_onetrainer.safetensors",
+    "person_24": "krea/krea2_person_24_v1_onetrainer.safetensors",
 }
-ACTOR_SLOT = {"person_07": "lora_10", "person_11": "lora_11", "person_03": "lora_12",
-              "person_08": "lora_13"}
+ACTOR_SLOT = {
+    "person_07": "lora_10", "person_03": "lora_12", "person_08": "lora_13",
+    "person_04": "lora_14", "person_01": "lora_15",
+    "person_25": "lora_16", "person_15": "lora_17", "person_17": "lora_18",
+    "person_23": "lora_19", "person_22": "lora_20",
+    "person_09": "lora_21", "person_21": "lora_22", "person_05": "lora_23",
+    "person_19": "lora_24", "person_20": "lora_25", "person_18": "lora_26",
+    "person_24": "lora_27",
+}
+
+MALE_ACTORS = ["none", "person_07", "person_03", "person_08", "person_04"]
+FEMALE_ACTORS = ["none", "person_25", "person_15", "person_23", "person_21"]
 
 # --- per-character sweep config ------------------------------------------
-# taro: no prior Krea2 recipe, so reuse the leader graph (krea170277 unet) as
-# the render scaffold; his description is VLM-authored from id still + sheet.
+# desc paths under runs/subhuman-krea2/descs/<CHAR>.txt; template = the Krea2
+# stills graph (leader's krea170277 scaffold for everyone).
+def _c(name, actors, desc=None, prefix=None, template="leader_template.graph.json"):
+    return {"template": template, "prefix": prefix or name.lower().replace(" ", "_"),
+            "actors": actors,
+            "desc": str(RUN / desc) if desc else None}
+
 CHARS = {
+    # subhuman family (already swept; keep for re-runs)
     "leader": {"template": "leader_template.graph.json", "prefix": "sub_leader",
-               "actors": ["none", "person_07", "person_11", "person_03"],
-               "desc": None},
+               "actors": ["none", "person_07", "person_03", "person_08"], "desc": None},
     "captain": {"template": "captain_template.graph.json", "prefix": "sub_captain",
-                "actors": ["none", "person_07", "person_11", "person_03"],
-                "desc": None},
+                "actors": ["none", "person_07", "person_03", "person_08"], "desc": None},
     "taro": {"template": "leader_template.graph.json", "prefix": "taro",
-             "actors": ["none", "person_08", "person_03", "person_11"],
+             "actors": ["none", "person_08", "person_03", "person_07"],
              "desc": str(RUN / "taro_description.txt")},
+    # full roster (descriptions in descs/)
+    "darkwolf": _c("DARKWOLF", MALE_ACTORS, "descs/DARKWOLF.txt"),
+    "envoys": _c("ENVOYS", ["none", "person_07"], "descs/ENVOYS.txt"),
+    "jarol": _c("JAROL", ["none", "person_04", "person_07", "person_03"], "descs/JAROL.txt"),
+    "juliana": _c("JULIANA", FEMALE_ACTORS, "descs/JULIANA.txt"),
+    "larn": _c("LARN", ["none", "person_03", "person_08", "person_01"], "descs/LARN.txt"),
+    "nekron": _c("NEKRON", ["none", "person_01", "person_03", "person_08"], "descs/NEKRON.txt"),
+    "otwa": _c("OTWA", ["none", "person_08", "person_03", "person_07"], "descs/OTWA.txt"),
+    "roliel": _c("ROLIEL", ["none", "person_23", "person_22", "person_09"],
+                 "descs/ROLIEL.txt"),
+    "shaitan": _c("SHAITAN", ["none"], "descs/SHAITAN.txt"),
+    "spirit": _c("SPIRIT", ["none"], "descs/SPIRIT.txt"),
+    "subhuman": _c("SUBHUMAN", ["none", "person_07", "person_03"], "descs/SUBHUMAN.txt"),
+    "teegra": _c("TEEGRA", ["none", "person_21", "person_05", "person_22"],
+                 "descs/TEEGRA.txt"),
+    "tutor": _c("TUTOR", ["none", "person_04", "person_07", "person_03"], "descs/TUTOR.txt"),
 }
 
 # --- style configs (the grid's style axis) -------------------------------
