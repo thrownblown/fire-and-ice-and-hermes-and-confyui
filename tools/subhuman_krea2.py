@@ -28,6 +28,7 @@ import json
 import os
 import sys
 import time
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -186,7 +187,9 @@ def render_one(cfg: dict, desc: str, seed: int, outdir: Path) -> str | None:
                 for img in o.get("images", []):
                     if "ComfyUI_temp" in img["filename"]:
                         continue
-                    url = f"{COMFY}/view?filename={img['filename']}&subfolder={img.get('subfolder','')}&type={img.get('type','output')}"
+                    url = (f"{COMFY}/view?filename={urllib.parse.quote(img['filename'])}"
+                           f"&subfolder={urllib.parse.quote(img.get('subfolder',''))}"
+                           f"&type={urllib.parse.quote(img.get('type','output'))}")
                     dest = outdir / img["filename"]
                     with urllib.request.urlopen(url, timeout=60) as r:
                         dest.write_bytes(r.read())
