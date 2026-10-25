@@ -1,0 +1,294 @@
+{
+  "94": {
+    "inputs": {
+      "text": [
+        "139",
+        0
+      ],
+      "clip": [
+        "124",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "98": {
+    "inputs": {
+      "samples": [
+        "102",
+        0
+      ],
+      "vae": [
+        "122",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "101": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "124",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "102": {
+    "inputs": {
+      "seed": 401720109342937,
+      "steps": 9,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "sgm_uniform",
+      "denoise": 1.0,
+      "model": [
+        "124",
+        0
+      ],
+      "positive": [
+        "129",
+        0
+      ],
+      "negative": [
+        "125",
+        0
+      ],
+      "latent_image": [
+        "127",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "105": {
+    "inputs": {
+      "images": [
+        "98",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "120": {
+    "inputs": {
+      "clip_name": "Huihui-Qwen3-VL-4B-Instruct-abliterated-int8_convrot.safetensors",
+      "type": "krea2",
+      "device": "cpu"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "121": {
+    "inputs": {
+      "unet_name": "krea/finepornV2TURBOKrea2_v10.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "122": {
+    "inputs": {
+      "vae_name": "Wan2_1_VAE_fp32.safetensors",
+      "device": "main_device",
+      "weight_dtype": "fp32"
+    },
+    "class_type": "VAELoaderKJ",
+    "_meta": {
+      "title": "VAELoader KJ"
+    }
+  },
+  "124": {
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_4": {
+        "on": true,
+        "lora": "krea\\30sTechnicolor_Krea2Raw.safetensors",
+        "strength": 1
+      },
+      "lora_5": {
+        "on": false,
+        "lora": "krea\\80sFantasy_Krea2Raw_000004500.safetensors",
+        "strength": 1
+      },
+      "lora_6": {
+        "on": false,
+        "lora": "krea\\retro-80s.safetensors",
+        "strength": 1
+      },
+      "lora_7": {
+        "on": true,
+        "lora": "krea\\retro-fantasy.safetensors",
+        "strength": 1.15
+      },
+      "lora_10": {
+        "on": false,
+        "lora": "krea/krea2_person_11_v1_onetrainer.safetensors",
+        "strength": 1
+      },
+      "\u2795 Add Lora": "",
+      "model": [
+        "121",
+        0
+      ],
+      "clip": [
+        "120",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)",
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "125": {
+    "inputs": {
+      "conditioning": [
+        "101",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "Conditioning Zero Out"
+    }
+  },
+  "126": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 1.0,
+      "multiple": 8
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "127": {
+    "inputs": {
+      "width": [
+        "126",
+        0
+      ],
+      "height": [
+        "126",
+        1
+      ],
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "128": {
+    "inputs": {
+      "filename_prefix": "fni_t_manual_roleil",
+      "images": [
+        "98",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "129": {
+    "inputs": {
+      "multiplier": 1.0,
+      "per_layer_weights": "1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.5,5.0,1.1,4.0,1.0",
+      "conditioning": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "ConditioningKrea2Rebalance",
+    "_meta": {
+      "title": "Conditioning Krea2 Rebalance"
+    }
+  },
+  "135": {
+    "inputs": {
+      "positive": "A formidable subhuman captain stands with a powerful, muscular build, his broad shoulders and thick, corded arms exuding strength and authority. His skin is a deep, rich brown, with a slightly textured, almost leathery quality that suggests resilience and a life lived in the wild. He is barefoot, his feet broad and calloused, grounding his massive frame with a primal connection to the earth.\n\nHis head is dominated by long, black hair that falls past his shoulders, with a thick, dark fringe that covers his forehead, giving him a fierce, tribal warrior look. The hair is thick and dense, with a slight sheen, and it frames his face, adding to his imposing height and fierce appearance. His face is broad and powerful, with a prominent, thick brow ridge that casts deep shadows over his intense, dark eyes, which are narrow and piercing, often narrowed in a scowl or a predatory gaze. His nose is broad and flat, and his mouth is wide, frequently set in a grimace or a wide, toothy grin that reveals a full set of sharp, white teeth, adding to his intimidating and primal appearance. His jaw is square and strong, and his cheeks are deeply sculpted, contributing to his fierce, almost feral expression.\n\nHe is adorned with minimal but significant accessories: a simple, dark brown loincloth made of a coarse, natural material, possibly leather or fur, that barely covers his lower body, emphasizing his raw, natural form and the powerful musculature of his hips and thighs. Around his neck, he wears a thin, dark band, possibly a leather or metal headband, that sits just above his forehead, adding to his warrior aesthetic. On his forearms, he wears thick, dark wristbands, adding to his warrior look and providing a visual anchor to his powerful arms. He carries a large, heavy axe with a broad, dark blade and a thick, dark handle, which he grips firmly in his hand, ready for battle.\n\nThe overall aesthetic is a vibrant, technicolor retro 80's/90's fantasy style, with dramatic lighting that creates strong contrasts and rich, saturated colors, highlighting his muscular form and the textures of his skin and clothing. He is often depicted in dynamic poses, exuding confidence, aggression, and leadership, embodying the raw power and primal energy of a true subhuman warrior captain. His presence is commanding, and his expression is one of constant vigilance, readiness, and dominance.\n\nHis facial features are highly expressive, capable of conveying a range of emotions from fierce anger and aggression to a wide, almost feral grin, with his teeth bared in a display of power or dominance. His eyes are deeply set, with thick, dark eyebrows that can furrow into a menacing scowl or relax into a more neutral, watchful gaze. The lines on his face are pronounced, adding to his rugged, weathered appearance. His ears are small and slightly pointed, adding to his non-human, primal look.\n\nHis body is covered in well-defined muscle, with pronounced pectorals, biceps, triceps, and abdominal muscles, all contributing to his imposing and intimidating presence. His shoulders are broad and powerful, and his back is thick and muscular, with a deep V-shape that tapers down to his waist. His arms are thick and powerful, with veins visible beneath the skin, and his hands are large and strong, with thick fingers and short, dark nails.\n\nThe loincloth is made of a simple, dark brown fabric, possibly leather or a coarse, natural material, and is secured with a thick, dark belt that wraps around his waist. The axe he carries is a large, heavy weapon, with a broad, dark blade and a thick, dark handle, adding to his warrior aesthetic and emphasizing his strength and power.\n\nHis overall appearance is one of raw power, dominance, and primal energy, with a strong, muscular build, a fierce, feral expression, and minimal, functional accessories that emphasize his status as a warrior captain. The vibrant, technicolor retro 80's/90's fantasy style enhances the dramatic lighting and rich colors, creating a visually striking and memorable character.\n\nHis skin has a slightly rough, almost weathered texture, with subtle lines and creases that suggest age and experience, adding to his rugged, battle-hardened look. His muscles are not just large but also highly defined, with clear separation between muscle groups, giving him a sculpted, almost statuesque appearance. The lighting in the scenes often highlights the contours of his body, emphasizing the power and strength in every muscle.\n\nHis long hair is thick and dense, with a slight sheen, and it falls past his shoulders, adding to his imposing height and fierce appearance. The fringe that covers his forehead is thick and dark, creating a stark contrast with the shaved sides of his head. His eyes are dark and intense, with a slight glint of intelligence and cunning, suggesting a mind as sharp as his physical form.\n\nHis loincloth is simple but functional, with a slight fraying at the edges, suggesting it has been worn and used in battle. The belt is thick and sturdy, with a simple buckle or knot, and it sits low on his hips, accentuating his powerful waist and hips. The axe he carries is a large, heavy weapon, with a broad, dark blade and a thick, dark handle, adding to his warrior aesthetic and emphasizing his strength and power.\n\nHis expression is often one of intense focus and determination, with his brow furrowed and his mouth set in a grim line. When he smiles or grins, it is wide and toothy, revealing his sharp, white teeth, and it can be both intimidating and charismatic. His eyes are always alert and watchful, scanning his surroundings with a predatory gaze.\n\nHis overall presence is one of raw, unbridled power and dominance, with a strong, muscular build, a fierce, feral expression, and minimal, functional accessories that emphasize his status as a warrior captain. The vibrant, technicolor retro 80's/90's fantasy style enhances the dramatic lighting and rich colors, creating a visually striking and memorable character."
+    },
+    "class_type": "easy positive",
+    "_meta": {
+      "title": "Positive"
+    }
+  },
+  "136": {
+    "inputs": {
+      "positive": ""
+    },
+    "class_type": "easy positive",
+    "_meta": {
+      "title": "POST-PROMPT"
+    }
+  },
+  "137": {
+    "inputs": {
+      "positive": "retr0fantasy, 60s Soviet fantasy-film, subtle film grain, aged theatrical print quality,"
+    },
+    "class_type": "easy positive",
+    "_meta": {
+      "title": "PRE-PROMPT"
+    }
+  },
+  "138": {
+    "inputs": {
+      "separator": ".",
+      "prompt1": [
+        "137",
+        0
+      ],
+      "prompt2": [
+        "135",
+        0
+      ]
+    },
+    "class_type": "easy promptConcat",
+    "_meta": {
+      "title": "PromptConcat"
+    }
+  },
+  "139": {
+    "inputs": {
+      "separator": ".",
+      "prompt1": [
+        "138",
+        0
+      ],
+      "prompt2": [
+        "136",
+        0
+      ]
+    },
+    "class_type": "easy promptConcat",
+    "_meta": {
+      "title": "PromptConcat"
+    }
+  }
+}
