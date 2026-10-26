@@ -146,6 +146,18 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
 .badge.blocked { color:#e8837a; border-color:#6b3a3a; background:#241617; }
 .badge.decided { color:#8ec07c; border-color:#4a6b3a; background:#1a2416; }
 .badge.open { color:var(--accent); border-color:#6b5624; background:#241e10; }
+.sweepgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:8px; }
+.sweeptile { position:relative; border:1px solid var(--line); border-radius:6px; background:var(--panel); overflow:hidden; }
+.sweeptile img { width:100%; display:block; }
+.sweeptile .badge { position:absolute; top:4px; left:4px; }
+.sweeptile .st-label { font-size:10.5px; color:var(--dim); padding:3px 5px; }
+.sweeptbl { border-collapse:collapse; width:100%; }
+.sweeptbl th, .sweeptbl td { border:1px solid var(--line); padding:4px; text-align:center; vertical-align:middle; }
+.sweeptbl th { font-size:11px; color:var(--dim); background:var(--panel2); }
+.sweeptbl td { position:relative; }
+.sweeptbl td img { width:110px; display:block; margin:0 auto; border-radius:3px; }
+.sweeptbl .st-label { font-size:11px; color:var(--accent); font-family:ui-monospace,Consolas,monospace; white-space:nowrap; }
+.sweeptbl td .badge { position:absolute; top:2px; left:2px; padding:0 4px; }
 .stcard .note { color:var(--txt); font-size:13px; margin-bottom:6px; }
 .stcard .ctx { color:var(--dim); font-size:12px; }
 .stcard .ctx a { font-family:ui-monospace,Consolas,monospace; font-size:11.5px; }
@@ -181,6 +193,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     <div class="tab" id="tabChars">Characters <span id="nChars"></span></div>
     <div class="tab" id="tabBgs">Backgrounds <span id="nBgs"></span></div>
     <div class="tab" id="tabTests">Test runs <span id="nTests"></span></div>
+    <div class="tab" id="tabSweeps">Sweeps <span id="nSweeps"></span></div>
     <div class="tab" id="tabStatus">Status <span id="nStatus"></span></div>
     <div class="tab" id="tabDecisions">Decisions <span id="nDecisions"></span></div>
   </div>
@@ -200,6 +213,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
 <script src="refs/refs-data.js"></script>
 <script src="browser/setups-data.js"></script>
 <script src="runs/testruns-data.js"></script>
+<script src="browser/sweep-data.js"></script>
 <script src="browser/project-data.js"></script>
 <script src="browser/voice-data.js"></script>
 <script>
@@ -223,6 +237,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   var D = window.SHOTDATA;
   var R = window.REFSDATA || {characters:[], backgrounds:[]};
   var T = window.TESTDATA || {runs:[]};
+  var SW = window.SWEEPDATA || {chars:[]};
   var SU = window.SETUPDATA || {scenes:[], shot_setup:{}};
   var P = window.PROJECTDATA || {counts:{}, status:[], decisions:[]};
   var shots = D.shots, chunks = D.chunks, caps = D.captions;
@@ -236,6 +251,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   document.getElementById('nChars').textContent = R.characters.length;
   document.getElementById('nBgs').textContent = R.backgrounds.length;
   document.getElementById('nTests').textContent = T.runs.length;
+  document.getElementById('nSweeps').textContent = SW.chars.length;
   document.getElementById('nStatus').textContent = P.status.filter(function(s){return s.state!=='done';}).length;
   document.getElementById('nDecisions').textContent = P.decisions.filter(function(d){return d.state==='open';}).length;
 
@@ -271,6 +287,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       selScene: (view==='setups') ? (p.get('scene') || null) : null,
       selSetup: (view==='setups') ? (p.get('setup') || null) : null,
       selRun: (p.get('run') || '').toUpperCase() || null,
+      selSweep: (p.get('sweep') || '').toLowerCase() || null,
       selItem: (view==='status'||view==='decisions') ? (p.get('item') || null) : null
     };
   }
@@ -285,6 +302,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   function stampedNamesOfShot(s){ var cm = s.chunk ? chunkById(s.chunk) : null; return cm && cm.names ? cm.names : []; }
   function statusById(id){ for (var i=0;i<P.status.length;i++) if (P.status[i].id===id) return P.status[i]; return null; }
   function decisionById(id){ for (var i=0;i<P.decisions.length;i++) if (P.decisions[i].id===id) return P.decisions[i]; return null; }
+  function sweepByName(n){ n=(n||'').toLowerCase(); for (var i=0;i<SW.chars.length;i++) if (SW.chars[i].name===n) return SW.chars[i]; return null; }
 
   /* -------------------------------------------------- editable overlay
      Trait edits, background setting lists, browser-uploaded refs and
@@ -478,6 +496,19 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
           function(){ nav({run:r.id}); });
       });
       if (!$list.children.length) $list.innerHTML = '<div class="empty">no test runs match</div>';
+    } else if (st.view === 'sweeps'){
+      if (!SW.chars.length) $list.innerHTML = '<div class="empty">no sweep data — run tools/build_sweep_data.py</div>';
+      SW.chars.forEach(function(c){
+        if (st.q){
+          var hay = (c.name+' '+(c.display||'')).toLowerCase();
+          if (hay.indexOf(st.q.toLowerCase()) < 0) return;
+        }
+        item(st.selSweep===c.name,
+          '<div class="t"><span class="id">'+esc(c.display||c.name)+'</span></div>'
+          + '<div class="m">'+(c.good+'/'+c.total+' GOOD')+(c.scenes.length?' · <b>'+c.scenes.length+' scene</b>':' · no scene yet')+'</div>',
+          function(){ nav({sweep:c.name}); });
+      });
+      if (!$list.children.length) $list.innerHTML = '<div class="empty">no characters match</div>';
     } else if (st.view === 'status'){
       P.status.forEach(function(s){
         var sc = st.q ? (s.name+' '+(s.note||'')+' '+(s.detail||'')).toLowerCase() : '';
@@ -1178,6 +1209,63 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       $detail.innerHTML = h;
     }
 
+  /* ------------------------------------------------------ character sweep */
+  function detailSweep(c){
+    var h = '';
+    h += '<div class="crumb">sweep · <span class="mono">'+esc(c.name)+'</span></div>';
+    h += '<h2>'+esc(c.display||c.name)+'</h2>';
+    h += '<div class="metaline">'+(c.good+'/'+c.total+' GOOD')+' <span>·</span> '+c.stills.length+' stills'
+      + (c.scenes.length ? ' <span>·</span> '+c.scenes.length+' scene video' : '') + '</div>';
+
+    // scene videos first (the test clips)
+    if (c.scenes.length){
+      h += '<div class="section"><h3>Scene videos</h3>';
+      c.scenes.forEach(function(f){
+        h += '<div class="runclip"><div class="rc-body"><video controls preload="metadata" src="'+esc(encodeURI(f))+'"></video></div>'
+          + '<div class="rc-head"><span class="rc-chunk">'+esc(f.split('/').pop())+'</span>'
+          + ' <a href="'+esc(encodeURI(f))+'" target="_blank" style="font-size:11.5px">open</a></div></div>';
+      });
+      h += '</div>';
+    }
+
+    // still grid grouped by style config, columns = actor
+    var styles = [], seen = {};
+    c.stills.forEach(function(s){ if(!seen[s.style]){ seen[s.style]=1; styles.push(s.style); } });
+    var actors = [], seenA = {};
+    c.stills.forEach(function(s){ if(!seenA[s.actor]){ seenA[s.actor]=1; actors.push(s.actor); } });
+    h += '<div class="section"><h3>Stills (style × actor)</h3>';
+    if (actors.length <= 1){
+      // only "none" actor (creatures): flat grid
+      h += '<div class="sweepgrid">';
+      c.stills.forEach(function(s){
+        var badge = s.verdict === 'GOOD' ? '<span class="badge done">G</span>' : (s.verdict === 'BAD' ? '<span class="badge blocked">B</span>' : '');
+        h += '<div class="sweeptile" title="'+esc(s.style+' · '+s.why)+'">'+badge
+          + '<img src="'+esc(encodeURI(s.file))+'" loading="lazy" alt="'+esc(s.style)+'">'
+          + '<div class="st-label">'+esc(s.style)+'</div></div>';
+      });
+      h += '</div>';
+    } else {
+      h += '<table class="sweeptbl"><thead><tr><th>style</th>';
+      actors.forEach(function(a){ h += '<th>'+esc(a)+'</th>'; });
+      h += '</tr></thead><tbody>';
+      styles.forEach(function(sy){
+        h += '<tr><td class="st-label">'+esc(sy)+'</td>';
+        actors.forEach(function(a){
+          var s = null;
+          for (var i=0;i<c.stills.length;i++) if (c.stills[i].style===sy && c.stills[i].actor===a){ s=c.stills[i]; break; }
+          if (!s){ h += '<td></td>'; return; }
+          var badge = s.verdict === 'GOOD' ? '<span class="badge done">G</span>' : (s.verdict === 'BAD' ? '<span class="badge blocked">B</span>' : '');
+          h += '<td title="'+esc(s.why)+'">'+badge
+            + '<img src="'+esc(encodeURI(s.file))+'" loading="lazy" alt="'+esc(sy+'/'+a)+'"></td>';
+        });
+        h += '</tr>';
+      });
+      h += '</tbody></table>';
+    }
+    h += '</div>';
+    $detail.innerHTML = h;
+  }
+
   /* ------------------------------------------------------ status + decisions
      Read-only dashboards fed by tools/build_project_data.py (project-data.js).
      Status = pipeline stages + live counts. Decisions = what awaits a human. */
@@ -1319,6 +1407,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     document.getElementById('tabChars').className  = 'tab' + (st.view==='chars'?' active':'');
     document.getElementById('tabBgs').className    = 'tab' + (st.view==='bgs'?' active':'');
     document.getElementById('tabTests').className  = 'tab' + (st.view==='tests'?' active':'');
+    document.getElementById('tabSweeps').className  = 'tab' + (st.view==='sweeps'?' active':'');
     document.getElementById('tabStatus').className  = 'tab' + (st.view==='status'?' active':'');
     document.getElementById('tabDecisions').className  = 'tab' + (st.view==='decisions'?' active':'');
     ['NEKRON','TEEGRA','LARN'].forEach(function(x){
@@ -1328,7 +1417,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     });
     var q = document.getElementById('q');
     if (q.value !== st.q && document.activeElement !== q) q.value = st.q;
-    q.placeholder = st.view==='chars' ? 'search characters…' : st.view==='bgs' ? 'search backgrounds…' : st.view==='setups' ? 'search scenes / setups…' : st.view==='tests' ? 'search test runs…' : st.view==='status' ? 'search stages…' : st.view==='decisions' ? 'search decisions…' : 'search shot / chunk / text…';
+    q.placeholder = st.view==='chars' ? 'search characters…' : st.view==='bgs' ? 'search backgrounds…' : st.view==='setups' ? 'search scenes / setups…' : st.view==='tests' ? 'search test runs…' : st.view==='sweeps' ? 'search sweeps…' : st.view==='status' ? 'search stages…' : st.view==='decisions' ? 'search decisions…' : 'search shot / chunk / text…';
 
     renderList(st);
 
@@ -1366,6 +1455,11 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       if (!run) run = T.runs[0];
       if (run) detailRun(run);
       else $detail.innerHTML = '<div class="empty">no test runs recorded — run <code>tools/build_testruns_data.py</code></div>';
+    } else if (st.view === 'sweeps'){
+      var sw = st.selSweep ? sweepByName(st.selSweep) : null;
+      if (!sw) sw = SW.chars[0];
+      if (sw) detailSweep(sw);
+      else $detail.innerHTML = '<div class="empty">no sweep data — run <code>tools/build_sweep_data.py</code></div>';
     } else if (st.view === 'status'){
       st_setupSelected = null;
       var sit = st.selItem ? statusById(st.selItem) : P.status[0];
@@ -1389,6 +1483,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   document.getElementById('tabChars').onclick  = function(){ nav({view:'chars',  shot:null, chunk:null, bg:null, scene:null, setup:null}); };
   document.getElementById('tabBgs').onclick    = function(){ nav({view:'bgs',    shot:null, chunk:null, char:null, scene:null, setup:null}); };
   document.getElementById('tabTests').onclick  = function(){ nav({view:'tests',  shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run: (state().selRun || (T.runs[0] && T.runs[0].id) || null)}); };
+  document.getElementById('tabSweeps').onclick = function(){ nav({view:'sweeps', shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item:null, sweep: (state().selSweep || (SW.chars[0] && SW.chars[0].name) || null)}); };
   document.getElementById('tabStatus').onclick  = function(){ nav({view:'status',  shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item: (state().selItem || (P.status[0] && P.status[0].id) || null)}); };
   document.getElementById('tabDecisions').onclick = function(){ nav({view:'decisions', shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item: (state().selItem || (P.decisions[0] && P.decisions[0].id) || null)}); };
 
@@ -1413,7 +1508,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     var i = spec.indexOf(':');
     if (i < 0) return;
     var k = spec.slice(0, i), v = spec.slice(i+1);
-    var patch = {shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, item:null};
+    var patch = {shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, item:null, run:null, sweep:null};
     if (k === 'shot'){ patch.view = 'shots'; patch.shot = v; }
     else if (k === 'chunk'){ patch.view = 'chunks'; patch.chunk = v; }
     else if (k === 'char'){ patch.view = 'chars'; patch.char = v; }
@@ -1422,6 +1517,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     else if (k === 'scene'){ patch.view = 'setups'; patch.scene = v; }
     else if (k === 'status'){ patch.view = 'status'; patch.item = v; }
     else if (k === 'decision'){ patch.view = 'decisions'; patch.item = v; }
+    else if (k === 'sweep'){ patch.view = 'sweeps'; patch.sweep = v; }
     else if (k === 'view'){ patch.view = v; }
     else return;
     nav(patch);
@@ -1440,8 +1536,8 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       else if (p.get('bg')||p.get('bgid')) view = 'bgs';
       else view = 'shots';
     }
-    if (['shots','chunks','setups','chars','bgs','tests','status','decisions'].indexOf(view) < 0) view = 'shots';
-    var sn = null, cid = null, cn = null, bs = null, scn = null, su = null, run = null, item = null;
+    if (['shots','chunks','setups','chars','bgs','tests','sweeps','status','decisions'].indexOf(view) < 0) view = 'shots';
+    var sn = null, cid = null, cn = null, bs = null, scn = null, su = null, run = null, item = null, sweep = null;
     if (view === 'shots'){
       sn = pad5(p.get('shot') || p.get('shotid') || p.get('s'));
       if (!sn || !shotByNum(sn)) sn = shots[0].num;
@@ -1463,6 +1559,9 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     } else if (view === 'tests'){
       run = (p.get('run') || '').toUpperCase();
       if (run && !T.runs.some(function(r){ return r.id === run; })) run = null;
+    } else if (view === 'sweeps'){
+      sweep = (p.get('sweep') || '').toLowerCase();
+      if (sweep && !sweepByName(sweep)) sweep = null;
     } else if (view === 'status'){
       item = p.get('item');
       if (item && !statusById(item)) item = null;
@@ -1480,6 +1579,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     if (su) p2.set('setup', su);
     if (run) p2.set('run', run);
     if (item) p2.set('item', item);
+    if (sweep) p2.set('sweep', sweep);
     if (p.get('f')) p2.set('f', String(p.get('f')).toUpperCase());
     if (p.get('q')) p2.set('q', p.get('q'));
     history.replaceState(null, '', location.pathname + (p2.toString() ? '?' + p2.toString() : ''));
