@@ -100,6 +100,11 @@ def main():
     char_desc = ". ".join(char_desc.split(". ")[:2]) + "."
 
     g = json.loads(SCAFFOLD.read_text(encoding="utf-8"))
+    # match the still's portrait aspect (Krea2 stills are 9:16, ~768x1368); the
+    # T0003 scaffold defaults to 16:9 landscape which squishes a portrait subject.
+    g["115"]["inputs"]["aspect_ratio"] = "9:16 (Portrait Widescreen)"
+    g["115"]["inputs"]["megapixels"] = 0.4
+    g["115"]["inputs"]["multiple"] = 32
     # I2V: first frame only; drop the last-frame reference and loader
     g[NODE_I2V]["inputs"].pop("last_frame", None)
     g.pop(NODE_LAST, None)
