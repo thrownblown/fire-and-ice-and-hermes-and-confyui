@@ -95,8 +95,12 @@ def main():
     still = Path(args.still)
     desc_file = RUN / "descs" / ("%s.txt" % args.char.upper())
     char_desc = desc_file.read_text(encoding="utf-8").strip() if desc_file.exists() else args.char
-    # use only the first ~2 sentences as the identity anchor (the full VLM description
-    # can contradict the scene action, e.g. "rides a horse" vs "stands before megaliths")
+    # identity anchor only: drop background/mist/backdrop sentences (the scene text
+    # supplies the setting; a "plain backdrop" clause from the sheet would fight it)
+    char_desc = re.sub(r"[^.]*\b(backdrop|background|mist|silhouett|standing stones?|megalith|"
+                       r"landscape|sky|horizon|setting)[^.]*\.", ".", char_desc, flags=re.I)
+    char_desc = re.sub(r"\s+", " ", char_desc).strip()
+    # keep it short — the first ~2 sentences carry identity (build, face, costume)
     char_desc = ". ".join(char_desc.split(". ")[:2]) + "."
 
     g = json.loads(SCAFFOLD.read_text(encoding="utf-8"))
