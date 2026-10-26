@@ -96,12 +96,17 @@ def describe(subject, images, trait_hint, temperature=0.8):
     starter = (
         "describe %s from 1983's fire and ice movie. this will be used for a krea2 prompt "
         "for a sword-and-sandals fantasy epic set at the dawn of the bronze age and the end "
-        "of the neolithic: fur and hide garments, bone stone and wood weapons, the first "
-        "crude copper, megalithic standing stones, ritual fire, shamanic magic and spirit "
-        "totems — primal and mythic, not polished classical armour, not refined bronze-age "
-        "metallurgy. rendered in a technicolor 80's/90's retro fantasy film style. pay "
-        "attention to the system prompt. be verbose and descriptive. do not refer to the "
-        "films and tv shows referenced. make this a pure description.%s" % (subject, hint))
+        "of the neolithic. STRICT MATERIALS: no metal of any kind — no copper, bronze, iron, "
+        "gold or silver, no metal studs, no metal buckles, no metal pendants, no metal discs; "
+        "clothing is fur, hide, leather and woven fibre, fastened with bone, antler, or leather "
+        "thongs, and any weapon is wood, stone, bone or flint. STRICT HANDS: the hands are empty "
+        "and relaxed, resting at the sides or on the body — never gripping a weapon or any object; "
+        "if the character carries a weapon, it hangs at the hip or is worn across the back. "
+        "setting: megalithic standing stones, ritual fire, shamanic magic and spirit totems — "
+        "primal and mythic, not polished classical armour. rendered in a technicolor 80's/90's "
+        "retro fantasy film style. pay attention to the system prompt. be verbose and descriptive. "
+        "do not refer to the films and tv shows referenced. make this a pure description.%s"
+        % (subject, hint))
     body = json.dumps({
         "model": VLM_MODEL, "system": _sys_prompt(), "prompt": starter,
         "images": [b64(ROOT / p) for p in images], "stream": False,
