@@ -14,6 +14,7 @@ import base64
 import importlib.util
 import io
 import json
+import re
 import sys
 import urllib.request
 from pathlib import Path
@@ -98,12 +99,12 @@ def describe(subject, images, trait_hint, temperature=0.8):
         "for a krea2 image prompt — a clean full-body character sheet, NOT a scene. STRICT "
         "MATERIALS: no metal of any kind — no copper, bronze, iron, gold or silver, no metal "
         "studs, buckles, pendants or discs; clothing is fur, hide, leather and woven fibre, "
-        "fastened with bone, antler, or leather thongs, and any weapon is wood, stone, bone or "
-        "flint and is worn at the hip or across the back, never held. STRICT HANDS: the hands are "
+        "fastened with bone, antler, or leather thongs. STRICT HANDS: the hands are "
         "out of view, relaxed at the sides with fingers together, or clasped behind the back — "
         "never gripping anything. STRICT BACKGROUND: a simple, plain, uncluttered backdrop — bare "
         "stone, soft mist, or a plain hide backdrop — with no other figures, no architecture, no "
-        "megaliths, no fire, no animals, no props. rendered in a technicolor 80's/90's retro "
+        "megaliths, no fire, no animals, no props. NO WEAPONS AT ALL: do not mention any weapon. "
+        "rendered in a technicolor 80's/90's retro "
         "fantasy film style. pay attention to the system prompt. be verbose and descriptive about "
         "the character only. do not refer to the films and tv shows referenced. make this a pure "
         "description.%s" % (subject, hint))
@@ -114,7 +115,15 @@ def describe(subject, images, trait_hint, temperature=0.8):
     }).encode()
     req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=600) as r:
-        return (json.load(r).get("response") or "").strip()
+        out = (json.load(r).get("response") or "").strip()
+    # belt-and-braces: the VLM still names weapons from the source stills; strip
+    # any weapon sentence so the noun never reaches Krea2 (which then puts the
+    # weapon in-hand and mangles fingers). Proven necessary: see review v3.
+    pat = re.compile(r"[^.]*\b(spear|sword|axe|dagger|bow|knife|club|staff|blade|haft|scabbard|"
+                     r"weapon|quiver|shield|sling|mace|javelin|flail|lance)[^.]*\.", re.I)
+    out = pat.sub(".", out)
+    out = re.sub(r"\s+", " ", out).strip()
+    return out
 
 
 def main():
