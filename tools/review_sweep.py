@@ -27,12 +27,15 @@ VLM = "qwen3-vl-32b-heretic:latest"
 
 PROMPT = (
     "This is a generated still of a sword-and-sandals fantasy character at the dawn of the "
-    "bronze age. Judge ONLY these things: (1) is the anatomy coherent (no mangled hands, "
-    "broken face, fused limbs, extra fingers)? (2) is the costume/weapon plausible fur, hide, "
-    "bone, stone, wood, or crude copper? (3) is the framing sensible (subject fully in frame, "
-    "not cropped at the neck/chin)? (4) any text/watermark artifacts? "
+    "bronze age. Judge STRICTLY — most AI stills have at least one real flaw, so only mark GOOD "
+    "if it is genuinely clean. Look hard for: (1) anatomy errors (mangled hands, extra/missing "
+    "fingers, fused limbs, broken face, asymmetric eyes, warped sword/grip); (2) costume/weapon "
+    "implausibility (anachronistic polished metal armour instead of fur/hide/bone/stone/wood/crude "
+    "copper); (3) framing faults (subject cropped at neck/chin, feet cut off, important prop "
+    "missing); (4) text, watermark, or signature artifacts; (5) background mush, broken "
+    "perspective, or melting geometry. If ANY of these are present, verdict is BAD.\n"
     "Answer EXACTLY in this format, nothing else:\n"
-    "VERDICT=GOOD or BAD\nWHY=<one short clause>"
+    "VERDICT=GOOD or BAD\nWHY=<one short clause naming the specific flaw, or 'clean'>"
 )
 
 

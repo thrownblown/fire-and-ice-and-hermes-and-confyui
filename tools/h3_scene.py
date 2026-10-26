@@ -95,6 +95,9 @@ def main():
     still = Path(args.still)
     desc_file = RUN / "descs" / ("%s.txt" % args.char.upper())
     char_desc = desc_file.read_text(encoding="utf-8").strip() if desc_file.exists() else args.char
+    # use only the first ~2 sentences as the identity anchor (the full VLM description
+    # can contradict the scene action, e.g. "rides a horse" vs "stands before megaliths")
+    char_desc = ". ".join(char_desc.split(". ")[:2]) + "."
 
     g = json.loads(SCAFFOLD.read_text(encoding="utf-8"))
     # I2V: first frame only; drop the last-frame reference and loader
