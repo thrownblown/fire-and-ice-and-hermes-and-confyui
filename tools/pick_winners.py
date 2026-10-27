@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 """After the strict review, pick the best GOOD still per character and (optionally)
 queue an H3 scene from it. Reads <char>_review.jsonl + <char>_sweep_manifest.jsonl
-to resolve tag -> style/actor -> file, then reports the winners and, with --render,
-fires h3_scene.py for each.
+to resolve tag -> style/actor -> file, then reports the winners.
+
+Scene rendering now goes through the Qwen-Edit scene-setup path (compose the
+character INTO a scene still, VLM-review it, then H3 I2V): use
+`tools/build_scenes.py --all --render`, not the --render flag here.
 
     .venv/Scripts/python.exe tools/pick_winners.py            # list winners only
-    .venv/Scripts/python.exe tools/pick_winners.py --render   # + queue H3 scenes
 """
 from __future__ import annotations
 

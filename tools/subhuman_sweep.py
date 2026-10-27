@@ -7,9 +7,14 @@ startup (no hand-copied paths, no escaping bugs), and every actor LoRA is
 verified against the rig's LoRA Manager catalog before queueing — a missing
 actor raises, it can never silently render as "none".
 
+The sweep grid is style config x actor x base model, with --gens seeds per cell
+(4 by default). Base models are the Krea2 checkpoint merges listed in
+BASE_MODELS below; the sweep resolves each slug to the rig's real unet filename,
+so the grid spans several base models instead of a single krea170277.
+
     .venv/Scripts/python.exe tools/subhuman_sweep.py --char taro --rig 4090 --dry-run
-    .venv/Scripts/python.exe tools/subhuman_sweep.py --char darkwolf --rig 4090
-    .venv/Scripts/python.exe tools/subhuman_sweep.py --char juliana --rig 5090
+    .venv/Scripts/python.exe tools/subhuman_sweep.py --char darkwolf --rig 4090 --gens 4
+    .venv/Scripts/python.exe tools/subhuman_sweep.py --char juliana --rig 5090 --base moody
 """
 from __future__ import annotations
 
@@ -75,6 +80,25 @@ ACTORS = {
     "person_02": "krea/krea2_person_02_v1_onetrainer.safetensors",
 }
 ACTOR_SLOTS = ["lora_10", "lora_11", "lora_12", "lora_13", "lora_14", "lora_15"]
+
+# --- Krea2 base models: slug -> (unet substring, steps, sampler, scheduler) ---
+# The substring is matched against the target rig's own UNETLoader list, so one
+# entry resolves on both rigs regardless of path separator. Non-turbo merges use
+# the proven 9-step er_sde recipe; the *Turbo* / *INT8TURBO* merges want 4 steps
+# with sa_solver/beta (the 4-step convention) — that second recipe is OPT-IN and
+# unverified per base, so turbo bases are NOT in the default set.
+BASE_MODELS = {
+    "krea170277": ("krea170277", 9, "er_sde", "sgm_uniform"),
+    "moody": ("moodyKrea2Mix_v50", 9, "er_sde", "sgm_uniform"),
+    "kreamania": ("kreamania_variant5", 9, "er_sde", "sgm_uniform"),
+    "krast": ("krast_v20", 9, "er_sde", "sgm_uniform"),
+    # turbo (opt-in via --base; 4-step recipe unverified per base)
+    "dasiwa": ("DasiwaKrea2TurboRaw", 4, "sa_solver", "beta"),
+    "muse30": ("museByStableYogi_v30TurboInt8", 4, "sa_solver", "beta"),
+    "realism15": ("realismByStableYogi_v15INT8TURBO", 4, "sa_solver", "beta"),
+    "krea2turbo": ("Krea2_Turbo_convrot_int8mixed", 4, "sa_solver", "beta"),
+}
+DEFAULT_BASES = ["krea170277", "moody", "kreamania", "krast"]
 
 # --- per-character sweep config ------------------------------------------
 def _c(rig, actors, desc=None, prefix=None):
@@ -143,8 +167,6 @@ def _post(url, payload):
 def rig_models(comfy):
     oi = _get(comfy + "/object_info/" + urllib.parse.quote("CLIPLoader"))
     clips = list(oi.values())[0]["input"]["required"]["clip_name"][0]
-    oi = _get(comfy + "/object_info/" + urllib.parse.quote("UNETLoader"))
-    unets = list(oi.values())[0]["input"]["required"]["unet_name"][0]
     oi = _get(comfy + "/object_info/" + urllib.parse.quote("VAELoader"))
     vaes = list(oi.values())[0]["input"]["required"]["vae_name"][0]
 
@@ -155,10 +177,24 @@ def rig_models(comfy):
         return None
 
     clip = pick(clips, "qwen3-vl-4b") or pick(clips, "huihui")
-    unet = pick(unets, "krea170277")
     vae = pick(vaes, "wan2_1_vae_fp32")
-    assert clip and unet and vae, "rig model resolution failed: clip=%s unet=%s vae=%s" % (clip, unet, vae)
-    return {"clip": clip, "unet": unet, "vae": vae}
+    assert clip and vae, "rig model resolution failed: clip=%s vae=%s" % (clip, vae)
+    return {"clip": clip, "vae": vae}
+
+
+def rig_bases(comfy, slugs):
+    """Resolve each base-model slug to that rig's real unet filename (or skip)."""
+    oi = _get(comfy + "/object_info/" + urllib.parse.quote("UNETLoader"))
+    unets = list(oi.values())[0]["input"]["required"]["unet_name"][0]
+    out = {}
+    for slug in slugs:
+        sub = BASE_MODELS[slug][0].lower()
+        hit = next((u for u in unets if sub in u.lower()), None)
+        if hit:
+            out[slug] = hit
+        else:
+            print("  WARN: base %r (%s) NOT on rig — skipping" % (slug, BASE_MODELS[slug][0]))
+    return out
 
 
 def rig_loras(comfy):
@@ -185,13 +221,16 @@ def pre_prompt(active_styles):
     return ", ".join(parts) + ","
 
 
-def build_graph(cfg, models, base_desc):
+def build_graph(cfg, models, base_desc, unet, steps=9, sampler="er_sde", scheduler="sgm_uniform"):
     g = json.loads(TEMPLATE.read_text(encoding="utf-8"))
     g[POS_MAIN]["inputs"]["positive"] = base_desc
     g[POS_PRE]["inputs"]["positive"] = pre_prompt(cfg["styles"])
     g["120"]["inputs"]["clip_name"] = models["clip"]
-    g["121"]["inputs"]["unet_name"] = models["unet"]
+    g["121"]["inputs"]["unet_name"] = unet
     g["122"]["inputs"]["vae_name"] = models["vae"]
+    g[SAMPLER]["inputs"]["steps"] = steps
+    g[SAMPLER]["inputs"]["sampler_name"] = sampler
+    g[SAMPLER]["inputs"]["scheduler"] = scheduler
     for slot in list(STYLE_SLOT.values()) + ACTOR_SLOTS:
         if slot in g[LORA_NODE]["inputs"] and isinstance(g[LORA_NODE]["inputs"][slot], dict):
             g[LORA_NODE]["inputs"][slot]["on"] = False
@@ -243,6 +282,9 @@ def main():
     ap.add_argument("--style", default=None)
     ap.add_argument("--desc-file", default=None)
     ap.add_argument("--seed-base", type=int, default=SEED_BASE)
+    ap.add_argument("--gens", type=int, default=4, help="seeds per style x actor x base cell")
+    ap.add_argument("--base", default=None, choices=list(BASE_MODELS),
+                    help="single base model; default = the DEFAULT_BASES variety set")
     args = ap.parse_args()
 
     char = CHARS[args.char]
@@ -250,6 +292,10 @@ def main():
     comfy = RIGS[rig]
     models = rig_models(comfy)
     loras = rig_loras(comfy)
+    base_slugs = [args.base] if args.base else DEFAULT_BASES
+    bases = rig_bases(comfy, base_slugs)
+    if not bases:
+        raise SystemExit("no base models resolved on rig %s" % rig)
 
     for aname in char["actors"]:
         if aname == "none":
@@ -276,17 +322,22 @@ def main():
     for sname in style_sel:
         conf = style_map[sname]
         for aname in actor_sel:
-            cells.append({"style_cfg": sname, "styles": conf, "actor": aname})
+            for bslug in sorted(bases):
+                cells.append({"style_cfg": sname, "styles": conf, "actor": aname, "base": bslug})
 
     outdir = RUN / "output" / args.char
     outdir.mkdir(parents=True, exist_ok=True)
 
     if args.dry_run:
         print("rig %s (%s) models: %s" % (rig, comfy, models))
+        print("base models:", ", ".join(sorted(bases)))
         print("base description (%d chars):" % len(base_desc), base_desc[:140] + "...")
-        print("cells: %d = %d styles x %d actors" % (len(cells), len(style_sel), len(actor_sel)))
+        print("cells: %d = %d styles x %d actors x %d bases (x %d gens = %d renders)"
+              % (len(cells), len(style_sel), len(actor_sel), len(bases), args.gens,
+                 len(cells) * args.gens))
         for c in cells:
-            print("  %-12s x %-14s -> pre=%r" % (c["style_cfg"], c["actor"], pre_prompt(c["styles"])[:60]))
+            print("  %-12s x %-14s x %-10s -> pre=%r"
+                  % (c["style_cfg"], c["actor"], c["base"], pre_prompt(c["styles"])[:50]))
         return
 
     manifest = RUN / ("%s_sweep_manifest.jsonl" % args.char)
@@ -296,23 +347,29 @@ def main():
     prefix = char["prefix"] or args.char
     with manifest.open("a", encoding="utf-8") as mf:
         for i, c in enumerate(cells):
-            tag = "%s_%s_%s" % (prefix, c["style_cfg"], c["actor"])
-            if tag in done:
-                continue
-            seed = args.seed_base + i
-            g = build_graph(c, models, base_desc)
-            g[SAMPLER]["inputs"]["seed"] = seed
-            g[SAVE]["inputs"]["filename_prefix"] = tag
-            print("[%s/%d] %s seed=%d ..." % (rig, i, tag, seed), flush=True)
-            try:
-                dest = render(comfy, g, outdir)
-            except Exception as e:  # noqa: BLE001
-                dest = None
-                print("    FAILED:", e, flush=True)
-            mf.write(json.dumps({"tag": tag, "rig": rig, "style_cfg": c["style_cfg"],
-                                 "actor": c["actor"], "seed": seed,
-                                 "pre": pre_prompt(c["styles"]), "file": dest}) + "\n")
-            mf.flush()
+            _sub, steps, sampler, scheduler = BASE_MODELS[c["base"]]
+            unet = bases[c["base"]]
+            for gi in range(args.gens):
+                tag = "%s_%s_%s_%s_g%d" % (prefix, c["style_cfg"], c["actor"], c["base"], gi + 1)
+                if tag in done:
+                    continue
+                seed = args.seed_base + i * args.gens + gi
+                g = build_graph(c, models, base_desc, unet, steps, sampler, scheduler)
+                g[SAMPLER]["inputs"]["seed"] = seed
+                g[SAVE]["inputs"]["filename_prefix"] = tag
+                print("[%s %d/%d] %s base=%s steps=%d seed=%d ..."
+                      % (rig, i * args.gens + gi + 1, len(cells) * args.gens, tag,
+                         c["base"], steps, seed), flush=True)
+                try:
+                    dest = render(comfy, g, outdir)
+                except Exception as e:  # noqa: BLE001
+                    dest = None
+                    print("    FAILED:", e, flush=True)
+                mf.write(json.dumps({"tag": tag, "rig": rig, "style_cfg": c["style_cfg"],
+                                     "actor": c["actor"], "base": c["base"], "gen": gi + 1,
+                                     "seed": seed, "pre": pre_prompt(c["styles"]),
+                                     "file": dest}) + "\n")
+                mf.flush()
     print("sweep done ->", manifest)
 
 

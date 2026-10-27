@@ -40,7 +40,8 @@ def load_manifest(char):
         r = json.loads(l)
         tag = r.get("tag", "")
         out[tag] = {"style": r.get("style_cfg", "?"), "actor": r.get("actor", "?"),
-                    "rig": r.get("rig", "?")}
+                    "rig": r.get("rig", "?"), "base": r.get("base", ""),
+                    "gen": r.get("gen", "")}
     return out
 
 
@@ -92,6 +93,8 @@ def main():
                 "style": m.get("style", "?"),
                 "actor": m.get("actor", "?"),
                 "rig": m.get("rig", "?"),
+                "base": m.get("base", ""),
+                "gen": m.get("gen", ""),
                 "verdict": rv.get("verdict", ""),
                 "why": rv.get("why", ""),
             })

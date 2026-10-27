@@ -186,3 +186,14 @@ Last full re-review: 2026-10-12 (`docs/h3_repull_2026-10-12.md`).
 - Prompt-structure guides (1vnis23 cheat sheet; 1vfnby5 edited camera/sound guide).
 - Gibberish-fix threads (1vxpbo1, 1viui81).
 - Bakshi Fire & Ice or rotoscope-style LoRA threads, if any exist.
+
+## [READ] Qwen-Image-Edit prompting cluster (10 threads, 2026-10-27)
+- Playbook 1n1n81o · Edit-tips 1wlt9t9 · System prompt 1mudj7i · Drift 1xgpezp ·
+  Design template 1wsgrh4 · Multi-ref 1x675fb · 2509 commands 1nuu6k3 ·
+  Char-in-environment 1ovaew7 · Face consistency 1p11vaa · 2509 consistency 1o9r8e2
+- Digest: `docs/qwen-edit-prompting-guides.md`
+- Takeaway: identity-preservation clause AFTER the action instruction; address refs
+  as "the person in image 1"; "same person" beats gendered nouns; "this background"
+  when a ref supplies the setting; chain small edits; style-source-first; Consistence
+  LoRA (civitai 1939453) for big edits; VL-caption the still to seed the video prompt.
+  A/B test queued as T0026 against build_scenes.scene_prompt.

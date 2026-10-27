@@ -1,0 +1,33 @@
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_00003_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal bracers and a dagger with a refined blade, which is anachronistic for the dawn of the bronze age; such advanced metalwork would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_00003_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical inconsistencies \u2014 the right hand has an extra, fused digit near the thumb, and the left hand appears to have a misshapen, blob-like thumb, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_00003_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon sheath appears to be fused into the torso with no visible attachment point, suggesting implausible costume construction."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_00003_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (viewer\u2019s left) appears as a blob with indistinct, fused fingers, lacking clear anatomical separation \u2014 a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_00003_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}

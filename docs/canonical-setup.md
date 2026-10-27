@@ -61,8 +61,42 @@ Hard rules:
   qwen3.5-35b-a3b (Q8_0), llama3.3-70b (Q5_K_S, 131k ctx), magnum-v4-72b (32k ctx — below
   Hermes's 64k floor), terse-coder + qwen3-coder:30b + huihui coder-abliterated (coder),
   qwen3-vl-8b-abl + qwen3-vl-32b-heretic (vision), cydonia-24b (Q8_0, 131k).
-  Hermes aliases: `goldfishbowl` (qwen3.8-27b-rvn:latest), `goldfish-70b` (llama3.3-70b),
-  `goldfish-coder` (terse-coder), `goldfish-vision` (qwen3-vl-32b-heretic).
+  Hermes wiring: provider `goldfishbowl` (config `providers.goldfishbowl`: base_url
+  `http://<GOLDFISHBOWL_TS_IP>:11434/v1`, `default_model: qwen3.8-27b-rvn:latest`, keyless —
+  no `api_key`/`key_env`). Appears in the `hermes model` picker under Custom Endpoints;
+  also addressable as `custom:goldfishbowl`. Quick-switch model aliases: `goldfish-70b`
+  (llama3.3-70b), `goldfish-coder` (terse-coder), `goldfish-vision` (qwen3-vl-32b-heretic),
+  all `provider: goldfishbowl`.
+- **Open WebUI** (mh370 only, added 2026-10-25): chat UI at `http://localhost:8080` (bound
+  0.0.0.0, so also `http://<MH370_TS_IP>:8080` over Tailscale), v0.12.4, `WEBUI_AUTH=true` —
+  the first account created there becomes admin. Its ONLY model backend is goldfishbowl
+  Ollama (`OLLAMA_BASE_URLS=http://<GOLDFISHBOWL_TS_IP>:11434`, `ENABLE_OPENAI_API=false`).
+  Installed with `uv tool install open-webui` -> `%USERPROFILE%\.local\bin\open-webui.exe`
+  (uv-managed Python 3.11.14; does NOT touch `E:\FNI\.venv`). Data/DB
+  `C:\Users\<user>\open-webui\data`, launcher `...\start-openwebui.cmd`, log
+  `...\logs\open-webui.log`, autostart via Startup-folder `Open WebUI.vbs` (a scheduled task
+  was denied — needs elevation). Embeddings run on CPU: no 4090 conflict with ComfyUI/LM
+  Studio. Verify: `curl -4 -s http://127.0.0.1:8080/health` -> `{"status":true}`; with a
+  token, `GET /ollama/config` returns the goldfishbowl URL and `GET /api/models` its 14 models.
+- **Hermes dashboard (web admin UI)** (mh370): `hermes dashboard` on `127.0.0.1:9119`
+  (loopback by design — auth-gated token/basic login). Tailnet access is via
+  `tailscale serve --bg --https=443 http://127.0.0.1:9119` →
+  **`https://mh370.tailbd81a6.ts.net/`** (basic auth: `HERMES_DASHBOARD_BASIC_AUTH_USERNAME`
+  / `_PASSWORD` in `~/.hermes/.env` — the Hermes home here is `C:\Users\<user>\AppData\Local\hermes`).
+  Two gotchas that cost time (2026-10-25): (1) `HERMES_DASHBOARD_PUBLIC_URL` in `.env` MUST
+  be the ts.net host (`https://mh370.tailbd81a6.ts.net`) — otherwise tailscale-served
+  logins fail `Invalid Host header` (400 on POST /auth/password-login); (2) `tailscale serve`
+  must use `--bg` or the config rolls back when the command's session ends (`tailscale
+  serve status` reads "No serve config"). Verify from a tailnet node with a real login, not
+  just `curl` (loopback curl cannot see it).
+- **FNI dashboard (shot browser SPA)** (mh370): static serve of the `E:\FNI` root,
+  `python -m http.server 8642 --bind 0.0.0.0 --directory E:\FNI` (plain stdlib, no deps).
+  Page: `http://127.0.0.1:8642/browser/index.html` — also `http://<MH370_TS_IP>:8642/browser/index.html`
+  over Tailscale and on the LAN. Port 8642 is the standing FNI-dashboard port; serve from the
+  REPO ROOT, never `browser/`, because `index.html` carries `<base href="../">` and the page
+  fetches `stills/full/` and `refs/` at the root. Verify a relaunch with `curl -4 -sI
+  http://<MH370_TS_IP>:8642/browser/index.html` -> 200. Not autostarted: Hermes launches it on
+  request as a background terminal process.
 - **/history and /queue are memory-only** on both rigs: a reboot wipes them. Output files
   survive on disk; recovery is by name (section 6).
 
