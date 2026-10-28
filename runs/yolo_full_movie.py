@@ -52,6 +52,57 @@ def run(cmd: list[str], timeout: int | None = None) -> tuple[int, str]:
         return 124, "TIMEOUT"
 
 
+GF_TAGS = "http://<GOLDFISHBOWL_TS_IP>:11434/api/tags"
+COMFY_5090 = "http://<TOMBSTONE_TS_IP>:8188"
+BLOCK_MODEL = "qwen3-vl-32b-heretic:latest"
+
+
+def preflight() -> list[str]:
+    """The pipeline refuses to run misconfigured. Returns a list of problems
+    (empty = go). Every check is cheap (<30s total) and each one names a failure
+    that ALREADY burned a run once."""
+    import urllib.request
+    from core.prompt_guards import looks_like_error
+    problems = []
+
+    def get(url, timeout=10):
+        with urllib.request.urlopen(url, timeout=timeout) as r:
+            return json.loads(r.read().decode())
+
+    # 1. the blocking VLM endpoint must be up AND hold the exact model we name
+    try:
+        models = [m["name"] for m in get(GF_TAGS).get("models", [])]
+        if not any(m.startswith(BLOCK_MODEL.split(":")[0]) for m in models):
+            problems.append(f"goldfishbowl is up but {BLOCK_MODEL} is not loaded (has: {models[:5]})")
+    except Exception as e:
+        problems.append(f"goldfishbowl unreachable: {e}")
+    # 2. the render rig must be the 5090 (linux), not an accidental localhost
+    try:
+        stats = get(COMFY_5090 + "/system_stats")
+        if stats.get("system", {}).get("os") != "linux":
+            problems.append(f"{COMFY_5090} is NOT the 5090 (os={stats.get('system', {}).get('os')})")
+    except Exception as e:
+        problems.append(f"5090 ComfyUI unreachable: {e}")
+    # 3. the blocking ledger must be clean of error strings before we add to it
+    bjp = ROOT / "manifests" / "blocking.json"
+    if bjp.exists():
+        blk = json.loads(bjp.read_text(encoding="utf-8"))
+        bad = [k for k, v in blk.items() if not k.startswith("_") and looks_like_error(v)]
+        if bad:
+            problems.append(f"blocking.json holds {len(bad)} error entries (e.g. {bad[:3]}) — heal it first")
+    # 4. regression guard: the blocker command must pin its endpoint (a missing
+    #    --endpoint silently falls through to LM Studio and fails soft)
+    src = Path(__file__).read_text(encoding="utf-8")
+    if '"--endpoint", "goldfishbowl"' not in src:
+        problems.append("yolo_full_movie blocker call lost its --endpoint goldfishbowl pin")
+    return problems
+
+
+def tail(out: str, n: int = 10) -> str:
+    lines = [l for l in out.strip().splitlines() if l.strip()]
+    return "\n  ".join(lines[-n:])
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--queue-only", action="store_true", help="skip the blocking phase")
@@ -71,11 +122,23 @@ def main():
     st = load_state()
     now = lambda: datetime.datetime.now().isoformat(timespec="seconds")
 
+    problems = preflight()
+    if problems:
+        print(f"[{now()}] PREFLIGHT FAILED — refusing to run:", flush=True)
+        for p in problems:
+            print(f"  - {p}", flush=True)
+        sys.exit(2)
+    print(f"[{now()}] preflight OK", flush=True)
+
+    scene_fail_streak = 0
+    chunk_fail_streak = 0
+
     for sn, chunk_ids in sorted(scenes.items()):
         if not args.queue_only and not st["scenes"].get(sn, {}).get("blocked"):
             print(f"[{now()}] {sn}: drafting blocking ({len(chunk_ids)} chunks) ...", flush=True)
             rc, out = run([PY, BLOCKER, "--scene", sn,
-                           "--model", "qwen3-vl-32b-heretic:latest",
+                           "--endpoint", "goldfishbowl",
+                           "--model", BLOCK_MODEL,
                            "--sys", "literal", "--write"])
             # verify the pass actually produced usable blocking for this scene —
             # rc=0 with an unreachable VLM used to leave a scene "blocked" with
@@ -87,9 +150,19 @@ def main():
             st["scenes"][sn] = {"blocked": ok, "rc": rc, "usable": usable,
                                 "of": len(chunk_ids), "ts": now()}
             save_state(st)
-            print(f"[{now()}] {sn}: blocking rc={rc} usable {usable}/{len(chunk_ids)} :: "
-                  f"{out.strip().splitlines()[-1][:160] if out.strip() else ''}",
-                  flush=True)
+            print(f"[{now()}] {sn}: blocking rc={rc} usable {usable}/{len(chunk_ids)}", flush=True)
+            if not ok:
+                # FAIL-STOP: never feed chunks from a failed drafting pass into the
+                # queue phase — that is how 40 guard-refusals got spammed last run.
+                scene_fail_streak += 1
+                print(f"[{now()}] {sn}: BLOCKING PASS FAILED — skipping its chunks.\n  {tail(out)}",
+                      flush=True)
+                if scene_fail_streak >= 2:
+                    print(f"[{now()}] CIRCUIT BREAKER: {scene_fail_streak} consecutive failed "
+                          f"blocking passes — something systemic is down. ABORTING RUN.", flush=True)
+                    sys.exit(3)
+                continue
+            scene_fail_streak = 0
 
         for cid in chunk_ids:
             prev = st["chunks"].get(cid, {})
@@ -99,13 +172,19 @@ def main():
             last = out.strip().splitlines()[-1][:200] if out.strip() else ""
             if "QUEUED" in out:
                 st["chunks"][cid] = {"queued": now(), "note": last}
+                chunk_fail_streak = 0
                 print(f"[{now()}] {cid}: {last}", flush=True)
             elif "no sheeted subjects" in out or "no source audio" in out:
                 st["chunks"][cid] = {"skipped": now(), "note": last}
                 print(f"[{now()}] {cid}: SKIPPED {last}", flush=True)
             else:
                 st["chunks"][cid] = {"failed": now(), "rc": rc, "note": last}
-                print(f"[{now()}] {cid}: FAILED rc={rc} {last}", flush=True)
+                chunk_fail_streak += 1
+                print(f"[{now()}] {cid}: FAILED rc={rc}\n  {tail(out)}", flush=True)
+                if chunk_fail_streak >= 8:
+                    print(f"[{now()}] CIRCUIT BREAKER: {chunk_fail_streak} consecutive queue "
+                          f"failures — the render rig or driver is broken. ABORTING RUN.", flush=True)
+                    sys.exit(4)
             save_state(st)
 
     q = sum(1 for c in st["chunks"].values() if "queued" in c)
