@@ -22,6 +22,7 @@ import datetime
 import json
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(r"E:/FNI")
@@ -106,6 +107,9 @@ def tail(out: str, n: int = 10) -> str:
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--queue-only", action="store_true", help="skip the blocking phase")
+    ap.add_argument("--block-only", action="store_true", help="draft blocking only, never queue")
+    ap.add_argument("--loop", action="store_true",
+                    help="feeder mode: rescan forever, queueing chunks whose blocking is ready")
     ap.add_argument("--scene", default=None, help="one scene only")
     args = ap.parse_args()
 
@@ -130,6 +134,18 @@ def main():
         sys.exit(2)
     print(f"[{now()}] preflight OK", flush=True)
 
+    while True:
+        done_all = do_pass(st, scenes, args, usable_blocking, now)
+        if not args.loop or done_all:
+            break
+        print(f"[{now()}] feeder: waiting for more blocking ...", flush=True)
+        time.sleep(120)
+
+
+def do_pass(st, scenes, args, usable_blocking, now) -> bool:
+    """One pass over the scenes. Returns True when every scene is blocked and
+    every chunk is in a terminal state (queued/skipped) — the feeder loop's
+    exit condition."""
     scene_fail_streak = 0
     chunk_fail_streak = 0
 
@@ -146,7 +162,9 @@ def main():
             blk = json.loads((ROOT / "manifests" / "blocking.json").read_text(encoding="utf-8")) \
                 if (ROOT / "manifests" / "blocking.json").exists() else {}
             usable = sum(1 for cid in chunk_ids if usable_blocking(blk.get(cid)))
-            ok = rc == 0 and usable > 0
+            # partial coverage counts: chunks WITH blocking queue now; stragglers
+            # stay untracked (visible in the digest), the scene is not re-drafted
+            ok = usable > 0
             st["scenes"][sn] = {"blocked": ok, "rc": rc, "usable": usable,
                                 "of": len(chunk_ids), "ts": now()}
             save_state(st)
@@ -164,9 +182,20 @@ def main():
                 continue
             scene_fail_streak = 0
 
+        if args.block_only:
+            continue
+
+        # feeder precheck: a group-scene chunk without usable blocking isn't
+        # "failed", it's just not ready — leave it untracked so the feeder
+        # picks it up once its blocking lands (avoids guard-refusal spam)
+        blk_now = json.loads((ROOT / "manifests" / "blocking.json").read_text(encoding="utf-8")) \
+            if (ROOT / "manifests" / "blocking.json").exists() else {}
+
         for cid in chunk_ids:
             prev = st["chunks"].get(cid, {})
             if prev.get("queued") or prev.get("skipped"):
+                continue
+            if sn.startswith("G") and not usable_blocking(blk_now.get(cid)):
                 continue
             rc, out = run([PY, DRIVER, "--chunk", cid, "--queue"], timeout=600)
             last = out.strip().splitlines()[-1][:200] if out.strip() else ""
@@ -191,6 +220,12 @@ def main():
     s = sum(1 for c in st["chunks"].values() if "skipped" in c)
     f = sum(1 for c in st["chunks"].values() if "failed" in c)
     print(f"[{now()}] DONE — queued {q}, skipped {s}, failed {f}", flush=True)
+    # terminal condition for the feeder loop: every scene blocked AND every
+    # chunk accounted for (queued/skipped) — failures stay retryable, so they
+    # do not count as done
+    all_blocked = all(st["scenes"].get(sn, {}).get("blocked") for sn in scenes)
+    total_chunks = sum(len(ids) for ids in scenes.values())
+    return all_blocked and (q + s >= total_chunks)
 
 
 if __name__ == "__main__":

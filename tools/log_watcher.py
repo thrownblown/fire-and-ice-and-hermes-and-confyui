@@ -57,13 +57,13 @@ def ask(model: str, prompt: str, timeout: int = 240) -> str:
         return (json.load(r).get("response") or "").strip()
 
 
-def orchestrator_alive() -> bool:
+def procs_matching(pattern: str) -> bool:
     """Win11-safe: wmic is removed on recent builds — use PowerShell CIM."""
     try:
         r = subprocess.run(
             ["powershell", "-NoProfile", "-Command",
              "Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | "
-             "Where-Object {$_.CommandLine -match 'yolo_full_movie'} | "
+             f"Where-Object {{$_.CommandLine -match '{pattern}'}} | "
              "Select-Object -ExpandProperty ProcessId"],
             capture_output=True, text=True, timeout=30)
         return bool(r.stdout.strip())
@@ -71,9 +71,9 @@ def orchestrator_alive() -> bool:
         return False
 
 
-def relaunch() -> int:
+def relaunch(extra_args: list[str]) -> int:
     f = LOG.open("a", encoding="utf-8")
-    p = subprocess.Popen([PY, str(ORCH)], stdout=f, stderr=subprocess.STDOUT,
+    p = subprocess.Popen([PY, str(ORCH)] + extra_args, stdout=f, stderr=subprocess.STDOUT,
                          cwd=str(ROOT),
                          creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP)
     return p.pid
@@ -197,18 +197,40 @@ def _poll_inner():
             ev["diagnosis"] = diagnose(f)
         events.append(ev)
 
-    alive = orchestrator_alive()
-    st = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {"chunks": {}}
+    # two supervised roles: the blocker (drafts blocking scene-by-scene, exits
+    # when all scenes are blocked) and the feeder (queue-only loop, keeps the
+    # 5090 FIFO fed as blocking lands). A dead role with work left gets relaunched.
+    blocker_alive = procs_matching("yolo_full_movie.py --block-only")
+    feeder_alive = procs_matching("yolo_full_movie.py --queue-only")
+    legacy_alive = (not blocker_alive and not feeder_alive) and procs_matching("yolo_full_movie")
+    alive = blocker_alive and feeder_alive
+
+    st = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {"chunks": {}, "scenes": {}}
     counts = {k: sum(1 for c in st["chunks"].values() if k in c) for k in ("queued", "skipped", "failed")}
     total = len(st["chunks"])
-    # pending work = retryable failures or chunks never seen; queued+skipped are terminal
-    pending = counts.get("failed", 0) > 0 or total < 494
+    # scenes not yet in state are un-blocked too — count against the ledger total
+    try:
+        all_scenes = {json.loads(l)["scene"] for l in (ROOT / "fullrun" / "chunks.jsonl")
+                      .read_text(encoding="utf-8").splitlines() if l.strip()}
+    except Exception:
+        all_scenes = set(st.get("scenes", {}))
+    blocked = {k for k, v in st.get("scenes", {}).items() if v.get("blocked")}
+    scenes_unblocked = len(all_scenes - blocked)
+    # pending work = un-blocked scenes, retryable failures, or chunks never seen
+    pending_queue = counts.get("failed", 0) > 0 or total < 494
 
-    action = "none"
-    if not alive and pending:
-        pid = relaunch()
-        action = f"orchestrator was dead with work pending — relaunched pid {pid}"
-        events.append({"failure": "ORCHESTRATOR DEAD", "class": "death", "why": action})
+    action = []
+    if legacy_alive:
+        action.append("legacy single orchestrator still running — leaving it (it does both roles)")
+    if not blocker_alive and not legacy_alive and scenes_unblocked > 0:
+        pid = relaunch(["--block-only"])
+        action.append(f"blocker was dead with {scenes_unblocked} scenes un-blocked — relaunched pid {pid}")
+        events.append({"failure": "BLOCKER DEAD", "class": "death", "why": action[-1]})
+    if not feeder_alive and not legacy_alive and pending_queue:
+        pid = relaunch(["--queue-only", "--loop"])
+        action.append(f"feeder was dead with work pending — relaunched pid {pid}")
+        events.append({"failure": "FEEDER DEAD", "class": "death", "why": action[-1]})
+    action = "; ".join(action) if action else "none"
 
     pulled = pull_new_renders()
     if pulled:
