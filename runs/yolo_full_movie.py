@@ -58,6 +58,9 @@ def main():
     ap.add_argument("--scene", default=None, help="one scene only")
     args = ap.parse_args()
 
+    sys.path.insert(0, str(ROOT))
+    from core.prompt_guards import usable_blocking  # noqa: E402
+
     rows = [json.loads(l) for l in CHUNKS.read_text(encoding="utf-8").splitlines() if l.strip()]
     scenes: dict[str, list[str]] = {}
     for r in rows:
@@ -74,9 +77,18 @@ def main():
             rc, out = run([PY, BLOCKER, "--scene", sn,
                            "--model", "qwen3-vl-32b-heretic:latest",
                            "--sys", "literal", "--write"])
-            st["scenes"][sn] = {"blocked": rc == 0, "rc": rc, "ts": now()}
+            # verify the pass actually produced usable blocking for this scene —
+            # rc=0 with an unreachable VLM used to leave a scene "blocked" with
+            # error strings. Count REAL entries; unusable => not blocked, retry next run.
+            blk = json.loads((ROOT / "manifests" / "blocking.json").read_text(encoding="utf-8")) \
+                if (ROOT / "manifests" / "blocking.json").exists() else {}
+            usable = sum(1 for cid in chunk_ids if usable_blocking(blk.get(cid)))
+            ok = rc == 0 and usable > 0
+            st["scenes"][sn] = {"blocked": ok, "rc": rc, "usable": usable,
+                                "of": len(chunk_ids), "ts": now()}
             save_state(st)
-            print(f"[{now()}] {sn}: blocking rc={rc} :: {out.strip().splitlines()[-1][:160] if out.strip() else ''}",
+            print(f"[{now()}] {sn}: blocking rc={rc} usable {usable}/{len(chunk_ids)} :: "
+                  f"{out.strip().splitlines()[-1][:160] if out.strip() else ''}",
                   flush=True)
 
         for cid in chunk_ids:

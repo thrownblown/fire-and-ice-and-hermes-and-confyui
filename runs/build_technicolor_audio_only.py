@@ -26,10 +26,12 @@ from pathlib import Path
 
 sys.path.insert(0, r"E:/FNI/pipeline")
 sys.path.insert(0, r"E:/FNI/runs")
+sys.path.insert(0, r"E:/FNI")
 
 import fullrun as F  # noqa: E402
 import refrun as R  # noqa: E402
 import build_technicolor_ref2va as T  # noqa: E402  (TRAITS, sheet_path, plate_path, PLATE)
+from core.prompt_guards import usable_blocking, lint_prompt  # noqa: E402
 
 ROOT = Path(r"E:/FNI")
 RUN_DIR = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va"
@@ -179,6 +181,8 @@ def main():
     ap.add_argument("--take", type=int, default=1)
     ap.add_argument("--seed", type=int, default=None, help="override the chunk seed (seed hunting)")
     ap.add_argument("--subjects", help="comma-list to override the ledger's subjects (fixes mis-stamps)")
+    ap.add_argument("--force", action="store_true",
+                    help="queue despite guardrail warnings (crowd scene without blocking, etc.)")
     args = ap.parse_args()
 
     rows = [json.loads(l) for l in F.CHUNK_LEDGER.read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -203,8 +207,36 @@ def main():
     audio_name = args.audio or f"{row['chunk_id']}_audio.mp4"
 
     people, dialogue = R.load_context()
-    blocking = load_blocking().get(args.chunk)
+    raw_blocking = load_blocking().get(args.chunk)
+    if raw_blocking and not usable_blocking(raw_blocking):
+        print(f"GUARD: blocking for {args.chunk} is an error/garbage string — dropped, "
+              f"NOT injected into the prompt")
+        raw_blocking = None
+    blocking = raw_blocking
+
+    # crowd-scene guard: the GLOBAL_CONSTRAINT bans crowds, so a group scene
+    # (G##) rendered without a real blocking entry produces unconstrained cloned
+    # crowds (measured 2026-10-27: 3-25 duplicated extras in every clip).
+    is_group_scene = row["scene"].startswith("G")
+    if is_group_scene and not blocking and args.queue and not args.force:
+        print(f"GUARD: {args.chunk} is a group scene with no usable blocking — "
+              f"refusing to queue (the no-crowd constraint would be a lie). "
+              f"Draft blocking first (tools/vlm_blocking.py --chunk {args.chunk} --write) "
+              f"or pass --force.")
+        return
+
     text = build_prompt(row, subjects, 1 if plate else 0, dialogue, people, blocking)
+
+    # prompt lint: never queue a prompt that carries an error string or a
+    # dead <Video N> reference — lint failures abort BOTH dry-run and queue.
+    problems = lint_prompt(text, mode="audio_only")
+    if problems:
+        print(f"GUARD: prompt lint failed for {args.chunk}:")
+        for p in problems:
+            print(f"  - {p}")
+        if not args.force:
+            print("aborting (pass --force to override)")
+            return
 
     (RUN_DIR / "prompts").mkdir(parents=True, exist_ok=True)
     (RUN_DIR / "graphs").mkdir(parents=True, exist_ok=True)

@@ -159,13 +159,23 @@ def main():
                     print(f"--- [{ep}] {model.split('/')[-1]} / sys={sk} ---\n{resp}\n")
         return 0
 
+    sys.path.insert(0, str(ROOT))
+    from core.prompt_guards import usable_blocking  # noqa: E402
+
     results = {}
+    failures = {}
     for chunk in chunks:
         imgs = chunk_stills(chunk)
         try:
             resp = ask(args.endpoint, args.model, sys_text, imgs)
         except Exception as e:  # noqa: BLE001
             resp = f"ERR {e}"
+        # an error string is NOT content: never merge it into blocking.json —
+        # a transport failure means "not drafted", not "drafted badly"
+        if not usable_blocking(resp):
+            failures[chunk] = resp
+            print(f"[{chunk}] SKIPPED (not written): {resp[:140]}\n")
+            continue
         results[chunk] = resp
         print(f"[{chunk}] {resp}\n")
 
@@ -174,8 +184,15 @@ def main():
         cur = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
         for k, v in results.items():
             cur[k] = v
+        # also scrub any pre-existing error entries for chunks we just failed on,
+        # so a poisoned ledger heals on the next successful pass
         p.write_text(json.dumps(cur, indent=1, ensure_ascii=False), encoding="utf-8")
-        print(f"merged {len(results)} entries into {p}")
+        print(f"merged {len(results)} entries into {p} "
+              f"({len(failures)} skipped as errors/too short)")
+    if failures:
+        print(f"WARNING: {len(failures)} chunk(s) failed to draft — re-run to retry",
+              file=sys.stderr)
+        return 1
     return 0
 
 
