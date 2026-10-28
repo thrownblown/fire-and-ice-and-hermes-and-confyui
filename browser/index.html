@@ -547,8 +547,10 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
         }
         if (c.scene !== curS){ curS = c.scene; var g = document.createElement('div'); g.className='grp'; g.textContent = curS; $list.appendChild(g); }
         var has = c.videos.length > 0;
+        var vb = c.verdict==='APPROVE' ? ' <span class="badge done" style="font-size:9.5px">APPROVE</span>'
+               : c.verdict==='NEEDS_FIX' ? ' <span class="badge blocked" style="font-size:9.5px">NEEDS FIX</span>' : '';
         item(st.selYolo===c.chunk,
-          '<div class="t"><span class="id">'+esc(c.chunk)+'</span>'+(has?' <span class="badge done" style="font-size:9.5px">VIDEO</span>':' <span class="badge pending" style="font-size:9.5px">prompt only</span>')+'</div>'
+          '<div class="t"><span class="id">'+esc(c.chunk)+'</span>'+(has?' <span class="badge done" style="font-size:9.5px">VIDEO</span>':' <span class="badge pending" style="font-size:9.5px">prompt only</span>')+vb+'</div>'
           + '<div class="m">'+esc((c.subjects||[]).join(', ')||'(no subjects)')+' <b>'+(c.sheets||[]).length+' sheets · '+(c.plates||[]).length+' plates</b></div>',
           function(){ nav({yolo:c.chunk}); });
       });
@@ -1193,6 +1195,23 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       + ' <span>·</span> graph '+esc(c.graph||'')+'</div>';
     if (!c.videos.length)
       h += '<div class="banner"><span>No video — this chunk was queued (or pending) when the run was aborted. The prompt below is exactly what would have rendered.</span></div>';
+    // jury verdict (PR-review style)
+    if (c.verdict){
+      var vcls = c.verdict==='APPROVE' ? 'done' : (c.verdict==='NEEDS_FIX' ? 'blocked' : 'pending');
+      h += '<div class="section"><h3>Prompt jury</h3><div class="stcard"><div class="shead">'
+        + '<span class="badge '+vcls+'">'+esc(c.verdict)+'</span>'
+        + '<span style="color:var(--dim);font-size:12px">votes: '
+        + Object.keys(c.votes||{}).map(function(m){ return esc(m.split(':')[0]+'='+c.votes[m]); }).join(' · ') + '</span></div>';
+      if (c.fix_summary) h += '<div class="note">'+esc(c.fix_summary)+'</div>';
+      if ((c.issues||[]).length){
+        (c.issues||[]).forEach(function(i){
+          var icls = i.severity==='blocker' ? 'blocked' : (i.severity==='major' ? 'active' : 'pending');
+          h += '<div class="dl"><span class="sp"><span class="badge '+icls+'">'+esc(i.severity||'')+'</span> '+esc(i.category||'')+'</span>'
+            + '<span class="tx">'+esc(i.detail||'')+(i.fix ? '<br><span style="color:var(--accent2);font-size:12px">fix: '+esc(i.fix)+'</span>' : '')+'</span></div>';
+        });
+      }
+      h += '</div></div>';
+    }
     h += '<div class="media">';
     if (c.videos.length){
       h += '<div class="videobox">';

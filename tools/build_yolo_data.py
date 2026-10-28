@@ -50,6 +50,15 @@ def main():
             r = json.loads(l)
             chunk_rows[r["chunk_id"]] = r
 
+    # jury verdicts (manifests/prompt_review.jsonl), if the jury has run
+    reviews = {}
+    rv = ROOT / "manifests" / "prompt_review.jsonl"
+    if rv.exists():
+        for l in rv.read_text(encoding="utf-8").splitlines():
+            if l.strip():
+                r = json.loads(l)
+                reviews[r["chunk"]] = r
+
     graphs = {}
     gdir = RUN_DIR / "graphs"
     if gdir.exists():
@@ -72,6 +81,7 @@ def main():
         pf = pdir / f"{cid}.txt"
         if pf.exists():
             ptxt = pf.read_text(encoding="utf-8")
+        rev = reviews.get(cid, {})
         clips.append({
             "chunk": cid,
             "scene": row.get("scene", ""),
@@ -85,6 +95,10 @@ def main():
             "graph": meta["graph"],
             "videos": [f"runs/yolo_output/{v}" for v in videos.get(cid, [])],
             "prompt": ptxt,
+            "verdict": rev.get("final_verdict"),
+            "fix_summary": rev.get("fix_summary", ""),
+            "issues": rev.get("issues", []),
+            "votes": rev.get("votes", {}),
         })
 
     have_video = sum(1 for c in clips if c["videos"])
