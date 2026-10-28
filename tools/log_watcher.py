@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import os
 import subprocess
 import sys
 import time
@@ -40,6 +41,7 @@ OFFSET = ROOT / "runs" / "yolo_diag" / "watcher.offset"
 ORCH = ROOT / "runs" / "yolo_full_movie.py"
 DRIVER_SRC = ROOT / "runs" / "build_technicolor_audio_only.py"
 PY = str(ROOT / ".venv" / "Scripts" / "python.exe")
+COMFY_5090 = "http://<TOMBSTONE_TS_IP>:8188"
 
 GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
 TRIAGE_MODEL = "qwen3-vl-8b-abl:latest"        # fast text triage
@@ -110,7 +112,74 @@ def diagnose(failure: str) -> str:
         return f"(diagnosis unavailable: {e})"
 
 
+LOCK = ROOT / "runs" / "yolo_diag" / "watcher.lock"
+
+
+def acquire_lock() -> bool:
+    """Multiple schedulers (Task Scheduler + Hermes cron) may fire a poll at the
+    same time — only one may run. Stale locks (>15 min) are a crashed holder."""
+    try:
+        if LOCK.exists():
+            age = time.time() - LOCK.stat().st_mtime
+            if age < 900:
+                return False
+        LOCK.write_text(str(os.getpid()))
+        return True
+    except OSError:
+        return False
+
+
+def release_lock():
+    try:
+        LOCK.unlink(missing_ok=True)
+    except OSError:
+        pass
+
+
+def pull_new_renders() -> list[str]:
+    """Collect completed audioOnly renders off the 5090 onto E: (its /history
+    wipes on reboot — an unpulled render is a lost render)."""
+    pulled = []
+    try:
+        with urllib.request.urlopen(COMFY_5090 + "/history?max_items=200", timeout=20) as r:
+            hist = json.loads(r.read().decode())
+    except Exception:
+        return pulled
+    outdir = ROOT / "runs" / "yolo_output"
+    outdir.mkdir(exist_ok=True)
+    for rec in hist.values():
+        for o in (rec.get("outputs") or {}).values():
+            for v in o.get("videos", []) + o.get("images", []):
+                fn = v.get("filename", "")
+                if "audioOnly" not in fn or not fn.endswith(".mp4"):
+                    continue
+                dest = outdir / fn
+                if dest.exists() and dest.stat().st_size > 0:
+                    continue
+                try:
+                    from urllib.parse import quote
+                    url = (f"{COMFY_5090}/view?filename={quote(fn)}"
+                           f"&subfolder={quote(v.get('subfolder', ''))}"
+                           f"&type={v.get('type', 'output')}")
+                    with urllib.request.urlopen(url, timeout=300) as rr:
+                        dest.write_bytes(rr.read())
+                    pulled.append(fn)
+                except Exception:
+                    pass
+    return pulled
+
+
 def poll(once: bool = False):
+    if not acquire_lock():
+        print("another watcher holds the lock — skipping poll", flush=True)
+        return {}
+    try:
+        return _poll_inner()
+    finally:
+        release_lock()
+
+
+def _poll_inner():
     DIGEST.parent.mkdir(parents=True, exist_ok=True)
     off = int(OFFSET.read_text().strip()) if OFFSET.exists() else 0
     text = LOG.read_text(encoding="utf-8", errors="replace") if LOG.exists() else ""
@@ -141,8 +210,12 @@ def poll(once: bool = False):
         action = f"orchestrator was dead with work pending — relaunched pid {pid}"
         events.append({"failure": "ORCHESTRATOR DEAD", "class": "death", "why": action})
 
+    pulled = pull_new_renders()
+    if pulled:
+        print(f"  pulled {len(pulled)} renders off the 5090", flush=True)
+
     row = {"ts": now, "orchestrator_alive": alive, "counts": counts, "tracked": total,
-           "new_events": events, "action": action}
+           "pulled": pulled, "new_events": events, "action": action}
     with DIGEST.open("a", encoding="utf-8") as f:
         f.write(json.dumps(row) + "\n")
     print(f"[{now}] alive={alive} counts={counts} new_failures={len(new_failures)} action={action}",
