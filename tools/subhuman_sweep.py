@@ -111,7 +111,9 @@ CHARS = {
     "taro": _c("4090", ["none", "person_14", "person_11", "person_13"], "descs/TARO.txt", "taro"),
     "darkwolf": _c("4090", ["none", "person_11", "person_12", "person_13"], "descs/DARKWOLF.txt"),
     "jarol": _c("4090", ["none", "person_06", "person_12", "person_10"], "descs/JAROL.txt"),
-    "tutor": _c("4090", ["none", "person_06", "person_12", "person_10"], "descs/TUTOR.txt"),
+    # tutor is FEMALE (canon, Alex 2026-10-28) — female actor pool only;
+    # _v2 prefix: same tags as the old male-desc run would dedup-skip everything
+    "tutor": _c("4090", ["none", "person_15", "person_17", "person_25", "person_09"], "descs/TUTOR.txt", "tutor_v2"),
     "otwa": _c("4090", ["none", "person_13", "person_12", "person_10"], "descs/OTWA.txt"),
     "nekron": _c("4090", ["none", "person_14", "person_11", "person_13"], "descs/NEKRON.txt"),
     "envoys": _c("4090", ["none", "person_11", "person_06"], "descs/ENVOYS.txt"),
@@ -121,8 +123,10 @@ CHARS = {
     "juliana": _c("5090", ["none", "person_25", "person_15", "person_17"], "descs/JULIANA.txt"),
     "roliel": _c("5090", ["none", "person_23", "person_22", "person_09"], "descs/ROLIEL.txt"),
     "teegra": _c("5090", ["none", "person_21", "person_05", "person_22"], "descs/TEEGRA.txt"),
-    "shaitan": _c("5090", ["none"], "descs/SHAITAN.txt"),
-    "spirit": _c("5090", ["none"], "descs/SPIRIT.txt"),
+    # shaitan is just a panther, NOT anthropomorphic (canon, Alex 2026-10-28) — no actors
+    "shaitan": _c("5090", ["none"], "descs/SHAITAN.txt", "shaitan_v2"),
+    # spirit is ROLIEL'S GHOST (canon) — roliel's actor pool ties the likeness
+    "spirit": _c("5090", ["none", "person_23", "person_22", "person_09"], "descs/SPIRIT.txt", "spirit_v2"),
     # subhuman family (already swept)
     "leader": _c("5090", ["none", "person_07", "person_03", "person_08"], None, "sub_leader"),
     "captain": _c("5090", ["none", "person_07", "person_03", "person_08"], None, "sub_captain"),
