@@ -44,3 +44,6 @@ tmp_*.json
 
 # The source master, by name, in case the extension rule is ever loosened
 Fire.And.Ice*.mp4
+
+# the SPA markup IS source — version it (handoffs asked twice)
+!browser/index.html
