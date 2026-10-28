@@ -50,6 +50,8 @@ def load_blocking() -> dict:
 
 # Always-on cast/scene constraint. Kills the two failure modes seen in the first
 # audio-only pass: H3 inventing background extras, and defaulting to a walk-in.
+# INTIMATE SCENES ONLY — for a group/crowd scene this string is a lie and makes
+# H3 invent an unconstrained cloned crowd (measured 2026-10-27).
 GLOBAL_CONSTRAINT = (
     "ONLY the named characters are present in the shot — there are no other people, "
     "no crowd, no background figures and no extras at any point. The scene is quiet, "
@@ -57,8 +59,19 @@ GLOBAL_CONSTRAINT = (
     "or moves toward the camera."
 )
 
+# Group-scene replacement: the crowd is EXPECTED, but bounded — every person must
+# come from the blocking description, nobody gets invented beyond it.
+GROUP_CONSTRAINT = (
+    "This is a gathering scene with a crowd present. The ONLY people in the shot are "
+    "the named characters and the crowd exactly as described in the blocking — its "
+    "size, costume and arrangement must match that description. Do not add people "
+    "beyond it: no duplicates of the named characters, no new foreground figures, "
+    "and nobody walks toward the camera."
+)
 
-def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None) -> str:
+
+def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
+                 group_scene=False) -> str:
     n_sub = len(subjects)
     sd = "\n".join(
         f"<Subject {i}> is {name}, {T.TRAITS.get(name, '')}, shown in <Picture {i}>."
@@ -106,7 +119,8 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None) ->
             bits.append(f"<Subject {sidx.get(spk, 1)}> (S{sidx.get(spk, 1)}) says: "
                         f"<d>[English] {r['text']}</d>")
         shot_lines.append(" ".join(b for b in bits if b))
-    dd = f"{style}\n\n{GLOBAL_CONSTRAINT}\n\n"
+    constraint = GROUP_CONSTRAINT if group_scene else GLOBAL_CONSTRAINT
+    dd = f"{style}\n\n{constraint}\n\n"
     if blocking:
         dd += blocking + "\n\n"
     dd += "\n\n".join(shot_lines)
@@ -225,7 +239,8 @@ def main():
               f"or pass --force.")
         return
 
-    text = build_prompt(row, subjects, 1 if plate else 0, dialogue, people, blocking)
+    text = build_prompt(row, subjects, 1 if plate else 0, dialogue, people, blocking,
+                        group_scene=is_group_scene)
 
     # prompt lint: never queue a prompt that carries an error string or a
     # dead <Video N> reference — lint failures abort BOTH dry-run and queue.
