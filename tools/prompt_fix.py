@@ -70,6 +70,31 @@ def jury_alive() -> bool:
         return False
 
 
+def jury_complete() -> bool:
+    """True only when every prompt-file chunk has all 3 juror votes AND a
+    judge row. Anything less and the rewrite phase must not start — a crashed
+    jury is indistinguishable from a finished one if you only look at processes."""
+    try:
+        rows = [json.loads(l) for l in (ROOT / "fullrun" / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+        chunks = [r["chunk_id"] for r in rows if (RUN_DIR / "prompts" / f"{r['chunk_id']}.txt").exists()]
+        votes = {}
+        vf = ROOT / "manifests" / "prompt_jury_votes.jsonl"
+        if vf.exists():
+            for l in vf.read_text(encoding="utf-8").splitlines():
+                if l.strip():
+                    r = json.loads(l)
+                    votes.setdefault(r["chunk"], set()).add(r["model"])
+        judged = set()
+        if REVIEW.exists():
+            for l in REVIEW.read_text(encoding="utf-8").splitlines():
+                if l.strip():
+                    judged.add(json.loads(l)["chunk"])
+        return all(len(votes.get(c, set())) >= 3 for c in chunks) and \
+               all(c in judged for c in chunks)
+    except Exception:
+        return False
+
+
 def load_dialogue() -> dict:
     d = {}
     for ln in (ROOT / "script" / "dialogue-timeline.tsv").read_text(encoding="utf-8").splitlines()[1:]:
@@ -169,10 +194,16 @@ def main():
     args = ap.parse_args()
 
     if args.wait_for_jury:
-        print("waiting for the jury to drain (model-churn rule) ...", flush=True)
-        while jury_alive():
+        print("waiting for the jury to COMPLETE (not just exit — a crash is not a drain) ...", flush=True)
+        while True:
             time.sleep(60)
-        print("jury done; starting rewrite phase", flush=True)
+            if jury_complete():
+                print("jury complete; starting rewrite phase", flush=True)
+                break
+            if not jury_alive():
+                # jury died mid-run: the circuit-breaker rule, not a race —
+                # restarting the jury is the scheduler's job, we just keep waiting
+                print("jury not complete and not alive — still waiting", flush=True)
 
     reviews = {}
     if REVIEW.exists():
@@ -197,6 +228,7 @@ def main():
                     done.add(r["chunk"])
 
     n = 0
+    err_streak = 0
     for row in rows:
         cid = row["chunk_id"]
         if cid in done:
@@ -209,6 +241,15 @@ def main():
             f.write(json.dumps(res, ensure_ascii=False) + "\n")
         n += 1
         print(f"[{n}] {cid}: {res['status']}", flush=True)
+        # circuit breaker: a dead endpoint must STOP the run, not record 255 errors
+        if res["status"] == "REWRITER_ERROR":
+            err_streak += 1
+            if err_streak >= 5:
+                print("CIRCUIT BREAKER: 5 consecutive rewriter errors — endpoint is down. "
+                      "ABORTING (re-run to resume; FIXED entries are kept).", flush=True)
+                sys.exit(5)
+        else:
+            err_streak = 0
         if args.limit and n >= args.limit:
             break
     print(f"rewrote {n} chunks; ledger {FIXLEDGER}; v2 dir {V2DIR}", flush=True)

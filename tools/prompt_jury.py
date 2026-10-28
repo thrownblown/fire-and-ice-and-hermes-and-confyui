@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 import time
 import urllib.request
 from pathlib import Path
@@ -214,6 +215,7 @@ def main():
     phases = JURORS + ["judge"] if args.phase == "all" else [args.phase]
     for phase in phases:
         n = 0
+        err_streak = 0
         for row in rows:
             cid = row["chunk_id"]
             pf = RUN_DIR / "prompts" / f"{cid}.txt"
@@ -228,8 +230,14 @@ def main():
                     j = ask(JUDGE, judge_prompt(raw, truth))
                     jd = parse_json(j) or {}
                 except Exception as e:
-                    print(f"  {cid} judge error: {e}", flush=True)
+                    err_streak += 1
+                    print(f"  {cid} judge error ({err_streak} in a row): {e}", flush=True)
+                    if err_streak >= 5:
+                        print("CIRCUIT BREAKER: endpoint down mid-judge — ABORTING "
+                              "(re-run to resume; votes are ledgered).", flush=True)
+                        sys.exit(5)
                     continue
+                err_streak = 0
                 res = {"chunk": cid,
                        "final_verdict": jd.get("final_verdict", "JUDGE_FAILED"),
                        "fix_summary": jd.get("fix_summary", ""),
@@ -248,8 +256,14 @@ def main():
                 try:
                     resp = ask(phase, juror_prompt(phase, prompt_text, truth))
                 except Exception as e:
-                    print(f"  {cid} juror {phase} error: {e}", flush=True)
+                    err_streak += 1
+                    print(f"  {cid} juror {phase} error ({err_streak} in a row): {e}", flush=True)
+                    if err_streak >= 5:
+                        print(f"CIRCUIT BREAKER: endpoint down mid-phase {phase} — "
+                              f"ABORTING (re-run to resume; votes are ledgered).", flush=True)
+                        sys.exit(5)
                     continue
+                err_streak = 0
                 v = parse_json(resp) or {"verdict": "UNPARSEABLE", "issues": []}
                 rec = {"chunk": cid, "model": phase, "verdict": v.get("verdict"),
                        "issues": v.get("issues", []), "raw": resp[:4000]}
