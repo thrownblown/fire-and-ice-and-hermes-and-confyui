@@ -47,3 +47,20 @@ Fire.And.Ice*.mp4
 
 # the SPA markup IS source — version it (handoffs asked twice)
 !browser/index.html
+
+# Model inventories and LoRA catalogs. These are generated dumps of the
+# ComfyUI model store on tombstone and carry third-party model names,
+# including adult ones. They are regenerable state, not work — never commit
+# them (purged from history 2026-10-30; see tools/spicy_check.py).
+manifests/lora_catalog_*.jsonl
+manifests/lora_sort_*.jsonl
+renders/*/INVENTORY.json
+renders/*/INVENTORY.md
+# ComfyUI API dumps — the 5090's /history and /object_info embed model
+# filenames (and therefore the adult LoRA names) at 12 MB of noise
+renders/*/object_info.json
+renders/*/history.json
+*.safetensors
+
+# Pre-rewrite bundles hold the old history; never commit them
+.backups/

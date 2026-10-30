@@ -1,0 +1,10 @@
+#!/bin/sh
+# Block explicit content / model-inventory dumps from being committed.
+# Installed via: git config core.hooksPath .githooks
+# Bypass one-off with: git commit --no-verify
+
+ROOT=$(git rev-parse --show-toplevel)
+PY="$ROOT/.venv/Scripts/python.exe"
+[ -x "$PY" ] || PY="$(command -v python3 || command -v python)"
+
+exec "$PY" "$ROOT/tools/spicy_check.py" --staged "$@"
