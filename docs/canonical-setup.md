@@ -89,9 +89,19 @@ Hard rules:
   - Studio owns residency: request any id and it swaps the runner itself (~15–40 s cold load) and
     evicts after 1 h idle, so mh370 no longer serialises model loads by hand. Batch prompt sets
     per model rather than interleaving arms.
-  - Reasoning-capable models run with a capped thinking budget (512 tokens for chat models) plus
-    an injected wrap-up nudge, and the trace is not preserved between turns — ask goldfishbowl to
-    lift the cap if a comparison cares about the reasoning itself.
+  - **There is NO thinking cap on our arms** (goldfishbowl verified it from the running process,
+    2026-11-01 — the earlier "512-token cap" note describes their server-side defaults, not our
+    models). The real hazard is the OUTPUT allowance: the abliterated arm thinks without a budget,
+    so a small `max_tokens` is spent entirely on reasoning and the API returns a **400 whose body
+    reads like prose** ("The model used its whole output allowance of N tokens on reasoning…") —
+    it looks like the model failed and it is a token-budget artifact. Use `max_tokens >= 2048`
+    (ideally 4096) on that arm. The control cannot think, so a small budget handicaps exactly one
+    arm and silently corrupts the comparison.
+  - **A 200 is not proof the model exists.** An UNKNOWN model id returns HTTP 200 served by
+    whatever is RESIDENT. Always check that the response's `model` field equals the id you asked
+    for before building a run on it.
+  - Residency: the control (`llama3.3-70b`) saturates BOTH R9700s (31.8 + 32.3 GB of 64 GB) —
+    run that arm alone, nothing else resident beside it.
   - Port contract for our scripts: read the base URL from `FNI_GF` (default
     `http://goldfishbowl:8888`) and the token from `GOLDFISHBOWL_API_KEY`; never hardcode either.
   - Hermes wiring: provider `goldfishbowl` (config `providers.goldfishbowl`) — base_url
@@ -116,12 +126,15 @@ Hard rules:
       `llama-cpp/qwen3.8-27b-rvn_q6` and `llama-cpp/qwen3.8-27b-rvn_latest` were REMOVED
       (duplicates of the source GGUFs, kept as `RVN-Q6_K-mtp` / `RVN-Q8_0-mtp` / `RVN-BF16-mtp`).
     - `GOLDFISHBOWL_API_KEY` was added to `~/.hermes/.env` (2026-11-01) and
-      `providers.goldfishbowl.key_env` points at it, but **the supplied secret is REJECTED**:
-      `curl -H "Authorization: Bearer <it>" http://goldfishbowl:8888/v1/models` → 401
-      `"Invalid token payload"`, and a deliberately bogus random token returns the identical body
-      (see the diagnostics above). So the header is fine, the artifact is the wrong kind — it must
-      be a Studio JWT/API key from `/api/auth/login` or `/api/auth/api-keys`. Until a real one
-      lands, every goldfishbowl call from Hermes or a script still 401s.
+      `providers.goldfishbowl.key_env` points at it, but **the supplied secret was the wrong KIND
+      of artifact** — it was `ADMIN_PASSWORD.txt`, the Studio UI's BROWSER login password
+      (goldfishbowl reproduced it: sending it returns 401 `"Invalid token payload"`, byte-identical
+      to what a random string returns). The correct artifact is an **API key: `sk-unsloth-` prefix,
+      43 chars, a plain bearer token** (not a JWT, not session-bound, works from any host).
+      goldfishbowl has MINTED one labelled `mh370` and verified HTTP 200 over the tailnet; its
+      value sits at `~/.unsloth/studio/MH370_KEY.txt` (mode 0600) on goldfishbowl and is NOT in
+      any repo — **it needs Alex to hand it over**. Until then every goldfishbowl call from Hermes
+      or a script still 401s.
     - 12 first-party files still POST the retired native API (`/api/generate`, `/api/tags`) and
       request Ollama ids — they must be ported to `/v1/chat/completions` with the bearer header:
       `runs/yolo_full_movie.py` (preflight + `BLOCK_MODEL` + its `--endpoint goldfishbowl` pin),
