@@ -94,16 +94,27 @@ Hard rules:
     lift the cap if a comparison cares about the reasoning itself.
   - Port contract for our scripts: read the base URL from `FNI_GF` (default
     `http://goldfishbowl:8888`) and the token from `GOLDFISHBOWL_API_KEY`; never hardcode either.
-  - Hermes wiring: provider `goldfishbowl` (config `providers.goldfishbowl`) — base_url now
-    `http://goldfishbowl:8888/v1` (set 2026-11-01, verified via `hermes config get`). Still to
-    do: the bearer key and the Ollama-era model ids. Appears in the `hermes model` picker under
-    Custom Endpoints; also addressable as `custom:goldfishbowl`. Quick-switch aliases
-    (`goldfish-70b`, `goldfish-coder`, `goldfish-vision`) all still carry Ollama-style ids.
+  - Hermes wiring: provider `goldfishbowl` (config `providers.goldfishbowl`) — base_url
+    `http://goldfishbowl:8888/v1`, `key_env: GOLDFISHBOWL_API_KEY`, `default_model:
+    RVN-Q8_0-mtp` (2026-11-01, verified via `hermes config get`). Appears in the `hermes model`
+    picker under Custom Endpoints; also addressable as `custom:goldfishbowl`. Quick-switch aliases
+    now on live ids: `goldfish-70b` → `llama-cpp/llama3.3-70b_latest`, `goldfish-coder` →
+    `llama-cpp/qwen3-coder_30b`, `goldfish-vision` → `llama-cpp/qwen3-vl-32b-heretic_ctx128k`
+    (all four strings were checked against goldfishbowl's published 22-id snapshot,
+    `agents/goldfishbowl/STATUS.md` → "Served models"). Still to do: the bearer key.
+  - **SERVABILITY RULE (goldfishbowl's, and it bites):** the listing is not proof a model
+    LOADS. Confirm a model actually answers before building a run on it — `vllm/qwen3.8-27b-heretic`
+    sat in the list as an incomplete download and is NOT servable.
   - **Breakage from the retirement — mh370 side, NOT yet fixed (2026-11-01):**
-    - `providers.goldfishbowl.default_model: qwen3.8-27b-rvn:latest` and the three
-      `model.aliases.goldfish-*` ids (`llama3.3-70b:latest`, `terse-coder:latest`,
-      `qwen3-vl-32b-heretic:latest`) no longer exist. Replace them with ids read live from
-      `/v1/models` (prefix `llama-cpp/`, plus `vllm/...` folder ids).
+    - ~~`providers.goldfishbowl.default_model` + the three `model.aliases.goldfish-*` ids carried
+      Ollama-era names~~ **FIXED 2026-11-01** from goldfishbowl's published live list:
+      `RVN-Q8_0-mtp` (their source-name form of the retired `qwen3.8-27b-rvn:latest` — same
+      weights), `llama-cpp/llama3.3-70b_latest`, `llama-cpp/qwen3-coder_30b`,
+      `llama-cpp/qwen3-vl-32b-heretic_ctx128k`. All four appear in the snapshot; NONE has been
+      confirmed to answer yet (see the servability rule above) — that needs the key.
+      Note the dedupe that came with the list: `llama-cpp/cydonia-24b_q8_0`,
+      `llama-cpp/qwen3.8-27b-rvn_q6` and `llama-cpp/qwen3.8-27b-rvn_latest` were REMOVED
+      (duplicates of the source GGUFs, kept as `RVN-Q6_K-mtp` / `RVN-Q8_0-mtp` / `RVN-BF16-mtp`).
     - `GOLDFISHBOWL_API_KEY` was added to `~/.hermes/.env` (2026-11-01) and
       `providers.goldfishbowl.key_env` points at it, but **the supplied secret is REJECTED**:
       `curl -H "Authorization: Bearer <it>" http://goldfishbowl:8888/v1/models` → 401
