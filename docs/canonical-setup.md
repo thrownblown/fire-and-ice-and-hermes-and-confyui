@@ -62,9 +62,25 @@ Hard rules:
 - **Unsloth Studio** (goldfishbowl only — replaced Ollama 2026-11-01): llama.cpp + ROCm on the
   box's 2x R9700. Endpoints: `http://goldfishbowl:8888/v1` (MagicDNS — PREFER this; the IP can
   move), tailnet `http://<GOLDFISHBOWL_TS_IP>:8888/v1`, LAN `http://<LAN_IP>:8888/v1`. OpenAI
-  `/v1/chat/completions` + `/v1/models`, Anthropic `/v1/messages`. **Bearer auth is required**
-  (`Authorization: Bearer <key>`) — the old "no auth" property is gone and the key is
-  deliberately NOT in any repo: get it from Alex out-of-band.
+  `/v1/chat/completions` + `/v1/models`, Anthropic `/v1/messages`. **Bearer auth is required** and
+  it wants a JWT-class token: `Authorization: Bearer <token>`, where `<token>` comes from
+  `POST /api/auth/login` (`{username,password}` — the Studio's owner account, `default_username:
+  unsloth`) or from an API key minted at `POST /api/auth/api-keys` (`{name, expires_in_days}`,
+  response `{"key": ...}` shown once). Keys/tokens are NEVER in a repo — get them from Alex
+  out-of-band.
+  - **Two distinct 401 bodies are the diagnostic** (both `authentication_error`):
+    `"Not authenticated"` = no usable `Authorization` header reached the auth layer (also what you
+    get if you use `X-Api-Key` / `api-key` — those header names are IGNORED). `"Invalid token
+    payload"` = the header was read but the string is not a decodable token. **Any non-JWT string
+    produces the second one**, including a random one, so `"Invalid token payload"` tells you the
+    string is the wrong KIND of artifact — it does not mean "wrong key, close enough".
+  - Alternative sanctioned mode: `GET/PUT /api/settings/keyless-api-access`
+    (`scope: off|inference|full`, `tools`, `exposure: colab|public_url|private_lan|network`).
+    `scope=inference` + `exposure=private_lan` would let the tailnet use `/v1` with no key at all —
+    a one-time owner-authenticated setting, Alex's call, not ours to flip.
+  - Full spec is public on the box: `curl -4 -s http://goldfishbowl:8888/openapi.json`
+    (Unsloth UI Backend, v2026.10.11, 583 paths, `HTTPBearer` scheme). `/api/health`, `/docs`,
+    `/openapi.json`, `/api/auth/status`, `/api/auth/identity` answer UNauthenticated.
   - `GET /v1/models` is the inventory AND the residency read: 26 ids, each with `quant`,
     `context_length`/`native_context_length`/`max_context_length`/`vram_fit_context_length`,
     `status`, `loaded`. It replaces `/api/tags` + `/api/ps`. Caveat: one model can appear twice
@@ -88,9 +104,13 @@ Hard rules:
       `model.aliases.goldfish-*` ids (`llama3.3-70b:latest`, `terse-coder:latest`,
       `qwen3-vl-32b-heretic:latest`) no longer exist. Replace them with ids read live from
       `/v1/models` (prefix `llama-cpp/`, plus `vllm/...` folder ids).
-    - No bearer key in `~/.hermes/.env` (`GOLDFISHBOWL_API_KEY` absent — only DISCORD_BOT_TOKEN,
-      LM_API_KEY, OPENROUTER_API_KEY are defined). Until it is added, every goldfishbowl call
-      from Hermes or a script returns HTTP 401.
+    - `GOLDFISHBOWL_API_KEY` was added to `~/.hermes/.env` (2026-11-01) and
+      `providers.goldfishbowl.key_env` points at it, but **the supplied secret is REJECTED**:
+      `curl -H "Authorization: Bearer <it>" http://goldfishbowl:8888/v1/models` → 401
+      `"Invalid token payload"`, and a deliberately bogus random token returns the identical body
+      (see the diagnostics above). So the header is fine, the artifact is the wrong kind — it must
+      be a Studio JWT/API key from `/api/auth/login` or `/api/auth/api-keys`. Until a real one
+      lands, every goldfishbowl call from Hermes or a script still 401s.
     - 12 first-party files still POST the retired native API (`/api/generate`, `/api/tags`) and
       request Ollama ids — they must be ported to `/v1/chat/completions` with the bearer header:
       `runs/yolo_full_movie.py` (preflight + `BLOCK_MODEL` + its `--endpoint goldfishbowl` pin),
