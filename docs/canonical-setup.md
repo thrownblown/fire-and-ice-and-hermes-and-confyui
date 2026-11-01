@@ -14,23 +14,27 @@ re-run it before changing a value; never edit from memory.
 
 ## 1. Rigs
 
-| | mh370 (the "4090 box") | tombstone (the "5090 box") | goldfishbowl (Ollama box) |
+| | mh370 (the "4090 box") | tombstone (the "5090 box") | goldfishbowl (model-server box) |
 |---|---|---|---|
 | OS | Windows 11, git-bash/MSYS shell | Ubuntu Linux | Linux |
-| GPU | RTX 4090, 24 GB (driver 617.42) | RTX 5090, 32 GB (cudaMallocAsync) | unknown — ≥41 GB VRAM (qwen3.8-27b Q8_0 fully in VRAM per Ollama `/api/ps`) |
+| GPU | RTX 4090, 24 GB (driver 617.42) | RTX 5090, 32 GB (cudaMallocAsync) | 2x Radeon AI PRO R9700, 64 GB total (ROCm) — reported by goldfishbowl's own STATUS 2026-11-01; not probeable from mh370 |
 | RAM | 68 GB | 66 GB | unknown |
-| LAN IP | <LAN_IP> (flapping) | <LAN_IP> (flapping) | <ROUTER_IP> (<LAN_SUBNET>/24 — different subnet from the flapping 12/1 nets) |
-| Tailscale | <MH370_TS_IP> | <TOMBSTONE_TS_IP> | <GOLDFISHBOWL_TS_IP> |
+| LAN IP | <LAN_IP> (flapping) | <LAN_IP> (flapping) | <LAN_IP> (per goldfishbowl 2026-11-01; was <ROUTER_IP>) |
+| Tailscale | <MH370_TS_IP> | <TOMBSTONE_TS_IP> | <GOLDFISHBOWL_TS_IP> · MagicDNS `goldfishbowl` |
 | ComfyUI | localhost:8188, v0.40.0 (win32) | :8188, v0.39.0 (linux) — Tailscale <TOMBSTONE_TS_IP>:8188 (preferred) and LAN <LAN_IP>:8188 are the SAME box, two paths; both work from mh370 | none — no `/system_stats` on :8188 |
-| Access | local (Hermes sessions run here) | HTTP API ONLY — no SSH, ever. Filesystem visible only via `/view` and the LoRA Manager catalog | HTTP API only — Ollama :11434 (SSH unverified) |
-| Roles | LM Studio, FNI dev/venv, local ComfyUI (plates, Krea2 probes, restyle) | H3 video renders, Krea2 stills, Qwen-Edit wardrobe runs | Ollama model server (OpenAI-compatible `/v1`, no auth) |
+| Access | local (Hermes sessions run here) | HTTP API ONLY — no SSH, ever. Filesystem visible only via `/view` and the LoRA Manager catalog | HTTP API only — Unsloth Studio :8888, bearer token REQUIRED (no anonymous path); SSH unverified |
+| Roles | LM Studio, FNI dev/venv, local ComfyUI (plates, Krea2 probes, restyle) | H3 video renders, Krea2 stills, Qwen-Edit wardrobe runs | Unsloth Studio model server (llama.cpp + ROCm): OpenAI `/v1/chat/completions` + `/v1/models`, Anthropic `/v1/messages` |
 
 Verify: `curl -4 -s http://<addr>:8188/system_stats` — `os: win32` = mh370, `os: linux` =
 tombstone; GPU name in `devices[]`. Identity never depends on version numbers or IPs alone.
-goldfishbowl has no ComfyUI — identify via `tailscale status` (hostname, `os: linux`) and
-Ollama `curl -4 -s http://<GOLDFISHBOWL_TS_IP>:11434/api/version|/api/tags|/api/ps`.
-GPU/RAM/SSH for goldfishbowl are still UNVERIFIED (no SSH; Ollama HTTP exposes none of
-them) — added 2026-10-23, fill the unknowns in when `nvidia-smi` becomes reachable.
+goldfishbowl has no ComfyUI — identify it with
+`curl -4 -s -o /dev/null -w '%{http_code}' http://goldfishbowl:8888/v1/models`: **401 = the server
+is up and wants the bearer token** (the key is NOT in this repo or in `~/.hermes/.env` yet — get it
+from Alex). A connection-refused there is the server being down, not a bad path.
+**Ollama is RETIRED on goldfishbowl (2026-11-01):** `:11434`, `/api/tags`, `/api/ps`,
+`/api/generate` and `/api/version` are gone (the service, its health watchdog and the size-guard
+proxy are all stopped and disabled). A stale poller gets connection-refused (`curl` exit code /
+HTTP 000), which reads like a network fault — it is the migration.
 
 Hard rules:
 - The 4090's GPU is ONE shared resource: LM Studio and ComfyUI image-gen are mutually
@@ -55,29 +59,62 @@ Hard rules:
   general small `mistral-7b`. Hermes `vision_analyze` also rides this LM Studio.
   The 27B models are crash-prone under delegation and qwq-32b's 40k context is below
   Hermes's 64k floor — subagents use the configured delegation provider, not these.
-- **Ollama** (goldfishbowl only): OpenAI-compatible at `http://<GOLDFISHBOWL_TS_IP>:11434/v1`,
-  no auth, Ollama 0.40.6. Native API at `/api/tags` (model list), `/api/ps` (loaded models +
-  `size_vram`). Models (2026-10-23): qwen3.8-27b-rvn (latest/Q8_0, :q6, :mtp-test),
-  qwen3.5-35b-a3b (Q8_0), llama3.3-70b (Q5_K_S, 131k ctx), magnum-v4-72b (32k ctx — below
-  Hermes's 64k floor), terse-coder + qwen3-coder:30b + huihui coder-abliterated (coder),
-  qwen3-vl-8b-abl + qwen3-vl-32b-heretic (vision), cydonia-24b (Q8_0, 131k).
-  Hermes wiring: provider `goldfishbowl` (config `providers.goldfishbowl`: base_url
-  `http://<GOLDFISHBOWL_TS_IP>:11434/v1`, `default_model: qwen3.8-27b-rvn:latest`, keyless —
-  no `api_key`/`key_env`). Appears in the `hermes model` picker under Custom Endpoints;
-  also addressable as `custom:goldfishbowl`. Quick-switch model aliases: `goldfish-70b`
-  (llama3.3-70b), `goldfish-coder` (terse-coder), `goldfish-vision` (qwen3-vl-32b-heretic),
-  all `provider: goldfishbowl`.
+- **Unsloth Studio** (goldfishbowl only — replaced Ollama 2026-11-01): llama.cpp + ROCm on the
+  box's 2x R9700. Endpoints: `http://goldfishbowl:8888/v1` (MagicDNS — PREFER this; the IP can
+  move), tailnet `http://<GOLDFISHBOWL_TS_IP>:8888/v1`, LAN `http://<LAN_IP>:8888/v1`. OpenAI
+  `/v1/chat/completions` + `/v1/models`, Anthropic `/v1/messages`. **Bearer auth is required**
+  (`Authorization: Bearer <key>`) — the old "no auth" property is gone and the key is
+  deliberately NOT in any repo: get it from Alex out-of-band.
+  - `GET /v1/models` is the inventory AND the residency read: 26 ids, each with `quant`,
+    `context_length`/`native_context_length`/`max_context_length`/`vram_fit_context_length`,
+    `status`, `loaded`. It replaces `/api/tags` + `/api/ps`. Caveat: one model can appear twice
+    (folder name and `:QUANT` variant) — same weights. **Treat this list as authoritative**: the
+    id prefix changed once already (`ollama-served/` → `llama-cpp/`, 13 ids) inside a single day.
+  - Studio owns residency: request any id and it swaps the runner itself (~15–40 s cold load) and
+    evicts after 1 h idle, so mh370 no longer serialises model loads by hand. Batch prompt sets
+    per model rather than interleaving arms.
+  - Reasoning-capable models run with a capped thinking budget (512 tokens for chat models) plus
+    an injected wrap-up nudge, and the trace is not preserved between turns — ask goldfishbowl to
+    lift the cap if a comparison cares about the reasoning itself.
+  - Port contract for our scripts: read the base URL from `FNI_GF` (default
+    `http://goldfishbowl:8888`) and the token from `GOLDFISHBOWL_API_KEY`; never hardcode either.
+  - Hermes wiring: provider `goldfishbowl` (config `providers.goldfishbowl`) — base_url now
+    `http://goldfishbowl:8888/v1` (set 2026-11-01, verified via `hermes config get`). Still to
+    do: the bearer key and the Ollama-era model ids. Appears in the `hermes model` picker under
+    Custom Endpoints; also addressable as `custom:goldfishbowl`. Quick-switch aliases
+    (`goldfish-70b`, `goldfish-coder`, `goldfish-vision`) all still carry Ollama-style ids.
+  - **Breakage from the retirement — mh370 side, NOT yet fixed (2026-11-01):**
+    - `providers.goldfishbowl.default_model: qwen3.8-27b-rvn:latest` and the three
+      `model.aliases.goldfish-*` ids (`llama3.3-70b:latest`, `terse-coder:latest`,
+      `qwen3-vl-32b-heretic:latest`) no longer exist. Replace them with ids read live from
+      `/v1/models` (prefix `llama-cpp/`, plus `vllm/...` folder ids).
+    - No bearer key in `~/.hermes/.env` (`GOLDFISHBOWL_API_KEY` absent — only DISCORD_BOT_TOKEN,
+      LM_API_KEY, OPENROUTER_API_KEY are defined). Until it is added, every goldfishbowl call
+      from Hermes or a script returns HTTP 401.
+    - 12 first-party files still POST the retired native API (`/api/generate`, `/api/tags`) and
+      request Ollama ids — they must be ported to `/v1/chat/completions` with the bearer header:
+      `runs/yolo_full_movie.py` (preflight + `BLOCK_MODEL` + its `--endpoint goldfishbowl` pin),
+      `runs/diag_yolo_renders.py`, and in `tools/`: `vlm_blocking.py`, `prompt_jury.py`,
+      `prompt_fix.py`, `describe_all.py`, `plate_figure_check.py`, `review_scenes.py`,
+      `review_sweep.py`, `subhuman_krea2.py`, `log_watcher.py`, `test_hand_fix.py`. (The
+      `vlm_*.py` tools that name `qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s` ride mh370's
+      LM Studio and are unaffected.)
 - **Open WebUI** (mh370 only, added 2026-10-25): chat UI at `http://localhost:8080` (bound
   0.0.0.0, so also `http://<MH370_TS_IP>:8080` over Tailscale), v0.12.4, `WEBUI_AUTH=true` —
-  the first account created there becomes admin. Its ONLY model backend is goldfishbowl
-  Ollama (`OLLAMA_BASE_URLS=http://<GOLDFISHBOWL_TS_IP>:11434`, `ENABLE_OPENAI_API=false`).
+  the first account created there becomes admin. **Its model backend is BROKEN (2026-11-01):** the
+  launcher (`start-openwebui.cmd` lines 11–14) still sets
+  `OLLAMA_BASE_URL(S)=http://<GOLDFISHBOWL_TS_IP>:11434` with `ENABLE_OLLAMA_API=true` and
+  `ENABLE_OPENAI_API=false`, so its model list died with Ollama. Fix = re-point it at the Unsloth
+  Studio OpenAI endpoint (`OPENAI_API_BASE_URL=http://goldfishbowl:8888/v1`, the bearer key,
+  `ENABLE_OPENAI_API=true`, Ollama disabled) — blocked on the same missing key.
   Installed with `uv tool install open-webui` -> `%USERPROFILE%\.local\bin\open-webui.exe`
   (uv-managed Python 3.11.14; does NOT touch `E:\FNI\.venv`). Data/DB
   `C:\Users\<user>\open-webui\data`, launcher `...\start-openwebui.cmd`, log
   `...\logs\open-webui.log`, autostart via Startup-folder `Open WebUI.vbs` (a scheduled task
   was denied — needs elevation). Embeddings run on CPU: no 4090 conflict with ComfyUI/LM
   Studio. Verify: `curl -4 -s http://127.0.0.1:8080/health` -> `{"status":true}`; with a
-  token, `GET /ollama/config` returns the goldfishbowl URL and `GET /api/models` its 14 models.
+  token, `GET /ollama/config` currently still returns the DEAD `:11434` URL and its model list is
+  empty — that is expected until the re-point above lands, not a separate fault.
 - **Hermes dashboard (web admin UI)** (mh370): `hermes dashboard` on `127.0.0.1:9119`
   (loopback by design — auth-gated token/basic login). Tailnet access is via
   `tailscale serve --bg --https=443 http://127.0.0.1:9119` →
