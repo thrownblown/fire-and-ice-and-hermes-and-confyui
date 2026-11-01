@@ -40,21 +40,28 @@ V2DIR = RUN_DIR / "prompts_v2"
 CTX = (ROOT / "docs" / "prompt-jury-context.md").read_text(encoding="utf-8")
 FIXLEDGER = ROOT / "manifests" / "prompt_fixes.jsonl"
 REVIEW = ROOT / "manifests" / "prompt_review.jsonl"
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
-MODEL = "llama3.3-70b:latest"
+GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"   # RETIRED (Ollama) — kept only as a tombstone
+MODEL = "llama-cpp/llama3.3-70b_latest"          # was llama3.3-70b:latest (Ollama id, gone)
+MAX_TOKENS = 4096       # never below 2048: the abliterated arm thinks without a budget and
+                        # would spend the whole allowance on reasoning, returning HTTP 400 whose
+                        # body reads like prose (looks like a model fault; it is a budget artifact)
 SECTIONS = ["subject_definitions", "summary", "retention_analysis",
             "detailed_description", "overall_soundscape", "non_diegetic_music"]
 
 sys.path.insert(0, str(ROOT))
+from core import gf_client as gf              # noqa: E402  (goldfishbowl transport: Studio /v1)
 from core.prompt_guards import looks_like_error  # noqa: E402
 
 
 def ask(prompt: str, timeout: int = 900) -> str:
-    body = json.dumps({"model": MODEL, "prompt": prompt, "stream": False,
-                       "options": {"temperature": 0.15}}).encode()
-    req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return (json.load(r).get("response") or "").strip()
+    """Transport lives in core/gf_client.py (Unsloth Studio /v1/chat/completions + bearer).
+
+    The old Ollama call was `{"prompt": ..., "options": {...}}` against
+    /api/generate on :11434 — that endpoint and its model ids are gone (2026-11-01).
+    gf.chat also refuses a reply that came from a DIFFERENT model than the one asked
+    for, which is how an unknown id silently gets served by whatever is resident.
+    """
+    return gf.chat(MODEL, prompt, max_tokens=MAX_TOKENS, temperature=0.15, timeout=timeout)
 
 
 def jury_alive() -> bool:
@@ -174,24 +181,48 @@ def fix_chunk(row, dialogue, blocking, review, log=print):
         try:
             out = ask(rewrite_prompt(original, issues_text, truth, feedback))
         except Exception as e:
-            return {"chunk": cid, "status": "REWRITER_ERROR", "error": str(e)}
+            return {"chunk": cid, "status": "REWRITER_ERROR", "error": str(e),
+                    "model": MODEL, "max_tokens": MAX_TOKENS}
         problems = verify(out, row, dialogue)
         if not problems:
             V2DIR.mkdir(parents=True, exist_ok=True)
             (V2DIR / f"{cid}.txt").write_text(out, encoding="utf-8")
             return {"chunk": cid, "status": "FIXED", "attempt": attempt,
-                    "v2": str(V2DIR / f"{cid}.txt"), "ts": time.strftime("%Y-%m-%dT%H:%M:%S")}
+                    "v2": str(V2DIR / f"{cid}.txt"), "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                    "model": MODEL, "max_tokens": MAX_TOKENS}
         feedback = "\n".join("- " + p for p in problems)
         log(f"    {cid} attempt {attempt} failed verify: {problems[:3]}")
-    return {"chunk": cid, "status": "FAILED_VERIFY", "problems": problems}
+    return {"chunk": cid, "status": "FAILED_VERIFY", "problems": problems,
+            "model": MODEL, "max_tokens": MAX_TOKENS}
 
 
 def main():
+    global MODEL, MAX_TOKENS, V2DIR, FIXLEDGER
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--chunk")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--wait-for-jury", action="store_true")
+    ap.add_argument("--model", default=MODEL,
+                    help="rewriter model id — this is the A/B knob (arm vs control)")
+    ap.add_argument("--max-tokens", type=int, default=MAX_TOKENS)
+    ap.add_argument("--out-dir", default=None,
+                    help="where rewritten prompts go (A/B: give each arm its own dir)")
+    ap.add_argument("--ledger", default=None,
+                    help="fix ledger to append to (A/B: give each arm its own ledger)")
     args = ap.parse_args()
+
+    MODEL = args.model
+    MAX_TOKENS = args.max_tokens
+    if MAX_TOKENS < gf.MIN_TOKENS_FOR_THINKERS:
+        print(f"WARNING: --max-tokens {MAX_TOKENS} is under the {gf.MIN_TOKENS_FOR_THINKERS} floor — "
+              f"a thinking arm spends the whole allowance on reasoning and returns no answer",
+              flush=True)
+    if args.out_dir:
+        V2DIR = Path(args.out_dir)
+    if args.ledger:
+        FIXLEDGER = Path(args.ledger)
+    print(f"rewriter: {MODEL} | max_tokens: {MAX_TOKENS} | v2 -> {V2DIR} | ledger -> {FIXLEDGER}",
+          flush=True)
 
     if args.wait_for_jury:
         print("waiting for the jury to COMPLETE (not just exit — a crash is not a drain) ...", flush=True)

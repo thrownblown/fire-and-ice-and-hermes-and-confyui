@@ -100,6 +100,14 @@ Hard rules:
   - **A 200 is not proof the model exists.** An UNKNOWN model id returns HTTP 200 served by
     whatever is RESIDENT. Always check that the response's `model` field equals the id you asked
     for before building a run on it.
+  - **Verified servable 2026-11-01** (response `model` field checked on both): `llama-cpp/qwen3-vl-8b-abl_latest`
+    (5 s, answered "PONG") and `llama-cpp/huihui_ai_Qwen3.8-abliterated_27b` (15 s cold, answered a
+    rewrite with `finish_reason: stop` at `max_tokens: 2048`). The A/B arm therefore works with the
+    documented settings. Not yet exercised: the control `llama3.3-70b` (48.7 GB, saturates both
+    cards — load it only for the run itself).
+  - **Prompt overhead is real:** a 6-word user message billed `prompt_tokens` 1290–1499, i.e. the
+    server injects ~1.3k tokens of its own template per call. Budget for it when comparing arms,
+    and never read `prompt_tokens` as our prompt's length.
   - Residency: the control (`llama3.3-70b`) saturates BOTH R9700s (31.8 + 32.3 GB of 64 GB) —
     run that arm alone, nothing else resident beside it.
   - Port contract for our scripts: read the base URL from `FNI_GF` (default
@@ -125,16 +133,16 @@ Hard rules:
       Note the dedupe that came with the list: `llama-cpp/cydonia-24b_q8_0`,
       `llama-cpp/qwen3.8-27b-rvn_q6` and `llama-cpp/qwen3.8-27b-rvn_latest` were REMOVED
       (duplicates of the source GGUFs, kept as `RVN-Q6_K-mtp` / `RVN-Q8_0-mtp` / `RVN-BF16-mtp`).
-    - `GOLDFISHBOWL_API_KEY` was added to `~/.hermes/.env` (2026-11-01) and
-      `providers.goldfishbowl.key_env` points at it, but **the supplied secret was the wrong KIND
-      of artifact** — it was `ADMIN_PASSWORD.txt`, the Studio UI's BROWSER login password
-      (goldfishbowl reproduced it: sending it returns 401 `"Invalid token payload"`, byte-identical
-      to what a random string returns). The correct artifact is an **API key: `sk-unsloth-` prefix,
-      43 chars, a plain bearer token** (not a JWT, not session-bound, works from any host).
-      goldfishbowl has MINTED one labelled `mh370` and verified HTTP 200 over the tailnet; its
-      value sits at `~/.unsloth/studio/MH370_KEY.txt` (mode 0600) on goldfishbowl and is NOT in
-      any repo — **it needs Alex to hand it over**. Until then every goldfishbowl call from Hermes
-      or a script still 401s.
+    - **Key: RESOLVED and verified 2026-11-01.** The string first supplied was
+      `ADMIN_PASSWORD.txt`, the Studio UI's BROWSER login password (sending it returns 401
+      `"Invalid token payload"`, byte-identical to a random string). The correct artifact is an
+      **API key: `sk-unsloth-` prefix, 43 chars, plain bearer token** (not a JWT, not
+      session-bound, works from any host). goldfishbowl minted one labelled `mh370` at
+      `~/.unsloth/studio/MH370_KEY.txt` (0600) on their box; Alex handed the value over and it is
+      now in `~/.hermes/.env` as `GOLDFISHBOWL_API_KEY`. Verified from mh370 the same minute:
+      `GET /v1/models` → **200, 22 ids**, matching goldfishbowl's published snapshot exactly, and
+      all five ids we hold are present. Inference confirmed on two ids with the response `model`
+      field checked (see below). No Hermes restart was needed — `key_env` is read per call.
     - 12 first-party files still POST the retired native API (`/api/generate`, `/api/tags`) and
       request Ollama ids — they must be ported to `/v1/chat/completions` with the bearer header:
       `runs/yolo_full_movie.py` (preflight + `BLOCK_MODEL` + its `--endpoint goldfishbowl` pin),
