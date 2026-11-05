@@ -78,10 +78,11 @@ def render(char: str, variant: int, seed: int, prompt: str, dry: bool) -> Path |
     from core.asset_reconcile import snap
 
     g = json.loads(Path(glp.WF).read_text(encoding="utf-8"))
-    g[glp.POS_MAIN]["inputs"]["positive"] = prompt
-    if glp.POS_PRE in g:
-        g[glp.POS_PRE]["inputs"]["positive"] = glp.STYLE_PRE
-    g[glp.SAMPLER]["inputs"]["seed"] = seed
+    # Build through the plate tool's own build_graph so the LoRA policy is INHERITED, not re-implemented:
+    # it switches the character LoRA off and keeps the retro-fantasy style LoRA at 1.0. Building from the
+    # raw workflow leaves the character LoRA on, which is how a probe once painted a woman into a jungle.
+    # The character description goes in as the positive prompt — one variable, the prompt.
+    g = glp.build_graph({"slug": char.lower(), "prompt": prompt}, seed, prefix)
     for node in g.values():
         if isinstance(node, dict) and "filename_prefix" in (node.get("inputs") or {}):
             node["inputs"]["filename_prefix"] = prefix
@@ -167,6 +168,8 @@ def main() -> int:
     ap.add_argument("--chars", required=True)
     ap.add_argument("--variants", type=int, default=2)
     ap.add_argument("--seed-base", type=int, default=515000000)
+    ap.add_argument("--extra", default="",
+                    help="text appended to every character prompt — the loop's one-variable lever")
     ap.add_argument("--dry", action="store_true")
     a = ap.parse_args()
 
@@ -182,9 +185,10 @@ def main() -> int:
             print(f"[{char}] NO desc/traits on disk — skipping (a blank comparison invites invention)")
             continue
         print(f"\n[{char}] {desc[:110]}...")
+        prompt_text = (desc + (" " + a.extra if a.extra else ""))
         for v in range(1, a.variants + 1):
             seed = a.seed_base + sum(map(ord, char)) * 10 + v
-            img = render(char, v, seed, desc, a.dry)
+            img = render(char, v, seed, prompt_text, a.dry)
             if not img:
                 continue
             try:
@@ -194,7 +198,8 @@ def main() -> int:
                 continue
             j = v2.get("json") or {}
             print(f"   v{v} seed={seed} -> {j.get('verdict','?')}  fix: {str(j.get('single_most_important_fix',''))[:90]}")
-            rows.append({"char": char, "variant": v, "seed": seed, "image": str(img.relative_to(ROOT)).replace("\\", "/"),
+            rows.append({"char": char, "variant": v, "seed": seed, "extra": a.extra,
+                         "image": str(img.relative_to(ROOT)).replace("\\", "/"),
                          "judge": JUDGE, "verdict": j.get("verdict"), "fields": j.get("fields"),
                          "differences": j.get("differences"), "fix": j.get("single_most_important_fix"),
                          "raw": v2.get("raw")})
