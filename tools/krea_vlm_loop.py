@@ -98,7 +98,17 @@ def render(char: str, variant: int, seed: int, prompt: str, dry: bool) -> Path |
     deadline = time.time() + 900
     while time.time() < deadline:
         time.sleep(3)
-        h = json.load(urllib.request.urlopen(f"{base}/history/{pid}", timeout=60))
+        # Poll tolerantly: this ComfyUI answers 404 for a prompt id that is queued but not yet in
+        # /history, which is NOT a failure — treat any HTTP error on the poll as "not ready" and keep
+        # waiting, and only report the URL if the whole wait times out.
+        try:
+            h = json.load(urllib.request.urlopen(f"{base}/history/{pid}", timeout=60))
+        except urllib.error.HTTPError as e:
+            if e.code >= 500:
+                print(f"   poll {base}/history/{pid} -> HTTP {e.code}, still waiting")
+            continue
+        except Exception:  # noqa: BLE001
+            continue
         rec = h.get(pid)
         if not rec:
             continue
@@ -112,9 +122,19 @@ def render(char: str, variant: int, seed: int, prompt: str, dry: bool) -> Path |
                 if not fn or not fn.lower().endswith(".png"):
                     continue
                 dest = outdir / fn
-                url = f"{base}/view?" + urllib.parse.urlencode({"filename": fn, "type": "output"})
-                with urllib.request.urlopen(url, timeout=180) as r, dest.open("wb") as fh:
-                    fh.write(r.read())
+                # Use the type/subfolder the history REPORTS. Hardcoding type=output 404s for any node
+                # that saves to temp (the Krea2 graph's save node does), and the 404 reads like a
+                # missing file rather than a wrong parameter.
+                params = {"filename": fn,
+                          "type": img.get("type") or "output",
+                          "subfolder": img.get("subfolder") or ""}
+                url = f"{base}/view?" + urllib.parse.urlencode(params)
+                try:
+                    with urllib.request.urlopen(url, timeout=180) as r, dest.open("wb") as fh:
+                        fh.write(r.read())
+                except urllib.error.HTTPError as e:
+                    print(f"   download FAILED {e.code} {url}")
+                    return None
                 if dest.stat().st_size:
                     if ch:
                         print(f"   (reconciled {len(ch)} asset path(s))")
