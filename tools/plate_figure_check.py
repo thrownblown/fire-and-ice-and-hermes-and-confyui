@@ -20,6 +20,7 @@ import base64
 import io
 import json
 import os
+import os
 import re
 import sys
 import urllib.request
@@ -28,8 +29,13 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(r"E:/FNI")
-MODEL = "qwen3-vl-32b-heretic:latest"
-OLLAMA = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
+# Current API: goldfishbowl serves OpenAI-compatible /v1/chat/completions with bearer auth. The Ollama
+# /api/generate {"prompt","images"} shape this used was retired 2026-11-01, so the audit could not run at
+# all — which is how 22 plates landed today without anyone checking them for embedded figures.
+MODEL = os.environ.get("FNI_JUDGE_MODEL", "llama-cpp/qwen3-vl-32b-heretic_ctx128k")
+ENDPOINT = os.environ.get("FNI_VLM_ENDPOINT",
+                          os.environ.get("FNI_GF", "http://goldfishbowl:8888").rstrip("/") + "/v1/chat/completions")
+VLM_KEY = os.environ.get("GOLDFISHBOWL_API_KEY", "")
 
 Q = ("Fantasy film location background plate. Does it contain any PEOPLE, human figures, "
      "portraits, statues, silhouettes of people, or humanoid shapes? "
@@ -53,10 +59,21 @@ def ask(path: Path, timeout: int = 240) -> str:
     im.thumbnail((1100, 1100))
     b = io.BytesIO(); im.save(b, "JPEG", quality=85)
     b64 = base64.b64encode(b.getvalue()).decode()
-    body = json.dumps({"model": MODEL, "prompt": Q, "images": [b64], "stream": False}).encode()
-    req = urllib.request.Request(OLLAMA, data=body, headers={"Content-Type": "application/json"})
+    body = json.dumps({
+        "model": MODEL, "temperature": 0.0, "max_tokens": 500,
+        "messages": [{"role": "system",
+                      "content": "Describe only what is visually present. Never name characters, actors or films."},
+                     {"role": "user", "content": [
+                         {"type": "text", "text": Q},
+                         {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + b64}}]}]}).encode()
+    req = urllib.request.Request(ENDPOINT, data=body,
+                                 headers={"Content-Type": "application/json",
+                                          **({"Authorization": "Bearer " + VLM_KEY} if VLM_KEY else {})})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return (json.load(r).get("response") or "").strip()
+        d = json.load(r)
+    if d.get("model") and d["model"] != MODEL:
+        raise RuntimeError(f"served by {d['model']}, not {MODEL} — a 200 is not proof the id exists")
+    return (d["choices"][0]["message"]["content"] or "").strip()
 
 
 def main():
