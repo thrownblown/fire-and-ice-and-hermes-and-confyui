@@ -1,0 +1,48 @@
+subject_definitions:
+
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In the first frame, one person is visible in the foreground, shown from the back and side, reclining or lounging in an underwater environment with rock formations and light filtering through the water. The setting is an underwater cavern or reef.
+
+In the second frame, two people are visible: one in the foreground walking forward, facing the camera, carrying a spear, and wearing a mask and loincloth; the second person is behind and slightly to the side, partially obscured, also walking and facing forward. The setting is a barren, rocky landscape under a pale sky.
+
+In the third frame, five people are visible, all walking forward in a line, viewed from behind, each holding a spear. They are moving across a rocky, open terrain with distant mountains under a cloudy sky. No one is facing the camera.
+
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 3] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
+
+
+
+non_diegetic_music:
+
+Low sustained strings and slow woodwind pulses at a slow tempo, with sparse bell tones above; dynamics stay quiet and grow only slightly.

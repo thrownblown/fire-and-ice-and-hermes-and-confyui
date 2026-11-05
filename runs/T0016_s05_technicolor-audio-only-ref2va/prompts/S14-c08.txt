@@ -1,0 +1,46 @@
+subject_definitions:
+
+<Subject 1> is DARKWOLF, deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates, shown in <Picture 1>.
+<Subject 2> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of DARKWOLF, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In the first frame, two figures are visible inside a rocky cave. The figure on the left, wearing a black hooded garment with glowing green eyes, is standing and facing slightly toward the camera. The figure on the right, with blonde hair, is also standing and turned toward the left figure, facing away from the camera. The setting is a dimly lit cave with rough stone walls.
+
+In the second frame, two silhouetted figures are visible on a rocky cliffside. The upper figure is standing on a rock ledge, holding a double-headed axe, and facing away from the camera. The lower figure is crouched or climbing on the rocks below, also facing away from the camera. The environment is an outdoor rocky terrain under a pale sky.
+
+[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 2> (S2) says: <d>[English] No!</d> <Subject 2> (S2) says: <d>[English] The horses!</d> <Subject 1> (S1) says: <d>[English] No, they'd be on our heels before we could reach them.</d> <Subject 2> (S2) says: <d>[English] But Teegra's still back there.</d> <Subject 1> (S1) says: <d>[English] Then we'll come back for her.</d> <Subject 1> (S1) says: <d>[English] First, we lead the Nekron's dogs on a wild chase.</d> <Subject 1> (S1) says: <d>[English] Come.</d>
+
+[Shot 2] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
+
+
+
+non_diegetic_music:
+
+Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

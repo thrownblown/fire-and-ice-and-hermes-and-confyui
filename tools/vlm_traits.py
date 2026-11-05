@@ -151,7 +151,15 @@ def main():
 
     # ---- pass 2: synthesis with canonical/pose images
     traits_path = os.path.join(cdir, "traits.txt")
-    user_traits = open(traits_path, encoding="utf-8").read().strip() if os.path.exists(traits_path) else "(none)"
+    user_traits = open(traits_path, encoding="utf-8").read().strip() if os.path.exists(traits_path) else ""
+    if not user_traits:
+        # An EMPTY traits.txt is not "the user said nothing", it is "there is no canon yet" — and
+        # handed an empty USER TRAIT NOTES section the model INVENTS one (measured 2026-11-04: with
+        # a 0-byte traits.txt it produced a whole "Conflicts with user notes" section arguing against
+        # notes nobody wrote). Say so explicitly instead of leaving the section blank.
+        user_traits = ("(none — this character has NO traits.txt yet. Derive every trait from the "
+                       "images alone. Do NOT invent user notes, a canon, or a 'conflicts' section "
+                       "against notes that do not exist.)")
     desc_block = "\n\n".join(f"[{fn}] (tier: {tier_of(fn)})\n{descs[fn]}" for fn in synth_imgs)
     if skipped:
         desc_block += ("\n\n(EXCLUDED inspiration-tier refs, style/ethos only — do not derive "

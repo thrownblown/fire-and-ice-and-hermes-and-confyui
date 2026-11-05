@@ -1,0 +1,46 @@
+subject_definitions:
+
+<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1>.
+<Subject 2> is TARO, long straight black hair, a red vest, and gold armbands, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JAROL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep long straight black hair, a red vest, and gold armbands consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+There are two main characters visible across the frames, with no background extras. The first character is a bald man with a white goatee and a gold earring, shown in profile facing right; he is stationary and appears to be seated or reclining in a dark, rocky environment. The second character is a man with long black hair, shown in a close-up facing slightly left; he is also stationary and appears to be seated or standing in the same dark, cavernous room. The setting is a dimly lit, rocky interior, likely a cave or dungeon.
+
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] The night's so dark, the jungle so thick. A bird couldn't find its own nest.</d>
+
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 2> (S2) says: <d>[English] What do we do then, Father?</d> <Subject 1> (S1) says: <d>[English] We wait.</d>
+
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Solo flute and bowed vibraphone at a slow tempo with wide spacing between notes, held at very low volume.

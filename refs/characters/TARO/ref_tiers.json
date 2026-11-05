@@ -1,0 +1,28 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (6), inspiration = our own generations, excluded from the consensus (circular otherwise). | coherence-filtered against id_TARO.webp: 2 frame(s) demoted",
+ "refs": {
+  "film_shot_00197_00040.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_TARO.webp: sex female vs anchor male"
+  },
+  "film_shot_00204_00044.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00672_00038.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00680_00033.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00869_00092.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_TARO.webp: sex female vs anchor male"
+  },
+  "id_TARO.webp": {
+   "tier": "canonical"
+  },
+  "TARO_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  }
+ }
+}

@@ -1,0 +1,44 @@
+subject_definitions:
+
+<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JAROL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In the first image, multiple small human figures are visible walking along a narrow, elevated rock path in a vast, fiery landscape. They are standing and moving forward, facing away from the camera, with some appearing to carry staffs or weapons; the environment is a desolate, volcanic terrain with glowing lava and jagged rock formations under a red-orange sky.
+
+In the second image, several small, dark figures are seen flying or gliding through the air above a large, ancient stone fortress under a night sky with a bright moon and stars. The figures are airborne and moving across the frame, while the fortress below is stationary and occupies the lower portion of the scene. The setting is an outdoor, mountainous, fortress-like environment at night.
+
+[Shot 1] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures. <Subject 1> (S1) says: <d>[English] Hurry!</d>
+
+[Shot 2] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

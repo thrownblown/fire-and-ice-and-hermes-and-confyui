@@ -1,0 +1,48 @@
+subject_definitions:
+
+<Subject 1> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In the first frame, three people are visible: a woman standing facing the camera, and two men standing side-by-side, both facing each other and slightly turned away from the camera. The setting is an outdoor nighttime scene with trees and a starry sky, suggesting a jungle or forest clearing.
+
+In the second frame, six people are visible: the same woman is now seen from the back, standing and facing away from the camera; one man stands beside her, also facing away; another man stands further back, facing away; and three additional men are seated or crouching in the background, some holding spears. The environment remains the same outdoor nighttime jungle setting.
+
+In the third frame, only one person is visible — a hand holding a bowl, positioned over a rocky ground. The hand is stationary, and the bowl contains small pinkish fragments. The setting is the same rocky, outdoor nighttime environment.
+
+[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 2] The camera pulls out with small amplitude at slow speed, opening the space around the figures.
+
+[Shot 3] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
+
+
+
+non_diegetic_music:
+
+Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

@@ -1,0 +1,46 @@
+subject_definitions:
+
+<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1>.
+<Subject 2> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JAROL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+Three people are visible in total, each shown in separate frames, with no background extras present. In the first frame, a bald man with a white goatee is standing and facing slightly to the right of the camera, positioned inside a rocky cave. In the second frame, a young man with blonde hair is seated and facing forward toward the camera, also within a rocky cave setting. In the third frame, a muscular figure wearing a black panther mask with glowing green eyes is standing and facing forward, located in a dark cave with a glowing light source behind. All three are stationary. The setting is consistently a rocky, cavernous environment.
+
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Is he certain?</d> <Subject 1> (S1) says: <d>[English] It was my son you saw?</d> <Subject 2> (S2) says: <d>[English] They called him Prince Taro.</d>
+
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] He died.</d>
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.

@@ -1,0 +1,26 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (6), inspiration = our own generations, excluded from the consensus (circular otherwise).",
+ "refs": {
+  "film_shot_00197_00040.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00199_00038.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00201_00022.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00204_00044.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00209_00014.jpg": {
+   "tier": "canonical"
+  },
+  "id_ENVOY.jpg": {
+   "tier": "canonical"
+  },
+  "ENVOY_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  }
+ }
+}

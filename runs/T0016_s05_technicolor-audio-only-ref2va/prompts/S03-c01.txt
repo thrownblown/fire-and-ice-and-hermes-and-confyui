@@ -13,8 +13,8 @@ summary:
 
 retention_analysis:
 
-<Subject 1>: fully_preserved — keep pale skin, very long straight jet-black hair, and a deep purple gown consistent across [Shot 1] and [Shot 2].
-<Subject 2>: fully_preserved — keep very long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 2].
+<Subject 1>: fully_preserved — keep pale skin, very long straight jet-black hair, and a deep purple gown consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep very long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
 <Picture 3>: background_only — this is the location as a painted environment, not people; keep ONLY the environment (layout, lighting, color, architecture) and ignore any figures.
 
@@ -28,11 +28,11 @@ ONLY the named characters are present in the shot — there are no other people,
 
 Only Juliana and Nekron are present, alone in the icy throne hall. Juliana stands facing Nekron in medium close-up; Nekron stands facing her. Both remain in place; nobody walks or moves toward the camera.
 
-[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] You have done well, my son.</d> <Subject 1> (S1) says: <d>[English] The North Village has fallen. We have won.</d>
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen in this shot: exactly 1 person, alone — female, pale, long, straight, black hair, purple top with deep neckline (this is JULIANA). Nobody else is visible. <Subject 1> (S1) says: <d>[English] You have done well, my son.</d> <Subject 1> (S1) says: <d>[English] The North Village has fallen. We have won.</d>
 
-[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 2> (S2) says: <d>[English] I want to thank you, Mother.</d>
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. On screen in this shot: exactly 1 person, alone — male, pale grayish, long white hair, dark purple robe with black cuffs (this is NEKRON). Nobody else is visible. <Subject 2> (S2) says: <d>[English] I want to thank you, Mother.</d>
 
-[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 2> (S2) says: <d>[English] The Great Plain is all that stands between ourselves and Fire Keep.</d>
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. On screen in this shot: exactly 1 person, alone — female, pale, long black hair with a headband hair, purple dress with deep neckline (this is JULIANA). Nobody else is visible. <Subject 2> (S2) says: <d>[English] The Great Plain is all that stands between ourselves and Fire Keep.</d>
 
 
 

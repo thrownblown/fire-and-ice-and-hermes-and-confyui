@@ -64,3 +64,6 @@ renders/*/history.json
 
 # Pre-rewrite bundles hold the old history; never commit them
 .backups/
+
+# vendored browser test deps (jsdom harness) — regenerable, never commit
+browser/node_modules/

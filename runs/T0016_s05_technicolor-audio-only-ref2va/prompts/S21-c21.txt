@@ -1,0 +1,50 @@
+subject_definitions:
+
+<Subject 1> is TARO, long straight black hair, a red vest, and gold armbands, shown in <Picture 1>.
+<Subject 2> is NEKRON, very long white hair, pale skin, and dark purple robes, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TARO, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep long straight black hair, a red vest, and gold armbands consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep very long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In the first frame, six people are visible in a cavernous, icy environment. One person with long white hair is seated on the left, facing away from the camera. In the center, one person lies on the ground, appearing motionless. Four others stand to the right, facing left toward the seated figure; three are in red attire and one is in green, all standing and facing the camera’s direction. The room is a large, dimly lit ice cave with jagged rock formations.
+
+In the second frame, only one person is visible — the one with long white hair — now shown in a close-up, facing the camera with an angry expression. The background remains the same icy cave.
+
+In the third frame, one person is visible — a muscular figure with long black hair, standing and facing the camera, holding a knife in their right hand. The background is the same icy cave.
+
+[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Pig you are.</d> <Subject 1> (S1) says: <d>[English] And like a pig shall you die.</d>
+
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

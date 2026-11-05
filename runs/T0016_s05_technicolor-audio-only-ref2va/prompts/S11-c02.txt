@@ -1,0 +1,44 @@
+subject_definitions:
+
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+There are two main characters visible across the frames; no background extras are present. In the first frame, a woman with long black hair is shown from the chest up, standing and facing slightly toward the camera, her hand near her chest. In the second frame, a man with short blond hair is shown from the chest up, standing and facing right, away from the camera. In the third frame, the woman is again shown from the chest up, standing and facing slightly toward the camera, with the man’s bare torso visible to her left, indicating he is standing beside her. The setting is an outdoor jungle environment at night, under a starry sky, with ruins and dense foliage in the background.
+
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] If you want it, take it.</d>
+
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
+
+
+
+non_diegetic_music:
+
+Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.

@@ -108,7 +108,7 @@
  },
  "12": {
   "inputs": {
-   "noise_seed": 81234567890123
+   "noise_seed": 700000000000012
   },
   "class_type": "RandomNoise",
   "_meta": {
@@ -143,7 +143,7 @@
  },
  "28": {
   "inputs": {
-   "prompt": "integrated_multimodal_description:\n\nsubject_definitions:\nSUBHUMAN character from <Picture 1>, rendered as a live-action 80s sword-and-sandals fantasy character:\n\nsummary:\n[reference generation] static image of a character sheet. Keep the identity, face, hair, costume and proportions of <Picture 1>. Render it in the technicolor 80s sword-and-sandals register: practical leather-and-brass costume, broad theatrical performance, vivid saturated color with deep blacks.\n\nretention_analysis:\nSUBHUMAN: fully_preserved.\n\ndetailed_description:\nThe target video is a static image of a character sheet on a plain white background. Each element is separate and does not overlap.\n\n[Shot 1] static image. Neutral expression on every view.\n\n1. On the left, a portrait (head and chest) of SUBHUMAN, close up, neutral expression, white background.\n2. In the center, four full-body views of SUBHUMAN, neutral stance, arms slightly away from the body: straight from the front, straight from the side, three-quarter back, straight from the back.\n3. On the right, exactly 6 circles, 2 columns by 3 rows, nothing else:\n   circle 1: a single eye.\n   circle 2: the mouth.\n   circle 3: one ear with its earring.\n   circle 4: a hair color swatch.\n   circle 5: a skin color swatch.\n   circle 6: an outfit fabric swatch.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",
+   "prompt": "integrated_multimodal_description:\n\nsubject_definitions:\nSUBHUMAN character from <Picture 1>, rendered as a live-action 80s sword-and-sandals fantasy character.\nCANON (authoritative, from the film \u2014 the costume and colours must match this, not a generic\nsword-and-sandals look): Male, muscular build; olive-brown skin, dark brown straight hair mostly shoulder-length (longer in 00716), angular face with deep-set eyes and prominent brows. Wears black loincloth (material not specified). No consistent ornaments or marks visible.\n\nsummary:\n[reference generation] static image of a character sheet. Keep the identity, face, hair, costume and proportions of <Picture 1>. Render it in the technicolor 80s sword-and-sandals register: broad theatrical performance, vivid saturated color with deep blacks. Do not restyle the costume as leather armour and do not add metal fittings, studs or plates the canon does not have.\n\nretention_analysis:\nSUBHUMAN: fully_preserved.\n\ndetailed_description:\nThe target video is a static image of a character sheet on a plain white background. Each element is separate and does not overlap.\n\n[Shot 1] static image. Neutral expression on every view.\n\n1. On the left, a portrait (head and chest) of SUBHUMAN, close up, neutral expression, white background.\n2. In the center, four full-body views of SUBHUMAN, neutral stance, arms slightly away from the body: straight from the front, straight from the side, three-quarter back, straight from the back.\n3. On the right, exactly 6 circles, 2 columns by 3 rows, nothing else:\n   circle 1: a single eye.\n   circle 2: the mouth.\n   circle 3: one ear with its earring.\n   circle 4: a hair color swatch.\n   circle 5: a skin color swatch.\n   circle 6: an outfit fabric swatch.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",
    "width": 4096,
    "height": 1536,
    "length": 5,

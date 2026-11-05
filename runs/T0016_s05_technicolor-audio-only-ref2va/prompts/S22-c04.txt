@@ -1,0 +1,42 @@
+subject_definitions:
+
+<Subject 1> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+Two people are visible in total, both main figures with no background extras. The man is lying down on his side, facing the camera, with his head turned toward the woman; he is stationary. The woman is lying down on her back, also stationary, with her head turned slightly toward the man and her eyes closed. The scene takes place on a flat, light-colored surface, possibly snow or sand, under a dark, indistinct sky, suggesting an outdoor nighttime setting.
+
+[Shot 1] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 2] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+
+
+non_diegetic_music:
+
+Low sustained strings and slow woodwind pulses at a slow tempo, with sparse bell tones above; dynamics stay quiet and grow only slightly.

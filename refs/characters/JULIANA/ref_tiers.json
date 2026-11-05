@@ -1,0 +1,57 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (6), inspiration = our own generations, excluded from the consensus (circular otherwise). | coherence-filtered against id_JULIANA.jpeg: 1 frame(s) demoted",
+ "refs": {
+  "film_shot_00067_00064.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00071_00069.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00416_00171.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_JULIANA.jpeg: sex male vs anchor female"
+  },
+  "film_shot_00787_00045.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00791_00040.jpg": {
+   "tier": "canonical"
+  },
+  "id_JULIANA.jpeg": {
+   "tier": "canonical"
+  },
+  "1421634294418830369.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00039_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00042_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_temp_joaoj_00090_.png": {
+   "tier": "inspiration"
+  },
+  "JULIANA_r03_00001_.png": {
+   "tier": "inspiration"
+  },
+  "JULIANA_r04_00001_.png": {
+   "tier": "inspiration"
+  },
+  "JULIANA_r05_00001_.png": {
+   "tier": "inspiration"
+  },
+  "JULIANA_r06_00001_.png": {
+   "tier": "inspiration"
+  },
+  "JULIANA_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  },
+  "fni_t3_darkwolf_00097_.png": {
+   "tier": "inspiration"
+  },
+  "qwedit_00022_.png": {
+   "tier": "inspiration"
+  }
+ }
+}

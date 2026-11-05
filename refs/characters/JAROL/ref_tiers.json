@@ -1,0 +1,29 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (6), inspiration = our own generations, excluded from the consensus (circular otherwise).",
+ "refs": {
+  "id_JAROL.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00185_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00198_f00056.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00206_f00024.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00253_f00069.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00683_f00047.jpg": {
+   "tier": "canonical"
+  },
+  "ComfyUI_00033_.png": {
+   "tier": "inspiration"
+  },
+  "JAROL_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  }
+ }
+}

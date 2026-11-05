@@ -1,0 +1,44 @@
+subject_definitions:
+
+<Subject 1> is ROLIEL, long red hair, pale skin, a flowing white robe, and blue jewellery, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of ROLIEL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep long red hair, pale skin, a flowing white robe, and blue jewellery consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In total, three people are visible across the frames, with no background extras. In the first frame, a woman with long red hair is standing and facing the camera, her expression alarmed. In the second frame, the same woman is standing and facing forward, holding a small object, while a large, muscular man stands behind her, also facing forward; another man is lying down on the right, partially visible and facing away from the camera. In the third frame, the large man is standing in a doorway, facing forward. The setting is a dimly lit, cluttered interior room, possibly a hut or cave, with masks, weapons, and cooking implements visible.
+
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] You would do this-</d>
+
+[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

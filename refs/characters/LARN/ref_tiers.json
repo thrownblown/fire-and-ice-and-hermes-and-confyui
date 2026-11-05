@@ -1,0 +1,107 @@
+{
+ "lineage": "tiered by tools/classify_char_refs.py: canonical = frames of the 1983 source film, inspiration = our own generations (excluded from trait consensus; using them would be circular). LARN has 16 canonical film frames.",
+ "refs": {
+  "id_LARN.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00096_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00096_f00119.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00335_f00063.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00344_f00052.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00466_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00473_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00473_f00113.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00771_f00047.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00772_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00772_f00043.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00773_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00773_f00022.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00773_f00043.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00775_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00777_f00092.jpg": {
+   "tier": "canonical"
+  },
+  "ComfyUI_00037_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00077_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00078_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00079_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00132_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00133_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00134_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00138_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_0100371_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_010037_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_temp_afqfn_00011_ (1).png": {
+   "tier": "inspiration"
+  },
+  "LARN_sheet_t01_00003_.png": {
+   "tier": "inspiration"
+  },
+  "Larn.webp": {
+   "tier": "inspiration"
+  },
+  "MiniMax_H3_00339_ - frame at 0m0s1.jpg": {
+   "tier": "inspiration"
+  },
+  "MiniMax_H3_00339_ - frame at 0m3s1.jpg": {
+   "tier": "inspiration"
+  },
+  "fni_t3_darkwolf_00071_ (1).png": {
+   "tier": "inspiration"
+  },
+  "fni_t3_darkwolf_00071_.png": {
+   "tier": "inspiration"
+  },
+  "qwedit_00017_.png": {
+   "tier": "inspiration"
+  }
+ }
+}

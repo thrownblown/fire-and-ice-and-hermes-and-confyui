@@ -1,0 +1,5 @@
+file 'E:\FNI\runs\T0018_s03_vlm-prompt-fl2va\output\s03-c01_T0018_t01_00001_.mp4'
+file 'E:\FNI\runs\T0019_s03_vlm-prompt-sweep\output\s03-c02_T0019_t01_00001_.mp4'
+file 'E:\FNI\runs\T0019_s03_vlm-prompt-sweep\output\s03-c03_T0019_t01_00001_.mp4'
+file 'E:\FNI\runs\T0019_s03_vlm-prompt-sweep\output\s03-c04_T0019_t01_00001_.mp4'
+file 'E:\FNI\runs\T0019_s03_vlm-prompt-sweep\output\s03-c05_T0019_t01_00001_.mp4'

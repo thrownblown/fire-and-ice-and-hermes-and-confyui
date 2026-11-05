@@ -1,0 +1,35 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (6), inspiration = our own generations, excluded from the consensus (circular otherwise).",
+ "refs": {
+  "film_shot_00776_00070.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00779_00016.jpg": {
+   "tier": "canonical"
+  },
+  "id_SUBHUMAN CAPTAIN.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00414_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00414_f00133.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00414_f00265.jpg": {
+   "tier": "canonical"
+  },
+  "ComfyUI_00093_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00096_.png": {
+   "tier": "inspiration"
+  },
+  "SUBHUMAN CAPTAIN_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  },
+  "ae69fd_496c802d03614cb5b6507e4521d7d667~mv2.jpg": {
+   "tier": "inspiration"
+  }
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (10), inspiration = our own generations, excluded from the consensus (circular otherwise). | coherence-filtered against id_SUBHUMAN.png: 3 frame(s) demoted",
+ "refs": {
+  "id_SUBHUMAN.png": {
+   "tier": "canonical"
+  },
+  "shot_00711_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00712_f00000.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_SUBHUMAN.png: hair black vs anchor dark"
+  },
+  "shot_00712_f00029.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_SUBHUMAN.png: hair black vs anchor dark"
+  },
+  "shot_00712_f00058.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_SUBHUMAN.png: hair black vs anchor dark"
+  },
+  "shot_00713_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00716_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00722_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00724_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00732_f00079.jpg": {
+   "tier": "canonical"
+  },
+  "ComfyUI_00101_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00104_.png": {
+   "tier": "inspiration"
+  },
+  "SUBHUMAN_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  },
+  "SUBHUMAN_sheet_t02_00001_.png": {
+   "tier": "inspiration"
+  }
+ }
+}

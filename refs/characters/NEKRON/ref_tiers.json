@@ -1,0 +1,46 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (6), inspiration = our own generations, excluded from the consensus (circular otherwise). | coherence-filtered against id_NEKRON.jpg: 2 frame(s) demoted",
+ "refs": {
+  "film_shot_00005_00014.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_00074_00041.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_NEKRON.jpg: sex female vs anchor male"
+  },
+  "film_shot_00817_00015.jpg": {
+   "tier": "inspiration",
+   "demoted_by": "coherence_filter vs id_NEKRON.jpg: sex female vs anchor male"
+  },
+  "film_shot_00898_00031.jpg": {
+   "tier": "canonical"
+  },
+  "film_shot_01198_00094.jpg": {
+   "tier": "canonical"
+  },
+  "id_NEKRON.jpg": {
+   "tier": "canonical"
+  },
+  "NEKRON_r01_00001_.png": {
+   "tier": "inspiration"
+  },
+  "NEKRON_r02_00001_.png": {
+   "tier": "inspiration"
+  },
+  "NEKRON_r03_00001_.png": {
+   "tier": "inspiration"
+  },
+  "NEKRON_r04_00001_.png": {
+   "tier": "inspiration"
+  },
+  "NEKRON_r05_00001_.png": {
+   "tier": "inspiration"
+  },
+  "NEKRON_sheet6_00001_.png": {
+   "tier": "inspiration"
+  },
+  "NEKRON_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  }
+ }
+}

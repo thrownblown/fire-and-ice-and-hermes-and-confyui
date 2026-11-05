@@ -1,0 +1,46 @@
+subject_definitions:
+
+<Subject 1> is SPIRIT, a skeletal figure with long white hair and a black garment, shown in <Picture 1>.
+<Subject 2> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of SPIRIT, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep a skeletal figure with long white hair and a black garment consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+Three people are visible across the frames. In the first frame, one person is lying down on the ground, viewed from above, with legs bent and feet visible; they are not facing the camera. In the second frame, one person is standing, holding a knife, and facing left, away from the camera, in a forested area with a body lying on the ground nearby. In the third frame, one person is seated, facing forward toward the camera, with a skeletal appearance and long hair. The setting appears to be a dark, outdoor, possibly ruined or volcanic landscape with stone structures and glowing red cracks in the ground. No background extras are visible.
+
+[Shot 1] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] Why do the living...</d>
+
+[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] disturb the sleep of the dead?</d>
+
+
+
+overall_soundscape:
+
+Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+
+
+non_diegetic_music:
+
+Solo flute and bowed vibraphone at a slow tempo with wide spacing between notes, held at very low volume.

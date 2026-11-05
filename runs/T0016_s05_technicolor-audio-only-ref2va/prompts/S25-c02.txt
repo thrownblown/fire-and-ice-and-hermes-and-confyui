@@ -1,0 +1,50 @@
+subject_definitions:
+
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+<Subject 2> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In the first frame, three figures are visible in an icy cavern. A woman in a purple robe stands facing the camera, her hands clasped in front of her. To her right, a muscular man with dark skin stands in profile, holding a long spear, facing right. A third figure, partially visible on the far right, appears to be another man in similar attire, also standing. The setting is an ice cave with glowing light from above.
+
+In the second frame, one man with blond hair is shown in a close-up, crouched and facing left, his body angled toward the camera. He is shirtless and wears a necklace with a circular pendant. The background is a turbulent blue, suggesting water or stormy skies.
+
+In the third frame, two women are shown in a close-up. The woman on the left, with dark hair, is seated or leaning forward, her mouth covered by the hand of the woman on the right, who has long black hair and wears a purple robe. The woman on the right is in profile, facing left, and appears to be restraining the other. The background is a swirling blue, similar to the second frame.
+
+[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
+
+
+
+non_diegetic_music:
+
+Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

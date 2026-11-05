@@ -31,3 +31,531 @@
 {"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
 {"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
 {"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_00003_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krea170277_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor with intricate leather straps and a detailed sword hilt are anachronistic for the dawn of the bronze age, which would feature far cruder tools and armor made of hide, bone, or early copper, not refined metalwork."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is a blob with indistinct, fused fingers, violating the gross anatomy criterion."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and leather straps with metal buckles are anachronistic for the dawn of the bronze age, which would feature crude copper, hide, bone, and wood, not refined metal plating."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s+rf_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krast_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a glowing red gemstone belt buckle, which are anachronistic for the dawn of the bronze age; such advanced metallurgy and gemstone craftsmanship would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krast_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal sword and ornate leather harness with metal buckles are anachronistic for the dawn of the bronze age, which would feature crude copper/stone tools and simpler hide/fur attire."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in hand appears to have a melted, non-functional hilt with no clear grip or pommel, suggesting implausible design for bronze age context."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and ornate, highly detailed metal weapons with gemstones, which are anachronistic for the dawn of the bronze age; such advanced metallurgy and decorative complexity would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and ornate gem-encrusted belt with a glowing dagger are anachronistic for the dawn of the bronze age, which would feature crude copper/stone tools and minimal ornamentation."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_06_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and ornate gem-encrusted dagger are anachronistic for the dawn of the bronze age, which would feature crude copper/stone tools and minimal metalwork."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krast_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and a highly detailed, ornate dagger with a metal hilt and sheath, which is inconsistent with the bronze age setting where such advanced metallurgy and craftsmanship would not exist; also, the fur-lined cloak and leather straps suggest a mix of materials and styles that are anachronistic for the dawn of the bronze age."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krast_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and a highly detailed, ornate dagger with a metal hilt and sheath, which is inconsistent with the bronze age setting where such refined metalwork and leather straps with metal buckles would not exist."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical inconsistencies \u2014 the fingers are misshapen and fused in places, with unclear segmentation, especially on the left hand, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (on the left side of the image) has six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and leather straps with metal buckles are anachronistic for the dawn of the bronze age, which would feature crude copper, bone, hide, and wood, not refined metalwork or leather harnesses with metal fittings."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, which is a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon sheath appears to be fused into the belt with impossible geometry, and the hand on the right side has six clearly separated fingers."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_moody_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a highly detailed dagger with a decorative hilt, which is inconsistent with the bronze age setting where such advanced metalwork and ornamentation would not exist."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and leather straps with ornate metal buckles are anachronistic for the dawn of the bronze age, which would feature crude copper or stone tools and simpler hide/fur garments."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished, ornate metal armor and a highly detailed dagger with a glowing gem are anachronistic for the dawn of the bronze age, which would feature crude copper/stone tools and minimal metalwork."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_person_11_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a glowing gem on the belt, which is anachronistic for the dawn of the bronze age; such advanced metalwork and magical elements are inconsistent with the period\u2019s technological and material limitations."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krast_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show six or more clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krast_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and a highly detailed, ornate dagger with a gemstone, which is anachronistic for the dawn of the bronze age; such advanced metalwork and decorative elements are inconsistent with the technological and material limitations of that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krast_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and a highly refined curved blade, which are anachronistic for the dawn of the bronze age; such advanced metallurgy and weapon design would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krast_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s face exhibits gross anatomical errors \u2014 the facial structure is distorted with unnatural, fused features and asymmetrical eye sockets, one of which glows orange without a visible iris or pupil, suggesting a non-human or AI-generated anomaly rather than a plausible bronze-age fantasy being."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krea170277_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical inconsistencies \u2014 the left hand has an extra, fused digit near the thumb, and the right hand appears to have a misshapen, blob-like thumb, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krea170277_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (viewer\u2019s left) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and a leather belt with metal buckles, which are anachronistic for the dawn of the bronze age; such advanced metallurgy and craftsmanship would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand is visibly a blob with indistinct, fused fingers, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand (viewer\u2019s right) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_moody_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and weapons with intricate designs, including a dagger with a detailed hilt and a sword sheathed at the hip, which are inconsistent with the bronze age dawn setting that would feature only crude copper, stone, or bone tools and armor."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a highly detailed belt with gemstones and intricate metalwork, which is anachronistic for the dawn of the bronze age; such advanced metallurgy and decorative complexity would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a finely crafted dagger with a gemstone hilt, which is anachronistic for the dawn of the bronze age; such advanced metallurgy and decorative complexity would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+80s_none_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and ornate sword with intricate metalwork are anachronistic for the dawn of the bronze age, which would feature crude copper/stone tools and minimal metal plating."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a highly detailed sword with a tassel, which is anachronistic for the dawn of the bronze age; such advanced metallurgy and decorative complexity would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s+rf_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon on left hip has a blade that appears to merge into the belt without a proper hilt, suggesting implausible geometry."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal dagger and ornate belt with metal buckles, which are anachronistic for the dawn of the bronze age; such advanced metalwork would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_krea170277_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is a blob with indistinct, fused fingers, violating gross anatomy standards."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=hand on left side shows six clearly-separated fingers, which is a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand (viewer\u2019s right) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.0_none_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show six or more clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in sheath appears to have a blade that is physically impossible \u2014 the curved blade seems to extend through the hilt and into the hand, suggesting a structural impossibility."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon implausibility \u2014 the character wields a polished, sharp-edged metal sword with a complex hilt, which is anachronistic for the dawn of the bronze age; such advanced metallurgy and design would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krea170277_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and a highly detailed, sharp-edged sword are anachronistic for the dawn of the bronze age, which would feature crude copper or stone tools and simpler, less refined armaments."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon sheath appears to be fused into the belt with no clear attachment point, and the dagger blade has an unnatural, smooth curve inconsistent with bronze-age metallurgy."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (viewer\u2019s left) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_30s-1.2_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krea170277_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor with a sharp, modern-looking dagger is anachronistic for the dawn of the bronze age, which would feature crude copper or stone weapons and simpler, less refined armor."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical flaws \u2014 the left hand has an extra, fused digit and the right hand appears to have a missing or malformed thumb, with fingers unnaturally fused or misshapen."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s+rf_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a detailed belt with gem-like stones, which is anachronistic for the dawn of the bronze age; such advanced metalwork and decorative elements would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand is visibly malformed with an extra, fused finger and distorted anatomy, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_moody_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and a highly detailed, ornate dagger with a gemstone pommel, which is anachronistic for the bronze age; such advanced metalwork and decorative elements are inconsistent with the dawn of the bronze age, which featured crude copper/bronze tools and minimal ornamentation."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon and armor show anachronistic polished metal and intricate metalwork inconsistent with bronze age technology, including a detailed sword hilt and belt buckle that imply advanced metallurgy not available at the dawn of the bronze age."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon implausibility \u2014 the dagger and belt buckle feature highly polished, ornate metalwork with intricate designs that are anachronistic for the dawn of the bronze age, which would have used crude copper or early bronze tools, not such refined metalwork."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_person_11_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in hand appears to have a blade that melts into the hilt with no clear separation, suggesting broken geometry."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krast_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show six or more clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krast_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical inconsistencies \u2014 the left hand has an extra, fused digit near the thumb, and the right hand appears to have a misshapen, blob-like thumb, which is a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (viewer\u2019s left) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (viewer\u2019s left) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_moody_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical flaws \u2014 the left hand has an extra, fused digit near the thumb, and the fingers are misshapen and fused in places, violating basic human hand structure."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a highly detailed sword with intricate metalwork, which is anachronistic for the bronze age dawn setting; such advanced metallurgy and craftsmanship would not exist at that time."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical flaws \u2014 the left hand has an extra, fused digit and the right hand appears to have a missing or malformed thumb, with fingers unnaturally fused or misshapen."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.0_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krast_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal armor and a finely crafted dagger with a gemstone pendant, which is anachronistic for the dawn of the bronze age; such advanced metallurgy and ornamentation would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show six or more clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (holding the dagger) has six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_moody_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal buckles, ornate silver dagger, and leather straps with intricate metalwork, which are anachronistic for the dawn of the bronze age; such advanced metalworking and decorative complexity would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show six or more clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_06_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal buckles, a detailed metal dagger with intricate engravings, and a leather harness with metal fittings, which are anachronistic for the dawn of the bronze age; such advanced metalwork and ornamentation would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krast_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand (viewer\u2019s right) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krast_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in sheath appears to have a blade that is fused into the hilt with no clear separation, suggesting implausible construction for bronze age context."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krea170277_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_krea170277_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is a blob with indistinct, fused fingers, violating the gross anatomy criterion."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in right hand has a blade that appears to be fused into the hilt with no visible tang or proper attachment, and the hand gripping it shows six clearly separated fingers."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in sheath appears to have a blade that is too long and thin for the hilt, with an implausible, almost translucent blade that doesn\u2019t match the bronze age material constraints."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand is visibly a blob with indistinct, fused fingers, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_moody_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and leather straps with metal buckles are anachronistic for the dawn of the bronze age, which would feature crude copper or stone tools and minimal metalworking; the character wears advanced, polished plate armor inconsistent with the era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and intricate metal buckles are anachronistic for the dawn of the bronze age, which would feature crude copper or stone tools and simpler leather/fur gear."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished, ornate metal armor and a highly detailed dagger with a gemstone pommel, which is anachronistic for the dawn of the bronze age; such advanced metalwork and decorative elements are inconsistent with the period\u2019s technological capabilities."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_person_11_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 the character wears polished metal-like buckles and a highly detailed dagger with ornate hilt, which is anachronistic for the dawn of the bronze age; such metalwork and craftsmanship would not exist in that era."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krast_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical flaws \u2014 the left hand has an extra, fused digit near the thumb, and the right hand appears to have a misshapen, blob-like thumb, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krea170277_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical inconsistencies \u2014 the left hand has an extra, fused digit near the thumb, and the right hand appears to have a misshapen, blob-like thumb, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand (viewer\u2019s right) has six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand (viewer\u2019s right) shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand is visibly a blob with indistinct, fused fingers, which is a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_moody_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical inconsistencies \u2014 the right hand has an extra, fused digit near the thumb, and the left hand appears to have a misshapen, blob-like thumb, indicating a gross anatomy error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_moody_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show six or more clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_moody_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon has an anachronistic polished metal blade with intricate engravings, inconsistent with bronze age crudeness"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_80s-1.2_none_moody_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s hands show anatomical flaws \u2014 the right hand has an extra, fused digit and the left hand appears to have a missing or malformed thumb, violating natural human hand structure."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in sheath appears to have a blade extending beyond the hilt in an impossible way, suggesting implausible geometry."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krea170277_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand appears to have six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krea170277_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s right hand (viewer\u2019s left) shows a clearly mangled anatomy with fingers fused or indistinct, appearing as a blob rather than distinct digits, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand (viewer\u2019s right) has six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_kreamania_g2_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand shows six clearly separated fingers, which is a gross anatomical error."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_kreamania_g3_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon in sheath appears to have a bone handle that melts into the belt without clear attachment, suggesting broken geometry."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=The character\u2019s left hand is visibly a blob with indistinct, fused fingers, failing the gross anatomy check."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_none_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_r80-1.0_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_kreamania_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=background mush and broken perspective \u2014 the rock formations behind the figure appear to melt and lack coherent geometry, suggesting AI-generated artifacts."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_06_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krast_g1_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=costume/weapon implausibility \u2014 polished metal armor and a highly detailed sword are anachronistic for the dawn of the bronze age, which would feature crude copper or stone tools and minimal metalwork."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_kreamania_g4_00001_.png", "verdict": "BAD", "resp": "VERDICT=BAD  \nWHY=weapon sheath appears to melt into the character\u2019s leg with no clear attachment, suggesting broken geometry."}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_person_11_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krast_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krast_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krast_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krast_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krea170277_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krea170277_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krea170277_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_krea170277_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_kreamania_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_kreamania_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_kreamania_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_kreamania_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_moody_g1_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_moody_g2_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_moody_g3_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}
+{"file": "E:\\FNI\\runs\\subhuman-krea2\\output\\envoys\\envoys_rf-1.0_none_moody_g4_00001_.png", "verdict": "GOOD", "resp": "VERDICT=GOOD  \nWHY=clean"}

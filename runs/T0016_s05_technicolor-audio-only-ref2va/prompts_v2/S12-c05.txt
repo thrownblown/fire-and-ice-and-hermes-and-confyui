@@ -1,0 +1,33 @@
+subject_definitions:
+The young adult warrior LARN, with blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+
+
+summary:
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+retention_analysis:
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+
+
+detailed_description:
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
+
+ONLY the named character LARN is present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The character stays where they are; nobody walks, enters, or moves toward the camera.
+
+In the first frame, LARN is visible, standing on rocky terrain in a desolate, twilight landscape with gnarled trees and distant mountains. LARN faces the camera, holding a weapon, and is positioned centrally in the frame. The setting appears to be an outdoor, rugged, natural environment.
+
+In the second frame, LARN is visible, shown in a close-up from a low angle, looking upward toward a dark, shadowed figure that occupies the left side of the frame. LARN is stationary and facing slightly toward the camera, with their head tilted up. The background is a dark, starry sky, suggesting an outdoor nighttime setting.
+
+[Shot 1] The camera arcs around LARN with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 2] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as LARN settles. The young adult warrior LARN, with a high-pitched, urgent voice (S1) says: <d>[English] You've caught me, but you'll never hand me over to Nekron.</d> The young adult warrior LARN, with a high-pitched, urgent voice (S1) says: <d>[English] You'll have to kill me first.</d>
+
+
+overall_soundscape:
+Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
+
+
+non_diegetic_music:
+Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

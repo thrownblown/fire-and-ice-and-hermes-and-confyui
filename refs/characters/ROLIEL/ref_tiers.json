@@ -1,0 +1,95 @@
+{
+ "lineage": "tiered by tools/fill_missing_traits.py: canonical = frames of the 1983 source film (6), inspiration = our own generations, excluded from the consensus (circular otherwise).",
+ "refs": {
+  "id_ROLIEL.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00693_f00000.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00693_f00066.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00697_f00054.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00738_f00055.jpg": {
+   "tier": "canonical"
+  },
+  "shot_00743_f00010.jpg": {
+   "tier": "canonical"
+  },
+  "1MZCTVJ8C9G1BZC94VMC4F76S0.png": {
+   "tier": "inspiration"
+  },
+  "25JNVDM5PD75BR64B2GHY24MS0.png": {
+   "tier": "inspiration"
+  },
+  "40N69SBFKVDWEGJ4NJY1CYZK50.png": {
+   "tier": "inspiration"
+  },
+  "601K7VAFZ0HZJV62HCTB4CEG60.png": {
+   "tier": "inspiration"
+  },
+  "8122A1MRJNQ6PMH6SNFSS8PB80.png": {
+   "tier": "inspiration"
+  },
+  "AQRTNHGY5MJS3QWCQ2S6HE4NB0.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00027_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00085_.png": {
+   "tier": "inspiration"
+  },
+  "ComfyUI_00086_.png": {
+   "tier": "inspiration"
+  },
+  "CosmicGrenade DG Anima Mix_2026-06-24_560324825445467_euler_ancestral.png": {
+   "tier": "inspiration"
+  },
+  "D78E4WAE0GB8ZQBHQCA6WJ84N0.png": {
+   "tier": "inspiration"
+  },
+  "FD8PQVX92ZG1NJ0SRMN76RB5K0.png": {
+   "tier": "inspiration"
+  },
+  "JAE8X97HGYA7SCYWA74PC9FDC0.png": {
+   "tier": "inspiration"
+  },
+  "JMAHAM94YGV7TX91ST55VGXX90.png": {
+   "tier": "inspiration"
+  },
+  "JZW2QCH6EY5NKVYWWAP3MXMTC0.png": {
+   "tier": "inspiration"
+  },
+  "MC11AEY3KVESNN0P25C57VV7D0.png": {
+   "tier": "inspiration"
+  },
+  "MQTJP9J4Y2APT6NXFSP596XFF0.png": {
+   "tier": "inspiration"
+  },
+  "PKNT6EPJQA14CMH2ZQ0AP868A0.png": {
+   "tier": "inspiration"
+  },
+  "R042298B99DCQYQ321QEBCT2W0.png": {
+   "tier": "inspiration"
+  },
+  "ROLIEL_sheet_t01_00001_.png": {
+   "tier": "inspiration"
+  },
+  "TXZBNYN9A1D3KCCHRP29CDB5B0.png": {
+   "tier": "inspiration"
+  },
+  "Y552M1P3VPAFR6JRD8GS9B8DE0.png": {
+   "tier": "inspiration"
+  },
+  "Y9FFE8667H80GEPWD8Z3Y3JHC0.png": {
+   "tier": "inspiration"
+  },
+  "Z81TNK3BSYNJCKBFZK5QMP93D0.png": {
+   "tier": "inspiration"
+  }
+ }
+}
