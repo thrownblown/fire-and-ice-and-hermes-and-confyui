@@ -164,10 +164,20 @@ def main() -> int:
         except Exception as e:  # noqa: BLE001 — transport error is not a verdict
             print(f"  {name}: VLM ERROR {type(e).__name__}: {str(e)[:160]} (nothing written)", flush=True)
             continue
-        verdict = "MISMATCH" if re.search(r"mismatch", resp, re.I) else "match?"
+        # The keyword test alone is unreliable: on the t10 photoreal batch it labelled 9 sheets
+        # "match?" whose own BOTTOM LINE read "Yes, this sheet shows the canonical character" (true
+        # split: 11 yes / 2 no). Ask the model's own conclusion first, keep the keyword as a fallback,
+        # and store both so a later reader can see which one the tool went by.
+        m = (re.search(r"BOTTOM LINE\*{0,2}\s*:?\s*\*{0,2}\s*(Yes|No)\b", resp, re.I)
+             or re.search(r"\bAnswer\s*:?\s*\*{0,2}\s*(Yes|No)\b", resp, re.I))
+        if m:
+            verdict = "MATCH" if m.group(1).lower() == "yes" else "MISMATCH"
+        else:
+            verdict = "MISMATCH" if re.search(r"\bmismatch\b", resp, re.I) else "match?"
         with LEDGER.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps({"char": name, "sheet": sheet.name, "traits": traits,
-                                 "model": model, "verdict_kw": verdict, "raw": resp},
+                                 "model": model, "verdict_kw": verdict,
+                                 "bottom_line": (m.group(1).lower() if m else None), "raw": resp},
                                 ensure_ascii=False) + "\n")
         print(f"  {name}: {verdict} | {' '.join(resp.split())[:180]}", flush=True)
     print("DONE", flush=True)
