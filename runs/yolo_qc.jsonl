@@ -135,3 +135,5 @@
 {"file": "take4__S03-c02_audioOnly_t04_00001_.mp4", "dur": 13.67, "black_s": 0, "frozen_s": 0, "mean_db": -35.8, "verdict": "PASS", "chunk_id": "take4__S03-c02", "dialogue": false, "qc_ts": "2026-11-05T11:28:27"}
 {"file": "take5__S03-c01_audioOnly_t05_00001_.mp4", "dur": 14.38, "black_s": 0, "frozen_s": 0, "mean_db": -35.6, "verdict": "PASS", "chunk_id": "take5__S03-c01", "dialogue": false, "qc_ts": "2026-11-05T11:28:27"}
 {"file": "take5__S03-c02_audioOnly_t05_00001_.mp4", "dur": 13.67, "black_s": 0, "frozen_s": 0, "mean_db": -35.8, "verdict": "PASS", "chunk_id": "take5__S03-c02", "dialogue": false, "qc_ts": "2026-11-05T11:28:27"}
+{"file": "take6__S03-c01_audioOnly_t06_00001_.mp4", "dur": 14.38, "black_s": 0, "frozen_s": 0, "mean_db": -35.6, "verdict": "PASS", "chunk_id": "take6__S03-c01", "dialogue": false, "qc_ts": "2026-11-05T12:23:39"}
+{"file": "take6__S03-c02_audioOnly_t06_00001_.mp4", "dur": 13.67, "black_s": 0, "frozen_s": 0, "mean_db": -35.8, "verdict": "PASS", "chunk_id": "take6__S03-c02", "dialogue": false, "qc_ts": "2026-11-05T12:23:39"}

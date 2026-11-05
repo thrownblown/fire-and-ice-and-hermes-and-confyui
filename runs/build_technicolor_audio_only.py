@@ -174,6 +174,16 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
     dd = f"{style}\n\n{constraint}\n\n"
     if blocking:
         dd += blocking + "\n\n"
+    if shot_presence:
+        # The authored chunk-level blocking routinely says both characters are present and facing each
+        # other ("Only Juliana and Nekron are present, alone... both remain in place") — which is TRUE
+        # at chunk level and FALSE inside a one-person close-up. That paragraph contradicts the per-shot
+        # cast lines below it, and the model follows the paragraph: take 6 rendered 3-4 people in shots
+        # whose own lines said "exactly 1 person, alone... Nobody else is visible" (frames read back
+        # 2026-11-05). So state the precedence explicitly instead of hoping the later line wins.
+        dd += ("Where the paragraph above has both characters in frame together, the per-shot cast lines "
+               "below override it: inside each shot ONLY the person named there is visible, and the other "
+               "character is out of frame.\n\n")
     dd += "\n\n".join(shot_lines)
 
     return "\n\n".join([
