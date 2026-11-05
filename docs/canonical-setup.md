@@ -319,3 +319,20 @@ section's verify command, edit THIS file, and only then touch pointers elsewhere
 memory hold behavior ("serialize", "never assume the rig", "read the sidecar"); this file
 holds ground truth (addresses, versions, paths, defaults). Anything duplicated from here
 into another system is a bug — replace it with a pointer.
+
+### Local LM Studio loads are killed by TTL — and the error hides it (verified 2026-11-05)
+
+LM Studio's own server log says it outright: `Unloading model qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s
+due to TTL expiration.` A 32B was loaded and TTL-unloaded in the same window, so the two models churn
+against each other on the 4090. While nothing is resident, an image request returns
+`400 {'error': 'terminated'}` (older builds: `400 "Model is unloaded"`) — rejected before it reaches the
+model, so the model log shows nothing and it reads like a dead server or a bad image.
+
+- `GET /v1/models` lists models whether loaded or not. **`lms ps` is the authority** and prints the
+  instance `TTL` (e.g. `2h / 2h`).
+- Pin a working session: `lms load <id> --ttl 7200` (a resident instance keeps its original TTL, so a
+  reload/`--force` is needed to change it). Verify with `lms ps` and one image call.
+- Helper: `tools/vlm_ready.py --check` / `--force --ttl 7200`. Run it before any VLM batch.
+- Hermes `vision_analyze` sends **no system prompt** and prepends "Fully describe and explain everything
+  about this image…", which is why it names films/actors. For counts, verdicts or JSON, call
+  `/v1/chat/completions` directly with a strict system prompt (`tools/vlm_cast_check.py` is the pattern).
