@@ -1,0 +1,20 @@
+{
+ "version": 1,
+ "note": "Sex per character. Authored from the film's canonical identities because neither traits.txt nor refs/roster.json states it, which left core.identity_match's sex veto with nothing to compare and let male figures match TEEGRA. '?' = unknown, treated as no veto.",
+ "sex": {
+  "TEEGRA": "f",
+  "JULIANA": "f",
+  "ROLIEL": "f",
+  "SHAITAN": "f",
+  "LARN": "m",
+  "NEKRON": "m",
+  "TARO": "m",
+  "JAROL": "m",
+  "DARKWOLF": "m",
+  "ENVOY": "m",
+  "SUBHUMAN": "m",
+  "SUBHUMAN CAPTAIN": "m",
+  "TUTOR": "m",
+  "SPIRIT": "?"
+ }
+}
