@@ -53,30 +53,36 @@ def run(cmd: list[str], timeout: int | None = None) -> tuple[int, str]:
         return 124, "TIMEOUT"
 
 
-GF_TAGS = "http://<GOLDFISHBOWL_TS_IP>:11434/api/tags"
+GF_MODELS = "http://goldfishbowl:8888/v1/models"          # OpenAI-compatible (the Ollama :11434 API was retired 2026-11-01)
 COMFY_5090 = "http://<TOMBSTONE_TS_IP>:8188"
-BLOCK_MODEL = "qwen3-vl-32b-heretic:latest"
+BLOCK_MODEL = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"    # the id this box actually serves
 
 
 def preflight() -> list[str]:
     """The pipeline refuses to run misconfigured. Returns a list of problems
     (empty = go). Every check is cheap (<30s total) and each one names a failure
     that ALREADY burned a run once."""
+    import os
     import urllib.request
     from core.prompt_guards import looks_like_error
     problems = []
 
-    def get(url, timeout=10):
-        with urllib.request.urlopen(url, timeout=timeout) as r:
+    def get(url, timeout=10, headers=None):
+        req = urllib.request.Request(url, headers=headers or {})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
             return json.loads(r.read().decode())
 
-    # 1. the blocking VLM endpoint must be up AND hold the exact model we name
+    # 1. the blocking VLM endpoint must be up AND hold the exact model we name.
+    #    Was probing http://<goldfish>:11434/api/tags — the Ollama API that no longer exists on that box,
+    #    so every run aborted at preflight with "connection refused" while the box was perfectly healthy.
+    key = os.environ.get("GOLDFISHBOWL_API_KEY", "")
     try:
-        models = [m["name"] for m in get(GF_TAGS).get("models", [])]
-        if not any(m.startswith(BLOCK_MODEL.split(":")[0]) for m in models):
-            problems.append(f"goldfishbowl is up but {BLOCK_MODEL} is not loaded (has: {models[:5]})")
+        data = get(GF_MODELS, headers=({"Authorization": "Bearer " + key} if key else {}))
+        models = [m.get("id") for m in data.get("data", [])]
+        if BLOCK_MODEL not in models:
+            problems.append(f"goldfishbowl is up but {BLOCK_MODEL} is not served (has: {models[:5]})")
     except Exception as e:
-        problems.append(f"goldfishbowl unreachable: {e}")
+        problems.append(f"goldfishbowl unreachable at {GF_MODELS}: {e}")
     # 2. the render rig must be the 5090 (linux), not an accidental localhost
     try:
         stats = get(COMFY_5090 + "/system_stats")
