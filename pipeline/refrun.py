@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import re
 import subprocess
 import sys
@@ -30,6 +31,7 @@ sys.path.insert(0, str(_REPO / "pipeline"))      # `import fullrun` resolves her
 sys.path.insert(0, str(_REPO))                   # `from core import ...` resolves here
 
 import fullrun as F
+from core import dialogue_syntax as D
 
 # ------------------------------------------------------------------ validate
 def validate_ref_prompt(text):
@@ -69,6 +71,71 @@ REF_IMAGE_SIZE = "match"       # "max" = stronger identity, slower
 V_VAE = "minimax_h3_video_vae_int8_convrot.safetensors"
 A_VAE = "minimax_h3_audio_vae_fp32.safetensors"
 CLIP = "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+
+# ---- asset reconciliation -------------------------------------------------------------
+# A hardcoded asset path is only valid until the RENDER RIG refiles it. Measured 2026-11-05: the
+# ref2va graph asked for `h3/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors` and the
+# 5090 answered HTTP 400 `value_not_in_list: lora_name ... not in (list of length 855)` — the LoRA
+# Manager had moved the same file into `Unknown/no tags/`. Every render of the batch then failed,
+# and the driver printed only "HTTP Error 400: Bad Request" with no body, which is why it took a
+# manual POST to find. So: build the graph with the constant, then reconcile every asset input
+# against the rig's OWN option lists, matching by basename (a refiled file keeps its name).
+_ASSET_INPUTS = {"lora_name": "LoraLoaderModelOnly", "unet_name": "UNETLoader",
+                 "clip_name": "CLIPLoader", "vae_name": "VAELoader"}
+_LIVE_OPTIONS_CACHE: dict[str, list[str]] = {}
+
+
+def _live_options(class_type: str) -> list[str]:
+    if class_type in _LIVE_OPTIONS_CACHE:
+        return _LIVE_OPTIONS_CACHE[class_type]
+    d = F.api(f"/object_info/{class_type}", timeout=60)
+    node = next(iter(d.values()))
+    opts: list[str] = []
+    for v in (node.get("input", {}).get("required") or {}).values():
+        if isinstance(v, list) and v and isinstance(v[0], list):
+            opts = [str(o) for o in v[0]]
+            break
+    _LIVE_OPTIONS_CACHE[class_type] = opts
+    return opts
+
+
+def reconcile_assets(graph: dict, context: str = "") -> dict:
+    """Rewrite stale asset paths to the rig's live ones, by basename. Mutates and returns `graph`.
+
+    Best-effort: if the rig is unreachable (dry run, box down) it warns and leaves the graph alone
+    rather than killing a prompt build. Set FNI_NO_RECONCILE=1 to skip entirely.
+    """
+    if os.environ.get("FNI_NO_RECONCILE"):
+        return graph
+    fixes = []
+    for nid, node in graph.items():
+        if not isinstance(node, dict):
+            continue
+        ins = node.get("inputs") or {}
+        for key, cls in _ASSET_INPUTS.items():
+            val = ins.get(key)
+            if not isinstance(val, str) or "/" not in val:
+                continue
+            try:
+                opts = _live_options(cls)
+            except Exception as e:  # noqa: BLE001 — never let this kill a build
+                print(f"[reconcile] {cls} list unavailable ({str(e)[:80]}) — leaving {key} as-is",
+                      file=sys.stderr)
+                return graph
+            if not opts or val in opts:
+                continue
+            base = val.split("/")[-1]
+            match = [o for o in opts if o.split("/")[-1] == base]
+            if not match:
+                near = [o for o in opts if base[:16].lower() in o.lower()][:5]
+                raise RuntimeError(
+                    f"{context}: {key}={val!r} is not on the rig and nothing with that basename "
+                    f"exists there. Near miss(es): {near}")
+            ins[key] = match[0]
+            fixes.append((nid, cls, val, match[0]))
+    for nid, cls, old, new in fixes:
+        print(f"[reconcile] {cls} node {nid}: {old} -> {new}")
+    return graph
 
 # How a chunk maps to a reference video: the chunk's shots are concatenated into
 # one 24fps ref clip so <Video 1> is the actual source motion/identity of the
@@ -218,6 +285,11 @@ def build_ref_prompt(row, caps, people, dialogue_by_id, plate_count=0):
             bits.append(f"[Shot {idx}] At {int(mm):02d}:{ss:06.3f}, {cam}")
         # dialogue for this shot
         sidx = {sub[0]: i + 1 for i, sub in enumerate(subjects)}
+        # (S#) is the SPEAKER id (first-speaking order, stable for the whole prompt), not the
+        # subject index — docs/h3-official ref guide §5.4, Alex 2026-11-05. Same helper the other
+        # builders use, so the three cannot drift apart again.
+        spk_idx = D.speaker_index(D.order_from_lines(dialogue_by_id, row["line_ids"],
+                                                     lambda r: F.sec(r["start"])))
         for lid in row["line_ids"]:
             r = dialogue_by_id.get(lid)
             if not r:
@@ -226,7 +298,7 @@ def build_ref_prompt(row, caps, people, dialogue_by_id, plate_count=0):
                     (F.sec(r["start"]) + F.sec(r["end"])) / 2 < people.get(sid, {}).get("_t1", 0)):
                 continue
             spk = r["speaker"]
-            tag = f"(S{sidx[spk]})" if spk in sidx else "(S1)"
+            tag = D.tag(spk_idx.get(spk, 1))      # speaker id, NOT the subject index
             desc = F.ROSTER.get(spk)
             if F.on_screen(spk, sid, people.get(sid, {}), stamped):
                 bits.append(f"<Subject {sidx.get(spk, 1)}> {tag} says: <d>[English] {r['text']}</d>")
@@ -338,7 +410,8 @@ def build_ref_graph(row, still_names, use_lightning=True, plate_names=()):
     node(145, "LoraLoaderModelOnly", {"lora_name": REF2VA_LORA, "strength_model": 1.0,
                                        "model": ["127", 0]}, "Load LoRA")
     node(146, "PrimitiveBoolean", {"value": use_lightning}, "Enable Lightning LoRA")
-    return g
+    # a path constant is only valid until the rig refiles the file — see reconcile_assets()
+    return reconcile_assets(g, context=f"build_ref_graph chunk={row.get('chunk_id')}")
 
 
 # ------------------------------------------------------------------ commands

@@ -183,7 +183,10 @@ def main():
         for _, r in spoken:
             if r["speaker"] not in speakers:
                 speakers.append(r["speaker"])
-        sid_of = {n: "(S%d)" % (i + 1) for i, n in enumerate(speakers)}
+        # speaker ids come from first-SPEAKING order, not the ledger/speaker-list order
+        from core import dialogue_syntax as _ds
+        sid_of = {spk: _ds.tag(i) for spk, i in _ds.speaker_index(
+            _ds.order_from_lines(dialogue, row["line_ids"], lambda r: fullrun.sec(r["start"]))).items()}
 
         n_shots = len(group)
         instr = ("How the reference pictures align with the target video — Picture 1 (from Shot 1) "

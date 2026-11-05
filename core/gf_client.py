@@ -108,11 +108,23 @@ def models() -> list[dict]:
 
 
 def _image_part(src: str) -> dict:
-    """Accept a local path OR raw base64."""
+    """Accept a local path OR raw base64.
+
+    A value that LOOKS like a path but does not exist is a bug in the caller, and it is a costly
+    one to diagnose: the server replies HTTP 400 `{"error":{"message":"Failed to process image.",
+    "type":"invalid_request_error"}}`, which reads like a broken vision model or a broken box on the
+    far side. Measured 2026-11-04: a single misplaced underscore in a filename produced exactly that
+    body from an otherwise healthy goldfishbowl whose 32B was loaded and answering text fine. Fail
+    loudly here instead of shipping the path as base64.
+    """
+    looks_like_path = (os.sep in src or "/" in src) and not src.startswith("data:")
     if os.path.exists(src):
         b64 = base64.b64encode(Path(src).read_bytes()).decode("ascii")
         ext = Path(src).suffix.lstrip(".").lower() or "jpeg"
         mime = "image/jpeg" if ext in ("jpg", "jpeg") else f"image/{ext}"
+    elif looks_like_path:
+        raise GFError(f"image path does not exist: {src!r} — refusing to send it as base64 "
+                      f"(the server would answer a misleading 'Failed to process image')")
     else:
         b64, mime = src, "image/jpeg"
     return {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}}

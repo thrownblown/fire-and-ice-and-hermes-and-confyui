@@ -43,14 +43,21 @@ CHARACTERS = [
     "TEEGRA", "JULIANA", "NEKRON", "DARKWOLF",
 ]
 
-# house-style sheet prompt. <NAME> is the only variable; <Picture 1> is the identity still.
+# house-style sheet prompt. <NAME> and <COSTUME> are the only variables; <Picture 1> is the
+# identity still. The costume wording comes from the character's own traits.txt — the register
+# sentence used to say "practical leather-and-brass costume", which every sheet obeyed over its own
+# reference: 13 characters in purple robes, ochre hides, red tunics and white/blue garments all came
+# back in brown leather with gold studs. Measured 2026-11-04 (TEEGRA): dropping that clause and
+# naming the film's costume flips the sheet to canon at the same LoRA strength (1.05).
 PROMPT_TMPL = """integrated_multimodal_description:
 
 subject_definitions:
-<NAME> character from <Picture 1>, rendered as a live-action 80s sword-and-sandals fantasy character:
+<NAME> character from <Picture 1>, rendered as a live-action 80s sword-and-sandals fantasy character.
+CANON (authoritative, from the film — the costume and colours must match this, not a generic
+sword-and-sandals look): <COSTUME>
 
 summary:
-[reference generation] static image of a character sheet. Keep the identity, face, hair, costume and proportions of <Picture 1>. Render it in the technicolor 80s sword-and-sandals register: practical leather-and-brass costume, broad theatrical performance, vivid saturated color with deep blacks.
+[reference generation] static image of a character sheet. Keep the identity, face, hair, costume and proportions of <Picture 1>. Render it in the technicolor 80s sword-and-sandals register: broad theatrical performance, vivid saturated color with deep blacks. Do not restyle the costume as leather armour and do not add metal fittings, studs or plates the canon does not have.
 
 retention_analysis:
 <NAME>: fully_preserved.
@@ -69,6 +76,46 @@ The target video is a static image of a character sheet on a plain white backgro
    circle 4: a hair color swatch.
    circle 5: a skin color swatch.
    circle 6: an outfit fabric swatch.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A"""
+
+
+# Photographic sheet template — Alex's ruling 2026-11-05: "we need to give realistic not illustrated
+# character sheets to H3". Measured the same day: all three audited t02 sheets read as ILLUSTRATION
+# to the 32B ("flat shading, uniform skin texture, stylized line work, non-photorealistic lighting"),
+# which is what a style LoRA at 1.05 plus design-sheet furniture ("6 circles", "colour swatches")
+# invites. This variant asks for photographs of a person instead, and drops the swatch furniture.
+REALISM_TMPL = """integrated_multimodal_description:
+
+subject_definitions:
+<NAME> character from <Picture 1>. CANON (authoritative, from the film — face, hair, costume and
+colours must match this): <COSTUME>
+
+summary:
+[reference generation] photographic character reference sheet: a set of REAL PHOTOGRAPHS of a living
+actor in costume, on a plain neutral studio backdrop under soft even daylight. Photographic realism:
+35mm film still, natural skin texture with pores and fine imperfections, real fabric weave and
+creasing, shallow depth of field, subtle film grain. NOT an illustration, NOT a painting, NOT a 3D
+render, NOT cel-shaded, no line work, no flat colour fills, no stylisation of features.
+
+retention_analysis:
+<NAME>: fully_preserved.
+
+detailed_description:
+The target video is a set of photographs of one person, photographed on the same day on the same
+neutral backdrop. Each photograph is separate and does not overlap.
+
+[Shot 1] static. Natural, neutral expression.
+
+1. On the left, a head-and-shoulders photograph of <NAME>, looking at camera, soft studio light.
+2. In the centre, two full-length photographs of <NAME>, arms relaxed at the sides: one straight
+   from the front, one from the side.
+3. On the right, one closer photograph of the face in three-quarter view.
+
+Everything is a photograph of a real person in real fabric; the backdrop is plain and slightly warm
+grey, with no scenery, no props and no other people.
 
 overall_soundscape: N/A
 
@@ -117,17 +164,41 @@ def upload(path: Path) -> str:
     return out.get("name") or fn
 
 
-def build_graph(name: str, still_name: str, seed: int, prefix: str) -> dict:
+def canon_costume(name: str) -> str:
+    """The character's own costume line, straight from refs/characters/<NAME>/traits.txt.
+
+    First non-empty line only: the draft files carry a provenance paragraph on line 2, and a
+    provenance note has no business inside a render prompt.
+    """
+    p = ROOT / "refs" / "characters" / name / "traits.txt"
+    if not p.exists():
+        raise SystemExit(f"{name}: no traits.txt — refusing to generate a sheet with no canon "
+                         f"(this is exactly how every sheet came back in leather-and-brass)")
+    for line in p.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            return " ".join(line.split())
+    raise SystemExit(f"{name}: traits.txt is empty — no canon to render")
+
+
+def build_graph(name: str, still_name: str, seed: int, prefix: str, realism: bool = False,
+                lora_strength: float = 1.05) -> dict:
     g = json.loads(TEMPLATE.read_text(encoding="utf-8"))
     g[NODE_LOAD_IMAGE]["inputs"]["image"] = still_name
-    g[NODE_PROMPT]["inputs"]["prompt"] = PROMPT_TMPL.replace("<NAME>", name)
+    tmpl = REALISM_TMPL if realism else PROMPT_TMPL
+    g[NODE_PROMPT]["inputs"]["prompt"] = (tmpl.replace("<NAME>", name)
+                                              .replace("<COSTUME>", canon_costume(name)))
     g[NODE_SEED]["inputs"]["noise_seed"] = seed
     g[NODE_SAVE]["inputs"]["filename_prefix"] = prefix
+    if NODE_LORA in g and "strength_model" in (g[NODE_LORA].get("inputs") or {}):
+        g[NODE_LORA]["inputs"]["strength_model"] = lora_strength
     return g
 
 
-def run_one(name: str, seed: int, queue: bool, take: int = 1) -> int:
-    still = find_identity_still(name)
+def run_one(name: str, seed: int, queue: bool, take: int = 1, realism: bool = False,
+            lora_strength: float = 1.05, still_override: str | None = None) -> int:
+    still = Path(still_override) if still_override else find_identity_still(name)
+    if not still.exists():
+        raise SystemExit(f"{name}: identity still not found: {still}")
     out_dir = ROOT / "refs" / "characters" / name
     out_dir.mkdir(parents=True, exist_ok=True)
     prefix = f"{name}_sheet_t{take:02d}"
@@ -137,10 +208,11 @@ def run_one(name: str, seed: int, queue: bool, take: int = 1) -> int:
         still_name = upload(still)
         print(f"[{name}] uploaded identity still -> {still_name}", flush=True)
 
-    g = build_graph(name, still_name, seed, prefix)
+    g = build_graph(name, still_name, seed, prefix, realism=realism, lora_strength=lora_strength)
     gpath = out_dir / f"{prefix}.graph.json"
     gpath.write_text(json.dumps(g, indent=1), encoding="utf-8")
-    print(f"[{name}] graph -> {gpath} (still={still_name}, seed={seed})", flush=True)
+    print(f"[{name}] graph -> {gpath} (still={still_name}, seed={seed}, realism={realism}, "
+          f"lora={lora_strength})", flush=True)
 
     if not queue:
         return 0
@@ -185,17 +257,40 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--char", default=None, help="character name (or '--all')")
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--chars", default="", help="comma-separated names (overrides --all/--char), "
+                                                "e.g. the 13 the audio-led batch consumed")
     ap.add_argument("--queue", action="store_true", help="upload + POST + pull (default dry-run)")
     ap.add_argument("--seed-base", type=int, default=700000000000000)
-    ap.add_argument("--take", type=int, default=1)
+    ap.add_argument("--take", type=int, default=1,
+                    help="take number -> filename prefix <NAME>_sheet_t<NN> (use 2 to keep t01 on disk)")
+    ap.add_argument("--skip-existing", action="store_true",
+                    help="skip a character whose <NAME>_sheet_t<take>*.png is already rendered")
+    ap.add_argument("--realism", action="store_true",
+                    help="photographic sheet template (real actor, 35mm, skin texture) instead of the "
+                         "design-sheet template — Alex's ruling: give H3 realistic, not illustrated, sheets")
+    ap.add_argument("--lora-strength", type=float, default=1.05,
+                    help="style LoRA strength (the retro-fantasy LoRA is the likely illustrator; "
+                         "0.0 turns it off)")
+    ap.add_argument("--still", default=None,
+                    help="override the identity still (e.g. a Qwen-Edit PHOTOREAL pass of the film "
+                         "frame) — H3 ref2va reproduces its reference's medium, so a photographic "
+                         "input is the only way to a photographic sheet")
     args = ap.parse_args()
 
-    names = CHARACTERS if args.all else ([args.char] if args.char else [])
+    if args.chars:
+        names = [c.strip() for c in args.chars.split(",") if c.strip()]
+    else:
+        names = CHARACTERS if args.all else ([args.char] if args.char else [])
     if not names:
-        ap.error("pass --char NAME or --all")
+        ap.error("pass --char NAME, --chars A,B,C or --all")
     for i, name in enumerate(names):
+        if args.skip_existing and list((ROOT / "refs" / "characters" / name).glob(
+                f"{name}_sheet_t{args.take:02d}*.png")):
+            print(f"[{name}] take {args.take} already on disk — skipped", flush=True)
+            continue
         seed = args.seed_base + i
-        run_one(name, seed, args.queue, take=args.take)
+        run_one(name, seed, args.queue, take=args.take, realism=args.realism,
+                lora_strength=args.lora_strength, still_override=args.still)
     return 0
 
 

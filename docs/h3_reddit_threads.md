@@ -1,11 +1,21 @@
 # H3 Reddit Threads — index of relevant r/StableDiffusion reading
+<!-- spicy-ok: the index quotes Reddit thread titles verbatim from the sources -->
 
 Purpose: a running index of community threads that inform the FNI H3 pipeline. Each entry:
 link, why it matters, and the concrete takeaway. Per-thread digests go in their own
 `docs/*_thread.md`; this is the map.
 
-Status legend: [READ] digested in a separate doc · [TODO] known useful, not yet read.
-Last full re-review: 2026-10-12 (`docs/h3_repull_2026-10-12.md`).
+Status legend: [READ] digested in a separate doc · [TODO] known useful, not yet pulled.
+
+**Machine catalog: `docs/reddit-threads.jsonl`** (139 rows) — one record per thread mentioned
+anywhere in `docs/*.md`: id, subreddit, title, url, author, score, num_comments, created_utc,
+`status` (read | todo), the digest docs that carry it, and `mentioned_in`. Rebuild it after any
+research pull with `.venv/Scripts/python.exe tools/build_reddit_catalog.py` (public arctic-shift
+API, no key). Status is derived from where the id appears, so the catalog cannot drift from the
+digests the way this hand-written map did.
+
+Last full re-review: 2026-10-31 → 2026-11-04 (`docs/h3_reddit_research_2026-11-04.md`; the
+2026-10-12 sweep is `docs/h3_repull_2026-10-12.md`).
 
 ---
 
@@ -181,11 +191,33 @@ Last full re-review: 2026-10-12 (`docs/h3_repull_2026-10-12.md`).
   foxdit's minH3EDHTERLatent_v21 workflow. Official dialogue prompt guide exists. H3 has
   tendency to improvise — results significantly improved but not perfect.
 - H3 latent upscale / second-pass threads (1w43syg; altoiddealer WF ships a latent upscale pass).
-- H3 Spectrum speedup threads (xmarre ComfyUI-Spectrum-MiniMax-H3).
-- H3 audio (dialogue/lip-sync) quality threads (1vj8nyp multi-speaker; 1vkh2mi any-language).
-- Prompt-structure guides (1vnis23 cheat sheet; 1vfnby5 edited camera/sound guide).
-- Gibberish-fix threads (1vxpbo1, 1viui81).
-- Bakshi Fire & Ice or rotoscope-style LoRA threads, if any exist.
+
+## [READ] Framing is not an instruction — "Why doesn't MiniMax H3 understand simple, direct instructions?" (1xlaj6u)
+- https://www.reddit.com/r/StableDiffusion/comments/1xlaj6u/why_doesnt_minimax_h3_understand_simple_direct/
+- Digest: `docs/h3_reddit_research_2026-11-04.md` §1. 43 comments, consensus high (64/63).
+- Takeaway: the training captions are VLM scene graphs, so "you can see them from head to
+  thighs" is vocabulary the model has no meaning for — cover the frame with a described
+  action/content ("They are looking directly at the viewer and smiling"), or the part gets
+  deprioritised as filler. Filmmaking terms work for camera moves/angles, not composition;
+  describing wardrobe ("jeans") is a reliable way to buy a medium shot. Camera motion is
+  prompt-text-only over a FIXED 20-phrase vocabulary (§4.3 of the guide we vendor) and every
+  move needs a target to land on. Also: "camera" can be read as a literal object in scene —
+  say "talking directly to the viewer".
+
+## [READ] Character swap as the identity route — "How are people replacing characters in porn so consistently" (1xl8hgc)
+- https://www.reddit.com/r/comfyui/comments/1xl8hgc/how_are_people_replacing_characters_in_porn_so/
+- Digest: `docs/h3_reddit_research_2026-11-04.md` §2. 55 comments, 130 up.
+- Takeaway: the verified stack is `akatz-ai/MiniMax-H3-Character-Swap-LoRA` (HF, 140k downloads,
+  ref2va base) and `D3voz/openjutsu` (1.6k stars, MIT — H3 + SAM 3.1 tracking + Qwen3-VL 8B
+  describer, Next.js over a ComfyUI workflow, DMAD 6-step), which the OP called "the actual
+  answer". Camera/cuts/motion/audio stay, the person is replaced — i.e. a re-cast of a rendered
+  take without sheets. Full-precision text encoder improves adherence; masking is manual for
+  best results. OP's inconsistency was prompting, not the LoRA.
+
+## [READ] Re-check — Prompt Visualizer thread comment (1xif258, comment 19rv7151xjqv7)
+- Re-pulled 2026-11-04: unchanged (score 6, 0 replies, top-level); thread dead since 2026-10-30.
+- xb1n0ry's promised H3 prompt-enhancer node has NOT appeared on his GitHub as of 2026-11-04
+  (newest push 2026-10-18) — stop watching for it. Details in `docs/h3_reddit_research_2026-11-04.md` §3.
 
 ## [READ] Qwen-Image-Edit prompting cluster (10 threads, 2026-10-27)
 - Playbook 1n1n81o · Edit-tips 1wlt9t9 · System prompt 1mudj7i · Drift 1xgpezp ·
@@ -197,3 +229,24 @@ Last full re-review: 2026-10-12 (`docs/h3_repull_2026-10-12.md`).
   when a ref supplies the setting; chain small edits; style-source-first; Consistence
   LoRA (civitai 1939453) for big edits; VL-caption the still to seed the video prompt.
   A/B test queued as T0026 against build_scenes.scene_prompt.
+
+---
+
+## [TODO] Unread leads (named in digests, never pulled — status `todo` in the catalog)
+
+- `1w43syg` H3 ref2va neural-3D latent upscaling + gentle refinement workflow.
+- `1vj8nyp` Forcing H3 multi-speaker dialogue audio in ComfyUI.
+- `1vkh2mi` MiniMax H3 speak any language.
+- `1vnis23` H3 prompting cheat sheet / structure.
+- `1vfnby5` Edited guide for H3 prompt structure, camera, sound.
+- `1vxpbo1` + `1viui81` The H3 gibberish problem (two "cures").
+- `1vojrzv` (289 up) qwen 3.8 writes better MiniMax prompts than [baseline] — direct A/B input for
+  the goldfishbowl rewriter arm ask.
+- `1w2wcnh` (149 up) Collection of MiniMax H3 workflows.
+- `1w4m8r4` (77 up) Minimax H3 news round-up, 1st Sept 2026.
+- `1w5e6pl` Endless MiniMax H3 (with Endless LipSync) v1.0.
+- `1wkmopn` H3 "Ultra-Flexible Director's Console" / SelfLift second pass.
+- H3 Spectrum speedup threads (xmarre ComfyUI-Spectrum-MiniMax-H3) — no id captured.
+- Bakshi Fire & Ice / rotoscope-style LoRA threads — never searched; unknown if any exist.
+- `jutsustudio.com/open-source-higgsfield/` #OpenSourceHiggsfield list (102 entries) — re-check
+  after 2026-11-06 for the announced winners; see `docs/h3_reddit_research_2026-11-04.md`.

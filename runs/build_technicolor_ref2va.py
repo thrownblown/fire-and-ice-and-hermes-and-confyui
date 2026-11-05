@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -29,6 +30,7 @@ sys.path.insert(0, r"E:/FNI/pipeline")
 
 import fullrun as F  # noqa: E402
 import refrun as R  # noqa: E402
+from core import dialogue_syntax as D  # noqa: E402
 
 ROOT = Path(r"E:/FNI")
 RUN_DIR = ROOT / "runs" / "T0015_s05_technicolor-sheets-ref2va"
@@ -62,10 +64,22 @@ PLATE = {
 
 
 def sheet_path(name: str) -> Path | None:
+    """The character's sheet for rendering — the NEWEST take, not the first sorted.
+
+    `sorted(...)[0]` returned `*_sheet_t01_*.png` forever, which is exactly the "asset lines
+    supersede each other and drivers keep consuming the STALE line" trap: after the t02 sheet line
+    was regenerated with canon injected (2026-11-04/05), every render would still have consumed the
+    brown-leather t01 generation. Newest-by-mtime makes the current generation the default.
+
+    Pin or roll back explicitly when you need to:
+        FNI_SHEET_GLOB="{name}_sheet_t01*.png"   # force a generation
+    The chosen filename lands in the render graph (LoadImage), so every clip's provenance shows
+    which sheet generation it consumed.
+    """
     d = ROOT / "refs" / "characters" / name
-    for p in sorted(d.glob(f"{name}_sheet_t*.png")):
-        return p
-    return None
+    pattern = os.environ.get("FNI_SHEET_GLOB") or "{name}_sheet_t*.png"
+    hits = sorted(d.glob(pattern.format(name=name)), key=lambda p: p.stat().st_mtime, reverse=True)
+    return hits[0] if hits else None
 
 
 def plate_path(slug: str) -> Path | None:
@@ -107,6 +121,9 @@ def build_sheet_prompt(row, subjects, plate_count, dialogue, people) -> str:
     # one shot block per chunk shot, with dialogue assigned by midpoint (mirrors refrun)
     shot_lines = []
     sidx = {name: i + 1 for i, name in enumerate(subjects)}
+    # (S#) = SPEAKER id by first-speaking order, stable for the whole prompt (NOT the subject
+    # index) — docs/h3-official ref guide §5.4 + Alex 2026-11-05.
+    spk_idx = D.speaker_index(D.order_from_lines(dialogue, row["line_ids"], lambda r: F.sec(r["start"])))
     for idx, (sid, snum) in enumerate(zip(row["shots"], row["shot_nums"]), 1):
         comp = {"shot_type": row["shot_type"][idx - 1], "angle": row["angle"][idx - 1]}
         cam = F.camera_move(comp, idx, len(row["shots"]))
@@ -119,7 +136,7 @@ def build_sheet_prompt(row, subjects, plate_count, dialogue, people) -> str:
             if not (people.get(sid, {}).get("_t0", 0) <= mid < people.get(sid, {}).get("_t1", 0)):
                 continue
             spk = r["speaker"]
-            tag = f"(S{sidx.get(spk, 1)})"
+            tag = D.tag(spk_idx.get(spk, 1))      # speaker id, NOT the subject index
             bits.append(f"<Subject {sidx.get(spk, 1)}> {tag} says: <d>[English] {r['text']}</d>")
         shot_lines.append(" ".join(b for b in bits if b))
 

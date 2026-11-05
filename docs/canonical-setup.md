@@ -86,9 +86,22 @@ Hard rules:
     `status`, `loaded`. It replaces `/api/tags` + `/api/ps`. Caveat: one model can appear twice
     (folder name and `:QUANT` variant) — same weights. **Treat this list as authoritative**: the
     id prefix changed once already (`ollama-served/` → `llama-cpp/`, 13 ids) inside a single day.
-  - Studio owns residency: request any id and it swaps the runner itself (~15–40 s cold load) and
-    evicts after 1 h idle, so mh370 no longer serialises model loads by hand. Batch prompt sets
-    per model rather than interleaving arms.
+  - Studio owns residency: request any id and it swaps the runner itself and evicts after ~1 h
+    idle, so mh370 no longer serialises model loads by hand. **But it is a LOCAL CONSUMER MACHINE,
+    not a datacentre: a model switch takes MINUTES, not seconds** (measured and stated by Alex
+    2026-11-04 — earlier "~15–40 s" figures were optimistic). Consequences that have each cost a
+    session:
+    - **The first message after a switch pays the whole load.** Do not read a slow or failing first
+      call as a broken model/endpoint: `core/gf_client.py` defaults to a 900 s timeout on purpose,
+      and a retry loop that gives up in 60 s will "prove" a fault that is just a cold runner. Wait
+      it out, or check `GET /v1/models` → `loaded` first and budget accordingly.
+    - **Never evict needlessly.** Every probe of a DIFFERENT id unloads the resident one and costs
+      minutes to bring back — so a one-off "control" call against another model is not free: it
+      evicts the model you were testing and can invalidate your own diagnosis (an image call that
+      failed cold can look exactly like a broken vision projector). Check `loaded` before probing;
+      if the model you need is resident, test THAT one and leave the others alone.
+    - Batch prompt sets per model rather than interleaving arms (juror phases, not per-chunk
+      rotation) — the per-switch cost is what makes interleaving pathological.
   - **There is NO thinking cap on our arms** (goldfishbowl verified it from the running process,
     2026-11-01 — the earlier "512-token cap" note describes their server-side defaults, not our
     models). The real hazard is the OUTPUT allowance: the abliterated arm thinks without a budget,
@@ -123,6 +136,30 @@ Hard rules:
   - **SERVABILITY RULE (goldfishbowl's, and it bites):** the listing is not proof a model
     LOADS. Confirm a model actually answers before building a run on it — `vllm/qwen3.8-27b-heretic`
     sat in the list as an incomplete download and is NOT servable.
+  - **A VLM can be listed, `loaded=True`, answer TEXT — and fail every IMAGE (seen 2026-11-04,
+    root-caused by goldfishbowl).** It was NOT the vision projector: the mmproj was present and
+    loaded (`has vision encoder`, `loaded multimodal model '.../mmproj-qwen3-vl-32b-heretic_ctx128k.gguf'`).
+    It was a **VRAM budget failure that is SILENT at load**: the 32B was served at `n_ctx = 106496`,
+    whose KV cache alone committed 26,624 MiB (ROCm0 13,728 + ROCm1 12,896) on top of 32,410 MiB of
+    weights — ~59.5 GB of 64 GB. The vision warmup (`get_dummy_batch: warmup with image size =
+    1472 x 1472`) then failed to allocate 418 MiB (`cudaMalloc failed: out of memory`), and
+    **llama.cpp logs that OOM and carries on**, reaching `loaded multimodal model` with a dead
+    vision graph. Symptom from the client side: text answers normally, every image returns HTTP 500,
+    and the body differs by which way it degraded — `Could not reach an upstream service` = an
+    instance that degraded at load (Studio retries the load ~9×, which looks like a connection
+    outage window from here), `failed to process mtmd chunk` = an instance that loaded but could not
+    allocate mtmd buffers for a real image. **Fix was server-side: `max_seq_length` → 32768 on that
+    model's override** (KV 26,624 → 8,192 MiB, ~18 GB freed) — verified with a real image, not a
+    status code.
+    - **Consequences for us:** the 32B now serves **32,768 tokens of context** (was 106,496), and an
+      image COSTS CONTEXT as well as VRAM (~4k tokens for a max-size plate). One plate/image plus a
+      rubric is comfortable; several plates in one call needs a downscale (send ≤1024 px JPEGs) or a
+      word with goldfishbowl first.
+    - **Diagnostic order when a VLM returns 500 on images:** (1) check `loaded` in `GET /v1/models`;
+      (2) reproduce with your OWN client (text vs image — a text 200 + image 500 localises it to the
+      vision path); (3) **ask the box's owner for the LOAD LOG before theorising** — the OOM above is
+      invisible from outside, and a guess about mmproj/mtmd workers is exactly the guess that was
+      wrong here. Symptom from the client is never enough to name the cause.
   - **Breakage from the retirement — mh370 side, NOT yet fixed (2026-11-01):**
     - ~~`providers.goldfishbowl.default_model` + the three `model.aliases.goldfish-*` ids carried
       Ollama-era names~~ **FIXED 2026-11-01** from goldfishbowl's published live list:

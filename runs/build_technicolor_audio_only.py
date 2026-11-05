@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -32,6 +33,7 @@ import fullrun as F  # noqa: E402
 import refrun as R  # noqa: E402
 import build_technicolor_ref2va as T  # noqa: E402  (TRAITS, sheet_path, plate_path, PLATE)
 from core.prompt_guards import usable_blocking, lint_prompt  # noqa: E402
+from core import dialogue_syntax as D  # noqa: E402
 
 ROOT = Path(r"E:/FNI")
 RUN_DIR = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va"
@@ -70,8 +72,50 @@ GROUP_CONSTRAINT = (
 )
 
 
+def _shot_presence(rec, subjects) -> str:
+    """Who is ACTUALLY on screen in this shot, from `manifests/character_pass.jsonl`.
+
+    Measured defect (Alex, 2026-11-05, on T0017): "nekron was speaking juliannas lines". The prompt
+    was correct in every checkable way — the line→subject attribution matched the script (L023/24
+    Juliana, L025/26 Nekron), `<Picture 1>` was JULIANA's sheet and `<Picture 2>` NEKRON's, and the
+    dialogue timing landed each line inside the right shot. What the prompt never said was WHO IS IN
+    THE FRAME per shot: shot 00067 is a close-up of ONE person (character_pass: "slender, long
+    straight black hair, pale, purple top" — Juliana), but the chunk-level blocking told the model
+    both characters were present and facing each other. With two figures in the same purple register
+    and "tightening toward the face" naming no owner, the model can put S1's line on the other face.
+
+    This clause makes the on-screen cast explicit per shot, and names the subject when the VLM's
+    appearance descriptors match that subject's canon.
+    """
+    ppl = (rec or {}).get("people") or []
+    if not ppl:
+        return ""
+    def label(p):
+        hair = (p.get("hair") or "").strip()
+        skin = (p.get("skin") or "").strip()
+        cloth = (p.get("clothing") or "").strip()
+        sex = (p.get("sex") or "").strip()
+        bits = [b for b in (sex, skin, hair and f"{hair} hair", cloth) if b]
+        who = ", ".join(bits)
+        # match to a named subject on hair + clothing words (TRAITS is the canon text)
+        best, score = None, 0
+        for name in subjects:
+            tr = T.TRAITS.get(name, "").lower()
+            s = sum(1 for tok in re.findall(r"[a-z]+", (hair + " " + cloth).lower())
+                    if len(tok) > 3 and tok in tr)
+            if s > score:
+                best, score = name, s
+        return f"{who} (this is {best})" if best and score >= 2 else who
+    n = len(ppl)
+    if n == 1:
+        return f"On screen in this shot: exactly 1 person, alone — {label(ppl[0])}. Nobody else is visible."
+    return (f"On screen in this shot: exactly {n} people — "
+            + "; ".join(label(p) for p in ppl)
+            + ". Nobody else is visible.")
+
+
 def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
-                 group_scene=False) -> str:
+                 group_scene=False, shot_presence=False) -> str:
     n_sub = len(subjects)
     sd = "\n".join(
         f"<Subject {i}> is {name}, {T.TRAITS.get(name, '')}, shown in <Picture {i}>."
@@ -83,9 +127,10 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
             "the spoken dialogue and timing of the reference audio.")
 
     rt = []
+    span = f"[Shot 1] and [Shot {len(row['shots'])}]" if shot_presence else "[Shot 1] and [Shot 2]"
     for i, name in enumerate(subjects, 1):
         rt.append(f"<Subject {i}>: fully_preserved — keep {T.TRAITS.get(name, 'identity')} "
-                  f"consistent across [Shot 1] and [Shot 2].")
+                  f"consistent across {span}.")
     rt.append("Reference audio: fully_copy — reuse the spoken lines and their exact timing.")
     for k in range(plate_count):
         p = n_sub + k + 1
@@ -100,6 +145,11 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
     # Strip it here (do not touch the shared table; other tracks may want crowds).
     style = style.replace("epic practical sets and crowds", "practical sets")
     sidx = {name: i + 1 for i, name in enumerate(subjects)}
+    # SPEAKER ids, not subject ids: number by first-speaking order (docs/h3-official ref guide §5.4,
+    # and Alex's correction — "(S1) means the first speaker in that prompt … they stay s1 for the
+    # whole prompt"). Deriving them from the subject index is only accidentally right when the
+    # subjects speak in subject order.
+    spk_idx = D.speaker_index(D.order_from_lines(dialogue, row["line_ids"], lambda r: F.sec(r["start"])))
     shot_lines = []
     for idx, (sid, snum) in enumerate(zip(row["shots"], row["shot_nums"]), 1):
         comp = {"shot_type": row["shot_type"][idx - 1], "angle": row["angle"][idx - 1]}
@@ -108,6 +158,10 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
         # explicit still/lounging blocking, so drop that clause
         cam = cam.replace(" as the figure moves", "").replace("as the figure moves", "")
         bits = [f"[Shot {idx}]", cam]
+        if shot_presence:
+            pres = _shot_presence(people.get(sid), subjects)
+            if pres:
+                bits.append(pres)
         for lid in row["line_ids"]:
             r = dialogue.get(lid)
             if not r:
@@ -116,8 +170,8 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
             if not (people.get(sid, {}).get("_t0", 0) <= mid < people.get(sid, {}).get("_t1", 0)):
                 continue
             spk = r["speaker"]
-            bits.append(f"<Subject {sidx.get(spk, 1)}> (S{sidx.get(spk, 1)}) says: "
-                        f"<d>[English] {r['text']}</d>")
+            tag = D.tag(spk_idx.get(spk, 1))     # speaker id, NOT the subject index
+            bits.append(f"<Subject {sidx.get(spk, 1)}> {tag} says: <d>[English] {r['text']}</d>")
         shot_lines.append(" ".join(b for b in bits if b))
     constraint = GROUP_CONSTRAINT if group_scene else GLOBAL_CONSTRAINT
     dd = f"{style}\n\n{constraint}\n\n"
@@ -197,6 +251,10 @@ def main():
     ap.add_argument("--subjects", help="comma-list to override the ledger's subjects (fixes mis-stamps)")
     ap.add_argument("--force", action="store_true",
                     help="queue despite guardrail warnings (crowd scene without blocking, etc.)")
+    ap.add_argument("--shot-presence", action="store_true",
+                    help="state WHO is on screen per shot from manifests/character_pass.jsonl, and "
+                         "fix the retention span to the chunk's real shot count. Off = byte-identical "
+                         "to the T0017 prompt, so it can be A/B'd against a render.")
     args = ap.parse_args()
 
     rows = [json.loads(l) for l in F.CHUNK_LEDGER.read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -240,7 +298,7 @@ def main():
         return
 
     text = build_prompt(row, subjects, 1 if plate else 0, dialogue, people, blocking,
-                        group_scene=is_group_scene)
+                        group_scene=is_group_scene, shot_presence=args.shot_presence)
 
     # prompt lint: never queue a prompt that carries an error string or a
     # dead <Video N> reference — lint failures abort BOTH dry-run and queue.
@@ -255,16 +313,22 @@ def main():
 
     (RUN_DIR / "prompts").mkdir(parents=True, exist_ok=True)
     (RUN_DIR / "graphs").mkdir(parents=True, exist_ok=True)
-    (RUN_DIR / "prompts" / f"{args.chunk}.txt").write_text(text, encoding="utf-8")
+    # A DRY RUN must never overwrite a take's record. Measured 2026-11-05: a no-queue inspection
+    # run of this driver replaced the graph (and prompt file) of S03-c01's ALREADY-RENDERED take 1,
+    # so the review page would have shown a prompt that take was never rendered with. Prompt/graph
+    # files are the provenance of a take; only the path that actually queues may write them.
+    dry_suffix = "" if args.queue else ".dryrun"
+    (RUN_DIR / "prompts" / f"{args.chunk}{dry_suffix}.txt").write_text(text, encoding="utf-8")
 
     sheet_names = [T.sheet_path(n).name for n in subjects]
 
     if not args.queue:
         g = build_audio_only_graph(row, sheet_names, plate_names, audio_name)
         g, tag = finalize_graph(g, args.chunk, args.take, text, args.seed)
-        (RUN_DIR / "graphs" / f"{tag}.json").write_text(json.dumps(g, indent=2))
+        (RUN_DIR / "graphs" / f"{tag}{dry_suffix}.json").write_text(json.dumps(g, indent=2))
         inp = g["136"]["inputs"]
-        print("DRY RUN OK — nothing queued")
+        print("DRY RUN OK — nothing queued, and no take record touched")
+        print("  wrote (dry):", RUN_DIR / "prompts" / f"{args.chunk}{dry_suffix}.txt")
         print("  prefix:", tag, " seed:", g["129"]["inputs"]["noise_seed"])
         print("  subjects:", subjects)
         print("  plate:", plate_names)
@@ -290,7 +354,18 @@ def main():
         print(f"QUEUED {tag} ({len(up_sheets)} sheets + {len(up_plates)} plate, "
               f"audio {audio_name}, seed {g['129']['inputs']['noise_seed']})")
     except Exception as e:  # noqa: BLE001
-        print("queue failed:", e)
+        # ALWAYS print the HTTP body: a bare "HTTP Error 400: Bad Request" hides the one line that
+        # names the fault (measured 2026-11-05: `value_not_in_list: lora_name ... not in (list of
+        # length 855)` — a refiled LoRA — and the body was the only place it appeared).
+        body = ""
+        if hasattr(e, "read"):
+            try:
+                body = (e.read() or b"").decode("utf-8", "replace")
+            except Exception:  # noqa: BLE001
+                body = ""
+        print(f"queue failed: {e}")
+        if body:
+            print("  server said:", body[:800])
 
 
 if __name__ == "__main__":

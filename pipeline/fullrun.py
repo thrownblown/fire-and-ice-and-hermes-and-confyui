@@ -686,10 +686,17 @@ def build_prompt(row, caps, people, dialogue_by_id, names_row):
              % (len(row["shots"]), row["h3_seconds"]))
 
     stamped = set(row["stamped_names"])
-    speaker_ids = {}
-    for spk in row["speakers"]:
+    # (S#) = SPEAKER id in first-SPEAKING order, stable for the whole prompt — not the subject
+    # index and not the ledger's `speakers` list order. Measured 2026-11-05: 20 of 110 dialogue
+    # chunks have a `speakers` order that differs from the real speaking order, so numbering by the
+    # ledger put the wrong id on lines in those chunks (docs/h3-official ref guide §5.4; Alex's
+    # correction, "(S1) means the first speaker in that prompt … they stay s1 for the whole prompt").
+    from core import dialogue_syntax as _ds
+    speaker_ids = {spk: _ds.tag(i) for spk, i in _ds.speaker_index(
+        _ds.order_from_lines(dialogue_by_id, row["line_ids"], lambda r: sec(r["start"]))).items()}
+    for spk in row["speakers"]:                     # a speaker with no line in this chunk keeps an id
         if spk not in speaker_ids:
-            speaker_ids[spk] = "(S%d)" % (len(speaker_ids) + 1)
+            speaker_ids[spk] = _ds.tag(len(speaker_ids) + 1)
 
     parts = []
     for idx, shot_id in enumerate(row["shots"], 1):

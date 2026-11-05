@@ -19,6 +19,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -79,12 +80,83 @@ def enumerate_outputs():
     return sorted(seen.values(), key=lambda r: (r["subfolder"], r["filename"]))
 
 
+def pull_names(names_file, subfolder, dest_root, dry_run, force):
+    """Pull artifacts by EXPLICIT filename — the post-reboot recovery route.
+
+    ComfyUI's /history lives in memory, so after a host reboot the record of finished work
+    is gone while the files are still on disk (verified on tombstone 2026-11-04: /history
+    returned 0 records, yet /view?filename=S03-c01_audioOnly_t01_00001_.mp4&subfolder=video
+    answered 200 with Content-Length 6,593,776). /history cannot list them, so the names have
+    to come from the ledger that queued them.
+
+    A missing file is a 404 and is REPORTED, never counted as a failure — "the rig does not
+    have it" is a result, and it is the difference between a recoverable batch and a lost one.
+    """
+    dest_root = Path(dest_root)
+    names = [n.strip() for n in Path(names_file).read_text(encoding="utf-8").splitlines() if n.strip()]
+    print(f"{len(names)} explicit name(s) from {names_file} -> {dest_root}"
+          + (f"/{subfolder}" if subfolder else ""))
+    dest_root.mkdir(parents=True, exist_ok=True)
+    INDEX.parent.mkdir(parents=True, exist_ok=True)
+    fh = INDEX.open("a", encoding="utf-8")
+    got = skipped = absent = failed = 0
+    total_bytes = 0
+    try:
+        for n in names:
+            out = dest_root / subfolder / n if subfolder else dest_root / n
+            out.parent.mkdir(parents=True, exist_ok=True)
+            if out.exists() and not force and out.stat().st_size > 1000:
+                skipped += 1
+                continue
+            if dry_run:
+                print(f"  would pull {out}")
+                continue
+            try:
+                data = fetch("/view", {"filename": n, "subfolder": subfolder, "type": "output"})
+            except urllib.error.HTTPError as ex:
+                if ex.code == 404:
+                    absent += 1
+                else:
+                    print(f"  HTTP {ex.code} for {n}")
+                    failed += 1
+                continue
+            except Exception as ex:  # noqa: BLE001
+                print(f"  FAILED {n}: {ex}")
+                failed += 1
+                continue
+            if len(data) < 1000:
+                print(f"  empty/short response for {n} ({len(data)} bytes)")
+                failed += 1
+                continue
+            out.write_bytes(data)
+            got += 1
+            total_bytes += len(data)
+            fh.write(json.dumps({"file": str(out).replace("\\", "/"), "filename": n,
+                                 "subfolder": subfolder, "bytes": len(data), "prompt_id": None,
+                                 "class_types": [], "recovery": "pull_5090 --names",
+                                 "ts": time.time()}) + "\n")
+            fh.flush()
+            print(f"  pulled {n} ({len(data) / 1048576:.1f} MB)")
+    finally:
+        fh.close()
+    print(f"pull --names: {got} new, {skipped} already present, {absent} ABSENT on the rig, "
+          f"{failed} failed, {total_bytes / 1048576:.1f} MB")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--filter", default="", help="only filenames containing this")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true", help="re-download even if present")
+    ap.add_argument("--names", default="", help="file of explicit output filenames (post-reboot "
+                                               "recovery; /history cannot list them)")
+    ap.add_argument("--subfolder", default="", help="subfolder for --names pulls, e.g. video")
+    ap.add_argument("--dest", default="", help="destination root for --names pulls")
     args = ap.parse_args()
+
+    if args.names:
+        return pull_names(args.names, args.subfolder, args.dest or DEST, args.dry_run, args.force)
 
     try:
         entries = enumerate_outputs()

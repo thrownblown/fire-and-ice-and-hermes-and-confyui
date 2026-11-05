@@ -48,6 +48,18 @@ def ff(args, timeout=120):
     return p.returncode, p.stderr
 
 
+# ffmpeg's filter logs put a SPACE after the colon in this build
+# (`lavfi.freezedetect.freeze_start: 0`) while blackdetect prints `black_duration:5.96`
+# with none. A colon-then-digit regex matched blackdetect and silently matched NOTHING from
+# freezedetect, so the frozen check never fired in any QC pass (494 baseline rows: frozen_s == 0
+# everywhere, while a 6 s single-colour clip scored PASS). Always allow optional whitespace.
+_NUM = r":\s*([\d.]+)"
+
+
+def num_list(err, key):
+    return [float(m) for m in re.findall(re.escape(key) + _NUM, err)]
+
+
 def duration(path):
     p = subprocess.run(["ffprobe", "-v", "error", "-show_entries",
                         "format=duration", "-of", "csv=p=0", str(path)],
@@ -67,14 +79,21 @@ def qc_video(path, has_dialogue):
 
     _, err = ff(["-i", str(path), "-vf", "blackdetect=d=0.4:pix_th=0.10",
                  "-an", "-f", "null", "-"])
-    black = sum(float(m) for m in re.findall(r"black_duration:([\d.]+)", err))
+    black = sum(num_list(err, "black_duration"))
     out["black_s"] = round(black, 2)
     if dur and black / dur >= 0.30:
         verdicts.append("FAIL-black")
 
     _, err = ff(["-i", str(path), "-vf", "freezedetect=n=-55dB:d=0.8",
                  "-map", "0:v", "-f", "null", "-"])
-    frozen = sum(float(m) for m in re.findall(r"freeze_duration:([\d.]+)", err))
+    # freezedetect prints freeze_duration only when a freeze ENDS, so a clip that is frozen
+    # through its last frame emits freeze_start with no duration and a duration-only sum reads 0
+    # — the worst case (a clip that never moves) scored PASS. Count the unterminated tail as frozen.
+    frozen = sum(num_list(err, "freeze_duration"))
+    freeze_starts = num_list(err, "freeze_start")
+    freeze_ends = num_list(err, "freeze_end")
+    if len(freeze_starts) > len(freeze_ends):
+        frozen += max(0.0, dur - freeze_starts[len(freeze_ends)])
     out["frozen_s"] = round(frozen, 2)
     if dur and frozen / dur >= 0.40:
         verdicts.append("FAIL-frozen")

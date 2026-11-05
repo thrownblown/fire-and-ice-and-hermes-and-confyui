@@ -179,6 +179,78 @@ def rel(p):
     return p.relative_to(ROOT).as_posix()
 
 
+# --------------------------------------------------------------------------
+# Prompts beside the clips. Alex's standing ask: the review page must show the
+# VERBATIM prompt next to the video, or judging a take is guesswork. The Tests
+# tab used to carry no prompt at all (he asked for T0017 and got clips only).
+#
+# Source order, most authoritative first:
+#   1. the take's own GRAPH (an artifact: what was actually queued)
+#   2. the driver's prompts/<chunk>.txt
+#   3. fullrun/prompts/<chunk>.txt
+# The chosen source is recorded per clip as `prompt_source`, so the page never
+# implies a provenance it does not have.
+# --------------------------------------------------------------------------
+GRAPH_DIRS = [ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va" / "graphs",
+              ROOT / "fullrun" / "graphs"]
+PROMPT_DIRS = [ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va" / "prompts",
+               ROOT / "fullrun" / "prompts"]
+
+
+def _prompt_from_graph(path: Path) -> str:
+    """Pull the queued prompt out of a ComfyUI API-format graph."""
+    try:
+        g = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return ""
+    best = ""
+    for node in g.values():
+        if not isinstance(node, dict):
+            continue
+        ct = str(node.get("class_type", ""))
+        ins = node.get("inputs") or {}
+        cand = ""
+        if "ReferenceToVideo" in ct or "MiniMaxH3" in ct:
+            cand = str(ins.get("prompt") or "")
+        elif ct == "PrimitiveStringMultiline":
+            cand = str(ins.get("value") or "")
+        if len(cand) > len(best):
+            best = cand
+    return best.strip()
+
+
+def clip_meta(f: str) -> dict:
+    """Prompt + provenance for one clip path (`runs/<run>/.../<chunk>_<mode>_t<NN>_*.mp4`)."""
+    p = ROOT / f
+    name = p.name
+    # the S03 arm collector names files `take<N>__<chunk>_<mode>_t<NN>_...` so they sort together;
+    # strip that prefix before parsing
+    name = re.sub(r"^take\d+__", "", name)
+    m = re.match(r"(?P<chunk>[A-Za-z]\d{2}-[ck]\d{2})_(?P<mode>[A-Za-z]+)_t(?P<take>\d{2})", name)
+    if not m:
+        return {}
+    chunk, mode, take = m.group("chunk"), m.group("mode"), m.group("take")
+    tag = f"{chunk}_{mode}_t{take}"
+    # both graph naming forms exist in this repo: `<chunk>_<mode>_t<NN>.json` (the audio-only
+    # driver) and bare `<chunk>.json` (earlier pilot graphs)
+    cands = [d / f"{tag}.json" for d in GRAPH_DIRS] + [d / f"{chunk}.json" for d in GRAPH_DIRS] \
+        + [p.parent / f"{tag}.json", p.parent / f"{chunk}.json"]
+    for g in cands:
+        if g.exists():
+            text = _prompt_from_graph(g)
+            if text:
+                return {"prompt": text, "prompt_source": rel(g), "take": take, "chunk": chunk}
+    for d in PROMPT_DIRS:
+        q = d / f"{chunk}.txt"
+        if q.exists():
+            text = q.read_text(encoding="utf-8").strip()
+            if text:
+                return {"prompt": text, "prompt_source": rel(q), "take": take, "chunk": chunk,
+                        "warning": "prompt file is per-chunk, not per-take — this may not be the "
+                                   "exact text this take was rendered with"}
+    return {"take": take, "chunk": chunk, "warning": "no graph or prompt file found for this take"}
+
+
 def scan():
     """id -> [relative file paths], discovered from disk."""
     found = {}
@@ -222,22 +294,29 @@ def main():
     files = scan()
     runs = []
     for rid, meta in RUNS.items():
-        rec = {"id": rid}
+        rec: dict = {"id": rid}
         rec.update(meta)
         rec["files"] = files.get(rid, [])
         rec["chunks"] = CHUNK_SHOTS.get(rid, {})
+        # per-clip prompt + provenance, keyed by the same path the page links
+        rec["clipmeta"] = {f: clip_meta(f) for f in rec["files"]}
         runs.append(rec)
     # any discovered run with no curated record still gets shown
     for rid in sorted(set(files) - set(RUNS)):
         runs.append({"id": rid, "scope": "", "title": "(unrecorded run)", "question": "",
                      "verdict": "unrecorded", "status": "pending", "notes": "",
-                     "files": files[rid]})
+                     "files": files[rid],
+                     "clipmeta": {f: clip_meta(f) for f in files[rid]}})
     runs.sort(key=lambda r: r["id"])
     OUT.write_text("window.TESTDATA = " + json.dumps({"runs": runs}, indent=1) + ";\n",
                    encoding="utf-8")
-    print("wrote %s: %d runs, %d files" % (OUT, len(runs), sum(len(r["files"]) for r in runs)))
+    n_prompt = sum(1 for r in runs for m in r.get("clipmeta", {}).values() if m.get("prompt"))
+    n_files = sum(len(r["files"]) for r in runs)
+    print("wrote %s: %d runs, %d files (%d with a prompt resolved)" % (OUT, len(runs), n_files, n_prompt))
     for r in runs:
-        print("  %s %-8s %2d files  %s" % (r["id"], r["scope"], len(r["files"]), r["title"][:44]))
+        withp = sum(1 for m in r.get("clipmeta", {}).values() if m.get("prompt"))
+        print("  %s %-8s %2d files  %2d prompts  %s" % (r["id"], r["scope"], len(r["files"]), withp,
+                                                        r["title"][:40]))
 
 
 if __name__ == "__main__":
