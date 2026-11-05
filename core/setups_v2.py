@@ -20,6 +20,8 @@ Run: .venv/Scripts/python.exe core/setups_v2.py [--scenes S02,S03,S06]
 import argparse
 import base64
 import json
+import os
+import re
 import sys
 import time
 import urllib.request
@@ -32,10 +34,18 @@ SHOTS = ROOT / "shots.jsonl"
 OUT = ROOT / "manifests" / "continuity_v2.jsonl"
 REPORT = ROOT / "reports" / "continuity_v2.md"
 CACHE_DIR = ROOT / "runs" / "setups_v2"
-CACHE = CACHE_DIR / "captions_32b.json"
 
-ENDPOINT = "http://127.0.0.1:1234/v1/chat/completions"
-MODEL = "qwen25vl32b"
+# Which VLM labels the setups. Configurable because the box that serves vision changes: the 32B on
+# goldfishbowl reads setups better than the local 8B, and reading there leaves the 4090's GPU entirely
+# to Krea renders (LM Studio and ComfyUI share that one card — see docs/canonical-setup.md).
+ENDPOINT = os.environ.get("FNI_VLM_ENDPOINT", "http://127.0.0.1:1234/v1/chat/completions")
+MODEL = os.environ.get("FNI_VLM_MODEL", "qwen25vl32b")
+VLM_KEY = os.environ.get("FNI_VLM_KEY", "")
+
+# The cache MUST be per-model: labels from the local 8B and the goldfish 32B are different products,
+# and a shared cache silently replays one model's answers for the other (same class of bug as a cache
+# that ignores seed/temperature).
+CACHE = CACHE_DIR / ("captions_%s.json" % (re.sub(r"[^a-z0-9]+", "_", MODEL.lower()).strip("_") or "vlm"))
 
 # Retry ladder: on any failed request, retry the SAME shot with different
 # settings. Higher temp shakes a stuck sampler loose; more tokens tolerate a
@@ -142,7 +152,8 @@ def ask_vlm(sid):
         }
         req = urllib.request.Request(
             ENDPOINT, data=json.dumps(payload).encode(),
-            headers={"Content-Type": "application/json"})
+            headers={"Content-Type": "application/json",
+                     **({"Authorization": "Bearer " + VLM_KEY} if VLM_KEY else {})})
         try:
             r = json.load(urllib.request.urlopen(req, timeout=120))
             txt = r["choices"][0]["message"]["content"]

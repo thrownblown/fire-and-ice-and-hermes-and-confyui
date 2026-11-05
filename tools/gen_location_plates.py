@@ -42,8 +42,15 @@ STYLE_PRE = "retr0fantasy, 60s Soviet fantasy-film, subtle film grain, aged thea
 def _post(url, payload, timeout=60):
     req = urllib.request.Request(url, data=json.dumps(payload).encode(),
                                  headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read().decode())
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        # ComfyUI explains itself in the body ("value_not_in_list", the node id, the legal values).
+        # Without this the caller sees only "HTTP Error 400: Bad Request" and has to guess.
+        body = e.read().decode(errors="replace")
+        print(f"  HTTP {e.code} from {url}\n  {body[:1500]}", flush=True)
+        raise
 
 
 def _get(url, timeout=30):
@@ -76,6 +83,19 @@ def run_one(loc: dict, seed: int, queue: bool, take: int = 1) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     prefix = f"{slug}_plate_t{take:02d}"
     g = build_graph(loc, seed, prefix)
+    # Snap model filenames to what THIS rig actually has before writing/queueing: a workflow authored on
+    # the other box names its quants and paths differently and ComfyUI rejects the whole prompt with a
+    # bare 400 (measured on the 4090: the int8 CLIP + a krea/ path prefix).
+    sys.path.insert(0, str(ROOT))
+    from core.asset_reconcile import snap
+    changes = snap(g, COMFY)
+    if changes:
+        print(f"[{slug}] reconciled {len(changes)} asset path(s) to this rig", flush=True)
+    # Force the save prefix: the workflow's own SaveImage node carries whatever prefix its author used
+    # (measured: "ComfyUI_temp_..."), so a plate lands with a meaningless name unless we set it here.
+    for node in g.values():
+        if isinstance(node, dict) and str(node.get("class_type", "")).startswith("SaveImage"):
+            node.setdefault("inputs", {})["filename_prefix"] = prefix
     gpath = out_dir / f"{prefix}.graph.json"
     gpath.write_text(json.dumps(g, indent=1), encoding="utf-8")
     print(f"[{slug}] graph -> {gpath}", flush=True)
