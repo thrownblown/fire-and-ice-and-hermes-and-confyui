@@ -34,6 +34,7 @@ import refrun as R  # noqa: E402
 import build_technicolor_ref2va as T  # noqa: E402  (TRAITS, sheet_path, plate_path, PLATE)
 from core.prompt_guards import usable_blocking, lint_prompt  # noqa: E402
 from core import dialogue_syntax as D  # noqa: E402
+from core import identity_match as IM  # noqa: E402
 
 ROOT = Path(r"E:/FNI")
 RUN_DIR = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va"
@@ -97,15 +98,11 @@ def _shot_presence(rec, subjects) -> str:
         sex = (p.get("sex") or "").strip()
         bits = [b for b in (sex, skin, hair and f"{hair} hair", cloth) if b]
         who = ", ".join(bits)
-        # match to a named subject on hair + clothing words (TRAITS is the canon text)
-        best, score = None, 0
-        for name in subjects:
-            tr = T.TRAITS.get(name, "").lower()
-            s = sum(1 for tok in re.findall(r"[a-z]+", (hair + " " + cloth).lower())
-                    if len(tok) > 3 and tok in tr)
-            if s > score:
-                best, score = name, s
-        return f"{who} (this is {best})" if best and score >= 2 else who
+        # match to a named subject on hair + clothing words (TRAITS is the canon text); the scorer is
+        # shared with tools/check_name_stamps.py so the prompt and the audit never disagree
+        best = IM.assertable(f"{hair} {cloth}", subjects, T.TRAITS,
+                             hair=hair, sex=IM.sex_of(sex))
+        return f"{who} (this is {best})" if best else who
     n = len(ppl)
     if n == 1:
         return f"On screen in this shot: exactly 1 person, alone — {label(ppl[0])}. Nobody else is visible."

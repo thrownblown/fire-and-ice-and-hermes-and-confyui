@@ -24,8 +24,9 @@ from pathlib import Path
 ROOT = Path(r"E:/FNI")
 COMFY = "http://<TOMBSTONE_TS_IP>:8188"
 DEST = ROOT / "runs" / "T0017_s03_technicolor-audio-only" / "arms"
+WANT_TAKES = (2, 3, 4, 5)
 WANT = [(f"S03-c0{c}_audioOnly_t0{t}_00001_.mp4", t)
-        for t in (2, 3, 4) for c in (1, 2)]
+        for t in WANT_TAKES for c in (1, 2)]
 
 
 def api(path: str, timeout: int = 60):

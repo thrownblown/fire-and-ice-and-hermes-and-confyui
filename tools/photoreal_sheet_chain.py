@@ -18,6 +18,8 @@ Ledger: manifests/photoreal_sheet_chain.jsonl (one row per stage per character).
 """
 from __future__ import annotations
 
+import re
+
 import argparse
 import json
 import subprocess
@@ -105,14 +107,29 @@ def stage1(name: str, seed: int) -> Path | None:
     return out
 
 
-def stage2(name: str, take: int, still: Path) -> bool:
+def stage2(name: str, take: int, still: Path) -> tuple[str, str | None, str]:
+    """Queue the H3 sheet render. Returns (action, prompt_id, tail).
+
+    `--queue` means gen_char_sheet.py only QUEUES — it never prints the output filename, so the old
+    test (`name_sheet_tNN_00001_.png in stdout`) marked every queued render "FAILED". Measured
+    2026-11-05: TEEGRA's sheet was reported error-stage2 while its prompt sat PENDING on the 5090.
+    The honest signals are the queued prompt id and, later, the file itself
+    (`tools/verify_photoreal_chain.py` resolves ids in the rig's history and pulls the PNG).
+    """
     r = subprocess.run([PY, "tools/gen_char_sheet.py", "--char", name, "--take", str(take),
                         "--realism", "--lora-strength", "0.0", "--still", str(still), "--queue"],
                        cwd=str(ROOT), capture_output=True, text=True, timeout=2400)
-    tail = (r.stdout or "").strip().splitlines()[-1][:120] if r.stdout else ""
-    ok = f"{name}_sheet_t{take:02d}_00001_.png" in (r.stdout or "")
-    print(f"[{name}] stage2: {'OK' if ok else 'FAILED'} {tail}")
-    return ok
+    out = r.stdout or ""
+    tail = out.strip().splitlines()[-1][:140] if out.strip() else ((r.stderr or "")[-140:])
+    m = re.search(r"queued prompt_id=([0-9a-f-]{8,})", out)
+    if m:
+        print(f"[{name}] stage2: QUEUED {m.group(1)[:8]} {tail}")
+        return "queued-sheet", m.group(1), tail
+    if f"{name}_sheet_t{take:02d}_00001_.png" in out:
+        print(f"[{name}] stage2: OK {tail}")
+        return "wrote-sheet", None, tail
+    print(f"[{name}] stage2: FAILED rc={r.returncode} {tail}")
+    return "error-stage2", None, tail
 
 
 def main() -> int:
@@ -130,24 +147,33 @@ def main() -> int:
         ap.error("pass --chars A,B or --all-canon")
 
     rows = []
+    def emit(row: dict) -> None:
+        """Append immediately — a long batch must not lose its ledger to a kill halfway through."""
+        LEDGER.parent.mkdir(parents=True, exist_ok=True)
+        with LEDGER.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+        rows.append(row)
+
     for i, name in enumerate(names):
         row: dict = {"char": name, "ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "take": args.take}
         if not traits(name):
             print(f"[{name}] no traits.txt — skipped (no canon to render)")
-            rows.append({**row, "action": "skip-no-canon"}); continue
+            emit({**row, "action": "skip-no-canon"}); continue
         still = stage1(name, args.seed_base + i)
         if not still or not still.exists():
-            rows.append({**row, "action": "error-stage1"}); continue
+            emit({**row, "action": "error-stage1"}); continue
         row["photoreal_still"] = str(still.relative_to(ROOT)).replace("\\", "/")
-        ok = stage2(name, args.take, still)
-        row["action"] = "wrote-sheet" if ok else "error-stage2"
-        rows.append(row)
+        action, pid, tail = stage2(name, args.take, still)
+        row["action"] = action
+        if pid:
+            row["prompt_id"] = pid
+            row["sheet_expected"] = f"{name}_sheet_t{args.take:02d}_00001_.png"
+        if tail:
+            row["tail"] = tail
+        emit(row)
 
-    LEDGER.parent.mkdir(parents=True, exist_ok=True)
-    with LEDGER.open("a", encoding="utf-8") as fh:
-        for r in rows:
-            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
     print("ledger:", LEDGER)
+    print("next: run tools/verify_photoreal_chain.py to resolve queued ids and pull the sheets")
     return 0
 
 
