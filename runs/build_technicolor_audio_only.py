@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -265,6 +266,17 @@ def main():
     args = ap.parse_args()
 
     rows = [json.loads(l) for l in F.CHUNK_LEDGER.read_text(encoding="utf-8").splitlines() if l.strip()]
+    # Optional alternate chunk ledger: tools/fill_chunk_names.py writes fullrun/chunks_named.jsonl with the
+    # 154 name-less chunks filled from their scene roster, so a chunk that the naming pass never stamped can
+    # still render. Set FNI_CHUNK_LEDGER to use it; the original ledger is never modified.
+    alt = os.environ.get("FNI_CHUNK_LEDGER", "")
+    if alt:
+        p = Path(alt)
+        if p.exists():
+            rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+            print(f"[ledger] using {p.name} ({len(rows)} chunks)")
+        else:
+            print(f"[ledger] FNI_CHUNK_LEDGER={alt} does not exist — falling back to chunks.jsonl")
     row = next(r for r in rows if r["chunk_id"] == args.chunk)
 
     order = []
