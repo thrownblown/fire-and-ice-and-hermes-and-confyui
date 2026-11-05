@@ -55,7 +55,36 @@ def canon(char: str) -> str:
     return ""
 
 
-def render(char: str, variant: int, seed: int, prompt: str, dry: bool) -> Path | None:
+_NEG = re.compile(r"\b(no|not|never|without|nor|none|nothing|nobody|neither)\b", re.I)
+
+
+def strip_negations(text: str) -> tuple[str, list[str]]:
+    """Drop negated CLAUSES (not whole sentences) and return what was dropped.
+
+    Rationale, measured: this stack ignores prohibitions, and a prohibition still puts the forbidden noun
+    into the conditioning. But sentence-level removal was too coarse — it deleted "silver-gray hair pulled
+    back, dark hooded eyes, no beard" in one go, and the render came back bald. So split into clauses and
+    drop only the negated clause, keeping the positive neighbours.
+    """
+    keep, dropped = [], []
+    for sent in re.split(r"(?<=[.;])\s+", text):
+        clauses = re.split(r",\s+|\s+and\s+", sent)
+        for c in clauses:
+            if not c.strip():
+                continue
+            if _NEG.search(c):
+                dropped.append(c.strip())
+            else:
+                keep.append(c.strip())
+    out = []
+    for c in keep:
+        out.append(c)
+    text_out = ", ".join(out)
+    return text_out, dropped
+
+
+def render(char: str, variant: int, seed: int, prompt: str, dry: bool,
+           style_strength: float | None = None) -> Path | None:
     """Render one character still on the 4090 from the PROVEN Krea2 t2i graph.
 
     `tools/krea2_stills.py` expects a different node layout (it died with KeyError: '135' on the saved
@@ -83,6 +112,12 @@ def render(char: str, variant: int, seed: int, prompt: str, dry: bool) -> Path |
     # raw workflow leaves the character LoRA on, which is how a probe once painted a woman into a jungle.
     # The character description goes in as the positive prompt — one variable, the prompt.
     g = glp.build_graph({"slug": char.lower(), "prompt": prompt}, seed, prefix)
+    # Style-layer override: the retro-fantasy LoRA at 1.0 is the prime suspect for the ornamentation the
+    # judge keeps flagging (pauldrons, chest pieces, sequins), so the loop has to be able to switch it off.
+    if style_strength is not None:
+        node = g[glp.LORA_NODE]["inputs"]
+        node.setdefault("lora_7", {})["on"] = float(style_strength) > 0
+        node["lora_7"]["strength"] = float(style_strength)
     for node in g.values():
         if isinstance(node, dict) and "filename_prefix" in (node.get("inputs") or {}):
             node["inputs"]["filename_prefix"] = prefix
@@ -170,6 +205,11 @@ def main() -> int:
     ap.add_argument("--seed-base", type=int, default=515000000)
     ap.add_argument("--extra", default="",
                     help="text appended to every character prompt — the loop's one-variable lever")
+    ap.add_argument("--style-strength", type=float, default=None,
+                    help="override the retro-fantasy style LoRA strength (0.0 disables it) — the suspect for invented ornamentation")
+    ap.add_argument("--strip-negations", action="store_true",
+                    help="remove sentences containing no/not/never/without from the RENDER prompt only "
+                         "(the judge still compares against the full canon)")
     ap.add_argument("--dry", action="store_true")
     a = ap.parse_args()
 
@@ -185,10 +225,14 @@ def main() -> int:
             print(f"[{char}] NO desc/traits on disk — skipping (a blank comparison invites invention)")
             continue
         print(f"\n[{char}] {desc[:110]}...")
-        prompt_text = (desc + (" " + a.extra if a.extra else ""))
+        base_text, dropped = (strip_negations(desc) if a.strip_negations else (desc, []))
+        if dropped:
+            print(f"   stripped {len(dropped)} negated sentence(s) from the RENDER prompt: "
+                  f"{dropped[0][:80]}...")
+        prompt_text = (base_text + (" " + a.extra if a.extra else ""))
         for v in range(1, a.variants + 1):
             seed = a.seed_base + sum(map(ord, char)) * 10 + v
-            img = render(char, v, seed, prompt_text, a.dry)
+            img = render(char, v, seed, prompt_text, a.dry, a.style_strength)
             if not img:
                 continue
             try:
@@ -198,7 +242,7 @@ def main() -> int:
                 continue
             j = v2.get("json") or {}
             print(f"   v{v} seed={seed} -> {j.get('verdict','?')}  fix: {str(j.get('single_most_important_fix',''))[:90]}")
-            rows.append({"char": char, "variant": v, "seed": seed, "extra": a.extra,
+            rows.append({"char": char, "variant": v, "seed": seed, "extra": a.extra, "style_strength": a.style_strength,
                          "image": str(img.relative_to(ROOT)).replace("\\", "/"),
                          "judge": JUDGE, "verdict": j.get("verdict"), "fields": j.get("fields"),
                          "differences": j.get("differences"), "fix": j.get("single_most_important_fix"),
