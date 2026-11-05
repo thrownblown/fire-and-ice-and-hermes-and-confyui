@@ -83,8 +83,8 @@ def render(char: str, variant: int, seed: int, prompt: str, dry: bool) -> Path |
         g[glp.POS_PRE]["inputs"]["positive"] = glp.STYLE_PRE
     g[glp.SAMPLER]["inputs"]["seed"] = seed
     for node in g.values():
-        if isinstance(node, dict) and str(node.get("class_type", "")).startswith("SaveImage"):
-            node.setdefault("inputs", {})["filename_prefix"] = prefix
+        if isinstance(node, dict) and "filename_prefix" in (node.get("inputs") or {}):
+            node["inputs"]["filename_prefix"] = prefix
     ch = snap(g, os.environ.get("FNI_COMFY", "http://127.0.0.1:8188"), verbose=False)
 
     base = os.environ.get("FNI_COMFY", "http://127.0.0.1:8188").rstrip("/")

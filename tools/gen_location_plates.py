@@ -93,9 +93,12 @@ def run_one(loc: dict, seed: int, queue: bool, take: int = 1) -> int:
         print(f"[{slug}] reconciled {len(changes)} asset path(s) to this rig", flush=True)
     # Force the save prefix: the workflow's own SaveImage node carries whatever prefix its author used
     # (measured: "ComfyUI_temp_..."), so a plate lands with a meaningless name unless we set it here.
+    # Force the save prefix on ANY node that has one: this workflow's output node is not a SaveImage
+    # class (it saves to temp, hence the ComfyUI_temp_* names), so matching on class name silently
+    # did nothing.
     for node in g.values():
-        if isinstance(node, dict) and str(node.get("class_type", "")).startswith("SaveImage"):
-            node.setdefault("inputs", {})["filename_prefix"] = prefix
+        if isinstance(node, dict) and "filename_prefix" in (node.get("inputs") or {}):
+            node["inputs"]["filename_prefix"] = prefix
     gpath = out_dir / f"{prefix}.graph.json"
     gpath.write_text(json.dumps(g, indent=1), encoding="utf-8")
     print(f"[{slug}] graph -> {gpath}", flush=True)
