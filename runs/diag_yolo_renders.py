@@ -12,8 +12,9 @@ import sys
 import urllib.request
 from pathlib import Path
 
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
 ROOT = Path(r"E:/FNI")
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — endpoint + token + alias table live there
 DIAG = ROOT / "runs" / "yolo_diag"
 RUN_DIR = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va"
 OUT = DIAG / "diag_results.jsonl"
@@ -29,11 +30,13 @@ def sheet_for(name):
     return hits[0] if hits else None
 
 
+VLM = "qwen3-32b-vision-large"   # goldfishbowl alias -> llama-cpp/qwen3-vl-32b-heretic_ctx128k
+
+
 def vlm(prompt, images, timeout=600):
-    body = json.dumps({"model": "qwen3-vl-32b-heretic:ctx128k", "prompt": prompt,
-                       "images": images, "stream": False}).encode()
-    req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
-    return json.loads(urllib.request.urlopen(req, timeout=timeout).read())["response"]
+    """`images` are PATHS, attached in order (order is what the prompt refers to)."""
+    return gf.chat(VLM, prompt, images=[str(i) for i in images],
+                   max_tokens=4096, timeout=timeout)
 
 
 def main():
@@ -51,10 +54,10 @@ def main():
         for n in subjects:
             sp = sheet_for(n.strip())
             if sp:
-                imgs.append(b64(sp))
+                imgs.append(sp)
                 labels.append(f"REF SHEET for {n.strip()}")
         for f in fs:
-            imgs.append(b64(f))
+            imgs.append(f)
             labels.append("GENERATED frame")
         prompt = (
             "You are auditing an AI video generation for a film remake.\n"

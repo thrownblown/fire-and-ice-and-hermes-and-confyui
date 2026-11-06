@@ -41,8 +41,8 @@ from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
 # (endpoint, model) candidates
 MODELS = [
-    ("goldfishbowl", "llama-cpp/qwen3-vl-8b-abl_latest"),
-    ("goldfishbowl", "llama-cpp/qwen3-vl-32b-heretic_ctx128k"),
+    ("goldfishbowl", "qwen3-8b-vision-small"),
+    ("goldfishbowl", "qwen3-32b-vision-large"),
     ("lmstudio", "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s"),
     ("lmstudio", "qwen2.5-vl-32b-instruct-abliterated"),
 ]

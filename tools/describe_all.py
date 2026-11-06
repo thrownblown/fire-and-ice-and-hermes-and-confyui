@@ -23,7 +23,7 @@ from PIL import Image
 
 ROOT = Path(r"E:/FNI")
 RUN = ROOT / "runs" / "subhuman-krea2"
-VLM_MODEL = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"   # goldfishbowl (Unsloth Studio :8888)
+VLM_MODEL = "qwen3-32b-vision-large"   # goldfishbowl alias -> llama-cpp/qwen3-vl-32b-heretic_ctx128k
 sys.path.insert(0, str(ROOT))
 from core import gf_client as gf  # noqa: E402  — one place knows the endpoint + token
 

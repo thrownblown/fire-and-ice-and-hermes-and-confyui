@@ -40,7 +40,7 @@ COMFY = os.environ.get("FNI_COMFY", "http://<TOMBSTONE_TS_IP>:8188").rstrip("/")
 sys.path.insert(0, str(ROOT))
 from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
-VLM_MODEL = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"
+VLM_MODEL = "qwen3-32b-vision-large"   # goldfishbowl alias (gf_client.ALIASES)
 
 # System prompt Alex uses in Open WebUI (verbatim).
 SYSTEM_PROMPT = (

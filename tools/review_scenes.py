@@ -27,7 +27,7 @@ import sys
 sys.path.insert(0, str(ROOT))
 from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
-VLM = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"
+VLM = "qwen3-32b-vision-large"   # goldfishbowl alias (gf_client.ALIASES)
 
 PROMPT = (
     "This is a generated scene still of a sword-and-sandals fantasy character placed into a "

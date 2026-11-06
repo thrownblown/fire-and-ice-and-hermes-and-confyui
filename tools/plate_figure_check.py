@@ -32,7 +32,9 @@ ROOT = Path(r"E:/FNI")
 # Current API: goldfishbowl serves OpenAI-compatible /v1/chat/completions with bearer auth. The Ollama
 # /api/generate {"prompt","images"} shape this used was retired 2026-11-01, so the audit could not run at
 # all — which is how 22 plates landed today without anyone checking them for embedded figures.
-MODEL = os.environ.get("FNI_JUDGE_MODEL", "llama-cpp/qwen3-vl-32b-heretic_ctx128k")
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — the alias table + endpoint live there
+MODEL = os.environ.get("FNI_JUDGE_MODEL") or gf.resolve("qwen3-32b-vision-large")
 ENDPOINT = os.environ.get("FNI_VLM_ENDPOINT",
                           os.environ.get("FNI_GF", "http://goldfishbowl:8888").rstrip("/") + "/v1/chat/completions")
 VLM_KEY = os.environ.get("GOLDFISHBOWL_API_KEY", "")

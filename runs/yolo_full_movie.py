@@ -55,7 +55,7 @@ def run(cmd: list[str], timeout: int | None = None) -> tuple[int, str]:
 
 GF_MODELS = "http://goldfishbowl:8888/v1/models"          # OpenAI-compatible (the Ollama :11434 API was retired 2026-11-01)
 COMFY_5090 = "http://<TOMBSTONE_TS_IP>:8188"
-BLOCK_MODEL = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"    # the id this box actually serves
+BLOCK_MODEL = "qwen3-32b-vision-large"                    # goldfishbowl alias (preflight matches it in /v1/models)
 
 
 def preflight() -> list[str]:

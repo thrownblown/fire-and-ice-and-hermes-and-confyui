@@ -35,6 +35,33 @@ HERMES_ENV = Path.home() / "AppData" / "Local" / "hermes" / ".env"
 DEFAULT_MAX_TOKENS = 4096       # see rule 2 in the module docstring
 MIN_TOKENS_FOR_THINKERS = 2048  # goldfishbowl's measured floor for the abliterated arm
 
+# Friendly server aliases -> the id that actually answers. Published by goldfishbowl on
+# 2026-11-05 (agent-coord `agents/goldfishbowl/STATUS.md`); the server also resolves these
+# at the edge, but resolving HERE keeps chat()'s strict_model check meaningful — an alias
+# request echoes the RESOLVED id in the response, so comparing against the alias would
+# "fail" on a perfectly good answer.
+#
+# Why this table exists at all: the id prefix changed twice in one day
+# (`ollama-served/` -> `llama-cpp/`), and every rename moves every id under it. Tools name
+# the alias; when the box renames again, this dict is the only thing that changes.
+ALIASES = {
+    "cydonia-24b-rp-large-q8": "Cydonia-24B-v4r-Q8_0",
+    "qwen3.8-27b-chat-medium": "Qwen3.8-27B-OBLITERATED",
+    "qwen3.8-27b-reasoning-medium-q6": "RVN-Q6_K-mtp",
+    "qwen3.8-27b-reasoning-large-q8": "RVN-Q8_0-mtp",
+    "qwen3-coder-next-xlarge": "huihui-ai_Qwen3-Coder-Next-abliterated-GGUF",
+    "llama3.3-70b-chat-xlarge": "llama-cpp/llama3.3-70b_latest",
+    "magnum-72b-rp-xlarge": "llama-cpp/magnum-v4-72b_latest",
+    "qwen3-coder-30b": "llama-cpp/qwen3-coder_30b",
+    "qwen3-32b-vision-large": "llama-cpp/qwen3-vl-32b-heretic_ctx128k",
+    "qwen3-8b-vision-small": "llama-cpp/qwen3-vl-8b-abl_latest",
+}
+
+
+def resolve(name: str) -> str:
+    """Friendly alias -> the id that answers. Unknown names pass through unchanged."""
+    return ALIASES.get(name, name)
+
 
 class GFError(RuntimeError):
     """Transport, auth or protocol failure — never returned as if it were an answer."""
@@ -138,7 +165,12 @@ def chat(model: str, prompt: str, *, system: str | None = None,
 
     `images` are file paths or raw base64 strings, attached to the user turn in the
     order given (that order is what <Picture N> refers to in a prompt).
+
+    `model` may be a friendly alias (see ALIASES) or a raw id; aliases are resolved to
+    their target id before the request, so the strict check below still verifies which
+    model actually answered.
     """
+    model = resolve(model)
     messages: list[dict] = []
     if system:
         messages.append({"role": "system", "content": system})

@@ -46,8 +46,8 @@ COMFY_5090 = "http://<TOMBSTONE_TS_IP>:8188"
 sys.path.insert(0, str(ROOT))
 from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
-TRIAGE_MODEL = "llama-cpp/qwen3-vl-8b-abl_latest"   # fast triage (goldfishbowl)
-DIAG_MODEL = "llama-cpp/qwen3-coder_30b"            # deeper code diagnosis
+TRIAGE_MODEL = "qwen3-8b-vision-small"   # goldfishbowl alias (fast triage)
+DIAG_MODEL = "qwen3-coder-30b"           # goldfishbowl alias (deeper code diagnosis)
 INTERVAL = 180
 
 

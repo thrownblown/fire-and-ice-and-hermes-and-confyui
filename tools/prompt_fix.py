@@ -41,7 +41,7 @@ CTX = (ROOT / "docs" / "prompt-jury-context.md").read_text(encoding="utf-8")
 FIXLEDGER = ROOT / "manifests" / "prompt_fixes.jsonl"
 REVIEW = ROOT / "manifests" / "prompt_review.jsonl"
 
-MODEL = "llama-cpp/llama3.3-70b_latest"          # was llama3.3-70b:latest (Ollama id, gone)
+MODEL = "llama3.3-70b-chat-xlarge"          # goldfishbowl alias -> llama-cpp/llama3.3-70b_latest
 MAX_TOKENS = 4096       # never below 2048: the abliterated arm thinks without a budget and
                         # would spend the whole allowance on reasoning, returning HTTP 400 whose
                         # body reads like prose (looks like a model fault; it is a budget artifact)
