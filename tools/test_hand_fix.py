@@ -22,6 +22,9 @@ RUN = ROOT / "runs" / "subhuman-krea2"
 # import the sweep driver's machinery
 sys.path.insert(0, str(ROOT / "tools"))
 import subhuman_sweep as sw  # noqa: E402
+import review_sweep as rs  # noqa: E402  (its VLM id + judge PROMPT)
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
 # sentences that NAME a weapon/prop Krea2 will then draw held
 STRIP_PATTERNS = [
@@ -36,21 +39,8 @@ def strip_weapons(desc):
 
 
 def judge(path):
-    import base64
-    import io
-    from PIL import Image
-    im = Image.open(path).convert("RGB")
-    im.thumbnail((1024, 1024), Image.LANCZOS)
-    b = io.BytesIO()
-    im.save(b, "JPEG", quality=85)
-    b64 = base64.b64encode(b.getvalue()).decode()
-    body = json.dumps({"model": sw.review_sweep.VLM if False else "qwen3-vl-32b-heretic:latest",
-                       "prompt": sw.review_sweep.PROMPT, "images": [b64],
-                       "stream": False, "options": {"temperature": 0.0, "num_ctx": 8192}}).encode()
-    req = urllib.request.Request("http://<GOLDFISHBOWL_TS_IP>:11434/api/generate", data=body,
-                                 headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return (json.load(r).get("response") or "").strip()
+    return gf.chat(rs.VLM, rs.PROMPT, images=[str(path)],
+                   temperature=0.0, max_tokens=2048, timeout=300)
 
 
 def main():

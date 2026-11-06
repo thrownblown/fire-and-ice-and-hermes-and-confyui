@@ -22,8 +22,10 @@ from PIL import Image
 
 ROOT = Path(r"E:/FNI")
 RUN = ROOT / "runs" / "subhuman-krea2"
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
-VLM = "qwen3-vl-32b-heretic:latest"
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — endpoint + token live there
+
+VLM = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"
 
 PROMPT = (
     "This is a generated full-body still of a sword-and-sandals fantasy character at the dawn of "
@@ -53,11 +55,8 @@ def b64(path, max_side=1024):
 
 
 def judge(path):
-    body = json.dumps({"model": VLM, "prompt": PROMPT, "images": [b64(path)],
-                       "stream": False, "options": {"temperature": 0.0, "num_ctx": 8192}}).encode()
-    req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return (json.load(r).get("response") or "").strip()
+    return gf.chat(VLM, PROMPT, images=[str(path)], temperature=0.0,
+                   max_tokens=2048, timeout=300)
 
 
 def review_char(char):

@@ -43,18 +43,16 @@ DRIVER_SRC = ROOT / "runs" / "build_technicolor_audio_only.py"
 PY = str(ROOT / ".venv" / "Scripts" / "python.exe")
 COMFY_5090 = "http://<TOMBSTONE_TS_IP>:8188"
 
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
-TRIAGE_MODEL = "qwen3-vl-8b-abl:latest"        # fast text triage
-DIAG_MODEL = "qwen3-coder:30b"                  # deeper code diagnosis
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — endpoint + token live there
+
+TRIAGE_MODEL = "llama-cpp/qwen3-vl-8b-abl_latest"   # fast triage (goldfishbowl)
+DIAG_MODEL = "llama-cpp/qwen3-coder_30b"            # deeper code diagnosis
 INTERVAL = 180
 
 
 def ask(model: str, prompt: str, timeout: int = 240) -> str:
-    body = json.dumps({"model": model, "prompt": prompt, "stream": False,
-                       "options": {"temperature": 0.1}}).encode()
-    req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return (json.load(r).get("response") or "").strip()
+    return gf.chat(model, prompt, temperature=0.1, max_tokens=4096, timeout=timeout)
 
 
 def procs_matching(pattern: str) -> bool:

@@ -6,7 +6,7 @@ people are present (so the render can say "ONLY these N, alone") and what each i
 doing (lounging vs standing vs walking) — the VLM's read of the source stills.
 
 Endpoints:
-  goldfishbowl  Ollama  http://<GOLDFISHBOWL_TS_IP>:11434/api/generate    (qwen3-vl-8b-abl, qwen3-vl-32b-heretic)
+  goldfishbowl  Unsloth Studio :8888 via core/gf_client.py (bearer) — llama-cpp/qwen3-vl-8b-abl_latest, llama-cpp/qwen3-vl-32b-heretic_ctx128k
   lmstudio      OpenAI  http://127.0.0.1:1234/v1/chat/completions   (qwen3-vl-8b-..., qwen2.5-vl-32b-...)
 
 Usage:
@@ -34,13 +34,15 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(r"E:/FNI")
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
 LM = "http://127.0.0.1:1234/v1/chat/completions"
+
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
 # (endpoint, model) candidates
 MODELS = [
-    ("goldfishbowl", "qwen3-vl-8b-abl:latest"),
-    ("goldfishbowl", "qwen3-vl-32b-heretic:latest"),
+    ("goldfishbowl", "llama-cpp/qwen3-vl-8b-abl_latest"),
+    ("goldfishbowl", "llama-cpp/qwen3-vl-32b-heretic_ctx128k"),
     ("lmstudio", "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s"),
     ("lmstudio", "qwen2.5-vl-32b-instruct-abliterated"),
 ]
@@ -106,11 +108,9 @@ def _b64(path: Path, max_side: int = 1024) -> str:
 def ask(endpoint: str, model: str, sys_text: str, images: list[Path], timeout: int = 240) -> str:
     b64s = [_b64(p) for p in images]
     if endpoint == "goldfishbowl":
-        body = json.dumps({"model": model, "system": sys_text, "prompt": "Report the blocking.",
-                           "images": b64s, "stream": False, "options": {"temperature": 0.2}}).encode()
-        req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return (json.load(r).get("response") or "").strip()
+        return gf.chat(model, "Report the blocking.", system=sys_text,
+                       images=[str(p) for p in images],
+                       temperature=0.2, max_tokens=2048, timeout=timeout)
     else:  # lmstudio (OpenAI chat)
         content = [{"type": "text", "text": "Report the blocking."}] + \
                   [{"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b}"}} for b in b64s]

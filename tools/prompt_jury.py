@@ -34,10 +34,12 @@ ROOT = Path(r"E:/FNI")
 RUN_DIR = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va"
 CTX = (ROOT / "docs" / "prompt-jury-context.md").read_text(encoding="utf-8")
 OUT = ROOT / "manifests" / "prompt_review.jsonl"
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
-JURORS = ["llama3.3-70b:latest", "magnum-v4-72b:latest", "qwen3.5-35b-a3b:latest"]
-JUDGE = "llama3.3-70b:latest"
+JURORS = ["llama-cpp/llama3.3-70b_latest", "llama-cpp/magnum-v4-72b_latest",
+          "llama-cpp/qwen3.5-35b-a3b_latest"]
+JUDGE = "llama-cpp/llama3.3-70b_latest"
 VOTES = ROOT / "manifests" / "prompt_jury_votes.jsonl"
 
 
@@ -53,11 +55,7 @@ def load_votes() -> dict:
 
 
 def ask(model: str, prompt: str, timeout: int = 600) -> str:
-    body = json.dumps({"model": model, "prompt": prompt, "stream": False,
-                       "options": {"temperature": 0.1}}).encode()
-    req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return (json.load(r).get("response") or "").strip()
+    return gf.chat(model, prompt, temperature=0.1, max_tokens=6144, timeout=timeout)
 
 
 def _json_spans(text: str):

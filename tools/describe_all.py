@@ -23,9 +23,9 @@ from PIL import Image
 
 ROOT = Path(r"E:/FNI")
 RUN = ROOT / "runs" / "subhuman-krea2"
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
-VLM_MODEL = "qwen3-vl-32b-heretic:latest"
-NUM_CTX = 32768
+VLM_MODEL = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"   # goldfishbowl (Unsloth Studio :8888)
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — one place knows the endpoint + token
 
 # (name, starter-subject-noun, [image rel-paths], optional trait hint)
 CHARACTERS = [
@@ -108,14 +108,9 @@ def describe(subject, images, trait_hint, temperature=0.8):
         "fantasy film style. pay attention to the system prompt. be verbose and descriptive about "
         "the character only. do not refer to the films and tv shows referenced. make this a pure "
         "description.%s" % (subject, hint))
-    body = json.dumps({
-        "model": VLM_MODEL, "system": _sys_prompt(), "prompt": starter,
-        "images": [b64(ROOT / p) for p in images], "stream": False,
-        "options": {"temperature": temperature, "num_ctx": NUM_CTX},
-    }).encode()
-    req = urllib.request.Request(GF, data=body, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=600) as r:
-        out = (json.load(r).get("response") or "").strip()
+    out = gf.chat(VLM_MODEL, starter, system=_sys_prompt(),
+                  images=[str(ROOT / p) for p in images],
+                  temperature=temperature, max_tokens=8000, timeout=600)
     # belt-and-braces: the VLM still names weapons from the source stills; strip
     # any weapon sentence so the noun never reaches Krea2 (which then puts the
     # weapon in-hand and mangles fingers). Proven necessary: see review v3.

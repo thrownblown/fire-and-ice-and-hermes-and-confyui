@@ -36,11 +36,11 @@ from PIL import Image
 
 ROOT = Path(r"E:/FNI")
 RUN = ROOT / "runs" / "subhuman-krea2"
-GF_GENERATE = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"
 COMFY = os.environ.get("FNI_COMFY", "http://<TOMBSTONE_TS_IP>:8188").rstrip("/")
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
-VLM_MODEL = "qwen3-vl-32b-heretic:latest"
-NUM_CTX = 32768  # extra-large context for 4 images + verbose output
+VLM_MODEL = "llama-cpp/qwen3-vl-32b-heretic_ctx128k"
 
 # System prompt Alex uses in Open WebUI (verbatim).
 SYSTEM_PROMPT = (
@@ -136,20 +136,10 @@ def _b64(path: Path, max_side: int = 1280) -> str:
 
 
 def describe(cfg: dict, temperature: float) -> str:
-    images = [_b64(ROOT / p) for p in cfg["stills"]]
-    sheet = _b64(ROOT / cfg["sheet"])
-    body = json.dumps({
-        "model": VLM_MODEL,
-        "system": SYSTEM_PROMPT,
-        "prompt": cfg["starter"],
-        "images": images + [sheet],
-        "stream": False,
-        "options": {"temperature": temperature, "num_ctx": NUM_CTX},
-    }).encode()
-    req = urllib.request.Request(GF_GENERATE, data=body, headers={"Content-Type": "application/json"})
+    images = [str(ROOT / p) for p in cfg["stills"]] + [str(ROOT / cfg["sheet"])]
     t0 = time.time()
-    with urllib.request.urlopen(req, timeout=600) as r:
-        out = json.load(r).get("response") or ""
+    out = gf.chat(VLM_MODEL, cfg["starter"], system=SYSTEM_PROMPT, images=images,
+                  temperature=temperature, max_tokens=8000, timeout=600)
     print("    VLM describe: %d chars in %.1fs" % (len(out), time.time() - t0), flush=True)
     return out.strip()
 

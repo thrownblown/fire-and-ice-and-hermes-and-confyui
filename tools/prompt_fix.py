@@ -40,7 +40,7 @@ V2DIR = RUN_DIR / "prompts_v2"
 CTX = (ROOT / "docs" / "prompt-jury-context.md").read_text(encoding="utf-8")
 FIXLEDGER = ROOT / "manifests" / "prompt_fixes.jsonl"
 REVIEW = ROOT / "manifests" / "prompt_review.jsonl"
-GF = "http://<GOLDFISHBOWL_TS_IP>:11434/api/generate"   # RETIRED (Ollama) — kept only as a tombstone
+
 MODEL = "llama-cpp/llama3.3-70b_latest"          # was llama3.3-70b:latest (Ollama id, gone)
 MAX_TOKENS = 4096       # never below 2048: the abliterated arm thinks without a budget and
                         # would spend the whole allowance on reasoning, returning HTTP 400 whose
