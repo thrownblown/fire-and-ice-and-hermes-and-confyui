@@ -151,10 +151,17 @@ Hard rules:
     allocate mtmd buffers for a real image. **Fix was server-side: `max_seq_length` → 32768 on that
     model's override** (KV 26,624 → 8,192 MiB, ~18 GB freed) — verified with a real image, not a
     status code.
-    - **Consequences for us:** the 32B now serves **32,768 tokens of context** (was 106,496), and an
-      image COSTS CONTEXT as well as VRAM (~4k tokens for a max-size plate). One plate/image plus a
-      rubric is comfortable; several plates in one call needs a downscale (send ≤1024 px JPEGs) or a
-      word with goldfishbowl first.
+    - **Consequences for us:** the 32B's window has moved twice — 106,496 → 32,768 (the VRAM fix above)
+      → **65,536 (CURRENT; raised 2026-11-05 and verified in the load log: `n_ctx = 65536`, KV
+      16,384 MiB, zero `cudaMalloc failed`, with a real 1472x1472 image and a three-image call at
+      7,695 prompt tokens).** An image COSTS CONTEXT as well as VRAM (~4k tokens for a max-size plate),
+      so at 65,536 several plates in one call are comfortable; keep sending ≤1024 px JPEGs.
+    - **Tool support is per-model, and it was verified by probe rather than by template text**
+      (goldfishbowl sent a real `tools` array): `qwen3.8-27b-reasoning-medium-q6` and
+      `qwen3-8b-vision-small` return real tool_calls, while **`Cydonia-24B-v4r-Q8_0`,
+      `Qwen3.8-27B-OBLITERATED` and `Qwen3.8-Flash-Next-…/IQ3_XXS` do NOT advertise tools.** Any
+      client that always sends `tools` — Open WebUI does — gets a 400 on those three, and that error
+      is about the MODEL, not the client and not the endpoint.
     - **Diagnostic order when a VLM returns 500 on images:** (1) check `loaded` in `GET /v1/models`;
       (2) reproduce with your OWN client (text vs image — a text 200 + image 500 localises it to the
       vision path); (3) **ask the box's owner for the LOAD LOG before theorising** — the OOM above is
@@ -197,10 +204,12 @@ Hard rules:
       Tools now name `qwen3-32b-vision-large`, `qwen3-8b-vision-small`, `qwen3-coder-30b`,
       `llama3.3-70b-chat-xlarge`, `magnum-72b-rp-xlarge`. The id prefix has already moved twice in
       one day (`ollama-served/` → `llama-cpp/`), and a rename moves every id under it — with the
-      table, the next rename is one dict entry. Known gaps: no published alias yet for
-      `llama-cpp/qwen3.5-35b-a3b_latest` (prompt_jury's third juror still names the raw id), and
-      `magnum-v4-72b` declares native 32,768 while the VRAM fitter serves it at 177,408 cells — do
-      not use it for long context.
+      table, the next rename is one dict entry. The **full 24-row table is now encoded** in
+      `gf_client.ALIASES` (published in agent-coord `agents/mh370/INBOX.md`; authoritative copy
+      `~/models/CATALOG.md` on that box) and every entry was verified against the live `/v1/models`
+      list — all 24 targets exist. `qwen3.5-35b-chat-large` closes prompt_jury's raw-id gap. One
+      caveat carried with the table: `magnum-v4-72b` declares native 32,768 while the VRAM fitter
+      serves it at 177,408 cells — do not use it for long context.
 - **Open WebUI** (mh370 only, added 2026-10-25): chat UI at `http://localhost:8080` (bound
   0.0.0.0, so also `http://<MH370_TS_IP>:8080` over Tailscale), v0.12.4, `WEBUI_AUTH=true` —
   the first account created there becomes admin. **Re-pointed 2026-11-01 and the re-point LANDED:**
@@ -213,7 +222,13 @@ Hard rules:
   advertise tools." Open WebUI always sends `tools`; the GGUF templates in use do not advertise tool
   support (the identical error appeared against Ollama with `cydonia-24b`). The fix is on the OWUI
   side — set Function Calling to **Disabled** (or choose a model that advertises tools) in Admin →
-  Models — not in the endpoint config.
+  Models — not in the endpoint config. **FIXED 2026-11-06:** its model table held one stale Ollama-era
+  row, `cydonia-24b:q8_0` — one of the three tool-incapable ids — so every chat hit the 400.
+  `ui.default_models` is now `["qwen3.8-27b-reasoning-medium-q6"]` and the stale row is deactivated
+  (`is_active=0`, reversible); OWUI restarted and `/health` → 200. **DB was edited directly, on a
+  stopped instance, after a backup to `data/webui.db.bak-20261106`** — a live edit can be overwritten
+  by OWUI's in-memory config. Caveat for reasoning models: keep `max_tokens` ≥ 600 (ideally 1200) or
+  the allowance goes to thinking and the UI renders an empty/failed message rather than an error.
   Installed with `uv tool install open-webui` -> `%USERPROFILE%\.local\bin\open-webui.exe`
   (uv-managed Python 3.11.14; does NOT touch `E:\FNI\.venv`). Data/DB
   `C:\Users\<user>\open-webui\data`, launcher `...\start-openwebui.cmd`, log
