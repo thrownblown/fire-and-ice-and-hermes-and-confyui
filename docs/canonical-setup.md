@@ -180,22 +180,40 @@ Hard rules:
       `GET /v1/models` → **200, 22 ids**, matching goldfishbowl's published snapshot exactly, and
       all five ids we hold are present. Inference confirmed on two ids with the response `model`
       field checked (see below). No Hermes restart was needed — `key_env` is read per call.
-    - 12 first-party files still POST the retired native API (`/api/generate`, `/api/tags`) and
-      request Ollama ids — they must be ported to `/v1/chat/completions` with the bearer header:
+    - **PORT COMPLETE 2026-11-05** (this bullet used to be "12 first-party files still POST the
+      retired native API"). All twelve are off `:11434` and now go through `core/gf_client.py`:
       `runs/yolo_full_movie.py` (preflight + `BLOCK_MODEL` + its `--endpoint goldfishbowl` pin),
       `runs/diag_yolo_renders.py`, and in `tools/`: `vlm_blocking.py`, `prompt_jury.py`,
       `prompt_fix.py`, `describe_all.py`, `plate_figure_check.py`, `review_scenes.py`,
-      `review_sweep.py`, `subhuman_krea2.py`, `log_watcher.py`, `test_hand_fix.py`. (The
-      `vlm_*.py` tools that name `qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s` ride mh370's
-      LM Studio and are unaffected.)
+      `review_sweep.py`, `subhuman_krea2.py`, `log_watcher.py`, `test_hand_fix.py`. Verified: all
+      compile + import, and a live alias call returns `PONG` with the response's `model` field
+      checked. No live `:11434` literal remains in code (only docstring prose that records the
+      retirement). (The `vlm_*.py` tools that name `qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s`
+      ride mh370's LM Studio and were never affected.)
+    - **Name the ALIAS, not the id.** goldfishbowl published 24 friendly aliases (2026-11-05) that
+      resolve at the edge; `core/gf_client.py` holds the alias→id table (`ALIASES`) and resolves
+      *before* the request, so `strict_model` still verifies which model actually answered (an alias
+      request echoes the RESOLVED id, so comparing against the alias would fail a good answer).
+      Tools now name `qwen3-32b-vision-large`, `qwen3-8b-vision-small`, `qwen3-coder-30b`,
+      `llama3.3-70b-chat-xlarge`, `magnum-72b-rp-xlarge`. The id prefix has already moved twice in
+      one day (`ollama-served/` → `llama-cpp/`), and a rename moves every id under it — with the
+      table, the next rename is one dict entry. Known gaps: no published alias yet for
+      `llama-cpp/qwen3.5-35b-a3b_latest` (prompt_jury's third juror still names the raw id), and
+      `magnum-v4-72b` declares native 32,768 while the VRAM fitter serves it at 177,408 cells — do
+      not use it for long context.
 - **Open WebUI** (mh370 only, added 2026-10-25): chat UI at `http://localhost:8080` (bound
   0.0.0.0, so also `http://<MH370_TS_IP>:8080` over Tailscale), v0.12.4, `WEBUI_AUTH=true` —
-  the first account created there becomes admin. **Its model backend is BROKEN (2026-11-01):** the
-  launcher (`start-openwebui.cmd` lines 11–14) still sets
-  `OLLAMA_BASE_URL(S)=http://<GOLDFISHBOWL_TS_IP>:11434` with `ENABLE_OLLAMA_API=true` and
-  `ENABLE_OPENAI_API=false`, so its model list died with Ollama. Fix = re-point it at the Unsloth
-  Studio OpenAI endpoint (`OPENAI_API_BASE_URL=http://goldfishbowl:8888/v1`, the bearer key,
-  `ENABLE_OPENAI_API=true`, Ollama disabled) — blocked on the same missing key.
+  the first account created there becomes admin. **Re-pointed 2026-11-01 and the re-point LANDED:**
+  the launcher now sets `OPENAI_API_BASE_URL(S)=http://goldfishbowl:8888/v1`, `ENABLE_OPENAI_API=true`,
+  `ENABLE_OLLAMA_API=false` with the key read from the Hermes `.env`, and the running instance
+  (started 2026-11-03, after that edit) is calling the Studio endpoint with real ids — verified in
+  `logs/open-webui.log`. **Its remaining failure is NOT an endpoint fault:** requests come back
+  `HTTP 400 (upstream_error) code=unsupported_parameter` — "Client-supplied tools or tool-call
+  history require a GGUF chat template with tool-call support; the current model/template does not
+  advertise tools." Open WebUI always sends `tools`; the GGUF templates in use do not advertise tool
+  support (the identical error appeared against Ollama with `cydonia-24b`). The fix is on the OWUI
+  side — set Function Calling to **Disabled** (or choose a model that advertises tools) in Admin →
+  Models — not in the endpoint config.
   Installed with `uv tool install open-webui` -> `%USERPROFILE%\.local\bin\open-webui.exe`
   (uv-managed Python 3.11.14; does NOT touch `E:\FNI\.venv`). Data/DB
   `C:\Users\<user>\open-webui\data`, launcher `...\start-openwebui.cmd`, log
@@ -319,6 +337,22 @@ section's verify command, edit THIS file, and only then touch pointers elsewhere
 memory hold behavior ("serialize", "never assume the rig", "read the sidecar"); this file
 holds ground truth (addresses, versions, paths, defaults). Anything duplicated from here
 into another system is a bug — replace it with a pointer.
+
+### Unreachable ≠ offline — it is the CUE to re-verify (rule, 2026-11-01)
+
+A service that stops answering is **not** evidence that it is down. A migrated port or host
+leaves exactly the same signature as a dead box (`curl` exit 7 / HTTP `000`). So:
+
+1. Probe the service's own surface — `/health`, `/docs`, `/openapi.json`, `/v1/models` — and
+   re-read this file's §2 (Rigs/Services) **before** concluding anything.
+2. Assume a migration first: Ollama `:11434` → Unsloth Studio `:8888` is the worked example.
+3. Then fix the *consumer* (stale pointer, hardcoded endpoint, cached skill copy), not the
+   conclusion. Declaring "the box is offline" and stopping is the failure mode this rule exists
+   to prevent.
+
+**Do NOT weaken Hermes' default prompt-caching to compensate.** Caching is correct behavior; a
+running session holding a stale copy is refreshed by re-reading this file (or by a fresh
+session), never by mutating context mid-conversation.
 
 ### Local LM Studio loads are killed by TTL — and the error hides it (verified 2026-11-05)
 
