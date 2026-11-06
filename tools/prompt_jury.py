@@ -38,7 +38,7 @@ sys.path.insert(0, str(ROOT))
 from core import gf_client as gf  # noqa: E402  — endpoint + token live there
 
 JURORS = ["llama3.3-70b-chat-xlarge", "magnum-72b-rp-xlarge",
-          "llama-cpp/qwen3.5-35b-a3b_latest"]   # last one has no published alias yet
+          "qwen3.5-35b-chat-large"]   # all three are published aliases now
 JUDGE = "llama3.3-70b-chat-xlarge"
 VOTES = ROOT / "manifests" / "prompt_jury_votes.jsonl"
 
