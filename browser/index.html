@@ -201,6 +201,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     <div class="tab" id="tabTests">Test runs <span id="nTests"></span></div>
     <div class="tab" id="tabSweeps">Sweeps <span id="nSweeps"></span></div>
     <div class="tab" id="tabYolo">Yolo <span id="nYolo"></span></div>
+    <div class="tab" id="tabYolo2">Yolo 2 <span id="nYolo2"></span></div>
     <div class="tab" id="tabStatus">Status <span id="nStatus"></span></div>
     <div class="tab" id="tabDecisions">Decisions <span id="nDecisions"></span></div>
   </div>
@@ -222,6 +223,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
 <script src="runs/testruns-data.js"></script>
 <script src="browser/sweep-data.js"></script>
 <script src="browser/yolo-data.js"></script>
+  <script src="browser/yolo2-data.js"></script>
 <script src="browser/project-data.js"></script>
 <script src="browser/voice-data.js"></script>
 <script>
@@ -247,6 +249,8 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   var T = window.TESTDATA || {runs:[]};
   var SW = window.SWEEPDATA || {chars:[]};
   var Y = window.YOLODATA || {clips:[]};
+  var Y2 = window.YOLO2DATA || {clips:[]};   /* pass 2/3: same record shape, so the yolo renderer drives both views */
+  function YD(v){ return v === 'yolo2' ? Y2 : Y; }
   var SU = window.SETUPDATA || {scenes:[], shot_setup:{}};
   var P = window.PROJECTDATA || {counts:{}, status:[], decisions:[]};
   var shots = D.shots, chunks = D.chunks, caps = D.captions;
@@ -262,6 +266,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   document.getElementById('nTests').textContent = T.runs.length;
   document.getElementById('nSweeps').textContent = SW.chars.length;
   document.getElementById('nYolo').textContent = Y.clips.filter(function(c){return c.videos.length;}).length;
+  document.getElementById('nYolo2').textContent = Y2.clips.filter(function(c){return c.videos.length;}).length;
   document.getElementById('nStatus').textContent = P.status.filter(function(s){return s.state!=='done';}).length;
   document.getElementById('nDecisions').textContent = P.decisions.filter(function(d){return d.state==='open';}).length;
 
@@ -314,7 +319,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   function statusById(id){ for (var i=0;i<P.status.length;i++) if (P.status[i].id===id) return P.status[i]; return null; }
   function decisionById(id){ for (var i=0;i<P.decisions.length;i++) if (P.decisions[i].id===id) return P.decisions[i]; return null; }
   function sweepByName(n){ n=(n||'').toLowerCase(); for (var i=0;i<SW.chars.length;i++) if (SW.chars[i].name===n) return SW.chars[i]; return null; }
-  function yoloByChunk(id){ for (var i=0;i<Y.clips.length;i++) if (Y.clips[i].chunk===id) return Y.clips[i]; return null; }
+  function yoloByChunk(id, d){ d = d || Y; for (var i=0;i<d.clips.length;i++) if (d.clips[i].chunk===id) return d.clips[i]; return null; }
   function sheetUrl(fn){ var m = (fn||'').match(/^(.+?)_sheet/i); return m ? 'refs/characters/' + encodeURIComponent(m[1]) + '/' + encodeURIComponent(fn) : null; }
   function plateUrl(fn){ var m = (fn||'').match(/^(.+?)_plate/i); return m ? 'refs/backgrounds/' + encodeURIComponent(m[1]) + '/' + encodeURIComponent(fn) : null; }
 
@@ -543,10 +548,11 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
           function(){ nav({item:d.id}); });
       });
       if (!$list.children.length) $list.innerHTML = '<div class="empty">no decisions match</div>';
-    } else if (st.view === 'yolo'){
-      if (!Y.clips.length) $list.innerHTML = '<div class="empty">no yolo data — run tools/build_yolo_data.py</div>';
+    } else if (st.view === 'yolo' || st.view === 'yolo2'){
+      var DL = YD(st.view);
+      if (!DL.clips.length) $list.innerHTML = '<div class="empty">no yolo data — run tools/build_yolo_data.py</div>';
       var curS = null;
-      Y.clips.forEach(function(c){
+      DL.clips.forEach(function(c){
         if (st.q){
           var hay = (c.chunk+' '+c.scene+' '+(c.subjects||[]).join(' ')+' '+(c.sheets||[]).join(' ')).toLowerCase();
           if (hay.indexOf(st.q.toLowerCase()) < 0) return;
@@ -1201,6 +1207,45 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       + ' <span>·</span> graph '+esc(c.graph||'')+'</div>';
     if (!c.videos.length)
       h += '<div class="banner"><span>No video — this chunk was queued (or pending) when the run was aborted. The prompt below is exactly what would have rendered.</span></div>';
+
+    // ---- render-pass comparison (pass 2 take 01 vs pass 3 take 02, new seed) --------------
+    if (c.takes){
+      h += '<div class="section"><h3>Render passes</h3><div class="stcard">';
+      c.takes.forEach(function(t){
+        var seedDiff = '';
+        if (c.takes.length > 1){
+          seedDiff = (t.take === 1 ? ' <span style="color:var(--dim);font-size:11px">(pass 2)</span>'
+                                   : ' <span style="color:var(--dim);font-size:11px">(pass 3 · new seed)</span>');
+        }
+        h += '<div class="dl"><span class="sp"><span class="badge '+(t.present?'done':'pending')+'">'+esc('take '+t.take)+'</span>'
+           + seedDiff + '</span><span class="mono" style="color:var(--dim);font-size:11px">seed '
+           + esc(String(t.seed)) + ' · ' + esc(t.graph||'') + '</span></div>';
+      });
+      h += '</div></div>';
+    }
+
+    // ---- the tight loop's read of the newest take ----------------------------------------
+    if (c.vlm){
+      var vv = c.vlm.verdict || 'NO_READ';
+      var vcls = vv === 'COUNT_OK' ? 'done' : (vv === 'EXTRA_PEOPLE' ? 'blocked' : 'pending');
+      h += '<div class="section"><h3>VLM read (take 2)</h3><div class="stcard"><div class="shead">'
+         + '<span class="badge '+vcls+'">'+esc(vv)+'</span>'
+         + '<span style="color:var(--dim);font-size:12px">max '
+         + esc(String(c.vlm.observed_max==null?'?':c.vlm.observed_max)) + ' people seen in any sampled frame'
+         + ' · chunk cast: ' + esc((c.vlm.expected_cast||[]).join(', ')||'(none in ledger)') + '</span></div>';
+      (c.vlm.observations||[]).forEach(function(o){
+        var who = (o.people||[]).map(function(p){
+          return esc([p.sex,p.hair,p.clothing].filter(Boolean).join(', ').slice(0,110));
+        }).join(' | ');
+        h += '<div class="dl"><span class="sp">'+esc(o.shot)+'</span>'
+           + '<span><b>'+esc(String(o.n==null?'?':o.n))+'</b> person(s)'
+           + (who ? ' <span style="color:var(--dim);font-size:11px">'+who+'</span>' : '') + '</span></div>';
+      });
+      h += '<div class="note">Counts and physical attributes only — the reader is never asked for a name. '
+         + 'A shot cannot legitimately hold more people than the chunk has cast, so EXTRA_PEOPLE is the '
+         + 'invented-extras failure, not a framing quirk.</div></div></div>';
+    }
+
     // jury verdict (PR-review style)
     if (c.verdict){
       var vcls = c.verdict==='APPROVE' ? 'done' : (c.verdict==='NEEDS_FIX' ? 'blocked' : 'pending');
@@ -1517,6 +1562,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     document.getElementById('tabTests').className  = 'tab' + (st.view==='tests'?' active':'');
     document.getElementById('tabSweeps').className  = 'tab' + (st.view==='sweeps'?' active':'');
     document.getElementById('tabYolo').className  = 'tab' + (st.view==='yolo'?' active':'');
+    document.getElementById('tabYolo2').className  = 'tab' + (st.view==='yolo2'?' active':'');
     document.getElementById('tabStatus').className  = 'tab' + (st.view==='status'?' active':'');
     document.getElementById('tabDecisions').className  = 'tab' + (st.view==='decisions'?' active':'');
     ['NEKRON','TEEGRA','LARN'].forEach(function(x){
@@ -1526,7 +1572,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     });
     var q = document.getElementById('q');
     if (q.value !== st.q && document.activeElement !== q) q.value = st.q;
-    q.placeholder = st.view==='chars' ? 'search characters…' : st.view==='bgs' ? 'search backgrounds…' : st.view==='setups' ? 'search scenes / setups…' : st.view==='tests' ? 'search test runs…' : st.view==='sweeps' ? 'search sweeps…' : st.view==='yolo' ? 'search chunk / subject / sheet…' : st.view==='status' ? 'search stages…' : st.view==='decisions' ? 'search decisions…' : 'search shot / chunk / text…';
+    q.placeholder = st.view==='chars' ? 'search characters…' : st.view==='bgs' ? 'search backgrounds…' : st.view==='setups' ? 'search scenes / setups…' : st.view==='tests' ? 'search test runs…' : st.view==='sweeps' ? 'search sweeps…' : st.view==='yolo' ? 'search chunk / subject / sheet…' : st.view==='yolo2' ? 'search chunk / subject / sheet…' : st.view==='status' ? 'search stages…' : st.view==='decisions' ? 'search decisions…' : 'search shot / chunk / text…';
 
     renderList(st);
 
@@ -1569,10 +1615,11 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       if (!sw) sw = SW.chars[0];
       if (sw) detailSweep(sw);
       else $detail.innerHTML = '<div class="empty">no sweep data — run <code>tools/build_sweep_data.py</code></div>';
-    } else if (st.view === 'yolo'){
-      var yc = st.selYolo ? yoloByChunk(st.selYolo) : null;
-      if (!yc) { for (var yi=0; yi<Y.clips.length; yi++){ if (Y.clips[yi].videos.length){ yc = Y.clips[yi]; break; } } }
-      if (!yc) yc = Y.clips[0];
+    } else if (st.view === 'yolo' || st.view === 'yolo2'){
+      var D = YD(st.view);
+      var yc = st.selYolo ? yoloByChunk(st.selYolo, D) : null;
+      if (!yc) { for (var yi=0; yi<D.clips.length; yi++){ if (D.clips[yi].videos.length){ yc = D.clips[yi]; break; } } }
+      if (!yc) yc = D.clips[0];
       if (yc) detailYolo(yc);
       else $detail.innerHTML = '<div class="empty">no yolo data — run <code>tools/build_yolo_data.py</code></div>';
     } else if (st.view === 'status'){
@@ -1600,6 +1647,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   document.getElementById('tabTests').onclick  = function(){ nav({view:'tests',  shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run: (state().selRun || (T.runs[0] && T.runs[0].id) || null)}); };
   document.getElementById('tabSweeps').onclick = function(){ nav({view:'sweeps', shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item:null, yolo:null, sweep: (state().selSweep || (SW.chars[0] && SW.chars[0].name) || null)}); };
   document.getElementById('tabYolo').onclick = function(){ nav({view:'yolo', shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item:null, sweep:null, yolo: (state().selYolo || (Y.clips[0] && Y.clips[0].chunk) || null)}); };
+  document.getElementById('tabYolo2').onclick = function(){ nav({view:'yolo2', shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item:null, sweep:null, yolo: (state().selYolo || (Y2.clips[0] && Y2.clips[0].chunk) || null)}); };
   document.getElementById('tabStatus').onclick  = function(){ nav({view:'status',  shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item: (state().selItem || (P.status[0] && P.status[0].id) || null)}); };
   document.getElementById('tabDecisions').onclick = function(){ nav({view:'decisions', shot:null, chunk:null, char:null, bg:null, scene:null, setup:null, run:null, item: (state().selItem || (P.decisions[0] && P.decisions[0].id) || null)}); };
 
@@ -1653,7 +1701,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       else if (p.get('bg')||p.get('bgid')) view = 'bgs';
       else view = 'shots';
     }
-    if (['shots','chunks','setups','chars','bgs','tests','sweeps','yolo','status','decisions'].indexOf(view) < 0) view = 'shots';
+    if (['shots','chunks','setups','chars','bgs','tests','sweeps','yolo','yolo2','status','decisions'].indexOf(view) < 0) view = 'shots';
     var sn = null, cid = null, cn = null, bs = null, scn = null, su = null, run = null, item = null, sweep = null, yolo = null;
     if (view === 'shots'){
       sn = pad5(p.get('shot') || p.get('shotid') || p.get('s'));
@@ -1679,9 +1727,9 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     } else if (view === 'sweeps'){
       sweep = (p.get('sweep') || '').toLowerCase();
       if (sweep && !sweepByName(sweep)) sweep = null;
-    } else if (view === 'yolo'){
+    } else if (view === 'yolo' || view === 'yolo2'){
       yolo = p.get('yolo');
-      if (yolo && !yoloByChunk(yolo)) yolo = null;
+      if (yolo && !yoloByChunk(yolo, YD(view))) yolo = null;
     } else if (view === 'status'){
       item = p.get('item');
       if (item && !statusById(item)) item = null;
