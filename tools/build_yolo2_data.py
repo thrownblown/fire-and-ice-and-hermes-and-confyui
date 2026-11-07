@@ -113,6 +113,8 @@ def main() -> None:
             "takes": takes,
             "vlm": ({"verdict": v.get("verdict"), "observed_max": v.get("observed_max"),
                      "expected_cast": v.get("expected_cast"),
+                     "expected_counts": v.get("expected_counts"),
+                     "extra_shots": v.get("extra_shots"),
                      "observations": v.get("observations")} if v else None),
         })
 

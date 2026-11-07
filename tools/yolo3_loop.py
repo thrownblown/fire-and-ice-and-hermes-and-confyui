@@ -114,10 +114,21 @@ def analysed() -> set[str]:
 
 
 def cast_rows(cid: str) -> list[dict]:
+    """This chunk's take-2 rows from the cast ledger, newest run only, one row per shot.
+
+    The checker APPENDS per run, so a chunk that has been judged twice has two rows per shot;
+    taking them all would double-count in `extra_shots` and skew the max.
+    """
     if not CAST_LEDGER.exists():
         return []
-    return [json.loads(l) for l in CAST_LEDGER.read_text(encoding="utf-8").splitlines()
-            if l.strip() and json.loads(l).get("chunk") == cid and str(json.loads(l).get("take")) == str(TAKE)]
+    by_shot = {}
+    for l in CAST_LEDGER.read_text(encoding="utf-8").splitlines():
+        if not l.strip():
+            continue
+        r = json.loads(l)
+        if r.get("chunk") == cid and str(r.get("take")) == str(TAKE):
+            by_shot[r.get("shot")] = r          # last write wins = newest run
+    return list(by_shot.values())
 
 
 def expected_cast(cid: str) -> list[str]:
@@ -143,18 +154,74 @@ def expected_cast(cid: str) -> list[str]:
     return []
 
 
-def verdict_for(cid: str, rows: list[dict]) -> tuple[str, int, list[str]]:
-    """(verdict, max people seen in any shot, expected cast)."""
+def expected_counts(cid: str) -> dict[str, int]:
+    """Per-shot people counts from the chunk ledger — what the SOURCE shot held.
+
+    Better baseline than the named cast, and per-shot rather than chunk-level: a crowd chunk
+    legitimately holds a crowd that nobody bothered to stamp as a character, so comparing
+    against `len(named cast)` fires EXTRA_PEOPLE on every group scene. `people_count` is the
+    number the film's own shot had, aligned with `shot_nums`.
+    """
+    if not CHUNKS.exists():
+        return {}
+    for l in CHUNKS.read_text(encoding="utf-8").splitlines():
+        if not l.strip():
+            continue
+        r = json.loads(l)
+        if r.get("chunk_id") == cid:
+            nums = [str(n) for n in (r.get("shot_nums") or [])]
+            counts = r.get("people_count") or []
+            out = {}
+            for n, c in zip(nums, counts):
+                s = str(c).strip()
+                if s.isdigit():
+                    out[n] = int(s)
+            return out
+    return {}
+
+
+def verdict_for(cid: str, rows: list[dict]) -> tuple[str, int, list[str], dict, list[dict]]:
+    """(verdict, max people seen, expected cast, per-shot expectations, extra-people shots).
+
+    The test is per shot, against the source shot's own count: the render may not put MORE
+    people in a shot than the film had there. That is the invented-extras failure, and it needs
+    no per-shot line in the prompt (the yolo prompts never had one).
+    """
     seen = [r["observed"] for r in rows if isinstance(r.get("observed"), int)]
     obs_max = max(seen) if seen else 0
     exp = expected_cast(cid)
+    exp_counts = expected_counts(cid)
+    extras = []
+    for r in rows:
+        if not isinstance(r.get("observed"), int):
+            continue
+        num = str(r.get("shot", "")).split(":")[-1]
+        want = exp_counts.get(num)
+        if want is not None and r["observed"] > want:
+            extras.append({"shot": num, "observed": r["observed"], "source": want})
     if not rows or not seen:
-        return "NO_READ", obs_max, exp
+        return "NO_READ", obs_max, exp, exp_counts, extras
     if obs_max == 0:
-        return "NOBODY", obs_max, exp
-    if exp and obs_max > len(exp):
-        return "EXTRA_PEOPLE", obs_max, exp
-    return "COUNT_OK", obs_max, exp
+        return "NOBODY", obs_max, exp, exp_counts, extras
+    if extras:
+        return "EXTRA_PEOPLE", obs_max, exp, exp_counts, extras
+    if not exp_counts:
+        # no source counts for this chunk — fall back to the cast-size screen, and say so
+        return ("EXTRA_PEOPLE" if exp and obs_max > len(exp) else "COUNT_OK_SOFT"), obs_max, exp, exp_counts, extras
+    return "COUNT_OK", obs_max, exp, exp_counts, extras
+
+
+def bake_spa() -> None:
+    """Re-bake browser/yolo2-data.js so the 'Yolo 2' tab is current without anyone remembering.
+
+    Cheap (a few hundred ms over ~257 clips) and idempotent, so it is safe to run after every
+    batch. Failure is reported and never fatal: the loop's own ledger is the record of truth,
+    the data file is just the view of it.
+    """
+    r = subprocess.run([PY, str(ROOT / "tools" / "build_yolo2_data.py")],
+                       capture_output=True, text=True, timeout=600)
+    line = (r.stdout or r.stderr or "").strip().splitlines()
+    print("   spa bake: %s" % (line[-1] if line else "(no output)"), flush=True)
 
 
 def judge(cid: str, clip: Path) -> dict:
@@ -167,10 +234,11 @@ def judge(cid: str, clip: Path) -> dict:
     ok = sum(1 for r in rows if r["verdict"] == "OK")
     bad = [r for r in rows if r["verdict"] == "MISMATCH"]
     unk = sum(1 for r in rows if r["verdict"] == "UNCHECKED")
-    verdict, obs_max, exp = verdict_for(cid, rows)
+    verdict, obs_max, exp, exp_counts, extras = verdict_for(cid, rows)
     return {"chunk": cid, "file": str(clip), "bytes": clip.stat().st_size,
             "shots": len(rows), "ok": ok, "mismatch": len(bad), "unchecked": unk,
             "verdict": verdict, "observed_max": obs_max, "expected_cast": exp,
+            "expected_counts": exp_counts, "extra_shots": extras,
             "observations": [{"shot": r["shot"], "n": r.get("observed"),
                               "people": (r.get("people") or [])[:3]} for r in rows],
             "mismatch_shots": [{"shot": r["shot"], "claimed": r["claimed"], "observed": r["observed"]}
@@ -179,7 +247,7 @@ def judge(cid: str, clip: Path) -> dict:
             "checker_rc": rc.returncode}
 
 
-def sweep(batch: int, max_wait: float) -> int:
+def sweep(batch: int, max_wait: float, no_bake: bool = False) -> int:
     done = analysed()
     todo = [c for c in queued_chunks() if c not in done]
     if not todo:
@@ -217,12 +285,13 @@ def sweep(batch: int, max_wait: float) -> int:
         with LOOP_LEDGER.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(row) + "\n")
         got += 1
-        print("   %s: %s — %d shot(s) read, max %d people vs cast %s %s"
+        print("   %s: %s — %d shot(s) read, max %d people%s"
               % (cid, row["verdict"], row["shots"], row["observed_max"],
-                 ",".join(row["expected_cast"]) or "?",
-                 "" if row["verdict"] == "COUNT_OK"
-                 else "  <-- EXTRA people vs cast" if row["verdict"] == "EXTRA_PEOPLE" else ""),
+                 ("  <-- " + ", ".join("shot %s: %d vs source %d" % (e["shot"], e["observed"], e["source"])
+                                       for e in row["extra_shots"][:3])) if row["extra_shots"] else ""),
               flush=True)
+    if got and not no_bake:
+        bake_spa()
     return got
 
 
@@ -231,12 +300,14 @@ def main() -> None:
     ap.add_argument("--once", action="store_true", help="one sweep, then exit")
     ap.add_argument("--every", type=int, default=180, help="seconds between sweeps (looping mode)")
     ap.add_argument("--batch", type=int, default=3, help="clips to judge per VLM window")
+    ap.add_argument("--no-bake", action="store_true",
+                    help="do not re-bake browser/yolo2-data.js after each batch")
     ap.add_argument("--max-wait", type=float, default=900, help="seconds to wait for a batch to land")
     args = ap.parse_args()
 
     total = 0
     while True:
-        total += sweep(args.batch, args.max_wait)
+        total += sweep(args.batch, args.max_wait, args.no_bake)
         if args.once:
             break
         time.sleep(args.every)
