@@ -28,6 +28,7 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -36,8 +37,18 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-MODEL = "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s"
-ENDPOINT = "http://127.0.0.1:1234/v1/chat/completions"
+sys.path.insert(0, str(ROOT))
+from core import gf_client as gf  # noqa: E402  — goldfishbowl transport (alias + bearer)
+
+# Backend: local LM Studio 8B by default (cheap, cached). Set FNI_CAST_BACKEND=goldfishbowl to
+# judge with goldfishbowl's audit-grade 32B — its designated description-only frame reader — which
+# is the right reader for a QC pass that decides whether a take gets re-rendered. The cache key
+# includes MODEL (see below), so switching readers never reuses the other reader's verdicts.
+BACKEND = (os.environ.get("FNI_CAST_BACKEND") or "lmstudio").lower()
+MODEL = os.environ.get("FNI_CAST_MODEL") or (
+    "qwen3-32b-vision-large" if BACKEND == "goldfishbowl"
+    else "qwen3-vl-8b-instruct-abliterated-v2.0@q4_k_s")
+ENDPOINT = os.environ.get("FNI_CAST_ENDPOINT", "http://127.0.0.1:1234/v1/chat/completions")
 CACHE = ROOT / "runs" / "vlm_cast_cache.jsonl"
 LEDGER = ROOT / "runs" / "vlm_cast_check.jsonl"
 
@@ -61,16 +72,20 @@ def load_cache() -> dict:
 
 
 def ask(frame: Path) -> dict:
-    b64 = base64.b64encode(frame.read_bytes()).decode()
-    body = {"model": MODEL, "temperature": 0.0, "max_tokens": 700,
-            "messages": [{"role": "system", "content": SYSTEM},
-                         {"role": "user", "content": [
-                             {"type": "text", "text": "How many people are in this frame?"},
-                             {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}}]}]}
-    req = urllib.request.Request(ENDPOINT, data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=900) as r:
-        txt = json.load(r)["choices"][0]["message"]["content"]
+    if BACKEND == "goldfishbowl":
+        txt = gf.chat(MODEL, "How many people are in this frame?", system=SYSTEM,
+                      images=[str(frame)], temperature=0.0, max_tokens=700, timeout=900)
+    else:
+        b64 = base64.b64encode(frame.read_bytes()).decode()
+        body = {"model": MODEL, "temperature": 0.0, "max_tokens": 700,
+                "messages": [{"role": "system", "content": SYSTEM},
+                             {"role": "user", "content": [
+                                 {"type": "text", "text": "How many people are in this frame?"},
+                                 {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}}]}]}
+        req = urllib.request.Request(ENDPOINT, data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=900) as r:
+            txt = json.load(r)["choices"][0]["message"]["content"]
     m = re.search(r"\{.*\}", txt, re.S)
     parsed = json.loads(m.group(0)) if m else None
     return {"raw": txt, "json": parsed}
@@ -93,7 +108,13 @@ def shot_midpoints(chunk: str) -> list[tuple[str, float]]:
 def claimed_counts(chunk: str, take: str) -> dict[str, int]:
     """What the queued prompt says per shot — from the graph it actually rendered."""
     t = f"{int(take):02d}" if str(take).strip().isdigit() else take   # files are zero-padded: _t06
-    g = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va" / "graphs" / f"{chunk}_audioOnly_t{t}.json"
+    gdir = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va" / "graphs"
+    # An explicit --seed lands in the graph name too (`_t02_s<seed>.json`), so match by take with
+    # an optional seed suffix and prefer the newest — that is the graph the take actually rendered.
+    pat = re.compile(r"^%s_audioOnly_t0*%s(?:_s\d+)?\.json$" % (re.escape(chunk), str(t)))
+    cands = [p for p in gdir.glob(f"{chunk}_audioOnly_t*.json") if pat.match(p.name)]
+    g = (max(cands, key=lambda p: p.stat().st_mtime) if cands
+         else gdir / f"{chunk}_audioOnly_t{t}.json")
     if not g.exists():
         return {}
     data = json.loads(g.read_text(encoding="utf-8"))
