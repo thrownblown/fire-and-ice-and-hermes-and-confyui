@@ -33,6 +33,8 @@ import re
 import shutil
 import subprocess
 import sys
+import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -60,6 +62,14 @@ SYSTEM = (
 )
 
 
+# One sample per item cannot separate a real effect from noise (goldfishbowl, inbox 2026-11-05 (9):
+# "one pass per frame is not a measurement"), and temperature 0 is NOT deterministic on GPU with
+# batching. So a decision-driving verdict is the MAJORITY of N samples across this ladder, and the
+# agreement fraction is reported with it; below 4/5 the verdict is UNSTABLE and must not become a
+# ledger fact.
+TEMP_LADDER = [0.0, 0.3, 0.7, 1.0, 0.3]
+
+
 def load_cache() -> dict:
     if not CACHE.exists():
         return {}
@@ -71,13 +81,34 @@ def load_cache() -> dict:
     return out
 
 
-def ask(frame: Path) -> dict:
+def ask(frame: Path, temperature: float = 0.0) -> dict:
+    """One VLM read. Transient 400/429/5xx are RETRIED, not treated as a verdict.
+
+    Found 2026-11-08: the same request on the same frame returned HTTP 400 five times in a row, then
+    succeeded on a re-run minutes later (LM Studio briefly busy/reloading). A transient backend fault
+    must not silently become an UNCHECKED shot, so retry before giving up.
+    """
+    last = None
+    for attempt in range(3):
+        try:
+            return _ask_once(frame, temperature)
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code not in (400, 408, 409, 425, 429, 500, 502, 503, 504):
+                raise
+        except urllib.error.URLError as e:
+            last = e
+        time.sleep(2 * (attempt + 1))
+    raise last if last else RuntimeError("ask failed")
+
+
+def _ask_once(frame: Path, temperature: float = 0.0) -> dict:
     if BACKEND == "goldfishbowl":
         txt = gf.chat(MODEL, "How many people are in this frame?", system=SYSTEM,
-                      images=[str(frame)], temperature=0.0, max_tokens=700, timeout=900)
+                      images=[str(frame)], temperature=temperature, max_tokens=700, timeout=900)
     else:
         b64 = base64.b64encode(frame.read_bytes()).decode()
-        body = {"model": MODEL, "temperature": 0.0, "max_tokens": 700,
+        body = {"model": MODEL, "temperature": temperature, "max_tokens": 700,
                 "messages": [{"role": "system", "content": SYSTEM},
                              {"role": "user", "content": [
                                  {"type": "text", "text": "How many people are in this frame?"},
@@ -123,6 +154,15 @@ def claimed_counts(chunk: str, take: str) -> dict[str, int]:
     txt = max(texts, key=len) if texts else ""
     out = {}
     ids = [sid for sid, _ in shot_midpoints(chunk)]
+    # two phrasings in the corpus: a per-shot claim, and one GLOBAL claim covering all frames
+    # ("There is one person visible in all frames, with no background extras") — the take-2 prompts
+    # use the global form, which the old per-shot-only regex missed, so every shot read as None.
+    g = re.search(r"There (?:is|are) (\d+|one|two|three|four|five) (?:person|people) visible", txt)
+    words = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5}
+    if g:
+        n = words.get(g.group(1), None) or (int(g.group(1)) if g.group(1).isdigit() else None)
+        if n is not None:
+            out = {sid: n for sid in ids}
     for i, sid in enumerate(ids, 1):
         m = re.search(rf"\[Shot {i}\][^\[]*?exactly (\d+) (?:person|people)", txt)
         if m:
@@ -136,6 +176,10 @@ def main() -> int:
     ap.add_argument("--chunk", action="append", required=True)
     ap.add_argument("--take", action="append", default=[])
     ap.add_argument("--frames-dir", default="")
+    ap.add_argument("--samples", type=int, default=5,
+                    help="VLM samples per shot across TEMP_LADDER; the verdict is the MAJORITY and "
+                         "agreement is reported. Below 4/5 the verdict is UNSTABLE. --samples 1 restores "
+                         "the old single-pass behaviour (which goldfishbowl's inbox calls unmeasured).")
     args = ap.parse_args()
     if len(args.clip) != len(args.chunk):
         raise SystemExit("--clip and --chunk must be paired")
@@ -155,36 +199,64 @@ def main() -> int:
         mids = shot_midpoints(chunk)
         print(f"\n{clip_p.name}  ({chunk}, take {take})")
         for sid, mid in mids:
-            frame = outdir / f"{sid}.jpg"
+            # A colon is ILLEGAL in a Windows filename, so `shot:00031.jpg` silently truncates to a
+            # 0-byte file called `shot` — the VLM then answers a BLIND frame and returns a confident
+            # count (measured 2026-11-08: counts=[6,6,6,6,6] — 5/5 agreement on an empty image, which
+            # is why agreement alone is not a validity check). Sanitize, and guard the input below.
+            frame = outdir / f"{sid.replace(':', '_')}.jpg"
             if not frame.exists():
                 subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f"{mid:.2f}",
                                 "-i", str(clip_p), "-frames:v", "1", "-q:v", "3", str(frame), "-y"],
                                check=False)
-            key = f"{frame.name}:{frame.stat().st_mtime_ns if frame.exists() else 0}:{MODEL}"
-            hit = cache.get(key)
-            if hit is None:
-                try:
-                    hit = {"key": key, "frame": str(frame), **ask(frame)}
-                    with CACHE.open("a", encoding="utf-8") as fh:
-                        fh.write(json.dumps(hit, ensure_ascii=False) + "\n")
-                    cache[key] = hit
-                except Exception as e:  # noqa: BLE001
-                    print(f"    {sid}: VLM ERROR {type(e).__name__}: {str(e)[:120]}")
-                    continue
-            got = (hit.get("json") or {}).get("count")
+            if not frame.exists() or frame.stat().st_size < 1024:
+                print(f"    {sid}  NO_FRAME  ({'missing' if not frame.exists() else '0-byte'}) — "
+                      f"an empty frame must never produce a verdict")
+                rows.append({"clip": str(clip_p), "chunk": chunk, "take": take, "shot": sid,
+                             "claimed": claimed.get(sid), "observed": None, "verdict": "NO_FRAME",
+                             "samples": 0, "agreement": 0.0, "counts": [],
+                             "people": [], "frame": str(frame), "model": MODEL})
+                continue
+            stamp = frame.stat().st_mtime_ns if frame.exists() else 0
+            samples, counts = [], []
+            for t in TEMP_LADDER[:max(1, args.samples)]:
+                k = f"{frame.name}:{stamp}:{MODEL}:t{t}"
+                hit = cache.get(k)
+                if hit is None:
+                    try:
+                        hit = {"key": k, "frame": str(frame), "temp": t, **ask(frame, t)}
+                        with CACHE.open("a", encoding="utf-8") as fh:
+                            fh.write(json.dumps(hit, ensure_ascii=False) + "\n")
+                        cache[k] = hit
+                    except Exception as e:  # noqa: BLE001
+                        print(f"    {sid}: VLM ERROR at t={t} {type(e).__name__}: {str(e)[:100]}")
+                        continue
+                samples.append(hit)
+                c = (hit.get("json") or {}).get("count")
+                if c is not None:
+                    counts.append(int(c))
+            # MAJORITY verdict + agreement fraction, never the first answer
+            got, agreement, hit = None, 0.0, samples[0] if samples else {}
+            if counts:
+                got = max(set(counts), key=counts.count)
+                agreement = counts.count(got) / len(samples)
+                hit = next((s for s in samples if (s.get("json") or {}).get("count") == got), hit)
             want = claimed.get(sid)
             if want is None or got is None:
                 verdict = "UNCHECKED"      # never report an unchecked shot as agreement
+            elif args.samples > 1 and agreement < 0.8:
+                verdict = "UNSTABLE"       # <4/5 agreement: not a fact, feed it a better frame
             else:
                 verdict = "OK" if int(got) == int(want) else "MISMATCH"
             ppl = (hit.get("json") or {}).get("people") or []
             desc = " | ".join(f"{(p.get('sex') or '?')}, {p.get('hair') or '?'}, {p.get('clothing') or '?'}"
                               for p in ppl[:4])
-            print(f"    {sid}  prompt says {want}  frame shows {got}  -> {verdict}")
+            print(f"    {sid}  prompt says {want}  frame shows {got}  "
+                  f"[{counts.count(got) if counts else 0}/{len(samples)} agree]  -> {verdict}")
             if desc:
                 print(f"        {desc[:220]}")
             rows.append({"clip": str(clip_p), "chunk": chunk, "take": take, "shot": sid,
                          "claimed": want, "observed": got, "verdict": verdict,
+                         "samples": len(samples), "agreement": round(agreement, 2), "counts": counts,
                          "people": ppl, "frame": str(frame), "model": MODEL})
 
     if rows:
@@ -193,8 +265,18 @@ def main() -> int:
                 fh.write(json.dumps(r, ensure_ascii=False) + "\n")
         bad = [r for r in rows if r["verdict"] == "MISMATCH"]
         unknown = [r for r in rows if r["verdict"] == "UNCHECKED"]
-        print(f"\n{len(rows)} shot(s): {len(rows)-len(bad)-len(unknown)} ok, {len(bad)} mismatch, "
+        unstable = [r for r in rows if r["verdict"] == "UNSTABLE"]
+        noframe = [r for r in rows if r["verdict"] == "NO_FRAME"]
+        print(f"\n{len(rows)} shot(s): {len(rows)-len(bad)-len(unknown)-len(unstable)-len(noframe)} ok, "
+              f"{len(bad)} mismatch, {len(unstable)} unstable, {len(noframe)} NO_FRAME, "
               f"{len(unknown)} unchecked -> {LEDGER}")
+        if noframe:
+            print("  NO_FRAME = the extracted still was missing or empty, so the VLM never saw an image "
+                  "— a verdict there would be invention, not observation (found 2026-11-08: a colon in "
+                  "the frame name truncated every still to 0 bytes and the VLM answered 5/5 anyway)")
+        if unstable:
+            print(f"  {len(unstable)} shot(s) below 4/5 agreement — ambiguous frames, NOT facts: "
+                  + ", ".join(r["shot"] for r in unstable[:8]))
         if unknown:
             print("  a shot is UNCHECKED when the prompt's claimed count could not be read — that is "
                   "not agreement, fix the prompt record before reading this as a pass")
