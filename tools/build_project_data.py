@@ -119,6 +119,22 @@ STATUS = [
 # was ruled + when under "resolved".
 # --------------------------------------------------------------------------
 DECISIONS = [
+    {
+        "id": "plate-locations",
+        "name": "Plate locations for 12 scenes",
+        "category": "Plates",
+        "state": "open",
+        "owner": "Alex",
+        "question": "Pick a plate for each of the 12 scenes that have none — the nine G action stretches "
+                    "plus S15/S22/S24. One word each is enough.",
+        "context": "21 location plates (73 files) existed but only 3 scenes were mapped, so 479 of 494 "
+                   "chunks rendered with NO plate. 22 scenes / 213 chunks now resolve from the beat sheet's "
+                   "'Canonical location' column; these 12 (281 chunks) have no location in the ledger, the "
+                   "beat sheet, or the setup manifest. Six plates are unclaimed and look purpose-made for "
+                   "the action stretches. Nothing attaches a guessed plate — undetermined scenes attach "
+                   "nothing and are skipped by the next pass.",
+        "docs": ["docs/plate-location-ruling.md", "manifests/scene_locations.json"],
+    },
     # "voice-picks" (Voice-clip picks) moved to the character page: each
     # character's detail now lists their clean voice lines from
     # audio/voice-review.md with playable <audio> and keep-checkboxes
