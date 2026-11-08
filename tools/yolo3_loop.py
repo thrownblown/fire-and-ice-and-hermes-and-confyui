@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import os
 import subprocess
 import sys
@@ -33,7 +34,12 @@ from pathlib import Path
 ROOT = Path(r"E:/FNI")
 PY = str(ROOT / ".venv" / "Scripts" / "python.exe")
 COMFY = os.environ.get("FNI_COMFY", "http://<TOMBSTONE_TS_IP>:8188").rstrip("/")
-STATE3 = ROOT / "runs" / "yolo3_state.json"
+STATE3 = ROOT / "runs" / "yolo3_state.json"       # take-02 pass (legacy filename)
+
+
+def state_for(take: int) -> Path:
+    """The queue-state file for a take — yolo3_state.json is the LEGACY name for take 02."""
+    return (ROOT / "runs" / "yolo3_state.json") if take == 2 else (ROOT / "runs" / ("yolo_t%02d_state.json" % take))
 OUT = ROOT / "runs" / "yolo_output3"
 FRAMES = ROOT / "runs" / "yolo3_frames"
 CHECKER = ROOT / "tools" / "vlm_cast_check.py"
@@ -73,7 +79,40 @@ def remote_names(cid: str) -> list[str]:
     return names
 
 
+_HISTORY = {"t": 0.0, "names": set()}
+
+
+def history_names(max_age: float = 30.0) -> set:
+    """Every output filename ComfyUI has finished, in ONE request.
+
+    Probing each of the 449 queued clips with its own HTTP request took minutes per round while the
+    GPU was busy rendering (a 404 during a render can take seconds), so the loop sat silent with an
+    empty log and looked dead. /history already lists completed outputs, so read it once and match.
+    """
+    now = time.time()
+    if now - _HISTORY["t"] < max_age and _HISTORY["names"]:
+        return _HISTORY["names"]
+    names = set()
+    try:
+        with urllib.request.urlopen(f"{COMFY}/history", timeout=30) as r:
+            for v in json.load(r).values():
+                for o in (v.get("outputs") or {}).values():
+                    for key in ("images", "videos", "gifs", "animated"):
+                        for f in (o.get(key) or []):
+                            if isinstance(f, dict) and f.get("filename"):
+                                names.add(f["filename"])
+    except Exception:  # noqa: BLE001
+        pass
+    if names:
+        _HISTORY.update(t=now, names=names)
+    return names
+
+
 def ready(cid: str) -> bool:
+    names = history_names()
+    if names:
+        return any(fn in names for fn in remote_names(cid))
+    # no history available: fall back to probing the file endpoint
     for fn in remote_names(cid):
         try:
             with urllib.request.urlopen(f"{COMFY}/view?filename={fn}&subfolder=video&type=output",
@@ -107,10 +146,30 @@ def pull(cid: str) -> Path | None:
     return None
 
 
-def analysed() -> set[str]:
+def analysed() -> set:
+    """(chunk, take) pairs already judged — NOT chunks alone.
+
+    Keying by chunk alone meant every chunk judged in take 2 was skipped forever: take 3's renders
+    landed, `ready()` found them, and the loop still reported 'no clip ready' because the chunk was
+    already in the ledger from the previous take. Old rows predate the `take` field, so the take is
+    recovered from the clip filename (`..._t03_...`).
+    """
     if not LOOP_LEDGER.exists():
         return set()
-    return {json.loads(l)["chunk"] for l in LOOP_LEDGER.read_text(encoding="utf-8").splitlines() if l.strip()}
+    out = set()
+    for l in LOOP_LEDGER.read_text(encoding="utf-8").splitlines():
+        if not l.strip():
+            continue
+        r = json.loads(l)
+        cid = r.get("chunk")
+        if not cid:
+            continue
+        take = r.get("take")
+        if take is None:
+            m = re.search(r"_t(\d+)(?:_s\d+)?_", str(r.get("file") or ""))
+            take = int(m.group(1)) if m else 2      # rows written before the take field existed
+        out.add((cid, str(take)))
+    return out
 
 
 def cast_rows(cid: str) -> list[dict]:
@@ -249,7 +308,7 @@ def judge(cid: str, clip: Path) -> dict:
 
 def sweep(batch: int, max_wait: float, no_bake: bool = False) -> int:
     done = analysed()
-    todo = [c for c in queued_chunks() if c not in done]
+    todo = [c for c in queued_chunks() if (c, str(TAKE)) not in done]
     if not todo:
         print("nothing new to analyse (%d queued, all analysed)" % len(queued_chunks()))
         return 0
@@ -282,6 +341,7 @@ def sweep(batch: int, max_wait: float, no_bake: bool = False) -> int:
         except Exception as e:  # noqa: BLE001
             print("   judge failed %s: %s" % (cid, str(e)[:120]))
             continue
+        row["take"] = TAKE          # so 'already judged' can be keyed by (chunk, take)
         with LOOP_LEDGER.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(row) + "\n")
         got += 1
@@ -296,7 +356,7 @@ def sweep(batch: int, max_wait: float, no_bake: bool = False) -> int:
 
 
 def main() -> None:
-    global TAKE      # must precede the argparse default below, which reads the module-level TAKE
+    global TAKE, STATE3   # must precede the argparse default below, which reads module-level TAKE
     ap = argparse.ArgumentParser(description=(__doc__ or "").splitlines()[0])
     ap.add_argument("--take", type=int, default=TAKE, help="which take to pull/judge (default 2)")
     ap.add_argument("--once", action="store_true", help="one sweep, then exit")
@@ -306,7 +366,9 @@ def main() -> None:
                     help="do not re-bake browser/yolo2-data.js after each batch")
     ap.add_argument("--max-wait", type=float, default=900, help="seconds to wait for a batch to land")
     args = ap.parse_args()
+    global STATE3
     TAKE = args.take
+    STATE3 = state_for(TAKE)      # else the loop reads take 02's queue while looking for take 03 files
 
     total = 0
     while True:
