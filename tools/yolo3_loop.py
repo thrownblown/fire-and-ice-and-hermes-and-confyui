@@ -40,7 +40,7 @@ CHECKER = ROOT / "tools" / "vlm_cast_check.py"
 CHUNKS = ROOT / "fullrun" / "chunks.jsonl"
 CAST_LEDGER = ROOT / "runs" / "vlm_cast_check.jsonl"
 LOOP_LEDGER = ROOT / "runs" / "yolo3_loop.jsonl"
-TAKE = 2
+TAKE = 2        # default; override with --take (e.g. --take 3 for the plated pass)
 
 
 def queued_chunks() -> list[str]:
@@ -296,7 +296,9 @@ def sweep(batch: int, max_wait: float, no_bake: bool = False) -> int:
 
 
 def main() -> None:
+    global TAKE      # must precede the argparse default below, which reads the module-level TAKE
     ap = argparse.ArgumentParser(description=(__doc__ or "").splitlines()[0])
+    ap.add_argument("--take", type=int, default=TAKE, help="which take to pull/judge (default 2)")
     ap.add_argument("--once", action="store_true", help="one sweep, then exit")
     ap.add_argument("--every", type=int, default=180, help="seconds between sweeps (looping mode)")
     ap.add_argument("--batch", type=int, default=3, help="clips to judge per VLM window")
@@ -304,6 +306,7 @@ def main() -> None:
                     help="do not re-bake browser/yolo2-data.js after each batch")
     ap.add_argument("--max-wait", type=float, default=900, help="seconds to wait for a batch to land")
     args = ap.parse_args()
+    TAKE = args.take
 
     total = 0
     while True:

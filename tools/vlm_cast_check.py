@@ -137,15 +137,44 @@ def shot_midpoints(chunk: str) -> list[tuple[str, float]]:
 
 
 def claimed_counts(chunk: str, take: str) -> dict[str, int]:
-    """What the queued prompt says per shot — from the graph it actually rendered."""
-    t = f"{int(take):02d}" if str(take).strip().isdigit() else take   # files are zero-padded: _t06
+    """What the queued prompt claims per shot — FROM THE LEDGER, not from prompt prose.
+
+    The ledger carries `shot_nums` and `people_count` as aligned lists, which is data. Reading the
+    claim out of the prompt text was tried twice and failed twice: the corpus says it per-shot
+    ('[Shot N] ... exactly N people'), as one global line ('There is one person visible in all
+    frames'), and sometimes not at all — and every miss surfaced as `claimed: None`, i.e. a verdict
+    that quietly could not be checked (S02-c02 measured 3/9/17 against a ledger of 3/0/12 while the
+    prose parse returned nothing at all).
+
+    Shot numbers here are the GLOBAL 5-digit shot ids, which is also what shot_midpoints() yields,
+    so no translation is needed. FNI_CHUNK_LEDGER selects the ledger, same as the renderer.
+    """
+    import os
+    cand = os.environ.get("FNI_CHUNK_LEDGER") or ""
+    paths = ([ROOT / cand] if cand else []) + [ROOT / "fullrun" / "chunks_named.jsonl",
+                                               ROOT / "fullrun" / "chunks.jsonl"]
+    for p in paths:
+        if not p.exists():
+            continue
+        for line in p.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            if r.get("chunk_id") != chunk:
+                continue
+            nums, counts = r.get("shot_nums") or [], r.get("people_count") or []
+            out = {}
+            for i, num in enumerate(nums):
+                if i < len(counts) and counts[i] is not None:
+                    out["shot:%s" % num] = int(counts[i])
+            if out:
+                return out
+    # last resort: the old prose parse, per-shot then the single global claim
+    t = f"{int(take):02d}" if str(take).strip().isdigit() else take
     gdir = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va" / "graphs"
-    # An explicit --seed lands in the graph name too (`_t02_s<seed>.json`), so match by take with
-    # an optional seed suffix and prefer the newest — that is the graph the take actually rendered.
     pat = re.compile(r"^%s_audioOnly_t0*%s(?:_s\d+)?\.json$" % (re.escape(chunk), str(t)))
     cands = [p for p in gdir.glob(f"{chunk}_audioOnly_t*.json") if pat.match(p.name)]
-    g = (max(cands, key=lambda p: p.stat().st_mtime) if cands
-         else gdir / f"{chunk}_audioOnly_t{t}.json")
+    g = (max(cands, key=lambda p: p.stat().st_mtime) if cands else gdir / f"{chunk}_audioOnly_t{t}.json")
     if not g.exists():
         return {}
     data = json.loads(g.read_text(encoding="utf-8"))
@@ -154,13 +183,10 @@ def claimed_counts(chunk: str, take: str) -> dict[str, int]:
     txt = max(texts, key=len) if texts else ""
     out = {}
     ids = [sid for sid, _ in shot_midpoints(chunk)]
-    # two phrasings in the corpus: a per-shot claim, and one GLOBAL claim covering all frames
-    # ("There is one person visible in all frames, with no background extras") — the take-2 prompts
-    # use the global form, which the old per-shot-only regex missed, so every shot read as None.
-    g = re.search(r"There (?:is|are) (\d+|one|two|three|four|five) (?:person|people) visible", txt)
+    g2 = re.search(r"There (?:is|are) (\d+|one|two|three|four|five) (?:person|people) visible", txt)
     words = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5}
-    if g:
-        n = words.get(g.group(1), None) or (int(g.group(1)) if g.group(1).isdigit() else None)
+    if g2:
+        n = words.get(g2.group(1)) or (int(g2.group(1)) if g2.group(1).isdigit() else None)
         if n is not None:
             out = {sid: n for sid in ids}
     for i, sid in enumerate(ids, 1):
