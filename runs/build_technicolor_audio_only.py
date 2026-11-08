@@ -58,7 +58,7 @@ def plate_for(row):
     """
     if SCENE_LOCATIONS.exists():
         rec = (json.loads(SCENE_LOCATIONS.read_text(encoding="utf-8")).get("scenes") or {}).get(row["scene"]) or {}
-        if rec.get("status") in ("from beat sheet", "inferred") and rec.get("slug"):
+        if rec.get("status") in ("from beat sheet", "inferred", "ruled") and rec.get("slug"):
             return T.plate_path(rec["slug"])
         return None
     return T.plate_path(T.PLATE.get(row["scene"], ""))     # fallback: the old hardcoded table
@@ -69,7 +69,7 @@ def has_plate(scene: str) -> bool:
     if not SCENE_LOCATIONS.exists():
         return scene in T.PLATE
     rec = (json.loads(SCENE_LOCATIONS.read_text(encoding="utf-8")).get("scenes") or {}).get(scene) or {}
-    return rec.get("status") in ("from beat sheet", "inferred") and bool(rec.get("slug"))
+    return rec.get("status") in ("from beat sheet", "inferred", "ruled") and bool(rec.get("slug"))
 
 
 def load_blocking() -> dict:

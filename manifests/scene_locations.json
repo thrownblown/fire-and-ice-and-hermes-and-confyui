@@ -1,59 +1,59 @@
 {
- "_provenance": "scene -> location slug for plate attachment. S scenes from docs/beat-sheet-1.md 'Canonical location' column, matched to refs/backgrounds/ slugs. G scenes have NO location in the ledger or the beat sheet (they are the film's action stretches) \u2014 those entries are PROPOSED and need a human ruling.",
+ "_provenance": "scene -> location slug for plate attachment. S scenes from docs/beat-sheet-1.md 'Canonical location' column, matched to refs/backgrounds/ slugs. G scenes have NO location in the ledger or the beat sheet (they are the film's action stretches) — those entries are PROPOSED and need a human ruling.",
  "scenes": {
   "G01": {
    "slug": "frozen-landscape",
    "chunks": 15,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G02": {
-   "slug": "north-village-plain",
+   "slug": "jungle",
    "chunks": 40,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G03": {
-   "slug": "open-sky",
+   "slug": "swamp",
    "chunks": 56,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G04": {
-   "slug": "swamp",
+   "slug": "wilderness",
    "chunks": 18,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G05": {
    "slug": "wilderness",
    "chunks": 10,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G06": {
-   "slug": "ice-peak-cave",
+   "slug": "jungle",
    "chunks": 13,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G07": {
    "slug": "frozen-landscape",
    "chunks": 18,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G08": {
-   "slug": "north-village-plain",
+   "slug": "ice-peak-cave",
    "chunks": 50,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "G09": {
-   "slug": "open-sky",
+   "slug": "ice-peak-cave",
    "chunks": 27,
-   "status": "PROPOSED",
-   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "S01": {
    "slug": "painted-map-montage",
@@ -95,7 +95,7 @@
    "slug": "fire-keep-pool",
    "chunks": 11,
    "status": "from beat sheet",
-   "from": "Fire Keep pool/garden \u2192 night"
+   "from": "Fire Keep pool/garden → night"
   },
   "S08": {
    "slug": "fire-keep-ramparts",
@@ -113,7 +113,7 @@
    "slug": "jungle",
    "chunks": 30,
    "status": "from beat sheet",
-   "from": "jungle campfire \u2192 Teegra taken"
+   "from": "jungle campfire → Teegra taken"
   },
   "S12": {
    "slug": "darkwolf-camp",
@@ -134,10 +134,10 @@
    "from": "subhuman camp, big tree, cliffs"
   },
   "S15": {
-   "slug": null,
+   "slug": "fire-keep-ramparts",
    "chunks": 5,
-   "status": "UNMATCHED",
-   "from": "Fire Keep"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "S16": {
    "slug": "roliel-hut",
@@ -176,10 +176,10 @@
    "from": "Ice Peak approach & throne hall"
   },
   "S22": {
-   "slug": null,
+   "slug": "ice-peak-throne-hall",
    "chunks": 23,
-   "status": "UNMATCHED",
-   "from": "Ice Peak"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "S23": {
    "slug": "ice-peak-dungeon",
@@ -188,10 +188,10 @@
    "from": "Ice Peak dungeon"
   },
   "S24": {
-   "slug": null,
+   "slug": "fire-keep-ramparts",
    "chunks": 6,
-   "status": "UNMATCHED",
-   "from": "Fire Keep"
+   "status": "ruled",
+   "from": "Alex, Decisions tab (plate chooser), 2026-11-08"
   },
   "S25": {
    "slug": "ice-peak-lava",

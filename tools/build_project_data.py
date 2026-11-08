@@ -52,6 +52,44 @@ def plate_catalogue():
     return out
 
 
+def scene_evidence():
+    """Per scene: a few SOURCE stills and the distinct 'setting' strings from its shots.
+
+    So a plate can be chosen against what the scene actually looks like, not from its name. Stills
+    come from the shot data the SPA already ships (browser/shot-browser-data.js: each shot lists its
+    stills + detail.setting); the scene is the chunk prefix ("G03-c07" -> G03). Stills are sampled
+    across the scene's shots rather than taken from the first few, so a long scene is represented.
+    """
+    sd = _js_obj(ROOT / "browser" / "shot-browser-data.js")
+    shots = sd.get("shots") if isinstance(sd, dict) else sd
+    by: dict[str, dict] = {}
+    for s in shots or []:
+        sc = str(s.get("chunk") or "").split("-")[0]
+        if not sc:
+            continue
+        e = by.setdefault(sc, {"all": [], "settings": [], "shots": 0})
+        e["shots"] += 1
+        st = (s.get("detail") or {}).get("setting")
+        if st and st not in e["settings"]:
+            e["settings"].append(st)
+        for fn in (s.get("stills") or [])[:1]:
+            e["all"].append(fn)
+    out = {}
+    thumbs = ROOT / "stills" / "_thumbs"
+    for sc, e in by.items():
+        n = len(e["all"])
+        idx = sorted({0, n // 4, n // 2, (3 * n) // 4, n - 1}) if n else []
+        picks = [e["all"][i] for i in idx if 0 <= i < n][:5]
+        # stills/full averages ~215 KB (827 MB across 3926), so prefer a small JPEG from
+        # tools/make_still_thumbs.py when one exists — same lesson as the plates.
+        out[sc] = {"stills": [{"fn": fn,
+                               "img": "stills/_thumbs/%s.jpg" % Path(fn).stem
+                                      if (thumbs / (Path(fn).stem + ".jpg")).exists()
+                                      else "stills/full/%s" % fn} for fn in picks],
+                   "settings": e["settings"][:6], "shots": e["shots"]}
+    return out
+
+
 def plate_choices():
     """Per-scene plate choice rows: the 12 scenes with no settled plate (+ their chunk counts).
 
@@ -62,6 +100,15 @@ def plate_choices():
     if not p.exists():
         return []
     scenes = json.loads(p.read_text(encoding="utf-8")).get("scenes") or {}
+    # what the SPA last wrote to disk — so the page can tell "picked" from "saved" from "applied"
+    pend = {}
+    pp = ROOT / "manifests" / "plate_picks.json"
+    if pp.exists():
+        try:
+            pend = json.loads(pp.read_text(encoding="utf-8")).get("plate_picks") or {}
+        except Exception:
+            pend = {}
+    ev = scene_evidence()
     rows = []
     for sc, rec in sorted(scenes.items()):
         if rec.get("status") not in ("UNMATCHED", "PROPOSED"):
@@ -77,8 +124,28 @@ def plate_choices():
         else:
             sug = []
         rows.append({"scene": sc, "chunks": rec.get("chunks", 0),
-                     "ledger": rec.get("from") or "", "suggested": sug})
+                     "ledger": rec.get("from") or "", "suggested": sug,
+                     "applied": rec.get("status") or "", "applied_slug": rec.get("slug") or "",
+                     "stills": (ev.get(sc) or {}).get("stills", []),
+                     "settings": (ev.get(sc) or {}).get("settings", []),
+                     "shots": (ev.get(sc) or {}).get("shots", 0),
+                     "pending": pend.get(sc) or ""})
     return rows
+
+
+def settled_scenes():
+    """Scenes whose plate is already on disk — shown as the record of what was picked."""
+    p = ROOT / "manifests" / "scene_locations.json"
+    if not p.exists():
+        return []
+    scenes = json.loads(p.read_text(encoding="utf-8")).get("scenes") or {}
+    out = []
+    for sc, rec in sorted(scenes.items()):
+        if rec.get("status") not in ("ruled", "from beat sheet", "inferred"):
+            continue
+        out.append({"scene": sc, "slug": rec.get("slug") or "", "chunks": rec.get("chunks", 0),
+                    "status": rec.get("status") or "", "by": rec.get("from") or ""})
+    return out
 
 
 def _js_obj(p):
@@ -356,7 +423,15 @@ def main():
     # the full catalogue (every plate on disk) plus a row per undetermined scene.
     for d in DECISIONS:
         if d["id"] == "plate-locations":
-            d["choices"] = {"kind": "plate-per-scene", "scenes": plate_choices()}
+            rows = plate_choices()
+            d["choices"] = {"kind": "plate-per-scene", "scenes": rows,
+                            "settled": settled_scenes()}
+            # the decision closes itself once every scene has a plate on disk
+            if not rows:
+                d["state"] = "closed"
+                d["name"] = "Plate locations — all scenes settled"
+                d["question"] = "Every scene now has a plate on disk. Re-open this by clearing a " \
+                                "scene's status in manifests/scene_locations.json."
     import datetime
     data = {
         "generated": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
