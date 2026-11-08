@@ -33,8 +33,11 @@ def main() -> int:
 
     plates = {}
     for d in sorted((ROOT / "refs" / "backgrounds").iterdir()):
-        if d.is_dir():
-            n = len([p for p in d.iterdir() if "_plate_" in p.name])
+        if d.is_dir() and d.name != "_thumbs":
+            # images only: the *_plate_*.graph.json sidecars match the same substring and would
+            # inflate every count (73 plates read as 108 files that way)
+            n = len([p for p in d.iterdir()
+                     if "_plate_" in p.name and p.suffix.lower() in (".png", ".jpg", ".jpeg")])
             if n:
                 plates[d.name] = n
     claimed: dict[str, list[str]] = collections.defaultdict(list)

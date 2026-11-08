@@ -140,6 +140,18 @@ textarea.trait { width:100%; background:var(--panel2); border:1px solid var(--li
 .runclip .rc-warn { font-size:11px; color:#e0a030; margin-top:4px; }
 input[type=text].inline { background:var(--panel2); border:1px solid var(--line); color:var(--txt); padding:4px 8px; border-radius:4px; font-size:12.5px; width:100%; }
 code { background:var(--panel2); border:1px solid var(--line); border-radius:3px; padding:0 4px; font-size:11.5px; }
+/* plate chooser — the plate-locations decision (every plate on disk is offered) */
+.pprow { display:flex; gap:12px; align-items:flex-start; padding:9px 0; border-bottom:1px solid var(--line); }
+.pprow:last-child { border-bottom:none; }
+.ppimg img { width:184px; height:106px; object-fit:cover; border:1px solid var(--line); border-radius:6px; background:#000; display:block; }
+.ppempty { width:184px; height:106px; border:1px dashed var(--line); border-radius:6px; display:flex; align-items:center; justify-content:center; color:var(--dim); font-size:11px; }
+.ppmeta { flex:1; min-width:0; }
+.ppname { font-weight:600; margin-bottom:2px; }
+.ppsel { margin-top:6px; width:100%; max-width:440px; background:var(--bg); color:var(--txt); border:1px solid var(--line); border-radius:4px; padding:4px 6px; font-size:12px; }
+.ppbtn { background:var(--panel); color:var(--txt); border:1px solid var(--line); border-radius:4px; padding:4px 11px; cursor:pointer; font-size:12px; margin-right:6px; }
+.ppbtn:hover { border-color:var(--accent); color:var(--accent); }
+.ppstar { color:var(--accent); }
+
 /* status + decisions */
 .stcard { border:1px solid var(--line); border-radius:8px; padding:12px 14px; margin-bottom:12px; background:var(--panel); }
 .stcard .shead { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
@@ -337,11 +349,13 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
   var settingEdits = lsGet('fni.bgsettings.v1', {});  // slug -> [settings]
   var promptInputs = lsGet('fni.inputs.v1', {});      // chunkId -> {char:{NAME:refname}, videos:[shotnums], bg:slug}
   var voicePicks   = lsGet('fni.voicepicks.v1', {});  // NAME -> [kept voice line ids]
+  var platePicks   = lsGet('fni.platepicks.v1', {});  // scene -> chosen plate slug (plate-locations decision)
   function saveRefs(){ lsSet('fni.refs.v1', localRefs); }
   function saveTraits(){ lsSet('fni.traits.v1', traitEdits); }
   function saveBgSettings(){ lsSet('fni.bgsettings.v1', settingEdits); }
   function saveInputs(){ lsSet('fni.inputs.v1', promptInputs); }
   function saveVoicePicks(){ lsSet('fni.voicepicks.v1', voicePicks); }
+  function savePlatePicks(){ lsSet('fni.platepicks.v1', platePicks); }
 
   function refsFor(kind, key){
     var disk = (kind==='char' ? (charByName(key)||{}).refs : (bgBySlug(key)||{}).refs) || [];
@@ -1182,6 +1196,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
       traits: traitEdits,
       bg_settings: settingEdits,
       voice_picks: voicePicks,
+      plate_picks: platePicks,
       prompt_inputs: promptInputs,
       setup_moves: setupMoves,
       setup_plates: setupPlates,
@@ -1527,6 +1542,72 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     return h;
   }
 
+  /* -------------------------------------------------- plate chooser
+     The plate-locations decision is a PER-SCENE pick, not a yes/no, so it gets its own control.
+     Every plate on disk is in the dropdown (a scene may legitimately borrow another location's
+     plate); the suggested ones are marked * and sorted first. Picks live in localStorage and ride
+     the export bundle -> tools/import_plate_picks.py folds them into manifests/scene_locations.json,
+     which is what the renderer reads. */
+  function plateChooser(d){
+    if (!d.choices || d.choices.kind !== 'plate-per-scene') return '';
+    var cat = P.plateCatalogue || [];
+    var bynew = {}, allSlugs = cat.map(function(c){ bynew[c.slug] = c; return c.slug; });
+    var total = d.choices.scenes.length, picked = 0;
+    var takes = cat.reduce(function(a,c){ return a + (c.files||0); }, 0);
+    var h = '<div class="section"><h3>Choose a plate for each scene</h3>'
+      + '<div class="cap">'+total+' scenes have no settled plate — these are the chunks that would render bare. '
+      + 'All '+cat.length+' locations ('+takes+' takes) are offered, suggestions marked <span class="ppstar">*</span> and listed first.</div>'
+      + '<div style="margin:8px 0"><button class="ppbtn" id="ppAll">use suggested for all</button>'
+      + '<button class="ppbtn" id="ppClear">clear all</button><span class="cap" id="ppCount"></span></div>';
+    d.choices.scenes.forEach(function(s){
+      var cur = platePicks[s.scene] || '';
+      if (cur) picked++;
+      var rest = allSlugs.filter(function(x){ return s.suggested.indexOf(x) < 0; });
+      var order = s.suggested.concat(rest);
+      var opts = '<option value="">— none —</option>' + order.map(function(sl){
+        var c = bynew[sl] || {files:'?'}, star = s.suggested.indexOf(sl) >= 0 ? ' *' : '';
+        return '<option value="'+esc(sl)+'"'+(sl===cur?' selected':'')+'>'+esc(sl)+' ('+(c.files||'?')+' takes)'+star+'</option>';
+      }).join('');
+      var u = (cur && bynew[cur]) ? bynew[cur].img : null;
+      h += '<div class="pprow"><div class="ppimg">'
+        + (u ? '<img src="'+esc(u)+'" alt="'+esc(cur)+'">' : '<div class="ppempty">no plate picked</div>')
+        + '</div><div class="ppmeta"><div class="ppname">'+esc(s.scene)
+        + ' <span class="cap">'+s.chunks+' chunks</span></div>'
+        + '<div class="cap">'+esc(s.ledger || 'no location recorded')+'</div>'
+        + '<select class="ppsel" data-ppscene="'+esc(s.scene)+'">'+opts+'</select></div></div>';
+    });
+    return h + '</div>';
+  }
+
+  function wirePlateChooser(d){
+    if (!d.choices || d.choices.kind !== 'plate-per-scene') return;
+    function recount(){
+      var n = 0;
+      d.choices.scenes.forEach(function(s){ if (platePicks[s.scene]) n++; });
+      var el = document.getElementById('ppCount');
+      if (el) el.textContent = '  ' + n + ' of ' + d.choices.scenes.length + ' picked'
+        + (n === d.choices.scenes.length ? ' — ready to export' : '');
+    }
+    Array.prototype.forEach.call($detail.querySelectorAll('select.ppsel'), function(sel){
+      sel.onchange = function(){
+        var sc = sel.getAttribute('data-ppscene');
+        if (sel.value) platePicks[sc] = sel.value; else delete platePicks[sc];
+        savePlatePicks(); detailDecisions();
+      };
+    });
+    var all = document.getElementById('ppAll');
+    if (all) all.onclick = function(){
+      d.choices.scenes.forEach(function(s){ if (s.suggested.length) platePicks[s.scene] = s.suggested[0]; });
+      savePlatePicks(); detailDecisions();
+    };
+    var cl = document.getElementById('ppClear');
+    if (cl) cl.onclick = function(){
+      d.choices.scenes.forEach(function(s){ delete platePicks[s.scene]; });
+      savePlatePicks(); detailDecisions();
+    };
+    recount();
+  }
+
   function detailDecisions(){
     var d = st_selDecision;   // st_selDecision set in render()
     var h = '<div class="crumb">decisions</div><h2>'+esc(d.name)+'</h2>';
@@ -1539,6 +1620,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     if (d.context) h += '<div class="ctx">'+esc(d.context)+'</div>';
     if (d.resolved) h += '<div class="ctx" style="margin-top:8px;color:var(--accent2)">resolved: '+esc(d.resolved)+'</div>';
     h += '</div>';
+    h += plateChooser(d);
     h += renderDocs(d);
     h += '<div class="section"><h3>All decisions</h3>';
     P.decisions.forEach(function(x){
@@ -1548,6 +1630,7 @@ code { background:var(--panel2); border:1px solid var(--line); border-radius:3px
     });
     h += '</div>';
     $detail.innerHTML = h;
+    wirePlateChooser(d);
   }
 
   /* ------------------------------------------------------------ render

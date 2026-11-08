@@ -1,5 +1,5 @@
 window.PROJECTDATA = {
- "generated": "2026-11-08T10:52:35-06:00",
+ "generated": "2026-11-08T11:03:08-06:00",
  "counts": {
   "shots": 1308,
   "chunks": 494,
@@ -100,13 +100,170 @@ window.PROJECTDATA = {
    "docs": [
     {
      "path": "docs/plate-location-ruling.md",
-     "text": "# Plate location ruling — 12 scenes\n\nEvery chunk attaches one scene plate. **22 of 34 scenes resolve already**, from the beat sheet's own\n\"Canonical location\" column (`manifests/scene_locations.json`); the 12 below do not, so they are the\nonly chunks in the next pass that would render with **no plate**. One word per scene is enough.\n\n## The nine G scenes — 247 chunks\n\nThese are the film's **action stretches**. Their ledger `location` field is empty and they do not appear\nin the beat sheet at all, so there is nothing to match them against — the slugs currently sitting in the\ntable are placeholders and they attach NOTHING until ruled (a guessed plate behind a scene is worse\nthan none). Six plates exist that no other scene claims, and they read as made for these beats:\n\n| plate | files on disk | claimed by |\n|---|---|---|\n| `frozen-landscape` | 4 | — unclaimed |\n| `north-village-plain` | 5 | — unclaimed |\n| `open-sky` | 5 | — unclaimed |\n| `swamp` | 4 | — unclaimed |\n| `wilderness` | 4 | — unclaimed |\n| `ice-peak-cave` | 4 | — unclaimed |\n\nProposed, for you to confirm or swap (I am not attached to any of these):\n\n| scene | chunks | placeholder |\n|---|---|---|\n| G01 | 15 | `frozen-landscape` |\n| G02 | 40 | `north-village-plain` |\n| G03 | 56 | `open-sky` |\n| G04 | 18 | `swamp` |\n| G05 | 10 | `wilderness` |\n| G06 | 13 | `ice-peak-cave` |\n| G07 | 18 | `frozen-landscape` |\n| G08 | 50 | `north-village-plain` |\n| G09 | 27 | `open-sky` |\n\n\n## The other three — 34 chunks\n\nThese name a place but not a part of it, so the plates are genuinely ambiguous.\n\n| scene | chunks | ledger says | plates to choose from |\n|---|---|---|---|\n| S15 | 5 | Fire Keep | `fire-keep-chamber` *(other scenes)*, `fire-keep-pool` *(other scenes)*, `fire-keep-ramparts` *(other scenes)*, `fire-keep-study` *(other scenes)*, `fire-keep-throne-hall` *(other scenes)* |\n| S22 | 23 | Ice Peak | `ice-peak-cave` *(unclaimed)*, `ice-peak-dungeon` *(other scenes)*, `ice-peak-lava` *(other scenes)*, `ice-peak-throne-hall` *(other scenes)* |\n| S24 | 6 | Fire Keep | `fire-keep-chamber` *(other scenes)*, `fire-keep-pool` *(other scenes)*, `fire-keep-ramparts` *(other scenes)*, `fire-keep-study` *(other scenes)*, `fire-keep-throne-hall` *(other scenes)* |\n\n\n## If you would rather not rule now\n\nThe next pass simply skips all 12 (281 chunks) and runs the **213 that resolve** — everything else is\nready.\n\nImages for every plate are in the SPA's **Backgrounds** tab; this table is generated from\n`manifests/scene_locations.json` and `refs/backgrounds/` by `tools/build_plate_ruling_doc.py`, so it\ncannot drift from what the renderer actually reads.\n"
+     "text": "# Plate location ruling — 12 scenes\n\nEvery chunk attaches one scene plate. **22 of 34 scenes resolve already**, from the beat sheet's own\n\"Canonical location\" column (`manifests/scene_locations.json`); the 12 below do not, so they are the\nonly chunks in the next pass that would render with **no plate**. One word per scene is enough.\n\n## The nine G scenes — 247 chunks\n\nThese are the film's **action stretches**. Their ledger `location` field is empty and they do not appear\nin the beat sheet at all, so there is nothing to match them against — the slugs currently sitting in the\ntable are placeholders and they attach NOTHING until ruled (a guessed plate behind a scene is worse\nthan none). Six plates exist that no other scene claims, and they read as made for these beats:\n\n| plate | files on disk | claimed by |\n|---|---|---|\n| `frozen-landscape` | 3 | — unclaimed |\n| `north-village-plain` | 3 | — unclaimed |\n| `open-sky` | 3 | — unclaimed |\n| `swamp` | 3 | — unclaimed |\n| `wilderness` | 3 | — unclaimed |\n| `ice-peak-cave` | 3 | — unclaimed |\n\nProposed, for you to confirm or swap (I am not attached to any of these):\n\n| scene | chunks | placeholder |\n|---|---|---|\n| G01 | 15 | `frozen-landscape` |\n| G02 | 40 | `north-village-plain` |\n| G03 | 56 | `open-sky` |\n| G04 | 18 | `swamp` |\n| G05 | 10 | `wilderness` |\n| G06 | 13 | `ice-peak-cave` |\n| G07 | 18 | `frozen-landscape` |\n| G08 | 50 | `north-village-plain` |\n| G09 | 27 | `open-sky` |\n\n\n## The other three — 34 chunks\n\nThese name a place but not a part of it, so the plates are genuinely ambiguous.\n\n| scene | chunks | ledger says | plates to choose from |\n|---|---|---|---|\n| S15 | 5 | Fire Keep | `fire-keep-chamber` *(other scenes)*, `fire-keep-pool` *(other scenes)*, `fire-keep-ramparts` *(other scenes)*, `fire-keep-study` *(other scenes)*, `fire-keep-throne-hall` *(other scenes)* |\n| S22 | 23 | Ice Peak | `ice-peak-cave` *(unclaimed)*, `ice-peak-dungeon` *(other scenes)*, `ice-peak-lava` *(other scenes)*, `ice-peak-throne-hall` *(other scenes)* |\n| S24 | 6 | Fire Keep | `fire-keep-chamber` *(other scenes)*, `fire-keep-pool` *(other scenes)*, `fire-keep-ramparts` *(other scenes)*, `fire-keep-study` *(other scenes)*, `fire-keep-throne-hall` *(other scenes)* |\n\n\n## If you would rather not rule now\n\nThe next pass simply skips all 12 (281 chunks) and runs the **213 that resolve** — everything else is\nready.\n\nImages for every plate are in the SPA's **Backgrounds** tab; this table is generated from\n`manifests/scene_locations.json` and `refs/backgrounds/` by `tools/build_plate_ruling_doc.py`, so it\ncannot drift from what the renderer actually reads.\n"
     },
     {
      "path": "manifests/scene_locations.json",
      "text": "{\n \"_provenance\": \"scene -> location slug for plate attachment. S scenes from docs/beat-sheet-1.md 'Canonical location' column, matched to refs/backgrounds/ slugs. G scenes have NO location in the ledger or the beat sheet (they are the film's action stretches) \\u2014 those entries are PROPOSED and need a human ruling.\",\n \"scenes\": {\n  \"G01\": {\n   \"slug\": \"frozen-landscape\",\n   \"chunks\": 15,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G02\": {\n   \"slug\": \"north-village-plain\",\n   \"chunks\": 40,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G03\": {\n   \"slug\": \"open-sky\",\n   \"chunks\": 56,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G04\": {\n   \"slug\": \"swamp\",\n   \"chunks\": 18,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G05\": {\n   \"slug\": \"wilderness\",\n   \"chunks\": 10,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G06\": {\n   \"slug\": \"ice-peak-cave\",\n   \"chunks\": 13,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G07\": {\n   \"slug\": \"frozen-landscape\",\n   \"chunks\": 18,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G08\": {\n   \"slug\": \"north-village-plain\",\n   \"chunks\": 50,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"G09\": {\n   \"slug\": \"open-sky\",\n   \"chunks\": 27,\n   \"status\": \"PROPOSED\",\n   \"from\": \"(no location in ledger or beat sheet \\u2014 action stretch)\"\n  },\n  \"S01\": {\n   \"slug\": \"painted-map-montage\",\n   \"chunks\": 8,\n   \"status\": \"from beat sheet\",\n   \"from\": \"painted map / montage of glacier & Fire Keep\"\n  },\n  \"S02\": {\n   \"slug\": \"north-village-plain\",\n   \"chunks\": 4,\n   \"status\": \"inferred\",\n   \"from\": \"location text: \\\"Larn's village on the plain\\\"\"\n  },\n  \"S03\": {\n   \"slug\": \"ice-peak-throne-hall\",\n   \"chunks\": 3,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Ice Peak throne hall\"\n  },\n  \"S04\": {\n   \"slug\": \"fire-keep-chamber\",\n   \"chunks\": 2,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Fire Keep, Teegra's chamber\"\n  },\n  \"S05\": {\n   \"slug\": \"fire-keep-study\",\n   \"chunks\": 4,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Fire Keep study\"\n  },\n  \"S06\": {\n   \"slug\": \"fire-keep-throne-hall\",\n   \"chunks\": 8,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Fire Keep throne hall\"\n  },\n  \"S07\": {\n   \"slug\": \"fire-keep-pool\",\n   \"chunks\": 11,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Fire Keep pool/garden \\u2192 night\"\n  },\n  \"S08\": {\n   \"slug\": \"fire-keep-ramparts\",\n   \"chunks\": 3,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Fire Keep ramparts, night\"\n  },\n  \"S09\": {\n   \"slug\": \"ice-peak-throne-hall\",\n   \"chunks\": 5,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Ice Peak throne hall\"\n  },\n  \"S11\": {\n   \"slug\": \"jungle\",\n   \"chunks\": 30,\n   \"status\": \"from beat sheet\",\n   \"from\": \"jungle campfire \\u2192 Teegra taken\"\n  },\n  \"S12\": {\n   \"slug\": \"darkwolf-camp\",\n   \"chunks\": 10,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Darkwolf's camp\"\n  },\n  \"S13\": {\n   \"slug\": \"jungle\",\n   \"chunks\": 7,\n   \"status\": \"from beat sheet\",\n   \"from\": \"jungle trail\"\n  },\n  \"S14\": {\n   \"slug\": \"subhuman-camp\",\n   \"chunks\": 13,\n   \"status\": \"from beat sheet\",\n   \"from\": \"subhuman camp, big tree, cliffs\"\n  },\n  \"S15\": {\n   \"slug\": null,\n   \"chunks\": 5,\n   \"status\": \"UNMATCHED\",\n   \"from\": \"Fire Keep\"\n  },\n  \"S16\": {\n   \"slug\": \"roliel-hut\",\n   \"chunks\": 14,\n   \"status\": \"inferred\",\n   \"from\": \"beat sheet: Roliel's hut, witch's hut in the woods\"\n  },\n  \"S17\": {\n   \"slug\": \"roliel-hut\",\n   \"chunks\": 13,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Roliel's hut exterior/interior\"\n  },\n  \"S18\": {\n   \"slug\": \"ruined-village\",\n   \"chunks\": 8,\n   \"status\": \"from beat sheet\",\n   \"from\": \"ruined village\"\n  },\n  \"S19\": {\n   \"slug\": \"akatar-harbor\",\n   \"chunks\": 5,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Akatar harbor\"\n  },\n  \"S20\": {\n   \"slug\": \"ice-peak-throne-hall\",\n   \"chunks\": 17,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Ice Peak throne hall\"\n  },\n  \"S21\": {\n   \"slug\": \"ice-peak-throne-hall\",\n   \"chunks\": 25,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Ice Peak approach & throne hall\"\n  },\n  \"S22\": {\n   \"slug\": null,\n   \"chunks\": 23,\n   \"status\": \"UNMATCHED\",\n   \"from\": \"Ice Peak\"\n  },\n  \"S23\": {\n   \"slug\": \"ice-peak-dungeon\",\n   \"chunks\": 5,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Ice Peak dungeon\"\n  },\n  \"S24\": {\n   \"slug\": null,\n   \"chunks\": 6,\n   \"status\": \"UNMATCHED\",\n   \"from\": \"Fire Keep\"\n  },\n  \"S25\": {\n   \"slug\": \"ice-peak-lava\",\n   \"chunks\": 13,\n   \"status\": \"from beat sheet\",\n   \"from\": \"Ice Peak, dragonhawks, lava\"\n  },\n  \"S26\": {\n   \"slug\": \"ice-peak-lava\",\n   \"chunks\": 5,\n   \"status\": \"inferred\",\n   \"from\": \"location text: \\\"lava flood\\\"\"\n  }\n }\n}"
     }
-   ]
+   ],
+   "choices": {
+    "kind": "plate-per-scene",
+    "scenes": [
+     {
+      "scene": "G01",
+      "chunks": 15,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G02",
+      "chunks": 40,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G03",
+      "chunks": 56,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G04",
+      "chunks": 18,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G05",
+      "chunks": 10,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G06",
+      "chunks": 13,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G07",
+      "chunks": 18,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G08",
+      "chunks": 50,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "G09",
+      "chunks": 27,
+      "ledger": "(no location in ledger or beat sheet — action stretch)",
+      "suggested": [
+       "frozen-landscape",
+       "north-village-plain",
+       "open-sky",
+       "swamp",
+       "wilderness",
+       "ice-peak-cave"
+      ]
+     },
+     {
+      "scene": "S15",
+      "chunks": 5,
+      "ledger": "Fire Keep",
+      "suggested": [
+       "fire-keep-throne-hall",
+       "fire-keep-chamber",
+       "fire-keep-pool",
+       "fire-keep-ramparts",
+       "fire-keep-study"
+      ]
+     },
+     {
+      "scene": "S22",
+      "chunks": 23,
+      "ledger": "Ice Peak",
+      "suggested": [
+       "ice-peak-cave",
+       "ice-peak-throne-hall",
+       "ice-peak-dungeon",
+       "ice-peak-lava"
+      ]
+     },
+     {
+      "scene": "S24",
+      "chunks": 6,
+      "ledger": "Fire Keep",
+      "suggested": [
+       "fire-keep-throne-hall",
+       "fire-keep-chamber",
+       "fire-keep-pool",
+       "fire-keep-ramparts",
+       "fire-keep-study"
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "sheet-verdicts",
@@ -200,6 +357,155 @@ window.PROJECTDATA = {
    "owner": "Alex",
    "question": "Split the 10 shots flagged OVER the 15s cap into renderable pieces.",
    "context": "S01 shot:00004 (73s montage) is the worst, plus others in S11/S14/S16."
+  }
+ ],
+ "plateCatalogue": [
+  {
+   "slug": "akatar-harbor",
+   "files": 5,
+   "newest": "akatar-harbor_plate_t01_00023.png",
+   "img": "refs/backgrounds/_thumbs/akatar-harbor__akatar-harbor_plate_t01_00023.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "darkwolf-camp",
+   "files": 4,
+   "newest": "darkwolf-camp_plate_t01_00019.png",
+   "img": "refs/backgrounds/_thumbs/darkwolf-camp__darkwolf-camp_plate_t01_00019.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "fire-keep-chamber",
+   "files": 4,
+   "newest": "fire-keep-chamber_plate_t01_00006.png",
+   "img": "refs/backgrounds/_thumbs/fire-keep-chamber__fire-keep-chamber_plate_t01_00006.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "fire-keep-pool",
+   "files": 4,
+   "newest": "fire-keep-pool_plate_t01_00010.png",
+   "img": "refs/backgrounds/_thumbs/fire-keep-pool__fire-keep-pool_plate_t01_00010.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "fire-keep-ramparts",
+   "files": 4,
+   "newest": "fire-keep-ramparts_plate_t01_00012.png",
+   "img": "refs/backgrounds/_thumbs/fire-keep-ramparts__fire-keep-ramparts_plate_t01_00012.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "fire-keep-study",
+   "files": 3,
+   "newest": "fire-keep-study_plate_t01_00008.png",
+   "img": "refs/backgrounds/_thumbs/fire-keep-study__fire-keep-study_plate_t01_00008.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "fire-keep-throne-hall",
+   "files": 4,
+   "newest": "fire-keep-throne-hall_plate_t01_00009.png",
+   "img": "refs/backgrounds/_thumbs/fire-keep-throne-hall__fire-keep-throne-hall_plate_t01_00009.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "frozen-landscape",
+   "files": 3,
+   "newest": "frozen-landscape_plate_t02_00001_.png",
+   "img": "refs/backgrounds/_thumbs/frozen-landscape__frozen-landscape_plate_t02_00001_.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "ice-peak-cave",
+   "files": 3,
+   "newest": "ice-peak-cave_plate_t02_00001_.png",
+   "img": "refs/backgrounds/_thumbs/ice-peak-cave__ice-peak-cave_plate_t02_00001_.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "ice-peak-dungeon",
+   "files": 3,
+   "newest": "ice-peak-dungeon_plate_t02_00001_.png",
+   "img": "refs/backgrounds/_thumbs/ice-peak-dungeon__ice-peak-dungeon_plate_t02_00001_.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "ice-peak-lava",
+   "files": 3,
+   "newest": "ice-peak-lava_plate_t02_00001_.png",
+   "img": "refs/backgrounds/_thumbs/ice-peak-lava__ice-peak-lava_plate_t02_00001_.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "ice-peak-throne-hall",
+   "files": 3,
+   "newest": "ice-peak-throne-hall_plate_t02_00001_.png",
+   "img": "refs/backgrounds/_thumbs/ice-peak-throne-hall__ice-peak-throne-hall_plate_t02_00001_.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "jungle",
+   "files": 6,
+   "newest": "jungle_plate_t05_00001_.png",
+   "img": "refs/backgrounds/_thumbs/jungle__jungle_plate_t05_00001_.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "north-village-plain",
+   "files": 3,
+   "newest": "north-village-plain_plate_t01_00003.png",
+   "img": "refs/backgrounds/_thumbs/north-village-plain__north-village-plain_plate_t01_00003.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "open-sky",
+   "files": 3,
+   "newest": "open-sky_plate_t01_00026.png",
+   "img": "refs/backgrounds/_thumbs/open-sky__open-sky_plate_t01_00026.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "painted-map-montage",
+   "files": 3,
+   "newest": "painted-map-montage_plate_t01_00002.png",
+   "img": "refs/backgrounds/_thumbs/painted-map-montage__painted-map-montage_plate_t01_00002.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "roliel-hut",
+   "files": 3,
+   "newest": "roliel-hut_plate_t01_00021.png",
+   "img": "refs/backgrounds/_thumbs/roliel-hut__roliel-hut_plate_t01_00021.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "ruined-village",
+   "files": 3,
+   "newest": "ruined-village_plate_t01_00022.png",
+   "img": "refs/backgrounds/_thumbs/ruined-village__ruined-village_plate_t01_00022.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "subhuman-camp",
+   "files": 3,
+   "newest": "subhuman-camp_plate_t01_00020.png",
+   "img": "refs/backgrounds/_thumbs/subhuman-camp__subhuman-camp_plate_t01_00020.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "swamp",
+   "files": 3,
+   "newest": "swamp_plate_t02_00001_.png",
+   "img": "refs/backgrounds/_thumbs/swamp__swamp_plate_t02_00001_.jpg",
+   "thumb": true
+  },
+  {
+   "slug": "wilderness",
+   "files": 3,
+   "newest": "wilderness_plate_t02_00001_.png",
+   "img": "refs/backgrounds/_thumbs/wilderness__wilderness_plate_t02_00001_.jpg",
+   "thumb": true
   }
  ]
 };

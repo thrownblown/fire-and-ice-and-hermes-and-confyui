@@ -13,12 +13,12 @@ than none). Six plates exist that no other scene claims, and they read as made f
 
 | plate | files on disk | claimed by |
 |---|---|---|
-| `frozen-landscape` | 4 | — unclaimed |
-| `north-village-plain` | 5 | — unclaimed |
-| `open-sky` | 5 | — unclaimed |
-| `swamp` | 4 | — unclaimed |
-| `wilderness` | 4 | — unclaimed |
-| `ice-peak-cave` | 4 | — unclaimed |
+| `frozen-landscape` | 3 | — unclaimed |
+| `north-village-plain` | 3 | — unclaimed |
+| `open-sky` | 3 | — unclaimed |
+| `swamp` | 3 | — unclaimed |
+| `wilderness` | 3 | — unclaimed |
+| `ice-peak-cave` | 3 | — unclaimed |
 
 Proposed, for you to confirm or swap (I am not attached to any of these):
 

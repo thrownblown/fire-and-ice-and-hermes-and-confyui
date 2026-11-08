@@ -20,6 +20,66 @@ from pathlib import Path
 ROOT = Path(r"E:/FNI")
 OUT = ROOT / "browser" / "project-data.js"
 
+# The six plates no settled scene claims — they read as made for the G action stretches.
+FREE_PLATES = ["frozen-landscape", "north-village-plain", "open-sky", "swamp", "wilderness", "ice-peak-cave"]
+
+
+def plate_catalogue():
+    """Every plate image on disk: slug, how many takes, newest filename, and a display URL.
+
+    Count IMAGES only — `*_plate_*.graph.json` sidecars match the same substring and inflated the
+    count to 108 when there are 73 plates. `img` prefers the small JPEG from
+    tools/make_plate_thumbs.py: the raw plates are 3-5 MB PNGs and Chrome would not paint one in the
+    chooser at all (the URL was fine — a fetch of it returned 200 and 3.17 MB).
+    """
+    bgs = ROOT / "refs" / "backgrounds"
+    thumbs = bgs / "_thumbs"
+    out = []
+    if not bgs.exists():
+        return out
+    for d in sorted(p for p in bgs.iterdir() if p.is_dir() and p.name != "_thumbs"):
+        fs = sorted((p for p in d.iterdir()
+                     if "_plate_" in p.name and p.suffix.lower() in (".png", ".jpg", ".jpeg")),
+                    key=lambda p: p.stat().st_mtime)
+        if not fs:
+            continue
+        newest = fs[-1]
+        t = thumbs / ("%s__%s.jpg" % (d.name, newest.stem))
+        out.append({"slug": d.name, "files": len(fs), "newest": newest.name,
+                    "img": "refs/backgrounds/_thumbs/" + t.name if t.exists()
+                           else "refs/backgrounds/%s/%s" % (d.name, newest.name),
+                    "thumb": t.exists()})
+    return out
+
+
+def plate_choices():
+    """Per-scene plate choice rows: the 12 scenes with no settled plate (+ their chunk counts).
+
+    `suggested` is ordered best-first and is only a suggestion — the UI offers EVERY slug in the
+    catalogue, because a scene can legitimately borrow another location's plate.
+    """
+    p = ROOT / "manifests" / "scene_locations.json"
+    if not p.exists():
+        return []
+    scenes = json.loads(p.read_text(encoding="utf-8")).get("scenes") or {}
+    rows = []
+    for sc, rec in sorted(scenes.items()):
+        if rec.get("status") not in ("UNMATCHED", "PROPOSED"):
+            continue
+        src = (rec.get("from") or "").lower()
+        if sc.startswith("G"):
+            sug = FREE_PLATES[:]
+        elif "fire" in src:
+            sug = ["fire-keep-throne-hall", "fire-keep-chamber", "fire-keep-pool",
+                   "fire-keep-ramparts", "fire-keep-study"]
+        elif "ice" in src:
+            sug = ["ice-peak-cave", "ice-peak-throne-hall", "ice-peak-dungeon", "ice-peak-lava"]
+        else:
+            sug = []
+        rows.append({"scene": sc, "chunks": rec.get("chunks", 0),
+                     "ledger": rec.get("from") or "", "suggested": sug})
+    return rows
+
 
 def _js_obj(p):
     txt = p.read_text(encoding="utf-8")
@@ -292,12 +352,18 @@ def resolve_docs():
 def main():
     counts = compute_counts()
     resolve_docs()
+    # the plate decision is the one decision that needs a PER-SCENE pick, so it carries its own data:
+    # the full catalogue (every plate on disk) plus a row per undetermined scene.
+    for d in DECISIONS:
+        if d["id"] == "plate-locations":
+            d["choices"] = {"kind": "plate-per-scene", "scenes": plate_choices()}
     import datetime
     data = {
         "generated": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
         "counts": counts,
         "status": STATUS,
         "decisions": DECISIONS,
+        "plateCatalogue": plate_catalogue(),
     }
 
     OUT.write_text(
