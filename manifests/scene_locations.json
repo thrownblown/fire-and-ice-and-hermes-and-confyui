@@ -1,0 +1,209 @@
+{
+ "_provenance": "scene -> location slug for plate attachment. S scenes from docs/beat-sheet-1.md 'Canonical location' column, matched to refs/backgrounds/ slugs. G scenes have NO location in the ledger or the beat sheet (they are the film's action stretches) \u2014 those entries are PROPOSED and need a human ruling.",
+ "scenes": {
+  "G01": {
+   "slug": "frozen-landscape",
+   "chunks": 15,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G02": {
+   "slug": "north-village-plain",
+   "chunks": 40,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G03": {
+   "slug": "open-sky",
+   "chunks": 56,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G04": {
+   "slug": "swamp",
+   "chunks": 18,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G05": {
+   "slug": "wilderness",
+   "chunks": 10,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G06": {
+   "slug": "ice-peak-cave",
+   "chunks": 13,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G07": {
+   "slug": "frozen-landscape",
+   "chunks": 18,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G08": {
+   "slug": "north-village-plain",
+   "chunks": 50,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "G09": {
+   "slug": "open-sky",
+   "chunks": 27,
+   "status": "PROPOSED",
+   "from": "(no location in ledger or beat sheet \u2014 action stretch)"
+  },
+  "S01": {
+   "slug": "painted-map-montage",
+   "chunks": 8,
+   "status": "from beat sheet",
+   "from": "painted map / montage of glacier & Fire Keep"
+  },
+  "S02": {
+   "slug": "north-village-plain",
+   "chunks": 4,
+   "status": "inferred",
+   "from": "location text: \"Larn's village on the plain\""
+  },
+  "S03": {
+   "slug": "ice-peak-throne-hall",
+   "chunks": 3,
+   "status": "from beat sheet",
+   "from": "Ice Peak throne hall"
+  },
+  "S04": {
+   "slug": "fire-keep-chamber",
+   "chunks": 2,
+   "status": "from beat sheet",
+   "from": "Fire Keep, Teegra's chamber"
+  },
+  "S05": {
+   "slug": "fire-keep-study",
+   "chunks": 4,
+   "status": "from beat sheet",
+   "from": "Fire Keep study"
+  },
+  "S06": {
+   "slug": "fire-keep-throne-hall",
+   "chunks": 8,
+   "status": "from beat sheet",
+   "from": "Fire Keep throne hall"
+  },
+  "S07": {
+   "slug": "fire-keep-pool",
+   "chunks": 11,
+   "status": "from beat sheet",
+   "from": "Fire Keep pool/garden \u2192 night"
+  },
+  "S08": {
+   "slug": "fire-keep-ramparts",
+   "chunks": 3,
+   "status": "from beat sheet",
+   "from": "Fire Keep ramparts, night"
+  },
+  "S09": {
+   "slug": "ice-peak-throne-hall",
+   "chunks": 5,
+   "status": "from beat sheet",
+   "from": "Ice Peak throne hall"
+  },
+  "S11": {
+   "slug": "jungle",
+   "chunks": 30,
+   "status": "from beat sheet",
+   "from": "jungle campfire \u2192 Teegra taken"
+  },
+  "S12": {
+   "slug": "darkwolf-camp",
+   "chunks": 10,
+   "status": "from beat sheet",
+   "from": "Darkwolf's camp"
+  },
+  "S13": {
+   "slug": "jungle",
+   "chunks": 7,
+   "status": "from beat sheet",
+   "from": "jungle trail"
+  },
+  "S14": {
+   "slug": "subhuman-camp",
+   "chunks": 13,
+   "status": "from beat sheet",
+   "from": "subhuman camp, big tree, cliffs"
+  },
+  "S15": {
+   "slug": null,
+   "chunks": 5,
+   "status": "UNMATCHED",
+   "from": "Fire Keep"
+  },
+  "S16": {
+   "slug": "roliel-hut",
+   "chunks": 14,
+   "status": "inferred",
+   "from": "beat sheet: Roliel's hut, witch's hut in the woods"
+  },
+  "S17": {
+   "slug": "roliel-hut",
+   "chunks": 13,
+   "status": "from beat sheet",
+   "from": "Roliel's hut exterior/interior"
+  },
+  "S18": {
+   "slug": "ruined-village",
+   "chunks": 8,
+   "status": "from beat sheet",
+   "from": "ruined village"
+  },
+  "S19": {
+   "slug": "akatar-harbor",
+   "chunks": 5,
+   "status": "from beat sheet",
+   "from": "Akatar harbor"
+  },
+  "S20": {
+   "slug": "ice-peak-throne-hall",
+   "chunks": 17,
+   "status": "from beat sheet",
+   "from": "Ice Peak throne hall"
+  },
+  "S21": {
+   "slug": "ice-peak-throne-hall",
+   "chunks": 25,
+   "status": "from beat sheet",
+   "from": "Ice Peak approach & throne hall"
+  },
+  "S22": {
+   "slug": null,
+   "chunks": 23,
+   "status": "UNMATCHED",
+   "from": "Ice Peak"
+  },
+  "S23": {
+   "slug": "ice-peak-dungeon",
+   "chunks": 5,
+   "status": "from beat sheet",
+   "from": "Ice Peak dungeon"
+  },
+  "S24": {
+   "slug": null,
+   "chunks": 6,
+   "status": "UNMATCHED",
+   "from": "Fire Keep"
+  },
+  "S25": {
+   "slug": "ice-peak-lava",
+   "chunks": 13,
+   "status": "from beat sheet",
+   "from": "Ice Peak, dragonhawks, lava"
+  },
+  "S26": {
+   "slug": "ice-peak-lava",
+   "chunks": 5,
+   "status": "inferred",
+   "from": "location text: \"lava flood\""
+  }
+ }
+}

@@ -40,6 +40,37 @@ from core import identity_match as IM  # noqa: E402
 ROOT = Path(r"E:/FNI")
 RUN_DIR = ROOT / "runs" / "T0016_s05_technicolor-audio-only-ref2va"
 
+SCENE_LOCATIONS = ROOT / "manifests" / "scene_locations.json"
+
+
+def plate_for(row):
+    """The chunk's scene plate, from manifests/scene_locations.json — data, not code.
+
+    The table maps scene -> location slug, sourced from the beat sheet's own "Canonical location"
+    column. The old three-entry PLATE dict in build_technicolor_ref2va.py covered only S03/S05/S06,
+    which is why 479 of 494 chunks rendered with ZERO plates while 21 location plates sat unused.
+
+    STATUS-GATED on purpose: only a settled entry attaches a plate. `PROPOSED` entries are the G
+    action stretches, which have no location anywhere (ledger `location` empty, absent from the beat
+    sheet), and a guessed plate is worse than none — it would put a frozen landscape behind a jungle
+    fight. Alex 2026-11-06: "just do the bits we have plates for. we can skip the undetermined ones
+    for this next yolo".
+    """
+    if SCENE_LOCATIONS.exists():
+        rec = (json.loads(SCENE_LOCATIONS.read_text(encoding="utf-8")).get("scenes") or {}).get(row["scene"]) or {}
+        if rec.get("status") in ("from beat sheet", "inferred") and rec.get("slug"):
+            return T.plate_path(rec["slug"])
+        return None
+    return T.plate_path(T.PLATE.get(row["scene"], ""))     # fallback: the old hardcoded table
+
+
+def has_plate(scene: str) -> bool:
+    """Does this scene resolve to a SETTLED plate? Used to scope a pass to plated chunks."""
+    if not SCENE_LOCATIONS.exists():
+        return scene in T.PLATE
+    rec = (json.loads(SCENE_LOCATIONS.read_text(encoding="utf-8")).get("scenes") or {}).get(scene) or {}
+    return rec.get("status") in ("from beat sheet", "inferred") and bool(rec.get("slug"))
+
 
 def load_blocking() -> dict:
     """Per-chunk hand-authored blocking (manifests/blocking.json), grounded in the
@@ -292,7 +323,7 @@ def main():
     if not subjects:
         print("no sheeted subjects; abort"); return
 
-    plate = T.plate_path(T.PLATE.get(row["scene"], ""))
+    plate = plate_for(row)
     plate_names = [plate.name] if plate else []
 
     audio_name = args.audio or f"{row['chunk_id']}_audio.mp4"

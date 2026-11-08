@@ -39,3 +39,40 @@ HARD RULES (violating any of these wastes a render; the prompt is checked agains
 
 OUTPUT — respond with ONLY a JSON object, no markdown fences, no prose outside it:
 {"prompt": "<the full corrected prompt>", "note": "<one short line, or empty string>"}
+---
+
+## ADDENDUM (2026-11-06) — why this prompt is superseded, and for what
+
+**Kept for reference. Do not use it to edit the current pipeline's prompts.**
+
+This file guards the **three-field FL2VA grammar** (`integrated_multimodal_description:` /
+`overall_soundscape:` / `non_diegetic_music:`). The yolo / audio-only passes emit the **six-field
+reference-video grammar** (`subject_definitions:` / `summary:` / `retention_analysis:` /
+`detailed_description:` / `overall_soundscape:` / `non_diegetic_music:`), so applying this prompt
+to them would force a conversion in the wrong direction and throw away the reference declarations
+that do the identity work.
+
+**What it did not catch, measured across the 258 yolo prompts on 2026-11-06:**
+
+| defect | prompts | note |
+|---|---|---|
+| unbound references ("the figures") | 251 | no `<Subject N>` to bind to, so the model invents occupants |
+| sheet never declared as one person | 251 | the sheet's panels were read as several similar people |
+| degree adverbs | 248 | rule 5 here says "no keyword lists" but says nothing about adverbs |
+| prohibitions | 237 | rule 5 says "no negative instructions" — but it is only advice; nothing enforced it, and the builder emitted the crowd clause anyway |
+| crowd clause contradicting its own blocking | 60 | not visible to a text-only editor: it needs the ledger |
+| `(S#)` out of first-speaking order | 67 | the old rule 3 fixed the *cap* at two speakers but never checked the *order* |
+
+**Three structural reasons it failed:**
+
+1. **Text-only.** It never saw the reference images or the ledger, so it could not know that a sheet
+   was attached (and therefore needed declaring), nor that the blocking said one person while the
+   prompt said a crowd. Those were three of the six defects above.
+2. **Advice, not enforcement.** "No negative instructions" and "no keyword lists" are requests to a
+   model; nothing checked the output. Prohibitions survived in 237 of 258 prompts.
+3. **One grammar, hardwired.** Future runs will mix modes (audio + still character ref + plate;
+   audio + FF-LF2V + refs; audio + video + refs), so the editor must be told which mode it is
+   editing and which references are attached.
+
+Superseded by `core/prompt_editor_system.md` (six-field, guide-armed, ledger- and ref-aware) plus
+`tools/prompt_check.py` for the mechanical rules and `tools/prompt_editor.py` for the semantic pass.
