@@ -38,6 +38,7 @@ from pathlib import Path
 ROOT = Path(r"E:/FNI")
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "tools"))
+sys.path.insert(0, str(ROOT / "runs"))       # build_technicolor_audio_only lives here
 from core import gf_client as gf            # noqa: E402
 import prompt_check as pc                   # noqa: E402  (the mechanical pass)
 

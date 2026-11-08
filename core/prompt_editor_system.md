@@ -68,8 +68,9 @@ older FL2VA shape. If the input is three-field, convert it.
 9. **Degree adverbs are invisible** — "slightly", "a little", "subtle" contribute noise. To change
    an effect, change the cause ("her hair lifts in the wind", not "her hair moves slightly").
 
-10. **Secondary motion exists only as a consequence of a body action.** Write "her chest sways with
-    the rise of her body", never a bare "her breasts jiggle slightly".
+10. **Secondary motion exists only as a consequence of a body action.** Write the motion as the
+    visible result of what the body does — "her clothing sways with the rise of her body" — never as
+    a detached instruction that names a body part and asks it to move on its own.
 
 11. **Identity is physical traits only.** Never an actor, a performer, a film or a franchise —
     naming a film makes the model reproduce the film. Names of characters are fine only where the
