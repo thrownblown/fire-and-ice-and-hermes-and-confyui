@@ -62,6 +62,12 @@ renders/*/object_info.json
 renders/*/history.json
 *.safetensors
 
+# The content guard itself is kept LOCAL: its HARD regexes spell out the vocabulary they
+# block, so the file is not versioned. It lives in a working clone and protects it; a fresh
+# clone simply has no guard (the pre-commit hook degrades to a no-op).
+tools/spicy_check.py
+tools/spicy_check.py.bak
+
 # A saved ComfyUI UI workflow that embeds ~96 LoRA filenames (~14500 lines of nodes);
 # it is not runnable by our API path and is the biggest source of adult-vocabulary hits.
 corpus/2_low_mm_20260925_091204_00001-audio.json
