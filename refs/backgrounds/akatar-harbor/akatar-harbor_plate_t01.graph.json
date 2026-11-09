@@ -88,7 +88,7 @@
  },
  "120": {
   "inputs": {
-   "clip_name": "Huihui-Qwen3-VL-4B-Instruct-abliterated-int8_convrot.safetensors",
+   "clip_name": "Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
    "type": "krea2",
    "device": "cpu"
   },
@@ -99,7 +99,7 @@
  },
  "121": {
   "inputs": {
-   "unet_name": "krea/finepornV2TURBOKrea2_v10.safetensors",
+   "unet_name": "krea\\finepornV2TURBOKrea2_v10.safetensors",
    "weight_dtype": "default"
   },
   "class_type": "UNETLoader",
@@ -109,7 +109,7 @@
  },
  "122": {
   "inputs": {
-   "vae_name": "Wan2_1_VAE_fp32.safetensors",
+   "vae_name": "wan\\Wan2_1_VAE_fp32.safetensors",
    "device": "main_device",
    "weight_dtype": "fp32"
   },
@@ -242,7 +242,7 @@
  },
  "135": {
   "inputs": {
-   "positive": "a busy fantasy harbor at dusk, wooden docks and tall-masted ships, matte-painted 80s fantasy background, technicolor, no people"
+   "positive": "a quiet harbor at dusk: rough wooden dock planks, coiled rope and barrels, three tall-masted wooden sailing ships moored at empty piers, waterfront warehouses with warm lantern light, a deep orange and violet sky, matte-painted 80s fantasy background, technicolor, calm and still"
   },
   "class_type": "easy positive",
   "_meta": {

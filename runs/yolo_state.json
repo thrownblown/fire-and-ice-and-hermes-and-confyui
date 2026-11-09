@@ -1053,8 +1053,8 @@
    "note": "QUEUED G08-c28_audioOnly_t01 (1 sheets + 0 plate, audio G08-c28_audio.mp4, seed 1414565398)"
   },
   "G08-c29": {
-   "note": "QUEUED G08-c29_audioOnly_t01 (1 sheets + 0 plate, audio G08-c29_audio.mp4, seed 592952960)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:32:50",
+   "note": "QUEUED G08-c29_audioOnly_t01 (1 sheets + 0 plate, audio G08-c29_audio.mp4, seed 592952960)"
   },
   "G08-c30": {
    "skipped": "2026-10-28T08:10:08",
@@ -1065,8 +1065,8 @@
    "note": "no sheeted subjects; abort"
   },
   "G08-c32": {
-   "note": "QUEUED G08-c32_audioOnly_t01 (1 sheets + 0 plate, audio G08-c32_audio.mp4, seed 2912835145)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:32:53",
+   "note": "QUEUED G08-c32_audioOnly_t01 (1 sheets + 0 plate, audio G08-c32_audio.mp4, seed 2912835145)"
   },
   "G08-c33": {
    "skipped": "2026-10-28T08:10:09",
@@ -1129,60 +1129,60 @@
    "note": "no sheeted subjects; abort"
   },
   "G08-c48": {
-   "note": "QUEUED G08-c48_audioOnly_t01 (1 sheets + 0 plate, audio G08-c48_audio.mp4, seed 34220432)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:32:55",
+   "note": "QUEUED G08-c48_audioOnly_t01 (1 sheets + 0 plate, audio G08-c48_audio.mp4, seed 34220432)"
   },
   "G08-c49": {
    "skipped": "2026-10-28T08:10:12",
    "note": "no sheeted subjects; abort"
   },
   "G08-c50": {
-   "note": "QUEUED G08-c50_audioOnly_t01 (1 sheets + 0 plate, audio G08-c50_audio.mp4, seed 365596899)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:32:58",
+   "note": "QUEUED G08-c50_audioOnly_t01 (1 sheets + 0 plate, audio G08-c50_audio.mp4, seed 365596899)"
   },
   "G09-c01": {
    "skipped": "2026-10-28T08:10:12",
    "note": "no sheeted subjects; abort"
   },
   "G09-c02": {
-   "note": "QUEUED G09-c02_audioOnly_t01 (1 sheets + 0 plate, audio G09-c02_audio.mp4, seed 3151178810)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:01",
+   "note": "QUEUED G09-c02_audioOnly_t01 (1 sheets + 0 plate, audio G09-c02_audio.mp4, seed 3151178810)"
   },
   "G09-c03": {
-   "note": "QUEUED G09-c03_audioOnly_t01 (1 sheets + 0 plate, audio G09-c03_audio.mp4, seed 3436453036)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:03",
+   "note": "QUEUED G09-c03_audioOnly_t01 (1 sheets + 0 plate, audio G09-c03_audio.mp4, seed 3436453036)"
   },
   "G09-c04": {
    "skipped": "2026-10-28T08:10:14",
    "note": "no sheeted subjects; abort"
   },
   "G09-c05": {
-   "note": "QUEUED G09-c05_audioOnly_t01 (1 sheets + 0 plate, audio G09-c05_audio.mp4, seed 632797593)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:08",
+   "note": "QUEUED G09-c05_audioOnly_t01 (1 sheets + 0 plate, audio G09-c05_audio.mp4, seed 632797593)"
   },
   "G09-c06": {
    "skipped": "2026-10-28T08:10:14",
    "note": "no sheeted subjects; abort"
   },
   "G09-c07": {
-   "note": "QUEUED G09-c07_audioOnly_t01 (2 sheets + 0 plate, audio G09-c07_audio.mp4, seed 3417954485)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:14",
+   "note": "QUEUED G09-c07_audioOnly_t01 (2 sheets + 0 plate, audio G09-c07_audio.mp4, seed 3417954485)"
   },
   "G09-c08": {
    "skipped": "2026-10-28T08:10:15",
    "note": "no sheeted subjects; abort"
   },
   "G09-c09": {
-   "note": "QUEUED G09-c09_audioOnly_t01 (1 sheets + 0 plate, audio G09-c09_audio.mp4, seed 738325938)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:17",
+   "note": "QUEUED G09-c09_audioOnly_t01 (1 sheets + 0 plate, audio G09-c09_audio.mp4, seed 738325938)"
   },
   "G09-c10": {
    "skipped": "2026-10-28T08:10:16",
    "note": "no sheeted subjects; abort"
   },
   "G09-c11": {
-   "note": "QUEUED G09-c11_audioOnly_t01 (1 sheets + 0 plate, audio G09-c11_audio.mp4, seed 1002523841)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:20",
+   "note": "QUEUED G09-c11_audioOnly_t01 (1 sheets + 0 plate, audio G09-c11_audio.mp4, seed 1002523841)"
   },
   "G09-c12": {
    "skipped": "2026-10-28T08:10:16",
@@ -1221,12 +1221,12 @@
    "note": "no sheeted subjects; abort"
   },
   "G09-c21": {
-   "note": "QUEUED G09-c21_audioOnly_t01 (1 sheets + 0 plate, audio G09-c21_audio.mp4, seed 283909890)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:22",
+   "note": "QUEUED G09-c21_audioOnly_t01 (1 sheets + 0 plate, audio G09-c21_audio.mp4, seed 283909890)"
   },
   "G09-c22": {
-   "note": "QUEUED G09-c22_audioOnly_t01 (2 sheets + 0 plate, audio G09-c22_audio.mp4, seed 2313506488)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:28",
+   "note": "QUEUED G09-c22_audioOnly_t01 (2 sheets + 0 plate, audio G09-c22_audio.mp4, seed 2313506488)"
   },
   "G09-c23": {
    "skipped": "2026-10-28T08:10:19",
@@ -1237,16 +1237,16 @@
    "note": "no sheeted subjects; abort"
   },
   "G09-c25": {
-   "note": "QUEUED G09-c25_audioOnly_t01 (2 sheets + 0 plate, audio G09-c25_audio.mp4, seed 394386203)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:32",
+   "note": "QUEUED G09-c25_audioOnly_t01 (2 sheets + 0 plate, audio G09-c25_audio.mp4, seed 394386203)"
   },
   "G09-c26": {
-   "note": "QUEUED G09-c26_audioOnly_t01 (2 sheets + 0 plate, audio G09-c26_audio.mp4, seed 2391313057)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:37",
+   "note": "QUEUED G09-c26_audioOnly_t01 (2 sheets + 0 plate, audio G09-c26_audio.mp4, seed 2391313057)"
   },
   "G09-c27": {
-   "note": "QUEUED G09-c27_audioOnly_t01 (1 sheets + 0 plate, audio G09-c27_audio.mp4, seed 4186946103)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:39",
+   "note": "QUEUED G09-c27_audioOnly_t01 (1 sheets + 0 plate, audio G09-c27_audio.mp4, seed 4186946103)"
   },
   "S01-c01": {
    "skipped": "2026-10-28T08:10:21",
@@ -1553,56 +1553,56 @@
    "note": "no sheeted subjects; abort"
   },
   "S12-c05": {
-   "note": "QUEUED S12-c05_audioOnly_t01 (1 sheets + 0 plate, audio S12-c05_audio.mp4, seed 178971632)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:42",
+   "note": "QUEUED S12-c05_audioOnly_t01 (1 sheets + 0 plate, audio S12-c05_audio.mp4, seed 178971632)"
   },
   "S12-c06": {
-   "note": "QUEUED S12-c06_audioOnly_t01 (1 sheets + 0 plate, audio S12-c06_audio.mp4, seed 2476978762)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:33:45",
+   "note": "QUEUED S12-c06_audioOnly_t01 (1 sheets + 0 plate, audio S12-c06_audio.mp4, seed 2476978762)"
   },
   "S12-c07": {
-   "note": "QUEUED S12-c07_audioOnly_t01 (1 sheets + 0 plate, audio S12-c07_audio.mp4, seed 3835986652)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:37:41",
+   "note": "QUEUED S12-c07_audioOnly_t01 (1 sheets + 0 plate, audio S12-c07_audio.mp4, seed 3835986652)"
   },
   "S12-c08": {
-   "note": "QUEUED S12-c08_audioOnly_t01 (1 sheets + 0 plate, audio S12-c08_audio.mp4, seed 1947967309)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:37:46",
+   "note": "QUEUED S12-c08_audioOnly_t01 (1 sheets + 0 plate, audio S12-c08_audio.mp4, seed 1947967309)"
   },
   "S12-c09": {
-   "note": "QUEUED S12-c09_audioOnly_t01 (2 sheets + 0 plate, audio S12-c09_audio.mp4, seed 52211675)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:37:51",
+   "note": "QUEUED S12-c09_audioOnly_t01 (2 sheets + 0 plate, audio S12-c09_audio.mp4, seed 52211675)"
   },
   "S12-c10": {
    "skipped": "2026-10-28T08:11:08",
    "note": "no sheeted subjects; abort"
   },
   "S13-c01": {
-   "note": "QUEUED S13-c01_audioOnly_t01 (2 sheets + 0 plate, audio S13-c01_audio.mp4, seed 816254553)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:37:56",
+   "note": "QUEUED S13-c01_audioOnly_t01 (2 sheets + 0 plate, audio S13-c01_audio.mp4, seed 816254553)"
   },
   "S13-c02": {
-   "note": "QUEUED S13-c02_audioOnly_t01 (2 sheets + 0 plate, audio S13-c02_audio.mp4, seed 2846777315)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:01",
+   "note": "QUEUED S13-c02_audioOnly_t01 (2 sheets + 0 plate, audio S13-c02_audio.mp4, seed 2846777315)"
   },
   "S13-c03": {
-   "note": "QUEUED S13-c03_audioOnly_t01 (1 sheets + 0 plate, audio S13-c03_audio.mp4, seed 3735646069)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:04",
+   "note": "QUEUED S13-c03_audioOnly_t01 (1 sheets + 0 plate, audio S13-c03_audio.mp4, seed 3735646069)"
   },
   "S13-c04": {
-   "note": "QUEUED S13-c04_audioOnly_t01 (1 sheets + 0 plate, audio S13-c04_audio.mp4, seed 1087240918)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:06",
+   "note": "QUEUED S13-c04_audioOnly_t01 (1 sheets + 0 plate, audio S13-c04_audio.mp4, seed 1087240918)"
   },
   "S13-c05": {
-   "note": "QUEUED S13-c05_audioOnly_t01 (1 sheets + 0 plate, audio S13-c05_audio.mp4, seed 936036928)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:10",
+   "note": "QUEUED S13-c05_audioOnly_t01 (1 sheets + 0 plate, audio S13-c05_audio.mp4, seed 936036928)"
   },
   "S13-c06": {
-   "note": "QUEUED S13-c06_audioOnly_t01 (1 sheets + 0 plate, audio S13-c06_audio.mp4, seed 2932055034)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:12",
+   "note": "QUEUED S13-c06_audioOnly_t01 (1 sheets + 0 plate, audio S13-c06_audio.mp4, seed 2932055034)"
   },
   "S13-c07": {
-   "note": "QUEUED S13-c07_audioOnly_t01 (2 sheets + 0 plate, audio S13-c07_audio.mp4, seed 3653544812)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:17",
+   "note": "QUEUED S13-c07_audioOnly_t01 (2 sheets + 0 plate, audio S13-c07_audio.mp4, seed 3653544812)"
   },
   "S14-c01": {
    "skipped": "2026-10-28T08:11:13",
@@ -1621,8 +1621,8 @@
    "note": "no sheeted subjects; abort"
   },
   "S14-c05": {
-   "note": "QUEUED S14-c05_audioOnly_t01 (2 sheets + 0 plate, audio S14-c05_audio.mp4, seed 2246710864)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:22",
+   "note": "QUEUED S14-c05_audioOnly_t01 (2 sheets + 0 plate, audio S14-c05_audio.mp4, seed 2246710864)"
   },
   "S14-c06": {
    "skipped": "2026-10-28T08:11:15",
@@ -1633,124 +1633,124 @@
    "note": "no sheeted subjects; abort"
   },
   "S14-c08": {
-   "note": "QUEUED S14-c08_audioOnly_t01 (2 sheets + 0 plate, audio S14-c08_audio.mp4, seed 4217072365)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:27",
+   "note": "QUEUED S14-c08_audioOnly_t01 (2 sheets + 0 plate, audio S14-c08_audio.mp4, seed 4217072365)"
   },
   "S14-c09": {
    "skipped": "2026-10-28T08:11:16",
    "note": "no sheeted subjects; abort"
   },
   "S14-c10": {
-   "note": "QUEUED S14-c10_audioOnly_t01 (1 sheets + 0 plate, audio S14-c10_audio.mp4, seed 3969635230)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:29",
+   "note": "QUEUED S14-c10_audioOnly_t01 (1 sheets + 0 plate, audio S14-c10_audio.mp4, seed 3969635230)"
   },
   "S14-c11": {
-   "note": "QUEUED S14-c11_audioOnly_t01 (1 sheets + 0 plate, audio S14-c11_audio.mp4, seed 2610750216)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:32",
+   "note": "QUEUED S14-c11_audioOnly_t01 (1 sheets + 0 plate, audio S14-c11_audio.mp4, seed 2610750216)"
   },
   "S14-c12": {
-   "note": "QUEUED S14-c12_audioOnly_t01 (1 sheets + 0 plate, audio S14-c12_audio.mp4, seed 43365042)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:34",
+   "note": "QUEUED S14-c12_audioOnly_t01 (1 sheets + 0 plate, audio S14-c12_audio.mp4, seed 43365042)"
   },
   "S14-c13": {
-   "note": "QUEUED S14-c13_audioOnly_t01 (1 sheets + 0 plate, audio S14-c13_audio.mp4, seed 1972535844)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:37",
+   "note": "QUEUED S14-c13_audioOnly_t01 (1 sheets + 0 plate, audio S14-c13_audio.mp4, seed 1972535844)"
   },
   "S15-c01": {
-   "note": "QUEUED S15-c01_audioOnly_t01 (2 sheets + 0 plate, audio S15-c01_audio.mp4, seed 3219651577)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:43",
+   "note": "QUEUED S15-c01_audioOnly_t01 (2 sheets + 0 plate, audio S15-c01_audio.mp4, seed 3219651577)"
   },
   "S15-c02": {
-   "note": "QUEUED S15-c02_audioOnly_t01 (2 sheets + 0 plate, audio S15-c02_audio.mp4, seed 653175363)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:38:48",
+   "note": "QUEUED S15-c02_audioOnly_t01 (2 sheets + 0 plate, audio S15-c02_audio.mp4, seed 653175363)"
   },
   "S15-c03": {
-   "note": "QUEUED S15-c03_audioOnly_t01 (2 sheets + 0 plate, audio S15-c03_audio.mp4, seed 1374264021)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:03",
+   "note": "QUEUED S15-c03_audioOnly_t01 (2 sheets + 0 plate, audio S15-c03_audio.mp4, seed 1374264021)"
   },
   "S15-c04": {
-   "note": "QUEUED S15-c04_audioOnly_t01 (1 sheets + 0 plate, audio S15-c04_audio.mp4, seed 3482128246)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:05",
+   "note": "QUEUED S15-c04_audioOnly_t01 (1 sheets + 0 plate, audio S15-c04_audio.mp4, seed 3482128246)"
   },
   "S15-c05": {
    "skipped": "2026-10-28T08:11:21",
    "note": "no sheeted subjects; abort"
   },
   "S16-c01": {
-   "note": "QUEUED S16-c01_audioOnly_t01 (1 sheets + 0 plate, audio S16-c01_audio.mp4, seed 4165435689)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:07",
+   "note": "QUEUED S16-c01_audioOnly_t01 (1 sheets + 0 plate, audio S16-c01_audio.mp4, seed 4165435689)"
   },
   "S16-c02": {
-   "note": "QUEUED S16-c02_audioOnly_t01 (2 sheets + 0 plate, audio S16-c02_audio.mp4, seed 1632555155)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:12",
+   "note": "QUEUED S16-c02_audioOnly_t01 (2 sheets + 0 plate, audio S16-c02_audio.mp4, seed 1632555155)"
   },
   "S16-c03": {
-   "note": "QUEUED S16-c03_audioOnly_t01 (1 sheets + 0 plate, audio S16-c03_audio.mp4, seed 373940229)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:15",
+   "note": "QUEUED S16-c03_audioOnly_t01 (1 sheets + 0 plate, audio S16-c03_audio.mp4, seed 373940229)"
   },
   "S16-c04": {
-   "note": "QUEUED S16-c04_audioOnly_t01 (1 sheets + 0 plate, audio S16-c04_audio.mp4, seed 2284680614)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:18",
+   "note": "QUEUED S16-c04_audioOnly_t01 (1 sheets + 0 plate, audio S16-c04_audio.mp4, seed 2284680614)"
   },
   "S16-c05": {
-   "note": "QUEUED S16-c05_audioOnly_t01 (2 sheets + 0 plate, audio S16-c05_audio.mp4, seed 4280960304)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:21",
+   "note": "QUEUED S16-c05_audioOnly_t01 (2 sheets + 0 plate, audio S16-c05_audio.mp4, seed 4280960304)"
   },
   "S16-c06": {
-   "note": "QUEUED S16-c06_audioOnly_t01 (2 sheets + 0 plate, audio S16-c06_audio.mp4, seed 1713575050)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:27",
+   "note": "QUEUED S16-c06_audioOnly_t01 (2 sheets + 0 plate, audio S16-c06_audio.mp4, seed 1713575050)"
   },
   "S16-c07": {
-   "note": "QUEUED S16-c07_audioOnly_t01 (1 sheets + 0 plate, audio S16-c07_audio.mp4, seed 287581212)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:29",
+   "note": "QUEUED S16-c07_audioOnly_t01 (1 sheets + 0 plate, audio S16-c07_audio.mp4, seed 287581212)"
   },
   "S16-c08": {
    "skipped": "2026-10-28T08:11:26",
    "note": "no sheeted subjects; abort"
   },
   "S16-c09": {
-   "note": "QUEUED S16-c09_audioOnly_t01 (1 sheets + 0 plate, audio S16-c09_audio.mp4, seed 4137421083)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:32",
+   "note": "QUEUED S16-c09_audioOnly_t01 (1 sheets + 0 plate, audio S16-c09_audio.mp4, seed 4137421083)"
   },
   "S16-c10": {
    "skipped": "2026-10-28T08:11:26",
    "note": "no sheeted subjects; abort"
   },
   "S16-c11": {
-   "note": "QUEUED S16-c11_audioOnly_t01 (1 sheets + 0 plate, audio S16-c11_audio.mp4, seed 3780948072)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:35",
+   "note": "QUEUED S16-c11_audioOnly_t01 (1 sheets + 0 plate, audio S16-c11_audio.mp4, seed 3780948072)"
   },
   "S16-c12": {
-   "note": "QUEUED S16-c12_audioOnly_t01 (2 sheets + 0 plate, audio S16-c12_audio.mp4, seed 2018894290)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:38",
+   "note": "QUEUED S16-c12_audioOnly_t01 (2 sheets + 0 plate, audio S16-c12_audio.mp4, seed 2018894290)"
   },
   "S16-c13": {
-   "note": "QUEUED S16-c13_audioOnly_t01 (1 sheets + 0 plate, audio S16-c13_audio.mp4, seed 257085764)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:41",
+   "note": "QUEUED S16-c13_audioOnly_t01 (1 sheets + 0 plate, audio S16-c13_audio.mp4, seed 257085764)"
   },
   "S16-c14": {
    "skipped": "2026-10-28T08:11:28",
    "note": "no sheeted subjects; abort"
   },
   "S17-c01": {
-   "note": "QUEUED S17-c01_audioOnly_t01 (1 sheets + 0 plate, audio S17-c01_audio.mp4, seed 3307710617)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:43",
+   "note": "QUEUED S17-c01_audioOnly_t01 (1 sheets + 0 plate, audio S17-c01_audio.mp4, seed 3307710617)"
   },
   "S17-c02": {
-   "note": "QUEUED S17-c02_audioOnly_t01 (1 sheets + 0 plate, audio S17-c02_audio.mp4, seed 1546582307)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:46",
+   "note": "QUEUED S17-c02_audioOnly_t01 (1 sheets + 0 plate, audio S17-c02_audio.mp4, seed 1546582307)"
   },
   "S17-c03": {
    "skipped": "2026-10-28T08:11:30",
    "note": "no sheeted subjects; abort"
   },
   "S17-c04": {
-   "note": "QUEUED S17-c04_audioOnly_t01 (3 sheets + 0 plate, audio S17-c04_audio.mp4, seed 3041745942)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:52",
+   "note": "QUEUED S17-c04_audioOnly_t01 (3 sheets + 0 plate, audio S17-c04_audio.mp4, seed 3041745942)"
   },
   "S17-c05": {
-   "note": "QUEUED S17-c05_audioOnly_t01 (1 sheets + 0 plate, audio S17-c05_audio.mp4, seed 3259657344)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:54",
+   "note": "QUEUED S17-c05_audioOnly_t01 (1 sheets + 0 plate, audio S17-c05_audio.mp4, seed 3259657344)"
   },
   "S17-c06": {
    "skipped": "2026-10-28T08:11:31",
@@ -1765,20 +1765,20 @@
    "note": "no sheeted subjects; abort"
   },
   "S17-c09": {
-   "note": "QUEUED S17-c09_audioOnly_t01 (1 sheets + 0 plate, audio S17-c09_audio.mp4, seed 3422298283)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:39:57",
+   "note": "QUEUED S17-c09_audioOnly_t01 (1 sheets + 0 plate, audio S17-c09_audio.mp4, seed 3422298283)"
   },
   "S17-c10": {
    "skipped": "2026-10-28T08:11:32",
    "note": "no sheeted subjects; abort"
   },
   "S17-c11": {
-   "note": "QUEUED S17-c11_audioOnly_t01 (1 sheets + 0 plate, audio S17-c11_audio.mp4, seed 3694959064)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:00",
+   "note": "QUEUED S17-c11_audioOnly_t01 (1 sheets + 0 plate, audio S17-c11_audio.mp4, seed 3694959064)"
   },
   "S17-c12": {
-   "note": "QUEUED S17-c12_audioOnly_t01 (1 sheets + 0 plate, audio S17-c12_audio.mp4, seed 1161152610)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:02",
+   "note": "QUEUED S17-c12_audioOnly_t01 (1 sheets + 0 plate, audio S17-c12_audio.mp4, seed 1161152610)"
   },
   "S17-c13": {
    "skipped": "2026-10-28T08:11:36",
@@ -1793,108 +1793,108 @@
    "note": "no sheeted subjects; abort"
   },
   "S18-c03": {
-   "note": "QUEUED S18-c03_audioOnly_t01 (2 sheets + 0 plate, audio S18-c03_audio.mp4, seed 2843303524)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:06",
+   "note": "QUEUED S18-c03_audioOnly_t01 (2 sheets + 0 plate, audio S18-c03_audio.mp4, seed 2843303524)"
   },
   "S18-c04": {
-   "note": "QUEUED S18-c04_audioOnly_t01 (2 sheets + 0 plate, audio S18-c04_audio.mp4, seed 924699591)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:10",
+   "note": "QUEUED S18-c04_audioOnly_t01 (2 sheets + 0 plate, audio S18-c04_audio.mp4, seed 924699591)"
   },
   "S18-c05": {
-   "note": "QUEUED S18-c05_audioOnly_t01 (2 sheets + 0 plate, audio S18-c05_audio.mp4, seed 1075510097)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:15",
+   "note": "QUEUED S18-c05_audioOnly_t01 (2 sheets + 0 plate, audio S18-c05_audio.mp4, seed 1075510097)"
   },
   "S18-c06": {
-   "note": "QUEUED S18-c06_audioOnly_t01 (1 sheets + 0 plate, audio S18-c06_audio.mp4, seed 3641944811)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:17",
+   "note": "QUEUED S18-c06_audioOnly_t01 (1 sheets + 0 plate, audio S18-c06_audio.mp4, seed 3641944811)"
   },
   "S18-c07": {
-   "note": "QUEUED S18-c07_audioOnly_t01 (2 sheets + 0 plate, audio S18-c07_audio.mp4, seed 2920585853)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:22",
+   "note": "QUEUED S18-c07_audioOnly_t01 (2 sheets + 0 plate, audio S18-c07_audio.mp4, seed 2920585853)"
   },
   "S18-c08": {
    "skipped": "2026-10-28T08:11:59",
    "note": "no sheeted subjects; abort"
   },
   "S19-c01": {
-   "note": "QUEUED S19-c01_audioOnly_t01 (1 sheets + 0 plate, audio S19-c01_audio.mp4, seed 2048333560)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:25",
+   "note": "QUEUED S19-c01_audioOnly_t01 (1 sheets + 0 plate, audio S19-c01_audio.mp4, seed 2048333560)"
   },
   "S19-c02": {
-   "note": "QUEUED S19-c02_audioOnly_t01 (1 sheets + 0 plate, audio S19-c02_audio.mp4, seed 3810412354)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:27",
+   "note": "QUEUED S19-c02_audioOnly_t01 (1 sheets + 0 plate, audio S19-c02_audio.mp4, seed 3810412354)"
   },
   "S19-c03": {
-   "note": "QUEUED S19-c03_audioOnly_t01 (1 sheets + 0 plate, audio S19-c03_audio.mp4, seed 2484697044)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:30",
+   "note": "QUEUED S19-c03_audioOnly_t01 (1 sheets + 0 plate, audio S19-c03_audio.mp4, seed 2484697044)"
   },
   "S19-c04": {
-   "note": "QUEUED S19-c04_audioOnly_t01 (1 sheets + 0 plate, audio S19-c04_audio.mp4, seed 176022135)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:33",
+   "note": "QUEUED S19-c04_audioOnly_t01 (1 sheets + 0 plate, audio S19-c04_audio.mp4, seed 176022135)"
   },
   "S19-c05": {
-   "note": "QUEUED S19-c05_audioOnly_t01 (1 sheets + 0 plate, audio S19-c05_audio.mp4, seed 2105201377)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:35",
+   "note": "QUEUED S19-c05_audioOnly_t01 (1 sheets + 0 plate, audio S19-c05_audio.mp4, seed 2105201377)"
   },
   "S20-c01": {
-   "note": "QUEUED S20-c01_audioOnly_t01 (1 sheets + 0 plate, audio S20-c01_audio.mp4, seed 4052944423)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:37",
+   "note": "QUEUED S20-c01_audioOnly_t01 (1 sheets + 0 plate, audio S20-c01_audio.mp4, seed 4052944423)"
   },
   "S20-c02": {
-   "note": "QUEUED S20-c02_audioOnly_t01 (3 sheets + 0 plate, audio S20-c02_audio.mp4, seed 1754945437)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:43",
+   "note": "QUEUED S20-c02_audioOnly_t01 (3 sheets + 0 plate, audio S20-c02_audio.mp4, seed 1754945437)"
   },
   "S20-c03": {
-   "note": "QUEUED S20-c03_audioOnly_t01 (3 sheets + 0 plate, audio S20-c03_audio.mp4, seed 530409227)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:48",
+   "note": "QUEUED S20-c03_audioOnly_t01 (3 sheets + 0 plate, audio S20-c03_audio.mp4, seed 530409227)"
   },
   "S20-c04": {
-   "note": "QUEUED S20-c04_audioOnly_t01 (3 sheets + 0 plate, audio S20-c04_audio.mp4, seed 2180641448)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:54",
+   "note": "QUEUED S20-c04_audioOnly_t01 (3 sheets + 0 plate, audio S20-c04_audio.mp4, seed 2180641448)"
   },
   "S20-c05": {
-   "note": "QUEUED S20-c05_audioOnly_t01 (2 sheets + 0 plate, audio S20-c05_audio.mp4, seed 4143891006)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:40:58",
+   "note": "QUEUED S20-c05_audioOnly_t01 (2 sheets + 0 plate, audio S20-c05_audio.mp4, seed 4143891006)"
   },
   "S20-c06": {
-   "note": "QUEUED S20-c06_audioOnly_t01 (2 sheets + 0 plate, audio S20-c06_audio.mp4, seed 1878496132)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:02",
+   "note": "QUEUED S20-c06_audioOnly_t01 (2 sheets + 0 plate, audio S20-c06_audio.mp4, seed 1878496132)"
   },
   "S20-c07": {
-   "note": "QUEUED S20-c07_audioOnly_t01 (2 sheets + 0 plate, audio S20-c07_audio.mp4, seed 418423570)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:06",
+   "note": "QUEUED S20-c07_audioOnly_t01 (2 sheets + 0 plate, audio S20-c07_audio.mp4, seed 418423570)"
   },
   "S20-c08": {
-   "note": "QUEUED S20-c08_audioOnly_t01 (1 sheets + 0 plate, audio S20-c08_audio.mp4, seed 2286927491)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:10",
+   "note": "QUEUED S20-c08_audioOnly_t01 (1 sheets + 0 plate, audio S20-c08_audio.mp4, seed 2286927491)"
   },
   "S20-c09": {
-   "note": "QUEUED S20-c09_audioOnly_t01 (1 sheets + 0 plate, audio S20-c09_audio.mp4, seed 4282945045)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:12",
+   "note": "QUEUED S20-c09_audioOnly_t01 (1 sheets + 0 plate, audio S20-c09_audio.mp4, seed 4282945045)"
   },
   "S20-c10": {
-   "note": "QUEUED S20-c10_audioOnly_t01 (2 sheets + 0 plate, audio S20-c10_audio.mp4, seed 2676951024)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:16",
+   "note": "QUEUED S20-c10_audioOnly_t01 (2 sheets + 0 plate, audio S20-c10_audio.mp4, seed 2676951024)"
   },
   "S20-c11": {
-   "note": "QUEUED S20-c11_audioOnly_t01 (1 sheets + 0 plate, audio S20-c11_audio.mp4, seed 3901241190)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:19",
+   "note": "QUEUED S20-c11_audioOnly_t01 (1 sheets + 0 plate, audio S20-c11_audio.mp4, seed 3901241190)"
   },
   "S20-c12": {
-   "note": "QUEUED S20-c12_audioOnly_t01 (2 sheets + 0 plate, audio S20-c12_audio.mp4, seed 1904305884)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:23",
+   "note": "QUEUED S20-c12_audioOnly_t01 (2 sheets + 0 plate, audio S20-c12_audio.mp4, seed 1904305884)"
   },
   "S20-c13": {
-   "note": "QUEUED S20-c13_audioOnly_t01 (2 sheets + 0 plate, audio S20-c13_audio.mp4, seed 109467210)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:27",
+   "note": "QUEUED S20-c13_audioOnly_t01 (2 sheets + 0 plate, audio S20-c13_audio.mp4, seed 109467210)"
   },
   "S20-c14": {
-   "note": "QUEUED S20-c14_audioOnly_t01 (1 sheets + 0 plate, audio S20-c14_audio.mp4, seed 2564998121)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:29",
+   "note": "QUEUED S20-c14_audioOnly_t01 (1 sheets + 0 plate, audio S20-c14_audio.mp4, seed 2564998121)"
   },
   "S20-c15": {
-   "note": "QUEUED S20-c15_audioOnly_t01 (2 sheets + 0 plate, audio S20-c15_audio.mp4, seed 4024824703)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:33",
+   "note": "QUEUED S20-c15_audioOnly_t01 (2 sheets + 0 plate, audio S20-c15_audio.mp4, seed 4024824703)"
   },
   "S20-c16": {
    "skipped": "2026-10-28T08:12:27",
@@ -1921,8 +1921,8 @@
    "note": "no sheeted subjects; abort"
   },
   "S21-c05": {
-   "note": "QUEUED S21-c05_audioOnly_t01 (1 sheets + 0 plate, audio S21-c05_audio.mp4, seed 3416189838)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:36",
+   "note": "QUEUED S21-c05_audioOnly_t01 (1 sheets + 0 plate, audio S21-c05_audio.mp4, seed 3416189838)"
   },
   "S21-c06": {
    "skipped": "2026-10-28T08:12:29",
@@ -1949,124 +1949,124 @@
    "note": "no sheeted subjects; abort"
   },
   "S21-c12": {
-   "note": "QUEUED S21-c12_audioOnly_t01 (1 sheets + 0 plate, audio S21-c12_audio.mp4, seed 1289834348)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:38",
+   "note": "QUEUED S21-c12_audioOnly_t01 (1 sheets + 0 plate, audio S21-c12_audio.mp4, seed 1289834348)"
   },
   "S21-c13": {
    "skipped": "2026-10-28T08:12:30",
    "note": "no sheeted subjects; abort"
   },
   "S21-c14": {
-   "note": "QUEUED S21-c14_audioOnly_t01 (2 sheets + 0 plate, audio S21-c14_audio.mp4, seed 2776820313)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:43",
+   "note": "QUEUED S21-c14_audioOnly_t01 (2 sheets + 0 plate, audio S21-c14_audio.mp4, seed 2776820313)"
   },
   "S21-c15": {
-   "note": "QUEUED S21-c15_audioOnly_t01 (2 sheets + 0 plate, audio S21-c15_audio.mp4, seed 3531987663)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:48",
+   "note": "QUEUED S21-c15_audioOnly_t01 (2 sheets + 0 plate, audio S21-c15_audio.mp4, seed 3531987663)"
   },
   "S21-c16": {
-   "note": "QUEUED S21-c16_audioOnly_t01 (2 sheets + 0 plate, audio S21-c16_audio.mp4, seed 1267501941)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:52",
+   "note": "QUEUED S21-c16_audioOnly_t01 (2 sheets + 0 plate, audio S21-c16_audio.mp4, seed 1267501941)"
   },
   "S21-c17": {
-   "note": "QUEUED S21-c17_audioOnly_t01 (3 sheets + 0 plate, audio S21-c17_audio.mp4, seed 1015790563)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:41:58",
+   "note": "QUEUED S21-c17_audioOnly_t01 (3 sheets + 0 plate, audio S21-c17_audio.mp4, seed 1015790563)"
   },
   "S21-c18": {
-   "note": "QUEUED S21-c18_audioOnly_t01 (1 sheets + 0 plate, audio S21-c18_audio.mp4, seed 2889131634)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:00",
+   "note": "QUEUED S21-c18_audioOnly_t01 (1 sheets + 0 plate, audio S21-c18_audio.mp4, seed 2889131634)"
   },
   "S21-c19": {
-   "note": "QUEUED S21-c19_audioOnly_t01 (1 sheets + 0 plate, audio S21-c19_audio.mp4, seed 3677591268)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:03",
+   "note": "QUEUED S21-c19_audioOnly_t01 (1 sheets + 0 plate, audio S21-c19_audio.mp4, seed 3677591268)"
   },
   "S21-c20": {
-   "note": "QUEUED S21-c20_audioOnly_t01 (1 sheets + 0 plate, audio S21-c20_audio.mp4, seed 2311224707)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:05",
+   "note": "QUEUED S21-c20_audioOnly_t01 (1 sheets + 0 plate, audio S21-c20_audio.mp4, seed 2311224707)"
   },
   "S21-c21": {
-   "note": "QUEUED S21-c21_audioOnly_t01 (2 sheets + 0 plate, audio S21-c21_audio.mp4, seed 4274343189)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:10",
+   "note": "QUEUED S21-c21_audioOnly_t01 (2 sheets + 0 plate, audio S21-c21_audio.mp4, seed 4274343189)"
   },
   "S21-c22": {
    "skipped": "2026-10-28T08:12:36",
    "note": "no sheeted subjects; abort"
   },
   "S21-c23": {
-   "note": "QUEUED S21-c23_audioOnly_t01 (1 sheets + 0 plate, audio S21-c23_audio.mp4, seed 281750585)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:12",
+   "note": "QUEUED S21-c23_audioOnly_t01 (1 sheets + 0 plate, audio S21-c23_audio.mp4, seed 281750585)"
   },
   "S21-c24": {
    "skipped": "2026-10-28T08:12:36",
    "note": "no sheeted subjects; abort"
   },
   "S21-c25": {
-   "note": "QUEUED S21-c25_audioOnly_t01 (1 sheets + 0 plate, audio S21-c25_audio.mp4, seed 4188571916)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:15",
+   "note": "QUEUED S21-c25_audioOnly_t01 (1 sheets + 0 plate, audio S21-c25_audio.mp4, seed 4188571916)"
   },
   "S22-c01": {
-   "note": "QUEUED S22-c01_audioOnly_t01 (1 sheets + 0 plate, audio S22-c01_audio.mp4, seed 2337494343)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:17",
+   "note": "QUEUED S22-c01_audioOnly_t01 (1 sheets + 0 plate, audio S22-c01_audio.mp4, seed 2337494343)"
   },
   "S22-c02": {
-   "note": "QUEUED S22-c02_audioOnly_t01 (1 sheets + 0 plate, audio S22-c02_audio.mp4, seed 307889405)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:20",
+   "note": "QUEUED S22-c02_audioOnly_t01 (1 sheets + 0 plate, audio S22-c02_audio.mp4, seed 307889405)"
   },
   "S22-c03": {
    "skipped": "2026-10-28T08:12:38",
    "note": "no sheeted subjects; abort"
   },
   "S22-c04": {
-   "note": "QUEUED S22-c04_audioOnly_t01 (1 sheets + 0 plate, audio S22-c04_audio.mp4, seed 4214858184)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:23",
+   "note": "QUEUED S22-c04_audioOnly_t01 (1 sheets + 0 plate, audio S22-c04_audio.mp4, seed 4214858184)"
   },
   "S22-c05": {
-   "note": "QUEUED S22-c05_audioOnly_t01 (1 sheets + 0 plate, audio S22-c05_audio.mp4, seed 2352910686)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:25",
+   "note": "QUEUED S22-c05_audioOnly_t01 (1 sheets + 0 plate, audio S22-c05_audio.mp4, seed 2352910686)"
   },
   "S22-c06": {
    "skipped": "2026-10-28T08:12:42",
    "note": "no sheeted subjects; abort"
   },
   "S22-c07": {
-   "note": "QUEUED S22-c07_audioOnly_t01 (1 sheets + 0 plate, audio S22-c07_audio.mp4, seed 1647374450)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:27",
+   "note": "QUEUED S22-c07_audioOnly_t01 (1 sheets + 0 plate, audio S22-c07_audio.mp4, seed 1647374450)"
   },
   "S22-c08": {
-   "note": "QUEUED S22-c08_audioOnly_t01 (1 sheets + 0 plate, audio S22-c08_audio.mp4, seed 4069518819)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:33",
+   "note": "QUEUED S22-c08_audioOnly_t01 (1 sheets + 0 plate, audio S22-c08_audio.mp4, seed 4069518819)"
   },
   "S22-c09": {
-   "note": "QUEUED S22-c09_audioOnly_t01 (2 sheets + 0 plate, audio S22-c09_audio.mp4, seed 2240339317)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:38",
+   "note": "QUEUED S22-c09_audioOnly_t01 (2 sheets + 0 plate, audio S22-c09_audio.mp4, seed 2240339317)"
   },
   "S22-c10": {
-   "note": "QUEUED S22-c10_audioOnly_t01 (2 sheets + 0 plate, audio S22-c10_audio.mp4, seed 3847181456)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:41",
+   "note": "QUEUED S22-c10_audioOnly_t01 (2 sheets + 0 plate, audio S22-c10_audio.mp4, seed 3847181456)"
   },
   "S22-c11": {
-   "note": "QUEUED S22-c11_audioOnly_t01 (2 sheets + 0 plate, audio S22-c11_audio.mp4, seed 2454217734)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:45",
+   "note": "QUEUED S22-c11_audioOnly_t01 (2 sheets + 0 plate, audio S22-c11_audio.mp4, seed 2454217734)"
   },
   "S22-c12": {
-   "note": "QUEUED S22-c12_audioOnly_t01 (2 sheets + 0 plate, audio S22-c12_audio.mp4, seed 188822972)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:51",
+   "note": "QUEUED S22-c12_audioOnly_t01 (2 sheets + 0 plate, audio S22-c12_audio.mp4, seed 188822972)"
   },
   "S22-c13": {
    "skipped": "2026-10-28T08:12:52",
    "note": "no sheeted subjects; abort"
   },
   "S22-c14": {
-   "note": "QUEUED S22-c14_audioOnly_t01 (1 sheets + 0 plate, audio S22-c14_audio.mp4, seed 3793916041)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:54",
+   "note": "QUEUED S22-c14_audioOnly_t01 (1 sheets + 0 plate, audio S22-c14_audio.mp4, seed 3793916041)"
   },
   "S22-c15": {
    "skipped": "2026-10-28T08:12:52",
    "note": "no sheeted subjects; abort"
   },
   "S22-c16": {
-   "note": "QUEUED S22-c16_audioOnly_t01 (1 sheets + 0 plate, audio S22-c16_audio.mp4, seed 204272037)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:42:56",
+   "note": "QUEUED S22-c16_audioOnly_t01 (1 sheets + 0 plate, audio S22-c16_audio.mp4, seed 204272037)"
   },
   "S22-c17": {
    "skipped": "2026-10-28T08:12:53",
@@ -2085,124 +2085,124 @@
    "note": "no sheeted subjects; abort"
   },
   "S22-c21": {
-   "note": "QUEUED S22-c21_audioOnly_t01 (2 sheets + 0 plate, audio S22-c21_audio.mp4, seed 3110418373)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:00",
+   "note": "QUEUED S22-c21_audioOnly_t01 (2 sheets + 0 plate, audio S22-c21_audio.mp4, seed 3110418373)"
   },
   "S22-c22": {
-   "note": "QUEUED S22-c22_audioOnly_t01 (1 sheets + 0 plate, audio S22-c22_audio.mp4, seed 543975039)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:02",
+   "note": "QUEUED S22-c22_audioOnly_t01 (1 sheets + 0 plate, audio S22-c22_audio.mp4, seed 543975039)"
   },
   "S22-c23": {
    "skipped": "2026-10-28T08:12:55",
    "note": "no sheeted subjects; abort"
   },
   "S23-c01": {
-   "note": "QUEUED S23-c01_audioOnly_t01 (1 sheets + 0 plate, audio S23-c01_audio.mp4, seed 3056827639)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:04",
+   "note": "QUEUED S23-c01_audioOnly_t01 (1 sheets + 0 plate, audio S23-c01_audio.mp4, seed 3056827639)"
   },
   "S23-c02": {
-   "note": "QUEUED S23-c02_audioOnly_t01 (1 sheets + 0 plate, audio S23-c02_audio.mp4, seed 792341837)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:07",
+   "note": "QUEUED S23-c02_audioOnly_t01 (1 sheets + 0 plate, audio S23-c02_audio.mp4, seed 792341837)"
   },
   "S23-c03": {
-   "note": "QUEUED S23-c03_audioOnly_t01 (1 sheets + 0 plate, audio S23-c03_audio.mp4, seed 1480400347)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:09",
+   "note": "QUEUED S23-c03_audioOnly_t01 (1 sheets + 0 plate, audio S23-c03_audio.mp4, seed 1480400347)"
   },
   "S23-c04": {
-   "note": "QUEUED S23-c04_audioOnly_t01 (1 sheets + 0 plate, audio S23-c04_audio.mp4, seed 3327756408)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:12",
+   "note": "QUEUED S23-c04_audioOnly_t01 (1 sheets + 0 plate, audio S23-c04_audio.mp4, seed 3327756408)"
   },
   "S23-c05": {
-   "note": "QUEUED S23-c05_audioOnly_t01 (2 sheets + 0 plate, audio S23-c05_audio.mp4, seed 2975774958)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:16",
+   "note": "QUEUED S23-c05_audioOnly_t01 (2 sheets + 0 plate, audio S23-c05_audio.mp4, seed 2975774958)"
   },
   "S24-c01": {
-   "note": "QUEUED S24-c01_audioOnly_t01 (2 sheets + 0 plate, audio S24-c01_audio.mp4, seed 68395239)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:20",
+   "note": "QUEUED S24-c01_audioOnly_t01 (2 sheets + 0 plate, audio S24-c01_audio.mp4, seed 68395239)"
   },
   "S24-c02": {
-   "note": "QUEUED S24-c02_audioOnly_t01 (2 sheets + 0 plate, audio S24-c02_audio.mp4, seed 2635788637)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:25",
+   "note": "QUEUED S24-c02_audioOnly_t01 (2 sheets + 0 plate, audio S24-c02_audio.mp4, seed 2635788637)"
   },
   "S24-c03": {
-   "note": "QUEUED S24-c03_audioOnly_t01 (2 sheets + 0 plate, audio S24-c03_audio.mp4, seed 3927818699)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:29",
+   "note": "QUEUED S24-c03_audioOnly_t01 (2 sheets + 0 plate, audio S24-c03_audio.mp4, seed 3927818699)"
   },
   "S24-c04": {
-   "note": "QUEUED S24-c04_audioOnly_t01 (2 sheets + 0 plate, audio S24-c04_audio.mp4, seed 1954108520)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:33",
+   "note": "QUEUED S24-c04_audioOnly_t01 (2 sheets + 0 plate, audio S24-c04_audio.mp4, seed 1954108520)"
   },
   "S24-c05": {
-   "note": "QUEUED S24-c05_audioOnly_t01 (2 sheets + 0 plate, audio S24-c05_audio.mp4, seed 58615038)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:37",
+   "note": "QUEUED S24-c05_audioOnly_t01 (2 sheets + 0 plate, audio S24-c05_audio.mp4, seed 58615038)"
   },
   "S24-c06": {
-   "note": "QUEUED S24-c06_audioOnly_t01 (1 sheets + 0 plate, audio S24-c06_audio.mp4, seed 2591503684)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:39",
+   "note": "QUEUED S24-c06_audioOnly_t01 (1 sheets + 0 plate, audio S24-c06_audio.mp4, seed 2591503684)"
   },
   "S25-c01": {
-   "note": "QUEUED S25-c01_audioOnly_t01 (2 sheets + 0 plate, audio S25-c01_audio.mp4, seed 963873111)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:43",
+   "note": "QUEUED S25-c01_audioOnly_t01 (2 sheets + 0 plate, audio S25-c01_audio.mp4, seed 963873111)"
   },
   "S25-c02": {
-   "note": "QUEUED S25-c02_audioOnly_t01 (2 sheets + 0 plate, audio S25-c02_audio.mp4, seed 2692405485)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:47",
+   "note": "QUEUED S25-c02_audioOnly_t01 (2 sheets + 0 plate, audio S25-c02_audio.mp4, seed 2692405485)"
   },
   "S25-c03": {
-   "note": "QUEUED S25-c03_audioOnly_t01 (2 sheets + 0 plate, audio S25-c03_audio.mp4, seed 3615352955)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:51",
+   "note": "QUEUED S25-c03_audioOnly_t01 (2 sheets + 0 plate, audio S25-c03_audio.mp4, seed 3615352955)"
   },
   "S25-c04": {
-   "note": "QUEUED S25-c04_audioOnly_t01 (1 sheets + 0 plate, audio S25-c04_audio.mp4, seed 1226407384)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:53",
+   "note": "QUEUED S25-c04_audioOnly_t01 (1 sheets + 0 plate, audio S25-c04_audio.mp4, seed 1226407384)"
   },
   "S25-c05": {
-   "note": "QUEUED S25-c05_audioOnly_t01 (1 sheets + 0 plate, audio S25-c05_audio.mp4, seed 1042173262)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:43:56",
+   "note": "QUEUED S25-c05_audioOnly_t01 (1 sheets + 0 plate, audio S25-c05_audio.mp4, seed 1042173262)"
   },
   "S25-c06": {
-   "note": "QUEUED S25-c06_audioOnly_t01 (2 sheets + 0 plate, audio S25-c06_audio.mp4, seed 2803309812)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:00",
+   "note": "QUEUED S25-c06_audioOnly_t01 (2 sheets + 0 plate, audio S25-c06_audio.mp4, seed 2803309812)"
   },
   "S25-c07": {
-   "note": "QUEUED S25-c07_audioOnly_t01 (1 sheets + 0 plate, audio S25-c07_audio.mp4, seed 3490720866)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:02",
+   "note": "QUEUED S25-c07_audioOnly_t01 (1 sheets + 0 plate, audio S25-c07_audio.mp4, seed 3490720866)"
   },
   "S25-c08": {
-   "note": "QUEUED S25-c08_audioOnly_t01 (1 sheets + 0 plate, audio S25-c08_audio.mp4, seed 1085223411)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:04",
+   "note": "QUEUED S25-c08_audioOnly_t01 (1 sheets + 0 plate, audio S25-c08_audio.mp4, seed 1085223411)"
   },
   "S25-c09": {
-   "note": "QUEUED S25-c09_audioOnly_t01 (1 sheets + 0 plate, audio S25-c09_audio.mp4, seed 933757285)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:07",
+   "note": "QUEUED S25-c09_audioOnly_t01 (1 sheets + 0 plate, audio S25-c09_audio.mp4, seed 933757285)"
   },
   "S25-c10": {
    "skipped": "2026-10-28T08:13:08",
    "note": "no sheeted subjects; abort"
   },
   "S25-c11": {
-   "note": "QUEUED S25-c11_audioOnly_t01 (1 sheets + 0 plate, audio S25-c11_audio.mp4, seed 543733782)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:09",
+   "note": "QUEUED S25-c11_audioOnly_t01 (1 sheets + 0 plate, audio S25-c11_audio.mp4, seed 543733782)"
   },
   "S25-c12": {
-   "note": "QUEUED S25-c12_audioOnly_t01 (1 sheets + 0 plate, audio S25-c12_audio.mp4, seed 3110201772)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:12",
+   "note": "QUEUED S25-c12_audioOnly_t01 (1 sheets + 0 plate, audio S25-c12_audio.mp4, seed 3110201772)"
   },
   "S25-c13": {
-   "note": "QUEUED S25-c13_audioOnly_t01 (1 sheets + 0 plate, audio S25-c13_audio.mp4, seed 3462846778)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:15",
+   "note": "QUEUED S25-c13_audioOnly_t01 (1 sheets + 0 plate, audio S25-c13_audio.mp4, seed 3462846778)"
   },
   "S26-c01": {
-   "note": "QUEUED S26-c01_audioOnly_t01 (2 sheets + 0 plate, audio S26-c01_audio.mp4, seed 2127819655)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:19",
+   "note": "QUEUED S26-c01_audioOnly_t01 (2 sheets + 0 plate, audio S26-c01_audio.mp4, seed 2127819655)"
   },
   "S26-c02": {
-   "note": "QUEUED S26-c02_audioOnly_t01 (1 sheets + 0 plate, audio S26-c02_audio.mp4, seed 3889865277)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:22",
+   "note": "QUEUED S26-c02_audioOnly_t01 (1 sheets + 0 plate, audio S26-c02_audio.mp4, seed 3889865277)"
   },
   "S26-c03": {
-   "note": "QUEUED S26-c03_audioOnly_t01 (1 sheets + 0 plate, audio S26-c03_audio.mp4, seed 2430440107)",
-   "reset": "2026-11-05 re-queue with t10 photoreal sheets + corrected (S#) + presence"
+   "queued": "2026-11-05T13:44:24",
+   "note": "QUEUED S26-c03_audioOnly_t01 (1 sheets + 0 plate, audio S26-c03_audio.mp4, seed 2430440107)"
   },
   "S26-c04": {
    "skipped": "2026-10-28T08:13:11",

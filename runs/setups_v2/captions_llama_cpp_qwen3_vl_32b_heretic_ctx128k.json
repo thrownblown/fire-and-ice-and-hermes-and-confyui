@@ -1,0 +1,58 @@
+{
+ "shot:00067": {
+  "location": "ice cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00068": {
+  "location": "dark cavern interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00069": {
+  "location": "ice cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00070": {
+  "location": "dark cavern interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00071": {
+  "location": "ice cave interior",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00072": {
+  "location": "cave interior with glowing blue rock formations",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 1,
+  "creatures": 0
+ },
+ "shot:00073": {
+  "location": "icy cavern interior",
+  "framing": "MS",
+  "angle": "eye-level",
+  "persons": 4,
+  "creatures": 0
+ },
+ "shot:00074": {
+  "location": "cave interior with glowing blue rock formations",
+  "framing": "CU",
+  "angle": "eye-level",
+  "persons": 2,
+  "creatures": 0
+ }
+}
