@@ -7,4 +7,16 @@ ROOT=$(git rev-parse --show-toplevel)
 PY="$ROOT/.venv/Scripts/python.exe"
 [ -x "$PY" ] || PY="$(command -v python3 || command -v python)"
 
-exec "$PY" "$ROOT/tools/spicy_check.py" --staged "$@"
+# The guard is deliberately untracked (its term list names the vocabulary it blocks), so a fresh
+# clone does not have it. Degrade to a no-op with a notice instead of failing every commit.
+if [ -f "$ROOT/tools/spicy_check.py" ]; then
+  # The guard is deliberately untracked (its term list names the vocabulary it blocks), so a fresh
+# clone does not have it. Degrade to a no-op with a notice instead of failing every commit.
+if [ -f "$ROOT/tools/spicy_check.py" ]; then
+  exec "$PY" "$ROOT/tools/spicy_check.py" --staged "$@"
+fi
+echo "spicy_check: local content guard not present on this clone - skipping" >&2
+exit 0
+fi
+echo "spicy_check: local content guard not present on this clone — skipping" >&2
+exit 0

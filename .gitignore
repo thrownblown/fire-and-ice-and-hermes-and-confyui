@@ -62,6 +62,10 @@ renders/*/object_info.json
 renders/*/history.json
 *.safetensors
 
+# A saved ComfyUI UI workflow that embeds ~96 LoRA filenames (~14500 lines of nodes);
+# it is not runnable by our API path and is the biggest source of adult-vocabulary hits.
+corpus/2_low_mm_20260925_091204_00001-audio.json
+
 # Pre-rewrite bundles hold the old history; never commit them
 .backups/
 
