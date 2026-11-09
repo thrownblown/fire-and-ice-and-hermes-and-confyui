@@ -48,9 +48,10 @@ older FL2VA shape. If the input is three-field, convert it.
 4. **Declare what each reference image IS.** A character sheet is one person shown from several
    angles; unsaid, the model reads its panels as several similar people and renders a crowd of
    clones. For every sheet attached:
-   "<Picture N> is a reference sheet of <Subject M>, the same person shown from several angles. Do
-   not treat the panels as different people." Keep it to that one line. State `[reference
-   generation]` in `summary` — never `[keyframe completion]`.
+   "<Picture N> is a reference sheet of <Subject M>, showing the same person from several angles." Keep
+   it to that one line — no "do not treat the panels as different people", which is a negation and this
+   stack ignores those (it is also a left-over prohibition Alex caught, 2026-11-07). State
+   `[reference generation]` in `summary` — never `[keyframe completion]`.
 
 5. **NEVER NARRATE THE SOURCE CLIP.** Alex, 2026-11-07: "this whole chunk serves no value to the
    video model … it only confuses the model." The blocking you are given is a VLM's frame-by-frame

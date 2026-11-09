@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import os
 import subprocess
 import sys
 import time
@@ -29,7 +30,10 @@ ROOT = Path(r"E:/FNI")
 PY = str(ROOT / ".venv" / "Scripts" / "python.exe")
 BLOCKER = str(ROOT / "tools" / "vlm_blocking.py")
 DRIVER = str(ROOT / "runs" / "build_technicolor_audio_only.py")
-STATE = ROOT / "runs" / "yolo_state.json"
+STATE = Path(os.environ.get("FNI_YOLO_STATE", str(ROOT / "runs" / "yolo_state.json")))
+# Split the chunk list across rigs: "0" takes even indices, "1" odd. Two feeders on two rigs would
+# otherwise queue every chunk twice.
+SHARD = os.environ.get("FNI_YOLO_SHARD", "")
 CHUNKS = ROOT / "fullrun" / "chunks.jsonl"
 
 
@@ -197,7 +201,9 @@ def do_pass(st, scenes, args, usable_blocking, now) -> bool:
         blk_now = json.loads((ROOT / "manifests" / "blocking.json").read_text(encoding="utf-8")) \
             if (ROOT / "manifests" / "blocking.json").exists() else {}
 
-        for cid in chunk_ids:
+        for _i, cid in enumerate(chunk_ids):
+            if SHARD in ("0", "1") and (_i % 2) != int(SHARD):
+                continue
             prev = st["chunks"].get(cid, {})
             if prev.get("queued") or prev.get("skipped"):
                 continue

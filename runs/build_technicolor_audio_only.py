@@ -369,7 +369,7 @@ def main():
     # rewritten as descriptions, sheets declared, source narration dropped, five-field grammar) never
     # reached a render. With --edit the composed prompt goes through the editor first and the EDITED text
     # is what the graph carries. The writer's own text is still written to prompts/ as provenance.
-    if args.edit:
+    if args.edit or os.environ.get("FNI_PROMPT_EDIT") == "1":
         try:
             sys.path.insert(0, str(ROOT / "tools"))
             import prompt_editor as pe

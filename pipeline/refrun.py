@@ -103,6 +103,11 @@ def _live_options(class_type: str) -> list[str]:
     return opts
 
 
+def _basename(p) -> str:
+    """Filename only, separators normalised and lowercased — a rig may report backslashes."""
+    return str(p).replace("\\", "/").rsplit("/", 1)[-1].lower()
+
+
 def reconcile_assets(graph: dict, context: str = "") -> dict:
     """Rewrite stale asset paths to the rig's live ones, by basename. Mutates and returns `graph`.
 
@@ -118,7 +123,7 @@ def reconcile_assets(graph: dict, context: str = "") -> dict:
         ins = node.get("inputs") or {}
         for key, cls in _ASSET_INPUTS.items():
             val = ins.get(key)
-            if not isinstance(val, str) or "/" not in val:
+            if not isinstance(val, str) or ("/" not in val and "\\" not in val):
                 continue
             try:
                 opts = _live_options(cls)
@@ -128,10 +133,27 @@ def reconcile_assets(graph: dict, context: str = "") -> dict:
                 return graph
             if not opts or val in opts:
                 continue
-            base = val.split("/")[-1]
-            match = [o for o in opts if o.split("/")[-1] == base]
+            # Compare BASENAMES with separators normalised. A Windows rig reports "h3\\file.safetensors"
+            # while a graph authored on the Linux box carries "h3/file.safetensors", so splitting on "/"
+            # alone matched nothing and the build died with "not on the rig" while listing the identical
+            # name as a near miss — which blocked using the 4090 as a second render rig (2026-11-07).
+            base = _basename(val)
+            match = [o for o in opts if _basename(o) == base]
             if not match:
-                near = [o for o in opts if base[:16].lower() in o.lower()][:5]
+                # A rig may legitimately lack a file (the 4090 has 185 LoRAs and no ref2v one, while the
+                # 5090's ref2v turbo LoRA is the graph's speed knob). With FNI_ALLOW_LORA_DROP=1 a missing
+                # *LoRA* is neutralised instead of killing the build, so the rig can still render — the
+                # node stays in the chain with strength 0, and the drop is printed, never silent.
+                if os.environ.get("FNI_ALLOW_LORA_DROP") == "1" and "lora" in key.lower():
+                    for sk in ("strength_model", "strength_clip", "strength"):
+                        if sk in ins:
+                            ins[sk] = 0.0
+                    fixes.append((nid, cls, val, f"dropped (strength 0): not on this rig"))
+                    print(f"[reconcile] {cls} node {nid}: {base} is NOT on this rig — "
+                          f"neutralised (strength 0). Turbo/speed LoRA absent; expect full-step cost.",
+                          file=sys.stderr)
+                    continue
+                near = [o for o in opts if base[:16] in _basename(o)][:5]
                 raise RuntimeError(
                     f"{context}: {key}={val!r} is not on the rig and nothing with that basename "
                     f"exists there. Near miss(es): {near}")
