@@ -1,0 +1,23 @@
+subject_definitions: 
+<Subject 1> is ENVOY, shown in <Picture 1> — the character sheet for ENVOY, showing the same person from several angles.
+<Subject 2> is JAROL, a bald head and a long white beard and a red tunic with gold accents, shown in <Picture 2> — the character sheet for JAROL, showing the same person from several angles.
+<Subject 3> is TARO, long straight black hair and a red vest and gold armbands, shown in <Picture 3> — the character sheet for TARO, showing the same person from several angles.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of ENVOY, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep identity consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep a bald head and a long white beard and a red tunic with gold accents consistent across [Shot 1] and [Shot 3].
+<Subject 3>: fully_preserved — keep long straight black hair and a red vest and gold armbands consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 4>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+[Shot 1] The camera arcs around <Subject 1> and <Subject 2> with small amplitude at slow speed, shifting the angle across the passage. <Subject 3> (S1) says: <d>[English] To hell with Nekron and his offer. We are free men, not slaves.</d>
+[Shot 2] The camera arcs around <Subject 1> and <Subject 2> with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S2) says: <d>[English] King Jarol, be reasonable.</d>
+[Shot 3] The camera arcs around <Subject 1> and <Subject 2> with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 2> (S1) says: <d>[English] My son, Taro, speaks more with his heart than with his head.</d>
+
+overall_soundscape: 
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.

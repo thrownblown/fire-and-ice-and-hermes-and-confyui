@@ -1,44 +1,20 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is DARKWOLF, deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates, shown in <Picture 1> — the character sheet for DARKWOLF. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is DARKWOLF, deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates, shown in <Picture 1>.
+summary: 
+[reference generation] [audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of DARKWOLF, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of DARKWOLF, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+[Shot 1] The camera stays low and tilts up. The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage. In this shot <Subject 1> is alone in frame.
+[Shot 2] The camera stays low and tilts up. The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Don't hunt for death, boy.</d> In this shot <Subject 1> is alone in frame.
+[Shot 3] The camera stays low and tilts up. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. In this shot <Subject 1> is alone in frame.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-There are two main characters visible across the frames; no background extras are present. In the first and third frames, a muscular figure with a black panther-like hood stands facing the camera, holding a weapon; they are stationary. In the second frame, a second figure with blonde hair lies down on the ground, viewed from above, also stationary. The setting appears to be an outdoor environment, possibly a jungle or wilderness, under a cloudy sky.
-
-[Shot 1] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 2] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Don't hunt for death, boy.</d>
-
-[Shot 3] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
-
-
-
-non_diegetic_music:
-
-Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

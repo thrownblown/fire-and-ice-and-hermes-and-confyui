@@ -1,44 +1,20 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1> — the character sheet for TEEGRA. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+[Shot 1] The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage.
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face of <Subject 1>.
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face of <Subject 1>. The move slows and stops as <Subject 1> settles.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-There is one person visible in all frames, with no background extras. The person is standing in a rocky, cavernous environment with icy or crystalline formations, illuminated by soft, diffuse light and small glowing points in the background. In the first frame, she stands facing slightly to the side, holding a small knife in her right hand. In the second and third frames, she is shown in close-up, facing forward and slightly to the right, with her head turned as if observing something off-screen. She remains stationary throughout.
-
-[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face.
-
-[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
-A tight damp space with almost no reverb, close breathing, water dripping, chain and cloth movement.
-
-
-
-non_diegetic_music:
-
-Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.
+overall_soundscape: 
+A tight damp space with close breathing, water dripping, chain and cloth movement.

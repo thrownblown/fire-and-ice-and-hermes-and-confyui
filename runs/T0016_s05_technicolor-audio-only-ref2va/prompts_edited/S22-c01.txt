@@ -1,0 +1,23 @@
+subject_definitions: 
+<Subject 1> is NEKRON, long white hair, pale skin, and dark purple robes, shown in <Picture 1> — the character sheet for NEKRON. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of NEKRON, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+[Shot 1] The camera stays low and tilts up. The camera pulls out with small amplitude at slow speed, opening the space around the subject.
+
+[Shot 2] The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 3] The camera pulls out with small amplitude at slow speed, opening the space around the subject. The move slows and stops as the figure settles.
+
+overall_soundscape: 
+Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.

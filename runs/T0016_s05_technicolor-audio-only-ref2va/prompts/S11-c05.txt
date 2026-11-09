@@ -1,42 +1,19 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1> — the character sheet for TEEGRA. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space around the subject.
+[Shot 2] The camera pulls out with small amplitude at slow speed, opening the space around the subject. The move slows and stops as the figure settles.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-Two people are visible in total, both main characters with no background extras. In the first frame, a woman is standing on a stone bridge, facing left and slightly away from the camera, while a man is running on the right side of the bridge, facing left and moving toward the center. In the second frame, the woman is standing on a rocky outcrop, facing forward and slightly to the right, with her body oriented toward the camera. The setting is an outdoor, rocky, jungle-like environment at night, with starry skies and ancient stone structures.
-
-[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space around the figures.
-
-[Shot 2] The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
-
-
-
-non_diegetic_music:
-
-Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.

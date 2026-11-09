@@ -1,0 +1,17 @@
+{"char": "NEKRON", "ts": "2026-11-05T10:42:56", "take": 10, "action": "error-stage1"}
+{"char": "ROLIEL", "ts": "2026-11-05T10:43:58", "take": 10, "action": "error-stage1"}
+{"char": "NEKRON", "ts": "2026-11-05T10:45:38", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_nekron_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "ROLIEL", "ts": "2026-11-05T10:46:46", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_roliel_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "TEEGRA", "ts": "2026-11-05T11:03:29", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_teegra_t01_00001_.png", "action": "error-stage2"}
+{"char": "LARN", "ts": "2026-11-05T11:19:14", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_larn_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "NEKRON", "ts": "2026-11-05T11:25:38", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_nekron_t01_00001_.png", "action": "error-stage2"}
+{"char": "TUTOR", "ts": "2026-11-05T11:27:51", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_tutor_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "JAROL", "ts": "2026-11-05T11:31:10", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_jarol_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "TARO", "ts": "2026-11-05T11:34:56", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_taro_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "DARKWOLF", "ts": "2026-11-05T11:38:53", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_darkwolf_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "ROLIEL", "ts": "2026-11-05T11:45:09", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_roliel_t01_00001_.png", "action": "error-stage2"}
+{"char": "JULIANA", "ts": "2026-11-05T11:49:35", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_juliana_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "SPIRIT", "ts": "2026-11-05T11:51:57", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_spirit_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "ENVOY", "ts": "2026-11-05T11:52:59", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_envoy_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "SUBHUMAN CAPTAIN", "ts": "2026-11-05T11:54:45", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_subhuman_captain_t01_00001_.png", "action": "wrote-sheet"}
+{"char": "SUBHUMAN", "ts": "2026-11-05T11:59:04", "take": 10, "photoreal_still": "runs/subhuman-krea2/scenes/stills/photoreal_subhuman_t01_00001_.png", "action": "wrote-sheet"}

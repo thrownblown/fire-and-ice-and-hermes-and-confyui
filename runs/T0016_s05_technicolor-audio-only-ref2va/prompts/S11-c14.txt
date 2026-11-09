@@ -1,42 +1,19 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN, showing the same person from several angles.
+<Subject 2> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 2> — the character sheet for TEEGRA, showing the same person from several angles.
 
-<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
-<Subject 2> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 2>.
+summary: 
+[reference generation] [audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN and TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
-<Subject 2>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 1].
+<Subject 2>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 1].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
-
-
-detailed_description:
-
+detailed_description: 
 a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+[Shot 1] The camera arcs around the characters (<Subject 1> and <Subject 2>) with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 2> (S1) says: <d>[English] Where are you going?</d> <Subject 1> (S2) says: <d>[English] I'm going home to my people.</d>
 
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-Two people are visible in the scene; there are no background extras. Both are lying down on a stone surface, positioned close together, with one person resting their head on the other’s chest. They are not facing the camera directly but are angled slightly away. The setting is an outdoor, rocky area at night, with a fire burning nearby and foliage surrounding the stone ground.
-
-[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 2> (S2) says: <d>[English] Where are you going?</d> <Subject 1> (S1) says: <d>[English] I'm going home to my people.</d>
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
-
-
-
-non_diegetic_music:
-
-Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.

@@ -1,42 +1,19 @@
-subject_definitions:
-
+subject_definitions: 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 <Subject 1> is SPIRIT, a skeletal figure with long white hair and a black garment, shown in <Picture 1>.
 
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of SPIRIT, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of SPIRIT, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
+retention_analysis: 
 <Subject 1>: fully_preserved — keep a skeletal figure with long white hair and a black garment consistent across [Shot 1] and [Shot 2].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+[Shot 1] The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] Nekron?</d>
+[Shot 2] The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] Akatar. They take her to Akatar.</d>
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-There are two main figures visible in the scene; no background extras are present. In the first frame, a skeletal figure with long white hair is standing, facing slightly toward the camera, with one hand near its chin. In the second frame, a muscular man with blond hair stands behind the skeleton, also facing forward, with his hands on the skeleton’s shoulders. The setting appears to be a dark, outdoor area with stone structures, glowing embers, and stakes embedded in the ground, suggesting a cave or ritual site.
-
-[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] Nekron?</d>
-
-[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] Akatar. They take her to Akatar.</d>
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
-
-
-
-non_diegetic_music:
-
-Solo flute and bowed vibraphone at a slow tempo with wide spacing between notes, held at very low volume.

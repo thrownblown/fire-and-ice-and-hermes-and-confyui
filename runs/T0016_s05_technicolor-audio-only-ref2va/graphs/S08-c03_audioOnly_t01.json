@@ -221,7 +221,7 @@
   },
   "149": {
     "inputs": {
-      "image": "JAROL_sheet_t01_00001_.png"
+      "image": "JAROL_sheet_t10_00001_.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -230,11 +230,20 @@
   },
   "150": {
     "inputs": {
-      "image": "TARO_sheet_t01_00001_.png"
+      "image": "TARO_sheet_t10_00001_.png"
     },
     "class_type": "LoadImage",
     "_meta": {
       "title": "Load Image 2"
+    }
+  },
+  "151": {
+    "inputs": {
+      "image": "fire-keep-ramparts_plate_t02_00002_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image Plate 1"
     }
   },
   "136": {
@@ -276,6 +285,10 @@
         "150",
         0
       ],
+      "ref_images.ref_image_2": [
+        "151",
+        0
+      ],
       "ref_audios.ref_audio_0": [
         "190",
         0
@@ -288,7 +301,7 @@
   },
   "138": {
     "inputs": {
-      "value": "subject_definitions:\n\n<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1>.\n<Subject 2> is TARO, long straight black hair, a red vest, and gold armbands, shown in <Picture 2>.\n\n\n\nsummary:\n\n[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JAROL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\n\n\nretention_analysis:\n\n<Subject 1>: fully_preserved \u2014 keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 2].\n<Subject 2>: fully_preserved \u2014 keep long straight black hair, a red vest, and gold armbands consistent across [Shot 1] and [Shot 2].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n\n\n\ndetailed_description:\n\na technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour\n\nONLY the named characters are present in the shot \u2014 there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.\n\nOne person is visible in the frame; there are no background extras. The person is stationary and facing slightly to the right of the camera, with their head turned in profile. The setting appears to be a dimly lit, enclosed space with rough, dark stone or rock walls, suggesting a cave or dungeon.\n\n[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 2> (S2) says: <d>[English] For Nekron's new demands?</d> <Subject 1> (S1) says: <d>[English] For his siege!</d>\n\n\n\noverall_soundscape:\n\nRoom reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.\n\n\n\nnon_diegetic_music:\n\nSolo flute and bowed vibraphone at a slow tempo with wide spacing between notes, held at very low volume."
+      "value": "subject_definitions: \n<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1> \u2014 the character sheet for JAROL.\n<Subject 2> is TARO, long straight black hair, a red vest, and gold armbands, shown in <Picture 2> \u2014 the character sheet for TARO.\n<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.\n<Picture 2> is a reference sheet of <Subject 2>, showing the same person from several angles.\n<Picture 3> is a location plate.\n\nsummary: \n[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of <Subject 1> and <Subject 2>, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\nretention_analysis: \n<Subject 1>: fully_preserved \u2014 keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 1].\n<Subject 2>: fully_preserved \u2014 keep long straight black hair, a red vest, and gold armbands consistent across [Shot 1] and [Shot 1].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n<Picture 3>: background_only \u2014 the location as a painted environment: keep its layout, lighting, colour and architecture.\n\ndetailed_description: \na technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour\n[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 2> (S1) says: <d>[English] For Nekron's new demands?</d> <Subject 1> (S2) says: <d>[English] For his siege!</d>\n\noverall_soundscape: \nRoom reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement."
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
@@ -355,7 +368,7 @@
   },
   "145": {
     "inputs": {
-      "lora_name": "h3/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "lora_name": "Unknown/no tags/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
       "strength_model": 1.0,
       "model": [
         "127",

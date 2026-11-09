@@ -221,11 +221,20 @@
   },
   "149": {
     "inputs": {
-      "image": "ROLIEL_sheet_t01_00001_.png"
+      "image": "ROLIEL_sheet_t10_00001_.png"
     },
     "class_type": "LoadImage",
     "_meta": {
       "title": "Load Image 1"
+    }
+  },
+  "150": {
+    "inputs": {
+      "image": "roliel-hut_plate_t02_00001_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image Plate 1"
     }
   },
   "136": {
@@ -263,6 +272,10 @@
         "149",
         0
       ],
+      "ref_images.ref_image_1": [
+        "150",
+        0
+      ],
       "ref_audios.ref_audio_0": [
         "190",
         0
@@ -275,7 +288,7 @@
   },
   "138": {
     "inputs": {
-      "value": "subject_definitions:\n\n<Subject 1> is ROLIEL, long red hair, pale skin, a flowing white robe, and blue jewellery, shown in <Picture 1>.\n\n\n\nsummary:\n\n[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of ROLIEL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\n\n\nretention_analysis:\n\n<Subject 1>: fully_preserved \u2014 keep long red hair, pale skin, a flowing white robe, and blue jewellery consistent across [Shot 1] and [Shot 2].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n\n\n\ndetailed_description:\n\na technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze\n\nONLY the named characters are present in the shot \u2014 there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.\n\nIn total, three people are visible across the frames, with no background extras. In the first frame, a woman with long red hair is standing and facing the camera, her expression alarmed. In the second frame, the same woman is standing and facing forward, holding a small object, while a large, muscular man stands behind her, also facing forward; another man is lying down on the right, partially visible and facing away from the camera. In the third frame, the large man is standing in a doorway, facing forward. The setting is a dimly lit, cluttered interior room, possibly a hut or cave, with masks, weapons, and cooking implements visible.\n\n[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face.\n\n[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] You would do this-</d>\n\n[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.\n\n\n\noverall_soundscape:\n\nRoom reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.\n\n\n\nnon_diegetic_music:\n\nHeavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end."
+      "value": "subject_definitions: \n<Subject 1> is ROLIEL, long red hair, pale skin, a flowing white robe, and blue jewellery, shown in <Picture 1> \u2014 the character sheet for ROLIEL. \n<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.\n\nsummary: \n[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of ROLIEL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\nretention_analysis: \n<Subject 1>: fully_preserved \u2014 keep long red hair, pale skin, a flowing white robe, and blue jewellery consistent across [Shot 1] and [Shot 3].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n<Picture 2>: background_only \u2014 the location as a painted environment: keep its layout, lighting, colour and architecture.\n\ndetailed_description: \na technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze\n[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. In this shot <Subject 1> is alone in frame.\n[Shot 2] The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] You would do this-</d> In this shot <Subject 1> is in frame with two other people.\n[Shot 3] The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. In this shot <Subject 1> is alone in frame.\n\noverall_soundscape: \nRoom reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement."
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
@@ -342,7 +355,7 @@
   },
   "145": {
     "inputs": {
-      "lora_name": "h3/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "lora_name": "Unknown/no tags/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
       "strength_model": 1.0,
       "model": [
         "127",

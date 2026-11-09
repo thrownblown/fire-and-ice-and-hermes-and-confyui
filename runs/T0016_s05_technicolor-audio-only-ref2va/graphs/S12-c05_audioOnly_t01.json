@@ -221,11 +221,20 @@
   },
   "149": {
     "inputs": {
-      "image": "LARN_sheet_t01_00003_.png"
+      "image": "LARN_sheet_t10_00001_.png"
     },
     "class_type": "LoadImage",
     "_meta": {
       "title": "Load Image 1"
+    }
+  },
+  "150": {
+    "inputs": {
+      "image": "darkwolf-camp_plate_t02_00002_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image Plate 1"
     }
   },
   "136": {
@@ -263,6 +272,10 @@
         "149",
         0
       ],
+      "ref_images.ref_image_1": [
+        "150",
+        0
+      ],
       "ref_audios.ref_audio_0": [
         "190",
         0
@@ -275,7 +288,7 @@
   },
   "138": {
     "inputs": {
-      "value": "subject_definitions:\n\n<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.\n\n\n\nsummary:\n\n[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\n\n\nretention_analysis:\n\n<Subject 1>: fully_preserved \u2014 keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n\n\n\ndetailed_description:\n\na technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds\n\nONLY the named characters are present in the shot \u2014 there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.\n\nIn the first frame, one person is visible, standing on rocky terrain in a desolate, twilight landscape with gnarled trees and distant mountains. The figure faces the camera, holding a weapon, and is positioned centrally in the frame. The setting appears to be an outdoor, rugged, natural environment.\n\nIn the second frame, one person is visible, shown in a close-up from a low angle, looking upward toward a dark, shadowed figure that occupies the left side of the frame. The person is stationary and facing slightly toward the camera, with their head tilted up. The background is a dark, starry sky, suggesting an outdoor nighttime setting.\n\n[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.\n\n[Shot 2] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] You've caught me, but you'll never hand me over to Nekron.</d> <Subject 1> (S1) says: <d>[English] You'll have to kill me first.</d>\n\n\n\noverall_soundscape:\n\nWind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.\n\n\n\nnon_diegetic_music:\n\nLow sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout."
+      "value": "subject_definitions: \n<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> \u2014 the character sheet for LARN. \n<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.\n\nsummary: \n[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\nretention_analysis: \n<Subject 1>: fully_preserved \u2014 keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n<Picture 2>: background_only \u2014 the location as a painted environment: keep its layout, lighting, colour and architecture.\n\ndetailed_description: \nA technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures\n[Shot 1] The camera arcs around <Subject 1> at slow speed, shifting the angle across the passage. <Subject 1> is alone in the frame.\n[Shot 2] The camera stays low and tilts up. The camera pushes in, tightening toward the face. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] You've caught me, but you'll never hand me over to Nekron.</d> <Subject 1> (S1) says: <d>[English] You'll have to kill me first.</d>\n\noverall_soundscape: \nWind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground."
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
@@ -342,7 +355,7 @@
   },
   "145": {
     "inputs": {
-      "lora_name": "h3/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "lora_name": "Unknown/no tags/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
       "strength_model": 1.0,
       "model": [
         "127",

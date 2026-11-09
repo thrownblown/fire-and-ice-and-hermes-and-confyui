@@ -1,0 +1,47 @@
+subject_definitions:
+
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+<Subject 2> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — this is the location as a painted environment, not people; keep ONLY the environment (layout, lighting, color, architecture) and ignore any figures.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In total, three people are visible across the frames, with no background extras. In the first frame, one person is swimming horizontally through water, viewed from above, facing away from the camera. In the second frame, one person is partially submerged in water, with only their legs and feet visible, standing upright and facing away from the camera. In the third frame, one person is seated on a stone ledge by the water, facing away from the camera, looking toward the horizon. The setting is a tropical coastal environment with palm trees, rocky formations, and a large body of water, under either dawn or dusk lighting.
+
+[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space around the figures.
+
+[Shot 2] The camera pulls out with small amplitude at slow speed, opening the space around the figures.
+
+[Shot 3] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
+
+
+
+non_diegetic_music:
+
+Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.

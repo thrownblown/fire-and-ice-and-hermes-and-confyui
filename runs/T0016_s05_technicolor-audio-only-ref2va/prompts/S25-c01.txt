@@ -1,46 +1,21 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN, showing the same person from several angles.
+<Subject 2> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 2> — the character sheet for TEEGRA, showing the same person from several angles.
 
-<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
-<Subject 2> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 2>.
+summary: 
+[reference generation] [audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
-<Subject 2>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+[Shot 1] The camera pushes in at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Teegra.</d> In this shot <Subject 1> is alone in frame.
+[Shot 2] The camera pushes in at slow speed, tightening toward the face. In this shot <Subject 2> is alone in frame.
+[Shot 3] The camera pushes in at slow speed, tightening toward the face. The move slows and stops as the figure settles. In this shot <Subject 2> is alone in frame.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-There are two main characters visible across the frames, with no background extras. In the first frame, a muscular man with blonde hair is standing, facing slightly to the right of the camera, in a crouched, forward-leaning posture. In the second and third frames, a woman with long black hair is shown seated or reclining, facing the camera in the second frame and turned to her left in the third. The setting is an underwater cave or grotto with blue and teal rock formations.
-
-[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Teegra.</d>
-
-[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face.
-
-[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
-
-
-
-non_diegetic_music:
-
-Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

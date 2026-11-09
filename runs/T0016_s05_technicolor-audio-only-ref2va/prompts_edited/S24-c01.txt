@@ -1,0 +1,22 @@
+subject_definitions: 
+<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1> — the character sheet for JAROL.
+<Subject 2> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 2> — the character sheet for LARN.
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+<Picture 2> is a reference sheet of <Subject 2>, showing the same person from several angles.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of <Subject 1> and <Subject 2>, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Is he certain?</d> <Subject 1> (S1) says: <d>[English] It was my son you saw?</d>
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 2> (S2) says: <d>[English] They called him Prince Taro.</d>
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] He died.</d>
+
+overall_soundscape: 
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.

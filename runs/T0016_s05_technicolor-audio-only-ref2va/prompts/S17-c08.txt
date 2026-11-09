@@ -1,0 +1,51 @@
+subject_definitions:
+
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+<Subject 2> is ROLIEL, long red hair, pale skin, a flowing white robe, and blue jewellery, shown in <Picture 2>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+<Subject 2>: fully_preserved — keep long red hair, pale skin, a flowing white robe, and blue jewellery consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — this is the location as a painted environment, not people; keep ONLY the environment (layout, lighting, color, architecture) and ignore any figures.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+In the first frame, five figures are visible in a rocky, jungle-like outdoor setting. Four are standing or crouching: two in the foreground are crouched, one holding a spear, the other leaning over a fifth figure who is lying on the ground, chained. Two more figures are standing further back on a rock ledge. All are facing toward the camera or slightly off-center. The environment is a dimly lit, natural landscape with rocks, trees, and mist.
+
+In the second frame, one figure is visible in a close-up, standing and facing the camera. The figure has long red hair and is shown from the chest up, with a grimacing expression. The background is dark and indistinct, suggesting a cave or shadowed area.
+
+In the third frame, one figure is visible, standing in a doorway and facing forward. The figure has long red hair and is shown from the waist up. The doorway is framed by dark walls adorned with hanging skulls. The background beyond the doorway is bright and open, contrasting with the dark interior.
+
+[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space around the figures.
+
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
+
+
+
+non_diegetic_music:
+
+Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

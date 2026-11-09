@@ -1,0 +1,21 @@
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN, showing the same person from several angles.
+<Subject 2> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 2> — the character sheet for TEEGRA, showing the same person from several angles.
+
+summary: 
+[reference generation] [audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of <Subject 1> and <Subject 2>, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+[Shot 1] <Subject 1> is alone in frame, standing, facing slightly to the right of the camera, in a rocky, outdoor environment under a starry night sky. The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage.
+[Shot 2] <Subject 2> is alone in frame, crouching on a mossy rock, facing left, in a dark, jungle-like setting. The camera arcs around <Subject 2> with small amplitude at slow speed, shifting the angle across the passage.
+[Shot 3] The camera pulls out with small amplitude at slow speed, showing three red berries on a dark, leafy ground. The move slows and stops as the view settles.
+
+overall_soundscape: 
+Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.

@@ -1,42 +1,19 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is ROLIEL, long red hair, pale skin, a flowing white robe, and blue jewellery, shown in <Picture 1> — the character sheet for ROLIEL. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is ROLIEL, long red hair, pale skin, a flowing white robe, and blue jewellery, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of ROLIEL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of ROLIEL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
+retention_analysis: 
 <Subject 1>: fully_preserved — keep long red hair, pale skin, a flowing white robe, and blue jewellery consistent across [Shot 1] and [Shot 2].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
-
-
-detailed_description:
-
+detailed_description: 
 a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-Two people are visible in total. One is a woman with long red hair, wearing a white garment and a blue choker, who is standing and facing the camera. The second person is partially visible in the foreground, with only the top of their dark head shown, positioned below and in front of the woman. The setting appears to be a dimly lit, purple-hued room with weapons such as axes and knives mounted on the wall behind them.
-
 [Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] You must...</d>
-
 [Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
 
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
-
-
-
-non_diegetic_music:
-
-Low sustained strings and slow woodwind pulses at a slow tempo, with sparse bell tones above; dynamics stay quiet and grow only slightly.

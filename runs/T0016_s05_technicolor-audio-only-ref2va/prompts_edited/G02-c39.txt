@@ -1,0 +1,17 @@
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles. 
+<Picture 2> is a reference plate of the jungle location.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of the jungle environment, preserving the layout, lighting, colour, and architecture from the reference plate.
+
+retention_analysis: 
+The location is fully preserved from the reference plate, keeping its layout, lighting, colour, and architecture consistent across the shot.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, practical costumes and armour, broad physical performance, theatrical staging. 
+[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space to show a wide view of the jungle environment, with large, rounded rock formations and dense vegetation, including vines and leafy plants, and a damp or reflective ground.
+
+overall_soundscape: 
+Room tone and air movement throughout, with no footsteps or body movements, since there are no people in the shot.

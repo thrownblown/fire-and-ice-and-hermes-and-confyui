@@ -1,0 +1,23 @@
+subject_definitions: 
+<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1> — the character sheet for JAROL. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JAROL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+
+[Shot 1] The camera stays low and tilts up. The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage. In this shot, no people are visible — only a large, rocky mountain with structures built into it, partially shrouded in mist, under a cloudy sky.
+
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. In this shot <Subject 1> is alone in frame, standing and facing slightly to the right of the camera, within a dimly lit stone interior.
+
+[Shot 3] The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. In this shot, two people are visible from behind, standing on a stone parapet and facing away from the camera toward a distant landscape under a bright sky. <Subject 1> (S1) says: <d>[English] Enough!</d>
+
+overall_soundscape: 
+Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.

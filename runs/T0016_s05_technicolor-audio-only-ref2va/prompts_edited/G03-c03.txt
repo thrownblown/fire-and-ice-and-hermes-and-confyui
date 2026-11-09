@@ -1,0 +1,20 @@
+subject_definitions: 
+<Subject 1> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1> — the character sheet for TEEGRA. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, practical costumes and armour, broad physical performance, theatrical staging
+[Shot 1] The camera pushes in, tightening toward the face of <Subject 1>.
+[Shot 2] <Subject 1> is in frame, standing between two other figures who are facing away. The camera pushes in, tightening toward the face of <Subject 1>.
+[Shot 3] The camera pushes in, tightening toward the face of <Subject 1>. The move slows and stops as the figure settles.
+
+overall_soundscape: 
+Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.

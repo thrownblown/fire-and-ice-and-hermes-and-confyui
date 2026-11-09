@@ -1,46 +1,24 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN.
+<Subject 2> is NEKRON, long white hair, pale skin, and dark purple robes, shown in <Picture 2> — the character sheet for NEKRON.
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+<Picture 2> is a reference sheet of <Subject 2>, showing the same person from several angles.
+<Picture 3> is a location plate for the icy, cavernous environment.
 
-<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
-<Subject 2> is NEKRON, very long white hair, pale skin, and dark purple robes, shown in <Picture 2>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN and NEKRON, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
-<Subject 2>: fully_preserved — keep very long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 2> (S1) says: <d>[English] Why have you come seeking me?</d> <Subject 1> (S2) says: <d>[English] You killed my people.</d> In this shot <Subject 2> is alone in frame.
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face. In this shot <Subject 1> is alone in frame, holding a sword with both hands.
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 2> (S1) says: <d>[English] We've had to dispose of so many undesirables of late.</d> In this shot <Subject 2> is alone in frame.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-There are two main characters visible across the frames, with no background extras. In the first and third frames, a figure with long white hair is standing, facing slightly to the right of the camera, in a medium close-up. In the second frame, a second figure with a braided blonde ponytail is standing, facing forward and slightly to the left, holding a sword with both hands. The setting is an icy, cavernous environment with jagged ice formations and a cold, blue-toned atmosphere.
-
-[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 2> (S2) says: <d>[English] Why have you come seeking me?</d> <Subject 1> (S1) says: <d>[English] You killed my people.</d>
-
-[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face.
-
-[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 2> (S2) says: <d>[English] We've had to dispose of so many undesirables of late.</d>
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
-
-
-
-non_diegetic_music:
-
-Low sustained strings and slow woodwind pulses at a slow tempo, with sparse bell tones above; dynamics stay quiet and grow only slightly.

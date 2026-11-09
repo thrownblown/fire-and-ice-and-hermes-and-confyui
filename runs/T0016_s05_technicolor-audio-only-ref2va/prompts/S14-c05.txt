@@ -1,46 +1,21 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is DARKWOLF, deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates, shown in <Picture 1> — the character sheet for DARKWOLF, which is a reference sheet of <Subject 1>, showing the same person from several angles.
+<Subject 2> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 2> — the character sheet for LARN, which is a reference sheet of <Subject 2>, showing the same person from several angles.
 
-<Subject 1> is DARKWOLF, deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates, shown in <Picture 1>.
-<Subject 2> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 2>.
+summary: 
+[reference generation] [audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of DARKWOLF, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of DARKWOLF, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates consistent across [Shot 1] and [Shot 2].
-<Subject 2>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+[Shot 1] The camera pushes in at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Where's the girl?</d> <Subject 2> (S2) says: <d>[English] I couldn't find her.</d> In this shot <Subject 1> and <Subject 2> are in frame.
+[Shot 2] The camera stays low and tilts up. The camera pushes in at slow speed, tightening toward the face. In this shot <Subject 1> and <Subject 2> are in frame.
+[Shot 3] The camera stays low and tilts up. The camera arcs around the characters (<Subject 1> and <Subject 2>) at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. In this shot <Subject 1>, <Subject 2>, and a third figure are in frame.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-There are three people visible in total across the frames, with no background extras. In the first frame, two figures are shown in close-up: one with blonde hair is standing and facing right, holding an axe, while the other, a dark, furred figure, is standing and facing left, gripping the blonde figure’s neck. In the second frame, the same two figures are standing on a rocky outcrop, both facing forward and slightly to the right; the blonde figure holds a dagger, and the dark figure holds a small weapon. In the third frame, a third figure appears, standing on the same rocky outcrop, arms outstretched and facing forward; the blonde figure is now crouched and facing left, holding a dagger, while the dark figure is behind them, also facing left. The setting is an outdoor rocky landscape under a cloudy sky.
-
-[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] Where's the girl?</d> <Subject 2> (S2) says: <d>[English] I couldn't find her.</d>
-
-[Shot 2] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face.
-
-[Shot 3] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
-
-
-
-non_diegetic_music:
-
-Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

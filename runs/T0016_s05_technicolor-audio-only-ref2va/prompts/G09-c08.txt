@@ -1,0 +1,45 @@
+subject_definitions:
+
+<Subject 1> is NEKRON, very long white hair, pale skin, and dark purple robes, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of NEKRON, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep very long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — this is the location as a painted environment, not people; keep ONLY the environment (layout, lighting, color, architecture) and ignore any figures.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, practical costumes and armour, broad physical performance, theatrical staging
+
+This is a gathering scene with a crowd present. The ONLY people in the shot are the named characters and the crowd exactly as described in the blocking — its size, costume and arrangement must match that description. Do not add people beyond it: no duplicates of the named characters, no new foreground figures, and nobody walks toward the camera.
+
+There are two characters visible across the frames, with no background extras. In the first and third frames, a muscular figure with glowing green eyes is standing, facing the camera, holding a large staff or weapon; in the first frame, the figure is adjusting their mask with one hand, while in the third frame, they are raising the staff above their head. In the second frame, a second character with long white hair is lying down, facing upward and slightly toward the camera, against a rocky, icy background. The setting appears to be a dark, cavernous or mountainous environment with dramatic, stormy skies in the first and third frames, and a cold, icy interior in the second.
+
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 2] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face.
+
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
+
+
+
+non_diegetic_music:
+
+Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

@@ -221,11 +221,20 @@
   },
   "149": {
     "inputs": {
-      "image": "NEKRON_sheet_t01_00001_.png"
+      "image": "NEKRON_sheet_t10_00001_.png"
     },
     "class_type": "LoadImage",
     "_meta": {
       "title": "Load Image 1"
+    }
+  },
+  "150": {
+    "inputs": {
+      "image": "ice-peak-throne-hall_plate_t02_00001_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image Plate 1"
     }
   },
   "136": {
@@ -263,6 +272,10 @@
         "149",
         0
       ],
+      "ref_images.ref_image_1": [
+        "150",
+        0
+      ],
       "ref_audios.ref_audio_0": [
         "190",
         0
@@ -275,7 +288,7 @@
   },
   "138": {
     "inputs": {
-      "value": "subject_definitions:\n\n<Subject 1> is NEKRON, very long white hair, pale skin, and dark purple robes, shown in <Picture 1>.\n\n\n\nsummary:\n\n[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of NEKRON, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\n\n\nretention_analysis:\n\n<Subject 1>: fully_preserved \u2014 keep very long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 2].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n\n\n\ndetailed_description:\n\na technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour\n\nONLY the named characters are present in the shot \u2014 there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.\n\nIn the first frame, no people are visible; the image shows an abstract composition of blue and white shapes, possibly representing water or ice, with no discernible figures or room.\n\nIn the second frame, two main characters are visible, both standing and facing each other in a close confrontation. They are in a misty, cavernous environment with large rock formations in the background. No background extras are present.\n\nIn the third frame, there are five people visible. In the foreground, one character is standing and facing away from the camera, head tilted back. To their right, two characters are engaged in a physical struggle, both standing and facing each other. In the background, three figures are standing at a distance, each holding a spear. The setting is a wide, icy cavern with water and rock formations.\n\n[Shot 1] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures.\n\n[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.\n\n[Shot 3] The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles.\n\n\n\noverall_soundscape:\n\nRoom tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.\n\n\n\nnon_diegetic_music:\n\nLow sustained strings and slow woodwind pulses at a slow tempo, with sparse bell tones above; dynamics stay quiet and grow only slightly."
+      "value": "subject_definitions: \n<Subject 1> is NEKRON, long white hair, pale skin, and dark purple robes, shown in <Picture 1> \u2014 the character sheet for NEKRON. \n<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.\n\nsummary: \n[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of NEKRON, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\nretention_analysis: \n<Subject 1>: fully_preserved \u2014 keep long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 3].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n<Picture 2>: background_only \u2014 the location as a painted environment: keep its layout, lighting, colour and architecture.\n\ndetailed_description: \nA technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour\n\n[Shot 1] The camera stays low and tilts up. The camera pulls out with small amplitude at slow speed, opening the space around the subject.\n\n[Shot 2] The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage.\n\n[Shot 3] The camera pulls out with small amplitude at slow speed, opening the space around the subject. The move slows and stops as the figure settles.\n\noverall_soundscape: \nRoom tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves."
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
@@ -342,7 +355,7 @@
   },
   "145": {
     "inputs": {
-      "lora_name": "h3/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "lora_name": "Unknown/no tags/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
       "strength_model": 1.0,
       "model": [
         "127",

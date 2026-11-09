@@ -1,0 +1,18 @@
+subject_definitions: 
+<Subject 1> is JULIANA, pale skin, long straight jet-black hair, and a deep purple gown, shown in <Picture 1> — the character sheet for JULIANA. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JULIANA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep pale skin, long straight jet-black hair, and a deep purple gown consistent across [Shot 1] and [Shot 1].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space around the subject. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] Find the girl. Find her, or his punishment shall be yours.</d>
+
+overall_soundscape: 
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.

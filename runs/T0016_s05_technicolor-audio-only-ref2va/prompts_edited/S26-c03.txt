@@ -1,0 +1,20 @@
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face of <Subject 1>. <Subject 1> is in frame, standing and facing right, in profile toward the camera. 
+[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face of <Subject 1>. <Subject 1> is in frame, standing and facing right, in a partial side view, with her back mostly to the camera. 
+[Shot 3] The camera stays low and tilts up. The camera pulls out with small amplitude at slow speed, opening the space around the subject. The move slows and stops as the figure settles. The shot is empty of people.
+
+overall_soundscape: 
+Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.

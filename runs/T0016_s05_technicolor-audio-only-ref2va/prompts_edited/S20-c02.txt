@@ -1,0 +1,27 @@
+subject_definitions: 
+<Subject 1> is JULIANA, pale skin, long straight jet-black hair, and a deep purple gown, shown in <Picture 1> — the character sheet for JULIANA.
+<Subject 2> is NEKRON, long white hair, pale skin, and dark purple robes, shown in <Picture 2> — the character sheet for NEKRON.
+<Subject 3> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 3> — the character sheet for TEEGRA.
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+<Picture 2> is a reference sheet of <Subject 2>, showing the same person from several angles.
+<Picture 3> is a reference sheet of <Subject 3>, showing the same person from several angles.
+<Picture 4> is a location plate, showing a cavern or underground chamber with water and glowing rock formations.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JULIANA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep pale skin, long straight jet-black hair, and a deep purple gown consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 3].
+<Subject 3>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 4>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 2> (S1) says: <d>[English] Why have you brought me this?</d> In this shot <Subject 2> is alone in frame.
+[Shot 2] The camera arcs around the characters (<Subject 1> and <Subject 2> and <Subject 3>) with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S2) says: <d>[English] This is your bride, my son.</d> In this shot <Subject 1>, <Subject 2>, and <Subject 3> are in frame.
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. In this shot <Subject 2> is alone in frame.
+
+overall_soundscape: 
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.

@@ -221,11 +221,20 @@
   },
   "149": {
     "inputs": {
-      "image": "TEEGRA_sheet_t01_00001_.png"
+      "image": "TEEGRA_sheet_t10_00001_.png"
     },
     "class_type": "LoadImage",
     "_meta": {
       "title": "Load Image 1"
+    }
+  },
+  "150": {
+    "inputs": {
+      "image": "ice-peak-cave_plate_t02_00001_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image Plate 1"
     }
   },
   "136": {
@@ -263,6 +272,10 @@
         "149",
         0
       ],
+      "ref_images.ref_image_1": [
+        "150",
+        0
+      ],
       "ref_audios.ref_audio_0": [
         "190",
         0
@@ -275,7 +288,7 @@
   },
   "138": {
     "inputs": {
-      "value": "subject_definitions:\n\n<Subject 1> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1>.\n\n\n\nsummary:\n\n[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\n\n\nretention_analysis:\n\n<Subject 1>: fully_preserved \u2014 keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n\n\n\ndetailed_description:\n\na technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, practical costumes and armour, broad physical performance, theatrical staging\n\nThis is a gathering scene with a crowd present. The ONLY people in the shot are the named characters and the crowd exactly as described in the blocking \u2014 its size, costume and arrangement must match that description. Do not add people beyond it: no duplicates of the named characters, no new foreground figures, and nobody walks toward the camera.\n\nTotal of three people visible: two main figures and one background extra.\n\nIn the first frame, no people are visible \u2014 only a landscape of jagged ice formations under a red sky.\n\nIn the second frame, one main person is visible, standing and facing the camera. Behind him, to the right, a second person is visible in the background, standing and holding a weapon, partially obscured.\n\nIn the third frame, the same two people are visible: the main person is shown from the side, with his arm raised and fist clenched, and the background person remains in the same position, standing and holding a weapon.\n\nThe setting is a cavernous or rocky interior with purple-hued walls, suggesting a dungeon or fortress.\n\n[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space around the figures.\n\n[Shot 2] The camera pushes in with small amplitude at slow speed, tightening toward the face.\n\n[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles.\n\n\n\noverall_soundscape:\n\nRoom tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.\n\n\n\nnon_diegetic_music:\n\nLow sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout."
+      "value": "subject_definitions: \n<Subject 1> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1> \u2014 the character sheet for TEEGRA, showing the same person from several angles.\n\nsummary: \n[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.\n\nretention_analysis: \n<Subject 1>: fully_preserved \u2014 keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].\nReference audio: fully_copy \u2014 reuse the spoken lines and their exact timing.\n<Picture 2> is a location plate, showing a cavernous or rocky interior with purple-hued walls: used as the background, keeping its layout, lighting, colour and architecture.\n\ndetailed_description: \nA technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, practical costumes and armour, broad physical performance, theatrical staging\n\n[Shot 1] The camera pulls out with small amplitude at slow speed. The frame holds a landscape of jagged ice formations under a red sky, with no people visible.\n\n[Shot 2] The camera pushes in with small amplitude at slow speed. <Subject 1> is in frame, standing and facing the camera. Behind him, to the right, a second person is visible in the background, standing and holding a weapon, partially obscured.\n\n[Shot 3] The camera pushes in with small amplitude at slow speed. <Subject 1> is shown from the side, with his arm raised and fist clenched. The background person remains in the same position, standing and holding a weapon.\n\noverall_soundscape: \nRoom tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves."
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
@@ -342,7 +355,7 @@
   },
   "145": {
     "inputs": {
-      "lora_name": "h3/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "lora_name": "Unknown/no tags/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
       "strength_model": 1.0,
       "model": [
         "127",

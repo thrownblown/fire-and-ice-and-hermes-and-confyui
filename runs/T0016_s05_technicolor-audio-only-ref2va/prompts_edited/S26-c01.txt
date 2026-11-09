@@ -1,0 +1,24 @@
+subject_definitions: 
+<Subject 1> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1> — the character sheet for TEEGRA, which is a reference sheet of <Subject 1>, showing the same person from several angles.
+<Subject 2> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 2> — the character sheet for LARN, which is a reference sheet of <Subject 2>, showing the same person from several angles.
+
+summary: 
+[reference generation] [audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of <Subject 1> and <Subject 2>, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+
+[Shot 1] The camera arcs around <Subject 1> and <Subject 2> with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> is standing and facing slightly to the right, reaching upward with both arms; <Subject 2> is standing beside <Subject 1>, facing forward, also with both arms raised.
+
+[Shot 2] The camera stays low and tilts up. The camera pushes in with small amplitude at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] No, Larn! No, it's over, don't you see? We have to start over.</d>
+
+[Shot 3] The camera stays low and tilts up. The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as <Subject 2> settles, lying down or reclining with body angled upward, facing slightly to the right.
+
+overall_soundscape: 
+Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.

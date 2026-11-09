@@ -1,44 +1,20 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+[Shot 1] The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> is alone in this shot.
+[Shot 2] The camera stays low and tilts up. The camera pulls out with small amplitude at slow speed, opening the space around <Subject 1>. <Subject 1> is alone in this shot.
+[Shot 3] The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as <Subject 1> settles. <Subject 1> is alone in this shot.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-In the first frame, two men are visible in a rocky, cave-like environment. One is standing and bent forward, holding a knife, facing away from the camera; the other is seated and facing left, looking up at the standing man. The second frame shows two men standing on a rocky peak against a cloudy sky. Both are facing forward, with arms raised — one with hands up, the other holding a stone above his head. The third frame shows multiple men in a rocky, cavernous area. One stands holding a spear, while others are in various positions: one is lying on the ground, another is seated with arms raised, and others are crouching or kneeling. No one is clearly facing the camera.
-
-[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 2] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures.
-
-[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
-Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
-
-
-
-non_diegetic_music:
-
-Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.
+overall_soundscape: 
+Room reverb and low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.

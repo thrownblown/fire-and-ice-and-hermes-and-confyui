@@ -1,48 +1,20 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is TEEGRA, long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1> — the character sheet for TEEGRA. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is TEEGRA, very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of TEEGRA, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep very long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep long black hair, pale skin, green eyes, a lightweight purple two-piece costume, and a gold necklace consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
+[Shot 1] The camera arcs around the subject at slow speed, shifting the angle across the passage. <Subject 1> is alone in frame, seated on a rock with back to the camera, facing a dark body of water with lily pads.
+[Shot 2] The camera stays low and tilts up. The camera arcs around the subject at slow speed, shifting the angle across the passage. <Subject 1> is in frame with one other person, both standing and facing away from the camera, with one holding a spear.
+[Shot 3] The camera arcs around the subject at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles. <Subject 1> is in frame with four other people.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, lush tropical jungle against vast ruined stone, gold shafts of light through the canopy, humid haze
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-In the first frame, one person is visible, seated on a rock with their back to the camera, facing a dark body of water with lily pads. The setting appears to be a dimly lit, natural outdoor area, possibly near a pond or river at night.
-
-In the second frame, two people are visible in the foreground, both standing and facing away from the camera, with one holding a spear. The seated person from the first frame is now partially visible between them, still facing away. The environment remains the same dark, watery outdoor setting.
-
-In the third frame, five people are visible. The central figure, a woman, is standing and facing away from the camera, being embraced from behind by a man who is also standing. To their left and right, three other men stand, all facing toward the central pair, holding spears. The setting is now brighter, suggesting daylight, with a jungle or forested background. All figures are in the foreground, with no background extras.
-
-[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 2] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Birdsong and insect noise close to the mic, leaves and undergrowth moving, air moving through the canopy.
-
-
-
-non_diegetic_music:
-
-Soft plucked strings over a slow rising line of low clarinets, held at a moderate tempo and easing down to a quiet close.

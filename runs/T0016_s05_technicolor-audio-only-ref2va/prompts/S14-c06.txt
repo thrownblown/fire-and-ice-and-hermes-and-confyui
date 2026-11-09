@@ -1,0 +1,45 @@
+subject_definitions:
+
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+
+
+
+summary:
+
+[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+
+
+retention_analysis:
+
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — this is the location as a painted environment, not people; keep ONLY the environment (layout, lighting, color, architecture) and ignore any figures.
+
+
+
+detailed_description:
+
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
+
+ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
+
+There are two main figures visible in all frames; no background extras are present. Both are male, muscular, and wearing minimal loincloth-like garments. In the first frame, the figure on the left is standing, facing slightly left of the camera, holding a spear with both hands in a ready stance; the figure on the right is standing, facing away from the camera, holding a spear. In the second frame, the figure on the left is standing on a rocky outcrop, facing left, with arms raised as if recoiling or being struck; the figure on the right is standing on the same outcrop, facing forward, raising a spear above his head. In the third frame, the figure on the left is standing, facing left, mouth open as if shouting, holding a spear; the figure on the right is standing, facing slightly right of the camera, holding a spear. The setting is an outdoor, rocky terrain under a cloudy sky.
+
+[Shot 1] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 2] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
+
+[Shot 3] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
+
+
+
+overall_soundscape:
+
+Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
+
+
+
+non_diegetic_music:
+
+Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

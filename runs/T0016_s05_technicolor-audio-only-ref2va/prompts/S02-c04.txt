@@ -1,48 +1,20 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+[Shot 1] The camera stays low and tilts up. The camera pushes in with small amplitude at slow speed, tightening toward the face. In this shot <Subject 1> is alone in frame.
+[Shot 2] The camera arcs around the subject with small amplitude at slow speed, shifting the angle across the passage. In this shot <Subject 1> is alone in frame.
+[Shot 3] The camera stays low and tilts up. The camera pulls out with small amplitude at slow speed, opening the space around the subject. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] Larn, it cannot be stopped. Join your brother.</d>
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-In the first frame, two figures are visible: one is partially shown from behind, standing and leaning forward, while the other, a muscular man with blond hair, is standing and facing slightly toward the camera, looking down. The background is a blue sky with clouds, suggesting an outdoor setting.
-
-In the second frame, one figure is visible — a muscular man with blond hair, standing and bent forward, holding an axe in a grassy field. He faces slightly toward the camera. The setting is an open outdoor area with several dome-shaped huts and a wooden fence in the background.
-
-In the third frame, five figures are visible on a wooden wall or fortification. All are shirtless and wearing loincloths; four are actively climbing or standing on the wall, while one is seated and holding an axe. They are mostly facing away from the camera, with the background showing a rocky, mountainous landscape. No background extras are present.
-
-[Shot 1] The camera stays low and tilts up slightly. The camera pushes in with small amplitude at slow speed, tightening toward the face.
-
-[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 3] The camera stays low and tilts up slightly. The camera pulls out with small amplitude at slow speed, opening the space around the figures. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] Larn, it cannot be stopped. Join your brother.</d>
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
-
-
-
-non_diegetic_music:
-
-Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.

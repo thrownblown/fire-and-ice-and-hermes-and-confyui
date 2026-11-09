@@ -1,44 +1,20 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1> — the character sheet for LARN. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is LARN, blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of LARN, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep blond braided hair, sun-tanned bronze skin, gold hoop earrings, a leather belt with a gold buckle, and a bone necklace consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, practical costumes and armour, broad physical performance, theatrical staging
+[Shot 1] The camera stays low and tilts up. The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> is alone in frame, climbing a moss-covered rock face in a dense jungle environment, gripping the rock and moving upward.
+[Shot 2] The camera stays low and tilts up. The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> is alone in frame, mostly obscured by foliage.
+[Shot 3] The camera arcs around <Subject 1> with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as <Subject 1> settles, continuing to climb while facing away from the camera. <Subject 1> is alone in frame.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, practical costumes and armour, broad physical performance, theatrical staging
-
-This is a gathering scene with a crowd present. The ONLY people in the shot are the named characters and the crowd exactly as described in the blocking — its size, costume and arrangement must match that description. Do not add people beyond it: no duplicates of the named characters, no new foreground figures, and nobody walks toward the camera.
-
-There is one person visible in all frames, with no background extras. The person is shown climbing a moss-covered rock face in a dense jungle environment. In the first frame, they are seen from behind, gripping the rock and moving upward; in the second frame, they are mostly obscured by foliage; in the third frame, they are again visible from behind, continuing to climb while facing away from the camera. The setting is a dark, overgrown jungle with thick vegetation and vines.
-
-[Shot 1] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 2] The camera stays low and tilts up slightly. The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage.
-
-[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Room tone and air movement throughout, cloth rustle with every body movement, footsteps wherever anyone moves.
-
-
-
-non_diegetic_music:
-
-Low sustained strings at a slow tempo with widely spaced woodwind notes, dynamics held quiet throughout.

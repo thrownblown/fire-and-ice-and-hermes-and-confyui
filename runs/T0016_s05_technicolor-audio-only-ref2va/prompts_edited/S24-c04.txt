@@ -1,0 +1,27 @@
+subject_definitions: 
+<Subject 1> is DARKWOLF, deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates, shown in <Picture 1> — the character sheet for DARKWOLF.
+<Subject 2> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 2> — the character sheet for JAROL.
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+<Picture 2> is a reference sheet of <Subject 2>, showing the same person from several angles.
+<Picture 3> is a location plate for the cavernous interior.
+
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of <Subject 1> and <Subject 2>, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
+
+retention_analysis: 
+<Subject 1>: fully_preserved — keep deep tanned bronze skin, long black hair in braids, a wolf-head helmet, a bare oiled chest, and a fur-lined belt with bronze plates consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 3].
+Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
+
+detailed_description: 
+a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
+
+[Shot 1] The camera pulls out with small amplitude at slow speed, opening the space around <Subject 1> and <Subject 2>. <Subject 1> (S1) says: <d>[English] A thousand souls lost because of Nekron's rage.</d>
+
+[Shot 2] The camera arcs around <Subject 1> and <Subject 2> with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] Fire Keep is next. We must attack.</d>
+
+[Shot 3] The camera pushes in with small amplitude at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] I need the Dragonhawks.</d> <Subject 2> (S2) says: <d>[English] The Dragonhawks are too few.</d> <Subject 1> (S1) says: <d>[English] Enough to get in with.</d>
+
+overall_soundscape: 
+Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.

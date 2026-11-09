@@ -1,46 +1,25 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1> — the character sheet for JAROL.
+<Subject 2> is TARO, long straight black hair, a red vest, and gold armbands, shown in <Picture 2> — the character sheet for TARO.
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
+<Picture 2> is a reference sheet of <Subject 2>, showing the same person from several angles.
+<Picture 3> is a location plate of an outdoor, rocky landscape with distant mesas under a blue sky.
 
-<Subject 1> is JAROL, a bald head, a long white beard, and a red tunic with gold accents, shown in <Picture 1>.
-<Subject 2> is TARO, long straight black hair, a red vest, and gold armbands, shown in <Picture 2>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of <Subject 1> and <Subject 2>, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of JAROL, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 2].
-<Subject 2>: fully_preserved — keep long straight black hair, a red vest, and gold armbands consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep a bald head, a long white beard, and a red tunic with gold accents consistent across [Shot 1] and [Shot 3].
+<Subject 2>: fully_preserved — keep long straight black hair, a red vest, and gold armbands consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 3>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+[Shot 1] In this shot <Subject 1> and <Subject 2> are in frame. The camera arcs around the characters with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] No man is wholly evil.</d> <Subject 1> (S1) says: <d>[English] Surely there is some way to appeal to Nekron.</d>
 
+[Shot 2] In this shot <Subject 1> and <Subject 2> are in frame. The camera arcs around the characters with small amplitude at slow speed, shifting the angle across the passage. <Subject 2> (S2) says: <d>[English] You expect his mercy?</d>
 
-detailed_description:
+[Shot 3] In this shot <Subject 1> and <Subject 2> are in frame. The camera arcs around the characters with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
 
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-Two people are visible in all frames; there are no background extras. In the first frame, the older man with a white beard is standing and facing the camera, while the younger man with long black hair is standing with his back to the camera. In the second frame, the younger man is standing and facing left, toward the older man, who is partially visible on the left edge of the frame, also standing. In the third frame, the older man is again standing and facing the camera, while the younger man is standing with his back to the camera. The setting is an outdoor, rocky landscape with distant mesas under a blue sky.
-
-[Shot 1] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 1> (S1) says: <d>[English] No man is wholly evil.</d> <Subject 1> (S1) says: <d>[English] Surely there is some way to appeal to Nekron.</d>
-
-[Shot 2] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. <Subject 2> (S2) says: <d>[English] You expect his mercy?</d>
-
-[Shot 3] The camera arcs around the figures with small amplitude at slow speed, shifting the angle across the passage. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
-
-
-
-non_diegetic_music:
-
-Low sustained strings and slow woodwind pulses at a slow tempo, with sparse bell tones above; dynamics stay quiet and grow only slightly.

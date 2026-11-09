@@ -1,44 +1,20 @@
-subject_definitions:
+subject_definitions: 
+<Subject 1> is NEKRON, long white hair, pale skin, and dark purple robes, shown in <Picture 1> — the character sheet for NEKRON. 
+<Picture 1> is a reference sheet of <Subject 1>, showing the same person from several angles.
 
-<Subject 1> is NEKRON, very long white hair, pale skin, and dark purple robes, shown in <Picture 1>.
+summary: 
+[reference generation] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of NEKRON, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
 
-
-
-summary:
-
-[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: a single continuous live-action scene of NEKRON, preserving each character's appearance from their reference sheet and the spoken dialogue and timing of the reference audio.
-
-
-
-retention_analysis:
-
-<Subject 1>: fully_preserved — keep very long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 2].
+retention_analysis: 
+<Subject 1>: fully_preserved — keep long white hair, pale skin, and dark purple robes consistent across [Shot 1] and [Shot 3].
 Reference audio: fully_copy — reuse the spoken lines and their exact timing.
+<Picture 2>: background_only — the location as a painted environment: keep its layout, lighting, colour and architecture.
 
+detailed_description: 
+A technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures
+[Shot 1] The camera pushes in at slow speed, tightening toward the sky.
+[Shot 2] The camera stays low and tilts up. The camera pushes in at slow speed, closing in until the frame is filled with the sky and the top of a white, spiky plant.
+[Shot 3] The camera stays low and tilts up. The camera pushes in at slow speed, closing in until the frame is filled with the sky and the top of a white, spiky plant.
 
-
-detailed_description:
-
-a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, sweeping exteriors against matte-painted mountains, wind and dust, saturated skies, distant structures and crowds
-
-ONLY the named characters are present in the shot — there are no other people, no crowd, no background figures and no extras at any point. The scene is quiet, intimate and relaxed. The characters stay where they are; nobody walks, enters, or moves toward the camera.
-
-There are no people visible in any of the frames. The images show a blue sky with light cloud formations and, in the second and third frames, the top of a white, spiky plant or object entering from the bottom. The setting appears to be outdoors, likely a sky view with vegetation in the foreground. All elements are stationary.
-
-[Shot 1] The camera pushes in with small amplitude at slow speed, tightening toward the face.
-
-[Shot 2] The camera stays low and tilts up slightly. The camera pushes in with large amplitude at slow speed, closing in until the frame is filled with the face.
-
-[Shot 3] The camera stays low and tilts up slightly. The camera pushes in with large amplitude at slow speed, closing in until the frame is filled with the face. The move slows and stops as the figure settles.
-
-
-
-overall_soundscape:
-
+overall_soundscape: 
 Wind across open ground, grit and small debris moving, cloth snapping, footsteps on hard ground.
-
-
-
-non_diegetic_music:
-
-Heavy percussion and low brass at a fast, driving tempo, rising steadily in volume through the passage and cutting off hard at the end.
