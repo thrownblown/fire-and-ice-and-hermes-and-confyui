@@ -1,0 +1,1031 @@
+{
+ "scenes": {},
+ "chunks": {
+  "G01-c01": {
+   "queued": "2026-11-08T20:35:37",
+   "note": "QUEUED G01-c01_audioOnly_t01 (1 sheets + 1 plate, audio G01-c01_audio.mp4, seed 313144897)"
+  },
+  "G01-c03": {
+   "skipped": "2026-11-08T20:35:37",
+   "note": "no sheeted subjects; abort"
+  },
+  "G01-c05": {
+   "skipped": "2026-11-08T20:35:37",
+   "note": "no sheeted subjects; abort"
+  },
+  "G01-c07": {
+   "skipped": "2026-11-08T20:35:37",
+   "note": "no sheeted subjects; abort"
+  },
+  "G01-c09": {
+   "skipped": "2026-11-08T20:35:37",
+   "note": "no sheeted subjects; abort"
+  },
+  "G01-c11": {
+   "skipped": "2026-11-08T20:35:38",
+   "note": "no sheeted subjects; abort"
+  },
+  "G01-c13": {
+   "skipped": "2026-11-08T20:35:38",
+   "note": "no sheeted subjects; abort"
+  },
+  "G01-c15": {
+   "skipped": "2026-11-08T20:35:38",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c01": {
+   "queued": "2026-11-08T20:36:10",
+   "note": "QUEUED G02-c01_audioOnly_t01 (2 sheets + 1 plate, audio G02-c01_audio.mp4, seed 1426738321)"
+  },
+  "G02-c03": {
+   "skipped": "2026-11-08T20:36:11",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c05": {
+   "skipped": "2026-11-08T20:36:11",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c07": {
+   "skipped": "2026-11-08T20:36:11",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c09": {
+   "skipped": "2026-11-08T20:36:11",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c11": {
+   "skipped": "2026-11-08T20:36:12",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c13": {
+   "queued": "2026-11-08T20:36:32",
+   "note": "QUEUED G02-c13_audioOnly_t01 (1 sheets + 1 plate, audio G02-c13_audio.mp4, seed 2719948028)"
+  },
+  "G02-c15": {
+   "queued": "2026-11-08T20:36:48",
+   "note": "QUEUED G02-c15_audioOnly_t01 (1 sheets + 1 plate, audio G02-c15_audio.mp4, seed 1266465225)"
+  },
+  "G02-c17": {
+   "skipped": "2026-11-08T20:36:49",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c19": {
+   "queued": "2026-11-08T20:37:09",
+   "note": "QUEUED G02-c19_audioOnly_t01 (1 sheets + 1 plate, audio G02-c19_audio.mp4, seed 1120597474)"
+  },
+  "G02-c21": {
+   "skipped": "2026-11-08T20:37:09",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c23": {
+   "queued": "2026-11-08T20:37:30",
+   "note": "QUEUED G02-c23_audioOnly_t01 (1 sheets + 1 plate, audio G02-c23_audio.mp4, seed 2301775679)"
+  },
+  "G02-c25": {
+   "skipped": "2026-11-08T20:37:31",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c27": {
+   "skipped": "2026-11-08T20:37:31",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c29": {
+   "skipped": "2026-11-08T20:37:31",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c31": {
+   "skipped": "2026-11-08T20:37:31",
+   "note": "no sheeted subjects; abort"
+  },
+  "G02-c33": {
+   "queued": "2026-11-08T20:37:55",
+   "note": "QUEUED G02-c33_audioOnly_t01 (1 sheets + 1 plate, audio G02-c33_audio.mp4, seed 2418638462)"
+  },
+  "G02-c35": {
+   "queued": "2026-11-08T20:38:14",
+   "note": "QUEUED G02-c35_audioOnly_t01 (1 sheets + 1 plate, audio G02-c35_audio.mp4, seed 2034948939)"
+  },
+  "G02-c37": {
+   "queued": "2026-11-08T20:38:29",
+   "note": "QUEUED G02-c37_audioOnly_t01 (1 sheets + 1 plate, audio G02-c37_audio.mp4, seed 2537863783)"
+  },
+  "G02-c39": {
+   "skipped": "2026-11-08T20:38:29",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c01": {
+   "queued": "2026-11-08T20:38:54",
+   "note": "QUEUED G03-c01_audioOnly_t01 (1 sheets + 1 plate, audio G03-c01_audio.mp4, seed 1751803169)"
+  },
+  "G03-c03": {
+   "failed": "2026-11-08T20:39:24",
+   "rc": 0,
+   "note": "  server said: {\"error\": {\"type\": \"prompt_outputs_failed_validation\", \"message\": \"Prompt outputs failed validation\", \"details\": \"\", \"extra_info\": {}}, \"node_errors\": {\"190\": {\"errors\": [{\"type\": \"exce"
+  },
+  "G03-c05": {
+   "queued": "2026-11-08T20:39:37",
+   "note": "QUEUED G03-c05_audioOnly_t01 (1 sheets + 1 plate, audio G03-c05_audio.mp4, seed 1862771000)"
+  },
+  "G03-c07": {
+   "queued": "2026-11-08T20:39:50",
+   "note": "QUEUED G03-c07_audioOnly_t01 (1 sheets + 1 plate, audio G03-c07_audio.mp4, seed 2164899860)"
+  },
+  "G03-c09": {
+   "queued": "2026-11-08T20:40:14",
+   "note": "QUEUED G03-c09_audioOnly_t01 (1 sheets + 1 plate, audio G03-c09_audio.mp4, seed 1722936595)"
+  },
+  "G03-c11": {
+   "skipped": "2026-11-08T20:40:14",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c13": {
+   "queued": "2026-11-08T20:40:49",
+   "note": "QUEUED G03-c13_audioOnly_t01 (1 sheets + 1 plate, audio G03-c13_audio.mp4, seed 2675914060)"
+  },
+  "G03-c15": {
+   "skipped": "2026-11-08T20:40:50",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c17": {
+   "skipped": "2026-11-08T20:40:50",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c19": {
+   "skipped": "2026-11-08T20:40:50",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c21": {
+   "skipped": "2026-11-08T20:40:50",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c23": {
+   "skipped": "2026-11-08T20:40:51",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c25": {
+   "queued": "2026-11-08T20:41:12",
+   "note": "QUEUED G03-c25_audioOnly_t01 (1 sheets + 1 plate, audio G03-c25_audio.mp4, seed 1563542458)"
+  },
+  "G03-c27": {
+   "queued": "2026-11-08T20:41:45",
+   "note": "QUEUED G03-c27_audioOnly_t01 (1 sheets + 1 plate, audio G03-c27_audio.mp4, seed 3007292054)"
+  },
+  "G03-c29": {
+   "skipped": "2026-11-08T20:41:45",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c31": {
+   "queued": "2026-11-08T20:42:05",
+   "note": "QUEUED G03-c31_audioOnly_t01 (1 sheets + 1 plate, audio G03-c31_audio.mp4, seed 1128740578)"
+  },
+  "G03-c33": {
+   "queued": "2026-11-08T20:42:33",
+   "note": "QUEUED G03-c33_audioOnly_t01 (1 sheets + 1 plate, audio G03-c33_audio.mp4, seed 2907264974)"
+  },
+  "G03-c35": {
+   "skipped": "2026-11-08T20:42:33",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c37": {
+   "skipped": "2026-11-08T20:42:33",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c39": {
+   "skipped": "2026-11-08T20:42:34",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c41": {
+   "skipped": "2026-11-08T20:42:34",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c43": {
+   "skipped": "2026-11-08T20:42:34",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c45": {
+   "skipped": "2026-11-08T20:42:34",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c47": {
+   "skipped": "2026-11-08T20:42:34",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c49": {
+   "skipped": "2026-11-08T20:42:34",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c51": {
+   "queued": "2026-11-08T20:42:49",
+   "note": "QUEUED G03-c51_audioOnly_t01 (1 sheets + 1 plate, audio G03-c51_audio.mp4, seed 354259300)"
+  },
+  "G03-c53": {
+   "skipped": "2026-11-08T20:42:49",
+   "note": "no sheeted subjects; abort"
+  },
+  "G03-c55": {
+   "queued": "2026-11-08T20:43:14",
+   "note": "QUEUED G03-c55_audioOnly_t01 (1 sheets + 1 plate, audio G03-c55_audio.mp4, seed 309351805)"
+  },
+  "G04-c01": {
+   "queued": "2026-11-08T20:43:29",
+   "note": "QUEUED G04-c01_audioOnly_t01 (1 sheets + 1 plate, audio G04-c01_audio.mp4, seed 3662330161)"
+  },
+  "G04-c03": {
+   "skipped": "2026-11-08T20:43:30",
+   "note": "no sheeted subjects; abort"
+  },
+  "G04-c05": {
+   "skipped": "2026-11-08T20:43:30",
+   "note": "no sheeted subjects; abort"
+  },
+  "G04-c07": {
+   "skipped": "2026-11-08T20:43:31",
+   "note": "no sheeted subjects; abort"
+  },
+  "G04-c09": {
+   "queued": "2026-11-08T20:43:48",
+   "note": "QUEUED G04-c09_audioOnly_t01 (1 sheets + 1 plate, audio G04-c09_audio.mp4, seed 3566285059)"
+  },
+  "G04-c11": {
+   "skipped": "2026-11-08T20:43:48",
+   "note": "no sheeted subjects; abort"
+  },
+  "G04-c13": {
+   "skipped": "2026-11-08T20:43:48",
+   "note": "no sheeted subjects; abort"
+  },
+  "G04-c15": {
+   "queued": "2026-11-08T20:44:09",
+   "note": "QUEUED G04-c15_audioOnly_t01 (1 sheets + 1 plate, audio G04-c15_audio.mp4, seed 3292286057)"
+  },
+  "G04-c17": {
+   "skipped": "2026-11-08T20:44:09",
+   "note": "no sheeted subjects; abort"
+  },
+  "G05-c01": {
+   "queued": "2026-11-08T20:44:25",
+   "note": "QUEUED G05-c01_audioOnly_t01 (1 sheets + 1 plate, audio G05-c01_audio.mp4, seed 3878326401)"
+  },
+  "G05-c03": {
+   "skipped": "2026-11-08T20:44:25",
+   "note": "no sheeted subjects; abort"
+  },
+  "G05-c05": {
+   "skipped": "2026-11-08T20:44:26",
+   "note": "no sheeted subjects; abort"
+  },
+  "G05-c07": {
+   "skipped": "2026-11-08T20:44:26",
+   "note": "no sheeted subjects; abort"
+  },
+  "G05-c09": {
+   "skipped": "2026-11-08T20:44:26",
+   "note": "no sheeted subjects; abort"
+  },
+  "G06-c01": {
+   "failed": "2026-11-08T20:44:44",
+   "rc": 1,
+   "note": "NameError: name '_basename' is not defined"
+  },
+  "G06-c03": {
+   "queued": "2026-11-08T20:44:55",
+   "note": "QUEUED G06-c03_audioOnly_t01 (1 sheets + 1 plate, audio G06-c03_audio.mp4, seed 1317309309)"
+  },
+  "G06-c05": {
+   "queued": "2026-11-08T20:45:26",
+   "note": "QUEUED G06-c05_audioOnly_t01 (1 sheets + 1 plate, audio G06-c05_audio.mp4, seed 2816945736)"
+  },
+  "G06-c07": {
+   "queued": "2026-11-08T20:45:36",
+   "note": "QUEUED G06-c07_audioOnly_t01 (1 sheets + 1 plate, audio G06-c07_audio.mp4, seed 1240026980)"
+  },
+  "G06-c09": {
+   "queued": "2026-11-08T20:45:54",
+   "note": "QUEUED G06-c09_audioOnly_t01 (1 sheets + 1 plate, audio G06-c09_audio.mp4, seed 2924569187)"
+  },
+  "G06-c11": {
+   "queued": "2026-11-08T20:46:07",
+   "note": "QUEUED G06-c11_audioOnly_t01 (1 sheets + 1 plate, audio G06-c11_audio.mp4, seed 3113343760)"
+  },
+  "G06-c13": {
+   "queued": "2026-11-08T20:46:32",
+   "note": "QUEUED G06-c13_audioOnly_t01 (1 sheets + 1 plate, audio G06-c13_audio.mp4, seed 1470085692)"
+  },
+  "G07-c01": {
+   "skipped": "2026-11-08T20:46:32",
+   "note": "no sheeted subjects; abort"
+  },
+  "G07-c03": {
+   "queued": "2026-11-08T20:46:52",
+   "note": "QUEUED G07-c03_audioOnly_t01 (1 sheets + 1 plate, audio G07-c03_audio.mp4, seed 1944363725)"
+  },
+  "G07-c05": {
+   "queued": "2026-11-08T20:47:07",
+   "note": "QUEUED G07-c05_audioOnly_t01 (1 sheets + 1 plate, audio G07-c05_audio.mp4, seed 2592540664)"
+  },
+  "G07-c07": {
+   "skipped": "2026-11-08T20:47:08",
+   "note": "no sheeted subjects; abort"
+  },
+  "G07-c09": {
+   "skipped": "2026-11-08T20:47:08",
+   "note": "no sheeted subjects; abort"
+  },
+  "G07-c11": {
+   "skipped": "2026-11-08T20:47:08",
+   "note": "no sheeted subjects; abort"
+  },
+  "G07-c13": {
+   "queued": "2026-11-08T20:47:27",
+   "note": "QUEUED G07-c13_audioOnly_t01 (1 sheets + 1 plate, audio G07-c13_audio.mp4, seed 1795134348)"
+  },
+  "G07-c15": {
+   "skipped": "2026-11-08T20:47:27",
+   "note": "no sheeted subjects; abort"
+  },
+  "G07-c17": {
+   "skipped": "2026-11-08T20:47:27",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c01": {
+   "skipped": "2026-11-08T20:47:27",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c03": {
+   "skipped": "2026-11-08T20:47:28",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c05": {
+   "skipped": "2026-11-08T20:47:28",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c07": {
+   "skipped": "2026-11-08T20:47:28",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c09": {
+   "skipped": "2026-11-08T20:47:28",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c11": {
+   "skipped": "2026-11-08T20:47:28",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c13": {
+   "skipped": "2026-11-08T20:47:29",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c15": {
+   "skipped": "2026-11-08T20:47:29",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c17": {
+   "skipped": "2026-11-08T20:47:29",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c19": {
+   "skipped": "2026-11-08T20:47:30",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c21": {
+   "skipped": "2026-11-08T20:47:30",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c23": {
+   "skipped": "2026-11-08T20:47:30",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c25": {
+   "skipped": "2026-11-08T20:47:30",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c27": {
+   "skipped": "2026-11-08T20:47:31",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c29": {
+   "queued": "2026-11-08T20:48:18",
+   "note": "QUEUED G08-c29_audioOnly_t01 (1 sheets + 1 plate, audio G08-c29_audio.mp4, seed 592952960)"
+  },
+  "G08-c31": {
+   "skipped": "2026-11-08T20:48:19",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c33": {
+   "skipped": "2026-11-08T20:48:19",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c35": {
+   "skipped": "2026-11-08T20:48:19",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c37": {
+   "skipped": "2026-11-08T20:48:19",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c39": {
+   "skipped": "2026-11-08T20:48:20",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c41": {
+   "skipped": "2026-11-08T20:48:20",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c43": {
+   "skipped": "2026-11-08T20:48:20",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c45": {
+   "skipped": "2026-11-08T20:48:20",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c47": {
+   "skipped": "2026-11-08T20:48:20",
+   "note": "no sheeted subjects; abort"
+  },
+  "G08-c49": {
+   "skipped": "2026-11-08T20:48:21",
+   "note": "no sheeted subjects; abort"
+  },
+  "G09-c01": {
+   "skipped": "2026-11-08T20:48:21",
+   "note": "no sheeted subjects; abort"
+  },
+  "G09-c03": {
+   "queued": "2026-11-08T20:48:45",
+   "note": "QUEUED G09-c03_audioOnly_t01 (1 sheets + 1 plate, audio G09-c03_audio.mp4, seed 3436453036)"
+  },
+  "G09-c05": {
+   "queued": "2026-11-08T20:49:35",
+   "note": "QUEUED G09-c05_audioOnly_t01 (1 sheets + 1 plate, audio G09-c05_audio.mp4, seed 632797593)"
+  },
+  "G09-c07": {
+   "queued": "2026-11-08T20:50:03",
+   "note": "QUEUED G09-c07_audioOnly_t01 (2 sheets + 1 plate, audio G09-c07_audio.mp4, seed 3417954485)"
+  },
+  "G09-c09": {
+   "queued": "2026-11-08T20:50:14",
+   "note": "QUEUED G09-c09_audioOnly_t01 (1 sheets + 1 plate, audio G09-c09_audio.mp4, seed 738325938)"
+  },
+  "G09-c11": {
+   "queued": "2026-11-08T20:50:41",
+   "note": "QUEUED G09-c11_audioOnly_t01 (1 sheets + 1 plate, audio G09-c11_audio.mp4, seed 1002523841)"
+  },
+  "G09-c13": {
+   "skipped": "2026-11-08T20:50:41",
+   "note": "no sheeted subjects; abort"
+  },
+  "G09-c15": {
+   "skipped": "2026-11-08T20:50:42",
+   "note": "no sheeted subjects; abort"
+  },
+  "G09-c17": {
+   "skipped": "2026-11-08T20:50:42",
+   "note": "no sheeted subjects; abort"
+  },
+  "G09-c19": {
+   "skipped": "2026-11-08T20:50:42",
+   "note": "no sheeted subjects; abort"
+  },
+  "G09-c21": {
+   "queued": "2026-11-08T20:50:58",
+   "note": "QUEUED G09-c21_audioOnly_t01 (1 sheets + 1 plate, audio G09-c21_audio.mp4, seed 283909890)"
+  },
+  "G09-c23": {
+   "skipped": "2026-11-08T20:50:58",
+   "note": "no sheeted subjects; abort"
+  },
+  "G09-c25": {
+   "queued": "2026-11-08T20:51:56",
+   "note": "QUEUED G09-c25_audioOnly_t01 (2 sheets + 1 plate, audio G09-c25_audio.mp4, seed 394386203)"
+  },
+  "G09-c27": {
+   "queued": "2026-11-08T20:52:19",
+   "note": "QUEUED G09-c27_audioOnly_t01 (1 sheets + 1 plate, audio G09-c27_audio.mp4, seed 4186946103)"
+  },
+  "S01-c01": {
+   "skipped": "2026-11-08T20:52:19",
+   "note": "no sheeted subjects; abort"
+  },
+  "S01-c03": {
+   "skipped": "2026-11-08T20:52:19",
+   "note": "no sheeted subjects; abort"
+  },
+  "S01-c05": {
+   "queued": "2026-11-08T20:53:06",
+   "note": "QUEUED S01-c05_audioOnly_t01 (1 sheets + 1 plate, audio S01-c05_audio.mp4, seed 2253802117)"
+  },
+  "S01-c07": {
+   "skipped": "2026-11-08T20:53:06",
+   "note": "no sheeted subjects; abort"
+  },
+  "S02-c01": {
+   "queued": "2026-11-08T20:53:31",
+   "note": "QUEUED S02-c01_audioOnly_t01 (1 sheets + 1 plate, audio S02-c01_audio.mp4, seed 3332109388)"
+  },
+  "S02-c03": {
+   "queued": "2026-11-08T20:53:55",
+   "note": "QUEUED S02-c03_audioOnly_t01 (1 sheets + 1 plate, audio S02-c03_audio.mp4, seed 680891744)"
+  },
+  "S03-c01": {
+   "queued": "2026-11-08T20:55:35",
+   "note": "QUEUED S03-c01_audioOnly_t01 (3 sheets + 1 plate, audio S03-c01_audio.mp4, seed 4227587580)"
+  },
+  "S03-c03": {
+   "queued": "2026-11-08T20:55:46",
+   "note": "QUEUED S03-c03_audioOnly_t01 (1 sheets + 1 plate, audio S03-c03_audio.mp4, seed 368426192)"
+  },
+  "S04-c01": {
+   "queued": "2026-11-08T20:56:40",
+   "note": "QUEUED S04-c01_audioOnly_t01 (2 sheets + 1 plate, audio S04-c01_audio.mp4, seed 1239089644)"
+  },
+  "S05-c01": {
+   "queued": "2026-11-08T20:57:07",
+   "note": "QUEUED S05-c01_audioOnly_t01 (2 sheets + 1 plate, audio S05-c01_audio.mp4, seed 1958422620)"
+  },
+  "S05-c03": {
+   "queued": "2026-11-08T20:57:49",
+   "note": "QUEUED S05-c03_audioOnly_t01 (2 sheets + 1 plate, audio S05-c03_audio.mp4, seed 2595572080)"
+  },
+  "S06-c01": {
+   "queued": "2026-11-08T20:58:12",
+   "note": "QUEUED S06-c01_audioOnly_t01 (2 sheets + 1 plate, audio S06-c01_audio.mp4, seed 857428620)"
+  },
+  "S06-c03": {
+   "queued": "2026-11-08T20:58:48",
+   "note": "QUEUED S06-c03_audioOnly_t01 (3 sheets + 1 plate, audio S06-c03_audio.mp4, seed 3709154208)"
+  },
+  "S06-c05": {
+   "queued": "2026-11-08T20:59:06",
+   "note": "QUEUED S06-c05_audioOnly_t01 (1 sheets + 1 plate, audio S06-c05_audio.mp4, seed 880187029)"
+  },
+  "S06-c07": {
+   "skipped": "2026-11-08T20:59:06",
+   "note": "no sheeted subjects; abort"
+  },
+  "S07-c01": {
+   "queued": "2026-11-08T20:59:59",
+   "note": "QUEUED S07-c01_audioOnly_t01 (1 sheets + 1 plate, audio S07-c01_audio.mp4, seed 242973500)"
+  },
+  "S07-c03": {
+   "queued": "2026-11-08T21:00:24",
+   "note": "QUEUED S07-c03_audioOnly_t01 (1 sheets + 1 plate, audio S07-c03_audio.mp4, seed 3765770768)"
+  },
+  "S07-c05": {
+   "queued": "2026-11-08T21:00:41",
+   "note": "QUEUED S07-c05_audioOnly_t01 (1 sheets + 1 plate, audio S07-c05_audio.mp4, seed 152485669)"
+  },
+  "S07-c07": {
+   "skipped": "2026-11-08T21:00:42",
+   "note": "no sheeted subjects; abort"
+  },
+  "S07-c09": {
+   "skipped": "2026-11-08T21:00:42",
+   "note": "no sheeted subjects; abort"
+  },
+  "S07-c11": {
+   "queued": "2026-11-08T21:00:59",
+   "note": "QUEUED S07-c11_audioOnly_t01 (1 sheets + 1 plate, audio S07-c11_audio.mp4, seed 392186493)"
+  },
+  "S08-c01": {
+   "queued": "2026-11-08T21:01:31",
+   "note": "QUEUED S08-c01_audioOnly_t01 (1 sheets + 1 plate, audio S08-c01_audio.mp4, seed 2351688941)"
+  },
+  "S08-c03": {
+   "queued": "2026-11-08T21:02:08",
+   "note": "QUEUED S08-c03_audioOnly_t01 (2 sheets + 1 plate, audio S08-c03_audio.mp4, seed 1646628289)"
+  },
+  "S09-c01": {
+   "queued": "2026-11-08T21:03:35",
+   "note": "QUEUED S09-c01_audioOnly_t01 (2 sheets + 1 plate, audio S09-c01_audio.mp4, seed 2974532957)"
+  },
+  "S09-c03": {
+   "skipped": "2026-11-08T21:03:35",
+   "note": "no sheeted subjects; abort"
+  },
+  "S09-c05": {
+   "queued": "2026-11-08T21:03:52",
+   "note": "QUEUED S09-c05_audioOnly_t01 (1 sheets + 1 plate, audio S09-c05_audio.mp4, seed 3055944004)"
+  },
+  "S11-c01": {
+   "queued": "2026-11-08T21:04:49",
+   "note": "QUEUED S11-c01_audioOnly_t01 (2 sheets + 1 plate, audio S11-c01_audio.mp4, seed 1248288057)"
+  },
+  "S11-c03": {
+   "queued": "2026-11-08T21:05:08",
+   "note": "QUEUED S11-c03_audioOnly_t01 (1 sheets + 1 plate, audio S11-c03_audio.mp4, seed 2758360085)"
+  },
+  "S11-c05": {
+   "queued": "2026-11-08T21:05:19",
+   "note": "QUEUED S11-c05_audioOnly_t01 (1 sheets + 1 plate, audio S11-c05_audio.mp4, seed 1292540192)"
+  },
+  "S11-c07": {
+   "queued": "2026-11-08T21:05:57",
+   "note": "QUEUED S11-c07_audioOnly_t01 (2 sheets + 1 plate, audio S11-c07_audio.mp4, seed 2735011852)"
+  },
+  "S11-c09": {
+   "queued": "2026-11-08T21:06:20",
+   "note": "QUEUED S11-c09_audioOnly_t01 (1 sheets + 1 plate, audio S11-c09_audio.mp4, seed 1153225995)"
+  },
+  "S11-c11": {
+   "queued": "2026-11-08T21:06:30",
+   "note": "QUEUED S11-c11_audioOnly_t01 (1 sheets + 1 plate, audio S11-c11_audio.mp4, seed 1400663160)"
+  },
+  "S11-c13": {
+   "queued": "2026-11-08T21:07:19",
+   "note": "QUEUED S11-c13_audioOnly_t01 (2 sheets + 1 plate, audio S11-c13_audio.mp4, seed 3178368340)"
+  },
+  "S11-c15": {
+   "queued": "2026-11-08T21:07:55",
+   "note": "QUEUED S11-c15_audioOnly_t01 (2 sheets + 1 plate, audio S11-c15_audio.mp4, seed 1410443361)"
+  },
+  "S11-c17": {
+   "queued": "2026-11-08T21:08:26",
+   "note": "QUEUED S11-c17_audioOnly_t01 (1 sheets + 1 plate, audio S11-c17_audio.mp4, seed 3122645325)"
+  },
+  "S11-c19": {
+   "skipped": "2026-11-08T21:08:27",
+   "note": "no sheeted subjects; abort"
+  },
+  "S11-c21": {
+   "skipped": "2026-11-08T21:08:27",
+   "note": "no sheeted subjects; abort"
+  },
+  "S11-c23": {
+   "queued": "2026-11-08T21:08:46",
+   "note": "QUEUED S11-c23_audioOnly_t01 (1 sheets + 1 plate, audio S11-c23_audio.mp4, seed 2522832535)"
+  },
+  "S11-c25": {
+   "skipped": "2026-11-08T21:08:46",
+   "note": "no sheeted subjects; abort"
+  },
+  "S11-c27": {
+   "skipped": "2026-11-08T21:08:46",
+   "note": "no sheeted subjects; abort"
+  },
+  "S11-c29": {
+   "skipped": "2026-11-08T21:08:46",
+   "note": "no sheeted subjects; abort"
+  },
+  "S12-c01": {
+   "skipped": "2026-11-08T21:08:47",
+   "note": "no sheeted subjects; abort"
+  },
+  "S12-c03": {
+   "skipped": "2026-11-08T21:08:47",
+   "note": "no sheeted subjects; abort"
+  },
+  "S12-c05": {
+   "queued": "2026-11-08T21:09:12",
+   "note": "QUEUED S12-c05_audioOnly_t01 (1 sheets + 1 plate, audio S12-c05_audio.mp4, seed 178971632)"
+  },
+  "S12-c07": {
+   "queued": "2026-11-08T21:09:29",
+   "note": "QUEUED S12-c07_audioOnly_t01 (1 sheets + 1 plate, audio S12-c07_audio.mp4, seed 3835986652)"
+  },
+  "S12-c09": {
+   "queued": "2026-11-08T21:10:09",
+   "note": "QUEUED S12-c09_audioOnly_t01 (2 sheets + 1 plate, audio S12-c09_audio.mp4, seed 52211675)"
+  },
+  "S13-c01": {
+   "queued": "2026-11-08T21:10:43",
+   "note": "QUEUED S13-c01_audioOnly_t01 (2 sheets + 1 plate, audio S13-c01_audio.mp4, seed 816254553)"
+  },
+  "S13-c03": {
+   "queued": "2026-11-08T21:11:05",
+   "note": "QUEUED S13-c03_audioOnly_t01 (1 sheets + 1 plate, audio S13-c03_audio.mp4, seed 3735646069)"
+  },
+  "S13-c05": {
+   "queued": "2026-11-08T21:11:17",
+   "note": "QUEUED S13-c05_audioOnly_t01 (1 sheets + 1 plate, audio S13-c05_audio.mp4, seed 936036928)"
+  },
+  "S13-c07": {
+   "queued": "2026-11-08T21:11:44",
+   "note": "QUEUED S13-c07_audioOnly_t01 (2 sheets + 1 plate, audio S13-c07_audio.mp4, seed 3653544812)"
+  },
+  "S14-c01": {
+   "skipped": "2026-11-08T21:11:44",
+   "note": "no sheeted subjects; abort"
+  },
+  "S14-c03": {
+   "skipped": "2026-11-08T21:11:45",
+   "note": "no sheeted subjects; abort"
+  },
+  "S14-c05": {
+   "queued": "2026-11-08T21:12:13",
+   "note": "QUEUED S14-c05_audioOnly_t01 (2 sheets + 1 plate, audio S14-c05_audio.mp4, seed 2246710864)"
+  },
+  "S14-c07": {
+   "skipped": "2026-11-08T21:12:13",
+   "note": "no sheeted subjects; abort"
+  },
+  "S14-c09": {
+   "skipped": "2026-11-08T21:12:13",
+   "note": "no sheeted subjects; abort"
+  },
+  "S14-c11": {
+   "queued": "2026-11-08T21:12:25",
+   "note": "QUEUED S14-c11_audioOnly_t01 (1 sheets + 1 plate, audio S14-c11_audio.mp4, seed 2610750216)"
+  },
+  "S14-c13": {
+   "queued": "2026-11-08T21:13:03",
+   "note": "QUEUED S14-c13_audioOnly_t01 (1 sheets + 1 plate, audio S14-c13_audio.mp4, seed 1972535844)"
+  },
+  "S15-c01": {
+   "queued": "2026-11-08T21:13:53",
+   "note": "QUEUED S15-c01_audioOnly_t01 (2 sheets + 1 plate, audio S15-c01_audio.mp4, seed 3219651577)"
+  },
+  "S15-c03": {
+   "queued": "2026-11-08T21:15:23",
+   "note": "QUEUED S15-c03_audioOnly_t01 (2 sheets + 1 plate, audio S15-c03_audio.mp4, seed 1374264021)"
+  },
+  "S15-c05": {
+   "skipped": "2026-11-08T21:15:24",
+   "note": "no sheeted subjects; abort"
+  },
+  "S16-c01": {
+   "queued": "2026-11-08T21:15:49",
+   "note": "QUEUED S16-c01_audioOnly_t01 (1 sheets + 1 plate, audio S16-c01_audio.mp4, seed 4165435689)"
+  },
+  "S16-c03": {
+   "queued": "2026-11-08T21:16:53",
+   "note": "QUEUED S16-c03_audioOnly_t01 (1 sheets + 1 plate, audio S16-c03_audio.mp4, seed 373940229)"
+  },
+  "S16-c05": {
+   "queued": "2026-11-08T21:17:34",
+   "note": "QUEUED S16-c05_audioOnly_t01 (2 sheets + 1 plate, audio S16-c05_audio.mp4, seed 4280960304)"
+  },
+  "S16-c07": {
+   "queued": "2026-11-08T21:17:47",
+   "note": "QUEUED S16-c07_audioOnly_t01 (1 sheets + 1 plate, audio S16-c07_audio.mp4, seed 287581212)"
+  },
+  "S16-c09": {
+   "queued": "2026-11-08T21:18:29",
+   "note": "QUEUED S16-c09_audioOnly_t01 (1 sheets + 1 plate, audio S16-c09_audio.mp4, seed 4137421083)"
+  },
+  "S16-c11": {
+   "queued": "2026-11-08T21:18:42",
+   "note": "QUEUED S16-c11_audioOnly_t01 (1 sheets + 1 plate, audio S16-c11_audio.mp4, seed 3780948072)"
+  },
+  "S16-c13": {
+   "queued": "2026-11-08T21:19:08",
+   "note": "QUEUED S16-c13_audioOnly_t01 (1 sheets + 1 plate, audio S16-c13_audio.mp4, seed 257085764)"
+  },
+  "S17-c01": {
+   "queued": "2026-11-08T21:19:27",
+   "note": "QUEUED S17-c01_audioOnly_t01 (1 sheets + 1 plate, audio S17-c01_audio.mp4, seed 3307710617)"
+  },
+  "S17-c03": {
+   "skipped": "2026-11-08T21:19:27",
+   "note": "no sheeted subjects; abort"
+  },
+  "S17-c05": {
+   "queued": "2026-11-08T21:19:45",
+   "note": "QUEUED S17-c05_audioOnly_t01 (1 sheets + 1 plate, audio S17-c05_audio.mp4, seed 3259657344)"
+  },
+  "S17-c07": {
+   "skipped": "2026-11-08T21:19:45",
+   "note": "no sheeted subjects; abort"
+  },
+  "S17-c09": {
+   "queued": "2026-11-08T21:20:09",
+   "note": "QUEUED S17-c09_audioOnly_t01 (1 sheets + 1 plate, audio S17-c09_audio.mp4, seed 3422298283)"
+  },
+  "S17-c11": {
+   "queued": "2026-11-08T21:20:43",
+   "note": "QUEUED S17-c11_audioOnly_t01 (1 sheets + 1 plate, audio S17-c11_audio.mp4, seed 3694959064)"
+  },
+  "S17-c13": {
+   "skipped": "2026-11-08T21:20:43",
+   "note": "no sheeted subjects; abort"
+  },
+  "S18-c01": {
+   "skipped": "2026-11-08T21:20:43",
+   "note": "no sheeted subjects; abort"
+  },
+  "S18-c03": {
+   "queued": "2026-11-08T21:21:41",
+   "note": "QUEUED S18-c03_audioOnly_t01 (2 sheets + 1 plate, audio S18-c03_audio.mp4, seed 2843303524)"
+  },
+  "S18-c05": {
+   "queued": "2026-11-08T21:22:45",
+   "note": "QUEUED S18-c05_audioOnly_t01 (2 sheets + 1 plate, audio S18-c05_audio.mp4, seed 1075510097)"
+  },
+  "S18-c07": {
+   "queued": "2026-11-08T21:23:26",
+   "note": "QUEUED S18-c07_audioOnly_t01 (2 sheets + 1 plate, audio S18-c07_audio.mp4, seed 2920585853)"
+  },
+  "S19-c01": {
+   "queued": "2026-11-08T21:23:46",
+   "note": "QUEUED S19-c01_audioOnly_t01 (1 sheets + 1 plate, audio S19-c01_audio.mp4, seed 2048333560)"
+  },
+  "S19-c03": {
+   "queued": "2026-11-08T21:24:43",
+   "note": "QUEUED S19-c03_audioOnly_t01 (1 sheets + 1 plate, audio S19-c03_audio.mp4, seed 2484697044)"
+  },
+  "S19-c05": {
+   "queued": "2026-11-08T21:25:00",
+   "note": "QUEUED S19-c05_audioOnly_t01 (1 sheets + 1 plate, audio S19-c05_audio.mp4, seed 2105201377)"
+  },
+  "S20-c01": {
+   "queued": "2026-11-08T21:25:37",
+   "note": "QUEUED S20-c01_audioOnly_t01 (1 sheets + 1 plate, audio S20-c01_audio.mp4, seed 4052944423)"
+  },
+  "S20-c03": {
+   "queued": "2026-11-08T21:27:24",
+   "note": "QUEUED S20-c03_audioOnly_t01 (3 sheets + 1 plate, audio S20-c03_audio.mp4, seed 530409227)"
+  },
+  "S20-c05": {
+   "queued": "2026-11-08T21:27:53",
+   "note": "QUEUED S20-c05_audioOnly_t01 (2 sheets + 1 plate, audio S20-c05_audio.mp4, seed 4143891006)"
+  },
+  "S20-c07": {
+   "queued": "2026-11-08T21:28:26",
+   "note": "QUEUED S20-c07_audioOnly_t01 (2 sheets + 1 plate, audio S20-c07_audio.mp4, seed 418423570)"
+  },
+  "S20-c09": {
+   "queued": "2026-11-08T21:28:54",
+   "note": "QUEUED S20-c09_audioOnly_t01 (1 sheets + 1 plate, audio S20-c09_audio.mp4, seed 4282945045)"
+  },
+  "S20-c11": {
+   "queued": "2026-11-08T21:29:06",
+   "note": "QUEUED S20-c11_audioOnly_t01 (1 sheets + 1 plate, audio S20-c11_audio.mp4, seed 3901241190)"
+  },
+  "S20-c13": {
+   "queued": "2026-11-08T21:29:30",
+   "note": "QUEUED S20-c13_audioOnly_t01 (2 sheets + 1 plate, audio S20-c13_audio.mp4, seed 109467210)"
+  },
+  "S20-c15": {
+   "queued": "2026-11-08T21:30:09",
+   "note": "QUEUED S20-c15_audioOnly_t01 (2 sheets + 1 plate, audio S20-c15_audio.mp4, seed 4024824703)"
+  },
+  "S20-c17": {
+   "skipped": "2026-11-08T21:30:09",
+   "note": "no sheeted subjects; abort"
+  },
+  "S21-c01": {
+   "skipped": "2026-11-08T21:30:09",
+   "note": "no sheeted subjects; abort"
+  },
+  "S21-c03": {
+   "skipped": "2026-11-08T21:30:09",
+   "note": "no sheeted subjects; abort"
+  },
+  "S21-c05": {
+   "queued": "2026-11-08T21:30:35",
+   "note": "QUEUED S21-c05_audioOnly_t01 (1 sheets + 1 plate, audio S21-c05_audio.mp4, seed 3416189838)"
+  },
+  "S21-c07": {
+   "skipped": "2026-11-08T21:30:35",
+   "note": "no sheeted subjects; abort"
+  },
+  "S21-c09": {
+   "skipped": "2026-11-08T21:30:35",
+   "note": "no sheeted subjects; abort"
+  },
+  "S21-c11": {
+   "skipped": "2026-11-08T21:30:35",
+   "note": "no sheeted subjects; abort"
+  },
+  "S21-c13": {
+   "skipped": "2026-11-08T21:30:35",
+   "note": "no sheeted subjects; abort"
+  },
+  "S21-c15": {
+   "queued": "2026-11-08T21:31:17",
+   "note": "QUEUED S21-c15_audioOnly_t01 (2 sheets + 1 plate, audio S21-c15_audio.mp4, seed 3531987663)"
+  },
+  "S21-c17": {
+   "queued": "2026-11-08T21:31:56",
+   "note": "QUEUED S21-c17_audioOnly_t01 (3 sheets + 1 plate, audio S21-c17_audio.mp4, seed 1015790563)"
+  },
+  "S21-c19": {
+   "queued": "2026-11-08T21:32:25",
+   "note": "QUEUED S21-c19_audioOnly_t01 (1 sheets + 1 plate, audio S21-c19_audio.mp4, seed 3677591268)"
+  },
+  "S21-c21": {
+   "queued": "2026-11-08T21:33:09",
+   "note": "QUEUED S21-c21_audioOnly_t01 (2 sheets + 1 plate, audio S21-c21_audio.mp4, seed 4274343189)"
+  },
+  "S21-c23": {
+   "queued": "2026-11-08T21:33:35",
+   "note": "QUEUED S21-c23_audioOnly_t01 (1 sheets + 1 plate, audio S21-c23_audio.mp4, seed 281750585)"
+  },
+  "S21-c25": {
+   "queued": "2026-11-08T21:33:49",
+   "note": "QUEUED S21-c25_audioOnly_t01 (1 sheets + 1 plate, audio S21-c25_audio.mp4, seed 4188571916)"
+  },
+  "S22-c01": {
+   "queued": "2026-11-08T21:34:12",
+   "note": "QUEUED S22-c01_audioOnly_t01 (1 sheets + 1 plate, audio S22-c01_audio.mp4, seed 2337494343)"
+  },
+  "S22-c03": {
+   "skipped": "2026-11-08T21:34:12",
+   "note": "no sheeted subjects; abort"
+  },
+  "S22-c05": {
+   "queued": "2026-11-08T21:34:33",
+   "note": "QUEUED S22-c05_audioOnly_t01 (1 sheets + 1 plate, audio S22-c05_audio.mp4, seed 2352910686)"
+  },
+  "S22-c07": {
+   "queued": "2026-11-08T21:35:09",
+   "note": "QUEUED S22-c07_audioOnly_t01 (1 sheets + 1 plate, audio S22-c07_audio.mp4, seed 1647374450)"
+  },
+  "S22-c09": {
+   "queued": "2026-11-08T21:35:49",
+   "note": "QUEUED S22-c09_audioOnly_t01 (2 sheets + 1 plate, audio S22-c09_audio.mp4, seed 2240339317)"
+  },
+  "S22-c11": {
+   "queued": "2026-11-08T21:36:15",
+   "note": "QUEUED S22-c11_audioOnly_t01 (2 sheets + 1 plate, audio S22-c11_audio.mp4, seed 2454217734)"
+  },
+  "S22-c13": {
+   "skipped": "2026-11-08T21:36:15",
+   "note": "no sheeted subjects; abort"
+  },
+  "S22-c15": {
+   "skipped": "2026-11-08T21:36:16",
+   "note": "no sheeted subjects; abort"
+  },
+  "S22-c17": {
+   "skipped": "2026-11-08T21:36:16",
+   "note": "no sheeted subjects; abort"
+  },
+  "S22-c19": {
+   "skipped": "2026-11-08T21:36:16",
+   "note": "no sheeted subjects; abort"
+  },
+  "S22-c21": {
+   "queued": "2026-11-08T21:36:41",
+   "note": "QUEUED S22-c21_audioOnly_t01 (2 sheets + 1 plate, audio S22-c21_audio.mp4, seed 3110418373)"
+  },
+  "S22-c23": {
+   "skipped": "2026-11-08T21:36:41",
+   "note": "no sheeted subjects; abort"
+  },
+  "S23-c01": {
+   "queued": "2026-11-08T21:37:05",
+   "note": "QUEUED S23-c01_audioOnly_t01 (1 sheets + 1 plate, audio S23-c01_audio.mp4, seed 3056827639)"
+  },
+  "S23-c03": {
+   "queued": "2026-11-08T21:37:20",
+   "note": "QUEUED S23-c03_audioOnly_t01 (1 sheets + 1 plate, audio S23-c03_audio.mp4, seed 1480400347)"
+  },
+  "S23-c05": {
+   "queued": "2026-11-08T21:38:17",
+   "note": "QUEUED S23-c05_audioOnly_t01 (2 sheets + 1 plate, audio S23-c05_audio.mp4, seed 2975774958)"
+  },
+  "S24-c01": {
+   "queued": "2026-11-08T21:39:05",
+   "note": "QUEUED S24-c01_audioOnly_t01 (2 sheets + 1 plate, audio S24-c01_audio.mp4, seed 68395239)"
+  },
+  "S24-c03": {
+   "queued": "2026-11-08T21:39:46",
+   "note": "QUEUED S24-c03_audioOnly_t01 (2 sheets + 1 plate, audio S24-c03_audio.mp4, seed 3927818699)"
+  },
+  "S24-c05": {
+   "queued": "2026-11-08T21:40:36",
+   "note": "QUEUED S24-c05_audioOnly_t01 (2 sheets + 1 plate, audio S24-c05_audio.mp4, seed 58615038)"
+  },
+  "S25-c01": {
+   "queued": "2026-11-08T21:40:57",
+   "note": "QUEUED S25-c01_audioOnly_t01 (2 sheets + 1 plate, audio S25-c01_audio.mp4, seed 963873111)"
+  },
+  "S25-c03": {
+   "queued": "2026-11-08T21:41:16",
+   "note": "QUEUED S25-c03_audioOnly_t01 (2 sheets + 1 plate, audio S25-c03_audio.mp4, seed 3615352955)"
+  },
+  "S25-c05": {
+   "queued": "2026-11-08T21:41:41",
+   "note": "QUEUED S25-c05_audioOnly_t01 (1 sheets + 1 plate, audio S25-c05_audio.mp4, seed 1042173262)"
+  },
+  "S25-c07": {
+   "queued": "2026-11-08T21:42:06",
+   "note": "QUEUED S25-c07_audioOnly_t01 (1 sheets + 1 plate, audio S25-c07_audio.mp4, seed 3490720866)"
+  },
+  "S25-c09": {
+   "queued": "2026-11-08T21:42:14",
+   "note": "QUEUED S25-c09_audioOnly_t01 (1 sheets + 1 plate, audio S25-c09_audio.mp4, seed 933757285)"
+  },
+  "S25-c11": {
+   "queued": "2026-11-08T21:42:52",
+   "note": "QUEUED S25-c11_audioOnly_t01 (1 sheets + 1 plate, audio S25-c11_audio.mp4, seed 543733782)"
+  },
+  "S25-c13": {
+   "queued": "2026-11-08T21:43:29",
+   "note": "QUEUED S25-c13_audioOnly_t01 (1 sheets + 1 plate, audio S25-c13_audio.mp4, seed 3462846778)"
+  },
+  "S26-c01": {
+   "queued": "2026-11-08T21:44:08",
+   "note": "QUEUED S26-c01_audioOnly_t01 (2 sheets + 1 plate, audio S26-c01_audio.mp4, seed 2127819655)"
+  },
+  "S26-c03": {
+   "queued": "2026-11-08T21:44:35",
+   "note": "QUEUED S26-c03_audioOnly_t01 (1 sheets + 1 plate, audio S26-c03_audio.mp4, seed 2430440107)"
+  },
+  "S26-c05": {
+   "skipped": "2026-11-08T21:44:35",
+   "note": "no sheeted subjects; abort"
+  }
+ }
+}
