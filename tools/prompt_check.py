@@ -46,7 +46,17 @@ CHUNKS = ROOT / "fullrun" / "chunks.jsonl"
 LEDGER = ROOT / "runs" / "prompt_check.jsonl"
 
 FIELDS = ["subject_definitions:", "summary:", "retention_analysis:",
-          "detailed_description:", "overall_soundscape:", "non_diegetic_music:"]
+          "detailed_description:", "overall_soundscape:"]
+# `non_diegetic_music` was removed from the contract (Alex, 2026-11-07: "the non diegetic audio needs to
+# go, we are using the audio from the movie"). Requiring it here is what made the editor re-insert the
+# field as "No non-diegetic music is present" — itself a prohibition, i.e. exactly the noise the editor
+# exists to remove. Mirrors runs/build_technicolor_audio_only.py.
+NARRATION_RE = re.compile(r"\bin (the )?(first|second|third|fourth|last|next) (frame|shot)\b|"
+                          r"\bthe (first|second|third) frame (shows|is)\b|\bin total,?\b", re.I)
+# An "empty shot" written as a negation: "[Shot 2] The frame is empty of people." Same failure class as
+# the source narration (it asks for the absence of content), one level down.
+EMPTY_RE = re.compile(r"\b(frame|shot) is (empty|devoid)\b|\bempty of people\b|\bno one is in (this|the)\b",
+                      re.I)
 
 # Mirrors build_technicolor_audio_only.py; asserted below so the two cannot drift silently.
 GROUP_CLAUSE = "This is a gathering scene with a crowd present."
@@ -154,6 +164,17 @@ def check_one(chunk: str, text: str, row: dict) -> tuple[list[str], str]:
     negs = len(NEG_RE.findall(out))
     if negs >= 6:
         issues.append("F:negations x%d — prohibitions are ignored; describe the frame instead" % negs)
+    # Frame-by-frame narration of the SOURCE clip ("In the first frame…", "In total, one main character…").
+    # Alex 2026-11-07: it "serves no value to the video model … it only confuses the model" — the graph
+    # already carries the reference, and "the second frame shows no people" instructs an empty shot.
+    narr = len(NARRATION_RE.findall(out))
+    if narr:
+        issues.append("F:source-narration x%d — the blocking is a reading of the ORIGINAL clip; "
+                      "write the per-shot lines instead of pasting it" % narr)
+    empty = len(EMPTY_RE.findall(out))
+    if empty:
+        issues.append("F:empty-frame x%d — 'the frame is empty of people' asks for absence; describe "
+                      "what fills the frame" % empty)
     advs = ADV_RE.findall(out)
     if advs:
         issues.append("F:degree adverbs x%d %s" % (len(advs), sorted(set(a.lower() for a in advs))[:4]))

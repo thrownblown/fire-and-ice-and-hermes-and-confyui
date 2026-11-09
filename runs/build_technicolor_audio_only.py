@@ -136,18 +136,22 @@ def _shot_presence(rec, subjects) -> str:
                              hair=hair, sex=IM.sex_of(sex))
         return f"{who} (this is {best})" if best else who
     n = len(ppl)
+    # Positive phrasing only: "Nobody else is visible" is a negation, and this stack ignores those
+    # (proven three ways). State who IS on screen.
     if n == 1:
-        return f"On screen in this shot: exactly 1 person, alone — {label(ppl[0])}. Nobody else is visible."
-    return (f"On screen in this shot: exactly {n} people — "
-            + "; ".join(label(p) for p in ppl)
-            + ". Nobody else is visible.")
+        return f"On screen in this shot: {label(ppl[0])}, alone."
+    return (f"On screen in this shot: {n} people — "
+            + "; ".join(label(p) for p in ppl) + ".")
 
 
 def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
                  group_scene=False, shot_presence=False) -> str:
     n_sub = len(subjects)
+    # Name the reference for what it is. "shown in <Picture 1>" says nothing about purpose; the model is
+    # being handed a character SHEET and should be told so (Alex, 2026-11-07).
     sd = "\n".join(
-        f"<Subject {i}> is {name}, {T.TRAITS.get(name, '')}, shown in <Picture {i}>."
+        f"<Subject {i}> is {name}, {T.TRAITS.get(name, '')}, shown in <Picture {i}> — the character "
+        f"sheet for {name}."
         for i, name in enumerate(subjects, 1))
 
     summ = ("[audio reuse] A technicolor 80s sword-and-sandals epic, shot on 35mm: "
@@ -156,23 +160,28 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
             "the spoken dialogue and timing of the reference audio.")
 
     rt = []
-    span = f"[Shot 1] and [Shot {len(row['shots'])}]" if shot_presence else "[Shot 1] and [Shot 2]"
+    # The span must follow the chunk's REAL shot count. It used to be hardcoded "[Shot 1] and [Shot 2]"
+    # unless --shot-presence was passed, so a three-shot chunk told the model to keep identity consistent
+    # across two shots while describing three (measured on S19-c02).
+    span = f"[Shot 1] and [Shot {len(row['shots'])}]"
     for i, name in enumerate(subjects, 1):
         rt.append(f"<Subject {i}>: fully_preserved — keep {T.TRAITS.get(name, 'identity')} "
                   f"consistent across {span}.")
     rt.append("Reference audio: fully_copy — reuse the spoken lines and their exact timing.")
     for k in range(plate_count):
         p = n_sub + k + 1
-        rt.append(f"<Picture {p}>: background_only — this is the location as a painted "
-                  "environment, not people; keep ONLY the environment (layout, lighting, "
-                  "color, architecture) and ignore any figures.")
+        # Positive phrasing: the old line was "this is the location as a painted environment, not people;
+        # keep ONLY the environment ... and ignore any figures" — three negations in one retention entry.
+        rt.append(f"<Picture {p}>: background_only — the location as a painted environment: keep its "
+                  "layout, lighting, colour and architecture.")
     rt = "\n".join(rt)
 
     style = F.style_line(row["location"])
-    # the shared style line says "epic practical sets and crowds" on EVERY location —
-    # for an intimate interior that directly invites H3 to add background people.
-    # Strip it here (do not touch the shared table; other tracks may want crowds).
+    # the shared style line says "epic practical sets and crowds" on EVERY location, and its outdoor
+    # variant ends "distant structures and crowds" — both directly invite H3 to add background people.
+    # Strip them here (do not touch the shared table; other tracks may want crowds).
     style = style.replace("epic practical sets and crowds", "practical sets")
+    style = style.replace("distant structures and crowds", "distant structures")
     sidx = {name: i + 1 for i, name in enumerate(subjects)}
     # SPEAKER ids, not subject ids: number by first-speaking order (docs/h3-official ref guide §5.4,
     # and Alex's correction — "(S1) means the first speaker in that prompt … they stay s1 for the
@@ -186,6 +195,9 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
         # the shared camera_move embeds "as the figure moves" — conflicts with an
         # explicit still/lounging blocking, so drop that clause
         cam = cam.replace(" as the figure moves", "").replace("as the figure moves", "")
+        if n_sub == 1:
+            # a one-subject chunk must not read "the figures" (plural implies a second person)
+            cam = cam.replace("the figures", "the subject")
         bits = [f"[Shot {idx}]", cam]
         if shot_presence:
             pres = _shot_presence(people.get(sid), subjects)
@@ -202,29 +214,25 @@ def build_prompt(row, subjects, plate_count, dialogue, people, blocking=None,
             tag = D.tag(spk_idx.get(spk, 1))     # speaker id, NOT the subject index
             bits.append(f"<Subject {sidx.get(spk, 1)}> {tag} says: <d>[English] {r['text']}</d>")
         shot_lines.append(" ".join(b for b in bits if b))
-    constraint = GROUP_CONSTRAINT if group_scene else GLOBAL_CONSTRAINT
-    dd = f"{style}\n\n{constraint}\n\n"
-    if blocking:
-        dd += blocking + "\n\n"
-    if shot_presence:
-        # The authored chunk-level blocking routinely says both characters are present and facing each
-        # other ("Only Juliana and Nekron are present, alone... both remain in place") — which is TRUE
-        # at chunk level and FALSE inside a one-person close-up. That paragraph contradicts the per-shot
-        # cast lines below it, and the model follows the paragraph: take 6 rendered 3-4 people in shots
-        # whose own lines said "exactly 1 person, alone... Nobody else is visible" (frames read back
-        # 2026-11-05). So state the precedence explicitly instead of hoping the later line wins.
-        dd += ("Where the paragraph above has both characters in frame together, the per-shot cast lines "
-               "below override it: inside each shot ONLY the person named there is visible, and the other "
-               "character is out of frame.\n\n")
+    # The constraint paragraph and the authored blocking are GONE from the prompt (Alex, 2026-11-07):
+    # "this whole chunk serves no value to the video model ... it only confuses the model". Both were
+    # negative-prompting blocks, and this stack ignores negations — the block also asserted both
+    # characters present in shots the shot lines called single-coverage, and 396 of the 494 blocking
+    # entries are frame-indexed narration of the SOURCE clip ("In the first frame... The second frame
+    # shows no people"), i.e. description of a reference the model already has. What replaces them:
+    # nothing. The style line, the per-shot camera lines and the dialogue carry the instruction.
+    dd = f"{style}\n\n"
     dd += "\n\n".join(shot_lines)
 
+    # non_diegetic_music is GONE (Alex, 2026-11-07): "the non diegetic audio needs to go, we are using the
+    # audio from the movie". The reference audio is copied wholesale, so a music description can only
+    # fight it. overall_soundscape is kept for now (same argument applies — flagged for his ruling).
     return "\n\n".join([
         "subject_definitions:", sd, "",
         "summary:", summ, "",
         "retention_analysis:", rt, "",
         "detailed_description:", dd, "",
-        "overall_soundscape:", F.soundscape_line(row), "",
-        "non_diegetic_music:", F.music_line(row["music"]),
+        "overall_soundscape:", F.soundscape_line(row),
     ])
 
 
@@ -294,6 +302,11 @@ def main():
                     help="state WHO is on screen per shot from manifests/character_pass.jsonl, and "
                          "fix the retention span to the chunk's real shot count. Off = byte-identical "
                          "to the T0017 prompt, so it can be A/B'd against a render.")
+    ap.add_argument("--edit", action="store_true",
+                    help="run the composed prompt through the VLM editor (tools/prompt_editor.py) before "
+                         "queueing, and queue the EDITED text. This is the writer->editor coupling: "
+                         "without it the editor stage runs but nothing consumes its output.")
+    ap.add_argument("--editor-model", default=os.environ.get("FNI_EDITOR_MODEL", "llama3.3-70b-chat-xlarge"))
     args = ap.parse_args()
 
     rows = [json.loads(l) for l in F.CHUNK_LEDGER.read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -349,6 +362,29 @@ def main():
 
     text = build_prompt(row, subjects, 1 if plate else 0, dialogue, people, blocking,
                         group_scene=is_group_scene, shot_presence=args.shot_presence)
+
+    # WRITER -> EDITOR (Alex, 2026-11-07: "we need the prompt writer and the prompt editor to work
+    # together"). The editor stage has existed for days and NOTHING consumed it — every render queued the
+    # raw writer text while prompts_edited/ sat unused, so the corrections the editor applies (prohibitions
+    # rewritten as descriptions, sheets declared, source narration dropped, five-field grammar) never
+    # reached a render. With --edit the composed prompt goes through the editor first and the EDITED text
+    # is what the graph carries. The writer's own text is still written to prompts/ as provenance.
+    if args.edit:
+        try:
+            sys.path.insert(0, str(ROOT / "tools"))
+            import prompt_editor as pe
+            res = pe.edit_one(args.chunk, dict(row), "ref2v+audio+sheet+plate",
+                              args.editor_model, dry=False, original_override=text)
+            edited_path = pe.EDITED / f"{args.chunk}.txt"
+            print(f"[editor] {args.chunk}: state={res.get('state')} flags={len(res.get('flags') or [])} "
+                  f"chars={res.get('chars')}")
+            if edited_path.exists() and str(res.get("state", "")).startswith(("edited", "repaired-only")):
+                text = edited_path.read_text(encoding="utf-8")
+                print(f"[editor] queueing the EDITED prompt ({len(text)} chars)")
+            else:
+                print("[editor] no usable edit — keeping the writer's prompt")
+        except Exception as e:  # noqa: BLE001
+            print(f"[editor] FAILED ({type(e).__name__}: {str(e)[:140]}) — keeping the writer's prompt")
 
     # prompt lint: never queue a prompt that carries an error string or a
     # dead <Video N> reference — lint failures abort BOTH dry-run and queue.

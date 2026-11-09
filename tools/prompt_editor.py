@@ -148,11 +148,22 @@ def validate(edited: str, original: str, row: dict) -> list[str]:
     return bad
 
 
-def edit_one(chunk: str, row: dict, mode: str, model: str, dry: bool) -> dict:
-    g = newest_graph(chunk)
-    if not g:
-        return {"chunk": chunk, "state": "no-graph"}
-    original = row["_prompt"] = prompt_from_graph(g)
+def edit_one(chunk: str, row: dict, mode: str, model: str, dry: bool,
+             original_override: str | None = None) -> dict:
+    """Edit one chunk's prompt.
+
+    `original_override` lets the WRITER call this directly with a prompt it has just composed, before any
+    graph exists — that is the writer→editor coupling. Without it the input is read back out of the newest
+    take's graph, which is what the standalone pass does.
+    """
+    if original_override is not None:
+        g = None
+        original = row["_prompt"] = original_override
+    else:
+        g = newest_graph(chunk)
+        if not g:
+            return {"chunk": chunk, "state": "no-graph"}
+        original = row["_prompt"] = prompt_from_graph(g)
     refs = pc.attached_images(chunk)
     flags, repaired = pc.check_one(chunk, original, row)
     block = blocking_for(chunk)
@@ -188,7 +199,7 @@ def edit_one(chunk: str, row: dict, mode: str, model: str, dry: bool) -> dict:
     EDITED.mkdir(parents=True, exist_ok=True)
     (EDITED / f"{chunk}.txt").write_text(out, encoding="utf-8")
     return {"chunk": chunk, "state": state, "flags": flags, "refs": refs,
-            "chars": [len(original), len(out)], "graph": g.name}
+            "chars": [len(original), len(out)], "graph": g.name if g else "writer"}
 
 
 def main() -> None:

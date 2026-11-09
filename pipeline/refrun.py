@@ -35,11 +35,15 @@ from core import dialogue_syntax as D
 
 # ------------------------------------------------------------------ validate
 def validate_ref_prompt(text):
-    """6-field ref2va contract check (parallel to fullrun.validate_prompt, which
-    targets the 3-field FL2VA form)."""
+    """ref2va contract check (parallel to fullrun.validate_prompt, which targets the 3-field FL2VA form).
+
+    Five fields are required. `non_diegetic_music` is NOT: this pipeline reuses the film's audio wholesale
+    (Alex, 2026-11-07 — "the non diegetic audio needs to go, we are using the audio from the movie"), so a
+    music description would only fight the reference track.
+    """
     issues = []
     for field in ("subject_definitions:", "summary:", "retention_analysis:",
-                  "detailed_description:", "overall_soundscape:", "non_diegetic_music:"):
+                  "detailed_description:", "overall_soundscape:"):
         if field not in text:
             issues.append("missing field '%s'" % field)
     if text.count("<d>") != text.count("</d>"):
