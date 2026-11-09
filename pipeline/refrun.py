@@ -123,7 +123,10 @@ def reconcile_assets(graph: dict, context: str = "") -> dict:
         ins = node.get("inputs") or {}
         for key, cls in _ASSET_INPUTS.items():
             val = ins.get(key)
-            if not isinstance(val, str) or ("/" not in val and "\\" not in val):
+            # Do NOT skip a bare filename: values without a separator are the norm for clip_name/vae_name
+            # ("qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"), and skipping them let two missing files sail
+            # past this check and fail at ComfyUI with a raw 400 — exactly the case that blocked the 4090.
+            if not isinstance(val, str) or not val:
                 continue
             try:
                 opts = _live_options(cls)
