@@ -86,3 +86,6 @@ script/fire-and-ice-1983.srt
 
 # A stale throwaway probe holding an explicit prompt line. Not referenced by anything.
 probes/krea2_5090_template.json
+
+# Real rig addresses/paths, this box only (the tracked docs carry placeholders)
+docs/rig-addresses.local.md

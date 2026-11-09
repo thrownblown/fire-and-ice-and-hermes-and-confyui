@@ -1,5 +1,10 @@
 # FNI canonical setup
 
+> **Addresses and paths in this file are placeholders.** The concrete rig IPs, LAN addresses and
+> home paths were scrubbed before this repo could be published, and the real values live in
+> `docs/rig-addresses.local.md` — untracked and gitignored, present on the working boxes only.
+> Treat every `<PLACEHOLDER>` below as "look it up in that file".
+
 THE single source of truth for hardware, network, services, environment, model stores, and
 ComfyUI graph doctrine. Everything else (AGENTS.md, Hermes skills, Hermes memory, OptMem)
 POINTS here and carries only behavioral rules. If another document disagrees with this one,
