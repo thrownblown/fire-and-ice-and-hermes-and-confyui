@@ -100,3 +100,8 @@ audio/asr_segments.jsonl
 # A transcript of a third-party YouTube documentary about the film — someone else's narration,
 # reproduced in full. Kept on disk as research, not shipped.
 docs/missingvidtranscript.txt
+# Person/actor/celebrity LoRA registry: kept out of the repo (it names real people). The repo
+# inventories style LoRAs only; person LoRAs appear in tracked files as `person-NN` tokens.
+runs/actor_loras.local.json
+docs/person_loras.local.md
+scratch_objinfo.json

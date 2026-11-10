@@ -51,34 +51,18 @@ STYLE_SLOT = {
     "retro-fantasy": "lora_7",
 }
 
-# --- actor / ID LoRAs: name -> lora file ---------------------------------
-ACTORS = {
-    "person_07": "krea/krea2_person_07_v1_onetrainer.safetensors",
-    "person_03": "krea/krea2_person_03_v1_onetrainer.safetensors",
-    "person_08": "krea/krea2_person_08_v1_onetrainer.safetensors",
-    "person_04": "krea/krea2_person_04_v1_onetrainer.safetensors",
-    "person_01": "krea/krea2_person_01_v1_onetrainer.safetensors",
-    "person_11": "krea/krea2_person_11_v1_onetrainer.safetensors",
-    "person_12": "krea/krea2_person_12_v1_onetrainer.safetensors",
-    "person_06": "krea/krea2_person_06_v1_onetrainer.safetensors",
-    "person_13": "krea/krea2_person_13_v1_onetrainer.safetensors",
-    "person_10": "krea/krea2_person_10_v1_onetrainer.safetensors",
-    "person_14": "krea/krea2_person_14_v1_onetrainer.safetensors",
-    "person_25": "krea/krea2_person_25_v1_onetrainer.safetensors",
-    "person_15": "krea/krea2_person_15_v1_onetrainer.safetensors",
-    "person_17": "krea/krea2_person_17_v1_onetrainer.safetensors",
-    "person_23": "krea/krea2_person_23_v1_onetrainer.safetensors",
-    "person_22": "krea/krea2_person_22_v1_onetrainer.safetensors",
-    "person_09": "krea/krea2_person_09_v1_onetrainer.safetensors",
-    "person_21": "krea/krea2_person_21_v1_onetrainer.safetensors",
-    "person_05": "krea/krea2_person_05_v1_onetrainer.safetensors",
-    "person_19": "krea/krea2_person_19_v1_onetrainer.safetensors",
-    "person_20": "krea/krea2_person_20_v1_onetrainer.safetensors",
-    "person_18": "krea/krea2_person_18_v1_onetrainer.safetensors",
-    "person_24": "krea/krea2_person_24_v1_onetrainer.safetensors",
-    "person_16": "krea/krea2_person_16_v1_onetrainer.safetensors",
-    "person_02": "krea/krea2_person_02_v1_onetrainer.safetensors",
-}
+# --- actor / ID LoRAs: person LoRAs are NOT inventoried in this repo ----------
+# The map names real people, so it lives in a gitignored local file:
+#   runs/actor_loras.local.json   {"person_01": {"slug": "...", "file": "krea/..."}, ...}
+# Style LoRAs above stay inline: they are craft, not people.
+ACTOR_MAP = Path(__file__).resolve().parent.parent / "runs" / "actor_loras.local.json"
+def _load_actors():
+    if not ACTOR_MAP.exists():
+        raise SystemExit("subhuman_sweep: %s is missing. The actor-LoRA map is kept out of the\n"
+                         "repo on purpose (it names real people); restore it from\n"
+                         "docs/person_loras.local.md on the box that ran the sweep." % ACTOR_MAP)
+    return {k: v["file"] for k, v in json.loads(ACTOR_MAP.read_text(encoding="utf-8")).items()}
+ACTORS = _load_actors()
 ACTOR_SLOTS = ["lora_10", "lora_11", "lora_12", "lora_13", "lora_14", "lora_15"]
 
 # --- Krea2 base models: slug -> (unet substring, steps, sampler, scheduler) ---
@@ -107,7 +91,7 @@ def _c(rig, actors, desc=None, prefix=None):
             "desc": str(RUN / desc) if desc else None}
 
 CHARS = {
-    # 4090 rig — keanu/person_11/person_12/person_06/person_13/person_10 live here
+    # 4090 rig — its person LoRAs live on the 4090 (tokens below resolve via the local map)
     "taro": _c("4090", ["none", "person_14", "person_11", "person_13"], "descs/TARO.txt", "taro"),
     "darkwolf": _c("4090", ["none", "person_11", "person_12", "person_13"], "descs/DARKWOLF.txt"),
     "jarol": _c("4090", ["none", "person_06", "person_12", "person_10"], "descs/JAROL.txt"),
@@ -118,7 +102,7 @@ CHARS = {
     "nekron": _c("4090", ["none", "person_14", "person_11", "person_13"], "descs/NEKRON.txt"),
     "envoys": _c("4090", ["none", "person_11", "person_06"], "descs/ENVOYS.txt"),
     "subhuman": _c("4090", ["none", "person_11", "person_13"], "descs/SUBHUMAN.txt"),
-    # 5090 rig — person_08/person_03/person_07/person_04/person_01 + wide female pool
+    # 5090 rig — its person LoRAs plus the wide female pool (tokens resolve via the local map)
     "larn": _c("5090", ["none", "person_03", "person_08", "person_01"], "descs/LARN.txt"),
     "juliana": _c("5090", ["none", "person_25", "person_15", "person_17"], "descs/JULIANA.txt"),
     "roliel": _c("5090", ["none", "person_23", "person_22", "person_09"], "descs/ROLIEL.txt"),
