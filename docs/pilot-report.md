@@ -43,8 +43,8 @@ Exact prompt used:
   quality, caucasian"
 
 Parameters: seed 424242, sampler er_sde/sgm_uniform, steps 9, cfg 1.0, 16:9 @ 2.0 MP.
-LoRAs: retro-fantasy (lora_7) ON @ 1.0; lora_1 (person_29, NSFW) OFF; lora_10 (person_21,
-celebrity) OFF. (The saved graph ships with those two NSFW/celebrity LoRAs live — see
+LoRAs: retro-fantasy (lora_7) ON @ 1.0; lora_1 (a celebrity-likeness LoRA) OFF; lora_10 (a second
+celebrity-likeness LoRA) OFF. (The saved graph ships with those two celebrity-likeness LoRAs live — see
 failure mode 2.)
 
 Artifact: renders/pilot/teegra-base/base_teegra_v01.png (1928x1088).
@@ -101,7 +101,7 @@ Present vs missing (authoritative, read live from the 5090):
 
 2. The saved Krea2 workflow is not production-clean. probes/krea2_5090_template.json ships
    with an explicit adult prompt baked into the main text field and two live character LoRAs
-   (lora_1 person_29 "person_29" @ 0.7, lora_10 person_21 @ 0.7). Any reuse that only swaps the
+   (lora_1, a celebrity-likeness LoRA, @ 0.7; lora_10, a second, @ 0.7). Any reuse that only swaps the
    prompt text still leaves those LoRAs active. Fix: publish a scrubbed "house" Krea2 template
    with lora_1/lora_10 defaulted off and a neutral main prompt; keep only the retro-fantasy
    house LoRA live. (pilot_generate.py already enforces this, but it should be the default.)

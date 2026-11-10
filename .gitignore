@@ -96,3 +96,7 @@ docs/rig-addresses.local.md
 # which quote individual lines, but not a complete script.
 script/dialogue-timeline.tsv
 audio/asr_segments.jsonl
+
+# A transcript of a third-party YouTube documentary about the film — someone else's narration,
+# reproduced in full. Kept on disk as research, not shipped.
+docs/missingvidtranscript.txt

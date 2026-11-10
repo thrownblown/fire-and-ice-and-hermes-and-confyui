@@ -60,7 +60,7 @@ Three things blocked the pilot's Stage 3, in priority order:
    `CLIPLoader(type=qwen_image)` instead of taking CLIP from `CheckpointLoaderSimple`.
    One ~15 GB file unblocks the whole edit path.
 2. **The saved Krea2 workflow is not production-clean** — it ships an explicit adult prompt
-   and two live NSFW/celebrity LoRAs (person_29 @ 0.7, person_21 @ 0.7). Publish a scrubbed
+   and two live celebrity-likeness LoRAs (@ 0.7 each, names withheld in this repo). Publish a scrubbed
    "house" template with those defaulted OFF and only the retro-fantasy house LoRA live.
 3. **Asset refs are placeholders, not garments.** The library's only character (aria) points
    at 32x32 colour swatches; the real Teegra stills live un-ingested at `refs/characters/TEEGRA/`.

@@ -2,8 +2,8 @@
 """Pilot Stage-1: generate a clean Krea2 base still of Teegra on the 5090.
 
 Reuses the saved Krea2 workflow graph (probes/krea2_5090_template.json) but replaces the
-prompt with a clean SFW pilot prompt and disables the NSFW/celebrity character LoRAs
-(lora_1 person_29 'person_29', lora_10 person_21), keeping only the house retro-fantasy LoRA.
+prompt with a clean SFW pilot prompt and disables the celebrity-likeness character LoRAs
+(lora_1 and lora_10, names withheld in this repo), keeping only the house retro-fantasy LoRA.
 """
 from __future__ import annotations
 
@@ -45,9 +45,9 @@ def main():
     g["137"]["inputs"]["positive"] = args.pre    # pre-prompt (style)
     g["136"]["inputs"]["positive"] = ""          # post
 
-    # LoRAs: turn off person_29 (lora_1) and person_21 (lora_10); keep retro-fantasy (lora_7)
-    g["124"]["inputs"]["lora_1"]["on"] = False   # RLY-person-KREA2-person_29 (NSFW)
-    g["124"]["inputs"]["lora_10"]["on"] = False  # krea2_person_21 (celebrity)
+    # LoRAs: turn off the two celebrity-likeness LoRAs (lora_1, lora_10); keep retro-fantasy (lora_7)
+    g["124"]["inputs"]["lora_1"]["on"] = False   # a celebrity-likeness LoRA (name withheld in this repo)
+    g["124"]["inputs"]["lora_10"]["on"] = False  # a second celebrity-likeness LoRA
     g["124"]["inputs"]["lora_7"]["on"] = True    # retro-fantasy (house style)
     g["124"]["inputs"]["lora_7"]["strength"] = 1.0
 
