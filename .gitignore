@@ -89,3 +89,10 @@ probes/krea2_5090_template.json
 
 # Real rig addresses/paths, this box only (the tracked docs carry placeholders)
 docs/rig-addresses.local.md
+
+# The source transcripts of the dialogue: a full reproduction of the film's spoken script, the same
+# class as the subtitle rips. Both are load-bearing locally (the pipeline reads the timeline's text
+# column to build prompts) and both stay on disk untracked — a fresh clone gets the derivative prompts,
+# which quote individual lines, but not a complete script.
+script/dialogue-timeline.tsv
+audio/asr_segments.jsonl
