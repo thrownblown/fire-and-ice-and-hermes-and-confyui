@@ -69,7 +69,10 @@ them, render out of order, reassemble chronologically by shot id (the timeline T
   `stage1_inventory` → `stage2_characters`/`stage2b_names` → `stage3_composition` →
   `stage4_alignment` → `stage5_chunks` → `stage6_h3_prompts` → `stage7_queue`. Shared library
   in `core/` (optmem, chunker, continuity, setups_v2, asr, align, …). Dialogue lives in
-  `script/dialogue-timeline.tsv` (id, speaker, text, start/end PTS).
+  `script/dialogue-timeline.tsv` (id, speaker, text, start/end PTS) and from `audio/asr_segments.jsonl`.
+   **Both are local-only and gitignored** — together they are a complete reproduction of the film's
+   spoken script, so they are not in this repo. The prompts, which quote individual lines inside recast
+   scenes, are. Rebuild both from the source audio/subtitles on a working box.
 - Grammar mode MUST match the model mode (FL2VA ⇄ 3-field, REF2VA ⇄ 6-field). Never drift.
 - `validate_prompt()` (pipeline/fullrun.py) checks the 3-field contract; `pipeline/refrun.py` has
   `validate_ref_prompt()` for the 6-field contract. Both are non-fatal advisory checks.
