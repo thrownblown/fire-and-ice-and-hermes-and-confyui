@@ -102,7 +102,14 @@ def main() -> int:
     VERBOSE = a.verbose
     root = os.path.abspath(a.root)
     handler = lambda *args, **kw: RangeHandler(*args, directory=root, **kw)   # noqa: E731
-    srv = ThreadingHTTPServer((a.bind, a.port), handler)
+
+    class Server(ThreadingHTTPServer):
+        # On Windows SO_REUSEADDR lets a second process bind the same port silently, so a "restart"
+        # can leave two servers answering one URL with only one of them behaving (HEAD gave no
+        # Accept-Ranges while GET honoured ranges). Refuse the second bind instead.
+        allow_reuse_address = False
+
+    srv = Server((a.bind, a.port), handler)
     print(f"serving {root} on http://{a.bind}:{a.port}/  (range requests supported)", flush=True)
     try:
         srv.serve_forever()
