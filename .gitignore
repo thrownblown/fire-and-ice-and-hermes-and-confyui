@@ -109,3 +109,6 @@ scratch_objinfo.json
 # Local-only records: the real values that tracked files deliberately carry as placeholders.
 docs/source-master.local.json
 docs/rig-addresses.local.md
+
+# Assembly intermediates (segments + concat lists); the stitched cuts themselves are ignored above.
+fullrun/stitched/_segments/
