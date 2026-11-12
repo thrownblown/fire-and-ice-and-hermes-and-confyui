@@ -17,10 +17,14 @@ Checks (R = repairable in place, F = flag only):
 
   R skeleton      six fields present, in order, spelled right
   R crowd-vs-blocking   crowd clause present while the ledger says <=2 people
+  R camera        a camera move claimed on a chunk the source MEASURES as static -> locked off
+                  (tools/measure_motion.py; the editor had been inventing push-ins on every shot)
+  R cast count    state the ledger's per-shot people count positively, rather than "only the named..."
   R unbound refs  "the figures" / "the characters" with no <Subject N>
   R sheet line    a sheet is attached but the prompt never says it is one person
   R reference-generation   summary claims keyframe completion instead of reference generation
   F negations     prohibition density (rewriting these is the LLM editor's job)
+  F off-screen    a speaker absent from this chunk's on-screen cast must be voice-only
   F adverbs       "slightly", "a little", "subtle" — invisible to the model, pure noise
   F speakers      (S#) must be first-speaking order, max S2, never a fake S3
   F dialogue      <d>[Language] …</d> balanced, <=130 chars/line, <=200/clip
@@ -69,6 +73,33 @@ NEG_RE = re.compile(r"\b(no|not|never|without|nobody|nothing|avoid)\b", re.I)
 ADV_RE = re.compile(r"\b(slightly|a little|a bit|subtle|subtly|very|softly)\b", re.I)
 D_RE = re.compile(r"<d>\s*\[([A-Za-z ]+)\]\s*([^<]*)</d>")
 
+# --- camera motion vs the measured source ------------------------------------------------
+# The prompts said "The camera pushes in with small amplitude at slow speed" on S03 shots whose ledger
+# row said `static` — on a 1983 cel cartoon whose camera mostly holds. The ledger was right and the
+# editor was inventing the move. tools/measure_motion.py now measures the source clips (tile-consensus
+# phase correlation, so a character moving inside a locked-off shot does NOT read as camera motion), and
+# this rule enforces the measurement: a claimed move on a measured-static chunk is repaired, not argued
+# with. The reverse (prompt says static, source moves) is flagged — that one needs eyes on the source.
+MOTION_LEDGER = ROOT / "manifests" / "shot_motion.jsonl"
+CAM_MOVE_RE = re.compile(
+    r"\b(?:push(?:es|ing)? in|pull(?:s|ing)? out|pan(?:s|ning)?|tilt(?:s|ing)?|track(?:s|ing)?|"
+    r"doll(?:y|ies|ying)|zoom(?:s|ing)?|crane|handheld|steadicam|drifting|creeping|"
+    r"the camera (?:moves|drifts|glides|creeps|settles|rises|drops))\b", re.I)
+CAM_SENTENCE_RE = re.compile(r"[^.]*\b(?:camera|frame)\b[^.]*?"
+                             r"\b(?:push\w* in|pull\w* out|pan\w*|tilt\w*|track\w*|doll\w*|zoom\w*|"
+                             r"crane|handheld|steadicam|drift\w*|creep\w*)\b[^.]*\.\s*", re.I)
+LOCKED_OFF = "Static locked-off camera, no camera movement."
+
+
+def motion_verdicts() -> dict:
+    out = {}
+    if MOTION_LEDGER.exists():
+        for l in MOTION_LEDGER.read_text(encoding="utf-8").splitlines():
+            if l.strip():
+                r = json.loads(l)
+                out[r["shot"]] = r
+    return out
+
 
 def ledger_rows() -> dict:
     out = {}
@@ -94,7 +125,7 @@ def attached_images(chunk: str) -> list[str]:
             if n.get("class_type") == "LoadImage" and n.get("inputs", {}).get("image")]
 
 
-def check_one(chunk: str, text: str, row: dict) -> tuple[list[str], str]:
+def check_one(chunk: str, text: str, row: dict, motion: dict | None = None) -> tuple[list[str], str]:
     """Return (issues, repaired_text). Issues carry a leading 'F:' for flag-only."""
     issues: list[str] = []
     out = text
@@ -116,6 +147,61 @@ def check_one(chunk: str, text: str, row: dict) -> tuple[list[str], str]:
         issues.append("R:crowd-clause removed (ledger max people = %d)" % max(pcounts))
     elif GROUP_CLAUSE in out and not pcounts:
         issues.append("F:crowd clause but no people_count in the ledger — cannot verify")
+
+    # --- camera motion vs the measured source --------------------------------------------
+    if motion:
+        verdicts = [motion.get(s, {}).get("verdict") for s in (row.get("shots") or [])]
+        known = [v for v in verdicts if v]
+        if known and all(v == "static" for v in known):
+            claims, lines = 0, []
+            for line in out.splitlines():
+                m = re.match(r"^(\[Shot \d+\] )(.*)$", line)
+                if m and CAM_MOVE_RE.search(line):
+                    body = m.group(2)
+                    first, sep, rest = body.partition(". ")
+                    if sep and CAM_MOVE_RE.search(first):      # only strip a camera first sentence
+                        body = rest
+                        claims += 1
+                    # leftover clauses that refer to the move we just removed ("the move slows and
+                    # stops as the figure settles") would contradict the locked-off sentence.
+                    body = re.sub(r"(?:^|(?<=\. ))[^.]*\bthe (?:move|push|pull|pan|tilt|drift|creep)\b[^.]*\.\s*",
+                                  "", body, flags=re.I)
+                    line = m.group(1) + LOCKED_OFF + " " + body.strip()
+                lines.append(line)
+            if claims:
+                out = "\n".join(lines)
+                issues.append("R:camera move on a measured-static source (%d shot line(s)) -> locked off" % claims)
+        elif known and any(v == "moving" for v in known) and LOCKED_OFF in out:
+            issues.append("F:prompt says locked-off but the source measures moving — check the clip")
+
+    # --- exact cast count (b) ------------------------------------------------------------
+    # "Only the named characters are present" is a prohibition; the model wants a NUMBER. The ledger
+    # carries people_count per shot, so state it positively, per shot, where the count is known.
+    if pcounts:
+        lines: list[str] = out.splitlines()
+        changed = 0
+        for si, cnt in enumerate(pcounts, 1):
+            clause = "Only %d %s in frame." % (cnt, "person is" if cnt == 1 else "people are")
+            tag = "[Shot %d] " % si
+            for i, line in enumerate(lines):
+                if line.startswith(tag) and clause not in line:
+                    lines[i] = tag + clause + " " + line[len(tag):]
+                    changed += 1
+                    break
+        if changed:
+            out = "\n".join(lines)
+            issues.append("R:exact cast count stated per shot (ledger: %s)" % pcounts)
+
+    # --- subjects must be on screen (c) --------------------------------------------------
+    # A subject defined in subject_definitions but absent from this chunk's on-screen cast costs the
+    # model a free invention. Off-screen speakers are voice only.
+    onscreen = set(row.get("stamped_names") or [])
+    defined = set(re.findall(r"<Subject (\d+)> is ([A-Z][A-Z_]+)", out))
+    offscreen_only = [n for n in (row.get("speakers") or []) if n not in onscreen]
+    if offscreen_only:
+        issues.append("F:speakers off screen, must be voice-only: %s" % ", ".join(offscreen_only))
+    if defined and not onscreen:
+        issues.append("F:subjects defined but the ledger has no stamped names — cannot verify on-screen")
 
     # --- unbound references --------------------------------------------------------------
     generic = re.findall(r"\bthe figures\b|\bthe characters\b(?!\s*\()", out, re.I)
@@ -179,13 +265,14 @@ def check_one(chunk: str, text: str, row: dict) -> tuple[list[str], str]:
     if advs:
         issues.append("F:degree adverbs x%d %s" % (len(advs), sorted(set(a.lower() for a in advs))[:4]))
     tags = re.findall(r"\((S\d)\)", out)
-    if tags and tags != sorted(set(tags)):
-        issues.append("F:(S#) tags out of first-speaking order: %s" % tags[:6])
+    seen = list(dict.fromkeys(tags))               # first appearance, repeats collapsed
+    if seen and seen != sorted(seen):
+        issues.append("F:(S#) first appearance out of speaking order: %s" % seen[:6])
+    if len(seen) > 2:
+        issues.append("F:%d distinct speakers — split the shot instead of faking a third" % len(seen))
     if any(t not in ("S1", "S2") for t in tags):
         issues.append("F:(S#) beyond S2 — split the shot instead of faking a speaker")
     lines = D_RE.findall(out)
-    if len(lines) > 2:
-        issues.append("F:%d speakers in dialogue (max 2)" % len(lines))
     for lang, body in lines:
         if len(body) > 130:
             issues.append("F:dialogue line >130 chars (%d)" % len(body))
@@ -211,6 +298,7 @@ def main() -> None:
         print("WARNING: the crowd clause in this tool no longer matches the builder's text")
 
     rows = ledger_rows()
+    motion = motion_verdicts()
     files = sorted(PROMPTS.glob("*.txt"))
     if args.chunk:
         files = [f for f in files if f.stem == args.chunk]
@@ -221,7 +309,7 @@ def main() -> None:
     for p in files:
         cid = p.stem
         text = p.read_text(encoding="utf-8")
-        issues, fixed = check_one(cid, text, rows.get(cid, {}))
+        issues, fixed = check_one(cid, text, rows.get(cid, {}), motion)
         for i in issues:
             counts[i.split(":")[0] + ":" + i.split(":")[1].split()[0]] = \
                 counts.get(i.split(":")[0] + ":" + i.split(":")[1].split()[0], 0) + 1
