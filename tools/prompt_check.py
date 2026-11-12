@@ -83,8 +83,10 @@ D_RE = re.compile(r"<d>\s*\[([A-Za-z ]+)\]\s*([^<]*)</d>")
 MOTION_LEDGER = ROOT / "manifests" / "shot_motion.jsonl"
 CAM_MOVE_RE = re.compile(
     r"\b(?:push(?:es|ing)? in|pull(?:s|ing)? out|pan(?:s|ning)?|tilt(?:s|ing)?|track(?:s|ing)?|"
-    r"doll(?:y|ies|ying)|zoom(?:s|ing)?|crane|handheld|steadicam|drifting|creeping|"
-    r"the camera (?:moves|drifts|glides|creeps|settles|rises|drops))\b", re.I)
+    r"doll(?:y|ies|ying)|zoom(?:s|ing)?|crane|handheld|steadicam|arc(?:s|ing)?|circl(?:es|ing)|"
+    r"sweep(?:s|ing)?|glid(?:es|ing)|whip(?:s|ping)?|swing(?:s|ing)?|rotat(?:es|ing)|"
+    r"ris(?:es|ing)|lower(?:s|ing)?|descend(?:s|ing)?|drifting|creeping|"
+    r"the camera (?:moves|drifts|glides|creeps|settles|rises|drops|reveals|follows))\b", re.I)
 CAM_SENTENCE_RE = re.compile(r"[^.]*\b(?:camera|frame)\b[^.]*?"
                              r"\b(?:push\w* in|pull\w* out|pan\w*|tilt\w*|track\w*|doll\w*|zoom\w*|"
                              r"crane|handheld|steadicam|drift\w*|creep\w*)\b[^.]*\.\s*", re.I)
@@ -148,31 +150,42 @@ def check_one(chunk: str, text: str, row: dict, motion: dict | None = None) -> t
     elif GROUP_CLAUSE in out and not pcounts:
         issues.append("F:crowd clause but no people_count in the ledger — cannot verify")
 
-    # --- camera motion vs the measured source --------------------------------------------
+    # --- camera motion vs the measured source (per shot) ---------------------------------
     if motion:
-        verdicts = [motion.get(s, {}).get("verdict") for s in (row.get("shots") or [])]
-        known = [v for v in verdicts if v]
-        if known and all(v == "static" for v in known):
-            claims, lines = 0, []
-            for line in out.splitlines():
-                m = re.match(r"^(\[Shot \d+\] )(.*)$", line)
-                if m and CAM_MOVE_RE.search(line):
-                    body = m.group(2)
-                    first, sep, rest = body.partition(". ")
-                    if sep and CAM_MOVE_RE.search(first):      # only strip a camera first sentence
-                        body = rest
-                        claims += 1
-                    # leftover clauses that refer to the move we just removed ("the move slows and
-                    # stops as the figure settles") would contradict the locked-off sentence.
-                    body = re.sub(r"(?:^|(?<=\. ))[^.]*\bthe (?:move|push|pull|pan|tilt|drift|creep)\b[^.]*\.\s*",
-                                  "", body, flags=re.I)
-                    line = m.group(1) + LOCKED_OFF + " " + body.strip()
+        shots_of = row.get("shots") or []
+        lines, repaired_shots, stale = [], [], []
+        for line in out.splitlines():
+            m = re.match(r"^(\[Shot (\d+)\] )(.*)$", line)
+            if not m:
                 lines.append(line)
-            if claims:
-                out = "\n".join(lines)
-                issues.append("R:camera move on a measured-static source (%d shot line(s)) -> locked off" % claims)
-        elif known and any(v == "moving" for v in known) and LOCKED_OFF in out:
-            issues.append("F:prompt says locked-off but the source measures moving — check the clip")
+                continue
+            si = int(m.group(2))
+            verdict = ((motion.get(shots_of[si - 1]) or {}).get("verdict")
+                       if si <= len(shots_of) else None)
+            tag, body = m.group(1), m.group(3)
+            if verdict == "static":
+                first, sep, rest = body.partition(". ")
+                if sep and CAM_MOVE_RE.search(first):       # strip a camera first sentence
+                    body = rest
+                    repaired_shots.append(si)
+                # a clause still referring to the removed move contradicts the locked-off sentence
+                body = re.sub(r"(?:^|(?<=\. ))[^.]*\bthe (?:move|push|pull|pan|tilt|arc|drift|creep)\b[^.]*\.\s*",
+                              "", body, flags=re.I)
+                if LOCKED_OFF not in body:
+                    body = LOCKED_OFF + " " + body.strip()
+                    if si not in repaired_shots:
+                        repaired_shots.append(si)
+                line = tag + body.strip()
+            elif verdict == "moving" and LOCKED_OFF in line:
+                stale.append(si)
+            lines.append(line)
+        if repaired_shots:
+            out = "\n".join(lines)
+            issues.append("R:camera locked off on measured-static shot(s) %s — the source was measured, "
+                          "not guessed" % sorted(set(repaired_shots)))
+        if stale:
+            issues.append("F:shot(s) %s say locked-off but the source measures moving — check the clip"
+                          % stale)
 
     # --- exact cast count (b) ------------------------------------------------------------
     # "Only the named characters are present" is a prohibition; the model wants a NUMBER. The ledger

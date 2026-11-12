@@ -1,0 +1,17 @@
+[
+  {
+    "chunk": "S03-c01",
+    "prompt_id": "b61f8fac-1079-420b-a001-827886b5d940",
+    "variant": "static_v2"
+  },
+  {
+    "chunk": "S03-c02",
+    "prompt_id": "05b240ca-9527-4808-9763-14268c7ff4e3",
+    "variant": "static_v2"
+  },
+  {
+    "chunk": "S03-c03",
+    "prompt_id": "36ef0372-e95f-4083-9ed0-2bb289ffd5f9",
+    "variant": "static_v2"
+  }
+]

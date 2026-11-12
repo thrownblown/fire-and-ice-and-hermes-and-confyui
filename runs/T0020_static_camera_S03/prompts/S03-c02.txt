@@ -19,11 +19,11 @@ Reference audio: fully_copy — reuse the spoken lines and their exact timing.
 detailed_description: 
 a technicolor 80s sword-and-sandals epic, shot on 35mm: vivid saturated colour, deep blacks and high contrast, practical sets, high-fantasy practical effects on an unlimited budget, vast torchlit stone halls with heavy drapery, brass and gold, jewelled saturated colour
 
-[Shot 1] Only 1 person is in frame. The camera pushes in at slow speed, tightening toward the face. <Subject 1> (S1) says: <d>[English] That is a long distance.</d>
+[Shot 1] Only 1 person is in frame. Static locked-off camera, no camera movement. <Subject 1> (S1) says: <d>[English] That is a long distance.</d>
 
 [Shot 2] Only 1 person is in frame. The camera pushes in at slow speed, tightening toward the face. <Subject 2> (S2) says: <d>[English] A distance we may not have to travel.</d> <Subject 2> (S2) says: <d>[English] I am sending our envoys to Jarol with our new demands.</d>
 
-[Shot 3] Only 1 person is in frame. The camera pushes in at slow speed, tightening toward the face. The move slows and stops as the figure settles. <Subject 1> (S1) says: <d>[English] He will not submit.</d> <Subject 2> (S2) says: <d>[English] Perhaps.</d>
+[Shot 3] Only 1 person is in frame. Static locked-off camera, no camera movement. <Subject 1> (S1) says: <d>[English] He will not submit.</d> <Subject 2> (S2) says: <d>[English] Perhaps.</d>
 
 overall_soundscape: 
 Room reverb and a low air movement through stone, distant movement echoing off hard surfaces, cloth and body movement.
