@@ -105,3 +105,7 @@ docs/missingvidtranscript.txt
 runs/actor_loras.local.json
 docs/person_loras.local.md
 scratch_objinfo.json
+
+# Local-only records: the real values that tracked files deliberately carry as placeholders.
+docs/source-master.local.json
+docs/rig-addresses.local.md

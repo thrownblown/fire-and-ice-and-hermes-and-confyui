@@ -18,7 +18,10 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
-MASTER = ROOT / "<source-master>.mp4"
+sys.path.insert(0, str(ROOT))          # so `core.` resolves from the repo root
+from core import source                 # noqa: E402
+
+MASTER = source.master_path()           # never a hardcoded release name — see core/source.py
 SHOTS = ROOT / "shots.jsonl"
 OUT = ROOT / "clips"
 PROXY = OUT / "proxy"
@@ -177,7 +180,7 @@ def main() -> int:
         json.dumps(
             {
                 "source_manifest": "shots.jsonl",
-                "master": MASTER.name,
+                "master": source.NEUTRAL,
                 "cutoff_minutes": args.minutes,
                 "shot_count": len(manifest),
                 "duration_seconds": round(sum(s["duration_seconds"] for s in manifest), 3),

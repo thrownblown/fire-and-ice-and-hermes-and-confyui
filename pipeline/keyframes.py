@@ -23,7 +23,10 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
-MASTER = ROOT / "<source-master>.mp4"
+sys.path.insert(0, str(ROOT))          # so `core.` resolves from the repo root
+from core import source                 # noqa: E402
+
+MASTER = source.master_path()           # never a hardcoded release name — see core/source.py
 SHOTS = ROOT / "shots.jsonl"
 TB_DEN = 24000
 
@@ -139,7 +142,7 @@ def main() -> int:
             "channels": 2,
             "codec": "pcm_s16le",
             "size_bytes": full_wav.stat().st_size,
-            "source": MASTER.name,
+            "source": source.NEUTRAL,
         }
 
     manifest = []

@@ -25,7 +25,10 @@ from pathlib import Path
 from scenedetect import ContentDetector, SceneManager, open_video
 
 ROOT = Path(__file__).resolve().parent.parent  # repo root; script lives in pipeline/
-MASTER = ROOT / "<source-master>.mp4"
+sys.path.insert(0, str(ROOT))          # so `core.` resolves from the repo root
+from core import source                 # noqa: E402
+
+MASTER = source.master_path()           # never a hardcoded release name — see core/source.py
 
 # Source master properties, measured with ffprobe (see master.json).
 VIDEO_TIME_BASE = Fraction(1, 24000)
@@ -152,11 +155,11 @@ def detect() -> dict:
     emit(f"coverage: {covered_frames} frames / {covered_secs:.3f}s")
 
     master = {
-        "id": "master:fire_and_ice_1983",
+        "id": f"master:{source.SLUG}",
         "revision": 1,
         "artifact": {
-            "path": MASTER.name,
-            "sha256": f"sha256:{digest}",
+            "path": source.record(MASTER, digest),
+            "sha256": "<redacted — see docs/source-master.local.json>",
             "size_bytes": MASTER.stat().st_size,
             "codec": "h264",
             "width": 1920,
